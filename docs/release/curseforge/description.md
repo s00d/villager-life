@@ -56,7 +56,7 @@ Villagers go up too: they come back from expeditions with coins, clothes and, so
 
 ## How it was made
 
-Villager Life is designed, directed, tested and played by one person, s00d: the mechanics, the towns, the structures (built in game with structure blocks), the balance and hundreds of in-game test runs. The code was written with substantial help from an AI assistant (Claude, by Anthropic) under that direction and review, with 360+ automated game tests. Voices are text-to-speech (Fish Audio S2 Pro, run locally) from lines written for the mod; sound effects and music are AI-generated (ElevenLabs, Google Lyria). Models, block textures and the icon are made by hand or drawn by scripts. Screenshots are taken in game, unedited.
+Villager Life is designed, directed, tested and played by one person, s00d: the mechanics, the towns, the structures (built in game with structure blocks), the balance and hundreds of in-game test runs. The code was written with substantial help from an AI assistant (Claude, by Anthropic) under that direction and review, with 360+ automated game tests. Voices are text-to-speech (run locally) from lines written for the mod; sound effects and music are AI-generated (ElevenLabs, Google Lyria). Models, block textures and the icon are made by hand or drawn by scripts. Screenshots are taken in game, unedited.
 
 ## Licence
 

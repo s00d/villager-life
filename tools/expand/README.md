@@ -9,7 +9,7 @@
 - Soft-compat: `ModFlavorMatchers.java` — только `namespace`/`path`, без hard-deps и без import чужих модов.
 - Триггеры в `dialogue/` (`WorldEvents`, `PlayerWatch`, `Harm`, `Surroundings`) (огонь у дома, hold/place/break/use, пушки, FD gift, golem kill, explosion…).
 - Спека: `spec/chunks/*.yaml` (**EN-primary**: обязателен `frames_en`; `frames`/`frames_ru` = RU).
-- Пайплайн: YAML → assets/manifest → Fish S2 `--lang en|ru` → pack в `voice/en` и `voice/ru` → duration → `./gradlew build`.
+- Пайплайн: YAML → assets/manifest → `tools/voice/dub.py --lang en|ru` → pack в `voice/en` и `voice/ru` → duration → `./gradlew build`.
 - Клиент: язык `ru*` → RU voice + `ru_ru.json`; иначе EN voice + `en_us.json` (нет RU-ключа → fallback на EN).
 
 ## Спеки — чанки (не один мегафайл)
@@ -66,7 +66,7 @@ python3 tools/expand/scripts/duration_from_ogg.py
 | `tools/voice/manifests/new.json` | expand-клипы (`en_tts` / `ru_tts`) |
 | `tools/voice/manifests/full_voices.json` | все 2700+ клипов для EN/RU Fish |
 | `out/id_map.json` | `A1`/`B4`/`C15` → dialogue id |
-| `sounds/voice/en|ru/*.ogg` | bilingual TTS (Fish S2 Pro) |
+| `sounds/voice/en|ru/*.ogg` | bilingual TTS |
 | `sounds/voice/en|ru/*.PENDING_TTS` | маркеры до TTS |
 
 ## Правила soft-compat
@@ -82,4 +82,4 @@ RU = игровой текст и TTS. Фразы/предложения (не �
 
 ## Phase E (mood/cult)
 
-`spec/chunks/E_mood_cult.yaml` — director titles; stub clips already in `dialogues.json` (voice/ii placeholders until Fish S2).
+`spec/chunks/E_mood_cult.yaml` — director titles; stub clips already in `dialogues.json` (voice/ii placeholders until dub.py).

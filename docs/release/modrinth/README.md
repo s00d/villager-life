@@ -1,6 +1,6 @@
 # Villager Life на Modrinth — что заполнять (24.10.2026)
 
-> Заполнено через API 24.10.2026 (проект `villager-life-s00d`, id `b4ZjMej0`, черновик): summary, тело (`body.md`, со скриншотами с CDN Modrinth), категории, лицензия, ссылки, 13 кадров галереи. Ссылки на GitHub (Source, Issues, URL лицензии и в тексте) убраны, пока репозитория нет: Modrinth не может их проверить. Вернуть после создания `s00d/villager-life`. Осталось руками: выключить монетизацию (Fish Audio), Disclosures → AI, а окружение `client_and_server` и зависимости JEI/EMI — в каждой версии при загрузке.
+> Заполнено через API 24.10.2026 (проект `villager-life-s00d`, id `b4ZjMej0`, черновик): summary, тело (`body.md`, со скриншотами с CDN Modrinth), категории, лицензия, ссылки, 13 кадров галереи. Ссылки на GitHub (Source, Issues, URL лицензии и в тексте) убраны, пока репозитория нет: Modrinth не может их проверить. Вернуть после создания `s00d/villager-life`. Осталось руками: выключить монетизацию (TTS), Disclosures → AI, а окружение `client_and_server` и зависимости JEI/EMI — в каждой версии при загрузке.
 
 Публикует пользователь. Здесь — значения полей, проверенные по исходникам Modrinth (labrinth, frontend) и правилам на 24.10.2026.
 Описание — `description.md`, галерея — `gallery.md` + `docs/media/gallery/`.
@@ -9,7 +9,7 @@
 
 - [ ] Публичный репозиторий `s00d/villager-life`: на него ведут `issueTrackerURL`/`displayURL` в `neoforge.mods.toml`, README, LICENSE и описание. Сейчас 404 — ссылки Source/Issues будут битыми.
 - [x] Озвучка: `*.PENDING_TTS` нет, по 5266 клипов EN и RU (24.10.2026).
-- [ ] Решить с Fish Audio S2 Pro: его лицензия (Fish Audio Research License) требует отдельной письменной лицензии для коммерческого использования. **Не включать монетизацию (Creator Rewards)**, пока нет ответа business@fish.audio. Условия fal/ElevenLabs/Lyria не перепроверялись.
+- [ ] Лицензия модели TTS требует отдельной письменной лицензии для коммерческого использования. **Не включать монетизацию (Creator Rewards)**, пока её нет.
 - [ ] Риск правила «primarily AI»: проект, сделанный «почти целиком ИИ с минимумом человеческого участия кроме промптов и тестов», не может быть публичным. В `description.md` раздел «How it was made» честно перечисляет, что сделано человеком; решение — за пользователем.
 
 ## Проект
@@ -30,7 +30,7 @@
 | Wiki | — (справочник в игре) |
 | Discord | `https://discord.gg/JkNspxqWk9` |
 | Disclosures → AI-generated content | **assets** (голоса TTS, звуки, музыка), **code** (код написан с ассистентом), **text** — если считать реплики, написанные с ассистентом. Иконка и галерея — не ИИ |
-| Monetization | выключено (см. Fish Audio) |
+| Monetization | выключено (лицензия модели TTS) |
 | Gallery | 13 картинок, первая `featured` — `gallery.md` |
 
 ## Версии
@@ -98,4 +98,4 @@ modrinth {
 3. Disclosures, Environment, License — проверить ещё раз.
 4. Submit for review → processing → approved / rejected.
 
-Источники: modrinth.com/legal/rules (13.08.2026), modrinth.com/news/article/ai-policy-and-disclosures, modrinth.com/news/article/new-environments, docs.modrinth.com/api, github.com/modrinth/code (labrinth `project_creation.rs`, `version_creation.rs`, `validate/neoforge.rs`; frontend `helpers/infer/loader-parsers.ts`), github.com/modrinth/minotaur, docs.neoforged.net/docs/gettingstarted/modfiles, huggingface.co/fishaudio/s2-pro/blob/main/LICENSE.md.
+Источники: modrinth.com/legal/rules (13.08.2026), modrinth.com/news/article/ai-policy-and-disclosures, modrinth.com/news/article/new-environments, docs.modrinth.com/api, github.com/modrinth/code (labrinth `project_creation.rs`, `version_creation.rs`, `validate/neoforge.rs`; frontend `helpers/infer/loader-parsers.ts`), github.com/modrinth/minotaur, docs.neoforged.net/docs/gettingstarted/modfiles

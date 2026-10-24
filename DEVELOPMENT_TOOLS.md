@@ -46,7 +46,7 @@ change could be checked in a running Minecraft, not only in tests. This page lis
   blocks and gear, the banner. No image in the mod or on its pages is AI-generated.
 - **Minecraft structure blocks** — every building of the mod is a vanilla `.nbt` structure built in game.
 - **The mod's dev recorder and camera** (`/vnaprec`, `/vnapcam`, dev builds only) and **ffmpeg** — the videos, cut by scripts in `tools/trailer/`; thumbnails from the videos' own frames (`thumbs.py`).
-- **Fish Audio S2 Pro** (MLX, run locally) — the villagers' voices from the mod's own lines (`tools/voice/dub.py`);
+- **A text-to-speech model** (MLX, run locally) — the villagers' voices from the mod's own lines (`tools/voice/dub.py`);
   **Whisper** (mlx-whisper) checks that each clip says its whole line.
 - **ffmpeg**, **libvorbis** / **soundfile** — mono Ogg Vorbis for every sound, so Minecraft places it in the world.
 

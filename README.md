@@ -110,7 +110,7 @@ Every asset of Villager Life was made for it. Nothing is taken from other mods, 
 - **Made by hand or drawn by scripts** in `tools/art/`: models, block and item textures, the icon, the guide's art, the structures (built in game with structure blocks).
 - **Written for the mod:** every dialogue line (English and Russian), the guide, the Spire's texts.
 - **Generated with AI tools, for this mod:**
-  - **Voices:** Fish Audio S2 Pro, run locally (`tools/voice/`), from the mod's own lines.
+  - **Voices:** text-to-speech run locally (`tools/voice/`), from the mod's own lines.
   - **Sound effects** (`sounds/sfx/`): ElevenLabs Sound Effects v2 through [fal](https://fal.ai) (`tools/art/sfx/`, prompts in `batch*.tsv`).
   - **Music** (all nine tracks): Google Lyria 3.5 through fal; the fair tune — ElevenLabs Music v2.5 (`tools/art/fal/music/fal_manifest.jsonl`).
 - **Screenshots** are taken in game, unedited. **Videos:** in-game footage recorded by the mod's own dev recorder; narration (ElevenLabs) and music (Google Lyria) generated through fal for the videos (`tools/trailer/`).

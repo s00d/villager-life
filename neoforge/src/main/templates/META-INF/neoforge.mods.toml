@@ -13,7 +13,7 @@ displayURL="https://modrinth.com/mod/villager-life-s00d"
 ${icon_key}="assets/villager_life/icon.png"
 logoBlur=false
 authors="s00d"
-credits="Voices made with Fish Audio S2 Pro; sound effects and music made with ElevenLabs and Lyria through fal."
+credits="Voices made with local text-to-speech; sound effects and music made with ElevenLabs and Lyria through fal."
 description='''
 Villagers live a whole life: they work, build their houses and their town by hand, marry and raise children,
 trade with real coins at the village stall, elect a mayor and talk about all of it in English and Russian voices.

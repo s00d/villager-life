@@ -77,7 +77,7 @@ Generated assets
 Some of the Mod's assets were made with generative tools. They are part of the
 Mod and come under this licence:
 
-- Voices: Fish Audio S2 Pro, run locally (tools/voice/).
+- Voices: text-to-speech, run locally (tools/voice/).
 - Sound effects (sounds/sfx/): ElevenLabs Sound Effects v2 through fal
   (tools/art/sfx/, prompts in batch*.tsv; tools/art/fal/sfx/fal_manifest.jsonl).
 - Music (all nine tracks): Google Lyria 3.5 through fal; the fair tune:
