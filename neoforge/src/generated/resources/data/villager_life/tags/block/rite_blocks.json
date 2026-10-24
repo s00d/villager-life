@@ -1,0 +1,12 @@
+{
+  "values": [
+    "villager_life:monument_base",
+    "villager_life:monument_pillar",
+    "villager_life:monument_plaque",
+    "villager_life:festival_totem",
+    "villager_life:mourning_totem",
+    "villager_life:altar_base",
+    "villager_life:altar_pillar",
+    "villager_life:altar_core"
+  ]
+}

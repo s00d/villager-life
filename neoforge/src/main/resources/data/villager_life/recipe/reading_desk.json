@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:lectern"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:candle"
+    }
+  ],
+  "result": {
+    "id": "villager_life:reading_desk",
+    "count": 1
+  }
+}

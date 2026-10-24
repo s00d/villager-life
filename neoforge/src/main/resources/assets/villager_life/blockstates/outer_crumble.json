@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "villager_life:block/outer/crumble"
+    },
+    "stage=1": {
+      "model": "villager_life:block/outer/crumble_cracked"
+    },
+    "stage=2": {
+      "model": "villager_life:block/outer/crumble_gone"
+    }
+  }
+}

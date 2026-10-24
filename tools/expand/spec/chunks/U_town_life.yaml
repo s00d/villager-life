@@ -1,0 +1,427 @@
+# Town life, second round: travellers at the tavern (Travellers), a rest at the tavern at noon and of an evening
+# (TownLife), the town's flag (TownFlag). A man speaks as `villager`, a woman as `woman`, the mayor as `mayor`.
+
+- key: U01
+  id: tv_room
+  title: "Traveller Takes a Room"
+  category: home
+  status: active
+  trigger: "a traveller takes a room at the town's tavern of an evening"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Комнату на ночь, хозяин! Дорога была длинная."
+      frames_en:
+        - "A room for the night, landlord! It's been a long road."
+    - weight: 50
+      frames:
+        - "[sigh] Наконец-то крыша над головой. Ноги гудят."
+      frames_en:
+        - "[sigh] A roof over my head at last. My feet are humming."
+    - weight: 50
+      frames:
+        - "Славный городок. Посижу тут денёк-другой, погляжу."
+      frames_en:
+        - "A fine little town. I'll sit here a day or two and look about."
+- key: U02
+  id: tv_w_room
+  title: "Traveller Takes a Room"
+  category: home
+  status: active
+  trigger: "a woman traveller takes a room at the town's tavern"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Комнату, пожалуйста. И чтобы окно на площадь."
+      frames_en:
+        - "A room, please. One with a window on the square."
+    - weight: 50
+      frames:
+        - "[sigh] Сколько я прошла... Здесь хоть тепло."
+      frames_en:
+        - "[sigh] How far I've walked... At least it's warm here."
+    - weight: 50
+      frames:
+        - "Какой уютный город. Может, задержусь."
+      frames_en:
+        - "What a cosy town. Maybe I'll stay a while."
+- key: U03
+  id: tv_ask
+  title: "Traveller Asks to Stay"
+  category: home
+  status: active
+  trigger: "a player talks to a traveller who would stay if given what it asks"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Остался бы, честное слово. Только уговорите меня как следует."
+      frames_en:
+        - "I'd stay, honest. You just have to talk me into it properly."
+    - weight: 50
+      frames:
+        - "Хороший город. Но с пустыми руками на новом месте не начинают."
+      frames_en:
+        - "A good town. But you don't start out somewhere new empty-handed."
+    - weight: 50
+      frames:
+        - "Принесёте, о чём прошу, и я ваш сосед."
+      frames_en:
+        - "Bring me what I asked for, and I'm your neighbour."
+- key: U04
+  id: tv_w_ask
+  title: "Traveller Asks to Stay"
+  category: home
+  status: active
+  trigger: "a player talks to a woman traveller who would stay if given what she asks"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Я бы осталась. Но мне кое-что нужно для начала."
+      frames_en:
+        - "I'd stay. But I need a little something to start with."
+    - weight: 50
+      frames:
+        - "Уговорите меня. Это несложно, если знать, чем."
+      frames_en:
+        - "Talk me into it. It isn't hard, if you know how."
+    - weight: 50
+      frames:
+        - "Здесь мило. Принесите, что прошу, и останусь."
+      frames_en:
+        - "It's lovely here. Bring what I asked, and I'll stay."
+- key: U05
+  id: tv_stay
+  title: "Traveller Settles"
+  category: home
+  status: active
+  trigger: "a traveller agrees to settle in the town"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Решено! Остаюсь. Где тут у вас строят дома?"
+      frames_en:
+        - "It's settled! I'm staying. Where do you build houses round here?"
+    - weight: 50
+      frames:
+        - "[laughs] Ну всё, уговорили. Больше никаких дорог!"
+      frames_en:
+        - "[laughs] All right, you've talked me round. No more roads!"
+    - weight: 50
+      frames:
+        - "Спасибо, сосед. Я вас не подведу."
+      frames_en:
+        - "Thank you, neighbour. I won't let you down."
+- key: U06
+  id: tv_w_stay
+  title: "Traveller Settles"
+  category: home
+  status: active
+  trigger: "a woman traveller agrees to settle in the town"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Остаюсь! Наконец-то свой угол будет."
+      frames_en:
+        - "I'm staying! A place of my own at last."
+    - weight: 50
+      frames:
+        - "[laughs] Уговорили. Пора распаковывать сумки."
+      frames_en:
+        - "[laughs] You've talked me into it. Time to unpack my bags."
+    - weight: 50
+      frames:
+        - "Спасибо вам. Здесь мне будет хорошо."
+      frames_en:
+        - "Thank you. I'll be happy here."
+- key: U07
+  id: tv_road
+  title: "Traveller Tells of the Road"
+  category: home
+  status: active
+  trigger: "a traveller at the tavern tells the townsfolk of the road of an evening"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "А за горами, говорят, деревня, где все жители — библиотекари. Скукота!"
+      frames_en:
+        - "Over the mountains, they say, there's a village where everyone's a librarian. How dull!"
+    - weight: 50
+      frames:
+        - "Шёл я через болото, а там ведьма... Ладно, это долгая история."
+      frames_en:
+        - "I was crossing a swamp, and there was a witch... Well, that's a long story."
+    - weight: 50
+      frames:
+        - "Видел я пустынный храм. Внутри пусто, а снаружи жарко."
+      frames_en:
+        - "I saw a desert temple once. Empty inside, and hot outside."
+- key: U08
+  id: tv_w_road
+  title: "Traveller Tells of the Road"
+  category: home
+  status: active
+  trigger: "a woman traveller at the tavern tells of the road"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Я видела снежную деревню. Там даже куры в шубах!"
+      frames_en:
+        - "I saw a snowy village. Even the chickens wear fur coats there!"
+    - weight: 50
+      frames:
+        - "В одном городе мэр носил две шляпы сразу. Представляете?"
+      frames_en:
+        - "In one town the mayor wore two hats at once. Can you imagine?"
+    - weight: 50
+      frames:
+        - "Дорога учит одному: всегда бери с собой хлеб."
+      frames_en:
+        - "The road teaches you one thing: always carry bread."
+- key: U09
+  id: tv_rest
+  title: "Rests at the Tavern"
+  category: home
+  status: active
+  trigger: "a villager sits down at the town's tavern at noon or of an evening"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ох, хорошо посидеть после работы."
+      frames_en:
+        - "Oh, it's good to sit down after work."
+    - weight: 50
+      frames:
+        - "[laughs] За нашу деревню! И за тех, кто её строит."
+      frames_en:
+        - "[laughs] To our village! And to those who build it."
+    - weight: 50
+      frames:
+        - "Здесь лучший суп в округе. Ну, единственный."
+      frames_en:
+        - "Best soup around here. Well, the only soup."
+    - weight: 50
+      frames:
+        - "Говорят, завтра караван придёт. Посмотрим."
+      frames_en:
+        - "They say the caravan comes tomorrow. We'll see."
+- key: U10
+  id: tv_w_rest
+  title: "Rests at the Tavern"
+  category: home
+  status: active
+  trigger: "a woman sits down at the town's tavern"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Наконец-то присесть. Весь день на ногах."
+      frames_en:
+        - "Finally, a seat. On my feet all day."
+    - weight: 50
+      frames:
+        - "[laughs] Ну, рассказывайте, что нового в городе?"
+      frames_en:
+        - "[laughs] So, tell me, what's new in town?"
+    - weight: 50
+      frames:
+        - "Чай здесь вкусный. Почти как дома."
+      frames_en:
+        - "The tea here is good. Almost like home."
+    - weight: 50
+      frames:
+        - "Посижу немножко и обратно к делам."
+      frames_en:
+        - "I'll sit a little and then back to work."
+- key: U11
+  id: tv_flag
+  title: "Mayor Raises the Town Flag"
+  category: home
+  status: active
+  trigger: "a player draws the town's flag at the notice board and the mayor has it hung"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "У нашего города теперь есть флаг! Повесим его повыше."
+      frames_en:
+        - "Our town has a flag now! We'll hang it up high."
+    - weight: 50
+      frames:
+        - "Какие цвета! Прямо гордость берёт."
+      frames_en:
+        - "What colours! It fills me with pride."
+    - weight: 50
+      frames:
+        - "Флаг над ратушей, флаг на воротах. Вот это город!"
+      frames_en:
+        - "A flag over the hall, a flag on the gates. Now that's a town!"
+- key: U12
+  id: tv_w_flag
+  title: "Mayor Raises the Town Flag"
+  category: home
+  status: active
+  trigger: "a player draws the town's flag and the woman mayor has it hung"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "У нас теперь свой флаг! Повесим у ратуши."
+      frames_en:
+        - "We have our own flag now! We'll hang it by the hall."
+    - weight: 50
+      frames:
+        - "Красиво! Теперь все знают, чей это город."
+      frames_en:
+        - "Beautiful! Now everyone knows whose town this is."
+    - weight: 50
+      frames:
+        - "Флаг на воротах — и сразу видно, что здесь живут."
+      frames_en:
+        - "A flag on the gates, and you can see at once that people live here."
+- key: U13
+  id: tv_pray
+  title: "Prays in the Chapel"
+  category: home
+  status: active
+  trigger: "a villager walks into the town's chapel on its own and sits in a pew a while"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[whisper] Тихо здесь. Хорошо посидеть, подумать."
+      frames_en:
+        - "[whisper] It's quiet here. Good to sit and think a while."
+    - weight: 50
+      frames:
+        - "[whisper] Пусть урожай будет добрым, а крипер — далёким."
+      frames_en:
+        - "[whisper] May the harvest be good and the creepers far away."
+    - weight: 50
+      frames:
+        - "[sigh] Посижу немного. Потом обратно к делам."
+      frames_en:
+        - "[sigh] I'll sit a little. Then back to work."
+- key: U14
+  id: tv_w_pray
+  title: "Prays in the Chapel"
+  category: home
+  status: active
+  trigger: "a woman walks into the town's chapel and sits a while"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[whisper] За детей помолюсь. И за мужа, так и быть."
+      frames_en:
+        - "[whisper] I'll say a prayer for the children. And for my husband, I suppose."
+    - weight: 50
+      frames:
+        - "[whisper] Как красиво свет падает через витражи."
+      frames_en:
+        - "[whisper] How beautifully the light falls through the windows."
+    - weight: 50
+      frames:
+        - "[sigh] Здесь так спокойно. Можно и задержаться."
+      frames_en:
+        - "[sigh] It's so peaceful here. I could stay a while."
+- key: U15
+  id: tv_bake
+  title: "Visits the Bakehouse"
+  category: home
+  status: active
+  trigger: "a villager drops into the town's bakehouse for the smell of bread"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ммм, свежий хлеб! Я только понюхать. Ну, может, и кусочек."
+      frames_en:
+        - "Mmm, fresh bread! I only came to smell it. Well, maybe a slice too."
+    - weight: 50
+      frames:
+        - "Пекарь, а что сегодня в печи?"
+      frames_en:
+        - "Baker, what's in the oven today?"
+    - weight: 50
+      frames:
+        - "Запах на всю улицу. Ноги сами сюда привели."
+      frames_en:
+        - "You can smell it down the whole street. My feet brought me here on their own."
+- key: U16
+  id: tv_w_bake
+  title: "Visits the Bakehouse"
+  category: home
+  status: active
+  trigger: "a woman drops into the town's bakehouse"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ах, какой запах! Надо взять рецепт у пекаря."
+      frames_en:
+        - "Ah, what a smell! I must get the recipe from the baker."
+    - weight: 50
+      frames:
+        - "Дома испечь — целый день. А тут уже готово."
+      frames_en:
+        - "Baking at home takes a whole day. Here it's ready already."
+    - weight: 50
+      frames:
+        - "Только загляну. Дети любят тёплые булочки."
+      frames_en:
+        - "I'll just look in. The children love warm buns."
+- key: U17
+  id: tv_hall
+  title: "Visits the Town Hall"
+  category: home
+  status: active
+  trigger: "a villager goes to the town hall with a word for the mayor"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Есть у меня к мэру пара слов. Про дорогу у моего дома."
+      frames_en:
+        - "I've a word or two for the mayor. About the road by my house."
+    - weight: 50
+      frames:
+        - "Говорят, здесь решаются все дела. Посмотрим, решат ли моё."
+      frames_en:
+        - "They say everything gets decided here. Let's see if mine does."
+    - weight: 50
+      frames:
+        - "Мэр на месте? Я подожду. Я терпеливый."
+      frames_en:
+        - "Is the mayor in? I'll wait. I'm a patient man."
+- key: U18
+  id: tv_w_hall
+  title: "Visits the Town Hall"
+  category: home
+  status: active
+  trigger: "a woman goes to the town hall with a word for the mayor"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Пришла узнать, когда починят колодец."
+      frames_en:
+        - "I've come to ask when they'll mend the well."
+    - weight: 50
+      frames:
+        - "Красиво у мэра. Не то что у нас в прихожей."
+      frames_en:
+        - "It's lovely at the mayor's. Not like our hallway."
+    - weight: 50
+      frames:
+        - "У меня жалоба. Вернее, три жалобы."
+      frames_en:
+        - "I have a complaint. Well, three complaints."

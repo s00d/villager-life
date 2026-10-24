@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,formed=false": {
+      "model": "villager_life:block/mega/drain"
+    },
+    "facing=north,formed=true": {
+      "model": "villager_life:block/mega/drain_on"
+    },
+    "facing=east,formed=false": {
+      "model": "villager_life:block/mega/drain",
+      "y": 90
+    },
+    "facing=east,formed=true": {
+      "model": "villager_life:block/mega/drain_on",
+      "y": 90
+    },
+    "facing=south,formed=false": {
+      "model": "villager_life:block/mega/drain",
+      "y": 180
+    },
+    "facing=south,formed=true": {
+      "model": "villager_life:block/mega/drain_on",
+      "y": 180
+    },
+    "facing=west,formed=false": {
+      "model": "villager_life:block/mega/drain",
+      "y": 270
+    },
+    "facing=west,formed=true": {
+      "model": "villager_life:block/mega/drain_on",
+      "y": 270
+    }
+  }
+}

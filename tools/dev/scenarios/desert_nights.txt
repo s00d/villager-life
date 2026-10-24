@@ -1,0 +1,8 @@
+# Three days and nights in the fresh desert village of "Новый мир" (where housed villagers died to husks, which do not
+# burn by day): "vnap death" lines of the client log say who killed them and where; the town sets up its iron golem.
+/gamemode creative
+/tp Dev 17424 100 19936
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96

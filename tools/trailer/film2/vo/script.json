@@ -1,0 +1,62 @@
+{
+ "P01": {
+  "en": "Okay. New mod. Villager Life. [curious] Let's see what it does.",
+  "ru": "Так. Новый мод. Villager Life. [curious] Посмотрим, что он умеет."
+ },
+ "P02": {
+  "en": "[awkward] Uh... hi?",
+  "ru": "[awkward] Э-э... привет?"
+ },
+ "P03": {
+  "en": "[unimpressed] Eh. It's a village. Villages are boring. I'm going mining.",
+  "ru": "[unimpressed] Ну, деревня. Деревни скучные. Пойду в шахту."
+ },
+ "P04": {
+  "en": "[confused] Wait. Was that house there before?",
+  "ru": "[confused] Стоп. А этот дом тут раньше был?"
+ },
+ "P05": {
+  "en": "[surprised] Is he... building it? By hand?",
+  "ru": "[surprised] Он что... сам его строит? Руками?"
+ },
+ "P06": {
+  "en": "[amazed] They talk. They actually talk!",
+  "ru": "[amazed] Они разговаривают. Они реально разговаривают!"
+ },
+ "P07": {
+  "en": "[laughs] Real coins? Okay, I'm buying bread.",
+  "ru": "[laughs] Настоящие монеты? Ладно, беру хлеб."
+ },
+ "P08": {
+  "en": "Hold on... [excited] is that a wedding?",
+  "ru": "Погоди... [excited] это что, свадьба?"
+ },
+ "P09": {
+  "en": "[softly] And a baby. They've got a whole life going on here.",
+  "ru": "[softly] И малыш. У них тут целая жизнь."
+ },
+ "P10": {
+  "en": "A notice board. Errands, plots... [surprised] I can buy land here?",
+  "ru": "Доска объявлений. Задания, участки... [surprised] тут можно купить землю?"
+ },
+ "P11": {
+  "en": "[sighs] Honestly? I could get used to this place.",
+  "ru": "[sighs] Честно? Я бы тут остался."
+ },
+ "P12": {
+  "en": "[whispers] ...what the—",
+  "ru": "[whispers] ...это что ещё за—"
+ },
+ "P13": {
+  "en": "[determined] Okay. Let's go.",
+  "ru": "[determined] Так. Погнали."
+ },
+ "P14": {
+  "en": "[groans] Ow. Okay. [determined] Again.",
+  "ru": "[groans] Ай. Ладно. [determined] Ещё раз."
+ },
+ "P15": {
+  "en": "[tired laugh] ...one more floor.",
+  "ru": "[tired laugh] ...ещё один этаж."
+ }
+}

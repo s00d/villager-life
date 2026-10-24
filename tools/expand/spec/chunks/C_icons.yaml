@@ -1,0 +1,1137 @@
+# Phase C — curated item icons (+ skips)
+
+- key: C2
+  title: "Hold an Extendo Grip"
+  category: icon
+  status: active
+  trigger: "hold create:extendo_grip"
+  match:
+    item: "create:extendo_grip"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рука-удлинитель — рукопожатие со следующего поля."
+        - "Не тыкайте ею в нос, пожалуйста!"
+      frames_en:
+        - "An extendo grip — a handshake from the next field."
+        - "Do not poke noses with it, please!"
+    - weight: 50
+      frames:
+        - "С такой рукой споры о заборе выигрываются быстро."
+        - "Мы сдаёмся заранее."
+      frames_en:
+        - "With that arm, fence disputes end quickly."
+        - "We surrender early."
+    - weight: 50
+      frames:
+        - "Длинная рука правосудия… или шутки. Выбирайте шутку."
+      frames_en:
+        - "The long arm of justice… or of jokes. Choose jokes."
+
+- key: C3
+  title: "Hold a Potato Cannon"
+  category: icon
+  status: active
+  trigger: "hold create:potato_cannon"
+  match:
+    item: "create:potato_cannon"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Картофельная пушка — оружие урожая!"
+        - "Стреляйте в мишени, не в мэра."
+      frames_en:
+        - "A potato cannon — weapon of the harvest!"
+        - "Aim at targets, not the mayor."
+    - weight: 50
+      frames:
+        - "Картошка летает. Физика плачет. Мы смеёмся."
+        - "Запасной мешок есть?"
+      frames_en:
+        - "Potatoes fly. Physics cries. We laugh."
+        - "Got a spare sack?"
+    - weight: 50
+      frames:
+        - "Снаряд съедобный. Политика — нет."
+        - "Целитесь аккуратно."
+      frames_en:
+        - "Edible ammunition. Politics is not."
+        - "Aim carefully."
+
+- key: C4
+  title: "Hold a Brass Hand"
+  category: icon
+  status: active
+  trigger: "hold create:brass_hand"
+  match:
+    item: "create:brass_hand"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Латунная рука — рукопожатие премиум-класса."
+        - "Холодная, как отказ в кредите изумрудов."
+      frames_en:
+        - "A brass hand — premium handshake."
+        - "Cold as an emerald-loan denial."
+    - weight: 50
+      frames:
+        - "Механическая ладонь. Мы машем в ответ осторожно."
+        - "Вдруг она машет сильнее."
+      frames_en:
+        - "A mechanical palm. We wave back carefully."
+        - "It might wave harder."
+    - weight: 50
+      frames:
+        - "Пожмите руку прогрессу. Он жмёт первым."
+        - "И крепче, чем рукопожатие мэра."
+      frames_en:
+        - "Shake hands with progress. It squeezes first."
+        - "And tighter."
+
+- key: C5
+  title: "Hold a Drafting Table Schematic"
+  category: icon
+  status: active
+  trigger: "hold create:schematic"
+  match:
+    item: "create:schematic"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Схема в руках — опасный человек с планом."
+        - "Покажите чертёж, мы притворимся, что читаем."
+      frames_en:
+        - "A schematic in hand — a dangerous person with a plan."
+        - "Show the blueprint, we will pretend to read."
+    - weight: 50
+      frames:
+        - "Бумага шелестит будущим заводом."
+        - "Мы шелестим петицией."
+      frames_en:
+        - "Paper rustles with a future factory."
+        - "We rustle a petition."
+    - weight: 50
+      frames:
+        - "Чертёж выглядит уверенно. Деревня — нет. Пока что."
+      frames_en:
+        - "The drawing looks confident. The village does not. Yet."
+
+- key: C6
+  title: "Hold a Blaze Cake"
+  category: icon
+  status: active
+  trigger: "hold create:blaze_cake"
+  match:
+    item: "create:blaze_cake"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Торт ифрита — десерт с огненным характером. Тушите после укуса!"
+      frames_en:
+        - "Blaze cake — a dessert with fire attitude. Extinguish after the bite!"
+    - weight: 50
+      frames:
+        - "Сладость, которая кусается первой."
+        - "Нам чаю… и ведро воды."
+      frames_en:
+        - "A sweetness that bites first."
+        - "Tea for us… and a water bucket."
+    - weight: 50
+      frames:
+        - "Выпечка из ада для механизмов."
+        - "Для жителей — только смотреть."
+      frames_en:
+        - "Hellish pastry for machines."
+        - "Villagers may look only."
+
+- key: C7
+  title: "Hold a Honeyed Apple"
+  category: icon
+  status: active
+  trigger: "hold create:honeyed_apple"
+  match:
+    item: "create:honeyed_apple"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Яблоко в мёду — дипломатия работает!"
+        - "Можно и нам по кусочку?"
+      frames_en:
+        - "A honeyed apple — diplomacy works!"
+        - "May we have a piece too?"
+    - weight: 50
+      frames:
+        - "Сладко. Липко. Политически выгодно."
+        - "Мэр уже улыбается."
+      frames_en:
+        - "Sweet. Sticky. Politically useful."
+        - "The mayor is already smiling."
+    - weight: 50
+      frames:
+        - "Подарок, который клеит сердца и пальцы."
+        - "Мы за такой сладкий договор."
+      frames_en:
+        - "A gift that sticks hearts and fingers."
+        - "We approve."
+
+- key: C8
+  title: "Hold a Divers Helmet"
+  category: icon
+  status: active
+  trigger: "hold create:diving_helmet"
+  match:
+    item: "create:diving_helmet"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Шлем дайвера на суше — смелый модный выбор."
+        - "Колодец рядом, если соскучились по воде."
+      frames_en:
+        - "A diver helmet on land — bold fashion."
+        - "The well is nearby if you miss water."
+    - weight: 50
+      frames:
+        - "Выглядите как аквариум, который решил прогуляться."
+        - "Рыбы аплодируют."
+      frames_en:
+        - "You look like an aquarium that went for a walk."
+        - "Fish applaud."
+    - weight: 50
+      frames:
+        - "Пузыри идей внутри шлема."
+        - "Слышно даже с площади."
+      frames_en:
+        - "Bubbles of ideas inside the helmet."
+        - "Audible even from the square."
+
+- key: C9
+  title: "Hold a Copper Backtank"
+  category: icon
+  status: active
+  trigger: "hold create:copper_backtank"
+  match:
+    item: "create:copper_backtank"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Медный баллон за спиной шипит секретами."
+        - "Не взрывайте атмосферу… буквально."
+      frames_en:
+        - "A copper backtank hisses secrets."
+        - "Do not explode the atmosphere… literally."
+    - weight: 50
+      frames:
+        - "Запас воздуха. Запас важности. Запас шума."
+        - "Мы отойдём на метр."
+      frames_en:
+        - "Spare air. Spare importance. Spare noise."
+        - "We step a meter away."
+    - weight: 50
+      frames:
+        - "Шипение прогресса за плечами."
+        - "Куры насторожились."
+      frames_en:
+        - "Progress hissing behind your shoulders."
+        - "Chickens are alert."
+
+- key: C10
+  title: "Hold a Train Schedule"
+  category: icon
+  status: active
+  trigger: "hold create:schedule"
+  match:
+    item: "create:schedule"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Расписание поезда — власть над временем!"
+        - "Опоздаете — вините рельсы, не нас."
+      frames_en:
+        - "A train schedule — power over time!"
+        - "If late, blame the rails, not us."
+    - weight: 50
+      frames:
+        - "Бумажка с пунктами. Судьба деревни в карандаше. Впишите остановку у ярмарки."
+      frames_en:
+        - "A paper of stops. Village fate in pencil. Write stop at the fair."
+    - weight: 50
+      frames:
+        - "График движения важнее графика сна. Мы уже не спим."
+      frames_en:
+        - "The train timetable beats our sleep schedule. We are already awake."
+
+- key: C11
+  title: "Hold a TACZ Gun Icon"
+  category: icon
+  status: removed
+  trigger: "hold tacz:modern_kinetic_gun"
+  match:
+    item: "tacz:modern_kinetic_gun"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Огнестрел на виду — торговля замирает."
+        - "Опустите его, и цены снова оживут."
+      frames_en:
+        - "A firearm on display — trade freezes."
+        - "Lower it and prices live again."
+    - weight: 50
+      frames:
+        - "Ствол блестит. Мы предпочитаем блеск изумрудов."
+        - "Менее смертельный блеск."
+      frames_en:
+        - "The barrel shines. We prefer emerald shine."
+        - "Less lethal shine."
+    - weight: 50
+      frames:
+        - "Оружие как аксессуар. Аксессуар плохой."
+        - "Спрячьте за спину хотя бы."
+      frames_en:
+        - "A gun as an accessory. Bad accessory."
+        - "At least hide it behind your back."
+
+- key: C12
+  title: "Hold a CBC Shell"
+  category: icon
+  status: active
+  trigger: "hold createbigcannons:solid_shot"
+  match:
+    item: "createbigcannons:solid_shot"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Снаряд CBC — не игрушка для жонглирования!"
+        - "Держите крепче и дальше от колодца."
+      frames_en:
+        - "A CBC shell — not a juggling toy!"
+        - "Hold tight and far from the well."
+    - weight: 50
+      frames:
+        - "Тяжёлая штука. Тяжёлые последствия."
+        - "Мы верим в вашу аккуратность… слабо."
+      frames_en:
+        - "Heavy thing. Heavy consequences."
+        - "We trust your care… weakly."
+    - weight: 50
+      frames:
+        - "Металл с амбициями взорваться."
+        - "Мы амбиций не разделяем."
+      frames_en:
+        - "Metal with ambitions to explode."
+        - "We do not share those ambitions."
+
+- key: C13
+  title: "Hold a Radar Dish Part"
+  category: icon
+  status: active
+  trigger: "hold create_radar:monitor"
+  match:
+    item: "create_radar:monitor"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Радарная деталь — вы всех видите, а нас смущает."
+        - "Не просвечивайте чужие сундуки без спроса!"
+      frames_en:
+        - "A radar part — you see everyone, and that unsettles us."
+        - "Do not scan other chests without asking!"
+    - weight: 50
+      frames:
+        - "Следите за небом. Мы следим за вами со схемой."
+        - "Дружески, конечно."
+      frames_en:
+        - "Watch the sky. We watch you with a schematic."
+        - "Friendly, of course."
+    - weight: 50
+      frames:
+        - "Экран знает больше сплетен, чем площадь. Почти."
+      frames_en:
+        - "The screen knows more gossip than the square. Almost."
+
+- key: C14
+  title: "Hold a Jetpack"
+  category: icon
+  status: active
+  trigger: "hold create_jetpack:jetpack"
+  match:
+    item: "create_jetpack:jetpack"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Джетпак в руках — каждый полёт начинается с ойканья. Взлетайте подальше от кур!"
+      frames_en:
+        - "A jetpack in hand — flight starts with oops. Take off away from chickens!"
+    - weight: 50
+      frames:
+        - "Ранцевый фейерверк личной свободы."
+        - "Приземлитесь мягко, соседи нервные."
+      frames_en:
+        - "A backpack firework of personal freedom."
+        - "Land soft, neighbors are nervous."
+    - weight: 50
+      frames:
+        - "Тяга в руках. Спокойствие — нет."
+        - "Держите курс от грядок."
+      frames_en:
+        - "Thrust in hand. Calm is not."
+        - "Steer clear of crops."
+
+- key: C15
+  title: "Hold a Geiger Counter"
+  category: icon
+  status: active
+  trigger: "hold nuclear_radiation:geiger_counter"
+  match:
+    item: "nuclear_radiation:geiger_counter"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Гейгер щёлкает сплетнями о радиации."
+        - "Проверьте меня… нет, лучше не надо."
+      frames_en:
+        - "The Geiger clicks gossip about radiation."
+        - "Check me… no, better not."
+    - weight: 50
+      frames:
+        - "Щелчки как аплодисменты плохому решению."
+        - "Отставьте от молока."
+      frames_en:
+        - "Clicks like applause for a bad decision."
+        - "Keep it away from the milk."
+    - weight: 50
+      frames:
+        - "Прибор считает беду. Мы считаем шаги назад. Хором."
+      frames_en:
+        - "The device counts trouble. We count steps back. In sync."
+
+- key: C16
+  title: "Hold Anti-Rad Injection"
+  category: icon
+  status: active
+  trigger: "hold nuclear_radiation:anti_rad_injection"
+  match:
+    item: "nuclear_radiation:anti_rad_injection"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Антирад-укол — медицина будущего в шприце."
+        - "Нам пока хватает ромашкового чая… наверное."
+      frames_en:
+        - "Anti-rad injection — future medicine in a syringe."
+        - "Chamomile tea still works for us… probably."
+    - weight: 50
+      frames:
+        - "Выглядит серьёзно. Мы делаем серьёзное лицо."
+        - "Вы лечите, мы поддерживаем морально."
+      frames_en:
+        - "Looks serious. We make a serious face."
+        - "You heal, we support morally."
+    - weight: 50
+      frames:
+        - "Лекарство от невидимой беды."
+        - "Спасибо, доктор квартала."
+      frames_en:
+        - "Medicine for invisible trouble."
+        - "Thanks, neighborhood doctor."
+
+- key: C17
+  title: "Hold Yellowcake"
+  category: icon
+  status: active
+  trigger: "hold createnuclear:yellowcake"
+  match:
+    item: "createnuclear:yellowcake"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Жёлтый кекс… стоп, это же жёлтый кек. Не на стол к чаю!"
+      frames_en:
+        - "Yellow cake… wait, that's yellowcake. Not for the tea table!"
+    - weight: 50
+      frames:
+        - "Выглядит как выпечка, ведёт себя как проблема."
+        - "В перчатках. Или в другой биом."
+      frames_en:
+        - "Looks like pastry, acts like a problem."
+        - "Gloves. Or another biome."
+    - weight: 50
+      frames:
+        - "Сладость, которой нельзя угощать соседей."
+        - "Мы отказываемся заранее."
+      frames_en:
+        - "A sweetness you must not share with neighbors."
+        - "We decline in advance."
+
+- key: C18
+  title: "Hold a Uranium Rod"
+  category: icon
+  status: active
+  trigger: "hold createnuclear:uranium_rod"
+  match:
+    item: "createnuclear:uranium_rod"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Урановый стержень — палочка не для дирижёра."
+        - "Дирижируйте оркестром безопасности подальше."
+      frames_en:
+        - "A uranium rod — not a conductor's baton."
+        - "Conduct the safety orchestra farther away."
+    - weight: 50
+      frames:
+        - "Светится амбициями. Мы тускнеем от волнения."
+        - "Верните в реактор, маэстро."
+      frames_en:
+        - "It glows with ambition. We dim with worry."
+        - "Return it to the reactor, maestro."
+    - weight: 50
+      frames:
+        - "Палочка власти атома. Власть пугает."
+        - "Мы аплодируем издалека."
+      frames_en:
+        - "A wand of atomic power. Power scares us."
+        - "We applaud from afar."
+
+- key: C19
+  title: "Hold Osmium Ingot"
+  category: icon
+  status: active
+  trigger: "hold mekanism:ingot_osmium"
+  match:
+    item: "mekanism:ingot_osmium"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Осмий блестит как отказ от скидки."
+        - "Красивый слиток, жадные глаза."
+      frames_en:
+        - "Osmium shines like a denied discount."
+        - "Pretty ingot, greedy eyes."
+    - weight: 50
+      frames:
+        - "Тяжёлый металл, лёгкий намёк на богатство."
+        - "Меняем на морковь? Шутка."
+      frames_en:
+        - "Heavy metal, light hint of wealth."
+        - "Trade for carrots? Joke."
+    - weight: 50
+      frames:
+        - "Слиток из будущего в крестьянской ладони. Завидуем культурно."
+      frames_en:
+        - "An ingot from the future in a peasant's palm. We envy politely."
+
+- key: C20
+  title: "Hold Atomic Alloy"
+  category: icon
+  status: active
+  trigger: "hold mekanism:alloy_atomic"
+  match:
+    item: "mekanism:alloy_atomic"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Атомный сплав — конец технологической скромности."
+        - "Не уроните на ногу истории."
+      frames_en:
+        - "Atomic alloy — end of tech modesty."
+        - "Do not drop it on history's foot."
+    - weight: 50
+      frames:
+        - "Высокие технологии в ладони. Низкие нервы у нас."
+        - "Берегите и себя, и нас."
+      frames_en:
+        - "High tech in a palm. Low nerves for us."
+        - "Mind yourself and us."
+    - weight: 50
+      frames:
+        - "Сплав, от которого кружится голова села."
+        - "Медленно отойдём на всякий случай."
+      frames_en:
+        - "An alloy that spins the village head."
+        - "We step back slowly."
+
+- key: C21
+  title: "Hold Steel from TFMG"
+  category: icon
+  status: active
+  trigger: "hold tfmg:steel_ingot"
+  match:
+    item: "tfmg:steel_ingot"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Заводская сталь — деревня чувствует прогресс позвоночником. Можно забор, а не ракету?"
+      frames_en:
+        - "TFMG steel — the village feels progress in its spine. Maybe a fence, not a rocket?"
+    - weight: 50
+      frames:
+        - "Слиток серьёзнее нашего совета."
+        - "И тяжелее наших аргументов."
+      frames_en:
+        - "An ingot more serious than our council."
+        - "And heavier than our arguments."
+    - weight: 50
+      frames:
+        - "Металл для серьёзных дел. Мы серьёзно киваем."
+        - "И просим забор."
+      frames_en:
+        - "Metal for serious work. We nod seriously."
+        - "And ask for a fence."
+
+- key: C22
+  title: "Hold Crude Oil Bucket"
+  category: icon
+  status: active
+  trigger: "hold tfmg:crude_oil_bucket"
+  match:
+    item: "tfmg:crude_oil_bucket"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ведро нефти — аромат успеха и пятна на репутации."
+        - "Не лей рядом с колодцем!"
+      frames_en:
+        - "A crude oil bucket — scent of success and stains on reputation."
+        - "Do not pour near the well!"
+    - weight: 50
+      frames:
+        - "Жидкое богатство. А воздух беднеет. Проветрите площадь, пожалуйста."
+      frames_en:
+        - "Liquid wealth. And the air gets poorer. Air out the square, please."
+
+- key: C23
+  title: "Hold a Waystone Scroll"
+  category: icon
+  status: active
+  trigger: "hold waystones:warp_scroll"
+  match:
+    item: "waystones:warp_scroll"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Свиток вейстоуна — билет без очереди."
+        - "Возьмите нас в открытку из отпуска!"
+      frames_en:
+        - "A waystone scroll — a ticket without a queue."
+        - "Take us in a postcard from vacation!"
+    - weight: 50
+      frames:
+        - "Бумага телепорта. Мы держимся за шляпы заранее."
+        - "Удачного прыжка!"
+      frames_en:
+        - "Teleport paper. We hold our hats early."
+        - "Happy jump!"
+    - weight: 50
+      frames:
+        - "Один разворот — и вас нет. Классика магов."
+        - "Пришлите весточку."
+      frames_en:
+        - "One unfold — and you are gone. Mage classic."
+        - "Send a note."
+
+- key: C24
+  title: "Hold Nature's Compass"
+  category: icon
+  status: active
+  trigger: "hold naturescompass:naturescompass"
+  match:
+    item: "naturescompass:naturescompass"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Компас биомов — вы ищете приключения, мы — обед."
+        - "Не потеряйтесь… или потеряйтесь красиво."
+      frames_en:
+        - "Nature's compass — you seek adventure, we seek lunch."
+        - "Do not get lost… or get lost beautifully."
+    - weight: 50
+      frames:
+        - "Стрелка крутится, судьба тоже."
+        - "Вернитесь со сплетнями из дальних краёв."
+      frames_en:
+        - "The needle spins, so does fate."
+        - "Return with gossip from far lands."
+    - weight: 50
+      frames:
+        - "Указатель на чудеса. Мы указатель на ужин."
+        - "Встретимся вечером."
+      frames_en:
+        - "A pointer to wonders. We are a pointer to dinner."
+        - "See you tonight."
+
+- key: C25
+  title: "Hold Explorer's Compass"
+  category: icon
+  status: active
+  trigger: "hold explorerscompass:explorerscompass"
+  match:
+    item: "explorerscompass:explorerscompass"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Компас исследователя — карта с характером. Несите сувенир, а не монстра."
+      frames_en:
+        - "Explorer's compass — a map with attitude. Bring back a souvenir, not a monster."
+    - weight: 50
+      frames:
+        - "Ищете структуры? Мы ищем спокойствие."
+        - "Компромисс: рассказ у костра."
+      frames_en:
+        - "Seeking structures? We seek quiet."
+        - "Compromise: a campfire story."
+    - weight: 50
+      frames:
+        - "Стрелка к руинам. Мы к печи."
+        - "Разные приоритеты, одна деревня."
+      frames_en:
+        - "Needle to ruins. Us to the stove."
+        - "Different priorities, one village."
+
+- key: C26
+  title: "Hold a Backpack"
+  category: icon
+  status: active
+  trigger: "hold sophisticatedbackpacks:backpack"
+  match:
+    item: "sophisticatedbackpacks:backpack"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Продвинутый рюкзак — склад на плечах. Осторожно на поворотах, заденете лавку!"
+      frames_en:
+        - "A Sophisticated backpack — a warehouse on shoulders. Careful on turns, you will clip a stall!"
+    - weight: 50
+      frames:
+        - "Столько отделений — и ни одного для совести?"
+        - "Шутка. Совесть в переднем кармане."
+      frames_en:
+        - "So many pockets — and none for conscience?"
+        - "Joke. Conscience is in the front pocket."
+    - weight: 50
+      frames:
+        - "Карманы как этажи. Мы живём на первом."
+        - "Завидуем лифту."
+      frames_en:
+        - "Pockets like floors. We live on the first."
+        - "We envy the elevator."
+
+- key: C27
+  title: "Hold Traveler's Backpack"
+  category: icon
+  status: active
+  trigger: "hold travelersbackpack:standard"
+  match:
+    item: "travelersbackpack:standard"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рюкзак путешественника — дом в свёртке."
+        - "Чаю из бокового кармана не будет?"
+      frames_en:
+        - "A traveler's backpack — a home in a roll."
+        - "Any tea from the side pocket?"
+    - weight: 50
+      frames:
+        - "Вы носите инвентарь как философию жизни."
+        - "Мы носим тыквы. Проще."
+      frames_en:
+        - "You wear inventory like a life philosophy."
+        - "We wear pumpkins. Simpler."
+    - weight: 50
+      frames:
+        - "Дом на спине. Двери не хватает. И коврика."
+      frames_en:
+        - "A home on your back. Missing a door. And a doormat."
+
+- key: C28
+  title: "Hold a Cooking Pot Meal"
+  category: icon
+  status: active
+  trigger: "hold farmersdelight:roast_chicken_block"
+  match:
+    item: "farmersdelight:roast_chicken_block"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Блюдо из кастрюли — запах победы над голодом!"
+        - "Садитесь к столу, герой кухни."
+      frames_en:
+        - "A cooking-pot meal — the smell of victory over hunger!"
+        - "Sit at the table, kitchen hero."
+    - weight: 50
+      frames:
+        - "Еда как искусство и как взятка совету."
+        - "Мы берём. Официально как угощение."
+      frames_en:
+        - "Food as art and as a bribe to the council."
+        - "We accept. Officially as a treat."
+    - weight: 50
+      frames:
+        - "Аромат сильнее политики. Мы голосуем носом."
+        - "За вторую порцию."
+      frames_en:
+        - "Aroma stronger than politics. We vote with noses."
+        - "For seconds."
+
+- key: C30
+  title: "Hold a Diamond Cannon Shell"
+  category: icon
+  status: active
+  trigger: "hold createbigcannons:diamond_grapeshot"
+  match:
+    item: "createbigcannons:diamond_grapeshot"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Алмазный снаряд — роскошь апокалипсиса."
+        - "Стреляйте в небо фантазий, не в амбар."
+      frames_en:
+        - "A diamond cannon shell — luxury apocalypse."
+        - "Shoot sky fantasies, not the barn."
+    - weight: 50
+      frames:
+        - "Блестит ярче нашей ярмарки. И опаснее нашего старосты."
+      frames_en:
+        - "Shines brighter than our fair. And more dangerous than our elder."
+    - weight: 50
+      frames:
+        - "Снаряд для богатых проблем."
+        - "Мы бедные и целые, спасибо."
+      frames_en:
+        - "A shell for expensive problems."
+        - "We are poor and intact, thanks."
+
+- key: C31
+  title: "Hold an Elytra with Jetpack"
+  category: icon
+  status: active
+  trigger: "hold minecraft:elytra"
+  match:
+    item: "minecraft:elytra"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Элитры плюс тяга — вы птица с турбиной."
+        - "Не пугайте кур сверхзвуком!"
+      frames_en:
+        - "Elytra plus thrust — a bird with a turbine."
+        - "Do not scare chickens with sonic booms!"
+    - weight: 50
+      frames:
+        - "Небо открыто. Крыша тоже, если неаккуратно."
+        - "Летите красиво."
+      frames_en:
+        - "Sky is open. So is the roof if careless."
+        - "Fly pretty."
+    - weight: 50
+      frames:
+        - "Крылья моды и рёв прогресса."
+        - "Мы снизу болеем и крестимся."
+      frames_en:
+        - "Fashion wings and progress roar."
+        - "We cheer and cross ourselves below."
+
+- key: C33
+  title: "Hold Boss Trophy"
+  category: icon
+  status: active
+  trigger: "hold boss_checklist:boss_trophy"
+  match:
+    item: "boss_checklist:boss_trophy"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Трофей босса — героизм на полке."
+        - "Рассказ у колокола обязателен!"
+      frames_en:
+        - "A boss trophy — heroism on a shelf."
+        - "A story by the bell is mandatory!"
+    - weight: 50
+      frames:
+        - "Победили кого-то большого. Мы гордимся… с безопасного расстояния."
+        - "Автограф на щите?"
+      frames_en:
+        - "You beat someone big. We are proud… from a safe distance."
+        - "Autograph on the shield?"
+    - weight: 50
+      frames:
+        - "Память о битве блестит. Мы бледнеем от рассказа."
+        - "Продолжайте, тише."
+      frames_en:
+        - "Battle memory shines. We pale at the tale."
+        - "Continue, quieter."
+
+- key: C34
+  title: "Hold Occultism Dictionary"
+  category: icon
+  status: active
+  trigger: "hold occultism:dictionary_of_spirits"
+  match:
+    item: "occultism:dictionary_of_spirits"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Словарь духов — не читайте вслух у печи."
+        - "Печь и так капризная."
+      frames_en:
+        - "A spirit dictionary — do not read aloud by the stove."
+        - "The stove is moody enough."
+    - weight: 50
+      frames:
+        - "Книга шепчет. Мы притворяемся глухими."
+        - "Успехов в учёбе, тише."
+      frames_en:
+        - "The book whispers. We pretend to be deaf."
+        - "Study well, quieter."
+    - weight: 50
+      frames:
+        - "Знания с того света. Мы на этом, пока."
+        - "Закройте том, пожалуйста."
+      frames_en:
+        - "Knowledge from the other side. We are on this side, for now."
+        - "Close the tome, please."
+
+- key: C35
+  title: "Hold a Computer Turtle"
+  category: icon
+  status: active
+  trigger: "hold computercraft:turtle_normal"
+  match:
+    item: "computercraft:turtle_normal"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Черепаха-компьютер — питомец айтишника."
+        - "Научите её не открывать наши сундуки."
+      frames_en:
+        - "A computer turtle — an IT pet."
+        - "Teach it not to open our chests."
+    - weight: 50
+      frames:
+        - "Робот в домике на руке. Мило и тревожно."
+        - "Пусть не копает грядки."
+      frames_en:
+        - "A robot house in your hand. Cute and worrying."
+        - "Keep it off the crops."
+
+- key: C36
+  title: "Hold Ad Astra Oxygen Gear"
+  category: icon
+  status: active
+  trigger: "hold ad_astra:oxygen_tank"
+  match:
+    item: "ad_astra:oxygen_tank"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кислородный баллон — дышите глубже и космичнее."
+        - "Нам тоже плесните атмосферы!"
+      frames_en:
+        - "An oxygen tank — breathe deeper and more cosmic."
+        - "Splash some atmosphere for us too!"
+    - weight: 50
+      frames:
+        - "Запас воздуха важнее запаса сплетен."
+        - "Почти — сплетни всё же важнее."
+      frames_en:
+        - "Spare air beats spare gossip."
+        - "Almost."
+    - weight: 50
+      frames:
+        - "Баллон будущего. Лёгкие прошлого."
+        - "Мы заимствуем вдох."
+      frames_en:
+        - "A future tank. Past lungs."
+        - "We borrow a breath."
+
+- key: C37
+  title: "Hold a Heat Generator"
+  category: icon
+  status: active
+  trigger: "hold mekanismgenerators:heat_generator"
+  match:
+    item: "mekanismgenerators:heat_generator"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Генератор тепла — карманная печка будущего."
+        - "Не ставьте на деревянную лавку!"
+      frames_en:
+        - "A heat generator — a pocket stove of the future."
+        - "Do not set it on a wooden stall!"
+    - weight: 50
+      frames:
+        - "Греет амбиции и воздух вокруг."
+        - "Мы снимем свитера заранее."
+      frames_en:
+        - "Warms ambition and the air around."
+        - "We remove sweaters early."
+    - weight: 50
+      frames:
+        - "Тепло без дров. Дрова обиделись."
+        - "Мы греемся молча."
+      frames_en:
+        - "Heat without firewood. Firewood is offended."
+        - "We warm up quietly."
+
+- key: C38
+  title: "Hold a Saber / Sword Mod"
+  category: icon
+  status: active
+  trigger: "hold void_metal:void_sword"
+  match:
+    item: "void_metal:void_sword"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Необычный клинок — ванильный меч курит в сторонке."
+        - "Не тренируйтесь на пугалах без спроса!"
+      frames_en:
+        - "An unusual blade — the vanilla sword smokes aside."
+        - "Do not train on scarecrows without asking!"
+    - weight: 50
+      frames:
+        - "Оружие из модов с характером. У нас тоже характер. Мирный, пока на нас не замахнутся."
+      frames_en:
+        - "A weapon with modded attitude. We have attitude too. Peaceful, until you swing at us."
+    - weight: 50
+      frames:
+        - "Сталь не из наших кузниц. Блеск всё равно впечатляет."
+        - "В ножны, если можно."
+      frames_en:
+        - "Steel not from our forges. The shine still impresses."
+        - "Sheathe it if you can."
+
+- key: C39
+  title: "Hold Dye Depot Dye"
+  category: icon
+  status: active
+  trigger: "hold dye_depot:maroon_dye"
+  match:
+    item: "dye_depot:maroon_dye"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Редкий краситель — мода на площади!"
+        - "Забор будет завидовать занавескам."
+      frames_en:
+        - "A rare dye — fashion on the square!"
+        - "The fence will envy the curtains."
+    - weight: 50
+      frames:
+        - "Цвет не ванильный. Сплетни будут цветные."
+        - "Красьте мир, не соседей."
+      frames_en:
+        - "Not a vanilla color. Gossip will be colorful."
+        - "Paint the world, not neighbors."
+    - weight: 50
+      frames:
+        - "Пигмент с характером. Стены готовятся."
+        - "Мы тоже, морально."
+      frames_en:
+        - "Pigment with attitude. Walls prepare."
+        - "So do we, morally."
+
+- key: C40
+  title: "Hold Guide Book / Patchouli"
+  category: icon
+  status: active
+  trigger: "hold patchouli:guide_book"
+  match:
+    item: "patchouli:guide_book"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Книга-гайд — умный человек в деревне, редкость!"
+        - "Почитайте вслух главу про вежливость."
+      frames_en:
+        - "A guide book — a smart person in the village, rare!"
+        - "Read the politeness chapter aloud."
+    - weight: 50
+      frames:
+        - "Листаете знания. Мы листаем цены на хлеб."
+        - "Обмен опытом за булочку?"
+      frames_en:
+        - "You flip knowledge. We flip bread prices."
+        - "Trade tips for a bun?"
+    - weight: 50
+      frames:
+        - "Страницы шелестят мудростью. Мы шелестим одобрением. Тихонько, чтоб слышно было."
+      frames_en:
+        - "Pages rustle with wisdom. We rustle approval. Quietly, so we can hear."
+
+- key: C1
+  title: "Hold a Create Wrench (icon)"
+  category: icon
+  status: skip
+  trigger: "merged B4"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "merged into B4"
+      frames_en:
+        - "merged into B4"
+
+- key: C29
+  title: "Hold a Microphone"
+  category: icon
+  status: skip
+  trigger: "exists"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "already exists"
+      frames_en:
+        - "already exists"
+
+- key: C32
+  title: "Hold NuclearCraft Item"
+  category: icon
+  status: skip
+  trigger: "disabled"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "NC disabled"
+      frames_en:
+        - "NC disabled"

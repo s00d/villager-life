@@ -1,0 +1,40 @@
+# Phase L — a woman librarian's lesson (speaker woman), stands in for Librarian Teaches the Kids.
+
+- key: L28
+  id: w_teacher
+  title: "Woman Teaches the Kids"
+  category: home
+  status: active
+  trigger: "a woman librarian gives the village children a lesson"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Спинки ровно, руки на парту. Начинаем."
+      frames_en:
+        - "Backs straight, hands on the desk. Let's begin."
+    - weight: 50
+      frames:
+        - "Было три морковки, одну съели. Сколько осталось? Нет, не ноль!"
+      frames_en:
+        - "Three carrots, you eat one. How many left? No, not zero!"
+    - weight: 50
+      frames:
+        - "Сегодня сказка про дракона. Добрая, не бойтесь."
+      frames_en:
+        - "Today's story is about a dragon. A kind one, don't worry."
+    - weight: 50
+      frames:
+        - "Кто прочитает? Не стесняйтесь, я помогу."
+      frames_en:
+        - "Who wants to read? Don't be shy, I'll help."
+    - weight: 50
+      frames:
+        - "Книжки любят чистые руки!"
+      frames_en:
+        - "Books like clean hands!"
+    - weight: 50
+      frames:
+        - "Урок окончен! Бегите, только не шалите."
+      frames_en:
+        - "Class dismissed! Off you go, and no mischief."

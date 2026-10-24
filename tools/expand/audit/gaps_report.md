@@ -1,0 +1,112 @@
+# VNAP dialogue gap audit
+
+- titles total: **458**
+- titles as string in controller: **166**
+- titles not as string (may use byId): **292**
+- byId / map dialogue ids: **63**
+- id refs missing from dialogues.json: **0**
+
+## Unwired titles (sample — many are byId)
+
+- `Allay` → `rnlher`
+- `Angry Bee` → `bmimxe`
+- `Approach a Villager` → `xfpjxq`
+- `Armorer at Work` → `djpksc`
+- `Attack a Villager at Home with Witnesses` → `slbqfwswxeva`
+- `Attacked Inside Their Home` → `lpuocy`
+- `Attacked by the Player` → `asuufu`
+- `Attacked with a Firework` → `gesjov`
+- `Attacked with a Hoe` → `qqyjjg`
+- `Attacked with a Shovel` → `hpnsfu`
+- `Attacked with a Splash Potion` → `hmadgp`
+- `Attacked with a Sword` → `rueszy`
+- `Attacked with an Arrow` → `huhcbd`
+- `Attacked with an Axe` → `yjctyw`
+- `Baby Bee` → `qqtnlm`
+- `Baby Cat` → `knjdbi`
+- `Baby Chicken` → `pjcwec`
+- `Baby Cow` → `hzahog`
+- `Baby Drowned` → `vakwgb`
+- `Baby Horse` → `ualabt`
+- `Baby Husk` → `hwltxk`
+- `Baby Panda` → `gggzar`
+- `Baby Pig` → `htibul`
+- `Baby Sheep` → `eccdga`
+- `Baby Sprints on the Weekend` → `vbclem`
+- `Baby Villager Gets Hurt` → `ecslqo`
+- `Baby Villager Is Born` → `lgjtnf`
+- `Baby Villager Sprints` → `vhwksn`
+- `Baby Wolf` → `hyzwpr`
+- `Baby Zombie` → `zvwapr`
+- `Baby Zombie Piglin` → `qltnkz`
+- `Baby Zombie Villager` → `nstwos`
+- `Bat` → `ozmthf`
+- `Bee` → `rbkjsr`
+- `Bogged` → `nsosix`
+- `Burning` → `etkxko`
+- `Butcher at Work` → `ueczyh`
+- `Cactus` → `rogpvp`
+- `Calm Down After Danger` → `wbbxpo`
+- `Calm Down After a Scare` → `wsxfok`
+- `Camel` → `turlrl`
+- `Cannot Find the Bell` → `trphsn`
+- `Cannot Reach Workstation` → `ywzhwz`
+- `Cannot Trade` → `zalmof`
+- `Cartographer at Work` → `wuoloh`
+- `Cat` → `ynxhfb`
+- `Change Gamemode` → `fhhqxg`
+- `Change World Difficulty` → `ibcrvx`
+- `Chicken` → `hggexx`
+- `Christmas Day` → `rclyrl`
+- `Christmas Eve` → `zoqxvy`
+- `Cleric at Work` → `hkowex`
+- `Close Trade Window` → `hvjfnk`
+- `Close Trades After Buying` → `msofrj`
+- `Close Trading After Buying` → `czvvwy`
+- `Close Trading Without Buying` → `lilimm`
+- `Close the Trading Window` → `laztau`
+- `Complete a Trade` → `bvrbhy`
+- `Copper Golem` → `ktdshy`
+- `Cow` → `lvzfcv`
+- `Creaking` → `nwlcij`
+- `Creeper` → `odwhzm`
+- `Crowd Too Many Villagers Together` → `kzemrz`
+- `Cure a Baby Zombie Villager` → `ggitzq`
+- `Cure a Zombie Villager` → `ivumgm`
+- `Dolphin` → `aqtshb`
+- `Drowned` → `atwycp`
+- `Ender Dragon` → `xxjkmo`
+- `Enderman` → `yeqxvm`
+- `Evoker` → `nkcoqb`
+- `Extremely High Reputation` → `kcbenk`
+- `Extremely Low Reputation` → `zstdjn`
+- `Extremely Low Reputation with a Sword` → `stuirs`
+- `Falling` → `cifbit`
+- `Falling Anvil` → `yzqpvi`
+- `Farmer at Work` → `umdvtb`
+- `Farming` → `aobqjt`
+- `Fish` → `trkugw`
+- `Fisherman at Work` → `tgggoh`
+- `Fletcher at Work` → `fzjope`
+- … +212 more
+
+## Grief/fire-ish unwired titles
+
+- `Attack a Villager at Home with Witnesses` → `slbqfwswxeva`
+- `Attacked Inside Their Home` → `lpuocy`
+- `Attacked with a Firework` → `gesjov`
+- `Burning` → `etkxko`
+- `Lava` → `elryje`
+- `Open a Chest in a Villager's House` → `qfhrlh`
+- `Return Home` → `wkfbuv`
+- `Return Home Without a Bed` → `uqguqj`
+- `Return Home in Another Dimension` → `uhbigm`
+- `See a Firework` → `zeykfp`
+- `TNT` → `fcbygh`
+- `Try to Return Home in the End` → `iubjul`
+- `Try to Return Home in the Nether` → `bvtmmz`
+- `Two Villagers at a Campfire` → `wrswgiswxeva`
+
+## Missing group ids referenced in Java
+
+- (none)

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "villager_life:mega_quarry"
+    },
+    "title": {
+      "translate": "advancements.villager_life.mega.root.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.mega.root.description"
+    },
+    "background": "villager_life:textures/block/mega/frame.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

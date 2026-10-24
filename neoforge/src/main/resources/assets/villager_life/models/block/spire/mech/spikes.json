@@ -1,0 +1,79 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "villager_life:block/spire/mech/spike_plate",
+  "p": "villager_life:block/spire/mech/spike_plate",
+  "s": "villager_life:block/spire/mech/slate"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    1,
+    16
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#p"
+    },
+    "north": {
+     "uv": [
+      0,
+      15,
+      16,
+      16
+     ],
+     "texture": "#s"
+    },
+    "south": {
+     "uv": [
+      0,
+      15,
+      16,
+      16
+     ],
+     "texture": "#s"
+    },
+    "east": {
+     "uv": [
+      0,
+      15,
+      16,
+      16
+     ],
+     "texture": "#s"
+    },
+    "west": {
+     "uv": [
+      0,
+      15,
+      16,
+      16
+     ],
+     "texture": "#s"
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#s"
+    }
+   }
+  }
+ ]
+}

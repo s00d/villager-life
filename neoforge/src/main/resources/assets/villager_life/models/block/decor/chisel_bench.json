@@ -1,0 +1,154 @@
+{
+  "parent": "block/block",
+  "render_type": "minecraft:cutout",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "minecraft:block/smooth_stone",
+    "t0": "minecraft:block/smooth_stone_slab_side",
+    "t1": "minecraft:block/smooth_stone",
+    "t2": "minecraft:block/chiseled_stone_bricks",
+    "t3": "minecraft:block/stone",
+    "t4": "minecraft:item/mace"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        0,
+        2
+      ],
+      "to": [
+        15,
+        8,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t0"
+        },
+        "south": {
+          "texture": "#t0"
+        },
+        "east": {
+          "texture": "#t0"
+        },
+        "west": {
+          "texture": "#t0"
+        },
+        "up": {
+          "texture": "#t1"
+        },
+        "down": {
+          "texture": "#t1"
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        8,
+        5
+      ],
+      "to": [
+        10,
+        14,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t2"
+        },
+        "south": {
+          "texture": "#t2"
+        },
+        "east": {
+          "texture": "#t2"
+        },
+        "west": {
+          "texture": "#t2"
+        },
+        "up": {
+          "texture": "#t2"
+        },
+        "down": {
+          "texture": "#t2"
+        }
+      }
+    },
+    {
+      "from": [
+        10,
+        8,
+        9
+      ],
+      "to": [
+        12.5,
+        10,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t3"
+        },
+        "south": {
+          "texture": "#t3"
+        },
+        "east": {
+          "texture": "#t3"
+        },
+        "west": {
+          "texture": "#t3"
+        },
+        "up": {
+          "texture": "#t3"
+        },
+        "down": {
+          "texture": "#t3"
+        }
+      }
+    },
+    {
+      "from": [
+        10,
+        8.05,
+        2.5
+      ],
+      "to": [
+        15,
+        8.05,
+        7.5
+      ],
+      "shade": false,
+      "faces": {
+        "up": {
+          "texture": "#t4",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#t4",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          12.5,
+          8.05,
+          5
+        ],
+        "axis": "y",
+        "angle": 22.5,
+        "rescale": false
+      }
+    }
+  ]
+}

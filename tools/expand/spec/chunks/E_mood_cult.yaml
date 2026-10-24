@@ -1,0 +1,784 @@
+# Phase E — village mood / rites / Tocsin Forge / Tocsin Golem (director-triggered)
+
+- key: E01
+  title: "Village Mood Rising"
+  category: mood
+  status: active
+  trigger: "mood cross +20"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Настроение деревни растёт — улыбки шире, цены мягче."
+      frames_en:
+        - "Village mood is rising — smiles wider, prices softer."
+    - weight: 50
+      frames:
+        - "Что-то в воздухе… и это не только свежий хлеб."
+      frames_en:
+        - "Something in the air… and it is not only fresh bread."
+
+- key: E02
+  title: "Village Mood Falling"
+  category: mood
+  status: active
+  trigger: "mood cross -20"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Настроение падает быстрее, чем репутация грифера."
+      frames_en:
+        - "Mood is dropping faster than a griefer's reputation."
+    - weight: 50
+      frames:
+        - "Соседи смотрят косо. Косо и очень конкретно."
+      frames_en:
+        - "Neighbors look sideways. Sideways and very specific."
+
+- key: E03
+  title: "Gather for a Monument"
+  category: build
+  status: active
+  trigger: "GATHER monument"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Соберитесь! Пора поставить то, что не стыдно на открытку."
+      frames_en:
+        - "Gather up! Time to build something postcard-worthy."
+    - weight: 50
+      frames:
+        - "Камни, руки, пафос — классический деревенский набор."
+      frames_en:
+        - "Stones, hands, pathos — classic village kit."
+
+- key: E04
+  title: "Gather for a Dark Altar"
+  category: cult
+  status: active
+  trigger: "GATHER altar"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тише… нам нужен камень потемнее и совесть покороче."
+      frames_en:
+        - "Quiet… we need darker stone and shorter conscience."
+    - weight: 50
+      frames:
+        - "Все на площадь. Без факелов. Особенно без факелов."
+      frames_en:
+        - "Everyone to the square. No torches. Especially no torches."
+
+- key: E05
+  title: "Begin Building a Monument"
+  category: build
+  status: active
+  trigger: "WAIT_ARRIVE monument"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Начинаем кладку. Кто-то держит уровень — остальные делают вид."
+      frames_en:
+        - "Laying starts. Someone holds the level — others pretend."
+    - weight: 50
+      frames:
+        - "Первый блок — самый важный. Второй — тоже. И третий."
+      frames_en:
+        - "First block matters. Second too. Third as well."
+
+- key: E06
+  title: "Begin Raising an Altar"
+  category: cult
+  status: active
+  trigger: "WAIT_ARRIVE altar"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Возводим алтарь. Не спрашивайте зачем — спросите, когда уже."
+      frames_en:
+        - "Raising an altar. Do not ask why — ask when."
+    - weight: 50
+      frames:
+        - "Тёмный камень любит тишину. И чужие нервы."
+      frames_en:
+        - "Dark stone likes silence. And other people's nerves."
+
+- key: E07
+  title: "Place a Monument Brick"
+  category: build
+  status: active
+  trigger: "construct every 5th"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ещё кирпич! Архитектура — это мелодрама на растворе."
+      frames_en:
+        - "Another brick! Architecture is melodrama with mortar."
+    - weight: 50
+      frames:
+        - "Кладу ровно. Ну… почти ровно."
+      frames_en:
+        - "Placing it straight. Well… almost."
+
+- key: E08
+  title: "Place a Dark Stone"
+  category: cult
+  status: active
+  trigger: "altar construct"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тёмный камень на место. Пусть стоит и пугает голубей."
+      frames_en:
+        - "Dark stone set. Let it scare the pigeons."
+    - weight: 50
+      frames:
+        - "Щёлк. Зловеще. Профессионально."
+      frames_en:
+        - "Click. Ominous. Professional."
+
+- key: E09
+  title: "Consecrate the Monument"
+  category: build
+  status: active
+  trigger: "CONSECRATE monument"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Освящаем монумент! Колокол, слёзы радости, минутка пафоса."
+      frames_en:
+        - "Consecrating the monument! Bell, tears, a minute of pathos."
+    - weight: 50
+      frames:
+        - "Пусть этот столб напоминает: мы умеем строить и прощать."
+      frames_en:
+        - "Let this pillar remind us: we can build and forgive."
+
+- key: E10
+  title: "The Altar Awakens"
+  category: cult
+  status: active
+  trigger: "CONSECRATE altar"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Алтарь дышит. Метафорически. Надеемся."
+      frames_en:
+        - "The altar breathes. Metaphorically. We hope."
+    - weight: 50
+      frames:
+        - "Дымок пошёл. Это… нормально? Правда?"
+      frames_en:
+        - "Smoke. That is… normal? Right?"
+
+- key: E11
+  title: "Monument Defiled"
+  category: mood
+  status: active
+  trigger: "monument broken"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Монумент осквернён! История деревни только что получила пощёчину."
+      frames_en:
+        - "Monument defiled! Village history just got slapped."
+    - weight: 50
+      frames:
+        - "Сломал памятник — минус тебе в карму."
+      frames_en:
+        - "Break a monument, and your karma breaks with it."
+
+- key: E12
+  title: "Altar Ready to Summon"
+  category: cult
+  status: active
+  trigger: "READY state"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Алтарь готов. Можно было и не строить. Да уже поздно."
+      frames_en:
+        - "Altar ready. We could have skipped this. Too late now."
+    - weight: 50
+      frames:
+        - "Красный пульс. Плохой знак. Очень плохой."
+      frames_en:
+        - "Red pulse. Bad sign. Very bad."
+
+- key: E13
+  title: "Ring Around the Forge"
+  category: forge
+  status: active
+  trigger: "SUMMON gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Все к кузне. Встаём кольцом, железо в руки."
+      frames_en:
+        - "Everyone to the forge. Stand in a ring, iron in hand."
+    - weight: 50
+      frames:
+        - "Кольцо вокруг горна. Кто без слитка — тот зритель."
+      frames_en:
+        - "A ring round the furnace. No ingot, you just watch."
+    - weight: 50
+      frames:
+        - "Сегодня куём не подковы. Сегодня куём ответ."
+      frames_en:
+        - "We are not forging horseshoes today. We forge an answer."
+
+- key: E14
+  title: "Forge the Tocsin"
+  category: forge
+  status: active
+  trigger: "CHANT start"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Раздувайте горн! Набат должен услышать каждый."
+      frames_en:
+        - "Work the bellows! Everyone must hear the tocsin."
+    - weight: 50
+      frames:
+        - "Железо в огонь. Обиды туда же."
+      frames_en:
+        - "Iron into the fire. Grudges too."
+    - weight: 50
+      frames:
+        - "Колокол ударит трижды. Потом будет поздно извиняться."
+      frames_en:
+        - "The bell strikes three times. After that, sorry is too late."
+
+- key: E15
+  title: "Feed the Forge"
+  category: forge
+  status: active
+  trigger: "CHANT ingots"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ещё слиток! Горн голоден, как мы зимой."
+      frames_en:
+        - "Another ingot! The forge is hungry, like us in winter."
+    - weight: 50
+      frames:
+        - "Кидай точнее, это кузня, а не ярмарка."
+      frames_en:
+        - "Throw straighter, it is a forge, not a fair."
+    - weight: 50
+      frames:
+        - "Шесть слитков. Ни одним меньше."
+      frames_en:
+        - "Six ingots. Not one less."
+
+- key: E16
+  title: "Hide From the Tocsin"
+  category: forge
+  status: active
+  trigger: "third toll, player near"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Третий удар! Прячьтесь по домам, сейчас встанет."
+      frames_en:
+        - "Third toll! Get indoors, it is about to stand."
+    - weight: 50
+      frames:
+        - "Путник, лучше беги. Или залей горн водой, пока не поздно."
+      frames_en:
+        - "Traveller, better run. Or flood the forge while you can."
+    - weight: 50
+      frames:
+        - "Двери на засов. Он не любит, когда на него смотрят."
+      frames_en:
+        - "Bolt the doors. It hates being watched."
+
+- key: E17
+  title: "Ritual Interrupted"
+  category: forge
+  status: active
+  trigger: "ritual interrupt"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ритуал сорван! Деревня выдыхает — и даже улыбается."
+      frames_en:
+        - "Ritual interrupted! Village exhales — even smiles."
+    - weight: 50
+      frames:
+        - "Спасибо за ведро. Серьёзно. Спасибо."
+      frames_en:
+        - "Thanks for the bucket. Seriously. Thanks."
+
+- key: E18
+  title: "Tocsin Awakens"
+  category: boss
+  status: active
+  trigger: "golem awaken"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Он проснулся. Железо помнит каждую обиду."
+      frames_en:
+        - "It is awake. The iron remembers every grudge."
+    - weight: 50
+      frames:
+        - "Набатный голем! Бейте в спину, там у него горн."
+      frames_en:
+        - "The Tocsin Golem! Hit its back, the furnace is there."
+    - weight: 50
+      frames:
+        - "Слышите звон? Это не к обеду."
+      frames_en:
+        - "Hear the bell? That is not the dinner bell."
+
+- key: E19
+  title: "Tocsin Sheds Plates"
+  category: boss
+  status: active
+  trigger: "golem phase two"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Он сбросил плиты! Смотрите под ноги, они ползают."
+      frames_en:
+        - "It shed its plates! Watch your feet, they crawl."
+    - weight: 50
+      frames:
+        - "Броня летит. Значит, болит."
+      frames_en:
+        - "Armour is flying off. So it hurts."
+    - weight: 50
+      frames:
+        - "Звоните в наши колокола! Он от них глохнет."
+      frames_en:
+        - "Ring our bells! They deafen it."
+
+- key: E20
+  title: "Tocsin Bell Cracks"
+  category: boss
+  status: active
+  trigger: "golem phase three"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Колокол треснул! Сейчас он пойдёт напролом."
+      frames_en:
+        - "The bell cracked! Now it charges through everything."
+    - weight: 50
+      frames:
+        - "Из груди пар. Отходите, как зашипит."
+      frames_en:
+        - "Steam from its chest. Step back when it hisses."
+    - weight: 50
+      frames:
+        - "Последний рывок. Его и наш."
+      frames_en:
+        - "The last push. Its and ours."
+
+- key: E21
+  title: "Tocsin Silenced"
+  category: boss
+  status: active
+  trigger: "golem death"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Набат смолк. Можно снова торговать без дрожи в коленях."
+      frames_en:
+        - "The tocsin is silent. Trading without knee-shake again."
+    - weight: 50
+      frames:
+        - "Мы выжили. Кто-то даже сохранил шляпу."
+      frames_en:
+        - "We survived. Someone even kept their hat."
+    - weight: 50
+      frames:
+        - "На табличке напишем курсивом: пережили набат."
+      frames_en:
+        - "On the plaque, in italics: survived the tocsin."
+
+- key: E22
+  title: "Script Aborted"
+  category: mood
+  status: active
+  trigger: "ABORT"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Сценарий оборван. Жители разбрелись, махнув рукой."
+      frames_en:
+        - "Script aborted. Villagers wander off, shrugging it off."
+    - weight: 50
+      frames:
+        - "Репетиция отменена. Камни остаются — драма тоже."
+      frames_en:
+        - "Rehearsal cancelled. Stones stay — drama too."
+
+- key: E23
+  title: "Altar Broken at the Peak"
+  category: mood
+  status: active
+  trigger: "altar core broken while mood >= 90"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ты разнёс алтарь на самом пире."
+        - "Настроение сверзилось с обрыва."
+      frames_en:
+        - "You smashed the altar at the feast."
+        - "The mood just fell off a cliff."
+    - weight: 50
+      frames:
+        - "Пир окончен. Мы были счастливы, а тут ты."
+      frames_en:
+        - "The feast is over. We were happy, and then you showed up."
+    - weight: 50
+      frames:
+        - "Один удар, и деревня вспомнила, как ненавидеть."
+      frames_en:
+        - "One swing, and the village remembers how to hate."
+
+- key: E24
+  title: "Tocsin Chant"
+  category: forge
+  status: active
+  trigger: "third toll, no player"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Третий удар. Каркас встаёт сам."
+      frames_en:
+        - "Third toll. The frame rises on its own."
+    - weight: 50
+      frames:
+        - "Не смотрите в огонь. Он смотрит в ответ."
+      frames_en:
+        - "Do not stare into the fire. It stares back."
+    - weight: 50
+      frames:
+        - "Тише. Слышно, как железо дышит."
+      frames_en:
+        - "Quiet. You can hear the iron breathe."
+
+- key: E25
+  title: "Tocsin Sleeps"
+  category: boss
+  status: active
+  trigger: "golem leaves"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Он ушёл в горн. Не насовсем, просто спит."
+      frames_en:
+        - "It went back into the forge. Not for good, just asleep."
+    - weight: 50
+      frames:
+        - "Не с кем драться — и он остыл. Повезло."
+      frames_en:
+        - "Nobody to fight, so it cooled down. Lucky us."
+    - weight: 50
+      frames:
+        - "Кузня затихла. Подбросим дров через неделю."
+      frames_en:
+        - "The forge is quiet. Fuel it again next week."
+
+- key: E26
+  title: "Gather for a Festoon"
+  category: rite
+  status: active
+  trigger: "festoon gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Несите флажки! Площадь заслужила гирлянду."
+      frames_en:
+        - "Bring the flags! The square earned a festoon."
+    - weight: 50
+      frames:
+        - "Цветы в горшки, фонари на столбы."
+      frames_en:
+        - "Flowers in pots, lanterns on posts."
+    - weight: 50
+      frames:
+        - "Красиво жить не запретишь. Особенно сегодня."
+      frames_en:
+        - "Nobody can stop us living pretty. Especially today."
+
+- key: E27
+  title: "Gather for the Festival"
+  category: rite
+  status: active
+  trigger: "festival gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Праздник! Бочки к колоколу, торты не трогать."
+      frames_en:
+        - "Festival! Barrels to the bell, hands off the cakes."
+    - weight: 50
+      frames:
+        - "Урожай собран. Теперь его едят."
+      frames_en:
+        - "The harvest is in. Now we eat it."
+    - weight: 50
+      frames:
+        - "Кто не танцует, тот носит бочки."
+      frames_en:
+        - "If you do not dance, you carry barrels."
+
+- key: E28
+  title: "Gather for a Pavilion"
+  category: rite
+  status: active
+  trigger: "pavilion gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ставим шатёр. Жёлтый, как наше настроение."
+      frames_en:
+        - "Raising a pavilion. Yellow, like our mood."
+    - weight: 50
+      frames:
+        - "Шерсть на крышу, брёвна на углы."
+      frames_en:
+        - "Wool on the roof, logs on the corners."
+    - weight: 50
+      frames:
+        - "Такой шатёр видно из соседней деревни. Пусть завидуют."
+      frames_en:
+        - "The next village will see this pavilion. Let them envy."
+
+- key: E29
+  title: "Gather for a Vigil"
+  category: rite
+  status: active
+  trigger: "vigil gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Зажжём свечи. Ночью будем дежурить."
+      frames_en:
+        - "Light the candles. We keep watch tonight."
+    - weight: 50
+      frames:
+        - "Фонари душ к колоколу. Так спокойнее."
+      frames_en:
+        - "Soul lanterns by the bell. It feels safer."
+    - weight: 50
+      frames:
+        - "Кто-то ходит вокруг деревни. Не спим."
+      frames_en:
+        - "Someone circles the village. Nobody sleeps."
+
+- key: E30
+  title: "Gather to Mourn"
+  category: rite
+  status: active
+  trigger: "mourning gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Чёрные флаги. Мы помним, кого потеряли."
+      frames_en:
+        - "Black banners. We remember who we lost."
+    - weight: 50
+      frames:
+        - "Розы иссушения — для тех, кто не вернулся."
+      frames_en:
+        - "Wither roses, for those who did not come back."
+    - weight: 50
+      frames:
+        - "Помолчим. Хотя бы сегодня."
+      frames_en:
+        - "Let us be quiet. Today at least."
+
+- key: E31
+  title: "Gather for a Pyre"
+  category: rite
+  status: active
+  trigger: "pyre gather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Брёвна в кучу. Сожжём всё, что накопилось."
+      frames_en:
+        - "Logs in a pile. We burn everything that built up."
+    - weight: 50
+      frames:
+        - "Костёр душ горит холодно. Как наши сердца."
+      frames_en:
+        - "A soul fire burns cold. Like our hearts."
+    - weight: 50
+      frames:
+        - "Ещё немного — и до кузни дойдёт."
+      frames_en:
+        - "A little more, and it will come to the forge."
+
+- key: E32
+  title: "Festoon Hung"
+  category: rite
+  status: active
+  trigger: "festoon done"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Гирлянда висит! Площадь как на открытке."
+      frames_en:
+        - "The festoon is up! The square looks like a postcard."
+    - weight: 50
+      frames:
+        - "Вот теперь деревня улыбается."
+      frames_en:
+        - "Now the village smiles."
+    - weight: 50
+      frames:
+        - "Флажки трепещут. Мы тоже, но от радости."
+      frames_en:
+        - "The flags flutter. So do we, from joy."
+
+- key: E33
+  title: "Festival Begins"
+  category: rite
+  status: active
+  trigger: "festival done"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Праздник начался! Торговцы, скидки на стол."
+      frames_en:
+        - "The festival begins! Traders, discounts on the table."
+    - weight: 50
+      frames:
+        - "Музыка, торты, никто не ругается. Чудо."
+      frames_en:
+        - "Music, cakes, nobody quarrels. A miracle."
+    - weight: 50
+      frames:
+        - "За урожай! И за того, кто его спас."
+      frames_en:
+        - "To the harvest! And to whoever saved it."
+
+- key: E34
+  title: "Pavilion Raised"
+  category: rite
+  status: active
+  trigger: "pavilion done"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Шатёр стоит. Счастливее нас только кошки."
+      frames_en:
+        - "The pavilion stands. Only cats are happier."
+    - weight: 50
+      frames:
+        - "Под таким шатром даже мэр добрый."
+      frames_en:
+        - "Under this pavilion even the mayor is kind."
+    - weight: 50
+      frames:
+        - "Лучшего дня у деревни ещё не было."
+      frames_en:
+        - "The village never had a better day."
+
+- key: E35
+  title: "Vigil Lit"
+  category: rite
+  status: active
+  trigger: "vigil done"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Свечи горят. Пусть видят, что мы не спим."
+      frames_en:
+        - "The candles burn. Let them see we are awake."
+    - weight: 50
+      frames:
+        - "Бдение началось. Дежурим по очереди."
+      frames_en:
+        - "The vigil has begun. We take turns."
+    - weight: 50
+      frames:
+        - "Тихо. Слушаем ночь."
+      frames_en:
+        - "Quiet. We listen to the night."
+
+- key: E36
+  title: "Mourning Laid"
+  category: rite
+  status: active
+  trigger: "mourning done"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Траур. Сегодня без торговли и без шуток."
+      frames_en:
+        - "Mourning. No trading, no jokes today."
+    - weight: 50
+      frames:
+        - "Флаги подняты. Мы помним."
+      frames_en:
+        - "The banners are up. We remember."
+    - weight: 50
+      frames:
+        - "Тотем стоит. Пусть он скорбит за нас."
+      frames_en:
+        - "The totem stands. Let it grieve for us."
+
+- key: E37
+  title: "Pyre Lit"
+  category: rite
+  status: active
+  trigger: "pyre done"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Костёр горит. Злость горит вместе с ним."
+      frames_en:
+        - "The pyre burns. The anger burns with it."
+    - weight: 50
+      frames:
+        - "Плачущий обсидиан не врёт. Нам плохо."
+      frames_en:
+        - "Crying obsidian does not lie. We are not well."
+    - weight: 50
+      frames:
+        - "Если и это не поможет — разожжём кузню."
+      frames_en:
+        - "If this does not help, we light the forge."

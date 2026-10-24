@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "villager_life:item/spire_deep_bow_s1"
+  }
+}

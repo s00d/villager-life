@@ -1,0 +1,205 @@
+{
+  "parent": "block/block",
+  "render_type": "minecraft:cutout",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "villager_life:block/decor/book_red",
+    "t0": "villager_life:block/decor/book_pages",
+    "t1": "villager_life:block/decor/book_red",
+    "t2": "villager_life:block/decor/book_blue",
+    "t3": "villager_life:block/decor/book_green",
+    "t4": "minecraft:block/yellow_wool"
+  },
+  "elements": [
+    {
+      "from": [
+        2,
+        0,
+        3
+      ],
+      "to": [
+        13,
+        3,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t0"
+        },
+        "south": {
+          "texture": "#t0"
+        },
+        "east": {
+          "texture": "#t0"
+        },
+        "west": {
+          "texture": "#t1"
+        },
+        "up": {
+          "texture": "#t1"
+        },
+        "down": {
+          "texture": "#t1"
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        3,
+        4
+      ],
+      "to": [
+        13,
+        6,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t0"
+        },
+        "south": {
+          "texture": "#t0"
+        },
+        "east": {
+          "texture": "#t0"
+        },
+        "west": {
+          "texture": "#t2"
+        },
+        "up": {
+          "texture": "#t2"
+        },
+        "down": {
+          "texture": "#t2"
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          3,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5,
+        "rescale": false
+      }
+    },
+    {
+      "from": [
+        3.5,
+        6,
+        4.5
+      ],
+      "to": [
+        12,
+        8.5,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t0"
+        },
+        "south": {
+          "texture": "#t0"
+        },
+        "east": {
+          "texture": "#t0"
+        },
+        "west": {
+          "texture": "#t3"
+        },
+        "up": {
+          "texture": "#t3"
+        },
+        "down": {
+          "texture": "#t3"
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          6,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5,
+        "rescale": false
+      }
+    },
+    {
+      "from": [
+        3,
+        8.5,
+        4
+      ],
+      "to": [
+        12.5,
+        11,
+        11.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t0"
+        },
+        "south": {
+          "texture": "#t0"
+        },
+        "east": {
+          "texture": "#t0"
+        },
+        "west": {
+          "texture": "#t1"
+        },
+        "up": {
+          "texture": "#t1"
+        },
+        "down": {
+          "texture": "#t1"
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          8.5,
+          8
+        ],
+        "axis": "y",
+        "angle": 45,
+        "rescale": false
+      }
+    },
+    {
+      "from": [
+        7.5,
+        -0.1,
+        2.9
+      ],
+      "to": [
+        8.5,
+        3.1,
+        12.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t4"
+        },
+        "south": {
+          "texture": "#t4"
+        },
+        "east": {
+          "texture": "#t4"
+        },
+        "west": {
+          "texture": "#t4"
+        },
+        "up": {
+          "texture": "#t4"
+        },
+        "down": {
+          "texture": "#t4"
+        }
+      }
+    }
+  ]
+}

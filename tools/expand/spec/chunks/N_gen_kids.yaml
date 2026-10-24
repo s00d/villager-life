@@ -1,0 +1,162 @@
+# Phase N — generations: godparents, neighbours, hide-and-seek (speaker child).
+
+- key: N31
+  id: n_k_godparent
+  title: "Kid Greets Godparent"
+  category: home
+  status: active
+  trigger: "a child greets the player who named it"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Крёстный! Крёстный пришёл!"
+      frames_en:
+        - "Godparent! My godparent's here!"
+    - weight: 50
+      frames:
+        - "Привет! Это ты придумал моё имя? Оно классное!"
+      frames_en:
+        - "Hi! Did you choose my name? It's great!"
+    - weight: 50
+      frames:
+        - "А ты мне что-нибудь принёс?"
+      frames_en:
+        - "Did you bring me anything?"
+    - weight: 50
+      frames:
+        - "Мама говорит, ты особенный."
+      frames_en:
+        - "Mum says you're special."
+    - weight: 50
+      frames:
+        - "Смотри, как я вырос!"
+      frames_en:
+        - "Look how big I've got!"
+- key: N32
+  id: n_k_neighbour
+  title: "Kid Visits the Neighbour"
+  category: home
+  status: active
+  trigger: "a child runs to visit the neighbour player"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Сосед! Можно с тобой погулять?"
+      frames_en:
+        - "Neighbour! Can I come with you?"
+    - weight: 50
+      frames:
+        - "А что у тебя в доме? Покажешь?"
+      frames_en:
+        - "What's in your house? Will you show me?"
+    - weight: 50
+      frames:
+        - "Ты тоже тут живёшь? Здорово!"
+      frames_en:
+        - "You live here too? Great!"
+    - weight: 50
+      frames:
+        - "Мама сказала тебе не мешать. Я и не мешаю!"
+      frames_en:
+        - "Mum said not to bother you. I'm not bothering!"
+    - weight: 50
+      frames:
+        - "Пошли играть в прятки!"
+      frames_en:
+        - "Let's play hide-and-seek!"
+- key: N33
+  id: n_k_counts
+  title: "Kid Counts"
+  category: home
+  status: active
+  trigger: "a child counts at the start of hide-and-seek"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Раз, два, три, четыре, пять — я иду искать!"
+      frames_en:
+        - "One, two, three, four, five, ready or not, here I come!"
+    - weight: 50
+      frames:
+        - "Считаю до десяти! Не подглядываю! Почти."
+      frames_en:
+        - "Counting to ten! No peeking! Almost."
+    - weight: 50
+      frames:
+        - "Прячьтесь лучше, я всех найду!"
+      frames_en:
+        - "Hide well, I'll find you all!"
+    - weight: 50
+      frames:
+        - "Один... два... эээ... много! Иду!"
+      frames_en:
+        - "One... two... um... lots! Coming!"
+- key: N34
+  id: n_k_found
+  title: "Kid Found You"
+  category: home
+  status: active
+  trigger: "the seeker finds a hiding child"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Нашёл! Нашёл!"
+      frames_en:
+        - "Found you! Found you!"
+    - weight: 50
+      frames:
+        - "Ага, попался!"
+      frames_en:
+        - "Aha, got you!"
+    - weight: 50
+      frames:
+        - "Я видел твой нос из-за угла!"
+      frames_en:
+        - "I saw your nose round the corner!"
+    - weight: 50
+      frames:
+        - "Ты плохо спрятался!"
+      frames_en:
+        - "You didn't hide very well!"
+    - weight: 50
+      frames:
+        - "Тук-тук, ты водишь! Ой, нет, я вожу."
+      frames_en:
+        - "Tag, you're it! Oh no, I'm it."
+- key: N35
+  id: n_k_was_found
+  title: "Kid Was Found"
+  category: home
+  status: active
+  trigger: "a hiding child is found"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Эх, нашёл!"
+      frames_en:
+        - "Aw, you found me!"
+    - weight: 50
+      frames:
+        - "Это нечестно, ты подглядывал!"
+      frames_en:
+        - "No fair, you peeked!"
+    - weight: 50
+      frames:
+        - "Я специально высунулся!"
+      frames_en:
+        - "I let you find me on purpose!"
+    - weight: 50
+      frames:
+        - "Ладно, в следующий раз спрячусь лучше."
+      frames_en:
+        - "Fine, next time I'll hide better."
+    - weight: 50
+      frames:
+        - "Хи-хи! Как ты догадался?"
+      frames_en:
+        - "Hee hee! How did you guess?"

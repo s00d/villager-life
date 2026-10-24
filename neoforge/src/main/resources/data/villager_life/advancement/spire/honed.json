@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/raise",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_star_sword"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.honed.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.honed.description"
+    },
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

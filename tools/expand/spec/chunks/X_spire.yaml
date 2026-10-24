@@ -1,0 +1,971 @@
+# The Spire of the Builders (com.vnap.spire, docs/tower/DESIGN.md §1, §8, §10): the spire rising beside the finished
+# town, villagers going up on expeditions and coming back, the rumours when a player clears a chapter, the spire
+# growing, the beacon lit at the hundredth floor. Villagers know only what a town can see from outside: a spire grew
+# in one night, its top is broken off, inside there are floors, guards and shards.
+
+- key: X01
+  id: spr_rise
+  title: "The Spire Has Risen"
+  category: home
+  status: active
+  trigger: "the morning after the spire grew beside the town"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Вчера там был луг. Я там вчера корову пас!"
+      frames_en:
+        - "[gasp] That was a meadow yesterday. I grazed a cow there yesterday!"
+    - weight: 50
+      frames:
+        - "Земля всю ночь гудела, а колокол звонил сам. Теперь понятно почему."
+      frames_en:
+        - "The ground hummed all night and the bell rang by itself. Now I see why."
+    - weight: 50
+      frames:
+        - "Выросла за одну ночь. А мы дом три месяца ставили."
+      frames_en:
+        - "Grew in one night. And it took us three months to put up a house."
+    - weight: 50
+      frames:
+        - "Верхушка отломана, а осколки висят в воздухе. Кто-нибудь, объясните мне это."
+      frames_en:
+        - "The top's broken off and the pieces are hanging in the air. Somebody explain that to me."
+    - weight: 50
+      frames:
+        - "Козы с ночи не успокоятся. Я бы тоже не успокоился, будь я козой."
+      frames_en:
+        - "The goats haven't calmed down since last night. I wouldn't either, if I were a goat."
+- key: X02
+  id: spr_rise_w
+  title: "The Spire Has Risen"
+  category: home
+  status: active
+  trigger: "a woman sees the spire the morning after it grew"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Я развешивала бельё, а там стояла башня. Бельё я уронила."
+      frames_en:
+        - "[gasp] I was hanging out the washing and there was a tower. I dropped the washing."
+    - weight: 50
+      frames:
+        - "Ночью светило так, что я подумала — пожар. А это камень растёт."
+      frames_en:
+        - "It was so bright last night I thought it was a fire. It was stone growing."
+    - weight: 50
+      frames:
+        - "Красивая, правда? Только сломанная сверху, как недопечённый пирог."
+      frames_en:
+        - "Beautiful, isn't it? Only broken at the top, like a pie that sank."
+    - weight: 50
+      frames:
+        - "Мы достроили город, и в ту же ночь — вот это. Совпадение? Не думаю."
+      frames_en:
+        - "We finished the town, and that same night, this. A coincidence? I don't think so."
+    - weight: 50
+      frames:
+        - "Говорят, она старше всех нас. Как это может быть, если её вчера не было?"
+      frames_en:
+        - "They say it's older than all of us. How, if it wasn't there yesterday?"
+- key: X03
+  id: spr_rise_k
+  title: "The Spire Has Risen"
+  category: home
+  status: active
+  trigger: "a child sees the spire the morning after it grew"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Башня! Огромная! Можно туда? Ну пожалуйста!"
+      frames_en:
+        - "[gasp] A tower! A huge one! Can we go? Please!"
+    - weight: 50
+      frames:
+        - "Она выросла ночью, пока все спали. Самое интересное — и без меня!"
+      frames_en:
+        - "It grew in the night while everyone was asleep. The best thing ever, and I missed it!"
+    - weight: 50
+      frames:
+        - "Там наверху камни летают. Сами! Честно-честно!"
+      frames_en:
+        - "There are stones flying at the top. By themselves! Honest!"
+    - weight: 50
+      frames:
+        - "Спорим, оттуда видно край света?"
+      frames_en:
+        - "Bet you can see the edge of the world from up there."
+- key: X04
+  id: spr_talk
+  title: "Talks About the Spire"
+  category: home
+  status: active
+  trigger: "a villager gossips about the spire beside the town"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Говорят, внутри каждый этаж — другое место. Сады, лёд, мастерские. Как такое помещается?"
+      frames_en:
+        - "They say every floor inside is a different place. Gardens, ice, workshops. How does it all fit?"
+    - weight: 50
+      frames:
+        - "Стражи там каменные. Не злые, говорят. Просто проверяют, кто ты такой."
+      frames_en:
+        - "The guards in there are stone. Not angry, they say. Just checking who you are."
+    - weight: 50
+      frames:
+        - "Кузнец божится, что слышит, как она гудит по ночам. Кузнец много чего слышит."
+      frames_en:
+        - "The smith swears he hears it hum at night. The smith hears a lot of things."
+    - weight: 50
+      frames:
+        - "Кто-то её построил. Давно. Хотел бы я пожать ему руку и спросить, как он клал раствор."
+      frames_en:
+        - "Somebody built it. Long ago. I'd like to shake their hand and ask how they laid the mortar."
+    - weight: 50
+      frames:
+        - "Внутри находят записки. Старые. Будто кто-то оставил их специально для нас."
+      frames_en:
+        - "People find notes inside. Old ones. As if somebody left them just for us."
+    - weight: 50
+      frames:
+        - "Мэр говорит, это к добру. Мэр всё называет «к добру», кроме налогов."
+      frames_en:
+        - "The mayor says it's a good sign. The mayor calls everything a good sign except taxes."
+- key: X05
+  id: spr_talk_w
+  title: "Talks About the Spire"
+  category: home
+  status: active
+  trigger: "a woman gossips about the spire beside the town"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Соседка говорит, там внутри вишни цветут. Круглый год! Мне бы такой сад."
+      frames_en:
+        - "My neighbour says there are cherries blooming in there. All year round! I'd like a garden like that."
+    - weight: 50
+      frames:
+        - "Осколки оттуда тёплые, как хлеб из печи. Я один держала в руке."
+      frames_en:
+        - "The shards from in there are warm, like bread from the oven. I held one."
+    - weight: 50
+      frames:
+        - "Я не боюсь этой башни. Она смотрит так, будто чего-то ждёт."
+      frames_en:
+        - "I'm not afraid of that tower. It looks like it's waiting for something."
+    - weight: 50
+      frames:
+        - "Мужчины только о ней и говорят. Лучше бы забор починили."
+      frames_en:
+        - "The men talk of nothing else. They'd do better mending the fence."
+    - weight: 50
+      frames:
+        - "Говорят, на верху у неё фонарь. Только не горит. Интересно, кто его погасил."
+      frames_en:
+        - "They say there's a lantern at the top. Only it's dark. I wonder who put it out."
+- key: X06
+  id: spr_talk_k
+  title: "Talks About the Spire"
+  category: home
+  status: active
+  trigger: "a child chatters about the spire"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А там внутри живут заводные собаки. Они приносят палки. Правда-правда!"
+      frames_en:
+        - "There are clockwork dogs living in there. They fetch sticks. Really truly!"
+    - weight: 50
+      frames:
+        - "Когда вырасту, дойду до самого верха. И зажгу фонарь."
+      frames_en:
+        - "When I grow up I'm going all the way to the top. And I'll light the lantern."
+    - weight: 50
+      frames:
+        - "Мы играем в башню. Я страж, а ты должен меня обойти. Нет, сбоку!"
+      frames_en:
+        - "We're playing spire. I'm the guard and you have to get round me. No, from the side!"
+    - weight: 50
+      frames:
+        - "Мама не пускает к башне. Говорит, у башни свои дела."
+      frames_en:
+        - "Mum won't let me near the spire. She says the spire has its own business."
+- key: X07
+  id: spr_go
+  title: "Going Up the Spire"
+  category: home
+  status: active
+  trigger: "a villager gets ready for an expedition into the spire"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Хлеб есть, фонарь есть, верёвка есть. Храбрость… ну, по дороге наберу."
+      frames_en:
+        - "Bread, check. Lantern, check. Rope, check. Courage… I'll pick some up on the way."
+    - weight: 50
+      frames:
+        - "Иду в башню. Если спросят — я ненадолго. Если спросит жена — я уже ушёл."
+      frames_en:
+        - "Off to the spire. If anyone asks, I won't be long. If my wife asks, I've already gone."
+    - weight: 50
+      frames:
+        - "Пора. Этажи сами себя не пройдут."
+      frames_en:
+        - "Time to go. Those floors won't climb themselves."
+    - weight: 50
+      frames:
+        - "[sigh] Сапоги новые, ноги старые. Ладно, пошли."
+      frames_en:
+        - "[sigh] New boots, old legs. Right, let's go."
+    - weight: 50
+      frames:
+        - "Принесу оттуда что-нибудь красивое. Или хотя бы вернусь сам."
+      frames_en:
+        - "I'll bring back something beautiful. Or at least bring back myself."
+- key: X08
+  id: spr_go_w
+  title: "Going Up the Spire"
+  category: home
+  status: active
+  trigger: "a woman gets ready for an expedition into the spire"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ужин в печи, дети у соседки. Всё, я в башню."
+      frames_en:
+        - "Supper's in the oven, kids are at the neighbour's. Right, I'm off to the spire."
+    - weight: 50
+      frames:
+        - "Кто-то же должен посмотреть на те сады своими глазами. Вот я и посмотрю."
+      frames_en:
+        - "Somebody has to see those gardens with their own eyes. So I will."
+    - weight: 50
+      frames:
+        - "Мешок собран. Два раза проверила. Ладно, три."
+      frames_en:
+        - "Pack's ready. Checked it twice. Fine, three times."
+    - weight: 50
+      frames:
+        - "Не волнуйтесь за меня. Волнуйтесь за стражей."
+      frames_en:
+        - "Don't worry about me. Worry about the guards."
+    - weight: 50
+      frames:
+        - "Схожу, наберу осколков. На новые занавески как раз хватит."
+      frames_en:
+        - "I'll go and gather a few shards. That should cover new curtains."
+- key: X09
+  id: spr_in
+  title: "Into the Spire"
+  category: home
+  status: active
+  trigger: "a villager steps into the spire's gate"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну, ворота, не подведите."
+      frames_en:
+        - "Well, gate, don't let me down."
+    - weight: 50
+      frames:
+        - "[sigh] Глубокий вдох — и вперёд."
+      frames_en:
+        - "[sigh] Deep breath, and in we go."
+    - weight: 50
+      frames:
+        - "Щекотно! Почему ворота щекотные?"
+      frames_en:
+        - "That tickles! Why does the gate tickle?"
+    - weight: 50
+      frames:
+        - "До встречи, город. Не съешьте без меня все пироги."
+      frames_en:
+        - "See you, town. Don't eat all the pies without me."
+- key: X10
+  id: spr_in_w
+  title: "Into the Spire"
+  category: home
+  status: active
+  trigger: "a woman steps into the spire's gate"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Вперёд. И не оглядываться."
+      frames_en:
+        - "In we go. And no looking back."
+    - weight: 50
+      frames:
+        - "Ой, свет какой тёплый! Как в бане."
+      frames_en:
+        - "Oh, the light's so warm! Like a bathhouse."
+    - weight: 50
+      frames:
+        - "Вернусь к ужину. Ну, к послезавтрашнему."
+      frames_en:
+        - "I'll be back for supper. Well, the day after tomorrow's."
+    - weight: 50
+      frames:
+        - "[laughs] Если не вернусь — мой пирог никому не отдавать!"
+      frames_en:
+        - "[laughs] If I'm not back, nobody gets my pie!"
+- key: X11
+  id: spr_away
+  title: "Family Member in the Spire"
+  category: home
+  status: active
+  trigger: "a husband explains that his wife is away on an expedition"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Жена в башне. А я тут с детьми и с кастрюлей, и кастрюля побеждает."
+      frames_en:
+        - "My wife's up the spire. I'm here with the kids and a cooking pot, and the pot is winning."
+    - weight: 50
+      frames:
+        - "Она ушла наверх два дня назад. Я каждое утро смотрю на ворота."
+      frames_en:
+        - "She went up two days ago. Every morning I look at the gate."
+    - weight: 50
+      frames:
+        - "Моя в экспедиции. Обещала принести светящийся гриб. Надеюсь, не очень большой."
+      frames_en:
+        - "Mine's on an expedition. Promised to bring back a glowing mushroom. I hope it's not a big one."
+    - weight: 50
+      frames:
+        - "Её нет дома, а дом как будто стал больше. И тише."
+      frames_en:
+        - "She's not home, and the house feels bigger. And quieter."
+- key: X12
+  id: spr_away_w
+  title: "Family Member in the Spire"
+  category: home
+  status: active
+  trigger: "a wife explains that her husband is away on an expedition"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Муж в башне. Ушёл геройствовать, а дрова колоть оставил мне."
+      frames_en:
+        - "My husband's up the spire. Went off to be a hero and left me the firewood."
+    - weight: 50
+      frames:
+        - "[sigh] Обещал вернуться через два дня. Сегодня третий. Я не волнуюсь. Совсем."
+      frames_en:
+        - "[sigh] He promised two days. This is the third. I'm not worried. Not at all."
+    - weight: 50
+      frames:
+        - "Его нет, а я всё равно ставлю на стол три тарелки. Привычка."
+      frames_en:
+        - "He's away, and I still put out three plates. Habit."
+    - weight: 50
+      frames:
+        - "Где мой? В башне. Где ж ещё. Каменных стражей ему, видите ли, мало дома."
+      frames_en:
+        - "Where's mine? Up the spire, where else. Apparently the stone guards beat staying home."
+- key: X13
+  id: spr_away_k
+  title: "Family Member in the Spire"
+  category: home
+  status: active
+  trigger: "a child says that a parent is away in the spire"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Папа в башне! Он там с каменными великанами дерётся. Наверное, побеждает."
+      frames_en:
+        - "Dad's in the spire! He's fighting stone giants in there. He's probably winning."
+    - weight: 50
+      frames:
+        - "Мама ушла наверх. Обещала принести мне ракушку из воды, которая светится."
+      frames_en:
+        - "Mum went up. She promised to bring me a shell from the glowing water."
+    - weight: 50
+      frames:
+        - "Когда мама в башне, папа варит кашу. Каша получается… смелая."
+      frames_en:
+        - "When Mum's in the spire, Dad makes porridge. The porridge is… brave."
+    - weight: 50
+      frames:
+        - "Я каждый вечер машу башне. Вдруг папа увидит."
+      frames_en:
+        - "I wave at the spire every evening. Maybe Dad will see."
+- key: X14
+  id: spr_back
+  title: "Back From the Spire"
+  category: home
+  status: active
+  trigger: "a villager comes back out of the spire's gate"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Я вернулся! Живой, голодный и с историями."
+      frames_en:
+        - "I'm back! Alive, hungry, and full of stories."
+    - weight: 50
+      frames:
+        - "Солнце! Настоящее! Я по тебе скучал."
+      frames_en:
+        - "The sun! The real one! I missed you."
+    - weight: 50
+      frames:
+        - "Кто-нибудь, налейте мне супу, и я расскажу, какие там сады."
+      frames_en:
+        - "Somebody pour me some soup and I'll tell you about the gardens up there."
+    - weight: 50
+      frames:
+        - "Три дня внутри, а тут всё на месте. Даже обидно немножко."
+      frames_en:
+        - "Three days inside, and everything here's just where I left it. A bit insulting, really."
+    - weight: 50
+      frames:
+        - "[laughs] Ноги не держат, а смеяться хочется. Хорошо там!"
+      frames_en:
+        - "[laughs] My legs are gone and I can't stop grinning. It's good up there!"
+- key: X15
+  id: spr_back_w
+  title: "Back From the Spire"
+  category: home
+  status: active
+  trigger: "a woman comes back out of the spire's gate"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Вернулась! Кто-нибудь кормил моих кур?"
+      frames_en:
+        - "I'm back! Did anyone feed my hens?"
+    - weight: 50
+      frames:
+        - "Ох, как пахнет дымом и хлебом. Вот это и есть дом."
+      frames_en:
+        - "Oh, it smells of smoke and bread. That's what home is."
+    - weight: 50
+      frames:
+        - "Видела ледяной зал, а над ним сияние. Расскажу — не поверите."
+      frames_en:
+        - "I saw a hall of ice with lights in the sky above it. You won't believe me."
+    - weight: 50
+      frames:
+        - "Я дома. Теперь мне нужна ванна, чай и неделя тишины."
+      frames_en:
+        - "I'm home. Now I need a bath, a cup of tea and a week of quiet."
+    - weight: 50
+      frames:
+        - "Все целы? Я цела. Ну, вот и хорошо."
+      frames_en:
+        - "Is everyone all right? I'm all right. Good, then."
+- key: X16
+  id: spr_tired
+  title: "Back From the Spire Tired"
+  category: home
+  status: active
+  trigger: "a villager comes back from the spire early, worn out, with little to show for it"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Вернулся раньше. Стражи сегодня были бодрее меня."
+      frames_en:
+        - "[sigh] Back early. The guards had more go in them than I did today."
+    - weight: 50
+      frames:
+        - "Принёс два медяка и синяк. Синяк, между прочим, большой."
+      frames_en:
+        - "Brought back two coppers and a bruise. A big bruise, mind you."
+    - weight: 50
+      frames:
+        - "Башня победила. Пока. Мне бы поспать дня два, и я ей покажу."
+      frames_en:
+        - "The spire won. For now. Give me two days' sleep and I'll show it."
+    - weight: 50
+      frames:
+        - "Ноги гудят, как те стены наверху. Никому не говорите, что я хромаю."
+      frames_en:
+        - "My legs are humming like those walls up there. Don't tell anyone I'm limping."
+    - weight: 50
+      frames:
+        - "Не геройство, а позор. Ладно, отдохну, и снова пойду."
+      frames_en:
+        - "Not much of a hero. Fine. I'll rest, and I'll go again."
+- key: X17
+  id: spr_tired_w
+  title: "Back From the Spire Tired"
+  category: home
+  status: active
+  trigger: "a woman comes back from the spire early, worn out, with little to show for it"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Вернулась раньше. Стражи там сегодня не в духе. Я теперь тоже."
+      frames_en:
+        - "[sigh] Back early. The guards were in a mood today. Now so am I."
+    - weight: 50
+      frames:
+        - "Добычи — горстка. Зато какие мозоли! Есть чем похвастаться."
+      frames_en:
+        - "A handful of loot. But what blisters! Something to show off, at least."
+    - weight: 50
+      frames:
+        - "Не трогайте меня до завтра. Я сплю. Даже если стою."
+      frames_en:
+        - "Don't touch me till tomorrow. I'm asleep. Even if I'm standing up."
+    - weight: 50
+      frames:
+        - "Башня два, я ноль. Ничего, счёт ещё не окончен."
+      frames_en:
+        - "Spire two, me nil. Never mind, the game's not over."
+    - weight: 50
+      frames:
+        - "Пустой мешок легче нести. Хоть в этом повезло."
+      frames_en:
+        - "An empty pack is lighter to carry. Lucky me, in that at least."
+- key: X18
+  id: spr_tired_k
+  title: "Back From the Spire Tired"
+  category: home
+  status: active
+  trigger: "a child sees a parent come back from the spire early and tired"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Папа вернулся и уснул прямо в сапогах. Я сапоги снимать не буду, они страшные."
+      frames_en:
+        - "Dad came back and fell asleep in his boots. I'm not taking the boots off, they're scary."
+    - weight: 50
+      frames:
+        - "Мама говорит, башня сегодня была сильнее. Завтра будет слабее, да?"
+      frames_en:
+        - "Mum says the spire was stronger today. It'll be weaker tomorrow, right?"
+    - weight: 50
+      frames:
+        - "Тише! Папа отдыхает после башни. Он храпит, значит, всё хорошо."
+      frames_en:
+        - "Shh! Dad's resting after the spire. He's snoring, so he's fine."
+    - weight: 50
+      frames:
+        - "Подарков нет, зато мама дома. Это лучше подарка."
+      frames_en:
+        - "No presents, but Mum's home. That's better than presents."
+- key: X19
+  id: spr_find
+  title: "Back With a Find"
+  category: home
+  status: active
+  trigger: "a villager comes back from the spire with something found inside"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[proud] Смотрите, что я нашёл! Не знаю, что это, но оно красивое."
+      frames_en:
+        - "[proud] Look what I found! No idea what it is, but it's beautiful."
+    - weight: 50
+      frames:
+        - "Стул Зодчих! Ну, мы так его зовём. Сидеть на нём боюсь, смотреть — нравится."
+      frames_en:
+        - "A Builders' chair! Well, that's what we call it. I'm scared to sit on it, I love looking at it."
+    - weight: 50
+      frames:
+        - "Притащил с самого этажа. Спина болит, но оно того стоило."
+      frames_en:
+        - "Carried it all the way down from the floor. My back hurts, but it was worth it."
+    - weight: 50
+      frames:
+        - "Это в дом. Жена скажет «куда», а я скажу «в угол». Посмотрим, кто победит."
+      frames_en:
+        - "This goes in the house. My wife will say 'where', and I'll say 'the corner'. We'll see who wins."
+    - weight: 50
+      frames:
+        - "Осколки и пара монет. Ещё одна такая ходка — и куплю жене новую шаль."
+      frames_en:
+        - "Shards and a few coins. One more trip like this and I'm buying my wife a new shawl."
+- key: X20
+  id: spr_find_w
+  title: "Back With a Find"
+  category: home
+  status: active
+  trigger: "a woman comes back from the spire with something found inside"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[happy] Смотрите, какая лампа! Её делали люди, которые знали толк в свете."
+      frames_en:
+        - "[happy] Look at this lamp! It was made by people who knew about light."
+    - weight: 50
+      frames:
+        - "Нашла на этаже с вишнями. Пахнет до сих пор."
+      frames_en:
+        - "Found it on the floor with the cherries. It still smells of them."
+    - weight: 50
+      frames:
+        - "Это не трогать! Это для гостиной. Особенно мужу не трогать."
+      frames_en:
+        - "Nobody touch this! It's for the parlour. Especially not my husband."
+    - weight: 50
+      frames:
+        - "Монеты, осколки и вот это. Что это — не знаю, но оно моё."
+      frames_en:
+        - "Coins, shards and this. What it is I don't know, but it's mine."
+- key: X21
+  id: spr_clothes
+  title: "New Clothes From the Spire"
+  category: home
+  status: active
+  trigger: "a villager shows off new clothes bought with expedition money"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[proud] Как вам? Это на деньги из башни. Чувствую себя мэром."
+      frames_en:
+        - "[proud] How do I look? Spire money. I feel like the mayor."
+    - weight: 50
+      frames:
+        - "Новый кафтан! Старый остался на третьем этаже, у одной гончей."
+      frames_en:
+        - "A new coat! The old one stayed on the third floor, with a certain hound."
+    - weight: 50
+      frames:
+        - "Не смейтесь. Это модно. Наверное. Портной сказал, что модно."
+      frames_en:
+        - "Don't laugh. This is fashionable. Probably. The tailor said it was."
+    - weight: 50
+      frames:
+        - "В таком и на этаж не стыдно, и на свадьбу."
+      frames_en:
+        - "Fit for a floor of the spire and for a wedding."
+- key: X22
+  id: spr_clothes_w
+  title: "New Clothes From the Spire"
+  category: home
+  status: active
+  trigger: "a woman shows off new clothes bought with expedition money"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[happy] Новое платье! Заработала сама, на этажах."
+      frames_en:
+        - "[happy] A new dress! Earned it myself, up on the floors."
+    - weight: 50
+      frames:
+        - "Цвет как у того сияния во льду. Портной долго подбирал."
+      frames_en:
+        - "The colour's like the lights over the ice. The tailor took ages to match it."
+    - weight: 50
+      frames:
+        - "Пусть соседки завидуют. Пусть сначала до третьего этажа дойдут."
+      frames_en:
+        - "Let the neighbours be jealous. Let them get to the third floor first."
+    - weight: 50
+      frames:
+        - "Красиво, правда? Муж сказал «ничего». Это у него высшая похвала."
+      frames_en:
+        - "Pretty, isn't it? My husband said 'not bad'. That's his highest praise."
+- key: X23
+  id: spr_clothes_k
+  title: "New Clothes From the Spire"
+  category: home
+  status: active
+  trigger: "a child shows off new clothes a parent bought with expedition money"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Смотри, у меня новое! Папа купил на деньги из башни!"
+      frames_en:
+        - "Look, I've got new clothes! Dad bought them with spire money!"
+    - weight: 50
+      frames:
+        - "Это как у настоящего героя. Только поменьше."
+      frames_en:
+        - "It's like a real hero's. Only smaller."
+    - weight: 50
+      frames:
+        - "Мама сказала не пачкать. Это очень трудно."
+      frames_en:
+        - "Mum said not to get it dirty. That's very hard."
+    - weight: 50
+      frames:
+        - "Теперь мне нужен свой меч. Деревянный. Для начала."
+      frames_en:
+        - "Now I need my own sword. A wooden one. To start with."
+- key: X24
+  id: spr_chap
+  title: "Player Cleared a Chapter"
+  category: home
+  status: active
+  trigger: "rumour in town after a player defeats a Keeper of the spire"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Слыхали? Наш сосед одолел Хранителя! Такого, говорят, ростом с дом."
+      frames_en:
+        - "Heard? Our neighbour beat a Keeper! As big as a house, they say."
+    - weight: 50
+      frames:
+        - "Башня ночью звенела, как колокол. Значит, кто-то прошёл ещё десять этажей."
+      frames_en:
+        - "The spire rang like a bell last night. Somebody's got through another ten floors."
+    - weight: 50
+      frames:
+        - "[impressed] Хранителя, один на один. Я бы и со стражем не справился."
+      frames_en:
+        - "[impressed] A Keeper, one on one. I couldn't even handle a guard."
+    - weight: 50
+      frames:
+        - "Надо будет угостить героя в таверне. За мой счёт. Ну, частично за мой."
+      frames_en:
+        - "We'll have to buy our hero a drink at the tavern. On me. Well, partly on me."
+    - weight: 50
+      frames:
+        - "Говорят, наверху открылась новая глава. Хотел бы я знать, что там."
+      frames_en:
+        - "They say a new chapter's opened up there. I'd like to know what's in it."
+- key: X25
+  id: spr_chap_w
+  title: "Player Cleared a Chapter"
+  category: home
+  status: active
+  trigger: "a woman passes on the rumour that a player defeated a Keeper of the spire"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Весь рынок только об этом и говорит. Хранитель повержен! Цены, правда, не упали."
+      frames_en:
+        - "The whole market's talking about it. A Keeper's fallen! Prices haven't, though."
+    - weight: 50
+      frames:
+        - "Я знала, что у них получится. Я всегда знаю. Ну, почти всегда."
+      frames_en:
+        - "I knew they'd do it. I always know. Well, nearly always."
+    - weight: 50
+      frames:
+        - "Башня стала выше, ты видел? Это от того, что Хранителя одолели."
+      frames_en:
+        - "The spire got taller, did you see? That's because the Keeper fell."
+    - weight: 50
+      frames:
+        - "Испеку герою пирог. С вишней. Говорят, там наверху вишни."
+      frames_en:
+        - "I'll bake our hero a pie. Cherry. They say there are cherries up there."
+- key: X26
+  id: spr_chap_k
+  title: "Player Cleared a Chapter"
+  category: home
+  status: active
+  trigger: "a child hears that a player defeated a Keeper of the spire"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Хранителя победили! Самого большого! А можно посмотреть на трофей?"
+      frames_en:
+        - "[gasp] They beat the Keeper! The biggest one! Can I see the trophy?"
+    - weight: 50
+      frames:
+        - "Когда вырасту, тоже буду побеждать Хранителей. Сразу двоих."
+      frames_en:
+        - "When I grow up I'll beat Keepers too. Two at once."
+    - weight: 50
+      frames:
+        - "Мы теперь играем в Хранителя. Я Хранитель. Я падаю очень красиво."
+      frames_en:
+        - "Now we're playing Keeper. I'm the Keeper. I fall down really well."
+    - weight: 50
+      frames:
+        - "А правда, что Хранитель рассыпался светом? Как фейерверк?"
+      frames_en:
+        - "Is it true the Keeper turned into light? Like fireworks?"
+- key: X27
+  id: spr_grow
+  title: "The Spire Grew"
+  category: home
+  status: active
+  trigger: "the spire beside the town grows taller after floors are opened"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Опять подросла! Скоро будем задирать голову, чтобы увидеть верх."
+      frames_en:
+        - "It's grown again! Soon we'll have to tip our heads right back to see the top."
+    - weight: 50
+      frames:
+        - "Слышал ночью грохот? Это башня. Растёт, как тесто на дрожжах."
+      frames_en:
+        - "Hear that rumble last night? That was the spire. Rising like dough."
+    - weight: 50
+      frames:
+        - "Новый ярус, новый балкон. Красиво кладёт, ничего не скажешь."
+      frames_en:
+        - "A new tier, a new balcony. It lays stone beautifully, I'll give it that."
+    - weight: 50
+      frames:
+        - "Скол поднимается всё выше. Будто башня вспоминает, какой была."
+      frames_en:
+        - "The broken top keeps rising. As if the spire's remembering how tall it used to be."
+- key: X28
+  id: spr_grow_w
+  title: "The Spire Grew"
+  category: home
+  status: active
+  trigger: "a woman notices that the spire has grown taller"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Башня выросла, а мой огород опять в тени. Ну ничего, переживу."
+      frames_en:
+        - "The spire's grown, and my vegetable patch is in the shade again. Never mind, I'll live."
+    - weight: 50
+      frames:
+        - "Смотрите, какая высокая! Наши, значит, далеко забрались."
+      frames_en:
+        - "Look how tall it is! Ours must have climbed a long way."
+    - weight: 50
+      frames:
+        - "Свет в жиле стал ярче. Будто у башни сердце бьётся быстрее."
+      frames_en:
+        - "The light in the vein's brighter. Like the spire's heart is beating faster."
+    - weight: 50
+      frames:
+        - "Каждый раз думаю — выше уже некуда. И каждый раз ошибаюсь."
+      frames_en:
+        - "Every time I think it can't get any taller. And every time I'm wrong."
+- key: X29
+  id: spr_grow_k
+  title: "The Spire Grew"
+  category: home
+  status: active
+  trigger: "a child notices that the spire has grown taller"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Башня выше меня в тысячу раз! А вчера была в девятьсот."
+      frames_en:
+        - "The spire's a thousand times taller than me! Yesterday it was nine hundred."
+    - weight: 50
+      frames:
+        - "Она растёт быстрее, чем я. Так нечестно."
+      frames_en:
+        - "It's growing faster than me. That's not fair."
+    - weight: 50
+      frames:
+        - "Летающие камни поднялись выше! Я считаю их каждое утро."
+      frames_en:
+        - "The flying stones have gone up higher! I count them every morning."
+    - weight: 50
+      frames:
+        - "Если она дорастёт до облаков, можно будет потрогать облако?"
+      frames_en:
+        - "If it grows up to the clouds, can we touch a cloud?"
+- key: X30
+  id: spr_beacon
+  title: "The Beacon Is Lit"
+  category: home
+  status: active
+  trigger: "the beacon at the top of the spire is lit after the hundredth floor"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Фонарь горит! На самом верху! Его видно, наверное, за сто деревень."
+      frames_en:
+        - "[gasp] The lantern's lit! At the very top! You can probably see it a hundred villages away."
+    - weight: 50
+      frames:
+        - "Венец целый. Скола больше нет. Я не знаю почему, но мне хочется плакать."
+      frames_en:
+        - "The crown's whole. No more break. I don't know why, but I want to cry."
+    - weight: 50
+      frames:
+        - "Весь город на площади. Никто не спит. Кто бы спал в такую ночь?"
+      frames_en:
+        - "The whole town's in the square. Nobody's sleeping. Who could sleep on a night like this?"
+    - weight: 50
+      frames:
+        - "Говорят, где-то далеко такой же фонарь мигнул в ответ. Я в это верю."
+      frames_en:
+        - "They say somewhere far off another lantern blinked back. I believe it."
+    - weight: 50
+      frames:
+        - "Столько этажей. Столько сапог стоптано. И вот — свет."
+      frames_en:
+        - "So many floors. So many boots worn through. And now — light."
+- key: X31
+  id: spr_beacon_w
+  title: "The Beacon Is Lit"
+  category: home
+  status: active
+  trigger: "a woman sees the beacon at the top of the spire lit"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[happy sigh] Как красиво. Будто город наконец-то кому-то ответил."
+      frames_en:
+        - "[happy sigh] How beautiful. Like the town has finally answered someone."
+    - weight: 50
+      frames:
+        - "Тёплый свет. Как лампа на столе, когда читаешь вечером."
+      frames_en:
+        - "Such warm light. Like the lamp on the table when you read in the evening."
+    - weight: 50
+      frames:
+        - "Я поставлю свечу на окно. Пусть фонарь видит, что мы тоже светим."
+      frames_en:
+        - "I'll put a candle in the window. Let the lantern see we're shining too."
+    - weight: 50
+      frames:
+        - "Мы построили город, а город зажёг звезду. Расскажу внукам."
+      frames_en:
+        - "We built a town, and the town lit a star. I'll tell my grandchildren."
+- key: X32
+  id: spr_beacon_k
+  title: "The Beacon Is Lit"
+  category: home
+  status: active
+  trigger: "a child sees the beacon at the top of the spire lit"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Фонарь зажёгся! Жёлтый-жёлтый! Много жёлтого!"
+      frames_en:
+        - "The lantern's lit! Yellow, yellow! Lots of yellow!"
+    - weight: 50
+      frames:
+        - "Можно сегодня не спать? Ну пожалуйста, это же фонарь!"
+      frames_en:
+        - "Can we stay up tonight? Please, it's the lantern!"
+    - weight: 50
+      frames:
+        - "Я машу фонарю обеими руками. Вдруг там кто-то есть."
+      frames_en:
+        - "I'm waving at the lantern with both arms. Maybe somebody's up there."
+    - weight: 50
+      frames:
+        - "Теперь нашу башню видят другие города. Привет, другие города!"
+      frames_en:
+        - "Now other towns can see our spire. Hello, other towns!"

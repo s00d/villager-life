@@ -1,0 +1,13 @@
+# Fresh taiga and savanna villages of "Новый мир" (found with /locate from 60000 60000), three days each with a
+# creative player a little above the bell: the "vnap death"/"vnap gone"/"vnap shelter" lines of the client log.
+/gamemode creative
+/tp Dev 60720 130 61696
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+/tp Dev 59504 110 59312
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96

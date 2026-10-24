@@ -1,0 +1,471 @@
+# The town's storyteller (TownStory): a lost child, a storm, a feast, an illness, a neighbours' dispute.
+
+- key: V01
+  id: st_lost
+  title: "Where Is My Child"
+  category: home
+  status: active
+  trigger: "a mother finds her child gone (TownStory: a lost child)"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Где мой малыш? Только что был тут!"
+      frames_en:
+        - "[gasp] Where's my little one? They were right here!"
+    - weight: 50
+      frames:
+        - "Кто-нибудь видел моего ребёнка? Ну пожалуйста!"
+      frames_en:
+        - "Has anyone seen my child? Please!"
+    - weight: 50
+      frames:
+        - "[sigh] Опять убежал(а) играть... А если в лес?"
+      frames_en:
+        - "[sigh] Off playing again... What if they went into the woods?"
+- key: V02
+  id: st_lost_m
+  title: "Where Is My Child"
+  category: home
+  status: active
+  trigger: "a father finds his child gone"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ребёнка не видели? Маленький такой, шустрый."
+      frames_en:
+        - "Seen my child? Little one, quick as anything."
+    - weight: 50
+      frames:
+        - "[sigh] Пойду искать. Далеко уйти не мог(ла)."
+      frames_en:
+        - "[sigh] I'll go and look. They can't have gone far."
+- key: V03
+  id: st_found
+  title: "Kid Is Found"
+  category: home
+  status: active
+  trigger: "a lost child is found, by the player or by the family"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я не терялся! Я просто далеко гулял!"
+      frames_en:
+        - "I wasn't lost! I just went for a long walk!"
+    - weight: 50
+      frames:
+        - "[sniff] Я хочу домой. Там мама."
+      frames_en:
+        - "[sniff] I want to go home. Mum's there."
+    - weight: 50
+      frames:
+        - "Ты меня нашёл! Мы в прятки играли?"
+      frames_en:
+        - "You found me! Were we playing hide and seek?"
+- key: V04
+  id: st_thanks
+  title: "Thanks for Finding the Child"
+  category: home
+  status: active
+  trigger: "the mother thanks the player who found her lost child"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Спасибо тебе! Я уже не знала, что думать."
+      frames_en:
+        - "Thank you! I didn't know what to think any more."
+    - weight: 50
+      frames:
+        - "[sigh] Нашёлся... Ты наш спаситель, сосед."
+      frames_en:
+        - "[sigh] Found... You're our saviour, neighbour."
+- key: V05
+  id: st_thanks_m
+  title: "Thanks for Finding the Child"
+  category: home
+  status: active
+  trigger: "the father thanks the player who found his lost child"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Спасибо, сосед. Я твой должник."
+      frames_en:
+        - "Thank you, neighbour. I owe you one."
+    - weight: 50
+      frames:
+        - "Нашёлся! Ну, теперь только за руку гулять будешь."
+      frames_en:
+        - "Found! Well, from now on you walk holding my hand."
+- key: V06
+  id: st_storm
+  title: "Storm Took the Roof"
+  category: home
+  status: active
+  trigger: "a storm tore blocks off a villager's roof (TownStory)"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[groan] Ну вот, крышу сорвало. Опять чинить."
+      frames_en:
+        - "[groan] There, the roof's gone. Mending again."
+    - weight: 50
+      frames:
+        - "Ветер-то какой! Половина крыши в соседском огороде."
+      frames_en:
+        - "What a wind! Half my roof's in the neighbour's garden."
+    - weight: 50
+      frames:
+        - "Капает прямо на кровать. Завтра залатаю."
+      frames_en:
+        - "It's dripping right on the bed. I'll patch it tomorrow."
+- key: V07
+  id: st_storm_w
+  title: "Storm Took the Roof"
+  category: home
+  status: active
+  trigger: "a storm tore blocks off a woman's roof"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Крыша! Говорила же — прибей покрепче!"
+      frames_en:
+        - "[gasp] The roof! I said nail it down properly!"
+    - weight: 50
+      frames:
+        - "Теперь в спальне видно небо. Романтично, но мокро."
+      frames_en:
+        - "Now you can see the sky from the bedroom. Romantic, but wet."
+    - weight: 50
+      frames:
+        - "Ой, всё промокнет... Надо чинить, и поскорее."
+      frames_en:
+        - "Oh, everything will get soaked... It needs mending, and soon."
+- key: V08
+  id: st_feast
+  title: "Mayor Opens the Feast"
+  category: home
+  status: active
+  trigger: "the mayor opens a harvest feast on the square"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Друзья! Урожай собран — пируем! Всем к площади!"
+      frames_en:
+        - "Friends! The harvest is in, so let's feast! Everyone to the square!"
+    - weight: 50
+      frames:
+        - "[clears throat] Сегодня никаких дел. Сегодня — праздник!"
+      frames_en:
+        - "[clears throat] No work today. Today is a feast!"
+    - weight: 50
+      frames:
+        - "Ешьте, пейте, танцуйте! Казна угощает. Немножко."
+      frames_en:
+        - "Eat, drink, dance! The treasury is paying. A little."
+- key: V09
+  id: st_feast_w
+  title: "Mayor Opens the Feast"
+  category: home
+  status: active
+  trigger: "a woman mayor opens a harvest feast"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Дорогие мои! Сегодня праздник урожая!"
+      frames_en:
+        - "My dears! Today is the harvest feast!"
+    - weight: 50
+      frames:
+        - "Все на площадь! Пироги стынут."
+      frames_en:
+        - "Everyone to the square! The pies are getting cold."
+- key: V10
+  id: st_party
+  title: "Harvest Feast"
+  category: home
+  status: active
+  trigger: "a villager enjoys the harvest feast on the square"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[laughs] Вот это я понимаю — праздник!"
+      frames_en:
+        - "[laughs] Now that's what I call a feast!"
+    - weight: 50
+      frames:
+        - "Кто испёк этот пирог? Хочу ещё кусок."
+      frames_en:
+        - "Who baked this pie? I want another slice."
+    - weight: 50
+      frames:
+        - "Музыка, еда, соседи... Хорошо живём!"
+      frames_en:
+        - "Music, food, neighbours... We live well!"
+- key: V11
+  id: st_party_w
+  title: "Harvest Feast"
+  category: home
+  status: active
+  trigger: "a woman enjoys the harvest feast"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[laughs] Давно так не веселилась!"
+      frames_en:
+        - "[laughs] I haven't had this much fun in ages!"
+    - weight: 50
+      frames:
+        - "Потанцуем? Ну давай, не стесняйся!"
+      frames_en:
+        - "Shall we dance? Come on, don't be shy!"
+    - weight: 50
+      frames:
+        - "Какой стол! Вся деревня старалась."
+      frames_en:
+        - "What a spread! The whole village pitched in."
+- key: V12
+  id: st_treat
+  title: "Thanks for the Treat"
+  category: home
+  status: active
+  trigger: "a player brings food to the feast or a gift"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "О, угощение! Спасибо, сосед, садись с нами."
+      frames_en:
+        - "Oh, a treat! Thanks, neighbour, sit with us."
+    - weight: 50
+      frames:
+        - "Вот это щедрость! За тебя, сосед!"
+      frames_en:
+        - "How generous! To you, neighbour!"
+- key: V13
+  id: st_treat_w
+  title: "Thanks for the Treat"
+  category: home
+  status: active
+  trigger: "a player brings food to a woman at the feast"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ой, как мило! Поставлю на общий стол."
+      frames_en:
+        - "Oh, how kind! I'll put it on the table for everyone."
+    - weight: 50
+      frames:
+        - "Спасибо! Ты настоящий сосед."
+      frames_en:
+        - "Thank you! You're a true neighbour."
+- key: V14
+  id: st_sick
+  title: "Feels Unwell"
+  category: home
+  status: active
+  trigger: "a villager has fallen ill (TownStory) and stays near home"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[cough] Что-то мне нехорошо. Полежу."
+      frames_en:
+        - "[cough] I don't feel well. I'll lie down."
+    - weight: 50
+      frames:
+        - "[sneezes] Простыл. Наверное, под дождём ходил."
+      frames_en:
+        - "[sneezes] Caught a cold. Must have been the rain."
+    - weight: 50
+      frames:
+        - "[groan] Голова кружится. Мёду бы сейчас."
+      frames_en:
+        - "[groan] My head's spinning. Some honey would help."
+- key: V15
+  id: st_sick_w
+  title: "Feels Unwell"
+  category: home
+  status: active
+  trigger: "a woman has fallen ill"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[cough] Ох, разболелась я. Тёплого бы чего."
+      frames_en:
+        - "[cough] Oh, I've fallen ill. Something warm would help."
+    - weight: 50
+      frames:
+        - "[sneezes] Простуда. Как не вовремя!"
+      frames_en:
+        - "[sneezes] A cold. Such bad timing!"
+    - weight: 50
+      frames:
+        - "[sigh] Сил нет. Похлёбки бы."
+      frames_en:
+        - "[sigh] No strength at all. Some stew would help."
+- key: V16
+  id: st_soup_w
+  title: "Brings Soup"
+  category: home
+  status: active
+  trigger: "a wife brings soup to her sick husband"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Вот, горячий суп. Ешь и не спорь."
+      frames_en:
+        - "Here, hot soup. Eat it and don't argue."
+    - weight: 50
+      frames:
+        - "Лежи, лежи. Я всё сделаю сама."
+      frames_en:
+        - "Stay in bed. I'll take care of everything."
+- key: V17
+  id: st_soup
+  title: "Brings Soup"
+  category: home
+  status: active
+  trigger: "a husband brings soup to his sick wife"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Я сварил суп. Ну, попытался."
+      frames_en:
+        - "I made soup. Well, I tried."
+    - weight: 50
+      frames:
+        - "Отдыхай. Дом на мне. Как-нибудь справлюсь."
+      frames_en:
+        - "Rest. I'll handle the house. Somehow."
+- key: V18
+  id: st_well
+  title: "Feels Better"
+  category: home
+  status: active
+  trigger: "a sick villager gets well again"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ух, отпустило! Снова как новенький."
+      frames_en:
+        - "Phew, it's passed! Good as new."
+    - weight: 50
+      frames:
+        - "Спасибо за снадобье. Сразу полегчало!"
+      frames_en:
+        - "Thanks for the remedy. I feel better already!"
+- key: V19
+  id: st_well_w
+  title: "Feels Better"
+  category: home
+  status: active
+  trigger: "a sick woman gets well again"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ой, полегчало! Пора за дела."
+      frames_en:
+        - "Oh, I feel better! Back to work."
+    - weight: 50
+      frames:
+        - "Спасибо тебе, выручил. Здорова!"
+      frames_en:
+        - "Thank you, you helped me out. I'm well!"
+- key: V20
+  id: st_dispute
+  title: "Neighbours Quarrel"
+  category: home
+  status: active
+  trigger: "two heads of houses quarrel at the bell (TownStory)"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Твоя курица опять в моём огороде!"
+      frames_en:
+        - "Your chicken's in my garden again!"
+    - weight: 50
+      frames:
+        - "Это мой забор! Ты его на полблока сдвинул!"
+      frames_en:
+        - "That's my fence! You moved it half a block!"
+    - weight: 50
+      frames:
+        - "А кто по ночам молотком стучит? Я спать хочу!"
+      frames_en:
+        - "And who's hammering all night? I want to sleep!"
+- key: V21
+  id: st_dispute_w
+  title: "Neighbours Quarrel"
+  category: home
+  status: active
+  trigger: "two women heads of houses quarrel"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Твоя собака опять копала мои грядки!"
+      frames_en:
+        - "Your dog dug up my beds again!"
+    - weight: 50
+      frames:
+        - "Бельё на моей верёвке! На моей!"
+      frames_en:
+        - "Your washing's on my line! Mine!"
+    - weight: 50
+      frames:
+        - "Я всё мэру расскажу, так и знай!"
+      frames_en:
+        - "I'll tell the mayor everything, mark my words!"
+- key: V22
+  id: st_judge
+  title: "Mayor Settles a Dispute"
+  category: home
+  status: active
+  trigger: "the mayor settles two neighbours' quarrel"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Тихо, тихо! Курицу — домой, забор — на место. Мир!"
+      frames_en:
+        - "Quiet, quiet! The chicken goes home, the fence goes back. Peace!"
+    - weight: 50
+      frames:
+        - "[sigh] Пожмите руки. И чтобы я этого больше не слышал."
+      frames_en:
+        - "[sigh] Shake hands. And I don't want to hear about it again."
+- key: V23
+  id: st_judge_w
+  title: "Mayor Settles a Dispute"
+  category: home
+  status: active
+  trigger: "a woman mayor settles two neighbours' quarrel"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Хватит! Оба виноваты. Миритесь."
+      frames_en:
+        - "Enough! You're both to blame. Make up."
+    - weight: 50
+      frames:
+        - "[sigh] Взрослые люди, а ругаетесь, как дети."
+      frames_en:
+        - "[sigh] Grown folk, and you squabble like children."

@@ -1,0 +1,703 @@
+# Phase M — the village market (village/market): the shopkeeper and the stall, customers, wages paid by the mayor,
+# the treasury's help, the caravan. A man keeper speaks as `villager`, a woman as `woman`; the mayor as `mayor`/`woman`.
+
+- key: M01
+  id: m_take
+  title: "Shopkeeper Takes the Stall"
+  category: home
+  status: active
+  trigger: "a villager without a trade becomes the village's shopkeeper"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Лавочник? Я? Ну, считать я умею. До десяти точно."
+      frames_en:
+        - "Shopkeeper? Me? Well, I can count. Up to ten, at least."
+    - weight: 50
+      frames:
+        - "[happy] Своя лавка! Всю жизнь мечтал торговать хлебом."
+      frames_en:
+        - "[happy] A stall of my own! I've dreamed of selling bread all my life."
+    - weight: 50
+      frames:
+        - "Деревня выросла — значит, ей нужна лавка. И я её поставлю."
+      frames_en:
+        - "The village has grown, so it needs a stall. And I'll be the one to build it."
+- key: M02
+  id: m_w_take
+  title: "Shopkeeper Takes the Stall"
+  category: home
+  status: active
+  trigger: "a woman without a trade becomes the village's shopkeeper"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Лавочница! Ну наконец-то мне доверили кассу."
+      frames_en:
+        - "Shopkeeper! At last someone trusts me with the till."
+    - weight: 50
+      frames:
+        - "[happy] Своя лавка! Вот теперь заживём."
+      frames_en:
+        - "[happy] A stall of my own! Now we'll get on in life."
+    - weight: 50
+      frames:
+        - "Торговать буду честно. Почти всегда."
+      frames_en:
+        - "I'll trade honestly. Nearly always."
+- key: M03
+  id: m_lay
+  title: "Shopkeeper Lays Out the Stall"
+  category: home
+  status: active
+  trigger: "the shopkeeper starts building the stall near the bell"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вот здесь, у колокола, все будут проходить мимо. Идеально."
+      frames_en:
+        - "Right here by the bell, everyone walks past. Perfect."
+    - weight: 50
+      frames:
+        - "Прилавок, навес, пара бочек. Что может пойти не так?"
+      frames_en:
+        - "A counter, an awning, a couple of barrels. What could go wrong?"
+    - weight: 50
+      frames:
+        - "[grunts] Лавка сама себя не построит."
+      frames_en:
+        - "[grunts] The stall won't build itself."
+- key: M04
+  id: m_w_lay
+  title: "Shopkeeper Lays Out the Stall"
+  category: home
+  status: active
+  trigger: "the shopkeeper starts building the stall near the bell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Навес будет в полоску. Красный с белым — это я решила."
+      frames_en:
+        - "The awning will be striped. Red and white, I've decided."
+    - weight: 50
+      frames:
+        - "Тут, у колокола, место бойкое. Строю."
+      frames_en:
+        - "It's busy here by the bell. I'm building."
+    - weight: 50
+      frames:
+        - "Ну-ка, где мои доски? Лавка ждать не будет."
+      frames_en:
+        - "Now, where are my planks? The stall won't wait."
+- key: M05
+  id: m_noroom
+  title: "Shopkeeper Has No Room for the Stall"
+  category: home
+  status: active
+  trigger: "no place for the stall near the bell; it looks again tomorrow"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] У колокола ни клочка свободной земли. Завтра поищу ещё."
+      frames_en:
+        - "[sigh] Not a scrap of free ground by the bell. I'll look again tomorrow."
+    - weight: 50
+      frames:
+        - "Всё застроено! Где мне ставить лавку, на крыше?"
+      frames_en:
+        - "Everything's built over! Where do I put the stall, on a roof?"
+    - weight: 50
+      frames:
+        - "Места нет. Торговать пока буду с рук."
+      frames_en:
+        - "No room. I'll have to trade from my hands for now."
+- key: M06
+  id: m_w_noroom
+  title: "Shopkeeper Has No Room for the Stall"
+  category: home
+  status: active
+  trigger: "no place for the stall near the bell; it looks again tomorrow"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Ни одного свободного угла у колокола. Поищу завтра."
+      frames_en:
+        - "[sigh] Not one free corner by the bell. I'll look tomorrow."
+    - weight: 50
+      frames:
+        - "Тесно у нас. Лавка подождёт, пока место найдётся."
+      frames_en:
+        - "It's cramped here. The stall will wait till there's room."
+    - weight: 50
+      frames:
+        - "Опять всё занято. Ну что за деревня!"
+      frames_en:
+        - "Taken again. What a village!"
+- key: M07
+  id: m_open
+  title: "Shopkeeper Opens the Stall"
+  category: home
+  status: active
+  trigger: "the stall is finished and opens with full shelves"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[proud] Лавка открыта! Хлеб, свечи, кровати — подходи, покупай!"
+      frames_en:
+        - "[proud] The stall is open! Bread, candles, beds, come and buy!"
+    - weight: 50
+      frames:
+        - "Готово! Полки полные, касса звенит."
+      frames_en:
+        - "Done! The shelves are full and the till jingles."
+    - weight: 50
+      frames:
+        - "Добро пожаловать в лучшую лавку деревни. Она же единственная."
+      frames_en:
+        - "Welcome to the best stall in the village. Also the only one."
+- key: M08
+  id: m_w_open
+  title: "Shopkeeper Opens the Stall"
+  category: home
+  status: active
+  trigger: "the stall is finished and opens with full shelves"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[happy] Открыто! Заходите, у нас всё есть."
+      frames_en:
+        - "[happy] We're open! Come in, we've got everything."
+    - weight: 50
+      frames:
+        - "Полки полные, навес висит. Можно торговать!"
+      frames_en:
+        - "Shelves full, awning up. Time to trade!"
+    - weight: 50
+      frames:
+        - "Первая покупка — с улыбкой. Вторая — тоже, но за деньги."
+      frames_en:
+        - "The first purchase comes with a smile. The second too, but for money."
+- key: M09
+  id: m_greet
+  title: "Shopkeeper Greets a Customer"
+  category: home
+  status: active
+  trigger: "a player walks up to the counter"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Добрый день! Чем могу помочь?"
+      frames_en:
+        - "Good day! How can I help?"
+    - weight: 50
+      frames:
+        - "О, покупатель! Посмотрите, свежий хлеб."
+      frames_en:
+        - "Oh, a customer! Have a look, fresh bread."
+    - weight: 50
+      frames:
+        - "Продаёте? Покупаете? Я и то и другое люблю."
+      frames_en:
+        - "Selling? Buying? I like both."
+    - weight: 50
+      frames:
+        - "Цены честные, монеты — круглые."
+      frames_en:
+        - "Fair prices, round coins."
+- key: M10
+  id: m_w_greet
+  title: "Shopkeeper Greets a Customer"
+  category: home
+  status: active
+  trigger: "a player walks up to the counter"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Здравствуйте! Что вам сегодня?"
+      frames_en:
+        - "Hello! What will it be today?"
+    - weight: 50
+      frames:
+        - "Заходите, заходите! Для вас — самое лучшее."
+      frames_en:
+        - "Come in, come in! The very best for you."
+    - weight: 50
+      frames:
+        - "У меня тут и свечи, и пироги. Ну, почти пироги."
+      frames_en:
+        - "I've got candles and pies here. Well, nearly pies."
+- key: M11
+  id: m_thanks
+  title: "Shopkeeper Thanks a Customer"
+  category: home
+  status: active
+  trigger: "the shopkeeper thanks a villager who bought something"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Спасибо за покупку! Заходи ещё."
+      frames_en:
+        - "Thanks for buying! Come again."
+    - weight: 50
+      frames:
+        - "Монетка к монетке. Благодарю!"
+      frames_en:
+        - "Coin by coin. Thank you!"
+    - weight: 50
+      frames:
+        - "Хороший выбор. Носи на здоровье."
+      frames_en:
+        - "Good choice. Enjoy it."
+- key: M12
+  id: m_w_thanks
+  title: "Shopkeeper Thanks a Customer"
+  category: home
+  status: active
+  trigger: "the shopkeeper thanks a villager who bought something"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Спасибо, дорогой! Приходи ещё."
+      frames_en:
+        - "Thank you, dear! Come back soon."
+    - weight: 50
+      frames:
+        - "Вот это покупка! Носи с радостью."
+      frames_en:
+        - "Now that's a purchase! Wear it with joy."
+    - weight: 50
+      frames:
+        - "Благодарю. Касса довольна, и я тоже."
+      frames_en:
+        - "Thank you. The till's happy, and so am I."
+- key: M13
+  id: m_soldout
+  title: "Shopkeeper Sold Out"
+  category: home
+  status: active
+  trigger: "a villager wants something the stall has run out of"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кончилось! Караван привезёт на неделе."
+      frames_en:
+        - "Sold out! The caravan brings more this week."
+    - weight: 50
+      frames:
+        - "[sigh] Последнее утром забрали. Жди караван."
+      frames_en:
+        - "[sigh] The last one went this morning. Wait for the caravan."
+    - weight: 50
+      frames:
+        - "Нету. Но будет! Наверное."
+      frames_en:
+        - "None left. But there will be! Probably."
+- key: M14
+  id: m_w_soldout
+  title: "Shopkeeper Sold Out"
+  category: home
+  status: active
+  trigger: "a villager wants something the stall has run out of"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ой, разобрали! Караван скоро привезёт."
+      frames_en:
+        - "Oh, all gone! The caravan will bring more soon."
+    - weight: 50
+      frames:
+        - "Нет сейчас. Загляни после каравана."
+      frames_en:
+        - "Not now. Drop by after the caravan."
+    - weight: 50
+      frames:
+        - "[sigh] Всё раскупили. Хоть бы что-то оставили!"
+      frames_en:
+        - "[sigh] They bought it all. Couldn't they leave something!"
+- key: M15
+  id: m_caravan
+  title: "Shopkeeper Welcomes the Caravan"
+  category: home
+  status: active
+  trigger: "the weekly caravan arrives and refills the stall"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Караван! Наконец-то товар."
+      frames_en:
+        - "The caravan! Goods at last."
+    - weight: 50
+      frames:
+        - "[happy] Ламы пришли! Значит, будут свечи и хлеб."
+      frames_en:
+        - "[happy] The llamas are here! That means candles and bread."
+    - weight: 50
+      frames:
+        - "Разгружай, разгружай! Полки пустые."
+      frames_en:
+        - "Unload, unload! The shelves are empty."
+- key: M16
+  id: m_w_caravan
+  title: "Shopkeeper Welcomes the Caravan"
+  category: home
+  status: active
+  trigger: "the weekly caravan arrives and refills the stall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Караван пришёл! Сейчас всё разложу."
+      frames_en:
+        - "The caravan's here! I'll lay it all out now."
+    - weight: 50
+      frames:
+        - "[happy] Новый товар! Ах, какие ткани."
+      frames_en:
+        - "[happy] New goods! Oh, what fabrics."
+    - weight: 50
+      frames:
+        - "Только не торгуйтесь, у меня касса не резиновая."
+      frames_en:
+        - "Don't haggle, my till isn't bottomless."
+- key: M17
+  id: m_refuse
+  title: "Shopkeeper Turns the Player Away"
+  category: home
+  status: active
+  trigger: "the village is angry with the player and the stall will not trade"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тебе я ничего не продам. Вся деревня знает, что ты натворил."
+      frames_en:
+        - "I'm not selling you anything. The whole village knows what you did."
+    - weight: 50
+      frames:
+        - "[angry] Уходи. Тут торгуют с друзьями."
+      frames_en:
+        - "[angry] Go away. We trade with friends here."
+    - weight: 50
+      frames:
+        - "Закрыто. Для тебя — навсегда. Ну, пока."
+      frames_en:
+        - "Closed. For you, forever. Well, for now."
+- key: M18
+  id: m_w_refuse
+  title: "Shopkeeper Turns the Player Away"
+  category: home
+  status: active
+  trigger: "the village is angry with the player and the stall will not trade"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[angry] С тобой торговать не буду. Даже не проси."
+      frames_en:
+        - "[angry] I won't trade with you. Don't even ask."
+    - weight: 50
+      frames:
+        - "После всего, что было? Нет уж."
+      frames_en:
+        - "After everything that happened? No, thanks."
+    - weight: 50
+      frames:
+        - "Для таких, как ты, у меня всё распродано."
+      frames_en:
+        - "For the likes of you, everything is sold out."
+- key: M19
+  id: m_buyback
+  title: "Shopkeeper Buys From the Player"
+  category: home
+  status: active
+  trigger: "the stall buys something from the player and puts it on the shelf"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Беру! Поставлю на полку, кому-нибудь пригодится."
+      frames_en:
+        - "I'll take it! It goes on the shelf, someone will need it."
+    - weight: 50
+      frames:
+        - "Хм, неплохо. Вот твои монеты."
+      frames_en:
+        - "Hmm, not bad. Here are your coins."
+    - weight: 50
+      frames:
+        - "По рукам. Только не продавай мне это обратно втридорога."
+      frames_en:
+        - "Deal. Just don't sell it back to me at twice the price."
+- key: M20
+  id: m_w_buyback
+  title: "Shopkeeper Buys From the Player"
+  category: home
+  status: active
+  trigger: "the stall buys something from the player and puts it on the shelf"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Возьму. На полку, и пусть ждёт хозяина."
+      frames_en:
+        - "I'll take it. Onto the shelf, and let it wait for an owner."
+    - weight: 50
+      frames:
+        - "Держи монеты. Приятно иметь с тобой дело."
+      frames_en:
+        - "Here are your coins. A pleasure doing business."
+    - weight: 50
+      frames:
+        - "Вещь хорошая, цена честная. Договорились!"
+      frames_en:
+        - "A good thing, a fair price. Agreed!"
+- key: M21
+  id: m_buy
+  title: "Villager Buys at the Stall"
+  category: home
+  status: active
+  trigger: "a villager buys something for its house at the stall"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вот это мне и нужно. Беру!"
+      frames_en:
+        - "That's just what I need. I'll take it!"
+    - weight: 50
+      frames:
+        - "Копил целую неделю. Оно того стоило."
+      frames_en:
+        - "I saved all week. It was worth it."
+    - weight: 50
+      frames:
+        - "[happy] Жена обрадуется!"
+      frames_en:
+        - "[happy] My wife will be pleased!"
+    - weight: 50
+      frames:
+        - "Монеты на прилавок, покупку — домой."
+      frames_en:
+        - "Coins on the counter, the purchase goes home."
+- key: M22
+  id: m_w_buy
+  title: "Villager Buys at the Stall"
+  category: home
+  status: active
+  trigger: "a woman buys something for the house or food for the pantry at the stall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Хлеба на всю семью, пожалуйста."
+      frames_en:
+        - "Bread for the whole family, please."
+    - weight: 50
+      frames:
+        - "[happy] Вот это в дом поставлю. Красота!"
+      frames_en:
+        - "[happy] This goes in the house. Lovely!"
+    - weight: 50
+      frames:
+        - "Дороговато, но для дома ничего не жалко."
+      frames_en:
+        - "A bit dear, but nothing's too good for the home."
+- key: M23
+  id: m_poor
+  title: "Villager Can't Afford It"
+  category: home
+  status: active
+  trigger: "a villager has not saved enough for what it wants"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Не хватает. Подожду до зарплаты."
+      frames_en:
+        - "[sigh] Not enough. I'll wait for payday."
+    - weight: 50
+      frames:
+        - "Эх, ещё пару дней поработаю — и куплю."
+      frames_en:
+        - "Ah, a couple more days of work and I'll buy it."
+    - weight: 50
+      frames:
+        - "Цены кусаются. А мой кошелёк — нет."
+      frames_en:
+        - "The prices bite. My purse doesn't."
+- key: M24
+  id: m_w_poor
+  title: "Villager Can't Afford It"
+  category: home
+  status: active
+  trigger: "a woman has not saved enough for what she wants"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Опять не хватает. Ну ничего, накоплю."
+      frames_en:
+        - "[sigh] Short again. Never mind, I'll save up."
+    - weight: 50
+      frames:
+        - "Отложи-ка мне это, ладно? После зарплаты заберу."
+      frames_en:
+        - "Put that aside for me, will you? I'll pick it up after payday."
+    - weight: 50
+      frames:
+        - "Деньги кончились раньше, чем желания."
+      frames_en:
+        - "The money ran out before the wishes did."
+- key: M25
+  id: m_paid
+  title: "Villager Gets Paid"
+  category: home
+  status: active
+  trigger: "a worker receives the day's wage from the mayor"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Спасибо, мэр! Честно заработано."
+      frames_en:
+        - "Thank you, mayor! Honestly earned."
+    - weight: 50
+      frames:
+        - "[happy] Монетки! Вот теперь можно и в лавку."
+      frames_en:
+        - "[happy] Coins! Now I can go to the stall."
+    - weight: 50
+      frames:
+        - "Целый день работал. Каждая монета на счету."
+      frames_en:
+        - "I worked all day. Every coin counts."
+- key: M26
+  id: m_w_paid
+  title: "Villager Gets Paid"
+  category: home
+  status: active
+  trigger: "a working woman receives the day's wage from the mayor"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Спасибо! Отложу на новую колыбель."
+      frames_en:
+        - "Thank you! I'll save it for a new cradle."
+    - weight: 50
+      frames:
+        - "[happy] Зарплата! Пойду куплю хлеба."
+      frames_en:
+        - "[happy] Wages! I'll go and buy bread."
+    - weight: 50
+      frames:
+        - "Честный труд — честные монеты."
+      frames_en:
+        - "Honest work, honest coins."
+- key: M27
+  id: m_wages
+  title: "Mayor Pays Wages"
+  category: home
+  status: active
+  trigger: "after work the mayor pays the workers their wages at the bell"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Подходите за жалованьем! Деревня платит за честный труд."
+      frames_en:
+        - "Come for your wages! The village pays for honest work."
+    - weight: 50
+      frames:
+        - "[clears throat] Казна открыта. Все, кто работал, — ко мне."
+      frames_en:
+        - "[clears throat] The treasury is open. Everyone who worked, come to me."
+    - weight: 50
+      frames:
+        - "По монетке каждому. Ну, по нескольку."
+      frames_en:
+        - "A coin for everyone. Well, a few each."
+- key: M28
+  id: m_w_wages
+  title: "Mayor Pays Wages"
+  category: home
+  status: active
+  trigger: "after work the woman mayor pays the workers their wages at the bell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Жалованье! Подходите по одному."
+      frames_en:
+        - "Wages! Come up one at a time."
+    - weight: 50
+      frames:
+        - "[clears throat] Казна платит. Не толпимся!"
+      frames_en:
+        - "[clears throat] The treasury pays. No crowding!"
+    - weight: 50
+      frames:
+        - "Заработали — получите. Всё по-честному."
+      frames_en:
+        - "You've earned it, you get it. All fair."
+- key: M29
+  id: mk_help
+  title: "Mayor Helps a Family"
+  category: home
+  status: active
+  trigger: "the mayor pays from the treasury for food or a bed a poor family could not afford"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Казна заплатит. В нашей деревне никто не останется без хлеба."
+      frames_en:
+        - "The treasury will pay. Nobody in our village goes without bread."
+    - weight: 50
+      frames:
+        - "Кровать ребёнку — дело всей деревни. Я плачу."
+      frames_en:
+        - "A bed for a child is the whole village's business. I'm paying."
+    - weight: 50
+      frames:
+        - "Не стесняйся. Для этого казна и нужна."
+      frames_en:
+        - "Don't be shy. That's what the treasury is for."
+- key: M30
+  id: m_w_help
+  title: "Mayor Helps a Family"
+  category: home
+  status: active
+  trigger: "the woman mayor pays from the treasury for food or a bed a poor family could not afford"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Деревня поможет. Казна заплатит."
+      frames_en:
+        - "The village will help. The treasury will pay."
+    - weight: 50
+      frames:
+        - "Ни одна семья у нас не будет голодать."
+      frames_en:
+        - "No family of ours will go hungry."
+    - weight: 50
+      frames:
+        - "Бери, бери. Отдадите, когда сможете. Или не отдадите."
+      frames_en:
+        - "Take it, take it. Pay it back when you can. Or don't."

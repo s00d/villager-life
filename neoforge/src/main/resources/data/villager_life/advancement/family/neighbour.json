@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/wedding",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_bed"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.neighbour.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.neighbour.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

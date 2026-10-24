@@ -1,0 +1,25 @@
+# The chain again on villages the earlier runs had not touched (found with /locate from 24000 24000): a desert one
+# (husks do not burn by day), a taiga one, then the savanna of chain.txt once more. Three days each, a creative
+# player a little above the bell; "vnap death"/"vnap gone" lines of the client log count the losses.
+/gamemode creative
+/tp Dev 21232 110 28000
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 25280 130 23504
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 18592 90 19376
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info

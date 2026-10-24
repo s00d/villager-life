@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/outer",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.arena.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.arena.description"
+    },
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

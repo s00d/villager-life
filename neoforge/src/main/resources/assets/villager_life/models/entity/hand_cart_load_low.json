@@ -1,0 +1,147 @@
+{
+  "textures": {
+    "sack": "villager_life:block/decor/sack",
+    "sack_top": "villager_life:block/decor/sack_top",
+    "crate": "minecraft:block/barrel_side",
+    "crate_top": "minecraft:block/barrel_top",
+    "particle": "villager_life:block/decor/sack"
+  },
+  "elements": [
+    {
+      "from": [
+        3.5,
+        6,
+        2
+      ],
+      "to": [
+        8,
+        9.5,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            3.5
+          ],
+          "texture": "#sack"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            3.5
+          ],
+          "texture": "#sack"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6.0,
+            3.5
+          ],
+          "texture": "#sack"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6.0,
+            3.5
+          ],
+          "texture": "#sack"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            6.0
+          ],
+          "texture": "#sack_top"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            6.0
+          ],
+          "texture": "#sack_top"
+        }
+      }
+    },
+    {
+      "from": [
+        8.5,
+        6,
+        2.5
+      ],
+      "to": [
+        12.5,
+        10,
+        7.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.0,
+            4.0
+          ],
+          "texture": "#crate"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.0,
+            4.0
+          ],
+          "texture": "#crate"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            4.0
+          ],
+          "texture": "#crate"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            4.0
+          ],
+          "texture": "#crate"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.0,
+            5.0
+          ],
+          "texture": "#crate_top"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.0,
+            5.0
+          ],
+          "texture": "#crate_top"
+        }
+      }
+    }
+  ]
+}

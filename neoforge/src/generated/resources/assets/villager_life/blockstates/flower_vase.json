@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/flower_vase",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/flower_vase"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/flower_vase",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/flower_vase",
+      "y": 270
+    }
+  }
+}

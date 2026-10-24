@@ -1,0 +1,392 @@
+[
+  {
+    "id": "seed_sacks",
+    "profession": "farmer",
+    "sound": "wool",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      0,
+      14,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "harvest_basket",
+    "profession": "farmer",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      12,
+      14
+    ]
+  },
+  {
+    "id": "chopping_block",
+    "profession": "butcher",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "meat_rack",
+    "profession": "butcher",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      4,
+      16,
+      16,
+      12
+    ]
+  },
+  {
+    "id": "wool_bales",
+    "profession": "shepherd",
+    "sound": "wool",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      1,
+      16,
+      12,
+      15
+    ]
+  },
+  {
+    "id": "spinning_wheel",
+    "profession": "shepherd",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      4,
+      16,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "fish_rack",
+    "profession": "fisherman",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      4,
+      16,
+      14,
+      12
+    ]
+  },
+  {
+    "id": "tackle_crate",
+    "profession": "fisherman",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      16,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "arrow_bundle",
+    "profession": "fletcher",
+    "sound": "wool",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      14,
+      14
+    ]
+  },
+  {
+    "id": "feather_basket",
+    "profession": "fletcher",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      14,
+      14
+    ]
+  },
+  {
+    "id": "book_stack",
+    "profession": "librarian",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      9,
+      13
+    ]
+  },
+  {
+    "id": "ink_and_quill",
+    "profession": "librarian",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      1,
+      0,
+      2,
+      15,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "globe",
+    "profession": "cartographer",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      4,
+      0,
+      2,
+      12,
+      14,
+      14
+    ]
+  },
+  {
+    "id": "map_rolls",
+    "profession": "cartographer",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      4,
+      0,
+      4,
+      12,
+      14,
+      12
+    ]
+  },
+  {
+    "id": "incense_burner",
+    "profession": "cleric",
+    "sound": "metal",
+    "light": 6,
+    "smoke": true,
+    "shape": [
+      4,
+      0,
+      4,
+      12,
+      12,
+      12
+    ]
+  },
+  {
+    "id": "potion_shelf",
+    "profession": "cleric",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      8,
+      16,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "hide_rack",
+    "profession": "leatherworker",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      4,
+      16,
+      16,
+      12
+    ]
+  },
+  {
+    "id": "leather_rolls",
+    "profession": "leatherworker",
+    "sound": "wool",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      10,
+      14
+    ]
+  },
+  {
+    "id": "chisel_bench",
+    "profession": "mason",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      14,
+      14
+    ]
+  },
+  {
+    "id": "brick_pallet",
+    "profession": "mason",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "id": "armor_dummy",
+    "profession": "armorer",
+    "sound": "chain",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      4,
+      14,
+      16,
+      12
+    ]
+  },
+  {
+    "id": "chainmail_rack",
+    "profession": "armorer",
+    "sound": "chain",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      4,
+      16,
+      16,
+      12
+    ]
+  },
+  {
+    "id": "tool_rack",
+    "profession": "toolsmith",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      11,
+      16,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "nail_keg",
+    "profession": "toolsmith",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      12,
+      14
+    ]
+  },
+  {
+    "id": "weapon_rack",
+    "profession": "weaponsmith",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      10,
+      16,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "sword_barrel",
+    "profession": "weaponsmith",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      14,
+      16
+    ]
+  }
+]

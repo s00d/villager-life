@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/floor",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_seal_deep"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.trial.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.trial.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

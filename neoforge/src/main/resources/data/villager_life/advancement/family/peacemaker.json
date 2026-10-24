@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/wedding",
+  "display": {
+    "icon": {
+      "id": "minecraft:cornflower"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.peacemaker.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.peacemaker.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SSS",
+    "B B",
+    "BBB"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone_brick_slab"
+    },
+    "B": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "id": "villager_life:chimney_pot",
+    "count": 2
+  }
+}

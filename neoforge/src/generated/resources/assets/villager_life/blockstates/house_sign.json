@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,post=false": {
+      "model": "villager_life:block/town/house_sign",
+      "y": 90
+    },
+    "facing=east,post=true": {
+      "model": "villager_life:block/town/house_sign_post",
+      "y": 90
+    },
+    "facing=north,post=false": {
+      "model": "villager_life:block/town/house_sign"
+    },
+    "facing=north,post=true": {
+      "model": "villager_life:block/town/house_sign_post"
+    },
+    "facing=south,post=false": {
+      "model": "villager_life:block/town/house_sign",
+      "y": 180
+    },
+    "facing=south,post=true": {
+      "model": "villager_life:block/town/house_sign_post",
+      "y": 180
+    },
+    "facing=west,post=false": {
+      "model": "villager_life:block/town/house_sign",
+      "y": 270
+    },
+    "facing=west,post=true": {
+      "model": "villager_life:block/town/house_sign_post",
+      "y": 270
+    }
+  }
+}

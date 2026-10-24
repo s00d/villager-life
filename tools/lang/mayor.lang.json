@@ -1,0 +1,10 @@
+{
+  "en": {
+    "vnap.mayor.elected": "%s is elected mayor of the village",
+    "vnap.mayor.inherited": "%s inherits the office of mayor"
+  },
+  "ru": {
+    "vnap.mayor.elected": "%s — новый мэр деревни",
+    "vnap.mayor.inherited": "%s наследует должность мэра"
+  }
+}

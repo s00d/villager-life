@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/chapel",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone_bricks"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.wall.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.wall.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

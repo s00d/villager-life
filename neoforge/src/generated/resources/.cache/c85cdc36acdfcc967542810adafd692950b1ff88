@@ -1,0 +1,10 @@
+// 1.21.1	2026-10-23T19:24:27.128024	Tags for minecraft:block mod id villager_life
+95de0729817dc520d4b3aaa840f6c816820f871c data/minecraft/tags/block/beds.json
+3cabea41ce153a154ddc4f5095d86f8a0cb39083 data/minecraft/tags/block/mineable/axe.json
+290566c9fb017ed7309ae56b1f5000156de68bad data/minecraft/tags/block/mineable/pickaxe.json
+6f61118396931207660a3dac70203c86d5dce133 data/minecraft/tags/block/needs_diamond_tool.json
+3ce47e828120f58a54cbdfca88746f5b8c6907d3 data/minecraft/tags/block/needs_iron_tool.json
+87e6c7331edf9c42e2a5a3bc05122e0c9fafddb7 data/villager_life/tags/block/home_decor.json
+fbef661203993964f6d3e71b69216c17991b5fd7 data/villager_life/tags/block/profession_decor.json
+b3faf4bb7871d1998f04c415d004d6a031afec50 data/villager_life/tags/block/profession_machines.json
+61dd60f5f9a28c223c07b673459a05dac96c426d data/villager_life/tags/block/rite_blocks.json

@@ -1,0 +1,1696 @@
+{
+  "count": 66,
+  "note": "Villager Life 1.2 Tocsin Forge / Tocsin Golem / rite lines. PENDING_TTS: generate en_tts -> voice/en/{voice}.ogg and ru_tts -> voice/ru/{voice}.ogg with Fish S2, then pack_voices.py.",
+  "items": [
+    {
+      "id": "coixke.0",
+      "group": "coixke",
+      "group_id": "coixke",
+      "expand_key": "E13",
+      "variant": 0,
+      "voice": "dzp",
+      "ogg": "dzp.ogg",
+      "duration": 2.92,
+      "en": "Everyone to the forge. Stand in a ring, iron in hand.",
+      "ru": "Все к кузне. Встаём кольцом, железо в руки.",
+      "en_tts": "Everyone to the forge. Stand in a ring, iron in hand.",
+      "ru_tts": "Все к кузне. Встаём кольцом, железо в руки.",
+      "ru_frames": [
+        "Все к кузне. Встаём кольцом, железо в руки."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.coixke.0.0"
+      ],
+      "title": "Ring Around the Forge",
+      "category": "forge",
+      "spec_key": "E13"
+    },
+    {
+      "id": "coixke.1",
+      "group": "coixke",
+      "group_id": "coixke",
+      "expand_key": "E13",
+      "variant": 1,
+      "voice": "dzq",
+      "ogg": "dzq.ogg",
+      "duration": 2.81,
+      "en": "A ring round the furnace. No ingot, you just watch.",
+      "ru": "Кольцо вокруг горна. Кто без слитка — тот зритель.",
+      "en_tts": "A ring round the furnace. No ingot, you just watch.",
+      "ru_tts": "Кольцо вокруг горна. Кто без слитка — тот зритель.",
+      "ru_frames": [
+        "Кольцо вокруг горна. Кто без слитка — тот зритель."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.coixke.1.0"
+      ],
+      "title": "Ring Around the Forge",
+      "category": "forge",
+      "spec_key": "E13"
+    },
+    {
+      "id": "coixke.2",
+      "group": "coixke",
+      "group_id": "coixke",
+      "expand_key": "E13",
+      "variant": 2,
+      "voice": "dzr",
+      "ogg": "dzr.ogg",
+      "duration": 3.08,
+      "en": "We are not forging horseshoes today. We forge an answer.",
+      "ru": "Сегодня куём не подковы. Сегодня куём ответ.",
+      "en_tts": "We are not forging horseshoes today. We forge an answer.",
+      "ru_tts": "Сегодня куём не подковы. Сегодня куём ответ.",
+      "ru_frames": [
+        "Сегодня куём не подковы. Сегодня куём ответ."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.coixke.2.0"
+      ],
+      "title": "Ring Around the Forge",
+      "category": "forge",
+      "spec_key": "E13"
+    },
+    {
+      "id": "tjzidz.0",
+      "group": "tjzidz",
+      "group_id": "tjzidz",
+      "expand_key": "E14",
+      "variant": 0,
+      "voice": "dzs",
+      "ogg": "dzs.ogg",
+      "duration": 2.64,
+      "en": "Work the bellows! Everyone must hear the tocsin.",
+      "ru": "Раздувайте горн! Набат должен услышать каждый.",
+      "en_tts": "Work the bellows! Everyone must hear the tocsin.",
+      "ru_tts": "Раздувайте горн! Набат должен услышать каждый.",
+      "ru_frames": [
+        "Раздувайте горн! Набат должен услышать каждый."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.tjzidz.0.0"
+      ],
+      "title": "Forge the Tocsin",
+      "category": "forge",
+      "spec_key": "E14"
+    },
+    {
+      "id": "tjzidz.1",
+      "group": "tjzidz",
+      "group_id": "tjzidz",
+      "expand_key": "E14",
+      "variant": 1,
+      "voice": "dzt",
+      "ogg": "dzt.ogg",
+      "duration": 1.76,
+      "en": "Iron into the fire. Grudges too.",
+      "ru": "Железо в огонь. Обиды туда же.",
+      "en_tts": "Iron into the fire. Grudges too.",
+      "ru_tts": "Железо в огонь. Обиды туда же.",
+      "ru_frames": [
+        "Железо в огонь. Обиды туда же."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.tjzidz.1.0"
+      ],
+      "title": "Forge the Tocsin",
+      "category": "forge",
+      "spec_key": "E14"
+    },
+    {
+      "id": "tjzidz.2",
+      "group": "tjzidz",
+      "group_id": "tjzidz",
+      "expand_key": "E14",
+      "variant": 2,
+      "voice": "dzu",
+      "ogg": "dzu.ogg",
+      "duration": 3.3,
+      "en": "The bell strikes three times. After that, sorry is too late.",
+      "ru": "Колокол ударит трижды. Потом будет поздно извиняться.",
+      "en_tts": "The bell strikes three times. After that, sorry is too late.",
+      "ru_tts": "Колокол ударит трижды. Потом будет поздно извиняться.",
+      "ru_frames": [
+        "Колокол ударит трижды. Потом будет поздно извиняться."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.tjzidz.2.0"
+      ],
+      "title": "Forge the Tocsin",
+      "category": "forge",
+      "spec_key": "E14"
+    },
+    {
+      "id": "ujtaoc.0",
+      "group": "ujtaoc",
+      "group_id": "ujtaoc",
+      "expand_key": "E15",
+      "variant": 0,
+      "voice": "dzv",
+      "ogg": "dzv.ogg",
+      "duration": 2.97,
+      "en": "Another ingot! The forge is hungry, like us in winter.",
+      "ru": "Ещё слиток! Горн голоден, как мы зимой.",
+      "en_tts": "Another ingot! The forge is hungry, like us in winter.",
+      "ru_tts": "Ещё слиток! Горн голоден, как мы зимой.",
+      "ru_frames": [
+        "Ещё слиток! Горн голоден, как мы зимой."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ujtaoc.0.0"
+      ],
+      "title": "Feed the Forge",
+      "category": "forge",
+      "spec_key": "E15"
+    },
+    {
+      "id": "ujtaoc.1",
+      "group": "ujtaoc",
+      "group_id": "ujtaoc",
+      "expand_key": "E15",
+      "variant": 1,
+      "voice": "dzw",
+      "ogg": "dzw.ogg",
+      "duration": 2.42,
+      "en": "Throw straighter, it is a forge, not a fair.",
+      "ru": "Кидай точнее, это кузня, а не ярмарка.",
+      "en_tts": "Throw straighter, it is a forge, not a fair.",
+      "ru_tts": "Кидай точнее, это кузня, а не ярмарка.",
+      "ru_frames": [
+        "Кидай точнее, это кузня, а не ярмарка."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ujtaoc.1.0"
+      ],
+      "title": "Feed the Forge",
+      "category": "forge",
+      "spec_key": "E15"
+    },
+    {
+      "id": "ujtaoc.2",
+      "group": "ujtaoc",
+      "group_id": "ujtaoc",
+      "expand_key": "E15",
+      "variant": 2,
+      "voice": "dzx",
+      "ogg": "dzx.ogg",
+      "duration": 1.38,
+      "en": "Six ingots. Not one less.",
+      "ru": "Шесть слитков. Ни одним меньше.",
+      "en_tts": "Six ingots. Not one less.",
+      "ru_tts": "Шесть слитков. Ни одним меньше.",
+      "ru_frames": [
+        "Шесть слитков. Ни одним меньше."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ujtaoc.2.0"
+      ],
+      "title": "Feed the Forge",
+      "category": "forge",
+      "spec_key": "E15"
+    },
+    {
+      "id": "fjzetl.0",
+      "group": "fjzetl",
+      "group_id": "fjzetl",
+      "expand_key": "E16",
+      "variant": 0,
+      "voice": "dzy",
+      "ogg": "dzy.ogg",
+      "duration": 2.53,
+      "en": "Third toll! Get indoors, it is about to stand.",
+      "ru": "Третий удар! Прячьтесь по домам, сейчас встанет.",
+      "en_tts": "Third toll! Get indoors, it is about to stand.",
+      "ru_tts": "Третий удар! Прячьтесь по домам, сейчас встанет.",
+      "ru_frames": [
+        "Третий удар! Прячьтесь по домам, сейчас встанет."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.fjzetl.0.0"
+      ],
+      "title": "Hide From the Tocsin",
+      "category": "forge",
+      "spec_key": "E16"
+    },
+    {
+      "id": "fjzetl.1",
+      "group": "fjzetl",
+      "group_id": "fjzetl",
+      "expand_key": "E16",
+      "variant": 1,
+      "voice": "dzz",
+      "ogg": "dzz.ogg",
+      "duration": 3.08,
+      "en": "Traveller, better run. Or flood the forge while you can.",
+      "ru": "Путник, лучше беги. Или залей горн водой, пока не поздно.",
+      "en_tts": "Traveller, better run. Or flood the forge while you can.",
+      "ru_tts": "Путник, лучше беги. Или залей горн водой, пока не поздно.",
+      "ru_frames": [
+        "Путник, лучше беги. Или залей горн водой, пока не поздно."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.fjzetl.1.0"
+      ],
+      "title": "Hide From the Tocsin",
+      "category": "forge",
+      "spec_key": "E16"
+    },
+    {
+      "id": "fjzetl.2",
+      "group": "fjzetl",
+      "group_id": "fjzetl",
+      "expand_key": "E16",
+      "variant": 2,
+      "voice": "eaa",
+      "ogg": "eaa.ogg",
+      "duration": 2.15,
+      "en": "Bolt the doors. It hates being watched.",
+      "ru": "Двери на засов. Он не любит, когда на него смотрят.",
+      "en_tts": "Bolt the doors. It hates being watched.",
+      "ru_tts": "Двери на засов. Он не любит, когда на него смотрят.",
+      "ru_frames": [
+        "Двери на засов. Он не любит, когда на него смотрят."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.fjzetl.2.0"
+      ],
+      "title": "Hide From the Tocsin",
+      "category": "forge",
+      "spec_key": "E16"
+    },
+    {
+      "id": "sbvhqm.0",
+      "group": "sbvhqm",
+      "group_id": "sbvhqm",
+      "expand_key": "E18",
+      "variant": 0,
+      "voice": "eab",
+      "ogg": "eab.ogg",
+      "duration": 2.48,
+      "en": "It is awake. The iron remembers every grudge.",
+      "ru": "Он проснулся. Железо помнит каждую обиду.",
+      "en_tts": "It is awake. The iron remembers every grudge.",
+      "ru_tts": "Он проснулся. Железо помнит каждую обиду.",
+      "ru_frames": [
+        "Он проснулся. Железо помнит каждую обиду."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sbvhqm.0.0"
+      ],
+      "title": "Tocsin Awakens",
+      "category": "boss",
+      "spec_key": "E18"
+    },
+    {
+      "id": "sbvhqm.1",
+      "group": "sbvhqm",
+      "group_id": "sbvhqm",
+      "expand_key": "E18",
+      "variant": 1,
+      "voice": "eac",
+      "ogg": "eac.ogg",
+      "duration": 2.92,
+      "en": "The Tocsin Golem! Hit its back, the furnace is there.",
+      "ru": "Набатный голем! Бейте в спину, там у него горн.",
+      "en_tts": "The Tocsin Golem! Hit its back, the furnace is there.",
+      "ru_tts": "Набатный голем! Бейте в спину, там у него горн.",
+      "ru_frames": [
+        "Набатный голем! Бейте в спину, там у него горн."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sbvhqm.1.0"
+      ],
+      "title": "Tocsin Awakens",
+      "category": "boss",
+      "spec_key": "E18"
+    },
+    {
+      "id": "sbvhqm.2",
+      "group": "sbvhqm",
+      "group_id": "sbvhqm",
+      "expand_key": "E18",
+      "variant": 2,
+      "voice": "ead",
+      "ogg": "ead.ogg",
+      "duration": 2.37,
+      "en": "Hear the bell? That is not the dinner bell.",
+      "ru": "Слышите звон? Это не к обеду.",
+      "en_tts": "Hear the bell? That is not the dinner bell.",
+      "ru_tts": "Слышите звон? Это не к обеду.",
+      "ru_frames": [
+        "Слышите звон? Это не к обеду."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sbvhqm.2.0"
+      ],
+      "title": "Tocsin Awakens",
+      "category": "boss",
+      "spec_key": "E18"
+    },
+    {
+      "id": "szxavt.0",
+      "group": "szxavt",
+      "group_id": "szxavt",
+      "expand_key": "E19",
+      "variant": 0,
+      "voice": "eae",
+      "ogg": "eae.ogg",
+      "duration": 2.64,
+      "en": "It shed its plates! Watch your feet, they crawl.",
+      "ru": "Он сбросил плиты! Смотрите под ноги, они ползают.",
+      "en_tts": "It shed its plates! Watch your feet, they crawl.",
+      "ru_tts": "Он сбросил плиты! Смотрите под ноги, они ползают.",
+      "ru_frames": [
+        "Он сбросил плиты! Смотрите под ноги, они ползают."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.szxavt.0.0"
+      ],
+      "title": "Tocsin Sheds Plates",
+      "category": "boss",
+      "spec_key": "E19"
+    },
+    {
+      "id": "szxavt.1",
+      "group": "szxavt",
+      "group_id": "szxavt",
+      "expand_key": "E19",
+      "variant": 1,
+      "voice": "eaf",
+      "ogg": "eaf.ogg",
+      "duration": 1.87,
+      "en": "Armour is flying off. So it hurts.",
+      "ru": "Броня летит. Значит, болит.",
+      "en_tts": "Armour is flying off. So it hurts.",
+      "ru_tts": "Броня летит. Значит, болит.",
+      "ru_frames": [
+        "Броня летит. Значит, болит."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.szxavt.1.0"
+      ],
+      "title": "Tocsin Sheds Plates",
+      "category": "boss",
+      "spec_key": "E19"
+    },
+    {
+      "id": "szxavt.2",
+      "group": "szxavt",
+      "group_id": "szxavt",
+      "expand_key": "E19",
+      "variant": 2,
+      "voice": "eag",
+      "ogg": "eag.ogg",
+      "duration": 1.71,
+      "en": "Ring our bells! They deafen it.",
+      "ru": "Звоните в наши колокола! Он от них глохнет.",
+      "en_tts": "Ring our bells! They deafen it.",
+      "ru_tts": "Звоните в наши колокола! Он от них глохнет.",
+      "ru_frames": [
+        "Звоните в наши колокола! Он от них глохнет."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.szxavt.2.0"
+      ],
+      "title": "Tocsin Sheds Plates",
+      "category": "boss",
+      "spec_key": "E19"
+    },
+    {
+      "id": "sdaiud.0",
+      "group": "sdaiud",
+      "group_id": "sdaiud",
+      "expand_key": "E20",
+      "variant": 0,
+      "voice": "eah",
+      "ogg": "eah.ogg",
+      "duration": 2.86,
+      "en": "The bell cracked! Now it charges through everything.",
+      "ru": "Колокол треснул! Сейчас он пойдёт напролом.",
+      "en_tts": "The bell cracked! Now it charges through everything.",
+      "ru_tts": "Колокол треснул! Сейчас он пойдёт напролом.",
+      "ru_frames": [
+        "Колокол треснул! Сейчас он пойдёт напролом."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sdaiud.0.0"
+      ],
+      "title": "Tocsin Bell Cracks",
+      "category": "boss",
+      "spec_key": "E20"
+    },
+    {
+      "id": "sdaiud.1",
+      "group": "sdaiud",
+      "group_id": "sdaiud",
+      "expand_key": "E20",
+      "variant": 1,
+      "voice": "eai",
+      "ogg": "eai.ogg",
+      "duration": 2.58,
+      "en": "Steam from its chest. Step back when it hisses.",
+      "ru": "Из груди пар. Отходите, как зашипит.",
+      "en_tts": "Steam from its chest. Step back when it hisses.",
+      "ru_tts": "Из груди пар. Отходите, как зашипит.",
+      "ru_frames": [
+        "Из груди пар. Отходите, как зашипит."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sdaiud.1.0"
+      ],
+      "title": "Tocsin Bell Cracks",
+      "category": "boss",
+      "spec_key": "E20"
+    },
+    {
+      "id": "sdaiud.2",
+      "group": "sdaiud",
+      "group_id": "sdaiud",
+      "expand_key": "E20",
+      "variant": 2,
+      "voice": "eaj",
+      "ogg": "eaj.ogg",
+      "duration": 1.54,
+      "en": "The last push. Its and ours.",
+      "ru": "Последний рывок. Его и наш.",
+      "en_tts": "The last push. Its and ours.",
+      "ru_tts": "Последний рывок. Его и наш.",
+      "ru_frames": [
+        "Последний рывок. Его и наш."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sdaiud.2.0"
+      ],
+      "title": "Tocsin Bell Cracks",
+      "category": "boss",
+      "spec_key": "E20"
+    },
+    {
+      "id": "wwqjuy.0",
+      "group": "wwqjuy",
+      "group_id": "wwqjuy",
+      "expand_key": "E21",
+      "variant": 0,
+      "voice": "eak",
+      "ogg": "eak.ogg",
+      "duration": 3.02,
+      "en": "The tocsin is silent. Trading without knee-shake again.",
+      "ru": "Набат смолк. Можно снова торговать без дрожи в коленях.",
+      "en_tts": "The tocsin is silent. Trading without knee-shake again.",
+      "ru_tts": "Набат смолк. Можно снова торговать без дрожи в коленях.",
+      "ru_frames": [
+        "Набат смолк. Можно снова торговать без дрожи в коленях."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.wwqjuy.0.0"
+      ],
+      "title": "Tocsin Silenced",
+      "category": "boss",
+      "spec_key": "E21"
+    },
+    {
+      "id": "wwqjuy.1",
+      "group": "wwqjuy",
+      "group_id": "wwqjuy",
+      "expand_key": "E21",
+      "variant": 1,
+      "voice": "eal",
+      "ogg": "eal.ogg",
+      "duration": 2.25,
+      "en": "We survived. Someone even kept their hat.",
+      "ru": "Мы выжили. Кто-то даже сохранил шляпу.",
+      "en_tts": "We survived. Someone even kept their hat.",
+      "ru_tts": "Мы выжили. Кто-то даже сохранил шляпу.",
+      "ru_frames": [
+        "Мы пережили. Кто-то даже сохранил шляпу."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.wwqjuy.1.0"
+      ],
+      "title": "Tocsin Silenced",
+      "category": "boss",
+      "spec_key": "E21"
+    },
+    {
+      "id": "kjqjvs.0",
+      "group": "kjqjvs",
+      "group_id": "kjqjvs",
+      "expand_key": "E24",
+      "variant": 0,
+      "voice": "ean",
+      "ogg": "ean.ogg",
+      "duration": 2.15,
+      "en": "Third toll. The frame rises on its own.",
+      "ru": "Третий удар. Каркас встаёт сам.",
+      "en_tts": "Third toll. The frame rises on its own.",
+      "ru_tts": "Третий удар. Каркас встаёт сам.",
+      "ru_frames": [
+        "Третий удар. Каркас встаёт сам."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.kjqjvs.0.0"
+      ],
+      "title": "Tocsin Chant",
+      "category": "forge",
+      "spec_key": "E24"
+    },
+    {
+      "id": "kjqjvs.1",
+      "group": "kjqjvs",
+      "group_id": "kjqjvs",
+      "expand_key": "E24",
+      "variant": 1,
+      "voice": "eao",
+      "ogg": "eao.ogg",
+      "duration": 2.37,
+      "en": "Do not stare into the fire. It stares back.",
+      "ru": "Не смотрите в огонь. Он смотрит в ответ.",
+      "en_tts": "Do not stare into the fire. It stares back.",
+      "ru_tts": "Не смотрите в огонь. Он смотрит в ответ.",
+      "ru_frames": [
+        "Не смотрите в огонь. Он смотрит в ответ."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.kjqjvs.1.0"
+      ],
+      "title": "Tocsin Chant",
+      "category": "forge",
+      "spec_key": "E24"
+    },
+    {
+      "id": "kjqjvs.2",
+      "group": "kjqjvs",
+      "group_id": "kjqjvs",
+      "expand_key": "E24",
+      "variant": 2,
+      "voice": "eap",
+      "ogg": "eap.ogg",
+      "duration": 2.04,
+      "en": "Quiet. You can hear the iron breathe.",
+      "ru": "Тише. Слышно, как железо дышит.",
+      "en_tts": "Quiet. You can hear the iron breathe.",
+      "ru_tts": "Тише. Слышно, как железо дышит.",
+      "ru_frames": [
+        "Тише. Слышно, как железо дышит."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.kjqjvs.2.0"
+      ],
+      "title": "Tocsin Chant",
+      "category": "forge",
+      "spec_key": "E24"
+    },
+    {
+      "id": "poijok.0",
+      "group": "poijok",
+      "group_id": "poijok",
+      "expand_key": "E25",
+      "variant": 0,
+      "voice": "eaq",
+      "ogg": "eaq.ogg",
+      "duration": 3.02,
+      "en": "It went back into the forge. Not for good, just asleep.",
+      "ru": "Он ушёл в горн. Не насовсем, просто спит.",
+      "en_tts": "It went back into the forge. Not for good, just asleep.",
+      "ru_tts": "Он ушёл в горн. Не насовсем, просто спит.",
+      "ru_frames": [
+        "Он ушёл в горн. Не насовсем, просто спит."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.poijok.0.0"
+      ],
+      "title": "Tocsin Sleeps",
+      "category": "boss",
+      "spec_key": "E25"
+    },
+    {
+      "id": "poijok.1",
+      "group": "poijok",
+      "group_id": "poijok",
+      "expand_key": "E25",
+      "variant": 1,
+      "voice": "ear",
+      "ogg": "ear.ogg",
+      "duration": 2.48,
+      "en": "Nobody to fight, so it cooled down. Lucky us.",
+      "ru": "Не с кем драться — и он остыл. Повезло.",
+      "en_tts": "Nobody to fight, so it cooled down. Lucky us.",
+      "ru_tts": "Не с кем драться — и он остыл. Повезло.",
+      "ru_frames": [
+        "Не с кем драться — и он остыл. Повезло."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.poijok.1.0"
+      ],
+      "title": "Tocsin Sleeps",
+      "category": "boss",
+      "spec_key": "E25"
+    },
+    {
+      "id": "poijok.2",
+      "group": "poijok",
+      "group_id": "poijok",
+      "expand_key": "E25",
+      "variant": 2,
+      "voice": "eas",
+      "ogg": "eas.ogg",
+      "duration": 2.42,
+      "en": "The forge is quiet. Fuel it again next week.",
+      "ru": "Кузня затихла. Подбросим дров через неделю.",
+      "en_tts": "The forge is quiet. Fuel it again next week.",
+      "ru_tts": "Кузня затихла. Подбросим дров через неделю.",
+      "ru_frames": [
+        "Кузня затихла. Подбросим дров через неделю."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.poijok.2.0"
+      ],
+      "title": "Tocsin Sleeps",
+      "category": "boss",
+      "spec_key": "E25"
+    },
+    {
+      "id": "fggpus.0",
+      "group": "fggpus",
+      "group_id": "fggpus",
+      "expand_key": "E26",
+      "variant": 0,
+      "voice": "eat",
+      "ogg": "eat.ogg",
+      "duration": 2.48,
+      "en": "Bring the flags! The square earned a festoon.",
+      "ru": "Несите флажки! Площадь заслужила гирлянду.",
+      "en_tts": "Bring the flags! The square earned a festoon.",
+      "ru_tts": "Несите флажки! Площадь заслужила гирлянду.",
+      "ru_frames": [
+        "Несите флажки! Площадь заслужила гирлянду."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.fggpus.0.0"
+      ],
+      "title": "Gather for a Festoon",
+      "category": "rite",
+      "spec_key": "E26"
+    },
+    {
+      "id": "fggpus.1",
+      "group": "fggpus",
+      "group_id": "fggpus",
+      "expand_key": "E26",
+      "variant": 1,
+      "voice": "eau",
+      "ogg": "eau.ogg",
+      "duration": 1.93,
+      "en": "Flowers in pots, lanterns on posts.",
+      "ru": "Цветы в горшки, фонари на столбы.",
+      "en_tts": "Flowers in pots, lanterns on posts.",
+      "ru_tts": "Цветы в горшки, фонари на столбы.",
+      "ru_frames": [
+        "Цветы в горшки, фонари на столбы."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.fggpus.1.0"
+      ],
+      "title": "Gather for a Festoon",
+      "category": "rite",
+      "spec_key": "E26"
+    },
+    {
+      "id": "fggpus.2",
+      "group": "fggpus",
+      "group_id": "fggpus",
+      "expand_key": "E26",
+      "variant": 2,
+      "voice": "eav",
+      "ogg": "eav.ogg",
+      "duration": 2.81,
+      "en": "Nobody can stop us living pretty. Especially today.",
+      "ru": "Красиво жить не запретишь. Особенно сегодня.",
+      "en_tts": "Nobody can stop us living pretty. Especially today.",
+      "ru_tts": "Красиво жить не запретишь. Особенно сегодня.",
+      "ru_frames": [
+        "Красиво жить не запретишь. Особенно сегодня."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.fggpus.2.0"
+      ],
+      "title": "Gather for a Festoon",
+      "category": "rite",
+      "spec_key": "E26"
+    },
+    {
+      "id": "ffijrr.0",
+      "group": "ffijrr",
+      "group_id": "ffijrr",
+      "expand_key": "E27",
+      "variant": 0,
+      "voice": "eaw",
+      "ogg": "eaw.ogg",
+      "duration": 2.81,
+      "en": "Festival! Barrels to the bell, hands off the cakes.",
+      "ru": "Праздник! Бочки к колоколу, торты не трогать.",
+      "en_tts": "Festival! Barrels to the bell, hands off the cakes.",
+      "ru_tts": "Праздник! Бочки к колоколу, торты не трогать.",
+      "ru_frames": [
+        "Праздник! Бочки к колоколу, торты не трогать."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ffijrr.0.0"
+      ],
+      "title": "Gather for the Festival",
+      "category": "rite",
+      "spec_key": "E27"
+    },
+    {
+      "id": "ffijrr.1",
+      "group": "ffijrr",
+      "group_id": "ffijrr",
+      "expand_key": "E27",
+      "variant": 1,
+      "voice": "eax",
+      "ogg": "eax.ogg",
+      "duration": 1.81,
+      "en": "The harvest is in. Now we eat it.",
+      "ru": "Урожай собран. Теперь его едят.",
+      "en_tts": "The harvest is in. Now we eat it.",
+      "ru_tts": "Урожай собран. Теперь его едят.",
+      "ru_frames": [
+        "Урожай собран. Теперь его едят."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ffijrr.1.0"
+      ],
+      "title": "Gather for the Festival",
+      "category": "rite",
+      "spec_key": "E27"
+    },
+    {
+      "id": "ffijrr.2",
+      "group": "ffijrr",
+      "group_id": "ffijrr",
+      "expand_key": "E27",
+      "variant": 2,
+      "voice": "eay",
+      "ogg": "eay.ogg",
+      "duration": 2.15,
+      "en": "If you do not dance, you carry barrels.",
+      "ru": "Кто не танцует, тот носит бочки.",
+      "en_tts": "If you do not dance, you carry barrels.",
+      "ru_tts": "Кто не танцует, тот носит бочки.",
+      "ru_frames": [
+        "Кто не танцует, тот носит бочки."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ffijrr.2.0"
+      ],
+      "title": "Gather for the Festival",
+      "category": "rite",
+      "spec_key": "E27"
+    },
+    {
+      "id": "pqoytv.0",
+      "group": "pqoytv",
+      "group_id": "pqoytv",
+      "expand_key": "E28",
+      "variant": 0,
+      "voice": "eaz",
+      "ogg": "eaz.ogg",
+      "duration": 2.31,
+      "en": "Raising a pavilion. Yellow, like our mood.",
+      "ru": "Ставим шатёр. Жёлтый, как наше настроение.",
+      "en_tts": "Raising a pavilion. Yellow, like our mood.",
+      "ru_tts": "Ставим шатёр. Жёлтый, как наше настроение.",
+      "ru_frames": [
+        "Ставим шатёр. Жёлтый, как наше настроение."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.pqoytv.0.0"
+      ],
+      "title": "Gather for a Pavilion",
+      "category": "rite",
+      "spec_key": "E28"
+    },
+    {
+      "id": "pqoytv.1",
+      "group": "pqoytv",
+      "group_id": "pqoytv",
+      "expand_key": "E28",
+      "variant": 1,
+      "voice": "eba",
+      "ogg": "eba.ogg",
+      "duration": 2.09,
+      "en": "Wool on the roof, logs on the corners.",
+      "ru": "Шерсть на крышу, брёвна на углы.",
+      "en_tts": "Wool on the roof, logs on the corners.",
+      "ru_tts": "Шерсть на крышу, брёвна на углы.",
+      "ru_frames": [
+        "Шерсть на крышу, брёвна на углы."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.pqoytv.1.0"
+      ],
+      "title": "Gather for a Pavilion",
+      "category": "rite",
+      "spec_key": "E28"
+    },
+    {
+      "id": "pqoytv.2",
+      "group": "pqoytv",
+      "group_id": "pqoytv",
+      "expand_key": "E28",
+      "variant": 2,
+      "voice": "ebb",
+      "ogg": "ebb.ogg",
+      "duration": 3.02,
+      "en": "The next village will see this pavilion. Let them envy.",
+      "ru": "Такой шатёр видно из соседней деревни. Пусть завидуют.",
+      "en_tts": "The next village will see this pavilion. Let them envy.",
+      "ru_tts": "Такой шатёр видно из соседней деревни. Пусть завидуют.",
+      "ru_frames": [
+        "Такой шатёр видно из соседней деревни. Пусть завидуют."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.pqoytv.2.0"
+      ],
+      "title": "Gather for a Pavilion",
+      "category": "rite",
+      "spec_key": "E28"
+    },
+    {
+      "id": "moeehj.0",
+      "group": "moeehj",
+      "group_id": "moeehj",
+      "expand_key": "E29",
+      "variant": 0,
+      "voice": "ebc",
+      "ogg": "ebc.ogg",
+      "duration": 2.25,
+      "en": "Light the candles. We keep watch tonight.",
+      "ru": "Зажжём свечи. Ночью будем дежурить.",
+      "en_tts": "Light the candles. We keep watch tonight.",
+      "ru_tts": "Зажжём свечи. Ночью будем дежурить.",
+      "ru_frames": [
+        "Зажжём свечи. Ночью будем дежурить."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.moeehj.0.0"
+      ],
+      "title": "Gather for a Vigil",
+      "category": "rite",
+      "spec_key": "E29"
+    },
+    {
+      "id": "moeehj.1",
+      "group": "moeehj",
+      "group_id": "moeehj",
+      "expand_key": "E29",
+      "variant": 1,
+      "voice": "ebd",
+      "ogg": "ebd.ogg",
+      "duration": 2.31,
+      "en": "Soul lanterns by the bell. It feels safer.",
+      "ru": "Фонари душ к колоколу. Так спокойнее.",
+      "en_tts": "Soul lanterns by the bell. It feels safer.",
+      "ru_tts": "Фонари душ к колоколу. Так спокойнее.",
+      "ru_frames": [
+        "Фонари душ к колоколу. Так спокойнее."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.moeehj.1.0"
+      ],
+      "title": "Gather for a Vigil",
+      "category": "rite",
+      "spec_key": "E29"
+    },
+    {
+      "id": "moeehj.2",
+      "group": "moeehj",
+      "group_id": "moeehj",
+      "expand_key": "E29",
+      "variant": 2,
+      "voice": "ebe",
+      "ogg": "ebe.ogg",
+      "duration": 2.37,
+      "en": "Someone circles the village. Nobody sleeps.",
+      "ru": "Кто-то ходит вокруг деревни. Не спим.",
+      "en_tts": "Someone circles the village. Nobody sleeps.",
+      "ru_tts": "Кто-то ходит вокруг деревни. Не спим.",
+      "ru_frames": [
+        "Кто-то ходит вокруг деревни. Не спим."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.moeehj.2.0"
+      ],
+      "title": "Gather for a Vigil",
+      "category": "rite",
+      "spec_key": "E29"
+    },
+    {
+      "id": "qyhzuc.0",
+      "group": "qyhzuc",
+      "group_id": "qyhzuc",
+      "expand_key": "E30",
+      "variant": 0,
+      "voice": "ebf",
+      "ogg": "ebf.ogg",
+      "duration": 2.15,
+      "en": "Black banners. We remember who we lost.",
+      "ru": "Чёрные флаги. Мы помним, кого потеряли.",
+      "en_tts": "Black banners. We remember who we lost.",
+      "ru_tts": "Чёрные флаги. Мы помним, кого потеряли.",
+      "ru_frames": [
+        "Чёрные флаги. Мы помним, кого потеряли."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.qyhzuc.0.0"
+      ],
+      "title": "Gather to Mourn",
+      "category": "rite",
+      "spec_key": "E30"
+    },
+    {
+      "id": "qyhzuc.1",
+      "group": "qyhzuc",
+      "group_id": "qyhzuc",
+      "expand_key": "E30",
+      "variant": 1,
+      "voice": "ebg",
+      "ogg": "ebg.ogg",
+      "duration": 2.53,
+      "en": "Wither roses, for those who did not come back.",
+      "ru": "Розы иссушения — для тех, кто не вернулся.",
+      "en_tts": "Wither roses, for those who did not come back.",
+      "ru_tts": "Розы иссушения — для тех, кто не вернулся.",
+      "ru_frames": [
+        "Розы иссушения — для тех, кто не вернулся."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.qyhzuc.1.0"
+      ],
+      "title": "Gather to Mourn",
+      "category": "rite",
+      "spec_key": "E30"
+    },
+    {
+      "id": "qyhzuc.2",
+      "group": "qyhzuc",
+      "group_id": "qyhzuc",
+      "expand_key": "E30",
+      "variant": 2,
+      "voice": "ebh",
+      "ogg": "ebh.ogg",
+      "duration": 1.76,
+      "en": "Let us be quiet. Today at least.",
+      "ru": "Помолчим. Хотя бы сегодня.",
+      "en_tts": "Let us be quiet. Today at least.",
+      "ru_tts": "Помолчим. Хотя бы сегодня.",
+      "ru_frames": [
+        "Помолчим. Хотя бы сегодня."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.qyhzuc.2.0"
+      ],
+      "title": "Gather to Mourn",
+      "category": "rite",
+      "spec_key": "E30"
+    },
+    {
+      "id": "lcnxhs.0",
+      "group": "lcnxhs",
+      "group_id": "lcnxhs",
+      "expand_key": "E31",
+      "variant": 0,
+      "voice": "ebi",
+      "ogg": "ebi.ogg",
+      "duration": 2.69,
+      "en": "Logs in a pile. We burn everything that built up.",
+      "ru": "Брёвна в кучу. Сожжём всё, что накопилось.",
+      "en_tts": "Logs in a pile. We burn everything that built up.",
+      "ru_tts": "Брёвна в кучу. Сожжём всё, что накопилось.",
+      "ru_frames": [
+        "Брёвна в кучу. Сожжём всё, что накопилось."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.lcnxhs.0.0"
+      ],
+      "title": "Gather for a Pyre",
+      "category": "rite",
+      "spec_key": "E31"
+    },
+    {
+      "id": "lcnxhs.1",
+      "group": "lcnxhs",
+      "group_id": "lcnxhs",
+      "expand_key": "E31",
+      "variant": 1,
+      "voice": "ebj",
+      "ogg": "ebj.ogg",
+      "duration": 2.2,
+      "en": "A soul fire burns cold. Like our hearts.",
+      "ru": "Костёр душ горит холодно. Как наши сердца.",
+      "en_tts": "A soul fire burns cold. Like our hearts.",
+      "ru_tts": "Костёр душ горит холодно. Как наши сердца.",
+      "ru_frames": [
+        "Костёр душ горит холодно. Как наши сердца."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.lcnxhs.1.0"
+      ],
+      "title": "Gather for a Pyre",
+      "category": "rite",
+      "spec_key": "E31"
+    },
+    {
+      "id": "lcnxhs.2",
+      "group": "lcnxhs",
+      "group_id": "lcnxhs",
+      "expand_key": "E31",
+      "variant": 2,
+      "voice": "ebk",
+      "ogg": "ebk.ogg",
+      "duration": 2.48,
+      "en": "A little more, and it will come to the forge.",
+      "ru": "Ещё немного — и до кузни дойдёт.",
+      "en_tts": "A little more, and it will come to the forge.",
+      "ru_tts": "Ещё немного — и до кузни дойдёт.",
+      "ru_frames": [
+        "Ещё немного — и до кузни дойдёт."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.lcnxhs.2.0"
+      ],
+      "title": "Gather for a Pyre",
+      "category": "rite",
+      "spec_key": "E31"
+    },
+    {
+      "id": "pynake.0",
+      "group": "pynake",
+      "group_id": "pynake",
+      "expand_key": "E32",
+      "variant": 0,
+      "voice": "ebl",
+      "ogg": "ebl.ogg",
+      "duration": 2.86,
+      "en": "The festoon is up! The square looks like a postcard.",
+      "ru": "Гирлянда висит! Площадь как на открытке.",
+      "en_tts": "The festoon is up! The square looks like a postcard.",
+      "ru_tts": "Гирлянда висит! Площадь как на открытке.",
+      "ru_frames": [
+        "Гирлянда висит! Площадь как на открытке."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.pynake.0.0"
+      ],
+      "title": "Festoon Hung",
+      "category": "rite",
+      "spec_key": "E32"
+    },
+    {
+      "id": "pynake.1",
+      "group": "pynake",
+      "group_id": "pynake",
+      "expand_key": "E32",
+      "variant": 1,
+      "voice": "ebm",
+      "ogg": "ebm.ogg",
+      "duration": 1.26,
+      "en": "Now the village smiles.",
+      "ru": "Вот теперь деревня улыбается.",
+      "en_tts": "Now the village smiles.",
+      "ru_tts": "Вот теперь деревня улыбается.",
+      "ru_frames": [
+        "Вот теперь деревня улыбается."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.pynake.1.0"
+      ],
+      "title": "Festoon Hung",
+      "category": "rite",
+      "spec_key": "E32"
+    },
+    {
+      "id": "pynake.2",
+      "group": "pynake",
+      "group_id": "pynake",
+      "expand_key": "E32",
+      "variant": 2,
+      "voice": "ebn",
+      "ogg": "ebn.ogg",
+      "duration": 2.09,
+      "en": "The flags flutter. So do we, from joy.",
+      "ru": "Флажки трепещут. Мы тоже, но от радости.",
+      "en_tts": "The flags flutter. So do we, from joy.",
+      "ru_tts": "Флажки трепещут. Мы тоже, но от радости.",
+      "ru_frames": [
+        "Флажки трепещут. Мы тоже, но от радости."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.pynake.2.0"
+      ],
+      "title": "Festoon Hung",
+      "category": "rite",
+      "spec_key": "E32"
+    },
+    {
+      "id": "gjvuoo.0",
+      "group": "gjvuoo",
+      "group_id": "gjvuoo",
+      "expand_key": "E33",
+      "variant": 0,
+      "voice": "ebo",
+      "ogg": "ebo.ogg",
+      "duration": 2.92,
+      "en": "The festival begins! Traders, discounts on the table.",
+      "ru": "Праздник начался! Торговцы, скидки на стол.",
+      "en_tts": "The festival begins! Traders, discounts on the table.",
+      "ru_tts": "Праздник начался! Торговцы, скидки на стол.",
+      "ru_frames": [
+        "Праздник начался! Торговцы, скидки на стол."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.gjvuoo.0.0"
+      ],
+      "title": "Festival Begins",
+      "category": "rite",
+      "spec_key": "E33"
+    },
+    {
+      "id": "gjvuoo.1",
+      "group": "gjvuoo",
+      "group_id": "gjvuoo",
+      "expand_key": "E33",
+      "variant": 1,
+      "voice": "ebp",
+      "ogg": "ebp.ogg",
+      "duration": 2.25,
+      "en": "Music, cakes, nobody quarrels. A miracle.",
+      "ru": "Музыка, торты, никто не ругается. Чудо.",
+      "en_tts": "Music, cakes, nobody quarrels. A miracle.",
+      "ru_tts": "Музыка, торты, никто не ругается. Чудо.",
+      "ru_frames": [
+        "Музыка, торты, никто не ругается. Чудо."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.gjvuoo.1.0"
+      ],
+      "title": "Festival Begins",
+      "category": "rite",
+      "spec_key": "E33"
+    },
+    {
+      "id": "gjvuoo.2",
+      "group": "gjvuoo",
+      "group_id": "gjvuoo",
+      "expand_key": "E33",
+      "variant": 2,
+      "voice": "ebq",
+      "ogg": "ebq.ogg",
+      "duration": 2.2,
+      "en": "To the harvest! And to whoever saved it.",
+      "ru": "За урожай! И за того, кто его спас.",
+      "en_tts": "To the harvest! And to whoever saved it.",
+      "ru_tts": "За урожай! И за того, кто его спас.",
+      "ru_frames": [
+        "За урожай! И за того, кто его спас."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.gjvuoo.2.0"
+      ],
+      "title": "Festival Begins",
+      "category": "rite",
+      "spec_key": "E33"
+    },
+    {
+      "id": "sfhrai.0",
+      "group": "sfhrai",
+      "group_id": "sfhrai",
+      "expand_key": "E34",
+      "variant": 0,
+      "voice": "ebr",
+      "ogg": "ebr.ogg",
+      "duration": 2.37,
+      "en": "The pavilion stands. Only cats are happier.",
+      "ru": "Шатёр стоит. Счастливее нас только кошки.",
+      "en_tts": "The pavilion stands. Only cats are happier.",
+      "ru_tts": "Шатёр стоит. Счастливее нас только кошки.",
+      "ru_frames": [
+        "Шатёр стоит. Счастливее нас только кошки."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sfhrai.0.0"
+      ],
+      "title": "Pavilion Raised",
+      "category": "rite",
+      "spec_key": "E34"
+    },
+    {
+      "id": "sfhrai.1",
+      "group": "sfhrai",
+      "group_id": "sfhrai",
+      "expand_key": "E34",
+      "variant": 1,
+      "voice": "ebs",
+      "ogg": "ebs.ogg",
+      "duration": 2.37,
+      "en": "Under this pavilion even the mayor is kind.",
+      "ru": "Под таким шатром даже мэр добрый.",
+      "en_tts": "Under this pavilion even the mayor is kind.",
+      "ru_tts": "Под таким шатром даже мэр добрый.",
+      "ru_frames": [
+        "Под таким шатром даже мэр добрый."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sfhrai.1.0"
+      ],
+      "title": "Pavilion Raised",
+      "category": "rite",
+      "spec_key": "E34"
+    },
+    {
+      "id": "sfhrai.2",
+      "group": "sfhrai",
+      "group_id": "sfhrai",
+      "expand_key": "E34",
+      "variant": 2,
+      "voice": "ebt",
+      "ogg": "ebt.ogg",
+      "duration": 1.93,
+      "en": "The village never had a better day.",
+      "ru": "Лучшего дня у деревни ещё не было.",
+      "en_tts": "The village never had a better day.",
+      "ru_tts": "Лучшего дня у деревни ещё не было.",
+      "ru_frames": [
+        "Лучшего дня у деревни ещё не было."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.sfhrai.2.0"
+      ],
+      "title": "Pavilion Raised",
+      "category": "rite",
+      "spec_key": "E34"
+    },
+    {
+      "id": "ycphut.0",
+      "group": "ycphut",
+      "group_id": "ycphut",
+      "expand_key": "E35",
+      "variant": 0,
+      "voice": "ebu",
+      "ogg": "ebu.ogg",
+      "duration": 2.42,
+      "en": "The candles burn. Let them see we are awake.",
+      "ru": "Свечи горят. Пусть видят, что мы не спим.",
+      "en_tts": "The candles burn. Let them see we are awake.",
+      "ru_tts": "Свечи горят. Пусть видят, что мы не спим.",
+      "ru_frames": [
+        "Свечи горят. Пусть видят, что мы не спим."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ycphut.0.0"
+      ],
+      "title": "Vigil Lit",
+      "category": "rite",
+      "spec_key": "E35"
+    },
+    {
+      "id": "ycphut.1",
+      "group": "ycphut",
+      "group_id": "ycphut",
+      "expand_key": "E35",
+      "variant": 1,
+      "voice": "ebv",
+      "ogg": "ebv.ogg",
+      "duration": 1.93,
+      "en": "The vigil has begun. We take turns.",
+      "ru": "Бдение началось. Дежурим по очереди.",
+      "en_tts": "The vigil has begun. We take turns.",
+      "ru_tts": "Бдение началось. Дежурим по очереди.",
+      "ru_frames": [
+        "Бдение началось. Дежурим по очереди."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ycphut.1.0"
+      ],
+      "title": "Vigil Lit",
+      "category": "rite",
+      "spec_key": "E35"
+    },
+    {
+      "id": "ycphut.2",
+      "group": "ycphut",
+      "group_id": "ycphut",
+      "expand_key": "E35",
+      "variant": 2,
+      "voice": "ebw",
+      "ogg": "ebw.ogg",
+      "duration": 1.65,
+      "en": "Quiet. We listen to the night.",
+      "ru": "Тихо. Слушаем ночь.",
+      "en_tts": "Quiet. We listen to the night.",
+      "ru_tts": "Тихо. Слушаем ночь.",
+      "ru_frames": [
+        "Тихо. Слушаем ночь."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.ycphut.2.0"
+      ],
+      "title": "Vigil Lit",
+      "category": "rite",
+      "spec_key": "E35"
+    },
+    {
+      "id": "cawtnw.0",
+      "group": "cawtnw",
+      "group_id": "cawtnw",
+      "expand_key": "E36",
+      "variant": 0,
+      "voice": "ebx",
+      "ogg": "ebx.ogg",
+      "duration": 2.04,
+      "en": "Mourning. No trading, no jokes today.",
+      "ru": "Траур. Сегодня без торговли и без шуток.",
+      "en_tts": "Mourning. No trading, no jokes today.",
+      "ru_tts": "Траур. Сегодня без торговли и без шуток.",
+      "ru_frames": [
+        "Траур. Сегодня без торговли и без шуток."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.cawtnw.0.0"
+      ],
+      "title": "Mourning Laid",
+      "category": "rite",
+      "spec_key": "E36"
+    },
+    {
+      "id": "cawtnw.1",
+      "group": "cawtnw",
+      "group_id": "cawtnw",
+      "expand_key": "E36",
+      "variant": 1,
+      "voice": "eby",
+      "ogg": "eby.ogg",
+      "duration": 1.76,
+      "en": "The banners are up. We remember.",
+      "ru": "Флаги подняты. Мы помним.",
+      "en_tts": "The banners are up. We remember.",
+      "ru_tts": "Флаги подняты. Мы помним.",
+      "ru_frames": [
+        "Флаги подняты. Мы помним."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.cawtnw.1.0"
+      ],
+      "title": "Mourning Laid",
+      "category": "rite",
+      "spec_key": "E36"
+    },
+    {
+      "id": "cawtnw.2",
+      "group": "cawtnw",
+      "group_id": "cawtnw",
+      "expand_key": "E36",
+      "variant": 2,
+      "voice": "ebz",
+      "ogg": "ebz.ogg",
+      "duration": 2.15,
+      "en": "The totem stands. Let it grieve for us.",
+      "ru": "Тотем стоит. Пусть он скорбит за нас.",
+      "en_tts": "The totem stands. Let it grieve for us.",
+      "ru_tts": "Тотем стоит. Пусть он скорбит за нас.",
+      "ru_frames": [
+        "Тотем стоит. Пусть он скорбит за нас."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.cawtnw.2.0"
+      ],
+      "title": "Mourning Laid",
+      "category": "rite",
+      "spec_key": "E36"
+    },
+    {
+      "id": "hossuu.0",
+      "group": "hossuu",
+      "group_id": "hossuu",
+      "expand_key": "E37",
+      "variant": 0,
+      "voice": "eca",
+      "ogg": "eca.ogg",
+      "duration": 2.2,
+      "en": "The pyre burns. The anger burns with it.",
+      "ru": "Костёр горит. Злость горит вместе с ним.",
+      "en_tts": "The pyre burns. The anger burns with it.",
+      "ru_tts": "Костёр горит. Злость горит вместе с ним.",
+      "ru_frames": [
+        "Костёр горит. Злость горит вместе с ним."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.hossuu.0.0"
+      ],
+      "title": "Pyre Lit",
+      "category": "rite",
+      "spec_key": "E37"
+    },
+    {
+      "id": "hossuu.1",
+      "group": "hossuu",
+      "group_id": "hossuu",
+      "expand_key": "E37",
+      "variant": 1,
+      "voice": "ecb",
+      "ogg": "ecb.ogg",
+      "duration": 2.53,
+      "en": "Crying obsidian does not lie. We are not well.",
+      "ru": "Плачущий обсидиан не врёт. Нам плохо.",
+      "en_tts": "Crying obsidian does not lie. We are not well.",
+      "ru_tts": "Плачущий обсидиан не врёт. Нам плохо.",
+      "ru_frames": [
+        "Плачущий обсидиан не врёт. Нам плохо."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.hossuu.1.0"
+      ],
+      "title": "Pyre Lit",
+      "category": "rite",
+      "spec_key": "E37"
+    },
+    {
+      "id": "hossuu.2",
+      "group": "hossuu",
+      "group_id": "hossuu",
+      "expand_key": "E37",
+      "variant": 2,
+      "voice": "ecc",
+      "ogg": "ecc.ogg",
+      "duration": 2.31,
+      "en": "If this does not help, we light the forge.",
+      "ru": "Если и это не поможет — разожжём кузню.",
+      "en_tts": "If this does not help, we light the forge.",
+      "ru_tts": "Если и это не поможет — разожжём кузню.",
+      "ru_frames": [
+        "Если и это не поможет — разожжём кузню."
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.hossuu.2.0"
+      ],
+      "title": "Pyre Lit",
+      "category": "rite",
+      "spec_key": "E37"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+TITLE: I installed one Minecraft mod... and the village came alive (Villager Life)
+
+TAGS: minecraft, minecraft mod, i installed one mod, villager mod, minecraft boss, minecraft villagers, neoforge, villager life, minecraft tower, boss rush
+
+DESCRIPTION:
+I installed one mod, didn't read a thing and went mining. Three days later the village had built itself a town — and then something rose behind the wall.
+
+00:00 Villager Life
+00:04 New mod, let's see
+00:17 Villages are boring. I'm going mining
+00:33 Three days later
+00:41 Is he building it? By hand?
+00:52 They actually talk
+00:59 Real coins
+01:10 A wedding
+01:22 And a baby
+01:32 The notice board
+01:43 Sunset
+01:52 ...what the—
+02:20 THE BUILDERS' SPIRE
+02:27 Floors, guards, keepers
+02:54 Ow. Again.
+02:59 The Core Anvil
+03:21 Heroes of the town
+03:24 One more floor
+03:32 Villager Life
+
+Villager Life — villagers with voices, homes, families and jobs; towns that grow by hand; and the Builders' Spire: 100 floors, ten keepers and trials.
+
+Minecraft 1.21.1 – 26.3 · NeoForge
+Source code: GitHub — s00d / villager-news-addon-neoforge-port
+
+#minecraft #minecraftmod #neoforge #villagers

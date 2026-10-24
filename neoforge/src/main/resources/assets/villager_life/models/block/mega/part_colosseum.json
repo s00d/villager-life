@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "villager_life:block/mega/part_colosseum"
+  }
+}

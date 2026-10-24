@@ -1,0 +1,148 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "face": "villager_life:block/town/house_sign",
+  "edge": "minecraft:block/dark_oak_planks",
+  "back": "minecraft:block/spruce_planks",
+  "particle": "minecraft:block/dark_oak_planks"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    4,
+    14
+   ],
+   "to": [
+    15,
+    12,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      1,
+      4,
+      15,
+      12
+     ],
+     "texture": "#face"
+    },
+    "south": {
+     "uv": [
+      1,
+      4,
+      15,
+      12
+     ],
+     "texture": "#back"
+    },
+    "east": {
+     "uv": [
+      0,
+      4,
+      2,
+      12
+     ],
+     "texture": "#edge"
+    },
+    "west": {
+     "uv": [
+      14,
+      4,
+      16,
+      12
+     ],
+     "texture": "#edge"
+    },
+    "up": {
+     "uv": [
+      1,
+      14,
+      15,
+      16
+     ],
+     "texture": "#edge"
+    },
+    "down": {
+     "uv": [
+      1,
+      0,
+      15,
+      2
+     ],
+     "texture": "#edge"
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    12,
+    13
+   ],
+   "to": [
+    16,
+    13,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      3,
+      16,
+      4
+     ],
+     "texture": "#edge"
+    },
+    "south": {
+     "uv": [
+      0,
+      3,
+      16,
+      4
+     ],
+     "texture": "#edge"
+    },
+    "east": {
+     "uv": [
+      0,
+      3,
+      3,
+      4
+     ],
+     "texture": "#edge"
+    },
+    "west": {
+     "uv": [
+      13,
+      3,
+      16,
+      4
+     ],
+     "texture": "#edge"
+    },
+    "up": {
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ],
+     "texture": "#edge"
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      3
+     ],
+     "texture": "#edge"
+    }
+   }
+  }
+ ]
+}

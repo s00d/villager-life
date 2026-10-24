@@ -1,0 +1,388 @@
+{
+ "variants": {
+  "col=0,facing=north,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0",
+   "y": 0
+  },
+  "col=0,facing=north,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0_lit",
+   "y": 0
+  },
+  "col=1,facing=north,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1",
+   "y": 0
+  },
+  "col=1,facing=north,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1_lit",
+   "y": 0
+  },
+  "col=2,facing=north,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2",
+   "y": 0
+  },
+  "col=2,facing=north,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2_lit",
+   "y": 0
+  },
+  "col=0,facing=north,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0",
+   "y": 0
+  },
+  "col=0,facing=north,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0_lit",
+   "y": 0
+  },
+  "col=1,facing=north,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1",
+   "y": 0
+  },
+  "col=1,facing=north,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1_lit",
+   "y": 0
+  },
+  "col=2,facing=north,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2",
+   "y": 0
+  },
+  "col=2,facing=north,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2_lit",
+   "y": 0
+  },
+  "col=0,facing=north,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0",
+   "y": 0
+  },
+  "col=0,facing=north,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0_lit",
+   "y": 0
+  },
+  "col=1,facing=north,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1",
+   "y": 0
+  },
+  "col=1,facing=north,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1_lit",
+   "y": 0
+  },
+  "col=2,facing=north,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2",
+   "y": 0
+  },
+  "col=2,facing=north,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2_lit",
+   "y": 0
+  },
+  "col=0,facing=north,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0",
+   "y": 0
+  },
+  "col=0,facing=north,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0_lit",
+   "y": 0
+  },
+  "col=1,facing=north,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1",
+   "y": 0
+  },
+  "col=1,facing=north,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1_lit",
+   "y": 0
+  },
+  "col=2,facing=north,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2",
+   "y": 0
+  },
+  "col=2,facing=north,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2_lit",
+   "y": 0
+  },
+  "col=0,facing=east,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0",
+   "y": 90
+  },
+  "col=0,facing=east,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0_lit",
+   "y": 90
+  },
+  "col=1,facing=east,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1",
+   "y": 90
+  },
+  "col=1,facing=east,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1_lit",
+   "y": 90
+  },
+  "col=2,facing=east,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2",
+   "y": 90
+  },
+  "col=2,facing=east,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2_lit",
+   "y": 90
+  },
+  "col=0,facing=east,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0",
+   "y": 90
+  },
+  "col=0,facing=east,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0_lit",
+   "y": 90
+  },
+  "col=1,facing=east,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1",
+   "y": 90
+  },
+  "col=1,facing=east,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1_lit",
+   "y": 90
+  },
+  "col=2,facing=east,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2",
+   "y": 90
+  },
+  "col=2,facing=east,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2_lit",
+   "y": 90
+  },
+  "col=0,facing=east,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0",
+   "y": 90
+  },
+  "col=0,facing=east,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0_lit",
+   "y": 90
+  },
+  "col=1,facing=east,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1",
+   "y": 90
+  },
+  "col=1,facing=east,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1_lit",
+   "y": 90
+  },
+  "col=2,facing=east,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2",
+   "y": 90
+  },
+  "col=2,facing=east,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2_lit",
+   "y": 90
+  },
+  "col=0,facing=east,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0",
+   "y": 90
+  },
+  "col=0,facing=east,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0_lit",
+   "y": 90
+  },
+  "col=1,facing=east,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1",
+   "y": 90
+  },
+  "col=1,facing=east,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1_lit",
+   "y": 90
+  },
+  "col=2,facing=east,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2",
+   "y": 90
+  },
+  "col=2,facing=east,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2_lit",
+   "y": 90
+  },
+  "col=0,facing=south,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0",
+   "y": 180
+  },
+  "col=0,facing=south,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0_lit",
+   "y": 180
+  },
+  "col=1,facing=south,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1",
+   "y": 180
+  },
+  "col=1,facing=south,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1_lit",
+   "y": 180
+  },
+  "col=2,facing=south,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2",
+   "y": 180
+  },
+  "col=2,facing=south,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2_lit",
+   "y": 180
+  },
+  "col=0,facing=south,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0",
+   "y": 180
+  },
+  "col=0,facing=south,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0_lit",
+   "y": 180
+  },
+  "col=1,facing=south,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1",
+   "y": 180
+  },
+  "col=1,facing=south,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1_lit",
+   "y": 180
+  },
+  "col=2,facing=south,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2",
+   "y": 180
+  },
+  "col=2,facing=south,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2_lit",
+   "y": 180
+  },
+  "col=0,facing=south,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0",
+   "y": 180
+  },
+  "col=0,facing=south,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0_lit",
+   "y": 180
+  },
+  "col=1,facing=south,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1",
+   "y": 180
+  },
+  "col=1,facing=south,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1_lit",
+   "y": 180
+  },
+  "col=2,facing=south,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2",
+   "y": 180
+  },
+  "col=2,facing=south,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2_lit",
+   "y": 180
+  },
+  "col=0,facing=south,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0",
+   "y": 180
+  },
+  "col=0,facing=south,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0_lit",
+   "y": 180
+  },
+  "col=1,facing=south,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1",
+   "y": 180
+  },
+  "col=1,facing=south,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1_lit",
+   "y": 180
+  },
+  "col=2,facing=south,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2",
+   "y": 180
+  },
+  "col=2,facing=south,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2_lit",
+   "y": 180
+  },
+  "col=0,facing=west,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0",
+   "y": 270
+  },
+  "col=0,facing=west,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_0_lit",
+   "y": 270
+  },
+  "col=1,facing=west,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1",
+   "y": 270
+  },
+  "col=1,facing=west,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_1_lit",
+   "y": 270
+  },
+  "col=2,facing=west,open=false,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2",
+   "y": 270
+  },
+  "col=2,facing=west,open=true,row=0": {
+   "model": "villager_life:block/spire/mech/door_0_2_lit",
+   "y": 270
+  },
+  "col=0,facing=west,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0",
+   "y": 270
+  },
+  "col=0,facing=west,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_0_lit",
+   "y": 270
+  },
+  "col=1,facing=west,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1",
+   "y": 270
+  },
+  "col=1,facing=west,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_1_lit",
+   "y": 270
+  },
+  "col=2,facing=west,open=false,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2",
+   "y": 270
+  },
+  "col=2,facing=west,open=true,row=1": {
+   "model": "villager_life:block/spire/mech/door_1_2_lit",
+   "y": 270
+  },
+  "col=0,facing=west,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0",
+   "y": 270
+  },
+  "col=0,facing=west,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_0_lit",
+   "y": 270
+  },
+  "col=1,facing=west,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1",
+   "y": 270
+  },
+  "col=1,facing=west,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_1_lit",
+   "y": 270
+  },
+  "col=2,facing=west,open=false,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2",
+   "y": 270
+  },
+  "col=2,facing=west,open=true,row=2": {
+   "model": "villager_life:block/spire/mech/door_2_2_lit",
+   "y": 270
+  },
+  "col=0,facing=west,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0",
+   "y": 270
+  },
+  "col=0,facing=west,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_0_lit",
+   "y": 270
+  },
+  "col=1,facing=west,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1",
+   "y": 270
+  },
+  "col=1,facing=west,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_1_lit",
+   "y": 270
+  },
+  "col=2,facing=west,open=false,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2",
+   "y": 270
+  },
+  "col=2,facing=west,open=true,row=3": {
+   "model": "villager_life:block/spire/mech/door_3_2_lit",
+   "y": 270
+  }
+ }
+}

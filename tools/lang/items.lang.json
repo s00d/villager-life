@@ -1,0 +1,12 @@
+{
+  "en": {
+    "tooltip.villager_life.villager_blessing_staff": "Hold use, then release: village mood +10. Sneak to curse it by 10.",
+    "tooltip.villager_life.parish_vestment": "In a village: regeneration while the mood is above zero, mining fatigue below.",
+    "tooltip.villager_life.tocsin_core": "Core for the blessing staff and the parish vestment."
+  },
+  "ru": {
+    "tooltip.villager_life.villager_blessing_staff": "Зажмите и отпустите: настроение деревни +10. Крадучись — проклятие на 10.",
+    "tooltip.villager_life.parish_vestment": "В деревне: регенерация, пока настроение выше нуля, и усталость, когда ниже.",
+    "tooltip.villager_life.tocsin_core": "Основа для посоха благословения и облачения прихода."
+  }
+}

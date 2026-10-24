@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "villager_life:block/tower_clock_front",
+    "side": "minecraft:block/stone_bricks",
+    "top": "minecraft:block/stone_bricks",
+    "particle": "minecraft:block/stone_bricks"
+  }
+}

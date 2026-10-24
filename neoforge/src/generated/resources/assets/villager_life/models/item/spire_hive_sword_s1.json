@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "villager_life:item/spire_hive_sword_s1"
+  }
+}

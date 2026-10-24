@@ -1,0 +1,80 @@
+{
+  "parent": "block/block",
+  "render_type": "minecraft:cutout",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "minecraft:block/smithing_table_top",
+    "t0": "minecraft:block/smithing_table_front",
+    "t1": "minecraft:block/smithing_table_side",
+    "t2": "minecraft:block/smithing_table_top",
+    "t3": "minecraft:block/smithing_table_bottom",
+    "t4": "minecraft:item/iron_chestplate"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        12,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#t0"
+        },
+        "south": {
+          "texture": "#t1"
+        },
+        "east": {
+          "texture": "#t1"
+        },
+        "west": {
+          "texture": "#t1"
+        },
+        "up": {
+          "texture": "#t2"
+        },
+        "down": {
+          "texture": "#t3"
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        12.05,
+        12.05
+      ],
+      "to": [
+        13,
+        12.05,
+        15
+      ],
+      "shade": false,
+      "faces": {
+        "up": {
+          "texture": "#t4",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#t4",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

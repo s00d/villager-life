@@ -1,0 +1,42 @@
+dependencies {
+    errorprone 'com.google.errorprone:error_prone_core:2.50.0'
+    errorprone 'com.uber.nullaway:nullaway:0.14.2'
+    compileOnly 'org.jspecify:jspecify:1.0.0'
+    compileOnly 'com.google.errorprone:error_prone_annotations:2.36.0'
+    compileOnly 'com.github.spotbugs:spotbugs-annotations:4.9.3'
+}
+
+tasks.withType(JavaCompile).configureEach { task ->
+    // classfile: 26.3's joml ships old class files whose type annotations javac reports and ignores
+    task.options.compilerArgs.addAll(['-Xlint:all', '-Xlint:-classfile', '-Werror', '-Xmaxwarns', '10000', '-Xmaxerrs', '10000'])
+    task.options.errorprone {
+        error('NullAway')
+        option('NullAway:AnnotatedPackages', 'com.vnap')
+        // Minecraft is @NullMarked from 1.21.11 (its equals(Object) parameters come out non-null): the same rules
+        // for every version, the game's code as unannotated
+        option('NullAway:UnannotatedSubPackages', 'net.minecraft,com.mojang')
+        option('NullAway:ExcludedFieldAnnotations', 'org.spongepowered.asm.mixin.Shadow')
+        error('DeadException')
+        error('EqualsGetClass')
+        error('ReferenceEquality')
+        error('MissingCasesInEnumSwitch')
+        error('FallThrough')
+        error('MustBeClosedChecker')
+    }
+}
+
+tasks.named('check').configure {
+    dependsOn 'spotbugsMain'
+}
+
+spotbugs {
+    ignoreFailures = false
+    reportLevel = 'high'
+    effort = 'max'
+}
+
+tasks.named('spotbugsMain').configure {
+    reports {
+        html.required = true
+    }
+}

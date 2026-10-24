@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "IBI",
+    "BSB",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "S": {
+      "item": "villager_life:core_shard"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_frame",
+    "count": 4
+  }
+}

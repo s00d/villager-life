@@ -1,0 +1,1320 @@
+# Phase I — women's own voice, speaker/<lang>/woman. Adult lines become these through Family.WOMAN_LINES;
+# I19-I26 are family moments started by com.vnap.dialogue.Family.
+
+- key: I01
+  id: w_greet
+  title: "Woman Greets the Player"
+  category: woman
+  status: active
+  trigger: "player approaches, stares at or nudges a woman"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "О, привет! Заходи, не стесняйся."
+      frames_en:
+        - "Oh, hello! Come in, don't be shy."
+    - weight: 50
+      frames:
+        - "Здравствуй, путник. Ты сегодня какой-то задумчивый."
+      frames_en:
+        - "Hello, traveler. You look thoughtful today."
+    - weight: 50
+      frames:
+        - "Хмм… Опять ты? Ну, рассказывай, что нового."
+      frames_en:
+        - "Hmm… you again? Well, tell me what's new."
+    - weight: 50
+      frames:
+        - "Чего так смотришь? У меня что-то на носу?"
+      frames_en:
+        - "Why are you staring? Is something on my nose?"
+    - weight: 50
+      frames:
+        - "Добрый день! Как дорога, не устал?"
+      frames_en:
+        - "Good day! How was the road, are you tired?"
+    - weight: 50
+      frames:
+        - "Ой, напугал! Подкрадываться нехорошо."
+      frames_en:
+        - "Oh, you scared me! Sneaking up is not nice."
+    - weight: 50
+      frames:
+        - "Привет-привет! Поможешь мне с корзинкой?"
+      frames_en:
+        - "Hi there! Will you help me with my basket?"
+
+- key: I02
+  id: w_trade
+  title: "Woman Starts Trading"
+  category: woman
+  status: active
+  trigger: "a woman starts trading with a friendly player"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Хмм… Опять пришёл? Ну, показывай, что принёс."
+      frames_en:
+        - "Hmm… back again? Well, let's see what you've brought."
+    - weight: 50
+      frames:
+        - "О-о, изумруды! Ладно, давай посмотрим, что я могу предложить."
+      frames_en:
+        - "Ooh, emeralds! All right, let's see what I can offer you."
+    - weight: 50
+      frames:
+        - "Для тебя у меня всегда найдётся что-нибудь хорошее."
+      frames_en:
+        - "I always have something nice for you."
+    - weight: 50
+      frames:
+        - "Выбирай не спеша, всё свежее."
+      frames_en:
+        - "Take your time, everything is fresh."
+    - weight: 50
+      frames:
+        - "Только не торгуйся слишком сильно, я сегодня добрая."
+      frames_en:
+        - "Don't haggle too hard, I'm feeling kind today."
+    - weight: 50
+      frames:
+        - "Моему мужу не говори, но тебе скидка."
+      frames_en:
+        - "Don't tell my husband, but you get a discount."
+    - weight: 50
+      frames:
+        - "Ну что, обмен? Я люблю, когда всё честно."
+      frames_en:
+        - "So, a trade? I like it when things are fair."
+
+- key: I03
+  id: w_trade_wary
+  title: "Woman Trades Warily"
+  category: woman
+  status: active
+  trigger: "a woman trades with a player of low reputation"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Хм. Торговать будем, но я слежу за тобой."
+      frames_en:
+        - "Hmm. We'll trade, but I'm watching you."
+    - weight: 50
+      frames:
+        - "Только без фокусов, понял?"
+      frames_en:
+        - "No tricks, understood?"
+    - weight: 50
+      frames:
+        - "Цены для тебя сегодня повыше. Сам знаешь почему."
+      frames_en:
+        - "Prices are higher for you today. You know why."
+    - weight: 50
+      frames:
+        - "Руки держи на виду."
+      frames_en:
+        - "Keep your hands where I can see them."
+    - weight: 50
+      frames:
+        - "Я тебя запомнила. Быстро выбирай и уходи."
+      frames_en:
+        - "I remember you. Pick quickly and go."
+    - weight: 50
+      frames:
+        - "Если что-то пропадёт, я знаю, кого искать."
+      frames_en:
+        - "If anything goes missing, I know who to look for."
+
+- key: I04
+  id: w_trade_done
+  title: "Woman Completes a Trade"
+  category: woman
+  status: active
+  trigger: "a woman completes a trade"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Отличная сделка! Приходи ещё."
+      frames_en:
+        - "A great deal! Come again."
+    - weight: 50
+      frames:
+        - "Спасибо! Теперь куплю детям новые ботиночки."
+      frames_en:
+        - "Thank you! Now I can buy the kids new boots."
+    - weight: 50
+      frames:
+        - "Расскажу соседкам, что ты платишь честно. У нас это многого стоит."
+      frames_en:
+        - "I'll tell the neighbours you pay fair. That counts for a lot here."
+    - weight: 50
+      frames:
+        - "Вот, держи. И не потеряй по дороге."
+      frames_en:
+        - "Here you go. And don't lose it on the way."
+    - weight: 50
+      frames:
+        - "Изумрудик к изумрудику, глядишь, и на новый дом хватит."
+      frames_en:
+        - "Emerald by emerald, maybe we'll save up for a new house."
+    - weight: 50
+      frames:
+        - "Хорошо поторговали! Заходи на пирожки."
+      frames_en:
+        - "Good trading! Come by for pies sometime."
+    - weight: 50
+      frames:
+        - "Ты честный покупатель. Таких мало."
+      frames_en:
+        - "You're an honest customer. There aren't many."
+
+- key: I05
+  id: w_trade_none
+  title: "Woman Closes Without a Trade"
+  category: woman
+  status: active
+  trigger: "a woman's trading window closes with no trade"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ничего не взял? Ну и ладно."
+      frames_en:
+        - "Didn't take anything? Oh well."
+    - weight: 50
+      frames:
+        - "Только посмотреть пришёл? Бывает."
+      frames_en:
+        - "Just came to look? It happens."
+    - weight: 50
+      frames:
+        - "Опять только посмотреть? Ладно, отложу для тебя самое лучшее."
+      frames_en:
+        - "Just looking again? Fine, I'll put the best ones aside for you."
+    - weight: 50
+      frames:
+        - "Хмм… Зря ты так. Товар отличный."
+      frames_en:
+        - "Hmm… your loss. The goods are great."
+    - weight: 50
+      frames:
+        - "Ладно, в другой раз."
+      frames_en:
+        - "All right, another time."
+    - weight: 50
+      frames:
+        - "Я тут не для красоты стою, между прочим."
+      frames_en:
+        - "I'm not just standing here to look pretty, you know."
+
+- key: I06
+  id: w_gift
+  title: "Woman Gets a Gift"
+  category: woman
+  status: active
+  trigger: "a woman receives food or a gift from the player"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Это мне? Как мило!"
+      frames_en:
+        - "For me? How sweet!"
+    - weight: 50
+      frames:
+        - "Спасибо! Испеку из этого что-нибудь вкусное."
+      frames_en:
+        - "Thank you! I'll bake something tasty with this."
+    - weight: 50
+      frames:
+        - "Ой, не стоило! Но мне очень приятно."
+      frames_en:
+        - "Oh, you shouldn't have! But I love it."
+    - weight: 50
+      frames:
+        - "Дети будут рады. Спасибо тебе!"
+      frames_en:
+        - "The kids will be so happy. Thank you!"
+    - weight: 50
+      frames:
+        - "Подарок? Просто так? Ты прелесть."
+      frames_en:
+        - "A gift? Just like that? You're a sweetheart."
+    - weight: 50
+      frames:
+        - "Положу на самое видное место."
+      frames_en:
+        - "I'll put it somewhere everyone can see."
+    - weight: 50
+      frames:
+        - "Ты всегда знаешь, чем порадовать."
+      frames_en:
+        - "You always know how to cheer me up."
+
+- key: I07
+  id: w_hit
+  title: "Woman Is Hit by the Player"
+  category: woman
+  status: active
+  trigger: "the player hits a woman"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ай! Ты что творишь?!"
+      frames_en:
+        - "Ow! What are you doing?!"
+    - weight: 50
+      frames:
+        - "Да как ты смеешь!"
+      frames_en:
+        - "How dare you!"
+    - weight: 50
+      frames:
+        - "Я сейчас позову мужа!"
+      frames_en:
+        - "I'm calling my husband!"
+    - weight: 50
+      frames:
+        - "Больно же! Совсем совести нет?"
+      frames_en:
+        - "That hurts! Have you no shame?"
+    - weight: 50
+      frames:
+        - "Голем! Помогите!"
+      frames_en:
+        - "Golem! Help!"
+    - weight: 50
+      frames:
+        - "Уходи отсюда, хулиган!"
+      frames_en:
+        - "Get out of here, you bully!"
+    - weight: 50
+      frames:
+        - "Я тебе этого не забуду!"
+      frames_en:
+        - "I won't forget this!"
+    - weight: 50
+      frames:
+        - "Сначала пирожки, а теперь драться? Ну знаешь!"
+      frames_en:
+        - "First pies, and now fighting? Honestly!"
+
+- key: I08
+  id: w_protect
+  title: "Woman Protects Her Child"
+  category: woman
+  status: active
+  trigger: "the player hurts a woman's child"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Не трогай моего ребёнка!"
+      frames_en:
+        - "Don't you touch my child!"
+    - weight: 50
+      frames:
+        - "Отойди от малыша! Немедленно!"
+      frames_en:
+        - "Get away from my baby! Right now!"
+    - weight: 50
+      frames:
+        - "Кто обижает детей, тот будет иметь дело со мной!"
+      frames_en:
+        - "Whoever hurts children answers to me!"
+    - weight: 50
+      frames:
+        - "Иди ко мне, солнышко. Мама рядом."
+      frames_en:
+        - "Come here, sweetie. Mommy's here."
+    - weight: 50
+      frames:
+        - "Ещё раз, и я тебя метлой отхожу!"
+      frames_en:
+        - "Do it again and I'll chase you with my broom!"
+    - weight: 50
+      frames:
+        - "Ты что, совсем? Это же ребёнок!"
+      frames_en:
+        - "Are you crazy? That's a child!"
+
+- key: I09
+  id: w_comfort
+  title: "Woman Comforts Her Child"
+  category: woman
+  status: active
+  trigger: "a woman's child is hurt or frightened"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Тише, тише, всё хорошо. Я здесь."
+      frames_en:
+        - "Shh, shh, it's all right. I'm here."
+    - weight: 50
+      frames:
+        - "Где болит? Сейчас подую."
+      frames_en:
+        - "Where does it hurt? Let me blow on it."
+    - weight: 50
+      frames:
+        - "Не плачь, маленький. Мама рядом."
+      frames_en:
+        - "Don't cry, little one. Mommy's right here."
+    - weight: 50
+      frames:
+        - "Ничего, до свадьбы заживёт."
+      frames_en:
+        - "It's nothing, it'll heal in no time."
+    - weight: 50
+      frames:
+        - "Иди ко мне. Обниму, и всё пройдёт."
+      frames_en:
+        - "Come here. A hug and it'll all go away."
+    - weight: 50
+      frames:
+        - "Испугался? Ничего страшного, я тебя защищу."
+      frames_en:
+        - "Scared? It's okay, I'll protect you."
+    - weight: 50
+      frames:
+        - "Ну-ка, улыбнись! Вот так, молодец."
+      frames_en:
+        - "Come on, smile! There you go, good job."
+
+- key: I10
+  id: w_defend_husband
+  title: "Woman Defends Her Husband"
+  category: woman
+  status: active
+  trigger: "a woman's husband is attacked nearby"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Эй! Оставь моего мужа в покое!"
+      frames_en:
+        - "Hey! Leave my husband alone!"
+    - weight: 50
+      frames:
+        - "Дорогой, ты цел? Ах ты, грубиян!"
+      frames_en:
+        - "Darling, are you okay? Why, you brute!"
+    - weight: 50
+      frames:
+        - "Только тронь его ещё раз!"
+      frames_en:
+        - "Just try touching him again!"
+    - weight: 50
+      frames:
+        - "Он у меня один! Не смей!"
+      frames_en:
+        - "He's the only one I've got! Don't you dare!"
+    - weight: 50
+      frames:
+        - "Сейчас я тебе устрою!"
+      frames_en:
+        - "I'll show you!"
+    - weight: 50
+      frames:
+        - "Отойди от него, драчун!"
+      frames_en:
+        - "Back off from him, you brawler!"
+
+- key: I11
+  id: w_hero
+  title: "Woman Praises the Hero"
+  category: woman
+  status: active
+  trigger: "a woman sees a player with high reputation"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Наш герой! Спасибо тебе за всё."
+      frames_en:
+        - "Our hero! Thank you for everything."
+    - weight: 50
+      frames:
+        - "Без тебя нас бы давно разбойники съели."
+      frames_en:
+        - "Without you, the raiders would've gotten us long ago."
+    - weight: 50
+      frames:
+        - "Дети только о тебе и говорят."
+      frames_en:
+        - "The kids talk about nothing but you."
+    - weight: 50
+      frames:
+        - "Заходи вечером на ужин, я приготовлю твоё любимое."
+      frames_en:
+        - "Come for dinner tonight, I'll make your favorite."
+    - weight: 50
+      frames:
+        - "Ты лучший сосед, какой у нас был."
+      frames_en:
+        - "You're the best neighbor we've ever had."
+    - weight: 50
+      frames:
+        - "Я связала тебе шарф. Ну, почти связала."
+      frames_en:
+        - "I knitted you a scarf. Well, almost."
+    - weight: 50
+      frames:
+        - "Вся деревня тебе благодарна."
+      frames_en:
+        - "The whole village is grateful to you."
+
+- key: I12
+  id: w_bad
+  title: "Woman Scolds a Bad Player"
+  category: woman
+  status: active
+  trigger: "a woman sees a player with low reputation"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "А, это ты. Опять что-то натворил?"
+      frames_en:
+        - "Oh, it's you. Up to no good again?"
+    - weight: 50
+      frames:
+        - "Тебе не стыдно? Вся деревня от тебя плачет."
+      frames_en:
+        - "Aren't you ashamed? The whole village cries because of you."
+    - weight: 50
+      frames:
+        - "Держись от моего дома подальше."
+      frames_en:
+        - "Stay away from my house."
+    - weight: 50
+      frames:
+        - "Мама в детстве тебя не учила вежливости?"
+      frames_en:
+        - "Didn't your mother teach you manners?"
+    - weight: 50
+      frames:
+        - "Извинись перед всеми, тогда поговорим."
+      frames_en:
+        - "Apologize to everyone, then we'll talk."
+    - weight: 50
+      frames:
+        - "Я детям сказала к тебе не подходить."
+      frames_en:
+        - "I told my kids not to go near you."
+    - weight: 50
+      frames:
+        - "Хмф! Даже здороваться не буду."
+      frames_en:
+        - "Hmph! I'm not even saying hello."
+
+- key: I13
+  id: w_in_house
+  title: "Woman Finds the Player in Her House"
+  category: woman
+  status: active
+  trigger: "the player opens her chest, stands on her bed or closes her door"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Эй! Это мой сундук!"
+      frames_en:
+        - "Hey! That's my chest!"
+    - weight: 50
+      frames:
+        - "Слезь с кровати! Я её только застелила!"
+      frames_en:
+        - "Get off the bed! I just made it!"
+    - weight: 50
+      frames:
+        - "А стучаться тебя не учили?"
+      frames_en:
+        - "Didn't anyone teach you to knock?"
+    - weight: 50
+      frames:
+        - "Ботинки! Ботинки хоть вытри!"
+      frames_en:
+        - "Your boots! At least wipe your boots!"
+    - weight: 50
+      frames:
+        - "Это мой дом, а не проходной двор."
+      frames_en:
+        - "This is my home, not a public square."
+    - weight: 50
+      frames:
+        - "Дверь перед носом закрывать невежливо!"
+      frames_en:
+        - "Shutting the door in my face is rude!"
+    - weight: 50
+      frames:
+        - "Ну раз уж зашёл, хоть чаю выпей."
+      frames_en:
+        - "Well, since you're here, at least have some tea."
+
+- key: I14
+  id: w_home_damaged
+  title: "Woman Sees Her Home Damaged"
+  category: woman
+  status: active
+  trigger: "her house is broken into, set on fire or loses its bed or door"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Мой дом! Что ты наделал?!"
+      frames_en:
+        - "My home! What have you done?!"
+    - weight: 50
+      frames:
+        - "Мы его всей семьёй строили!"
+      frames_en:
+        - "The whole family built it together!"
+    - weight: 50
+      frames:
+        - "Пожар! Воды, скорее!"
+      frames_en:
+        - "Fire! Water, quickly!"
+    - weight: 50
+      frames:
+        - "Где теперь будут спать дети?"
+      frames_en:
+        - "Where will the children sleep now?"
+    - weight: 50
+      frames:
+        - "Ты будешь всё чинить, понял?"
+      frames_en:
+        - "You're going to fix all of it, understand?"
+    - weight: 50
+      frames:
+        - "Моя любимая дверь! Её дедушка делал!"
+      frames_en:
+        - "My favorite door! Grandpa made it!"
+    - weight: 50
+      frames:
+        - "Я этого так не оставлю!"
+      frames_en:
+        - "I won't let this go!"
+
+- key: I15
+  id: w_player_dies
+  title: "Woman Sees the Player Die"
+  category: woman
+  status: active
+  trigger: "the player dies near a woman"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ой! Куда ты пропал?"
+      frames_en:
+        - "Oh no! Where did you go?"
+    - weight: 50
+      frames:
+        - "Я же говорила: осторожнее!"
+      frames_en:
+        - "I told you to be careful!"
+    - weight: 50
+      frames:
+        - "Бедняжка. Возвращайся скорее."
+      frames_en:
+        - "Poor thing. Come back soon."
+    - weight: 50
+      frames:
+        - "Твои вещи я соберу, не волнуйся."
+      frames_en:
+        - "I'll gather your things, don't worry."
+    - weight: 50
+      frames:
+        - "Опять? Ну сколько можно!"
+      frames_en:
+        - "Again? How many times!"
+    - weight: 50
+      frames:
+        - "Надеюсь, тебе там хотя бы не больно."
+      frames_en:
+        - "I hope at least it doesn't hurt over there."
+
+- key: I16
+  id: w_chat
+  title: "Woman Chats With the Player"
+  category: woman
+  status: active
+  trigger: "a woman notices what the player wears or does"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Какая блестящая броня! Не тяжело носить?"
+      frames_en:
+        - "What shiny armor! Isn't it heavy?"
+    - weight: 50
+      frames:
+        - "Ты летаешь? Вот бы мне так за водой."
+      frames_en:
+        - "You can fly? I wish I could fetch water like that."
+    - weight: 50
+      frames:
+        - "Ой, какая рыбка! Пожаришь на ужин?"
+      frames_en:
+        - "Ooh, what a fish! Frying it for dinner?"
+    - weight: 50
+      frames:
+        - "Алмаз! Настоящий! Можно посмотреть?"
+      frames_en:
+        - "A diamond! A real one! Can I see?"
+    - weight: 50
+      frames:
+        - "Чего крадёшься? Я всё равно тебя вижу."
+      frames_en:
+        - "Why are you sneaking? I can see you anyway."
+    - weight: 50
+      frames:
+        - "Стоишь как статуя. Ты не заболел?"
+      frames_en:
+        - "Standing still like a statue. Are you feeling unwell?"
+    - weight: 50
+      frames:
+        - "С таким снаряжением можно и к дракону."
+      frames_en:
+        - "With gear like that you could face a dragon."
+    - weight: 50
+      frames:
+        - "Мой муж в молодости тоже был героем. Ну, он так говорит."
+      frames_en:
+        - "My husband was a hero when he was young too. Well, so he says."
+
+- key: I17
+  id: w_worry
+  title: "Woman Worries About the Player"
+  category: woman
+  status: active
+  trigger: "the player is hurt, hungry, burning or unwell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ты весь в синяках! Садись, перевяжу."
+      frames_en:
+        - "You're covered in bruises! Sit down, I'll bandage you."
+    - weight: 50
+      frames:
+        - "Ты когда ел последний раз? На, держи хлеб."
+      frames_en:
+        - "When did you last eat? Here, have some bread."
+    - weight: 50
+      frames:
+        - "Ты горишь! В воду, быстро!"
+      frames_en:
+        - "You're on fire! Into the water, quick!"
+    - weight: 50
+      frames:
+        - "Что-то ты бледный. Отдохни у нас."
+      frames_en:
+        - "You look pale. Rest with us for a while."
+    - weight: 50
+      frames:
+        - "Не нравится мне твой вид. Иди к священнику."
+      frames_en:
+        - "I don't like the look of you. Go see the cleric."
+    - weight: 50
+      frames:
+        - "Береги себя, ладно? Ты нам нужен."
+      frames_en:
+        - "Take care of yourself, okay? We need you."
+
+- key: I18
+  id: w_evening
+  title: "Woman Evening at Home"
+  category: woman
+  status: active
+  trigger: "a woman heads home or goes to bed"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Пора домой, ужин сам себя не приготовит."
+      frames_en:
+        - "Time to go home, dinner won't cook itself."
+    - weight: 50
+      frames:
+        - "Ох, ноги гудят. Скорее бы в кровать."
+      frames_en:
+        - "Oh, my feet ache. I can't wait for bed."
+    - weight: 50
+      frames:
+        - "Сначала дети, потом посуда, потом спать."
+      frames_en:
+        - "First the kids, then the dishes, then bed."
+    - weight: 50
+      frames:
+        - "Какой длинный день был. Спокойной ночи."
+      frames_en:
+        - "What a long day. Good night."
+    - weight: 50
+      frames:
+        - "Надо не забыть закрыть курятник."
+      frames_en:
+        - "I mustn't forget to close the chicken coop."
+    - weight: 50
+      frames:
+        - "Завтра будет новый день. А сейчас — подушка."
+      frames_en:
+        - "Tomorrow's a new day. Right now, my pillow."
+
+- key: I19
+  id: w_courting
+  title: "Woman Courting"
+  category: woman
+  status: active
+  trigger: "a courting woman chats with her suitor"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ты сегодня такой нарядный. Это для меня?"
+      frames_en:
+        - "You look so smart today. Is that for me?"
+    - weight: 50
+      frames:
+        - "Пойдём погуляем к колоколу?"
+      frames_en:
+        - "Shall we take a walk to the bell?"
+    - weight: 50
+      frames:
+        - "Мне мама говорила: ищи того, кто умеет печь хлеб."
+      frames_en:
+        - "My mother told me: find someone who can bake bread."
+    - weight: 50
+      frames:
+        - "Ты опять принёс мне цветочек? Как мило."
+      frames_en:
+        - "You brought me a flower again? How sweet."
+    - weight: 50
+      frames:
+        - "Смотри, какой закат. Красиво, правда?"
+      frames_en:
+        - "Look at that sunset. Pretty, isn't it?"
+    - weight: 50
+      frames:
+        - "Расскажи ещё раз, как ты победил того зомби."
+      frames_en:
+        - "Tell me again how you beat that zombie."
+    - weight: 50
+      frames:
+        - "С тобой даже работа веселее."
+      frames_en:
+        - "Even work is more fun with you."
+    - weight: 50
+      frames:
+        - "Только не опаздывай завтра, ладно?"
+      frames_en:
+        - "Just don't be late tomorrow, okay?"
+
+- key: I20
+  id: w_flower
+  title: "Woman Thanks for the Flower"
+  category: woman
+  status: active
+  trigger: "the player gives a courting woman a flower or a cake"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Цветок? Мне? Ой, спасибо!"
+      frames_en:
+        - "A flower? For me? Oh, thank you!"
+    - weight: 50
+      frames:
+        - "Как красиво пахнет! Поставлю в вазочку."
+      frames_en:
+        - "It smells so nice! I'll put it in a vase."
+    - weight: 50
+      frames:
+        - "Это он тебя попросил? Ну скажи!"
+      frames_en:
+        - "Did he ask you to give me this? Tell me!"
+    - weight: 50
+      frames:
+        - "Торт?! Неужели свадьба уже скоро?"
+      frames_en:
+        - "A cake?! Is the wedding coming soon?"
+    - weight: 50
+      frames:
+        - "Ты настоящий друг. Спасибо!"
+      frames_en:
+        - "You're a true friend. Thank you!"
+
+- key: I21
+  id: w_vow
+  title: "Woman Wedding Vow"
+  category: woman
+  status: active
+  trigger: "the bride's words at the bell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Обещаю всегда печь тебе самые вкусные пироги."
+      frames_en:
+        - "I promise to always bake you the tastiest pies."
+    - weight: 50
+      frames:
+        - "Теперь мы семья. Навсегда!"
+      frames_en:
+        - "Now we're a family. Forever!"
+    - weight: 50
+      frames:
+        - "Я так счастлива! Звоните в колокол!"
+      frames_en:
+        - "I'm so happy! Ring the bell!"
+    - weight: 50
+      frames:
+        - "Буду любить тебя, даже когда ты храпишь."
+      frames_en:
+        - "I'll love you even when you snore."
+    - weight: 50
+      frames:
+        - "Пусть все в деревне знают: мы вместе!"
+      frames_en:
+        - "Let the whole village know: we're together!"
+    - weight: 50
+      frames:
+        - "Обещаю делить с тобой каждую морковку."
+      frames_en:
+        - "I promise to share every carrot with you."
+
+- key: I22
+  id: w_morning
+  title: "Woman Good Morning Dear"
+  category: woman
+  status: active
+  trigger: "a wife greets her husband in the morning"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Доброе утро, дорогой! Завтрак на столе."
+      frames_en:
+        - "Good morning, dear! Breakfast is on the table."
+    - weight: 50
+      frames:
+        - "Вставай, соня! Солнце уже высоко."
+      frames_en:
+        - "Get up, sleepyhead! The sun is already up."
+    - weight: 50
+      frames:
+        - "Ты сегодня опять храпел, как голем."
+      frames_en:
+        - "You snored like a golem again last night."
+    - weight: 50
+      frames:
+        - "Не забудь шапку, на улице прохладно."
+      frames_en:
+        - "Don't forget your hat, it's chilly outside."
+    - weight: 50
+      frames:
+        - "Доброе утро! Сегодня будет хороший день."
+      frames_en:
+        - "Good morning! Today will be a good day."
+    - weight: 50
+      frames:
+        - "Поцелуй детей перед работой."
+      frames_en:
+        - "Kiss the kids before you go to work."
+
+- key: I23
+  id: w_call_kids
+  title: "Woman Calls the Kids"
+  category: woman
+  status: active
+  trigger: "a mother calls her children home in the evening"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Дети! Домой, ужинать!"
+      frames_en:
+        - "Kids! Home, dinner time!"
+    - weight: 50
+      frames:
+        - "Темнеет! Быстро домой, кому сказала!"
+      frames_en:
+        - "It's getting dark! Home, right now!"
+    - weight: 50
+      frames:
+        - "Кто последний придёт, тот моет посуду!"
+      frames_en:
+        - "Last one home does the dishes!"
+    - weight: 50
+      frames:
+        - "Солнышко, хватит играть, пора спать."
+      frames_en:
+        - "Sweetie, that's enough playing, time for bed."
+    - weight: 50
+      frames:
+        - "Домой, а то зомби утащат!"
+      frames_en:
+        - "Home, or the zombies will get you!"
+    - weight: 50
+      frames:
+        - "Руки мыть и за стол!"
+      frames_en:
+        - "Wash your hands and come to the table!"
+
+- key: I24
+  id: w_new_baby
+  title: "Woman New Baby"
+  category: woman
+  status: active
+  trigger: "a woman's baby is born"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Смотрите, какой малыш! Наш малыш!"
+      frames_en:
+        - "Look at this little one! Our little one!"
+    - weight: 50
+      frames:
+        - "Привет, крошка. Я твоя мама."
+      frames_en:
+        - "Hello, tiny one. I'm your mom."
+    - weight: 50
+      frames:
+        - "У него твой нос, дорогой!"
+      frames_en:
+        - "It has your nose, dear!"
+    - weight: 50
+      frames:
+        - "Теперь в доме станет ещё веселее."
+      frames_en:
+        - "Now the house will be even livelier."
+    - weight: 50
+      frames:
+        - "Тише все, малыш засыпает."
+      frames_en:
+        - "Quiet, everyone, the baby is falling asleep."
+    - weight: 50
+      frames:
+        - "Какие маленькие пальчики!"
+      frames_en:
+        - "Such tiny little fingers!"
+
+- key: I25
+  id: w_widowed
+  title: "Woman Widowed"
+  category: woman
+  status: active
+  trigger: "a woman's husband has died"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Его больше нет… Как же теперь без него?"
+      frames_en:
+        - "He's gone… How will I manage without him?"
+    - weight: 50
+      frames:
+        - "Я буду помнить тебя каждый день."
+      frames_en:
+        - "I'll remember you every single day."
+    - weight: 50
+      frames:
+        - "Дети, идите ко мне. Мы справимся вместе."
+      frames_en:
+        - "Kids, come here. We'll get through this together."
+    - weight: 50
+      frames:
+        - "Дом стал таким тихим."
+      frames_en:
+        - "The house has become so quiet."
+    - weight: 50
+      frames:
+        - "Он бы не хотел, чтобы я плакала. Но я не могу."
+      frames_en:
+        - "He wouldn't want me to cry. But I can't help it."
+
+- key: I26
+  id: w_grew_up
+  title: "Woman Child Grew Up"
+  category: woman
+  status: active
+  trigger: "a woman's child grows up and moves out"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Как быстро ты вырос! Будь умницей."
+      frames_en:
+        - "You grew up so fast! Be good."
+    - weight: 50
+      frames:
+        - "Свой дом? Уже? Ох, моё солнышко."
+      frames_en:
+        - "A house of your own? Already? Oh, my sunshine."
+    - weight: 50
+      frames:
+        - "Заходи по выходным, я испеку пирог."
+      frames_en:
+        - "Come by on weekends, I'll bake a pie."
+    - weight: 50
+      frames:
+        - "Не забывай маму, ладно?"
+      frames_en:
+        - "Don't forget your mom, okay?"
+    - weight: 50
+      frames:
+        - "Я так тобой горжусь."
+      frames_en:
+        - "I'm so proud of you."
+
+- key: I27
+  id: w_monster
+  title: "Woman Sees a Monster"
+  category: woman
+  status: active
+  trigger: "a woman sees a monster or panics"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Чудище! Дети, в дом!"
+      frames_en:
+        - "A monster! Kids, inside!"
+    - weight: 50
+      frames:
+        - "Ой-ой! Кто-нибудь, принесите вилы!"
+      frames_en:
+        - "Oh no! Someone get a pitchfork!"
+    - weight: 50
+      frames:
+        - "Опять эти зомби. Никакого покоя!"
+      frames_en:
+        - "Those zombies again. No peace at all!"
+    - weight: 50
+      frames:
+        - "Не подходи! У меня скалка!"
+      frames_en:
+        - "Stay back! I have a rolling pin!"
+    - weight: 50
+      frames:
+        - "Голем, где ты, когда нужен?"
+      frames_en:
+        - "Golem, where are you when we need you?"
+    - weight: 50
+      frames:
+        - "Прячемся, прячемся! Быстро!"
+      frames_en:
+        - "Hide, hide! Quickly!"
+    - weight: 50
+      frames:
+        - "Кыш! Уходи отсюда, страшилище!"
+      frames_en:
+        - "Shoo! Go away, you ugly thing!"
+
+- key: I28
+  id: w_weather
+  title: "Woman in the Weather"
+  category: woman
+  status: active
+  trigger: "rain, thunder, lightning, snow or cold"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Опять дождь, а у меня бельё сушится!"
+      frames_en:
+        - "Rain again, and my laundry is out!"
+    - weight: 50
+      frames:
+        - "Гроза! Все под крышу!"
+      frames_en:
+        - "A storm! Everyone under a roof!"
+    - weight: 50
+      frames:
+        - "Брр, холодно. Пойду надену шаль."
+      frames_en:
+        - "Brr, it's cold. I'll put on my shawl."
+    - weight: 50
+      frames:
+        - "Снег! Дети будут счастливы."
+      frames_en:
+        - "Snow! The kids will be so happy."
+    - weight: 50
+      frames:
+        - "Молния! Хоть бы не в нашу крышу."
+      frames_en:
+        - "Lightning! I hope it doesn't hit our roof."
+    - weight: 50
+      frames:
+        - "Ничего, после дождя грибы пойдут."
+      frames_en:
+        - "Never mind, mushrooms will come up after the rain."
+
+- key: I29
+  id: w_happy
+  title: "Woman in a Happy Village"
+  category: woman
+  status: active
+  trigger: "the village mood rises or a happy rite is finished"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Какая хорошая у нас деревня!"
+      frames_en:
+        - "What a lovely village we have!"
+    - weight: 50
+      frames:
+        - "Все такие весёлые сегодня. И я тоже!"
+      frames_en:
+        - "Everyone's so cheerful today. Me too!"
+    - weight: 50
+      frames:
+        - "Давайте устроим танцы у колокола!"
+      frames_en:
+        - "Let's have a dance by the bell!"
+    - weight: 50
+      frames:
+        - "Флажки! Праздник! Ура!"
+      frames_en:
+        - "Flags! A festival! Hooray!"
+    - weight: 50
+      frames:
+        - "Испеку большой пирог на всю деревню."
+      frames_en:
+        - "I'll bake a big pie for the whole village."
+    - weight: 50
+      frames:
+        - "Вот это жизнь! Ни одной ссоры за день."
+      frames_en:
+        - "Now this is life! Not a single quarrel all day."
+
+- key: I30
+  id: w_grumpy
+  title: "Woman in a Grumpy Village"
+  category: woman
+  status: active
+  trigger: "the village mood falls or a sad rite is finished"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Что-то все нынче хмурые."
+      frames_en:
+        - "Everyone seems so gloomy these days."
+    - weight: 50
+      frames:
+        - "Опять соседи поругались. Ох."
+      frames_en:
+        - "The neighbors argued again. Oh dear."
+    - weight: 50
+      frames:
+        - "Надо всем пирог испечь. Может, подобреют."
+      frames_en:
+        - "I should bake everyone a pie. Maybe they'll cheer up."
+    - weight: 50
+      frames:
+        - "Свечи горят… Грустно как-то."
+      frames_en:
+        - "The candles are lit… It feels so sad."
+    - weight: 50
+      frames:
+        - "Держимся вместе. Всё наладится."
+      frames_en:
+        - "We stick together. Things will get better."
+    - weight: 50
+      frames:
+        - "Не хочу, чтобы дети видели всех такими сердитыми."
+      frames_en:
+        - "I don't want the kids to see everyone so angry."
+
+- key: I31
+  id: w_work
+  title: "Woman at Work"
+  category: woman
+  status: active
+  trigger: "a woman works, levels up or does a profession chore"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Работа не волк, но всё равно надо сделать."
+      frames_en:
+        - "Work won't run away, but it still needs doing."
+    - weight: 50
+      frames:
+        - "Так, это сюда, а это туда. Готово!"
+      frames_en:
+        - "Right, this goes here, and that goes there. Done!"
+    - weight: 50
+      frames:
+        - "Я лучшая в деревне, и все это знают."
+      frames_en:
+        - "I'm the best in the village, and everyone knows it."
+    - weight: 50
+      frames:
+        - "Ещё чуть-чуть, и можно отдохнуть."
+      frames_en:
+        - "Just a little more and I can rest."
+    - weight: 50
+      frames:
+        - "Новый уровень! Муж будет гордиться."
+      frames_en:
+        - "A new level! My husband will be proud."
+    - weight: 50
+      frames:
+        - "Кто сказал, что это мужская работа? Смотри и учись."
+      frames_en:
+        - "Who said this is a man's job? Watch and learn."
+    - weight: 50
+      frames:
+        - "Люблю, когда всё по порядку."
+      frames_en:
+        - "I love it when everything is in order."
+    - weight: 50
+      frames:
+        - "Песенку напеваю, и работа спорится."
+      frames_en:
+        - "I hum a little tune and the work flies by."
+
+- key: I32
+  id: w_hurt
+  title: "Woman Gets Hurt"
+  category: woman
+  status: active
+  trigger: "a woman gets hurt"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ай! Да ещё и в чистом фартуке!"
+      frames_en:
+        - "Ah! And in my clean apron, too!"
+    - weight: 50
+      frames:
+        - "Ох, ушиблась."
+      frames_en:
+        - "Ooh, I bumped myself."
+    - weight: 50
+      frames:
+        - "Ничего, ничего, до свадьбы заживёт."
+      frames_en:
+        - "It's nothing, it'll be fine."
+    - weight: 50
+      frames:
+        - "Где мой подорожник?"
+      frames_en:
+        - "Where's a plantain leaf when I need one?"
+    - weight: 50
+      frames:
+        - "Ой-ой-ой! Осторожнее!"
+      frames_en:
+        - "Ouch, ouch! Careful!"

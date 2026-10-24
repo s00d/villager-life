@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/globe",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/globe"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/globe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/globe",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,366 @@
+# Phase B — Mek / CN / TFMG / aero / rails
+
+- key: B17
+  title: "Place Mekanism Machine"
+  category: mek_cat
+  status: active
+  trigger: "soft B17"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Машина Mekanism — завод переехал без предупреждения."
+        - "Где тут встать в очередь на осмотр?"
+      frames_en:
+        - "A Mekanism machine — the factory moved in unannounced."
+        - "Where do we queue for the tour?"
+    - weight: 50
+      frames:
+        - "Железные ящики гудят умнее меня."
+        - "Не обижаюсь. Почти."
+      frames_en:
+        - "Iron boxes hum smarter than me."
+        - "I am not offended. Almost."
+    - weight: 50
+      frames:
+        - "Провода, трубы, амбиции. Деревня кивает вежливо."
+        - "И делает шаг назад."
+      frames_en:
+        - "Wires, pipes, ambition. The village nods politely."
+        - "And takes a step back."
+
+- key: B18
+  title: "Place a Mekanism Reactor Part"
+  category: mek_cat
+  status: active
+  trigger: "soft B18"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Детали реактора у домов — смелый интерьер."
+        - "Атом лучше держать за холмом!"
+      frames_en:
+        - "Reactor parts by the houses — bold interior design."
+        - "Keep the atom behind the hill!"
+    - weight: 50
+      frames:
+        - "Вы собираете солнце в коробке. Мы собираем чемоданы."
+        - "Шутка. Но чемоданы рядом."
+      frames_en:
+        - "You are boxing a sun. We are packing suitcases."
+        - "Joke. But the suitcases are nearby."
+    - weight: 50
+      frames:
+        - "Реактор во дворе. Колокол уже нервничает."
+        - "И мэр тоже."
+      frames_en:
+        - "A reactor in the yard. The bell is already nervous."
+        - "So is the mayor."
+
+- key: B19
+  title: "Hold Uranium or Nuclear Waste"
+  category: mek_cat
+  status: active
+  trigger: "soft B19"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Уран в руках — светитесь от гордости или от радиации?"
+        - "Отставьте от грядок!"
+      frames_en:
+        - "Uranium in hand — glowing with pride or radiation?"
+        - "Keep it off the crops!"
+    - weight: 50
+      frames:
+        - "Отходы выглядят неаппетитно даже для компоста."
+        - "Закопайте подальше… пожалуйста."
+      frames_en:
+        - "Waste looks unappetizing even for compost."
+        - "Bury it farther away… please."
+    - weight: 50
+      frames:
+        - "Светящийся сувенир. Мы выбираем тёмный угол."
+        - "Дальше, пожалуйста, от грядок."
+      frames_en:
+        - "A glowing souvenir. We pick a darker corner."
+        - "Farther."
+
+- key: B20
+  title: "Geiger Counter Clicking"
+  category: mek_cat
+  status: removed
+  trigger: "soft B20"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Счётчик Гейгера щёлкает как нервный сверчок."
+        - "Это комплимент деревне или приговор?"
+      frames_en:
+        - "The Geiger counter clicks like a nervous cricket."
+        - "Compliment to the village or a sentence?"
+    - weight: 50
+      frames:
+        - "Щёлк-щёлк — мой новый любимый саундтрек ужасов. Проверьте ботинки, вдруг светятся."
+      frames_en:
+        - "Click-click — my new favorite horror soundtrack. Check your boots, they might glow."
+    - weight: 50
+      frames:
+        - "Прибор шепчет плохие новости. Мы делаем хорошую мину. И шаг в сторону."
+      frames_en:
+        - "The device whispers bad news. We put on a brave face. And step aside."
+
+- key: B21
+  title: "Place Create Nuclear Reactor Parts"
+  category: cn_cat
+  status: active
+  trigger: "soft B21"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Реактор Create Nuclear — кинетика с характером."
+        - "Не ставьте это вместо печки!"
+      frames_en:
+        - "Create Nuclear reactor — kinetics with attitude."
+        - "Do not install this instead of a stove!"
+    - weight: 50
+      frames:
+        - "Ядерная установка во дворе. Соседи уже пишут петицию."
+        - "И я расписываюсь первым."
+      frames_en:
+        - "A nuclear setup in the yard. Neighbors write a petition."
+        - "I sign first."
+    - weight: 50
+      frames:
+        - "Энергия будущего рядом с курятником."
+        - "Куры просят переезд."
+      frames_en:
+        - "Future power next to the henhouse."
+        - "Chickens request relocation."
+
+- key: B22
+  title: "See Enriching Fire"
+  category: cn_cat
+  status: active
+  trigger: "soft B22"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Обогащающий огонь — звучит как спа-процедура для руды. А для жителей значит: отойди подальше."
+      frames_en:
+        - "Enriching fire — sounds like a spa day for ore. For villagers it means stay back."
+    - weight: 50
+      frames:
+        - "Пламя странное. Даже факелы завидуют."
+        - "Мы завидуем безопасной дистанции."
+      frames_en:
+        - "Strange flame. Even torches are jealous."
+        - "We envy a safe distance."
+    - weight: 50
+      frames:
+        - "Огонь, который учит руду быть умнее. Нас он тоже учит — бегать."
+      frames_en:
+        - "Fire that teaches ore to be smarter. It teaches us to run."
+
+- key: B23
+  title: "Place TFMG Factory Block"
+  category: tfmg_cat
+  status: active
+  trigger: "soft B23"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Заводской блок TFMG — копоть уже в меню ужина."
+        - "Вентиляцию обещали?"
+      frames_en:
+        - "A TFMG factory block — soot is already on the dinner menu."
+        - "Was ventilation promised?"
+    - weight: 50
+      frames:
+        - "Индустрия шагает в деревню в рабочих ботинках."
+        - "Грядки просят маску."
+      frames_en:
+        - "Industry walks into the village in work boots."
+        - "The crops ask for masks."
+    - weight: 50
+      frames:
+        - "Завод пахнет завтрашним днём и вчерашним дымом."
+        - "Окна на проветривание."
+      frames_en:
+        - "The plant smells like tomorrow and yesterday's smoke."
+        - "Open the windows."
+
+- key: B24
+  title: "Oil or Pumpjack Nearby"
+  category: tfmg_cat
+  status: active
+  trigger: "soft B24"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Качалка нефти — деревня пахнет деньгами и неприятностями. Не лей нефть в колодец!"
+      frames_en:
+        - "An oil pumpjack — the village smells of money and trouble. Do not pour crude into the well!"
+    - weight: 50
+      frames:
+        - "Чёрная жижа и белые рубахи плохо дружат."
+        - "Мы в белых. Ну, были."
+      frames_en:
+        - "Black sludge and white shirts are poor friends."
+        - "We wear white. Well, we did."
+    - weight: 50
+      frames:
+        - "Нефть качается в такт сплетням."
+        - "Сплетни чище."
+      frames_en:
+        - "Oil pumps in time with gossip."
+        - "Gossip is cleaner."
+
+- key: B25
+  title: "Place Aeronautics Parts"
+  category: aero_cat
+  status: active
+  trigger: "soft B25"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Детали Aeronautics — скоро взлетим вместе с курами."
+        - "Пристегните бороды!"
+      frames_en:
+        - "Aeronautics parts — soon we fly with the chickens."
+        - "Buckle your beards!"
+    - weight: 50
+      frames:
+        - "Собираете летающую тарелку у кузницы?"
+        - "Только не заденьте флюгер."
+      frames_en:
+        - "Building a flying saucer by the forge?"
+        - "Do not clip the weather vane."
+    - weight: 50
+      frames:
+        - "Крылья на земле. Амбиции — уже в облаках."
+        - "Мы держим шляпы."
+      frames_en:
+        - "Wings on the ground. Ambition already in the clouds."
+        - "We hold our hats."
+
+- key: B26
+  title: "See a Flying Contraption"
+  category: aero_cat
+  status: active
+  trigger: "soft B26"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "В небе летучая штуковина — машем платками и держим шляпы! Птица? Самолёт? Ваш чертёж?"
+      frames_en:
+        - "A contraption in the sky — wave and hold your hats! Bird? Plane? Your blueprint?"
+    - weight: 50
+      frames:
+        - "Летаете над деревней — почта будет завидовать."
+        - "Не роняйте гайки на крыши!"
+      frames_en:
+        - "Flying over the village — the post will be jealous."
+        - "Do not drop nuts on the roofs!"
+    - weight: 50
+      frames:
+        - "Тень с неба. Не дракон. Хуже — инженер."
+        - "Прячьте тыквы."
+      frames_en:
+        - "A shadow from above. Not a dragon. Worse — an engineer."
+        - "Hide the pumpkins."
+
+- key: B27
+  title: "Wear a Jetpack"
+  category: aero_cat
+  status: active
+  trigger: "soft B27"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Джетпак — ходячий фейерверк с претензией."
+        - "Взлетайте от грядок, пожалуйста."
+      frames_en:
+        - "A jetpack — a walking firework with ego."
+        - "Take off away from the crops, please."
+    - weight: 50
+      frames:
+        - "Вы как комета, только громче и ближе."
+        - "Мы снизу болеем… и жмуримся."
+      frames_en:
+        - "You look like a comet, only louder and closer."
+        - "We cheer from below… and squint."
+    - weight: 50
+      frames:
+        - "Ранцевый полёт. Куры подали жалобу на шум."
+        - "Мы её заверили."
+      frames_en:
+        - "Backpack flight. Chickens filed a noise complaint."
+        - "We notarized it."
+
+- key: B28
+  title: "Place Train Tracks"
+  category: rail_cat
+  status: active
+  trigger: "soft B28"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рельсы через деревню — романтика расписаний."
+        - "Не кладите шпалы на грядки!"
+      frames_en:
+        - "Tracks through the village — timetable romance."
+        - "Do not lay ties on the crops!"
+    - weight: 50
+      frames:
+        - "Железная дорога растёт быстрее моркови."
+        - "Кондуктор уже нервничает."
+      frames_en:
+        - "The railway grows faster than carrots."
+        - "The conductor is already nervous."
+    - weight: 50
+      frames:
+        - "Шпалы, гвозди, мечты о перроне."
+        - "Мы продаём воображаемые билеты."
+      frames_en:
+        - "Ties, spikes, dreams of a platform."
+        - "We sell imaginary tickets."
+
+- key: B29
+  title: "See a Train Pass"
+  category: rail_cat
+  status: active
+  trigger: "soft B29"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Поезд проходит — машем как на перроне мечты!"
+        - "Билеты у нас воображаемые."
+      frames_en:
+        - "A train passes — we wave like on a dream platform!"
+        - "Our tickets are imaginary."
+    - weight: 50
+      frames:
+        - "Чух-чух мимо окон. Занавески в шоке."
+        - "И мы тоже, в хорошем смысле."
+      frames_en:
+        - "Chug-chug past the windows. Curtains in shock."
+        - "So are we, in a good way."
+    - weight: 50
+      frames:
+        - "Состав уносит сплетни в следующий биом."
+        - "Верните хотя бы половину."
+      frames_en:
+        - "The train carries gossip to the next biome."
+        - "Bring at least half of it back."

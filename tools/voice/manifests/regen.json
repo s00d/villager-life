@@ -1,0 +1,263 @@
+{
+  "count": 265,
+  "items": [
+    {
+      "voice": "bkr",
+      "title": "Receive Potatoes",
+      "ru": "Ооо, кривенькая! Самая вкусная!",
+      "en": "Ooh, a lumpy one! The best kind!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end",
+      "ru_tts": "Ооо, кривенькая! Самая вкусная!"
+    },
+    {
+      "voice": "djj",
+      "title": "Seal a Villager's Door Shut",
+      "ru": "Как выходить на работу через стену? Снимите блок, каменотёс-шутник!",
+      "en": "How do I go to work through a wall? Remove the block, jokester mason!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end"
+    },
+    {
+      "voice": "dlh",
+      "title": "Hold a Create Wrench",
+      "ru": "Гаечный ключ Create — классика человека, который всё чуть-чуть подкрутит. Не подкрутите нам колокол!",
+      "en": "A Create wrench — classic for someone who will just tweak it. Do not tweak our bell!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "last_word_missing",
+      "ru_tts": "Гаечный ключ Create — классика человека, который всё чуть-чуть подкрутит. Не подкрутите нам колокол!"
+    },
+    {
+      "voice": "dmh",
+      "title": "Place Space Gear",
+      "ru": "Детали с орбиты рядом с колодцем. Колодец просит сувенир.",
+      "en": "Orbital parts next to the well. The well wants a souvenir.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "last_word_missing"
+    },
+    {
+      "voice": "dnd",
+      "title": "Turtle Wandering in Village",
+      "ru": "Черепаха-робот бродит — куры в замешательстве. Не учите её открывать сундуки!",
+      "en": "A robot turtle wanders — chickens are confused. Do not teach it to open chests!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end"
+    },
+    {
+      "voice": "dny",
+      "title": "Place a Gravestone",
+      "ru": "Надгробие — мрачноватый декор для площади. Мы за цветы рядом, если уж так.",
+      "en": "A gravestone — gloomy decor for the square. We vote for flowers beside it.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end"
+    },
+    {
+      "voice": "doj",
+      "title": "Place Mekanism Machine",
+      "ru": "Провода, трубы, амбиции. Деревня кивает вежливо. И делает шаг назад.",
+      "en": "Wires, pipes, ambition. The village nods politely. And takes a step back.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "abrupt_end"
+    },
+    {
+      "voice": "dow",
+      "title": "See Enriching Fire",
+      "ru": "Обогащающий огонь — звучит как спа-процедура для руды. А для жителей значит: отойди подальше.",
+      "en": "Enriching fire — sounds like a spa day for ore. For villagers it means stay back.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "abrupt_end",
+      "ru_tts": "Обогащающий огонь — звучит как спа-процедура для руды. А для жителей значит: отойди подальше."
+    },
+    {
+      "voice": "dpn",
+      "title": "Wear a Jetpack",
+      "ru": "Ранцевый полёт. Куры подали жалобу на шум. Мы её заверили.",
+      "en": "Backpack flight. Chickens filed a noise complaint. We notarized it.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "last_word_missing"
+    },
+    {
+      "voice": "dqi",
+      "title": "Hold a Blaze Cake",
+      "ru": "Выпечка из ада для механизмов. Для жителей — только смотреть.",
+      "en": "Hellish pastry for machines. Villagers may look only.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end"
+    },
+    {
+      "voice": "drr",
+      "title": "Hold a Uranium Rod",
+      "ru": "Светится амбициями. Мы тускнеем от волнения. Верните в реактор, маэстро.",
+      "en": "It glows with ambition. We dim with worry. Return it to the reactor, maestro.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end"
+    },
+    {
+      "voice": "dtp",
+      "title": "Hold a Heat Generator",
+      "ru": "Генератор тепла — карманная печка будущего. Не ставьте на деревянную лавку!",
+      "en": "A heat generator — a pocket stove of the future. Do not set it on a wooden stall!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "last_word_missing"
+    },
+    {
+      "voice": "dtz",
+      "title": "Hold Guide Book / Patchouli",
+      "ru": "Листаете знания. Мы листаем цены на хлеб. Обмен опытом за булочку?",
+      "en": "You flip knowledge. We flip bread prices. Trade tips for a bun?",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "last_word_missing"
+    },
+    {
+      "voice": "duf",
+      "title": "Tame an Animal",
+      "ru": "Сердечки в глазах и кости в кармане. Классика. Мы тоже хотим дружить… за морковь.",
+      "en": "Hearts in the eyes and bones in the pocket. Classic. We want friendship too… for carrots.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": true,
+      "reason_ru": "abrupt_end",
+      "reason_en": "abrupt_end"
+    },
+    {
+      "voice": "duk",
+      "title": "Block with a Shield",
+      "ru": "Щит принял удар — геройство со скрипом дерева. Держите крепче, соседи болеют!",
+      "en": "Shield took the hit — heroics with a wooden creak. Hold tighter, neighbors are cheering!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "last_word_missing"
+    },
+    {
+      "voice": "dvg",
+      "title": "Respawn After Death",
+      "ru": "Респаун — лучший фокус площади. Только лут в следующий раз прихватите обратно.",
+      "en": "Respawn — the square's best magic trick. Next time fetch the loot back too.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "abrupt_end"
+    },
+    {
+      "voice": "dxs",
+      "title": "Hold an Ender Eye",
+      "ru": "Путеводный кошмар в ладони. Удачи в крепости, пишите.",
+      "en": "A guiding nightmare in the palm. Luck in the fortress; write us.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "last_word_missing"
+    },
+    {
+      "voice": "dyg",
+      "title": "Mine Diamond Ore",
+      "ru": "Синий камень счастья. Кирка устала красиво. Мы уже считаем, сколько заборов можно… шутка.",
+      "en": "Blue stone of happiness. The pickaxe tired prettily. We already count how many fences… joke.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "abrupt_end"
+    },
+    {
+      "voice": "life_job_armorer_0",
+      "title": "armorer chore",
+      "ru": "Стойка подождёт. Верстак нет.",
+      "en": "The armor stand can wait. The bench cannot.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "last_word_missing"
+    },
+    {
+      "voice": "life_job_butcher_1",
+      "title": "butcher chore",
+      "ru": "Мясо после забора.",
+      "en": "Meat comes after the fence.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "last_word_missing"
+    },
+    {
+      "voice": "life_job_shepherd_0",
+      "title": "shepherd chore",
+      "ru": "Сначала сено, потом забор.",
+      "en": "Hay first, then the fence.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": false,
+      "bad_en": true,
+      "reason_en": "last_word_missing"
+    },
+    {
+      "voice": "life_kind_1",
+      "title": "Kind village",
+      "ru": "Тебе здесь рады.",
+      "en": "You are welcome here.",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "last_word_missing"
+    },
+    {
+      "voice": "vu",
+      "title": "Name a Villager \"Jeb\"",
+      "ru": "Смотрите! Я переливаюсь всеми цветами!",
+      "en": "Check it out! I'm RGB!",
+      "ru_tts_short": "",
+      "en_tts_short": "",
+      "bad_ru": true,
+      "bad_en": false,
+      "reason_ru": "last_word_missing",
+      "ru_tts": "Смотрите! Я переливаюсь всеми цветами!"
+    }
+  ]
+}

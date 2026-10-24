@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FBF",
+    "CHC",
+    "FPF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    },
+    "C": {
+      "item": "villager_life:core_shard"
+    },
+    "H": {
+      "item": "minecraft:magma_block"
+    },
+    "P": {
+      "item": "villager_life:mega_part_colosseum"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_smelter",
+    "count": 1
+  }
+}

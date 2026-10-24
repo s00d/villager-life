@@ -1,0 +1,11 @@
+name: Idea
+description: Suggest something villagers or towns could do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What should happen in game, and why it would make villages better
+    validations:
+      required: true

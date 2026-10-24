@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:mega/root",
+  "display": {
+    "icon": {
+      "id": "villager_life:mega_frame"
+    },
+    "title": {
+      "translate": "advancements.villager_life.mega.formed.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.mega.formed.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

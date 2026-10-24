@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "villager_life:tocsin_core"
+    },
+    {
+      "item": "minecraft:leather_chestplate"
+    }
+  ],
+  "result": {
+    "id": "villager_life:parish_vestment",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/lot",
+  "display": {
+    "icon": {
+      "id": "villager_life:house_deed"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.deed.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.deed.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

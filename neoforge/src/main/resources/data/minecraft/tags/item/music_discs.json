@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "villager_life:music_disc_feast",
+    "villager_life:music_disc_tavern",
+    "villager_life:music_disc_hymn",
+    "villager_life:music_disc_evening"
+  ]
+}

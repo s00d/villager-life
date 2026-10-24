@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.vnap.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "VillagerModelMixin",
+    "MouseHandlerAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

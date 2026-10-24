@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "category": "misc",
+  "result": {
+    "id": "villager_life:pet_treat",
+    "count": 4
+  }
+}

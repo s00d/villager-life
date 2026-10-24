@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "villager_life:block/monument_base_top",
+    "bottom": "villager_life:block/monument_base_top",
+    "side": "villager_life:block/monument_base"
+  }
+}

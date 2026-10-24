@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/baby",
+  "display": {
+    "icon": {
+      "id": "minecraft:cake"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.coming_of_age.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.coming_of_age.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

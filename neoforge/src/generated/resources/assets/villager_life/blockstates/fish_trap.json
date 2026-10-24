@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/fish_trap",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/fish_trap"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/fish_trap",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/fish_trap",
+      "y": 270
+    }
+  }
+}

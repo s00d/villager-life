@@ -1,0 +1,2744 @@
+{
+  "title": "Villager Life",
+  "subtitle": "Living villages",
+  "landing": [
+    "Villagers talk, work, build, love, raise children and remember you.",
+    "",
+    "A [[red dot]] marks what is new."
+  ],
+  "categories": [
+    {
+      "id": "start",
+      "icon": "villager_life:handbook",
+      "color": "#3E8E4E",
+      "title": "Getting Started",
+      "description": "What this mod changes, what to do first, and how to read this book.",
+      "entries": [
+        {
+          "id": "welcome",
+          "icon": "minecraft:bell",
+          "title": "Welcome to the Village",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Here villagers:",
+                "",
+                "- **talk** to you;",
+                "- **work** and **build** their own town;",
+                "- **marry**, raise **children**, grow old;",
+                "- remember you: a village has a **mood**."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "First steps",
+              "text": [
+                "- Find a village and stay near it: while you are there the whole town lives.",
+                "- Trade, ring the bell, give gifts: the [[mood bar]] will rise.",
+                "- Look into the **stall** by the bell: the village has its own **coins**.",
+                "- Once the square grows, read the **notice board**.",
+                "- The chapters follow the game, but any can be read first."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mood_bar",
+          "icon": "minecraft:bell",
+          "title": "The Mood Bar",
+          "pages": [
+            {
+              "type": "image",
+              "image": "villager_life:textures/gui/guide/img/mood_bar.png",
+              "width": 512,
+              "height": 288,
+              "text": "Within 80 blocks of a bell: how the village feels about you."
+            },
+            {
+              "type": "text",
+              "title": "Reading it",
+              "text": [
+                "- The number goes from **-100** to **+100**.",
+                "- The frame is [[green]] above +20, red below -20.",
+                "- Tick marks show where village rites begin.",
+                "- During a rite: its icon and a gold line of progress.",
+                "- It shows for a few seconds when the mood changes or you walk in.",
+                "",
+                "F1 hides it; the settings keep it on, turn it off or move it."
+              ]
+            },
+            {
+              "type": "links",
+              "title": "See also",
+              "links": [
+                "mood_basics",
+                "mood_changes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "book_help",
+          "icon": "villager_life:handbook",
+          "title": "Using This Book",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "- **Arrows**, the **mouse wheel** or **←/→** turn pages.",
+                "- **Right click** or **Backspace** goes back; the house icon opens the contents.",
+                "- Items on pages show their name on hover; **click** one to open its entry.",
+                "- Crafting grids are read from the game itself, so they always match.",
+                "- The book opens where you closed it."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:handbook",
+              "text": "Lost the book? Three paper make a new one."
+            }
+          ]
+        },
+        {
+          "id": "settings",
+          "icon": "minecraft:comparator",
+          "title": "Settings",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "- **Subtitles** — the spoken lines under the screen.",
+                "- **Village Mood Bar** — when it changes, always, or off; **Mood Bar Position** — top, a corner.",
+                "- **Chattiness** — Muted, Shy, Chatty or Super Chatty.",
+                "- **Rare voicelines** — Never, Default or Often.",
+                "",
+                "Server options need an operator. The guide is given once to each player; a server can turn that off with [[giveGuideOnJoin]] in villager-life.json."
+              ]
+            },
+            {
+              "type": "screen",
+              "screen": "settings",
+              "title": "Open settings",
+              "text": "The same settings are in the mod list under Villager Life → Config."
+            }
+          ]
+        },
+        {
+          "id": "community",
+          "icon": "minecraft:writable_book",
+          "title": "Community and help",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "- **Discord** — discord.gg/JkNspxqWk9: questions, bug reports, ideas, screenshots of your towns; English channels and a Russian one.",
+                "- **Modrinth** and **CurseForge** — the mod's pages: new versions and what changed in them.",
+                "- **GitHub** — github.com/s00d/villager-life: the source, to read and learn from.",
+                "",
+                "A bug report helps most with the Minecraft and NeoForge versions, the mod's jar (-en or -ru), other mods, and [[logs/latest.log]]."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voices",
+      "icon": "minecraft:jukebox",
+      "color": "#3F6FB0",
+      "title": "Village Voices",
+      "description": "Villagers notice what you do and say so — in English or Russian, with subtitles and their own voices.",
+      "entries": [
+        {
+          "id": "reactions",
+          "icon": "minecraft:note_block",
+          "title": "Reactions",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Villagers within 16 blocks react to **almost anything**: your gear, mobs, blocks, trades, damage, weather.",
+                "",
+                "Over **1500** groups of lines. [[One voice at a time]] in an area: the rest wait their turn."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Voices and language",
+              "text": [
+                "- Voice language = game language: Russian or English.",
+                "- Each villager has its **own pitch**; elders speak lower.",
+                "- Women and children have their own voices.",
+                "- Volume: the //Friendly Creatures// slider."
+              ]
+            },
+            {
+              "type": "screen",
+              "screen": "triggers",
+              "title": "Reactions catalogue",
+              "text": "Every reaction, grouped by what triggers it, with a search."
+            }
+          ]
+        },
+        {
+          "id": "conversations",
+          "icon": "minecraft:campfire",
+          "title": "Conversations",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Two villagers who stand together for a while start talking: about the weather, a crowd, a campfire, a ride in a boat — or about you, if they don't like you.",
+                "",
+                "- Spouses chat, two women gossip.",
+                "- A child nearby often **echoes** an adult in its own words.",
+                "- At a campfire a long talk of six lines can unfold."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trading",
+          "icon": "minecraft:emerald",
+          "title": "Trading and Gifts",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Opening trades, villagers greet you by your **reputation**: warmly if they like you, coldly if not — and refuse below -150.",
+                "",
+                "- Each trade: village mood **+4**.",
+                "- Right click a grown-up holding food: it takes it to the family table, mood **+6** (once a day each).",
+                "- Nitwits and the jobless tell you they have nothing to sell."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "icon": "villager_life:gold_coin",
+      "color": "#C98A1E",
+      "title": "Mayor and Market",
+      "description": "Every village has a stall and a mayor's treasury. Money goes round: wages, purchases, the caravan.",
+      "entries": [
+        {
+          "id": "mayor",
+          "icon": "minecraft:bell",
+          "title": "The Mayor",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every village of **four grown-ups** or more has a **mayor**: the eldest villager without a trade is elected (if all have one, the eldest worker, who leaves its trade), one for the village whatever its bells. The mayor wears a red sash (and a top hat, if a man) and keeps no trade.",
+                "",
+                "The office passes to the eldest grown child, else to the spouse, else waits for a young child to grow up; only when nobody is left does the village vote again. A mayor who moves away, or stays homeless for three days, steps down."
+              ]
+            },
+            {
+              "type": "structure",
+              "schematic": "house/mayor_house",
+              "text": "The hall: stone, a portico, banners and lanterns."
+            },
+            {
+              "type": "text",
+              "title": "Hall and duties",
+              "text": [
+                "The mayor builds the **hall** near the bell by hand, the villagers without a trade lending a hand. With no free ground they take an empty house apart, a house of the world if they must, the mayor's own last. The family moves in; the mayor furnishes the office upstairs, the wife the home below.",
+                "",
+                "- mornings: a speech at the bell;",
+                "- after work: the **wages** at the bell (with a stall), then a round of the village;",
+                "- weddings and funerals."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coins",
+          "icon": "villager_life:silver_coin",
+          "title": "Coins",
+          "pages": [
+            {
+              "type": "items",
+              "title": "Village money",
+              "items": [
+                "villager_life:copper_coin",
+                "villager_life:silver_coin",
+                "villager_life:gold_coin"
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "**64 copper** make a **silver** coin, **64 silver** a **gold** one. A full stack changes up on its own (when you pick coins up, pay, or every few seconds), and every payment gives change in the biggest coins: a fortune fits in a few slots.",
+                "",
+                "Coins are not crafted. You earn them by selling at a village stall; villagers earn them as wages."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stall",
+          "icon": "villager_life:market_counter",
+          "title": "The Stall",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "house/shop_house",
+              "text": "The shop house: the stall in front, the keeper's home behind."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Every village has a **stall** from the start, and a **shopkeeper** comes to the village with it: a newcomer in a striped apron, never one of the villagers taken from their lives. It brings the goods and the materials and builds the **shop house** near the bell by hand: the counter in front, its home with two beds behind. It may marry, raise a family and keep a pet like anyone.",
+                "",
+                "From morning to evening the keeper stands behind the counter; at night, or with the keeper away, the stall is shut. With no ground for two days the keeper trades from a lone counter by the bell. The goods and the till belong to the village."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "When the keeper is gone",
+              "text": [
+                "The stall passes to the keeper's **spouse**, else to its eldest grown **child** in the village. With nobody of the family left a new shopkeeper comes, at most one a day. A broken shop house is mended by its keeper from its own goods."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trading",
+          "icon": "minecraft:emerald",
+          "title": "Trading",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Right-click the **counter** or the keeper. Tabs sort the shelf (food, home, building, sold by players); a click buys one, shift-click a stack. Big counts read 1.2k. Put a stack in the sell slot to see what the stall pays.",
+                "",
+                "- you pay 0.8 to 1.2 of a thing's worth and are paid 0.4 to 0.6 of it, by the village's **mood**;",
+                "- what you sell goes on the shelf at its worth: you or a villager who needs it can buy it;",
+                "- the stall keeps money for its deliveries and takes no more of a thing than twice what it keeps;",
+                "- a village angry with you will not trade.",
+                "- the stall pays players up to 4 silver a day: the rest of its till is for the villagers;",
+                "- a quarter of what the stall keeps is never sold to you: it is for the villagers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wages",
+          "icon": "minecraft:gold_nugget",
+          "title": "Wages and Treasury",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "With a stall in the village every worker earns a **wage**: 4 copper a day and one more for each tier of its workshop; the mayor 8, the keeper 6 (out of the till). After work the mayor waits at the bell and the workers come for it; a wage nobody came for is paid later anyway.",
+                "",
+                "Wages go into the **household's purse** (on the head of the house), up to 16 silver. The mayor's **treasury** pays them and gets the stall's takings above what it needs. When it runs short the village sells its produce: the mayor always pays.",
+                "",
+                "Villagers who help on someone else's build earn a copper a block (up to 24 a day) from its funds."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "buying",
+          "icon": "villager_life:cradle",
+          "title": "What Families Buy",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Nothing appears from thin air: before a wife puts up a cradle or a hearth, a husband a bed or a kennel, a family a lantern or a candle, they **buy it**, carry it home and set it down **by hand**. Food the pantry lacks, when no farmer has any, is bought too. A family gets a pet only once it has bought the kennel, the cat's bed or the perch.",
+                "",
+                "- not enough money: they wait for the wage;",
+                "- food or a bed they cannot afford for two days the **mayor pays for**;",
+                "- what the stall has run out of is ordered and comes the next morning."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caravan",
+          "icon": "minecraft:lead",
+          "title": "The Caravan",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every morning a small delivery brings what buyers ordered and a quarter of whatever is short. Once a week a **caravan** fills the shelves to what the stall keeps, for half the worth, and buys up what it has too much of (over twice its stock, or a player's lot over a stack), so a thousand logs never fill the stall.",
+                "",
+                "With you nearby you see it come: a trader with two llamas walks up to the stall and leaves again. It does not trade with you."
+              ]
+            }
+          ],
+          "unlock": [
+            "caravan"
+          ]
+        },
+        {
+          "id": "fair",
+          "icon": "minecraft:note_block",
+          "title": "The Fair",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The day the **caravan** comes (every 7 days) is a **fair**.",
+                "",
+                "- the stall pays a player a quarter more and takes twice as much in a day;",
+                "- music plays on the square by day;",
+                "- the notice board says so."
+              ]
+            }
+          ],
+          "unlock": [
+            "caravan"
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "work",
+      "icon": "minecraft:composter",
+      "color": "#B0702E",
+      "title": "Work and Building",
+      "description": "Every trade is a real job, and every block of a house or a workshop is bought at the stall or grown on the farm.",
+      "entries": [
+        {
+          "id": "workday",
+          "icon": "minecraft:clock",
+          "title": "A Working Day",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "From morning to afternoon (game time 2000–9000) a villager works around its job site, within 12 blocks:",
+                "",
+                "- it builds or repairs its **workshop**;",
+                "- then does its **chores**, a few of each a day;",
+                "- products go into its **workshop chest** (at most 16 of a kind).",
+                "- what it does not keep for its work it **sells at the stall**: its earnings.",
+                "",
+                "Nothing comes from nothing: seeds, saplings or iron must be in the chest. [[Stock the chest and the villager works more.]]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chores_land",
+          "icon": "minecraft:wheat",
+          "title": "Farmers, Herders, Fishers",
+          "pages": [
+            {
+              "type": "text",
+              "title": "Farmer",
+              "text": "Works its **farm** (its workshop: a field round the water, trees at the back): harvests and sows, fells and replants, sells logs and spare crops at the stall. Takes spare wheat to the butcher and the shepherd."
+            },
+            {
+              "type": "text",
+              "title": "Butcher and shepherd",
+              "text": "Their **paddock** is part of the workshop, behind its door, with a gate, hay and a drinking hole. They lead wild animals in, breed them (up to 6); the butcher culls the surplus, the shepherd shears and dyes. With nothing wild around they **buy a pair** at the stall, brought the next morning. Named and leashed animals are never touched."
+            },
+            {
+              "type": "text",
+              "title": "Fisherman",
+              "text": "Fishes from the shore of a pond of at least 3×3 within 12 blocks, six times a day."
+            }
+          ]
+        },
+        {
+          "id": "chores_craft",
+          "icon": "minecraft:fletching_table",
+          "title": "Crafters and Scholars",
+          "pages": [
+            {
+              "type": "text",
+              "title": "Wood, leather, books",
+              "text": [
+                "- **Fletcher** — gathers feathers and sticks, makes arrows.",
+                "- **Leatherworker** — tans hides into leather.",
+                "- **Librarian** — copies books, teaches children.",
+                "- **Cartographer** — surveys the land, draws maps.",
+                "- **Cleric** — heals hurt villagers and golems."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Stone and iron",
+              "text": [
+                "- **Mason** — cuts and mends stone bricks.",
+                "- **Armorer** — repairs iron golems with iron.",
+                "- **Toolsmith** — sharpens tools, makes hoes.",
+                "- **Weaponsmith** — tempers swords."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "workshops",
+          "icon": "minecraft:crafting_table",
+          "title": "Workshops",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "workshop/farmer_t3",
+              "text": "A farmer's workshop at its third tier."
+            },
+            {
+              "type": "text",
+              "title": "Three tiers",
+              "text": [
+                "A villager builds its workshop around its job site, **by hand**, block by block:",
+                "",
+                "- **Tier 1** (novice) — a corner with a chest and two decor blocks;",
+                "- **Tier 2** (journeyman) — a frame with an awning and lanterns;",
+                "- **Tier 3** (master) — walls, a door and its **machine**.",
+                "",
+                "Broken blocks are rebuilt the next day. Placing the right block in the right spot helps."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "machines",
+          "icon": "villager_life:kiln",
+          "title": "Machines",
+          "pages": [
+            {
+              "type": "items",
+              "title": "Twelve machines",
+              "items": [
+                "villager_life:greenhouse_box",
+                "villager_life:smokehouse",
+                "villager_life:dye_vat",
+                "villager_life:fish_trap",
+                "villager_life:reading_desk",
+                "villager_life:survey_table",
+                "villager_life:font",
+                "villager_life:tanning_vat",
+                "villager_life:kiln",
+                "villager_life:armor_bench",
+                "villager_life:grinding_wheel",
+                "villager_life:weapon_forge"
+              ],
+              "text": "One per trade; right click opens it. Masters sell them for 12 emeralds."
+            },
+            {
+              "type": "text",
+              "title": "Food and craft",
+              "text": [
+                "- **Greenhouse box**: seed + bone meal → crops.",
+                "- **Smokehouse**: cooks meat and fish.",
+                "- **Dye vat**: 4 wool + dye → dyed wool.",
+                "- **Fish trap** (in water): bait → fish.",
+                "- **Tanning vat**: hides → leather."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Knowledge and metal",
+              "text": [
+                "- **Reading desk**: book + lapis → enchanted book.",
+                "- **Survey table**: map + paper → filled map.",
+                "- **Font**: brews potions.",
+                "- **Kiln**: bricks, glass, smooth stone.",
+                "- **Armor bench, grinding wheel, weapon forge**: mend 25%; the forge sharpens too."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:kiln",
+              "text": "Every machine is crafted from its vanilla job block and a few extras."
+            }
+          ]
+        },
+        {
+          "id": "decor",
+          "icon": "villager_life:book_stack",
+          "title": "Workshop Decor",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:seed_sacks",
+                "villager_life:harvest_basket",
+                "villager_life:chopping_block",
+                "villager_life:meat_rack",
+                "villager_life:wool_bales",
+                "villager_life:spinning_wheel",
+                "villager_life:fish_rack",
+                "villager_life:tackle_crate",
+                "villager_life:arrow_bundle",
+                "villager_life:feather_basket",
+                "villager_life:book_stack",
+                "villager_life:ink_and_quill",
+                "villager_life:globe",
+                "villager_life:map_rolls",
+                "villager_life:incense_burner",
+                "villager_life:potion_shelf",
+                "villager_life:hide_rack",
+                "villager_life:leather_rolls",
+                "villager_life:chisel_bench",
+                "villager_life:brick_pallet",
+                "villager_life:armor_dummy",
+                "villager_life:chainmail_rack",
+                "villager_life:tool_rack",
+                "villager_life:nail_keg",
+                "villager_life:weapon_rack",
+                "villager_life:sword_barrel"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Some favourites",
+              "text": [
+                "- **Seed sacks** sow empty farmland nearby every morning.",
+                "- **Incense burner** heals everyone within 6 blocks.",
+                "- **Tackle crate** gives a chance of a double catch.",
+                "- **Globe** points to the village bell.",
+                "- **Book stack** adds enchanting power.",
+                "- **Sword barrel** sharpens a sword with flint."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "farm",
+          "icon": "minecraft:oak_sapling",
+          "title": "The Farmer's Farm",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "workshop/farmer_t3",
+              "text": "The farm: a field and its trees."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **farm is the farmer's workshop**: the composter in its work corner, a field round a water channel, saplings along the back, a gate in the fence. It grows with the farmer's tier.",
+                "",
+                "- tends each sapling once a day;",
+                "- fells a grown tree whole, logs and its own leaves, and plants it again;",
+                "- harvests the ripe crops and sows them again;",
+                "- sells the logs and what it does not keep at the stall: the village's planks are its trees.",
+                "",
+                "Nothing outside the farm's fence is cut or dug."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "icon": "minecraft:oak_planks",
+          "title": "Wood from Logs",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The stall keeps wood as **logs** and makes the parts a builder asks for: planks, stairs, slabs, fences, doors, trapdoors, signs. Four planks to a log, a stair three-eighths of one.",
+                "",
+                "Its logs come from the village farm (the villagers sell them) and from the caravan. So the trees the village grows become its houses."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplies",
+          "icon": "minecraft:chest",
+          "title": "Workshop Supplies",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "What a trade's work uses up is bought at the stall into the workshop chest, out of the household's wages: flint and sticks for the fletcher, cobblestone for the mason, iron for the smiths, paper and leather for the librarian, paper for the cartographer, seeds and feed for the farmer, butcher and shepherd, hides for the leatherworker.",
+                "",
+                "The family builds the workshop itself with its own money, like a house."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "costs",
+          "icon": "minecraft:bricks",
+          "title": "What Building Costs",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every block is an item: a door or a bed once, a potted flower is a pot and the flower. The money goes into the build's own store, by its bill.",
+                "",
+                "- **its own** — a house, a storey, a room, mending, a workshop — the **family** pays for: all it has, and what it lacks the treasury **lends**;",
+                "- half of all the family earns goes to the loan; owing more than a full purse, it starts no new storey or workshop;",
+                "- **the town's** — roads, bridges, the square, the wall, the ditch, crossbows, the hall, the chapel — the **treasury** pays for;",
+                "- a builder buys at the stall what the next stage needs; a block goes up only when its items are on the site."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Set down by hand",
+              "text": [
+                "Things for an occasion are bought at once and set down **by hand**: the mother brings the coming-of-age cake, the mayor the gravestone, the keeper a kiosk's counter. Nobody came in two days — it is set down by itself. Settlers of a hamlet bring their first house's materials along and build it themselves."
+              ]
+            }
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "families",
+      "icon": "villager_life:wedding_ring",
+      "color": "#B04E6A",
+      "title": "Families",
+      "description": "Villagers court, marry, raise children, grow old and are remembered. You can be the matchmaker, the best man and the godparent.",
+      "entries": [
+        {
+          "id": "homes",
+          "icon": "minecraft:oak_sign",
+          "title": "Homes and Signs",
+          "pages": [
+            {
+              "type": "image",
+              "image": "villager_life:textures/gui/guide/img/home_sign.png",
+              "width": 512,
+              "height": 288,
+              "text": "A home sign by the door: the owner, the spouse, the children."
+            },
+            {
+              "type": "text",
+              "text": [
+                "A homeless villager takes a free bed with a door nearby and hangs a **sign** with its name. The sign grows with the family.",
+                "",
+                "- Breaking a villager's bed or door: mood **-20**.",
+                "- A painting by their bed: **+5**, and thanks.",
+                "- The head of the house adds a little decor every day."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "courtship",
+          "icon": "minecraft:poppy",
+          "title": "Courtship and Wedding",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Two single villagers of one village, not relatives, start courting — if at least one has a house. After **3 days** they marry at the bell.",
+                "",
+                "- They walk to the bell, say their vows, a guest cheers.",
+                "- The bride moves into the groom's house and keeps her own bed until he sets one beside his.",
+                "- Neighbours (players who slept in the village) are invited."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The groom's wish",
+              "text": "A courting man may ask you for a **cake**, a **firework** or a **flower**. Bring it: after the vows fireworks go off at the bell and the village mood rises **+5**."
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:wedding_ring",
+              "text": "Give it to a single villager: courtship and a wedding today."
+            }
+          ]
+        },
+        {
+          "id": "gifts",
+          "icon": "minecraft:cake",
+          "title": "Gifts That Matter",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Right click a villager holding:",
+                "",
+                "- **a flower** — to a single: a match; to a courting one: the wedding a day sooner;",
+                "- **a cake or a ring** — to a courting one: the wedding today;",
+                "- **a wooden horse** — to a child (+2 mood);",
+                "- **a baby blanket** — to a new mother (+2);",
+                "- **a name tag** — to a baby: you become its godparent;",
+                "- **a flower or cake** — to a quarrelling spouse: peace."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:wooden_toy"
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:baby_blanket"
+            }
+          ]
+        },
+        {
+          "id": "newborn",
+          "icon": "villager_life:cradle",
+          "title": "The First Day",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:cradle"
+              ],
+              "text": "The crib: a newborn's first day."
+            },
+            {
+              "type": "text",
+              "text": [
+                "A newborn spends its **first day** swaddled in a **crib** by its parents' bed. **The nursery is made ready first**: no baby comes until the husband has bought and set down a bed for it and the wife has brought the crib. On the day it is born the **mayor** gives the household a little money.",
+                "",
+                "- the baby cries and coos; its **mother** stays by the crib all day, rocks it and hushes it;",
+                "- the **father** comes to it after work, brothers and sisters peek in;",
+                "- the next morning it is out of the crib, a child like the others."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "With no mother, the **father** sits by the crib. In a cramped room the family moves small things out (a crafting table, a pot, a pumpkin) — they drop as items; job sites and chests stay.",
+                "",
+                "**Children cannot be hurt**, and the crib a baby lies in cannot be broken."
+              ]
+            }
+          ],
+          "unlock": [
+            "infant"
+          ]
+        },
+        {
+          "id": "children",
+          "icon": "villager_life:cradle",
+          "title": "Children",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A married couple living together may have a baby when:",
+                "",
+                "- they have fewer than **3** children since the wedding;",
+                "- **3 days** passed since the last one;",
+                "- village mood is above **-20** and they are not quarrelling;",
+                "- there is a free bed or room for a child's bed;",
+                "- the village is not full yet."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Growing up",
+              "text": [
+                "Childhood lasts **3 days**: lessons at the **librarian**, hide and seek, meeting father in the evening.",
+                "",
+                "Coming of age, a **cake** waits by the bed; the youngster takes father's trade and soon moves out."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "household",
+          "icon": "villager_life:pantry_crate",
+          "title": "Home Life",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The wife keeps the house:",
+                "",
+                "- fills the **pantry crate** with food from the farmer's, fisher's or butcher's chest;",
+                "- cooks **breakfast and dinner** at a hearth, smoker, furnace or campfire;",
+                "- feeds the children and her husband;",
+                "- lights a candle in the evening, puts up a clothesline.",
+                "",
+                "An empty pantry means no dinner — and couples quarrel more."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Dinner invitation",
+              "text": "If a wife likes you (reputation **25+**) and the pantry has food, in the evening she invites you in and hands you a **home meal** — once a day per village."
+            },
+            {
+              "type": "text",
+              "title": "The night",
+              "text": [
+                "A home keeps the night out: a door is set by hand where a doorway has none (the desert's houses), a dark room gets a torch on the wall. The homeless spend the night under the roof of the nearest building of the town, and the mayor has lamps set where the streets are dark."
+              ]
+            },
+            {
+              "type": "items",
+              "title": "Home decor",
+              "items": [
+                "villager_life:hearth",
+                "villager_life:pantry_crate",
+                "villager_life:cradle",
+                "villager_life:vanity_table",
+                "villager_life:standing_mirror",
+                "villager_life:flower_vase",
+                "villager_life:family_portrait",
+                "villager_life:clothesline",
+                "villager_life:aquarium"
+              ],
+              "text": "Wives place these themselves; you can craft them too."
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:hearth"
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:pantry_crate"
+            }
+          ]
+        },
+        {
+          "id": "ageing",
+          "icon": "villager_life:gravestone",
+          "title": "Old Age and Memory",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "After **40** days of adult life a villager becomes an **elder**: grey hair, a slower step, a lower voice, stories for the children.",
+                "",
+                "**12** days later an elder passes away quietly in its sleep. The treasury buys a **gravestone** with a sign, and the mayor (or any grown-up) sets it in the **churchyard**; the next morning the village holds a **funeral**.",
+                "",
+                "The widow keeps the house and the children and visits the grave."
+              ]
+            }
+          ],
+          "unlock": [
+            "elder"
+          ]
+        },
+        {
+          "id": "village_growth",
+          "icon": "minecraft:bell",
+          "title": "Growing Villages and Hamlets",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "- A full house: a family in a villager-built house adds a **room**; in a vanilla house it orders a **new house**.",
+                "- A village stops growing at its limit (see **The Town**).",
+                "- In a full village a homeless villager may leave with a sweetheart to found a **hamlet** 164–300 blocks away. It appears when you come close: a bell, a house, a wedding.",
+                "",
+                "Sleep in a bed in a village once and you become its **neighbour**: children run to visit you."
+              ]
+            }
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "pets",
+      "icon": "villager_life:pet_treat",
+      "color": "#2E8C8C",
+      "title": "Pets",
+      "description": "Families with children adopt a stray dog, cat or parrot, build it a kennel and teach it tricks — and parrots learn words.",
+      "entries": [
+        {
+          "id": "adoption",
+          "icon": "minecraft:bone",
+          "title": "Adopting a Stray",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A married head of a house (most often with children) looks for a stray: a **dog**, a **cat**, or a **parrot** in the jungle.",
+                "",
+                "- The children feed it once a day: a bone, cod or seeds.",
+                "- After **3** feedings it is the family's: a collar in the family colour and a name.",
+                "- At most 4 pets per village."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:pet_treat",
+              "text": "A treat counts as a feeding for a stray, and makes a family pet happy."
+            }
+          ]
+        },
+        {
+          "id": "kennel",
+          "icon": "villager_life:dog_kennel",
+          "title": "Kennel, Bowl and Tricks",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "- The head builds the dog a **kennel** in the yard with a fence post and a **bowl**.",
+                "- At night and in rain the dog sleeps by the kennel on a rope.",
+                "- The wife fills the bowl every morning.",
+                "- Children pet it and teach it: **Sit**, **Fetch** with a stick, **Good dog**.",
+                "- A cat gets a **cat bed**, a parrot a **perch**."
+              ]
+            },
+            {
+              "type": "items",
+              "title": "Pet things",
+              "items": [
+                "villager_life:dog_kennel",
+                "villager_life:pet_bowl",
+                "villager_life:cat_bed",
+                "villager_life:parrot_perch",
+                "villager_life:aquarium",
+                "villager_life:pet_treat"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parrot",
+          "icon": "minecraft:feather",
+          "title": "Talking Parrots",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "When you are near, someone in the family gives the parrot one lesson a day. After **3** lessons on a word the parrot says it in its own voice — and then repeats what it has learned.",
+                "",
+                "There are **10** words to learn."
+              ]
+            }
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "town",
+      "icon": "minecraft:stone_bricks",
+      "color": "#7A6A9A",
+      "title": "The Town",
+      "description": "A grown village becomes a town: a plan and lots, yards, stone roads, a square, a chapel, a churchyard, and at last a wall.",
+      "entries": [
+        {
+          "id": "town",
+          "icon": "minecraft:bell",
+          "title": "A Village Becomes a Town",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A village is its **bell**: bells closer than 64 blocks make one village with one mayor. The mayor's office keeps a **roll** of residents — those away in unloaded chunks still count, a neighbour village's do not; one unseen for 5 days is struck off.",
+                "",
+                "- the limit is **72** villagers, but no more than its land can hold: the town surveys the ground round it;",
+                "- its land reaches **48** blocks from the bell, half a block more for each villager past 24, up to **80** — never past halfway to a neighbour's bell;",
+                "- while you are near, the **whole town** lives; 5 minutes after you leave it sleeps;",
+                "- a bell the world left down in a cave under rock is hung anew on the ground above."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Hamlets",
+              "text": [
+                "In a full village a homeless grown-up may leave with a homeless sweetheart, walk past the edge and found a **hamlet** 164–300 blocks away, far from any village. It appears only when you come near: a bell, a house, a wedding."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "town_plan",
+          "icon": "minecraft:filled_map",
+          "title": "The plan and lots",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The town plans **ahead**. **Streets** run out of the square to the four winds, straight, bending round hills and water, with side streets every 45 cells. **Lots** are cut along them, 15×15 (11×11 where it is tight), each facing its street.",
+                "",
+                "A homeless family gets the nearest free lot and its street is laid up to it: no more hunting for room, no house crowding another."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "**Leftovers on a lot.** Whatever stands on a lot when its house begins (your shed, a tree, a hill) is taken down by hand first. **Your things** and blocks are not lost: they go to the **lost and found** chest by the notice board.",
+                "",
+                "**A lot of your own.** On the Lots tab click a free lot and Buy: a copper a column, to the treasury. The villagers mark its corners with lantern posts, set a sign with your name and lay a road to it. Build what you like: the town keeps off it.",
+                "",
+                "An empty house the villagers built can be bought with a **house deed**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "houses",
+          "icon": "minecraft:oak_door",
+          "title": "Villagers buy houses",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "house/cottage",
+              "text": "One of 11 plans, in the biome's colours."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Houses are **bought**. Once a day a homeless villager looks at what is for sale: empty villager houses and the village's ownerless homes. The price is **80%** of the materials. They pay with their own coins: **10%** down (16 copper at least), the rest a loan from the treasury, never more than **4 silver** owed.",
+                "",
+                "With nothing for sale they build their own on a free **lot**. Only the **founders** — those who lived in the village on its first day — get a house for nothing."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "After **3 days** without a home the **mayor** pays a poor villager's down payment. Half of every wage pays the loan back. A bed a villager only sleeps in is a **night's lodging**, not a home.",
+                "",
+                "- Foundation → walls → floors → roof → doors → furniture.",
+                "- Your blocks in the right places count.",
+                "- A full village builds no more."
+              ],
+              "title": "Without money"
+            },
+            {
+              "type": "text",
+              "text": [
+                "Owners notice knocked-out blocks (a creeper, a pickaxe) on the first day and mend them from the next in their free time, with their own money. A block someone else put in the gap is left alone."
+              ],
+              "title": "Repairs"
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "icon": "villager_life:market_counter",
+          "title": "The town's base",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The **shop** and the **town hall** are the town's base. They are built and mended **first** and **for nothing**: their owner (the shopkeeper or the mayor) and one helper drop everything else.",
+                "",
+                "The counter goes up before the walls: the shop trades while the house is built round it. A broken counter is set up again the same day.",
+                "",
+                "The shopkeeper and the mayor take no other work and never go to the Spire: they have their own duties."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "upkeep",
+          "icon": "minecraft:iron_shovel",
+          "title": "The mayor's orders",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every day the mayor looks the town over and gives the town's builders **orders**, paid by the treasury:",
+                "",
+                "- **Pits and gullies** by houses and roads are filled with earth (sand in the desert), nearest the bell first.",
+                "- **Litter on the roads** — gravel, weeds, cobwebs, fallen leaves — is cleared.",
+                "- **Things dropped on a road** are picked up and taken to the lost and found.",
+                "",
+                "The notice board's Works tab shows what is being done."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "house_levels",
+          "icon": "minecraft:ladder",
+          "title": "Houses Grow",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A family in a house of the villagers' making adds a **storey** when it has fewer beds than family members plus one.",
+                "",
+                "- level 2: an upper floor, a **nursery** with two beds, a chest and a carpet;",
+                "- level 3: a **cellar** of cobblestone with stairs, a trapdoor and chests;",
+                "- what the new level has no place for is taken down by hand; furniture and chests go to the build's store and are carried back after;",
+                "- the family lives on in the house; a crib with a sleeping baby is never touched — the build waits."
+              ]
+            },
+            {
+              "type": "structure",
+              "schematic": "house/timber_house_l3",
+              "text": "Level 3: a cellar under the house."
+            },
+            {
+              "type": "text",
+              "text": [
+                "A family in a cramped vanilla house takes it apart by hand and builds a house of the villagers' making in its place — or next to it, when the plan does not fit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "new_houses",
+          "icon": "minecraft:bricks",
+          "title": "House Plans",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Eleven plans in biome colours, each with a storey and a cellar to grow into. Among them:",
+                "",
+                "- **timber house**: a stone footing, an oak frame, birch infill, a chimney;",
+                "- **stone house**: cobblestone in a stone-brick frame;",
+                "- **town house**: narrow brick, for a crowded centre;",
+                "- **farmstead**: long, with a porch on posts."
+              ]
+            },
+            {
+              "type": "structure",
+              "schematic": "house/timber_house",
+              "text": "The timber house."
+            },
+            {
+              "type": "structure",
+              "schematic": "house/stone_house",
+              "text": "The stone house."
+            },
+            {
+              "type": "structure",
+              "schematic": "house/town_house",
+              "text": "The town house."
+            },
+            {
+              "type": "structure",
+              "schematic": "house/farmstead",
+              "text": "The farmstead."
+            }
+          ]
+        },
+        {
+          "id": "double_bed",
+          "icon": "villager_life:double_bed",
+          "title": "The Double Bed",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:double_bed"
+              ],
+              "text": "Two beds side by side."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **Double Bed** is two beds side by side, and both are homes. A wife's bed set beside her husband's folds into one at once.",
+                "",
+                "Take one half away and the other is left a plain red bed; each half drops an ordinary bed."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:double_bed",
+              "text": "Two beds and two planks."
+            }
+          ]
+        },
+        {
+          "id": "yards",
+          "icon": "minecraft:oak_fence",
+          "title": "Yards",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A finished family house — one the villagers built or one of the world's — gets a **yard**:",
+                "",
+                "- a ring 3 blocks out (2 where it is tight): a picket fence, a hedge or a low stone wall;",
+                "- at each door an open way between two lantern posts: villagers open no gates;",
+                "- a path from the door, a flower bed along the front, a bench.",
+                "",
+                "The **family** pays out of its purse, only when it can (never on credit); the town's builders lay it. The ring keeps off ground that is not the family's; a house with no room round it gets no yard."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Dressing",
+              "text": [
+                "At its own cost the town gives a house shutters, window boxes of azalea, a lantern on chains over the door, and firewood and hay by a blind wall."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "roads",
+          "icon": "minecraft:dirt_path",
+          "title": "Roads and Lamps",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every day the village plans up to **3** new roads: from the door of each house, the hall, the stall, each workshop and the chapel to its roads, a vanilla path or the bell. A road goes round buildings, climbs one block at a step and keeps to the village's land.",
+                "",
+                "- jobless grown-ups lay it by hand in work hours, two to a stretch, for a copper a block; the treasury pays;",
+                "- a road is **stone** from the first day, and at half the limit it is paved again with dressed stone; the plan's streets are three wide, with kerbs;",
+                "- every **12** blocks a lamp on a post with a bracket over the road."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Water up to 10 blocks is crossed on a **bridge**: a plank deck a block over the water, railings, lamps at both ends, log piers to the bed every 4 blocks. The builder lowers the piers from the bank.",
+                "",
+                "A road broken in the world is laid again. Houses and workshops are never built on roads."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "square",
+          "icon": "minecraft:lantern",
+          "title": "The Square",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "As the village grows it lays a **square** round the bell:",
+                "",
+                "- at a sixth of its limit (12 villagers): paving 4 blocks round, lamps at the corners;",
+                "- at half (36): 6 blocks round, a **well**, benches facing the bell, potted flowers along the edge.",
+                "",
+                "The paving is a checkerboard of stone bricks and the biome's stone. Roads join the square; no house is built on it. The town builders lay it, the treasury pays."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chapel",
+          "icon": "villager_life:tower_clock",
+          "title": "The Chapel and Its Clock",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "town/chapel"
+            },
+            {
+              "type": "text",
+              "text": [
+                "Once the village is half full and has its large square, the town builds a **chapel**, after the parish churches of old England: a **tower** of three stages (a porch with the clock's weights, the clock stage, a belfry under a crenellated parapet with lanterns and a spire), a **nave** with buttresses, pointed stained-glass windows and a steep tiled roof, and a **chancel** one step up.",
+                "",
+                "- inside: pews either side of the runner, beams, chandeliers, banners, choir stalls, the altar with its candles and a triple window;",
+                "- the town's builders put it up by hand with the **treasury's** money; a slope is dug away, a dip gets a footing."
+              ]
+            },
+            {
+              "type": "items",
+              "items": [
+                "villager_life:tower_clock"
+              ],
+              "text": "The tower clock: a dial three blocks across."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Three sides of the tower carry a **tower clock**: its hands show the world's time, and it strikes the hours from 7 in the morning to 9 at night. It runs while it is **wound**: a winding lasts two days.",
+                "",
+                "- every day a jobless villager walks to the weights in the tower, winds the clock and gets **3 copper** from the treasury;",
+                "- not wound, the clock stops and falls silent;",
+                "- a player can wind it by hand.",
+                "",
+                "Every 7 days in the evening the bells ring and the villagers go to the **service** and sit in the pews. **Weddings** are held before the chapel's altar, and it tolls for the dead."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:tower_clock"
+            }
+          ],
+          "unlock": [
+            "chapel"
+          ]
+        },
+        {
+          "id": "bakehouse_tavern",
+          "icon": "villager_life:tavern_counter",
+          "title": "Bakehouse and Tavern",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "town/bakehouse"
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **bakehouse** goes up when the village is a third full. A jobless **baker** takes wheat from the stall with the treasury's money, bakes it at the brick oven and brings the bread back. A town with its bakehouse buys no bread from outside."
+              ]
+            },
+            {
+              "type": "structure",
+              "schematic": "town/tavern"
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **tavern**, at two thirds: a bar, tables, a fireplace, and rooms under the roof where the homeless sleep. Villagers drop in of an evening.",
+                "",
+                "At the **Tavern Bar** a player buys a hot meal for 4 copper — the money goes to the treasury."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:tavern_counter"
+            }
+          ],
+          "unlock": [
+            "bakehouse",
+            "tavern"
+          ]
+        },
+        {
+          "id": "churchyard",
+          "icon": "villager_life:gravestone",
+          "title": "The Churchyard",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Once the town has **6** villagers, a **churchyard** is laid at the edge of its land: a low fence, a way in between lantern posts, a stone path, three rows of four graves, flowers and a bench. The town's builders lay it, the treasury pays, a road comes to its gate.",
+                "",
+                "- the dead are buried on a free plot, the stone and its sign set by hand;",
+                "- after **40** days an old grave gives way;",
+                "- in a full churchyard the oldest plot (over **10** days) goes to the newly dead."
+              ]
+            }
+          ],
+          "unlock": [
+            "cemetery"
+          ]
+        },
+        {
+          "id": "wall",
+          "icon": "minecraft:stone_brick_wall",
+          "title": "The Town Wall",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "When the village is **full** and no house is going up, it rings all it has — houses, roads, the square, the chapel, workshops, the bell — with an **octagon** of stone, 4 blocks out.",
+                "",
+                "- a footing of the biome's stone, a stone-brick body 4 high, battlements;",
+                "- **towers** 3×3 and 5 high at the corners and every 16 blocks, each with a lantern;",
+                "- **gates** three wide mid each side and wherever a road crosses, crossbows over them;",
+                "- a stream up to 8 blocks is **dammed**: stone from its bed to the water, the wall on top; wider or deeper, a gap."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Outside it a **dry ditch** 2×2 is dug, except by the gates, roads and water: monsters come in only by the gates.",
+                "",
+                "The town builders lay the wall by hand, 40 columns a stretch; the treasury pays. It is marked out once: if the limit is raised later, new houses go up outside it."
+              ]
+            }
+          ],
+          "unlock": [
+            "wall"
+          ]
+        },
+        {
+          "id": "turret",
+          "icon": "villager_life:arrow_turret",
+          "title": "Wall Crossbows",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:arrow_turret"
+              ],
+              "text": "One each side of every gate."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **Wall Crossbow** holds 9 slots of arrows and every second and a half shoots the nearest monster it can see within **16** blocks — never when a villager, a player, a golem or a tame pet is by the line of fire. Its arrows cannot be picked up.",
+                "",
+                "- arrows in hand load it, an empty hand shows the count, a hopper feeds it;",
+                "- over every gate of the wall, one each side of the arch, facing out;",
+                "- it works only within simulation distance."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The loader",
+              "text": [
+                "A jobless grown-up keeps the town's crossbows: when one has fewer than **16** arrows, it buys arrows at the open stall with the treasury's money and fills it to **64** from the ground, for a copper."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:arrow_turret"
+            }
+          ],
+          "unlock": [
+            "wall"
+          ]
+        },
+        {
+          "id": "watch",
+          "icon": "minecraft:lantern",
+          "title": "The Night Watch",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Once the wall stands, **two jobless villagers** stay up every night and walk from gate to gate with a lantern.",
+                "",
+                "- one who sees a monster rings the village bell — the villagers hide at home;",
+                "- a different pair each night;",
+                "- each is paid 4 copper from the treasury in the morning."
+              ]
+            }
+          ],
+          "unlock": [
+            "wall"
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "town_life",
+      "icon": "villager_life:notice_board",
+      "color": "#5E7FA0",
+      "title": "Town Life",
+      "description": "The notice board, errands and the post, the day's round, feasts, music, travellers, the flag and the chronicle.",
+      "entries": [
+        {
+          "id": "notice_board",
+          "icon": "villager_life:notice_board",
+          "title": "The Notice Board",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:notice_board"
+              ],
+              "text": "The mayor sets one up as soon as the village has a mayor."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **notice board** on the edge of the square: read it with an empty hand. Its tabs:",
+                "",
+                "- **Town**: villagers, treasury, mood towards you, the service, the caravan, the lost and found;",
+                "- **Errands**: what to bring the villagers, and for how much;",
+                "- **Builds**: what is going up and how far along;",
+                "- **Wanted**: what the stall waits for, and at what price;",
+                "- **Lots**: the town's plan from above — streets, houses, free lots;",
+                "- the **chronicle** and the **flag** — the icons on the right."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Helping the town",
+              "text": [
+                "Come with a wanted thing in hand and the stall takes it at its **full price** (a player is usually paid less than half). Coins in hand go to the **treasury**.",
+                "",
+                "The town is glad of it: +1 mood for every 16 copper, at most 5 a day."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:notice_board"
+            }
+          ]
+        },
+        {
+          "id": "errands",
+          "icon": "minecraft:writable_book",
+          "title": "Errands",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "What the villagers cannot get for themselves (no money, the stall sold out, an empty pantry) and what a groom wishes for his wedding they post as an **errand** on the notice board, the Errands tab.",
+                "",
+                "- take one errand: an arrow on the right of the screen points to the villager, with the distance;",
+                "- bring the thing and hand it over (right-click the villager with it);",
+                "- the pay is half again the thing's price: from the household's purse, or from the treasury when it has none; the village is glad of the help."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "You carry one errand at a time: taking another puts the first back on the board. You can give it up there too. An errand nobody brought in 5 days comes down; if the thing is still wanted it goes up again.",
+                "",
+                "The village's neighbours hear of new errands by letter."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "post",
+          "icon": "villager_life:mailbox",
+          "title": "The Post",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:mailbox"
+              ],
+              "text": "Its flag up: there is mail."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Set up a **mailbox**: it is yours, and the villagers write to you — thanks for a toy or a blanket, news of a wedding, a birth or a funeral, the stall asking for what it lacks.",
+                "",
+                "Letters are signed books in your own language. Open the mailbox with an empty hand to take them. They write to the village's **neighbours**: those who slept by its bell or bought a house in it."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mailbox"
+            }
+          ]
+        },
+        {
+          "id": "deed_map",
+          "icon": "villager_life:house_deed",
+          "title": "Deeds and Maps",
+          "pages": [
+            {
+              "type": "items",
+              "items": [
+                "villager_life:house_deed",
+                "villager_life:town_map"
+              ],
+              "text": "A house of your own and a map of the town."
+            },
+            {
+              "type": "text",
+              "text": [
+                "**A House Deed** used inside an empty house — one the villagers built or a house of the village nobody lives in any more — makes it yours for 80% of its blocks' worth, the money to the treasury. No villager takes its beds, and you are the village's neighbour.",
+                "",
+                "**A Village Map** used in a town becomes a map centred on the bell, drawn at once, with the town hall, stall, chapel, bakehouse and tavern marked."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:house_deed"
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:town_map"
+            }
+          ]
+        },
+        {
+          "id": "spire_writ",
+          "icon": "villager_life:spire_writ",
+          "title": "The Builders' Writ",
+          "pages": [
+            {
+              "type": "spotlight",
+              "item": "villager_life:spire_writ",
+              "text": "For one who will not wait for the town to finish."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **Builders' Spire** grows by itself only when the town is done. The **Builders' Writ** calls it up at once: hold use for three seconds and the Spire rises, by day too.",
+                "",
+                "- In a **town** without a spire: where the town's own would stand, beyond its wall.",
+                "- **Elsewhere**, or when the town has no room: on the first flat ground **ahead of you** — stand in open land and look that way.",
+                "- Not near another spire, and only under an open sky. The writ is spent only when the Spire answers.",
+                "",
+                "The **wandering trader** sometimes has one (6 diamonds and 16 emeralds); the **stall** keeps one on its shelf (about ten diamonds in coins)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "day",
+          "icon": "minecraft:clock",
+          "title": "The Day's Round",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Each villager has its own **nature**: a sociable one goes to the tavern more, a pious one to the chapel, a homebody stays in. Each keeps its own hours too: one is up earlier, another later.",
+                "",
+                "- by day free villagers **drop into** the chapel, bakehouse, tavern and hall and say what they came for;",
+                "- at noon and in the evening part of the town sits in the **tavern**;",
+                "- every 7 days there is a **service** in the chapel: a day of rest, when workers go visiting too.",
+                "",
+                "Things go in turn: a wedding or a feast comes before the tavern."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "story",
+          "icon": "minecraft:book",
+          "title": "The Storyteller",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every few days something **happens** in the town; a quiet day follows, and the same thing comes at most once in 10 days:",
+                "",
+                "- **a lost child** at the town's edge: find it — mood **+3**, or it is brought home;",
+                "- **a storm** tears part of a finished house's roof off; its household mends it;",
+                "- **the harvest feast** (see //The Harvest Feast//);",
+                "- **sickness**: a villager lies at home; honey or a stew from you cures it (**+2**);",
+                "- **a quarrel** between neighbours at the bell: the mayor judges it.",
+                "",
+                "It all goes into the **chronicle**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feast",
+          "icon": "minecraft:cake",
+          "title": "The Harvest Feast",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A town of **6** villagers with a mayor holds a **harvest feast** on the square:",
+                "",
+                "- grown-ups carry out **tables** and benches and set cakes, candles and flowers — all by hand;",
+                "- the mayor opens it, the town sits down to eat, the young **dance** to the music;",
+                "- at dusk, **fireworks**; then the tables are carried away.",
+                "",
+                "Treat the guests with food — mood up to **+3**. The treasury pays for the cakes."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "music",
+          "icon": "minecraft:jukebox",
+          "title": "Music",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "For a feast or an evening at the tavern a villager carries out a **jukebox** and puts the town's record on, then takes it away again. The music fades with distance like any record. At the chapel's service the hymn plays by itself.",
+                "",
+                "The town's four records are sold at the **stall** — for a jukebox of your own."
+              ]
+            },
+            {
+              "type": "items",
+              "items": [
+                "villager_life:music_disc_feast",
+                "villager_life:music_disc_tavern",
+                "villager_life:music_disc_hymn",
+                "villager_life:music_disc_evening"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "travellers",
+          "icon": "minecraft:leather_boots",
+          "title": "Travellers",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Of an evening a **traveller** may turn up at the **tavern** (every 3 days, while the town is not full). It belongs to nobody and does nothing, but it may stay.",
+                "",
+                "- click it — it says what it asks for: honey, books, a cake, lanterns, a compass, a clock, wool, food or candles;",
+                "- bring it (or coins — twice its worth): it settles in the town, mood **+2**;",
+                "- not persuaded in 2 days, it moves on."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "flag",
+          "icon": "minecraft:white_banner",
+          "title": "The Town's Flag",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The notice board has a **flag** tab: the cloth's colour and up to three patterns.",
+                "",
+                "The flag is hung **by hand**: by the hall's door, on the wall's gates and by the board. A new flag recolours all that hang, and the mayor announces it."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chronicle",
+          "icon": "minecraft:written_book",
+          "title": "The Chronicle",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The notice board keeps the town's **chronicle** day by day: births, weddings, deaths, coming of age, elections, houses and buildings, hamlets, caravans, travellers, the flag and the storyteller's events. The last 80 entries are kept."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "details",
+          "icon": "villager_life:hand_cart",
+          "title": "Living Details",
+          "pages": [
+            {
+              "type": "text",
+              "title": "The Hand Cart",
+              "text": [
+                "A worker carries its workshop's surplus to the stall **in its arms: 16 items a trip**. Cheap goods (logs, carrots) are not worth an armful, and once more than two armfuls wait, the household buys a **hand cart** at the stall.",
+                "",
+                "- the cart stands by the workshop's chest;",
+                "- the worker loads it (sacks and goods show on top), pulls it to the counter, wheels turning, and back;",
+                "- it takes **128 items**; what the stall had no room for rides home in it.",
+                "",
+                "Click a cart to see its load. When its workshop is gone, it breaks up into its item and its load."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Trade Fronts",
+              "text": [
+                "The stall, the tavern, the bakehouse and the workshops with a door get, from the town's builders and treasury:",
+                "",
+                "- a **sign on chains** beside the door, above head height: it works out the trade itself (a coin, honey, bread, the workshop's ware) and sways, harder in rain and storm;",
+                "- a **door bell** inside over the door: a player opens it, the bell rings, the shopkeeper turns and greets;",
+                "- at the stall, **two crates of goods** either side of the door: what the shelf has most of; a click opens the stall.",
+                "",
+                "Hang your own item on a sign by clicking it with the item."
+              ]
+            },
+            {
+              "type": "items",
+              "title": "Town Decor",
+              "items": [
+                "villager_life:hand_cart",
+                "villager_life:shop_sign",
+                "villager_life:door_bell",
+                "villager_life:market_crate",
+                "villager_life:cooking_pot"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Home and Hive",
+              "text": [
+                "A wife sets a **cooking pot** by the hearth; while she cooks breakfast and supper it simmers: steam, bubbling, its lid up.",
+                "",
+                "Things in a home go to **set places**: corners and along the walls, never in a way through, by a door or in front of a chest, a furnace or stairs; a room takes one thing per five floor cells at most, and every bed is still reached from the door.",
+                "",
+                "From tier two a farmer sets a **beehive** by its trees, buys a pair of bees, grows flowers with bone meal and calmly (the bees stay calm) bottles the honey; the surplus goes to the stall.",
+                "",
+                "**Benches**: click a lower step with nothing above it, empty-handed, to sit."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Green Between the Houses",
+              "text": [
+                "The town greens the empty land nobody owns between its houses, never the lots kept for houses, the roads or the yards.",
+                "",
+                "- along the roads, grass, ferns, flowers and the tall flowers that grow like shrubs, in patches with gaps; people walk through them as through grass;",
+                "- in the nooks between houses, one thing each: a bench with a lamp looking out to the road, a bush with flowers or a young tree; the ways round the houses stay open;",
+                "- the **gardener**, a villager without a trade by day or a worker after its shift, plants what is missing and puts back picked flowers, for a couple of coppers from the treasury.",
+                "",
+                "The flowers by the roads feed the farmers' bees."
+              ]
+            }
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "mood",
+      "icon": "villager_life:monument_plaque",
+      "color": "#C29A2E",
+      "title": "Mood and Rites",
+      "description": "The village feels something about you. Happy villages celebrate and build monuments; angry ones mourn — and may forge something dark.",
+      "entries": [
+        {
+          "id": "mood_basics",
+          "icon": "minecraft:bell",
+          "title": "Village Mood",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A village's **mood** (-100 to +100) is how it feels about **you**: only your deeds change it.",
+                "",
+                "- It never moves on its own. Broke something by mistake? Set the same block back within 5 minutes and the loss is returned.",
+                "- Above +20 voices warm up, below -20 sour.",
+                "- It decides the village **rites**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mood_changes",
+          "icon": "minecraft:emerald",
+          "title": "What Changes It",
+          "pages": [
+            {
+              "type": "text",
+              "title": "Raises",
+              "text": [
+                "- trade **+4**;",
+                "- ring the bell (if mood > 0) **+2**;",
+                "- a painting by a bed **+5**;",
+                "- a wedding wish granted **+5**;",
+                "- a wooden horse to a child, a blanket to a mother **+2**;",
+                "- making peace between spouses **+1**;",
+                "- a block for a room under construction **+1**;",
+                "- food for a grown-up **+6**;",
+                "- a lost child found **+3**, the sick cured or a traveller kept **+2**;",
+                "- treats at a feast — up to **+3**."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Lowers",
+              "text": [
+                "- kill a villager **-40**, an iron golem **-25**;",
+                "- break a villager's bed or door **-20**;",
+                "- your explosion **-18**;",
+                "- a fire seen by villagers **-12**;",
+                "- breaking blocks in a home **-10**;",
+                "- stealing seen **-8**;",
+                "- breaking a monument **-30**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "happy_rites",
+          "icon": "villager_life:festival_totem",
+          "title": "Happy Rites",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "festoon",
+              "text": "Garlands: the first happy rite."
+            },
+            {
+              "type": "text",
+              "text": [
+                "As the mood climbs, 2–6 villagers build near the bell:",
+                "",
+                "- **+20** garlands (festoon);",
+                "- **+50** a festival;",
+                "- **+60** a monument;",
+                "- **+75** a pavilion.",
+                "",
+                "Each rite once per village, one at a time."
+              ]
+            },
+            {
+              "type": "spotlight",
+              "item": "villager_life:monument_plaque",
+              "text": "The monument's plaque bears the founder's name. Within 40 blocks it grants players **Resistance**, and villagers heal at night. Breaking it costs **-30** mood."
+            }
+          ],
+          "unlock": [
+            "rite"
+          ]
+        },
+        {
+          "id": "dark_rites",
+          "icon": "villager_life:mourning_totem",
+          "title": "Dark Rites",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "vigil",
+              "text": "The vigil: a village in sorrow."
+            },
+            {
+              "type": "text",
+              "text": [
+                "When the mood falls:",
+                "",
+                "- **-20** a vigil;",
+                "- **-50** mourning;",
+                "- **-60** the **forge** — an altar with a core;",
+                "- **-75** a pyre;",
+                "- **-90** the **summoning** at the forge.",
+                "",
+                "A forge rising means the village is near the edge."
+              ]
+            },
+            {
+              "type": "links",
+              "title": "See also",
+              "links": [
+                "summon",
+                "golem_fight"
+              ]
+            }
+          ],
+          "unlock": [
+            "rite"
+          ]
+        }
+      ],
+      "unlock": [
+        "town"
+      ]
+    },
+    {
+      "id": "golem",
+      "icon": "villager_life:tocsin_core",
+      "color": "#8E3B3B",
+      "title": "The Tocsin Golem",
+      "description": "A village that hates you long enough forges a bell-headed giant. It can be stopped — or beaten for its core.",
+      "entries": [
+        {
+          "id": "summon",
+          "icon": "villager_life:altar_core",
+          "title": "The Forge and the Summoning",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "tocsin_forge",
+              "text": "The forge with its dark altar core."
+            },
+            {
+              "type": "text",
+              "title": "How it happens",
+              "text": "At mood **-90** with a forge in the village, the workers chant, throw **6 iron ingots** into the forge, the bell tolls three times, the soul fires light up — and the golem rises."
+            },
+            {
+              "type": "text",
+              "title": "How to stop it",
+              "text": [
+                "Before the golem wakes:",
+                "",
+                "- pour **water** (or a water cauldron) on the altar core;",
+                "- break the core;",
+                "- or scatter the workers.",
+                "",
+                "The forge is ruined."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "golem_fight",
+          "icon": "minecraft:iron_sword",
+          "title": "Fighting the Golem",
+          "pages": [
+            {
+              "type": "image",
+              "image": "villager_life:textures/gui/guide/img/tocsin_golem.png",
+              "width": 512,
+              "height": 288,
+              "text": "Iron plates, a bell for a head and 400 health."
+            },
+            {
+              "type": "text",
+              "text": [
+                "**400** health (more with more players), heavy armour, an arena of 24 blocks — it chains you back if you run.",
+                "",
+                "- **Phase 1**: swings, a fist slam, a bell toll.",
+                "- **Phase 2** (66%): it sheds plates — **plate crawlers** — and calls anvils and bell waves.",
+                "- **Phase 3** (33%): faster, charges, molten slams."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "How to win",
+              "text": [
+                "- After the **fist slam** its back is open: hits there deal **double**.",
+                "- In phase 3 it **vents** steam: hit the back again.",
+                "- Ring a **village bell** or toll the **Elder's Staff** during its toll: it is stunned.",
+                "- **Jump** over bell waves, keep moving under anvils.",
+                "- Hit it often: a golem that keeps missing builds **rage** and charges."
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Rewards",
+              "text": "Everyone who fought gets a **Tocsin Core**, 6–10 iron and maybe a bell. An **Elder's Staff** always drops. The village mood returns to 0."
+            }
+          ]
+        },
+        {
+          "id": "relics",
+          "icon": "villager_life:villager_blessing_staff",
+          "title": "Relics of the Tocsin",
+          "pages": [
+            {
+              "type": "spotlight",
+              "item": "villager_life:villager_blessing_staff",
+              "text": "Hold use, then release: the village mood **+10** (sneak: **-10**). Counters the golem's toll."
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:blessing_staff"
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:parish_vestment",
+              "text": "In a village: regeneration while the mood is above zero, mining fatigue below."
+            }
+          ]
+        }
+      ],
+      "unlock": [
+        "golem"
+      ]
+    },
+    {
+      "id": "spire",
+      "icon": "villager_life:spire_journal",
+      "color": "#5B4A8E",
+      "title": "The Builders' Spire",
+      "description": "The tower that grows over a finished town: floors of guards, the chapters' keepers, trials, secret caches and the Core's gear.",
+      "entries": [
+        {
+          "id": "spire_rise",
+          "icon": "villager_life:spire_sconce",
+          "title": "The Spire rises",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "When the town is **finished** (wall, chapel, bakehouse, tavern, no house left unbuilt), the **Builders' Spire** starts to grow beyond the wall at night — an eight-sided tower still being built. Every floor opened raises it higher; a **rift** burns over its top.",
+                "",
+                "Go in by the gate at its foot: the first floor waits. A floor's way out always burns; the way on lights once its guards fall and its **tablet** is read."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Die on a floor and you come back to the same floor, drawn anew if nobody else is on it. Nothing in the Spire can be broken or placed, except the **cracked walls** of secret rooms."
+              ],
+              "title": "Death and return"
+            }
+          ]
+        },
+        {
+          "id": "spire_floors",
+          "icon": "minecraft:cracked_stone_bricks",
+          "title": "Floors and secrets",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A floor is a maze of rooms: the way from the entrance to the portal leads through **arenas** of guards. Each chapter has its **theme** (roots, archive, workshops, gardens, galleries, ice, spores, hive, observatory, summit) and rooms of its own:",
+                "",
+                "- **Long halls** — two rooms with no wall between;",
+                "- **Daises** — a platform in the middle of a hall, steps on all four sides, a balustrade and braziers;",
+                "- **Pools**, round halls, sunken arenas, galleries above.",
+                "",
+                "Die on a floor and you wake before the Spire's gate **with everything you carried and your experience**; the portal takes you back to that floor."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Now and then a dead-end room is **walled up**. Look for a cracked wall with a warm glint, dust falling from it. Strike it and it all comes down.",
+                "",
+                "Inside is a **cache**: half a floor's shards and coins and a gift — once a player a floor."
+              ],
+              "title": "Secret rooms"
+            }
+          ],
+          "unlock": [
+            "spire_floor"
+          ]
+        },
+        {
+          "id": "spire_wonders",
+          "icon": "minecraft:bell",
+          "title": "Doors, Curios, Riddles",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Floors have **Builders' doors**: touch one and its rune flares, then the leaf parts. You cannot see what is behind beforehand.",
+                "",
+                "Rooms hold **curios**, each theme its own: the roots' bell, the archive's lectern of whispers, the workshop's crank and cogs, garden buds, a gallery valve, ice chimes, puffballs, a honey tap, an orrery, a resonating stone. Touch them: they ring, turn and bloom, but give nothing."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Dead-end rooms sometimes hold a **riddle**. It is never required, but solving it raises a cache from the floor:",
+                "",
+                "- **Levers**: each flips its glyph and its neighbours'. Light all four.",
+                "- **Chimes**: touch the glyph on the wall, listen to the tune, play it back.",
+                "- **Plates**: step on them all before the first one fades.",
+                "",
+                "Each player gets a riddle's cache once."
+              ]
+            }
+          ],
+          "unlock": [
+            "spire_floor"
+          ]
+        },
+        {
+          "id": "spire_guards",
+          "icon": "villager_life:core_shard",
+          "title": "Guards",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Guards grow from a **genome**: body, role (fighter, shooter, tank, leaper, swarm, helper, summoner), attacks and defence. Each theme has its own folk: the hive more flyers and swarms, the gardens vines and menders, the workshops tanks and leapers.",
+                "",
+                "Strong blows show beforehand: sparks, a chime, a ring on the floor."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Every arena has one **elite** guard: bigger, tougher, quicker, in golden sparks.",
+                "",
+                "From the second chapter the guards' blows carry their **theme**: fire in the workshops, slowness in the gardens and galleries, frost in the ice, poison in the spores and the hive, a lift in the observatory, weakness on the summit."
+              ],
+              "title": "Elites and themes"
+            }
+          ],
+          "unlock": [
+            "spire_floor"
+          ]
+        },
+        {
+          "id": "spire_afflictions",
+          "icon": "minecraft:fermented_spider_eye",
+          "title": "Afflictions",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Each chapter has its own **affliction**: guards give a weak one, keepers and trials a strong one, each their own.",
+                "",
+                "- **Entangled** (roots): no jumping, slow. Keep moving to break free sooner.",
+                "- **Inked** (archive): ink blots on the screen, up to three layers.",
+                "- **Jolted** (workshop): your next swing shocks you. Wait it out.",
+                "- **Stopped in Time** (Chronarch): no step, no swing.",
+                "- **Sapped** (gardens): healing much weaker."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "- **Waterlogged** (galleries): your breath runs out on dry floor.",
+                "- **Frostbite** (ice): builds up; at the fifth it bursts and you take more damage.",
+                "- **Blight** (spores): jumps to whoever stands near — keep apart.",
+                "- **Stung** and **Honeyed** (hive): stings stack; in honey you cannot sprint.",
+                "- **Starmarked** (observatory): when it ends, a star falls on you. Step away from friends.",
+                "- **Doom** (summit): a heavy blow in five seconds; three of your blows on guards lift it.",
+                "- **Sundered** (Mason): armour falls away a plate at a time."
+              ]
+            }
+          ],
+          "unlock": [
+            "spire_affliction"
+          ]
+        },
+        {
+          "id": "spire_keepers",
+          "icon": "villager_life:spire_seal_root",
+          "title": "Keepers",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every **10th** floor has its chapter's **keeper**. Each has a body and arts of its own and three phases: at 2/3 health pillars rise and its second art opens, at 1/3 it is faster and has its third.",
+                "",
+                "Every keeper's blow **shows beforehand**: a ring on the floor closes in, a beam is drawn as a line first, a breath gathers."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "Look for the **window**: a keeper that slammed the floor, vented steam, surfaced or lost its ice shell stands **stunned** — no shield, ×1.5 damage.",
+                "",
+                "The Gatekeeper, the Archivist, the Clockwork Warden, the Gardener, the Deep Serpent, the Ice Colossus, the Spore Queen, the Hive Master, the Stargazer, and the **Mind of the Spire** on the hundredth floor."
+              ],
+              "title": "Windows"
+            }
+          ],
+          "unlock": [
+            "spire_keeper"
+          ]
+        },
+        {
+          "id": "spire_trials",
+          "icon": "villager_life:spire_seal_deep",
+          "title": "Trials",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every **5th** floor has a **trial**: a boss with one riddle to it.",
+                "",
+                "- The **Root Wyrm** (5) goes under the floor after noise: move quietly, crouching hides you. Its tail is soft.",
+                "- The **Binder** (15) hides among her copies. The real one writes with her quill.",
+                "- The **Chronarch** (25) sends echoes of its blows and winds its health back — break the winding."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "- The **Heartwood** (35): blades, shield, whips; the shield sends shots back.",
+                "- The **Frost Mirror** (55) bends her beam off ice mirrors — break them.",
+                "- The **Mycelium Hydra** (65) takes nothing while its heads stand; a head cut off grows back.",
+                "- The **Honey Golem** (75) seals whoever stands in honey in comb; break the jars it drinks from.",
+                "- The **Gravitor** (85) is shielded by planets.",
+                "- The **Reflection** (95) takes your blow and armour; strike its back."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "The **Mason** and the **Surveyor** fight together: she rules the floor into squares and marks you, he leaps onto the mark and lays walls.",
+                "",
+                "Kill one and the other takes up its tools, grows stronger and changes. Which first is up to you."
+              ],
+              "title": "The Schism (45)"
+            }
+          ],
+          "unlock": [
+            "spire_trial"
+          ]
+        },
+        {
+          "id": "spire_rewards",
+          "icon": "villager_life:core_anvil",
+          "title": "Rewards and gear",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A cleared floor opens its **layer chest**: each player has a share, once. In it are **Core shards** and coins; twice the shards on a trial's floor, three times on a keeper's.",
+                "",
+                "A keeper also gives its **chapter's seals** — one for each piece of gear."
+              ]
+            },
+            {
+              "type": "text",
+              "text": [
+                "At the **Core Anvil** by the foot: a piece + shards → **honed** +1; a piece + the next chapter's seal → a piece of the **next tier**. Iron, diamond and netherite pieces with the Root seal become spire gear.",
+                "",
+                "Honing shows: gilding, a stone in the pommel, a glow."
+              ],
+              "title": "Gear"
+            }
+          ],
+          "unlock": [
+            "spire_chest"
+          ]
+        },
+        {
+          "id": "spire_draughts",
+          "icon": "villager_life:spire_draught_archive",
+          "title": "Chapter Draughts",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every floor's chest gives, the first time, a **reagent** of its chapter: a Root Knot on floors 1–10, an Ink Drop on 11–20, a Brass Spring on 21–30 and so on.",
+                "",
+                "Draughts are brewed at a **brewing stand**, as any potion: nether wart into water bottles makes **awkward potions**, and a reagent over them the **draught of the chapter after its own**: Root Knots brew the Reading Hall's draught, Ink Drops the Workshops', and the Summit's embers the Roots' again. One reagent, three bottles.",
+                "",
+                "A draught's **ward** lasts twelve minutes, **only on its own chapter's floors**: nothing there knocks you back, and its guards' blows leave no weak affliction (the keepers' still land). Elsewhere it does nothing."
+              ]
+            },
+            {
+              "type": "spotlight",
+              "item": "minecraft:brewing_stand",
+              "text": "Awkward potion + reagent → draught"
+            },
+            {
+              "type": "items",
+              "items": [
+                "villager_life:spire_reagent_root",
+                "villager_life:spire_reagent_archive",
+                "villager_life:spire_reagent_clockwork",
+                "villager_life:spire_reagent_garden",
+                "villager_life:spire_reagent_deep",
+                "villager_life:spire_reagent_ice",
+                "villager_life:spire_reagent_spore",
+                "villager_life:spire_reagent_hive",
+                "villager_life:spire_reagent_star",
+                "villager_life:spire_reagent_summit"
+              ]
+            }
+          ],
+          "unlock": [
+            "spire_chest"
+          ]
+        },
+        {
+          "id": "spire_notes",
+          "icon": "villager_life:spire_journal",
+          "title": "Tablets",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "Every floor has a **tablet**: the diary of Irma, the Builders' apprentice, and their papers. The way on lets you through only once you have read it.",
+                "",
+                "The first tablet read gives the **Spire Chronicle** — a book of everything read. Now and then a floor also has a villager's note."
+              ]
+            }
+          ],
+          "unlock": [
+            "spire_notes"
+          ]
+        },
+        {
+          "id": "spire_town",
+          "icon": "villager_life:spire_root_sword",
+          "title": "The Spire and the town",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "The Spire changes the town:",
+                "",
+                "- villagers go on **expeditions** and come back with coins and clothes;",
+                "- those back buy gear and become **heroes**: they guard the town from monsters;",
+                "- the town begins its **second age**: houses are rebuilt in finer palettes, the Builders' sconces by the doors."
+              ]
+            }
+          ],
+          "unlock": [
+            "spire_floor"
+          ]
+        },
+        {
+          "id": "spire_group",
+          "icon": "minecraft:player_head",
+          "title": "Together",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A floor is one for everybody: friends come into the same layer and fight together. A keeper or a trial **grows** for every player in its room (+50% health for each beyond the first, up to four).",
+                "",
+                "Chests and caches are each player's own; everyone reads the tablets for themselves. A spectator on a floor does not count."
+              ]
+            }
+          ],
+          "unlock": [
+            "spire_floor"
+          ]
+        }
+      ],
+      "unlock": [
+        "spire"
+      ]
+    },
+    {
+      "id": "mega",
+      "icon": "villager_life:mega_quarry",
+      "color": "#7A6A4E",
+      "title": "Megastructures",
+      "description": "Great machines of the Builders: built block by block by their plan, they come alive and work for you.",
+      "unlock": [
+        "mega"
+      ],
+      "entries": [
+        {
+          "id": "mega_basics",
+          "icon": "villager_life:mega_frame",
+          "title": "Frame, parts, controller",
+          "pages": [
+            {
+              "type": "text",
+              "text": [
+                "A megastructure is built by its **plan**: the Builders' Frame (crafted), **parts** from the Outer Gates past the hundredth floor of the Spire (the Colosseum's, the Sky Path's, the Nameless's) and its **controller**, which faces you when set down.",
+                "",
+                "Every few seconds the controller looks whether the structure stands whole. When it does, a wave of light runs through every block, the controller lights up and the work begins. Take one block out and it goes dark.",
+                "",
+                "Click the controller: it says how it stands, or which block is missing and where.",
+                "",
+                "A server can turn megastructures off (`megastructures` in villager-life.json)."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_frame"
+            },
+            {
+              "type": "items",
+              "items": [
+                "villager_life:mega_frame",
+                "villager_life:mega_part_colosseum",
+                "villager_life:mega_part_path",
+                "villager_life:mega_part_nameless"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mega_quarry",
+          "icon": "villager_life:mega_quarry",
+          "title": "The Quarry",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:quarry",
+              "text": "Bed 5×5, four Colosseum parts, a Path mast."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Digs a **32×32 square** under it layer by layer, down to the bedrock, a block every tenth of a second.",
+                "",
+                "What it digs goes into a **chest beside the controller**; it waits while the chest is full. Its fuel comes from a chest beside it too: coal or charcoal (64 blocks), a block of coal (576), a shard of the Core (256).",
+                "",
+                "It leaves water and lava where they are: a block beside a fluid is replaced with glass. Chests in caves and spawners are left too.",
+                "",
+                "In a town, what its chests cannot hold goes to the town's stall at the wholesale price — stone for its roads and walls — and the coins to you."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_quarry"
+            }
+          ]
+        },
+        {
+          "id": "mega_gate",
+          "icon": "villager_life:mega_gate",
+          "title": "Waygates",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:gate",
+              "text": "Two Path parts on top, a Nameless part below."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Put a **keystone** into a whole gate's controller. Two gates with keystones of **one colour** are linked: walk into the field and you come out in front of the other one — anywhere, in any dimension.",
+                "",
+                "A third gate of the same colour breaks the link: all of them go dim until one is keyed otherwise. Sixteen colours, sixteen ways.",
+                "",
+                "A click with an empty hand tells where the gate leads.",
+                "",
+                "Two gates standing in two towns link the towns too: each morning a town's stall takes what it lacks from the other's surplus before it sends abroad, and the coins stay between them."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_gate"
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:gate_key_red"
+            },
+            {
+              "type": "items",
+              "items": [
+                "villager_life:gate_key_white",
+                "villager_life:gate_key_orange",
+                "villager_life:gate_key_magenta",
+                "villager_life:gate_key_light_blue",
+                "villager_life:gate_key_yellow",
+                "villager_life:gate_key_lime",
+                "villager_life:gate_key_pink",
+                "villager_life:gate_key_gray",
+                "villager_life:gate_key_light_gray",
+                "villager_life:gate_key_cyan",
+                "villager_life:gate_key_purple",
+                "villager_life:gate_key_blue",
+                "villager_life:gate_key_brown",
+                "villager_life:gate_key_green",
+                "villager_life:gate_key_red",
+                "villager_life:gate_key_black"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mega_smelter",
+          "icon": "villager_life:mega_smelter",
+          "title": "Smelter",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:smelter",
+              "text": "3×3×3: Colosseum ×2, Nameless flue."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Smelts **from a chest two blocks left of its controller into one two blocks right** (as you face it), four items a second.",
+                "",
+                "Ores and raw metals come out **twice**. Its fuel is any furnace fuel in the input chest, worth twice what it is in a furnace.",
+                "",
+                "In a town, the ingots its out-chest cannot hold go to the town's stall — iron for its smiths — and the coins to you."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_smelter"
+            }
+          ],
+          "unlock": [
+            "mega"
+          ]
+        },
+        {
+          "id": "mega_calm",
+          "icon": "villager_life:mega_calm",
+          "title": "Beacon of Calm",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:calm",
+              "text": "Pyramid: Nameless ×3, Path ×2."
+            },
+            {
+              "type": "text",
+              "text": [
+                "While it stands whole, **no monster is born within 64 blocks** of it — by night, in caves, anywhere.",
+                "",
+                "Spawners, eggs and raids are not its to stop, and those already there stay: it keeps new ones away."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_calm"
+            }
+          ],
+          "unlock": [
+            "mega"
+          ]
+        },
+        {
+          "id": "mega_dome",
+          "icon": "villager_life:mega_dome",
+          "title": "Dome of Growth",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:dome",
+              "text": "Ring 7×7: Path ×3."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The crops, saplings, berries and every other growing thing **within 16 blocks** grow **eight times as fast**.",
+                "",
+                "Put it in the middle of a farm."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_dome"
+            }
+          ],
+          "unlock": [
+            "mega"
+          ]
+        },
+        {
+          "id": "mega_well",
+          "icon": "villager_life:mega_well",
+          "title": "Well of Lore",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:well",
+              "text": "Well 5×5: Colosseum, Nameless."
+            },
+            {
+              "type": "text",
+              "text": [
+                "The experience of every death **within 16 blocks** is drawn in and kept, up to a hundred thousand.",
+                "",
+                "Click its controller: all it holds is yours.",
+                "",
+                "In a town, it also teaches the craftsmen within its reach: their trades grow from its lore, and with them new trades for you."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_well"
+            }
+          ],
+          "unlock": [
+            "mega"
+          ]
+        },
+        {
+          "id": "mega_drain",
+          "icon": "villager_life:mega_drain",
+          "title": "Drain",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:drain",
+              "text": "Pump: Path, Colosseum crown."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Draws away **every water and lava within 24 blocks**, ring by ring out from it, from a little above it down as deep as its reach. Waterlogged blocks dry.",
+                "",
+                "An ocean monument, a flooded cave, a lava lake: gone in minutes."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_drain"
+            }
+          ],
+          "unlock": [
+            "mega"
+          ]
+        },
+        {
+          "id": "mega_sawmill",
+          "icon": "villager_life:mega_sawmill",
+          "title": "Sawmill",
+          "pages": [
+            {
+              "type": "structure",
+              "schematic": "mega:sawmill",
+              "text": "Yard 5×5: Colosseum ×4, Nameless."
+            },
+            {
+              "type": "text",
+              "text": [
+                "Fells **every tree within 12 blocks**, one every three seconds, whole — logs and the tree's own leaves — into a chest beside its controller, and sets a sapling of it back.",
+                "",
+                "Plant a grove round it.",
+                "",
+                "In a town, the logs its chest cannot hold go to the town's stall — wood for its houses — and the coins to you."
+              ]
+            },
+            {
+              "type": "crafting",
+              "recipe": "villager_life:mega_sawmill"
+            }
+          ],
+          "unlock": [
+            "mega"
+          ]
+        }
+      ]
+    }
+  ]
+}

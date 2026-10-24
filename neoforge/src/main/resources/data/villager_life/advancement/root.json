@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "villager_life:handbook"
+    },
+    "title": {
+      "translate": "advancements.villager_life.root.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.root.description"
+    },
+    "background": "minecraft:textures/block/spruce_planks.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

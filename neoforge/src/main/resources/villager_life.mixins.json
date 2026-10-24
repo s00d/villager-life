@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.vnap.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ArmorStandAccessor",
+    "CatAccessor",
+    "ConnectionAccessor",
+    "GameTestServerMixin",
+    "GameTestHelperMixin",
+    "GoToPotentialJobSiteMixin",
+    "VillagerDataMixin",
+    "WolfAccessor",
+    "VillagerAccessor",
+    "VillagerGoalPackagesMixin",
+    "VillagerMakeLoveMixin",
+    "VillagerSleepMixin",
+    "MerchantVoiceMixin",
+    "InfantMixin",
+    "VillagerHostilesSensorMixin",
+    "VillagerGolemMixin",
+    "InteractWithDoorMixin",
+    "TimeTrackerMixin",
+    "UpdateActivityFromScheduleMixin",
+    "ServerCommonPacketListenerImplMixin",
+    "StructureUtilsMixin",
+    "GameTestRunnerMixin",
+    "WalkNodeEvaluatorMixin",
+    "VillagerFallMixin",
+    "BrainAccessor",
+    "SpireDimensionLifecycleMixin",
+    "SpireWorldDimensionsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

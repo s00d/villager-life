@@ -1,0 +1,544 @@
+# Phase L — home life: wives cook, decorate, invite, gossip (speaker woman).
+
+- key: L10
+  id: w_thanks_bed
+  title: "Woman Thanks for the Bed"
+  category: home
+  status: active
+  trigger: "a wife thanks her husband for the new bed"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Какая кроватка! Спасибо, родной."
+      frames_en:
+        - "What a lovely bed! Thank you, dear."
+    - weight: 50
+      frames:
+        - "Мягкая! Ты у меня настоящий мастер."
+      frames_en:
+        - "So soft! You're a real craftsman."
+    - weight: 50
+      frames:
+        - "Теперь мы спим рядом. Как хорошо!"
+      frames_en:
+        - "Now we sleep side by side. How nice!"
+    - weight: 50
+      frames:
+        - "Сам сделал? Я тобой горжусь."
+      frames_en:
+        - "You made it yourself? I'm proud of you."
+    - weight: 50
+      frames:
+        - "Ну всё, теперь это наш дом."
+      frames_en:
+        - "There, now this is our home."
+
+- key: L11
+  id: w_cooks
+  title: "Woman Cooks"
+  category: home
+  status: active
+  trigger: "a wife starts cooking at home"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Так, что у нас на обед? Картошечка!"
+      frames_en:
+        - "Now, what's for lunch? Potatoes!"
+    - weight: 50
+      frames:
+        - "Немножко соли, немножко любви."
+      frames_en:
+        - "A little salt, a little love."
+    - weight: 50
+      frames:
+        - "Котелок кипит, скоро будет готово."
+      frames_en:
+        - "The pot is bubbling, it'll be ready soon."
+    - weight: 50
+      frames:
+        - "Никто не трогает пирог, пока он остывает!"
+      frames_en:
+        - "Nobody touches the pie while it cools!"
+    - weight: 50
+      frames:
+        - "Бабушкин рецепт. Секретный."
+      frames_en:
+        - "Grandma's recipe. A secret one."
+    - weight: 50
+      frames:
+        - "Готовить для своих — одно удовольствие."
+      frames_en:
+        - "Cooking for my family is a pure joy."
+    - weight: 50
+      frames:
+        - "Ой, чуть не пригорело! Ничего, спасу."
+      frames_en:
+        - "Oops, almost burned it! It's fine, I'll save it."
+
+- key: L12
+  id: w_ready
+  title: "Woman Dinner Is Ready"
+  category: home
+  status: active
+  trigger: "the family meal is ready"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Обед готов! Все к столу!"
+      frames_en:
+        - "Dinner's ready! Everyone to the table!"
+    - weight: 50
+      frames:
+        - "Мойте руки, и за стол!"
+      frames_en:
+        - "Wash your hands and come eat!"
+    - weight: 50
+      frames:
+        - "Горячее, свежее, вкусное!"
+      frames_en:
+        - "Hot, fresh and tasty!"
+    - weight: 50
+      frames:
+        - "Кто первый прибежит, тому самый большой кусок."
+      frames_en:
+        - "Whoever runs here first gets the biggest piece."
+    - weight: 50
+      frames:
+        - "Ужин на столе, не дайте ему остыть."
+      frames_en:
+        - "Supper's on the table, don't let it get cold."
+    - weight: 50
+      frames:
+        - "Ну, где мои голодные?"
+      frames_en:
+        - "Now, where are my hungry ones?"
+
+- key: L13
+  id: w_decor
+  title: "Woman Decorates"
+  category: home
+  status: active
+  trigger: "a wife puts up a piece of home decor"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Вот так гораздо уютнее."
+      frames_en:
+        - "There, much cozier."
+    - weight: 50
+      frames:
+        - "Немного красоты в доме никогда не помешает."
+      frames_en:
+        - "A little beauty at home never hurts."
+    - weight: 50
+      frames:
+        - "Поставлю сюда. Нет, сюда. Да, вот так!"
+      frames_en:
+        - "I'll put it here. No, here. Yes, like that!"
+    - weight: 50
+      frames:
+        - "Теперь у нас как у мэра. Даже лучше!"
+      frames_en:
+        - "Now our place is like the mayor's. Even nicer!"
+    - weight: 50
+      frames:
+        - "Муж и не заметит. А я заметила!"
+      frames_en:
+        - "My husband won't even notice. But I did!"
+
+- key: L14
+  id: w_invite
+  title: "Woman Invites the Player"
+  category: home
+  status: active
+  trigger: "a wife invites a friendly player to dinner"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Заходи к нам на ужин! Вот, держи тарелочку."
+      frames_en:
+        - "Come have dinner with us! Here, take a plate."
+    - weight: 50
+      frames:
+        - "Ты совсем исхудал. Покушай!"
+      frames_en:
+        - "You've gotten so thin. Eat something!"
+    - weight: 50
+      frames:
+        - "Я приготовила лишнего. Угощайся!"
+      frames_en:
+        - "I made too much. Help yourself!"
+    - weight: 50
+      frames:
+        - "Для хорошего соседа всегда найдётся тарелка супа."
+      frames_en:
+        - "There's always a bowl of soup for a good neighbor."
+    - weight: 50
+      frames:
+        - "Попробуй мой обед, потом расскажешь, как вкусно."
+      frames_en:
+        - "Try my cooking, then tell me how good it is."
+    - weight: 50
+      frames:
+        - "Друзья семьи ужинают с семьёй."
+      frames_en:
+        - "Friends of the family dine with the family."
+
+- key: L15
+  id: w_blanket
+  title: "Woman Thanks for the Blanket"
+  category: home
+  status: active
+  trigger: "the player gives a mother a baby blanket"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ой, какое одеяльце! Малыш будет в восторге."
+      frames_en:
+        - "Oh, what a blanket! The baby will love it."
+    - weight: 50
+      frames:
+        - "Мягкое какое! Спасибо тебе огромное."
+      frames_en:
+        - "So soft! Thank you so much."
+    - weight: 50
+      frames:
+        - "Ты такой заботливый. Мы этого не забудем."
+      frames_en:
+        - "You're so thoughtful. We won't forget this."
+    - weight: 50
+      frames:
+        - "Теперь нашему крохе будет тепло."
+      frames_en:
+        - "Now our little one will be warm."
+    - weight: 50
+      frames:
+        - "Самый лучший подарок для мамы!"
+      frames_en:
+        - "The best present a mom could get!"
+
+- key: L16
+  id: w_calm
+  title: "Woman Calms Down"
+  category: home
+  status: active
+  trigger: "a woman calms down after danger"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Фух… Кажется, обошлось."
+      frames_en:
+        - "Phew… I think it's over."
+    - weight: 50
+      frames:
+        - "Сердце до сих пор колотится."
+      frames_en:
+        - "My heart is still pounding."
+    - weight: 50
+      frames:
+        - "Ладно, всё. Где моя чашка чая?"
+      frames_en:
+        - "All right, enough. Where's my cup of tea?"
+    - weight: 50
+      frames:
+        - "Больше так не пугайте меня!"
+      frames_en:
+        - "Don't ever scare me like that again!"
+    - weight: 50
+      frames:
+        - "Всё хорошо, все живы. Это главное."
+      frames_en:
+        - "Everything's fine, everyone's alive. That's what matters."
+
+- key: L17
+  id: w_tod_morning
+  title: "Morning"
+  category: home
+  status: active
+  trigger: "a woman notices it is morning"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Утро! Столько дел, столько дел."
+      frames_en:
+        - "Morning! So much to do, so much to do."
+    - weight: 50
+      frames:
+        - "Доброе утро! Солнышко уже встало, и я с ним."
+      frames_en:
+        - "Good morning! The sun's up, and so am I."
+
+- key: L17a
+  id: w_tod_afternoon
+  title: "Afternoon"
+  category: home
+  status: active
+  trigger: "a woman notices it is midday"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Полдень. Пора бы перекусить."
+      frames_en:
+        - "Noon. Time for a little snack."
+    - weight: 50
+      frames:
+        - "Как быстро летит день!"
+      frames_en:
+        - "How quickly the day flies by!"
+
+- key: L17b
+  id: w_tod_evening
+  title: "Evening"
+  category: home
+  status: active
+  trigger: "a woman notices the evening coming"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Вечереет. Пора загонять кур."
+      frames_en:
+        - "It's getting dark. Time to bring the chickens in."
+    - weight: 50
+      frames:
+        - "Вечер. Скоро ужин, а потом и на покой."
+      frames_en:
+        - "Evening. Supper soon, and then to rest."
+
+- key: L17c
+  id: w_tod_night
+  title: "Night"
+  category: home
+  status: active
+  trigger: "a woman still up at night"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ночь на дворе, а я всё не сплю."
+      frames_en:
+        - "It's night already and I'm still up."
+    - weight: 50
+      frames:
+        - "[yawn] Глаза слипаются. Пора и мне спать."
+      frames_en:
+        - "[yawn] My eyes are closing. Time I went to bed too."
+
+- key: L17d
+  id: w_tod_hour
+  title: "Top of the Hour"
+  category: home
+  status: active
+  trigger: "a woman hears the bell strike the hour"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Колокол пробил. Надо поспевать."
+      frames_en:
+        - "The bell rang. I'd better hurry."
+
+- key: L18
+  id: w_wake
+  title: "Woman Wakes Up"
+  category: home
+  status: active
+  trigger: "a woman wakes up"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ох, уже утро? Ещё минуточку…"
+      frames_en:
+        - "Oh, morning already? Just one more minute…"
+    - weight: 50
+      frames:
+        - "Посмотрим, что мне куры к утру снесли."
+      frames_en:
+        - "Let's see what the hens have left me this morning."
+    - weight: 50
+      frames:
+        - "Какой чудесный сон мне снился!"
+      frames_en:
+        - "What a wonderful dream I had!"
+    - weight: 50
+      frames:
+        - "Встаю-встаю. Ну, почти встаю."
+      frames_en:
+        - "I'm up, I'm up. Well, almost."
+    - weight: 50
+      frames:
+        - "Новый день — новые хлопоты."
+      frames_en:
+        - "A new day, new chores."
+
+- key: L19
+  id: w_wander
+  title: "Woman Wanders"
+  category: home
+  status: active
+  trigger: "a woman strolls around the village"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Пройдусь, подышу свежим воздухом."
+      frames_en:
+        - "I'll take a stroll and get some fresh air."
+    - weight: 50
+      frames:
+        - "Какие сегодня цветы у соседки!"
+      frames_en:
+        - "My neighbor's flowers look lovely today!"
+    - weight: 50
+      frames:
+        - "Ля-ля-ля… Ой, кто-то слышал?"
+      frames_en:
+        - "La-la-la… oh, did someone hear that?"
+    - weight: 50
+      frames:
+        - "Надо зайти к подруге, давно не виделись."
+      frames_en:
+        - "I should visit my friend, we haven't seen each other in ages."
+    - weight: 50
+      frames:
+        - "Хорошая у нас деревня. Тихая."
+      frames_en:
+        - "We have a nice village. Quiet."
+    - weight: 50
+      frames:
+        - "Куда это я шла? А, вспомнила!"
+      frames_en:
+        - "Where was I going? Ah, I remember!"
+
+- key: L20
+  id: w_chat_husband
+  title: "Woman Chats With Husband"
+  category: home
+  status: active
+  trigger: "a wife talks to her husband in passing"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Дорогой, ты не забыл про крышу?"
+      frames_en:
+        - "Dear, you haven't forgotten about the roof?"
+    - weight: 50
+      frames:
+        - "Опять грязные ботинки? Ох, ну ты!"
+      frames_en:
+        - "Muddy boots again? Oh, you!"
+    - weight: 50
+      frames:
+        - "Я тебя люблю. Просто так сказала."
+      frames_en:
+        - "I love you. Just felt like saying it."
+    - weight: 50
+      frames:
+        - "Наши дети сегодня такие послушные!"
+      frames_en:
+        - "Our kids were so well-behaved today!"
+    - weight: 50
+      frames:
+        - "Может, заведём кошку?"
+      frames_en:
+        - "Maybe we should get a cat?"
+    - weight: 50
+      frames:
+        - "Купи на рынке хлеба, пожалуйста."
+      frames_en:
+        - "Buy some bread at the market, please."
+
+- key: L21
+  id: w_gossip
+  title: "Women Gossip"
+  category: home
+  status: active
+  trigger: "two women gossip"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ты слышала? У мясника новая шляпа!"
+      frames_en:
+        - "Did you hear? The butcher has a new hat!"
+    - weight: 50
+      frames:
+        - "А мой опять уснул за обедом."
+      frames_en:
+        - "Mine fell asleep at lunch again."
+    - weight: 50
+      frames:
+        - "Говорят, в соседней деревне свадьба была!"
+      frames_en:
+        - "They say there was a wedding in the next village!"
+    - weight: 50
+      frames:
+        - "Видела того игрока? Опять что-то копает."
+      frames_en:
+        - "Did you see that player? Digging something again."
+    - weight: 50
+      frames:
+        - "У тебя такой красивый фартук. Где взяла?"
+      frames_en:
+        - "Your apron is so pretty. Where did you get it?"
+    - weight: 50
+      frames:
+        - "Мой малыш сегодня сказал первое слово: изумруд!"
+      frames_en:
+        - "My little one said their first word today: emerald!"
+    - weight: 50
+      frames:
+        - "Только никому не говори, но библиотекарь пишет стихи."
+      frames_en:
+        - "Don't tell anyone, but the librarian writes poems."
+
+- key: L22
+  id: w_gossip_reply
+  title: "Women Gossip Reply"
+  category: home
+  status: active
+  trigger: "a woman answers a friend's gossip"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Да ты что! Не может быть!"
+      frames_en:
+        - "No way! You don't say!"
+    - weight: 50
+      frames:
+        - "Ой, и не говори."
+      frames_en:
+        - "Oh, tell me about it."
+    - weight: 50
+      frames:
+        - "Я так и знала!"
+      frames_en:
+        - "I knew it!"
+    - weight: 50
+      frames:
+        - "Надо будет зайти посмотреть."
+      frames_en:
+        - "I'll have to go and see."
+    - weight: 50
+      frames:
+        - "Ха-ха, мой точно такой же!"
+      frames_en:
+        - "Ha-ha, mine's exactly the same!"
+    - weight: 50
+      frames:
+        - "Только тс-с, это между нами."
+      frames_en:
+        - "Shh, that stays between us."

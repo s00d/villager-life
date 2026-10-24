@@ -1,0 +1,279 @@
+# Phase M2 — the closed village economy: builders buy materials, the village farm, the shopkeeper who arrives,
+# the kiosk. A man speaks as `villager`, a woman as `woman`.
+
+- key: MK01
+  id: mk_mats
+  title: "Villager Buys Building Materials"
+  category: home
+  status: active
+  trigger: "a builder buys the materials for the next stage at the stall"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Мне доски, камень и стекло. Много. На целую стену."
+      frames_en:
+        - "Planks, stone and glass, please. Lots. A whole wall's worth."
+    - weight: 50
+      frames:
+        - "[sigh] Опять за материалами. Дом сам себя не построит."
+      frames_en:
+        - "[sigh] Off for materials again. The house won't build itself."
+    - weight: 50
+      frames:
+        - "Казна платит, а я таскаю. Честное разделение."
+      frames_en:
+        - "The treasury pays and I carry. Fair enough."
+- key: MK02
+  id: mk_w_mats
+  title: "Villager Buys Building Materials"
+  category: home
+  status: active
+  trigger: "a woman builder buys the materials for the next stage at the stall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Мне вот это, это и вон те доски. И побольше."
+      frames_en:
+        - "This, this and those planks there. And plenty of them."
+    - weight: 50
+      frames:
+        - "Без материалов стену не поставишь. Беру!"
+      frames_en:
+        - "You can't raise a wall without materials. I'll take them!"
+    - weight: 50
+      frames:
+        - "[sigh] Тяжело, но своё. Несу на стройку."
+      frames_en:
+        - "[sigh] Heavy, but it's ours. Off to the site."
+- key: MK03
+  id: mk_fell
+  title: "Villager Fells a Tree"
+  category: home
+  status: active
+  trigger: "a villager without a trade fells a grown tree on the village farm"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Берегись! Дерево падает!"
+      frames_en:
+        - "Timber! Watch out!"
+    - weight: 50
+      frames:
+        - "[grunts] Хорошее бревно. Из него выйдут доски для соседа."
+      frames_en:
+        - "[grunts] A fine log. It'll make planks for a neighbour."
+    - weight: 50
+      frames:
+        - "Срублю и посажу новое. Так дед учил."
+      frames_en:
+        - "Cut one, plant one. That's what grandpa taught me."
+- key: MK04
+  id: mk_w_fell
+  title: "Villager Fells a Tree"
+  category: home
+  status: active
+  trigger: "a woman without a trade fells a grown tree on the village farm"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Берегись, падает!"
+      frames_en:
+        - "Look out, it's coming down!"
+    - weight: 50
+      frames:
+        - "[grunts] Хорошее дерево выросло. Жалко, но доски нужны."
+      frames_en:
+        - "[grunts] It grew well. A pity, but we need planks."
+    - weight: 50
+      frames:
+        - "Срубили — посадим новое. Ферма не пустует."
+      frames_en:
+        - "One down, one planted. The farm never stands empty."
+- key: MK05
+  id: mk_sell
+  title: "Villager Sells at the Stall"
+  category: home
+  status: active
+  trigger: "a villager sells what the farm gave to the stall"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Брёвна с фермы! Берёшь?"
+      frames_en:
+        - "Logs from the farm! Will you take them?"
+    - weight: 50
+      frames:
+        - "[happy] Вот и заработал. Урожай — в лавку, монеты — в карман."
+      frames_en:
+        - "[happy] There's a wage. The harvest goes to the stall, the coins into my pocket."
+    - weight: 50
+      frames:
+        - "Свежее, своё, деревенское. Плати по-честному."
+      frames_en:
+        - "Fresh, ours, from the village. Pay me fair."
+- key: MK06
+  id: mk_w_sell
+  title: "Villager Sells at the Stall"
+  category: home
+  status: active
+  trigger: "a woman sells what the farm gave to the stall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Принесла урожай. Взвесишь?"
+      frames_en:
+        - "I've brought the harvest. Will you weigh it?"
+    - weight: 50
+      frames:
+        - "[happy] Вот и монетки на хозяйство."
+      frames_en:
+        - "[happy] There are coins for the household."
+    - weight: 50
+      frames:
+        - "Всё с нашей фермы. Лучше, чем у каравана."
+      frames_en:
+        - "All from our farm. Better than the caravan's."
+- key: MK07
+  id: mk_arrive
+  title: "Shopkeeper Comes to the Village"
+  category: home
+  status: active
+  trigger: "a shopkeeper arrives in a village that had nobody free to keep its stall"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Здравствуйте! Я слышал, вам нужен лавочник."
+      frames_en:
+        - "Hello! I hear you need a shopkeeper."
+    - weight: 50
+      frames:
+        - "Привёз товар и доски на ларёк. Где тут колокол?"
+      frames_en:
+        - "I've brought goods and planks for a stall. Where's the bell?"
+    - weight: 50
+      frames:
+        - "[happy] Деревня без лавки? Это я исправлю."
+      frames_en:
+        - "[happy] A village without a stall? I'll fix that."
+- key: MK08
+  id: mk_w_arrive
+  title: "Shopkeeper Comes to the Village"
+  category: home
+  status: active
+  trigger: "a woman shopkeeper arrives in a village that had nobody free to keep its stall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Здравствуйте! Лавочница нужна? Вот она я."
+      frames_en:
+        - "Hello! Need a shopkeeper? Here I am."
+    - weight: 50
+      frames:
+        - "Я с товаром и досками. Ларёк поставим быстро."
+      frames_en:
+        - "I've brought goods and planks. We'll have a stall up in no time."
+    - weight: 50
+      frames:
+        - "[happy] Новое место, новые покупатели!"
+      frames_en:
+        - "[happy] A new place, new customers!"
+- key: MK09
+  id: mk_kiosk
+  title: "Shopkeeper Sets Up a Kiosk"
+  category: home
+  status: active
+  trigger: "no ground for a stall: the shopkeeper trades from a lone counter by the bell"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Места под ларёк нет — торгую с прилавка у колокола."
+      frames_en:
+        - "No room for a stall, so I'll trade from a counter by the bell."
+    - weight: 50
+      frames:
+        - "Пока так. Прилавок есть — значит, лавка открыта."
+      frames_en:
+        - "This will do for now. A counter means the shop is open."
+    - weight: 50
+      frames:
+        - "[sigh] Не дворец, но торговать можно."
+      frames_en:
+        - "[sigh] Not a palace, but you can trade here."
+- key: MK10
+  id: mk_w_kiosk
+  title: "Shopkeeper Sets Up a Kiosk"
+  category: home
+  status: active
+  trigger: "no ground for a stall: the shopkeeper trades from a lone counter by the bell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ларёк не влез, так что прилавок прямо у колокола."
+      frames_en:
+        - "The stall wouldn't fit, so the counter goes right by the bell."
+    - weight: 50
+      frames:
+        - "Ничего, и с прилавка торговать можно."
+      frames_en:
+        - "Never mind, a counter will do for trading."
+    - weight: 50
+      frames:
+        - "[sigh] Тесно у нас. Зато все мимо ходят."
+      frames_en:
+        - "[sigh] It's cramped. But everyone walks past."
+- key: MK11
+  id: mk_farm
+  title: "Shopkeeper Plans the Farm"
+  category: home
+  status: removed
+  trigger: "with the stall built the shopkeeper lays out the village farm"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Нам нужна ферма: деревья на доски, грядки на еду."
+      frames_en:
+        - "We need a farm: trees for planks, beds for food."
+    - weight: 50
+      frames:
+        - "Своё дерево дешевле караванного. Сажаем!"
+      frames_en:
+        - "Our own wood beats the caravan's. Let's plant!"
+    - weight: 50
+      frames:
+        - "Безработных много — будет кому сажать и рубить."
+      frames_en:
+        - "Plenty of folk without a trade. They can plant and fell."
+- key: MK12
+  id: mk_w_farm
+  title: "Shopkeeper Plans the Farm"
+  category: home
+  status: removed
+  trigger: "with the stall built the woman shopkeeper lays out the village farm"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Заведём ферму: свои брёвна, свой урожай."
+      frames_en:
+        - "Let's start a farm: our own logs, our own harvest."
+    - weight: 50
+      frames:
+        - "Деревья тут, грядки там. Красота!"
+      frames_en:
+        - "Trees here, beds there. Lovely!"
+    - weight: 50
+      frames:
+        - "Пусть безработные займутся делом — посадим лес."
+      frames_en:
+        - "Let the idle ones get to work. We'll plant a wood."

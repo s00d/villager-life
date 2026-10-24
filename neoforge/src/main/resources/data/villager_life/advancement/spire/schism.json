@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/keeper",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_seal_spore"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.schism.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.schism.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

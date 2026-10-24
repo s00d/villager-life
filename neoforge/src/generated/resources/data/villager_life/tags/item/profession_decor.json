@@ -1,0 +1,30 @@
+{
+  "values": [
+    "villager_life:seed_sacks",
+    "villager_life:harvest_basket",
+    "villager_life:chopping_block",
+    "villager_life:meat_rack",
+    "villager_life:wool_bales",
+    "villager_life:spinning_wheel",
+    "villager_life:fish_rack",
+    "villager_life:tackle_crate",
+    "villager_life:arrow_bundle",
+    "villager_life:feather_basket",
+    "villager_life:book_stack",
+    "villager_life:ink_and_quill",
+    "villager_life:globe",
+    "villager_life:map_rolls",
+    "villager_life:incense_burner",
+    "villager_life:potion_shelf",
+    "villager_life:hide_rack",
+    "villager_life:leather_rolls",
+    "villager_life:chisel_bench",
+    "villager_life:brick_pallet",
+    "villager_life:armor_dummy",
+    "villager_life:chainmail_rack",
+    "villager_life:tool_rack",
+    "villager_life:nail_keg",
+    "villager_life:weapon_rack",
+    "villager_life:sword_barrel"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/weapon_forge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/weapon_forge"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/weapon_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/weapon_forge",
+      "y": 270
+    }
+  }
+}

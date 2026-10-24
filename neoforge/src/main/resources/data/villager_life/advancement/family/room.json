@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/baby",
+  "display": {
+    "icon": {
+      "id": "villager_life:cradle"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.room.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.room.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

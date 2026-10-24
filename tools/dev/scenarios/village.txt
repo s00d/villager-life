@@ -1,0 +1,16 @@
+# The plains village of the dev world ("New World", 272 108 1386): two days and a night of its life,
+# watched as a spectator (a player in sight keeps stuck villagers from being set free).
+/gamemode spectator
+/tp Dev 280 130 1380
+sleep 6
+/time set 1000
+sprint 24000
+expect check: 0 problems :: /vnap check 96
+expect-no homeless :: /vnap who 96
+/time set 18000
+sprint 1500
+expect check: 0 problems :: /vnap check 96
+/time set 1000
+sprint 24000
+expect check: 0 problems :: /vnap check 96
+/gamemode creative

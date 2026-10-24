@@ -1,0 +1,25 @@
+# The whole chain on fresh villages of "Новый мир" (found with /locate from 20000 20000): three days of each with a
+# player by it (creative, a little above the bell), then the checks. The "vnap death"/"vnap gone" lines of the client
+# log count the night's losses.
+/gamemode creative
+/tp Dev 17424 90 19936
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 20288 90 19072
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 18592 90 19376
+sleep 8
+/time set 1000
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info

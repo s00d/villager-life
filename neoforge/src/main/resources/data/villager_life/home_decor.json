@@ -1,0 +1,287 @@
+[
+  {
+    "id": "gravestone",
+    "profession": "home",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      4,
+      14,
+      14,
+      12
+    ]
+  },
+  {
+    "id": "clothesline",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      6,
+      16,
+      16,
+      10
+    ]
+  },
+  {
+    "id": "vanity_table",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "standing_mirror",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      6,
+      14,
+      16,
+      10
+    ]
+  },
+  {
+    "id": "cradle",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      0,
+      14,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "family_portrait",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      8,
+      14,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "flower_vase",
+    "profession": "home",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      4,
+      14,
+      16,
+      12
+    ]
+  },
+  {
+    "id": "hearth",
+    "profession": "home",
+    "sound": "stone",
+    "light": 12,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      4,
+      16,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "pet_bowl",
+    "profession": "home",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      4,
+      0,
+      4,
+      12,
+      2,
+      12
+    ]
+  },
+  {
+    "id": "dog_kennel",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      11,
+      16
+    ]
+  },
+  {
+    "id": "cat_bed",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      4,
+      14
+    ]
+  },
+  {
+    "id": "parrot_perch",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      4,
+      14,
+      16,
+      12
+    ]
+  },
+  {
+    "id": "aquarium",
+    "profession": "home",
+    "sound": "glass",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      14,
+      14
+    ]
+  },
+  {
+    "id": "market_counter",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "pantry_crate",
+    "profession": "home",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      8,
+      14
+    ]
+  },
+  {
+    "id": "cooking_pot",
+    "profession": "home",
+    "sound": "metal",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      3,
+      0,
+      3,
+      13,
+      11,
+      13
+    ]
+  },
+  {
+    "id": "market_crate",
+    "profession": "town",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      1,
+      0,
+      1,
+      15,
+      9,
+      15
+    ]
+  },
+  {
+    "id": "door_bell",
+    "profession": "town",
+    "sound": "metal",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      5,
+      6,
+      9,
+      11,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "shop_sign",
+    "profession": "town",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      7,
+      1,
+      0,
+      9,
+      16,
+      16
+    ]
+  }
+]

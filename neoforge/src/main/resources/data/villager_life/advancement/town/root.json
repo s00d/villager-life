@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bell"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.root.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.root.description"
+    },
+    "background": "minecraft:textures/block/stone_bricks.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

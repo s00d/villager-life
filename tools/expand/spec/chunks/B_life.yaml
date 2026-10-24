@@ -1,0 +1,581 @@
+# Phase B — FD / space / packs / waystones / magic / dims / qol
+
+- key: B30
+  title: "Eat Farmer's Delight Food"
+  category: fd_cat
+  status: active
+  trigger: "soft B30"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Еда Farmer's Delight — вот это цивилизация на вилке!"
+        - "Оставьте кусочек соседу, будьте человеком."
+      frames_en:
+        - "Farmer's Delight food — civilization on a fork!"
+        - "Leave a bite for a neighbor, be human."
+    - weight: 50
+      frames:
+        - "Пахнет так, что даже деревенщина проголодался. Делитесь, не стесняйтесь."
+      frames_en:
+        - "Smells so good even a nitwit got hungry. Share, do not be shy."
+    - weight: 50
+      frames:
+        - "Каждая ложка повышает репутацию."
+        - "Мы это официально заявляем."
+      frames_en:
+        - "Every spoonful raises reputation."
+        - "We state that officially."
+
+- key: B31
+  title: "Place a Cooking Pot or Skillet"
+  category: fd_cat
+  status: active
+  trigger: "soft B31"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кастрюля на площади — обед объявлен открытым!"
+        - "Мы принесём миски… и сплетни."
+      frames_en:
+        - "A pot on the square — lunch is declared open!"
+        - "We will bring bowls… and gossip."
+    - weight: 50
+      frames:
+        - "Сковорода шипит громче политики."
+        - "Это хороший знак."
+      frames_en:
+        - "The skillet hisses louder than politics."
+        - "That is a good sign."
+    - weight: 50
+      frames:
+        - "Кухня переехала на улицу. Мы не против."
+        - "Только не сожгите забор."
+      frames_en:
+        - "The kitchen moved outdoors. We do not mind."
+        - "Just do not burn the fence."
+
+- key: B32
+  title: "Share Farmer's Delight Meal"
+  category: fd_cat
+  status: active
+  trigger: "soft B32"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Угощаете сытным блюдом — деревня любит вас на десять изумрудов больше. Спасибо от живота и души!"
+      frames_en:
+        - "Sharing a hearty meal — the village loves you ten emeralds more. Thanks from belly and soul!"
+    - weight: 50
+      frames:
+        - "Вот это дипломатия — через тарелку. Мы готовы обсудить добавку."
+      frames_en:
+        - "That is diplomacy — through a plate. We are ready to negotiate second helpings."
+    - weight: 50
+      frames:
+        - "Еда как мирный договор. Подписываем ртом."
+        - "Одобрено советом."
+      frames_en:
+        - "Food as a peace treaty. We sign with our mouths."
+        - "Council approved."
+
+- key: B33
+  title: "Place Space Gear"
+  category: adastra_cat
+  status: active
+  trigger: "soft B33"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Космические штуки Ad Astra — деревня почти на орбите."
+        - "Кислород для кур не забудьте."
+      frames_en:
+        - "Ad Astra space gear — the village is almost in orbit."
+        - "Do not forget oxygen for the chickens."
+    - weight: 50
+      frames:
+        - "Ракета во дворе. Мэр запросил план эвакуации."
+        - "И автограф космонавта."
+      frames_en:
+        - "A rocket in the yard. The mayor requested an evacuation plan."
+        - "And an astronaut autograph."
+    - weight: 50
+      frames:
+        - "Детали с орбиты рядом с колодцем."
+        - "Колодец просит сувенир."
+      frames_en:
+        - "Orbital parts next to the well."
+        - "The well wants a souvenir."
+
+- key: B34
+  title: "Wear a Space Suit"
+  category: adastra_cat
+  status: active
+  trigger: "soft B34"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Скафандр в деревне — модно и душно на вид. Как дышите? Через мод?"
+      frames_en:
+        - "A space suit in the village — stylish and stuffy-looking. How do you breathe? Through a mod?"
+    - weight: 50
+      frames:
+        - "Выглядите как гость с луны на ярмарке."
+        - "Добро пожаловать, инопланетянин наш."
+      frames_en:
+        - "You look like a moon guest at the fair."
+        - "Welcome, our alien."
+    - weight: 50
+      frames:
+        - "Шлем отражает наши любопытные лица."
+        - "Мы красивые, признайте."
+      frames_en:
+        - "The helmet reflects our curious faces."
+        - "Admit it, we look great."
+
+- key: B35
+  title: "Hold Oxygen or Fuel Bucket"
+  category: adastra_cat
+  status: active
+  trigger: "soft B35"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ведро кислорода — редкий сувенир с орбиты."
+        - "Не пейте, даже если очень космично хочется."
+      frames_en:
+        - "An oxygen bucket — rare orbital souvenir."
+        - "Do not drink it, even if it feels cosmic."
+    - weight: 50
+      frames:
+        - "Топливо для ракет рядом с сеном. Смелые."
+        - "Мы отойдём на всякий случай."
+      frames_en:
+        - "Rocket fuel next to the hay. Bold."
+        - "We will step aside just in case."
+    - weight: 50
+      frames:
+        - "Жидкость, от которой взлетают мечты."
+        - "И иногда крыши."
+      frames_en:
+        - "A liquid that launches dreams."
+        - "And sometimes roofs."
+
+- key: B36
+  title: "Wear a Huge Backpack"
+  category: pack_cat
+  status: active
+  trigger: "soft B36"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рюкзак размером с амбар — вы переезжаете?"
+        - "Или амбар переезжает с вами?"
+      frames_en:
+        - "A backpack the size of a barn — are you moving?"
+        - "Or is the barn moving with you?"
+    - weight: 50
+      frames:
+        - "Столько карманов, а доброта — в одном? Шутка. Надеюсь, доброты тоже много."
+      frames_en:
+        - "So many pockets, and kindness fits in one? Joke. I hope there is plenty of kindness too."
+    - weight: 50
+      frames:
+        - "Склад на плечах. Лавки завидуют молча."
+        - "Мы завидуем вслух, без стеснения."
+      frames_en:
+        - "A warehouse on your shoulders. Shops envy silently."
+        - "We envy out loud."
+
+- key: B37
+  title: "Open Tom's Storage Terminal"
+  category: pack_cat
+  status: active
+  trigger: "soft B37"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Терминал склада — зависть торговца номер один. Покажите, где тут бесплатная кнопка!"
+      frames_en:
+        - "A storage terminal — trader envy number one. Show us the free button!"
+    - weight: 50
+      frames:
+        - "Склад в окошке. Магия. Опасная для нашего бизнеса."
+        - "Мы всё равно впечатлены."
+      frames_en:
+        - "A warehouse in a window. Magic. Dangerous for our business."
+        - "We are impressed anyway."
+    - weight: 50
+      frames:
+        - "Инвентарь бесконечный на вид. Цены — нет. Жаль, бесплатной кнопки нет."
+      frames_en:
+        - "Inventory looks endless. Prices do not. Pity."
+
+- key: B38
+  title: "Place a Waystone"
+  category: way_cat
+  status: active
+  trigger: "soft B38"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Путевой камень — дверь без двери. Напишите адрес крупно, мы без очков!"
+      frames_en:
+        - "A waystone — a door without a door. Write the address large, we forgot glasses!"
+    - weight: 50
+      frames:
+        - "Камень телепорта у колодца. Классика туризма."
+        - "Не забудьте обратный билет."
+      frames_en:
+        - "A teleport stone by the well. Tourism classic."
+        - "Do not forget the return ticket."
+    - weight: 50
+      frames:
+        - "Портал для ленивых ног и занятых героев."
+        - "Мы тоже хотим кнопку домой."
+      frames_en:
+        - "A portal for lazy feet and busy heroes."
+        - "We want a home button too."
+
+- key: B39
+  title: "Use a Waystone Nearby"
+  category: way_cat
+  status: active
+  trigger: "soft B39"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Пыль в глаза — и вас нет. Грубо, но эффектно."
+        - "Хотя бы помахали на прощание!"
+      frames_en:
+        - "Dust in the eyes — and you are gone. Rude but flashy."
+        - "At least wave goodbye!"
+    - weight: 50
+      frames:
+        - "Кто-то телепортировался. Остались только сплетни. И мы их продолжим."
+      frames_en:
+        - "Someone teleported away. Only gossip remains. And we will keep it going."
+    - weight: 50
+      frames:
+        - "Эффектно исчез. Возвращайся потом. С сувенирами."
+      frames_en:
+        - "A stylish disappearance. Come back later. With souvenirs."
+
+- key: B40
+  title: "Place a Computer"
+  category: cc_cat
+  status: active
+  trigger: "soft B40"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Компьютер CC — магия с мигающими огоньками."
+        - "Напишет нам стихи или налоги?"
+      frames_en:
+        - "A CC computer — magic with blinking lights."
+        - "Will it write us poems or taxes?"
+    - weight: 50
+      frames:
+        - "Железная голова думает быстрее совета деревни."
+        - "Это низкая планка, признаём."
+      frames_en:
+        - "An iron head thinks faster than the village council."
+        - "Low bar, we admit."
+    - weight: 50
+      frames:
+        - "Кнопки щёлкают важнее колокола."
+        - "Пока что колокол ещё главный."
+      frames_en:
+        - "Buttons click more importantly than the bell."
+        - "For now."
+
+- key: B41
+  title: "Turtle Wandering in Village"
+  category: cc_cat
+  status: active
+  trigger: "soft B41"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Черепаха-робот бродит — куры в замешательстве."
+        - "Не учите её открывать сундуки!"
+      frames_en:
+        - "A robot turtle wanders — chickens are confused."
+        - "Do not teach it to open chests!"
+    - weight: 50
+      frames:
+        - "Питомец из шестерёнок. Мило и подозрительно."
+        - "Пусть не ест урожай."
+      frames_en:
+        - "A pet made of gears. Cute and suspicious."
+        - "Keep it off the harvest."
+    - weight: 50
+      frames:
+        - "Панцирь с процессором гуляет по площади."
+        - "Мы вежливо сторонимся."
+      frames_en:
+        - "A processor shell strolls the square."
+        - "We politely step aside."
+
+- key: B42
+  title: "Occultism Ritual Gear"
+  category: magic_cat
+  status: active
+  trigger: "soft B42"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ритуальная утварь — мы делаем вид, что это просто посуда."
+        - "Только без духов у печи, ладно?"
+      frames_en:
+        - "Ritual gear — we pretend it is just crockery."
+        - "No spirits by the stove, okay?"
+    - weight: 50
+      frames:
+        - "Мел и чаши. Вечер обещает быть странным."
+        - "Колокол наготове."
+      frames_en:
+        - "Chalk and bowls. The evening promises weirdness."
+        - "Bell on standby."
+    - weight: 50
+      frames:
+        - "Шёпот ритуала на площади. Мы свистим громче."
+        - "Для храбрости."
+      frames_en:
+        - "Ritual whispers on the square. We whistle louder."
+        - "For courage."
+
+- key: B43
+  title: "Botania Flowers Nearby"
+  category: magic_cat
+  status: active
+  trigger: "soft B43"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Цветы Botania — красиво и чуть-чуть колдовски."
+        - "Можно нюхать? Или они нюхают нас?"
+      frames_en:
+        - "Botania flowers — pretty and a little witchy."
+        - "May we sniff them? Or do they sniff us?"
+    - weight: 50
+      frames:
+        - "Мистическая клумба. Пчёлы подали заявление об отпуске."
+        - "Мы поддерживаем пчёл."
+      frames_en:
+        - "A mystical flower bed. Bees filed for vacation."
+        - "We support the bees."
+    - weight: 50
+      frames:
+        - "Лепестки светятся умнее нас."
+        - "Мы киваем уважительно."
+      frames_en:
+        - "Petals glow smarter than us."
+        - "We nod respectfully."
+
+- key: B44
+  title: "Manaweave or Runes"
+  category: magic_cat
+  status: active
+  trigger: "soft B44"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Выглядит умно. Мы киваем, как будто поняли."
+        - "Продолжайте, маг квартала."
+      frames_en:
+        - "Looks smart. We nod as if we understood."
+        - "Carry on, neighborhood mage."
+    - weight: 50
+      frames:
+        - "Символы пляшут. Мы делаем вид, что это шрифт."
+        - "Новый, модный."
+      frames_en:
+        - "Symbols dance. We pretend it is a font."
+        - "New and trendy."
+
+- key: B45
+  title: "Aether Portal Frame"
+  category: dim_cat
+  status: active
+  trigger: "soft B45"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рамка в Эфир — легенды оживают у забора."
+        - "Не забудьте закрыть калитку за собой."
+      frames_en:
+        - "An Aether frame — legends wake by the fence."
+        - "Close the gate behind you."
+    - weight: 50
+      frames:
+        - "Портал в небо. Куры уже ревнуют."
+        - "Удачи на облаках!"
+      frames_en:
+        - "A portal to the sky. Chickens are already jealous."
+        - "Good luck in the clouds!"
+    - weight: 50
+      frames:
+        - "Дверь в сказку стоит у нас во дворе."
+        - "Сказка, надеюсь, вежливая."
+      frames_en:
+        - "A fairy-tale door stands in our yard."
+        - "Hope the tale is polite."
+
+- key: B46
+  title: "See a DivineRPG or AoA Mob"
+  category: dim_cat
+  status: active
+  trigger: "soft B46"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Что это за гость из измерений?! Прячьте детей и сыр!"
+        - "Колокол! Колокол громче!"
+      frames_en:
+        - "What guest from the dimensions is that?! Hide kids and cheese!"
+        - "Bell! Louder bell!"
+    - weight: 50
+      frames:
+        - "Монстр не из наших лесов. И не из соседских."
+        - "Герой, ваша очередь блистать."
+      frames_en:
+        - "A monster not from our woods. Nor the neighbors'."
+        - "Hero, your turn to shine."
+    - weight: 50
+      frames:
+        - "Иномирный зверь на площади. Туризм пошёл не туда."
+        - "Эвакуация со стилем."
+      frames_en:
+        - "An otherworld beast on the square. Tourism went wrong."
+        - "Stylish evacuation."
+
+- key: B47
+  title: "Twilight Forest Relic"
+  category: dim_cat
+  status: active
+  trigger: "soft B47"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Реликвия Сумеречного леса — сказка с зубами."
+        - "Расскажете у костра? Без призывания, пожалуйста."
+      frames_en:
+        - "A Twilight Forest relic — a fairy tale with teeth."
+        - "Tell it by the fire? No summoning, please."
+    - weight: 50
+      frames:
+        - "Трофей из тумана. Деревня уважает… издалека."
+        - "Красиво блестит, опасно пахнет."
+      frames_en:
+        - "A trophy from the mist. The village respects… from afar."
+        - "Pretty shine, dangerous smell."
+    - weight: 50
+      frames:
+        - "Лес прислал сувенир. Мы шлём вежливый отказ. С цветочками."
+      frames_en:
+        - "The forest sent a souvenir. We send a polite decline. With flowers."
+
+- key: B48
+  title: "Place a Gravestone"
+  category: qol_cat
+  status: active
+  trigger: "soft B48"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Надгробие — мрачноватый декор для площади."
+        - "Мы за цветы рядом, если уж так."
+      frames_en:
+        - "A gravestone — gloomy decor for the square."
+        - "We vote for flowers beside it."
+    - weight: 50
+      frames:
+        - "Камень памяти. Минута тишины… и минута сплетен после."
+        - "Извините, привычка."
+      frames_en:
+        - "A memory stone. A minute of silence… then a minute of gossip."
+        - "Sorry, habit."
+    - weight: 50
+      frames:
+        - "Памятник стоит. Настроение присело."
+        - "Положите цветок, станет легче."
+      frames_en:
+        - "The monument stands. The mood sat down."
+        - "Lay a flower, it helps."
+
+- key: B49
+  title: "Supplementaries Oddity"
+  category: qol_cat
+  status: active
+  trigger: "soft B49"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Штуковина из Supplementaries — опять сюрприз на полке."
+        - "Объясните инструкцию крестьянину!"
+      frames_en:
+        - "A Supplementaries oddity — another shelf surprise."
+        - "Explain the manual to a peasant!"
+    - weight: 50
+      frames:
+        - "Странный предмет, странный хозяин, отличный день."
+        - "Мы это запишем в хронику."
+      frames_en:
+        - "Strange item, strange owner, excellent day."
+        - "We will put it in the chronicle."
+    - weight: 50
+      frames:
+        - "Ещё одна полезность, о которой мы не просили."
+        - "Но впечатлены."
+      frames_en:
+        - "Another useful thing we did not ask for."
+        - "But we are impressed."
+
+- key: B50
+  title: "Comforts Sleeping Bag"
+  category: qol_cat
+  status: active
+  trigger: "soft B50"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Спальный мешок Comforts — кровать для путешественников."
+        - "Только не разворачивайте его на моей грядке!"
+      frames_en:
+        - "A Comforts sleeping bag — a traveler's bed."
+        - "Just do not unroll it on my crops!"
+    - weight: 50
+      frames:
+        - "Спите где хотите, лишь бы не храпеть громче свиней."
+        - "Спокойной… почти ночи."
+      frames_en:
+        - "Sleep where you like, as long as you snore softer than pigs."
+        - "Almost good night."
+    - weight: 50
+      frames:
+        - "Походная кровать на площади. Романтика бомжа… героя."
+        - "Мы отойдём уважительно."
+      frames_en:
+        - "A camping bed on the square. Romance of a… hero tramp."
+        - "We step aside respectfully."

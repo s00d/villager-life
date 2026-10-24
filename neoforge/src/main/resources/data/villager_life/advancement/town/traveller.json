@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/errand",
+  "display": {
+    "icon": {
+      "id": "minecraft:honey_bottle"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.traveller.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.traveller.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

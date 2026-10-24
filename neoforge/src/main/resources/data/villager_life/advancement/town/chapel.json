@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:bell"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.chapel.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.chapel.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cracked_stone_bricks"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.floor.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.floor.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

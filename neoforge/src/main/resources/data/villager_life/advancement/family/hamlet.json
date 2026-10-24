@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/wedding",
+  "display": {
+    "icon": {
+      "id": "minecraft:bell"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.hamlet.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.hamlet.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

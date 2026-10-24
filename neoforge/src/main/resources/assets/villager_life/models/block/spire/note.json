@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {"particle": "minecraft:block/chiseled_stone_bricks", "stand": "minecraft:block/chiseled_stone_bricks", "top": "minecraft:block/polished_andesite", "page": "minecraft:block/birch_planks"},
+  "elements": [
+    {"from": [4, 0, 4], "to": [12, 10, 12], "faces": {
+      "north": {"uv": [4, 6, 12, 16], "texture": "#stand"}, "south": {"uv": [4, 6, 12, 16], "texture": "#stand"},
+      "east": {"uv": [4, 6, 12, 16], "texture": "#stand"}, "west": {"uv": [4, 6, 12, 16], "texture": "#stand"},
+      "up": {"uv": [4, 4, 12, 12], "texture": "#top"}, "down": {"uv": [4, 4, 12, 12], "texture": "#top", "cullface": "down"}}},
+    {"from": [3, 10, 3], "to": [13, 11, 13], "faces": {
+      "north": {"uv": [3, 0, 13, 1], "texture": "#top"}, "south": {"uv": [3, 0, 13, 1], "texture": "#top"},
+      "east": {"uv": [3, 0, 13, 1], "texture": "#top"}, "west": {"uv": [3, 0, 13, 1], "texture": "#top"},
+      "up": {"uv": [3, 3, 13, 13], "texture": "#top"}, "down": {"uv": [3, 3, 13, 13], "texture": "#top"}}},
+    {"from": [4, 11, 5], "to": [12, 12, 11], "light_emission": 10, "faces": {
+      "north": {"uv": [4, 0, 12, 1], "texture": "#page"}, "south": {"uv": [4, 0, 12, 1], "texture": "#page"},
+      "east": {"uv": [5, 0, 11, 1], "texture": "#page"}, "west": {"uv": [5, 0, 11, 1], "texture": "#page"},
+      "up": {"uv": [4, 5, 12, 11], "texture": "#page"}}}
+  ]
+}

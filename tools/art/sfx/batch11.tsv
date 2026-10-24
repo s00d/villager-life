@@ -1,0 +1,10 @@
+smelter_start	2.0	loud close-up huge stone furnace igniting, a deep whoosh of fire catching and roaring up, heavy iron doors clanking shut
+smelter_work	2.5	loud close-up great furnace roaring steadily, crackling fire and molten metal bubbling
+calm_start	2.4	loud close-up ancient stone beacon awakening, a soft deep choir hum rising with a gentle bell, peaceful and warm
+dome_start	2.0	loud close-up magical garden coming alive, a rush of rustling leaves and a bright soft chime, sprouts growing
+well_start	2.0	loud close-up magical stone well awakening, deep water stirring and a shimmering arcane glow tone
+well_gather	1.2	loud close-up small magical sparkles being drawn into a well, a quick shimmering whoosh and soft chimes
+drain_start	2.0	loud close-up heavy stone pump starting, gears turning and a deep gulping suction of water
+drain_work	2.5	loud close-up large pump sucking water through pipes, steady gurgling suction and slow mechanical thumps
+sawmill_start	1.8	loud close-up big wooden sawmill starting, a circular saw blade spinning up with a rising whine and gears clunking
+sawmill_work	2.2	loud close-up circular saw cutting through a thick log, a buzzing whine, wood cracking and a tree falling

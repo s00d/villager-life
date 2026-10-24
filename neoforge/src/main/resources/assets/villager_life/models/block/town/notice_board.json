@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "post": "minecraft:block/spruce_log",
+    "board": "minecraft:block/oak_planks",
+    "roof": "minecraft:block/spruce_planks",
+    "paper": "minecraft:block/white_wool",
+    "map": "minecraft:block/birch_planks",
+    "particle": "minecraft:block/oak_planks"
+  },
+  "elements": [
+    {"from": [1, 0, 7], "to": [3, 16, 9], "faces": {
+      "north": {"uv": [0, 0, 2, 16], "texture": "#post"}, "south": {"uv": [0, 0, 2, 16], "texture": "#post"},
+      "east": {"uv": [0, 0, 2, 16], "texture": "#post"}, "west": {"uv": [0, 0, 2, 16], "texture": "#post"},
+      "up": {"uv": [0, 0, 2, 2], "texture": "#post"}, "down": {"uv": [0, 0, 2, 2], "texture": "#post"}}},
+    {"from": [13, 0, 7], "to": [15, 16, 9], "faces": {
+      "north": {"uv": [0, 0, 2, 16], "texture": "#post"}, "south": {"uv": [0, 0, 2, 16], "texture": "#post"},
+      "east": {"uv": [0, 0, 2, 16], "texture": "#post"}, "west": {"uv": [0, 0, 2, 16], "texture": "#post"},
+      "up": {"uv": [0, 0, 2, 2], "texture": "#post"}, "down": {"uv": [0, 0, 2, 2], "texture": "#post"}}},
+    {"from": [0, 6, 7.5], "to": [16, 15, 8.5], "faces": {
+      "north": {"uv": [0, 1, 16, 10], "texture": "#board"}, "south": {"uv": [0, 1, 16, 10], "texture": "#board"},
+      "east": {"uv": [0, 1, 1, 10], "texture": "#board"}, "west": {"uv": [0, 1, 1, 10], "texture": "#board"},
+      "up": {"uv": [0, 0, 16, 1], "texture": "#board"}, "down": {"uv": [0, 0, 16, 1], "texture": "#board"}}},
+    {"from": [-1, 15, 6], "to": [17, 16.5, 10], "faces": {
+      "north": {"uv": [0, 0, 16, 1.5], "texture": "#roof"}, "south": {"uv": [0, 0, 16, 1.5], "texture": "#roof"},
+      "east": {"uv": [0, 0, 4, 1.5], "texture": "#roof"}, "west": {"uv": [0, 0, 4, 1.5], "texture": "#roof"},
+      "up": {"uv": [0, 0, 16, 4], "texture": "#roof"}, "down": {"uv": [0, 0, 16, 4], "texture": "#roof"}}},
+    {"from": [2, 9, 7.3], "to": [7, 14, 7.5], "faces": {"north": {"uv": [0, 0, 5, 5], "texture": "#paper"}}},
+    {"from": [8, 10, 7.3], "to": [14, 14, 7.5], "faces": {"north": {"uv": [0, 0, 6, 4], "texture": "#map"}}},
+    {"from": [3, 7, 7.3], "to": [9, 8.5, 7.5], "faces": {"north": {"uv": [0, 0, 6, 1.5], "texture": "#paper"}}},
+    {"from": [9, 7, 7.3], "to": [13, 9.5, 7.5], "faces": {"north": {"uv": [0, 0, 4, 2.5], "texture": "#paper"}}}
+  ]
+}

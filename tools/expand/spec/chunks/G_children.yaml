@@ -1,0 +1,1284 @@
+# Phase G — children's own lines, voiced with speaker/<lang>/child.
+# G01-G20 and G23 follow an adult line (ContextualDialogueController.CHILD_ECHOES); G21-G22 are a child's own walk.
+
+- key: G01
+  id: kid_monster
+  title: "Kid Scared of a Monster"
+  category: child
+  status: active
+  trigger: "adult reacts to a monster or panics; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама! Там чудище!"
+      frames_en:
+        - "Mom! There's a monster!"
+    - weight: 50
+      frames:
+        - "Я не боюсь! Ну... чуть-чуть боюсь."
+      frames_en:
+        - "I'm not scared! Well... maybe a little."
+    - weight: 50
+      frames:
+        - "Прячемся под кроватью, быстро!"
+      frames_en:
+        - "Hide under the bed, quick!"
+    - weight: 50
+      frames:
+        - "Оно на меня посмотрело! Оно точно посмотрело!"
+      frames_en:
+        - "It looked at me! It totally looked at me!"
+    - weight: 50
+      frames:
+        - "Если зажмуриться, оно меня не увидит."
+      frames_en:
+        - "If I close my eyes, it can't see me."
+    - weight: 50
+      frames:
+        - "Папа, а оно кусается?"
+      frames_en:
+        - "Dad, does it bite?"
+    - weight: 50
+      frames:
+        - "Уходи! Здесь дети живут!"
+      frames_en:
+        - "Go away! Kids live here!"
+    - weight: 50
+      frames:
+        - "Я сейчас позову голема, так и знай!"
+      frames_en:
+        - "I'm gonna call the golem, you know!"
+    - weight: 50
+      frames:
+        - "Оно страшнее, чем в сказке."
+      frames_en:
+        - "It's scarier than in the stories."
+    - weight: 50
+      frames:
+        - "Я за тобой спрячусь, ладно?"
+      frames_en:
+        - "I'll hide behind you, okay?"
+    - weight: 50
+      frames:
+        - "Ой-ой-ой, бежим домой!"
+      frames_en:
+        - "Uh-oh, uh-oh, run home!"
+    - weight: 50
+      frames:
+        - "А можно я сегодня с вами посплю?"
+      frames_en:
+        - "Can I sleep with you tonight?"
+
+- key: G02
+  id: kid_defend
+  title: "Kid Stands Up for a Grown-up"
+  category: child
+  status: active
+  trigger: "a grown-up is attacked or hurt; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Эй! Не обижай моего папу!"
+      frames_en:
+        - "Hey! Don't hurt my dad!"
+    - weight: 50
+      frames:
+        - "Я всё маме расскажу!"
+      frames_en:
+        - "I'm telling Mom!"
+    - weight: 50
+      frames:
+        - "Это нечестно! Он же ничего не сделал!"
+      frames_en:
+        - "That's not fair! He didn't do anything!"
+    - weight: 50
+      frames:
+        - "Уходи, злюка!"
+      frames_en:
+        - "Go away, meanie!"
+    - weight: 50
+      frames:
+        - "Я вырасту и всем покажу!"
+      frames_en:
+        - "When I grow up, I'll show everyone!"
+    - weight: 50
+      frames:
+        - "Тебе больно? Я подую, и пройдёт."
+      frames_en:
+        - "Does it hurt? I'll blow on it and it'll go away."
+    - weight: 50
+      frames:
+        - "Стражник! Голем! Кто-нибудь!"
+      frames_en:
+        - "Guard! Golem! Somebody!"
+    - weight: 50
+      frames:
+        - "Так нельзя! Это плохой поступок!"
+      frames_en:
+        - "You can't do that! That's a bad thing to do!"
+    - weight: 50
+      frames:
+        - "Я тебя больше не люблю!"
+      frames_en:
+        - "I don't like you anymore!"
+    - weight: 50
+      frames:
+        - "Отстань от него!"
+      frames_en:
+        - "Leave him alone!"
+    - weight: 50
+      frames:
+        - "Сейчас как дам по коленке!"
+      frames_en:
+        - "I'll kick your knee, I will!"
+    - weight: 50
+      frames:
+        - "Ты что, не знаешь, что драться плохо?"
+      frames_en:
+        - "Don't you know fighting is bad?"
+
+- key: G03
+  id: kid_death
+  title: "Kid Sees Someone Die"
+  category: child
+  status: active
+  trigger: "a villager or the village golem dies; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А он... он больше не встанет?"
+      frames_en:
+        - "Is he... is he not getting up?"
+    - weight: 50
+      frames:
+        - "Я не хочу, чтобы так было."
+      frames_en:
+        - "I don't want it to be like this."
+    - weight: 50
+      frames:
+        - "Мама, почему все молчат?"
+      frames_en:
+        - "Mom, why is everyone so quiet?"
+    - weight: 50
+      frames:
+        - "Я буду рисовать его каждый день."
+      frames_en:
+        - "I'll draw a picture of him every day."
+    - weight: 50
+      frames:
+        - "Он был моим другом."
+      frames_en:
+        - "He was my friend."
+    - weight: 50
+      frames:
+        - "Можно я просто посижу рядом?"
+      frames_en:
+        - "Can I just sit here for a while?"
+    - weight: 50
+      frames:
+        - "Это всё неправда. Скажите, что неправда!"
+      frames_en:
+        - "It's not true. Tell me it's not true!"
+    - weight: 50
+      frames:
+        - "Я буду очень-очень хорошим, только пусть он вернётся."
+      frames_en:
+        - "I'll be really, really good, just bring him back."
+
+- key: G04
+  id: kid_fire
+  title: "Kid Sees a Fire"
+  category: child
+  status: active
+  trigger: "fire near or on a house; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Пожар! Несите воду!"
+      frames_en:
+        - "Fire! Get some water!"
+    - weight: 50
+      frames:
+        - "Мой домик горит!"
+      frames_en:
+        - "My house is on fire!"
+    - weight: 50
+      frames:
+        - "Я принесу ведёрко! Ой, оно дырявое."
+      frames_en:
+        - "I'll get my bucket! Oh, it has a hole."
+    - weight: 50
+      frames:
+        - "Горячо-горячо-горячо!"
+      frames_en:
+        - "Hot, hot, hot!"
+    - weight: 50
+      frames:
+        - "Это не я! Честно, не я!"
+      frames_en:
+        - "It wasn't me! Honest, it wasn't me!"
+    - weight: 50
+      frames:
+        - "А мои игрушки там остались!"
+      frames_en:
+        - "My toys are still in there!"
+    - weight: 50
+      frames:
+        - "Огонь кусается, не трогай!"
+      frames_en:
+        - "Fire bites, don't touch it!"
+    - weight: 50
+      frames:
+        - "Кто играл со спичками? Признавайтесь!"
+      frames_en:
+        - "Who was playing with fire? Own up!"
+
+- key: G05
+  id: kid_boom
+  title: "Kid Hears a Boom"
+  category: child
+  status: active
+  trigger: "TNT or an explosion near the village; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ба-бах! Вот это да!"
+      frames_en:
+        - "Ka-boom! Whoa!"
+    - weight: 50
+      frames:
+        - "У меня в ушах звенит!"
+      frames_en:
+        - "My ears are ringing!"
+    - weight: 50
+      frames:
+        - "А можно ещё разок? Только не на наш дом."
+      frames_en:
+        - "Can you do it again? Just not on our house."
+    - weight: 50
+      frames:
+        - "Я упал! Земля прыгнула!"
+      frames_en:
+        - "I fell down! The ground jumped!"
+    - weight: 50
+      frames:
+        - "Мама говорит, что взрывы не игрушки."
+      frames_en:
+        - "Mom says explosions aren't toys."
+    - weight: 50
+      frames:
+        - "Там теперь яма! Большущая!"
+      frames_en:
+        - "Now there's a hole! A huge one!"
+    - weight: 50
+      frames:
+        - "Это был крипер? Я его не видел!"
+      frames_en:
+        - "Was that a creeper? I didn't see it!"
+    - weight: 50
+      frames:
+        - "Я теперь буду бояться громких звуков."
+      frames_en:
+        - "Now I'll be scared of loud noises."
+
+- key: G06
+  id: kid_rain
+  title: "Kid in the Rain"
+  category: child
+  status: active
+  trigger: "rain, thunder or lightning; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ура, лужи! Можно прыгать?"
+      frames_en:
+        - "Yay, puddles! Can I jump in them?"
+    - weight: 50
+      frames:
+        - "Я весь мокрый, как рыбка!"
+      frames_en:
+        - "I'm all wet, like a fish!"
+    - weight: 50
+      frames:
+        - "Гром! Это небо ругается?"
+      frames_en:
+        - "Thunder! Is the sky angry?"
+    - weight: 50
+      frames:
+        - "Молния! Раз, два, три... Бум!"
+      frames_en:
+        - "Lightning! One, two, three... Boom!"
+    - weight: 50
+      frames:
+        - "Я ловлю капли языком!"
+      frames_en:
+        - "I'm catching raindrops on my tongue!"
+    - weight: 50
+      frames:
+        - "Дождик, дождик, уходи!"
+      frames_en:
+        - "Rain, rain, go away!"
+    - weight: 50
+      frames:
+        - "Мама, а мне можно без шапки?"
+      frames_en:
+        - "Mom, can I go without a hat?"
+    - weight: 50
+      frames:
+        - "Я не боюсь грома. Я просто тут постою, у тебя за спиной."
+      frames_en:
+        - "I'm not scared of thunder. I'll just stand behind you."
+    - weight: 50
+      frames:
+        - "Смотри, червяки вылезли!"
+      frames_en:
+        - "Look, the worms came out!"
+    - weight: 50
+      frames:
+        - "Давай пускать кораблики!"
+      frames_en:
+        - "Let's sail little boats!"
+
+- key: G07
+  id: kid_snow
+  title: "Kid in the Snow"
+  category: child
+  status: active
+  trigger: "snow, cold or snowballs; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Снег! Снег! Давай лепить снеговика!"
+      frames_en:
+        - "Snow! Snow! Let's build a snowman!"
+    - weight: 50
+      frames:
+        - "У меня нос замёрз. Где мой нос?"
+      frames_en:
+        - "My nose is frozen. Where's my nose?"
+    - weight: 50
+      frames:
+        - "Сейчас как кину снежок!"
+      frames_en:
+        - "I'm gonna throw a snowball!"
+    - weight: 50
+      frames:
+        - "Я снежный ангел! Смотри!"
+      frames_en:
+        - "I'm a snow angel! Look!"
+    - weight: 50
+      frames:
+        - "Брр! Холодно, но весело!"
+      frames_en:
+        - "Brrr! It's cold, but fun!"
+    - weight: 50
+      frames:
+        - "Можно я съем немножко снега?"
+      frames_en:
+        - "Can I eat a little snow?"
+    - weight: 50
+      frames:
+        - "А снеговик будет с носом, как у нас!"
+      frames_en:
+        - "Our snowman will have a nose like ours!"
+    - weight: 50
+      frames:
+        - "Мои пальчики превратились в сосульки."
+      frames_en:
+        - "My fingers turned into icicles."
+
+- key: G08
+  id: kid_trade
+  title: "Kid Watches a Trade"
+  category: child
+  status: active
+  trigger: "a grown-up trades with the player; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А мне изумрудик дашь?"
+      frames_en:
+        - "Can I have an emerald too?"
+    - weight: 50
+      frames:
+        - "Когда вырасту, буду торговать лучше всех!"
+      frames_en:
+        - "When I grow up, I'll be the best trader ever!"
+    - weight: 50
+      frames:
+        - "Папа, а это хорошая сделка?"
+      frames_en:
+        - "Dad, was that a good deal?"
+    - weight: 50
+      frames:
+        - "У меня тоже есть товар: камушек и палочка."
+      frames_en:
+        - "I have stuff to sell too: a pebble and a stick."
+    - weight: 50
+      frames:
+        - "Ого, сколько блестяшек!"
+      frames_en:
+        - "Wow, so many shiny things!"
+    - weight: 50
+      frames:
+        - "Я буду копить на конфету."
+      frames_en:
+        - "I'm saving up for a candy."
+    - weight: 50
+      frames:
+        - "А можно мне тоже открыть лавку?"
+      frames_en:
+        - "Can I open a shop too?"
+    - weight: 50
+      frames:
+        - "Не продавай ему всё, оставь мне!"
+      frames_en:
+        - "Don't sell him everything, leave some for me!"
+
+- key: G09
+  id: kid_like
+  title: "Kid Likes the Player"
+  category: child
+  status: active
+  trigger: "the player has a high reputation or is the hero; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Это же наш герой! Привет!"
+      frames_en:
+        - "It's our hero! Hi!"
+    - weight: 50
+      frames:
+        - "Можно я с тобой пойду в приключение?"
+      frames_en:
+        - "Can I come with you on an adventure?"
+    - weight: 50
+      frames:
+        - "Ты самый лучший!"
+      frames_en:
+        - "You're the best!"
+    - weight: 50
+      frames:
+        - "Я тоже хочу быть как ты!"
+      frames_en:
+        - "I want to be just like you!"
+    - weight: 50
+      frames:
+        - "Дай пять!"
+      frames_en:
+        - "High five!"
+    - weight: 50
+      frames:
+        - "Я нарисовал тебя! Ты тут с мечом."
+      frames_en:
+        - "I drew you! You've got a sword in it."
+    - weight: 50
+      frames:
+        - "Мама говорит, ты хороший."
+      frames_en:
+        - "Mom says you're nice."
+    - weight: 50
+      frames:
+        - "Расскажи сказку про драконов!"
+      frames_en:
+        - "Tell me a story about dragons!"
+
+- key: G10
+  id: kid_avoid
+  title: "Kid Avoids a Bad Player"
+  category: child
+  status: active
+  trigger: "the player has a low reputation; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама говорит: увидишь тебя — иди в другую сторону."
+      frames_en:
+        - "Mum says when I see you, I walk the other way."
+    - weight: 50
+      frames:
+        - "Ты плохой. Все так говорят."
+      frames_en:
+        - "You're bad. Everybody says so."
+    - weight: 50
+      frames:
+        - "Я тебя не боюсь! Я просто ухожу."
+      frames_en:
+        - "I'm not scared of you! I'm just leaving."
+    - weight: 50
+      frames:
+        - "Не подходи, а то закричу!"
+      frames_en:
+        - "Don't come closer, or I'll scream!"
+    - weight: 50
+      frames:
+        - "Мама, этот опять пришёл!"
+      frames_en:
+        - "Mom, that one is back again!"
+    - weight: 50
+      frames:
+        - "Извинись перед всеми, тогда поиграем."
+      frames_en:
+        - "Say sorry to everyone, then we can play."
+    - weight: 50
+      frames:
+        - "Я спрячусь за забором."
+      frames_en:
+        - "I'll hide behind the fence."
+    - weight: 50
+      frames:
+        - "Ты сломал папин огород, я помню."
+      frames_en:
+        - "You broke Dad's garden, I remember."
+
+- key: G11
+  id: kid_amazed
+  title: "Kid Amazed by the Player"
+  category: child
+  status: active
+  trigger: "the player does something impressive; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Это волшебство? Ты что, тайный волшебник?"
+      frames_en:
+        - "[gasp] Is that magic? Are you a secret wizard?"
+    - weight: 50
+      frames:
+        - "Ещё! Ещё раз!"
+      frames_en:
+        - "Again! Do it again!"
+    - weight: 50
+      frames:
+        - "[excited] Когда вырасту, хочу быть как ты!"
+      frames_en:
+        - "[excited] When I grow up, I want to be just like you!"
+    - weight: 50
+      frames:
+        - "Я всем расскажу! Мне никто не поверит!"
+      frames_en:
+        - "I'm telling everyone! Nobody will believe me!"
+    - weight: 50
+      frames:
+        - "Научи меня! Ну пожалуйста!"
+      frames_en:
+        - "Teach me! Pretty please!"
+    - weight: 50
+      frames:
+        - "Это самое крутое, что я видел!"
+      frames_en:
+        - "That's the coolest thing I've ever seen!"
+    - weight: 50
+      frames:
+        - "Ты летаешь как птичка!"
+      frames_en:
+        - "You fly like a bird!"
+    - weight: 50
+      frames:
+        - "Мой папа так не умеет. Только ему не говори."
+      frames_en:
+        - "My papa can't do that. Don't tell him I said so."
+    - weight: 50
+      frames:
+        - "У меня рот открылся. Смотри, до сих пор открыт!"
+      frames_en:
+        - "My mouth fell open. Look, it's still open!"
+    - weight: 50
+      frames:
+        - "Ты, наверное, самый сильный в мире."
+      frames_en:
+        - "You must be the strongest in the world."
+    - weight: 50
+      frames:
+        - "Можно потрогать? Чуть-чуть?"
+      frames_en:
+        - "Can I touch it? Just a little?"
+
+- key: G12
+  id: kid_animals
+  title: "Kid Loves Animals"
+  category: child
+  status: active
+  trigger: "animals nearby, fed, tamed or born; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Пёсик! Можно погладить?"
+      frames_en:
+        - "A doggy! Can I pet it?"
+    - weight: 50
+      frames:
+        - "Я назову его Пушистик!"
+      frames_en:
+        - "I'll name it Fluffy!"
+    - weight: 50
+      frames:
+        - "Котик, иди ко мне! Кис-кис!"
+      frames_en:
+        - "Kitty, come here! Here, kitty!"
+    - weight: 50
+      frames:
+        - "Коровка, скажи му-у!"
+      frames_en:
+        - "Cow, say moo!"
+    - weight: 50
+      frames:
+        - "Можно он будет жить у меня в комнате?"
+      frames_en:
+        - "Can it live in my room?"
+    - weight: 50
+      frames:
+        - "Смотри, маленький! Какой хорошенький!"
+      frames_en:
+        - "Look, a baby one! So cute!"
+    - weight: 50
+      frames:
+        - "Я покормлю! Я тоже хочу покормить!"
+      frames_en:
+        - "I'll feed it! I want to feed it too!"
+    - weight: 50
+      frames:
+        - "Курочка, а где твои яички?"
+      frames_en:
+        - "Chicken, where are your eggs?"
+    - weight: 50
+      frames:
+        - "Свинка хрюкнула на меня!"
+      frames_en:
+        - "The piggy oinked at me!"
+    - weight: 50
+      frames:
+        - "Лошадка, покатай меня!"
+      frames_en:
+        - "Horsey, give me a ride!"
+    - weight: 50
+      frames:
+        - "Он лизнул мне руку! Щекотно!"
+      frames_en:
+        - "It licked my hand! That tickles!"
+    - weight: 50
+      frames:
+        - "Когда вырасту, у меня будет сто зверей."
+      frames_en:
+        - "When I grow up, I'll have a hundred animals."
+
+- key: G13
+  id: kid_happy
+  title: "Kid in a Happy Village"
+  category: child
+  status: active
+  trigger: "the village mood rises or is warm; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Сегодня все улыбаются!"
+      frames_en:
+        - "Everyone's smiling today!"
+    - weight: 50
+      frames:
+        - "Мама даже разрешила не спать днём!"
+      frames_en:
+        - "Mom even said I don't have to nap today!"
+    - weight: 50
+      frames:
+        - "Наша деревня самая лучшая!"
+      frames_en:
+        - "Our village is the best!"
+    - weight: 50
+      frames:
+        - "Давайте устроим праздник!"
+      frames_en:
+        - "Let's have a party!"
+    - weight: 50
+      frames:
+        - "Мне хочется прыгать до неба!"
+      frames_en:
+        - "I want to jump up to the sky!"
+    - weight: 50
+      frames:
+        - "Папа поёт песенку. Он никогда не поёт!"
+      frames_en:
+        - "Dad is singing. He never sings!"
+    - weight: 50
+      frames:
+        - "Я сегодня никого не обижу."
+      frames_en:
+        - "I won't be mean to anyone today."
+    - weight: 50
+      frames:
+        - "У всех хорошее настроение, и у меня тоже!"
+      frames_en:
+        - "Everyone's happy, and so am I!"
+
+- key: G14
+  id: kid_grumpy
+  title: "Kid in a Grumpy Village"
+  category: child
+  status: active
+  trigger: "the village mood falls or is sour; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Почему все такие сердитые?"
+      frames_en:
+        - "Why is everyone so grumpy?"
+    - weight: 50
+      frames:
+        - "Со мной никто не хочет играть."
+      frames_en:
+        - "Nobody wants to play with me."
+    - weight: 50
+      frames:
+        - "Мама сказала: не сейчас. Опять."
+      frames_en:
+        - "Mom said not now. Again."
+    - weight: 50
+      frames:
+        - "Я хочу, чтобы все помирились."
+      frames_en:
+        - "I want everyone to make up."
+    - weight: 50
+      frames:
+        - "Тут грустно. Даже куры грустные."
+      frames_en:
+        - "It's sad here. Even the chickens are sad."
+    - weight: 50
+      frames:
+        - "Может, если я спою, всем станет лучше?"
+      frames_en:
+        - "Maybe if I sing, everyone will feel better?"
+    - weight: 50
+      frames:
+        - "Я нарисую всем солнышко."
+      frames_en:
+        - "I'll draw everyone a sunshine."
+    - weight: 50
+      frames:
+        - "Взрослые опять ругаются."
+      frames_en:
+        - "The grown-ups are arguing again."
+
+- key: G15
+  id: kid_festival
+  title: "Kid at the Festival"
+  category: child
+  status: active
+  trigger: "a festive rite is finished; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Праздник! Праздник! Ура!"
+      frames_en:
+        - "A party! A party! Hooray!"
+    - weight: 50
+      frames:
+        - "Смотри, флажки! Красивые!"
+      frames_en:
+        - "Look, flags! They're so pretty!"
+    - weight: 50
+      frames:
+        - "Мне дадут пирожок? Два пирожка?"
+      frames_en:
+        - "Will I get a pie? Two pies?"
+    - weight: 50
+      frames:
+        - "Давайте водить хоровод!"
+      frames_en:
+        - "Let's all dance in a circle!"
+    - weight: 50
+      frames:
+        - "Я буду танцевать до самой ночи!"
+      frames_en:
+        - "I'll dance all night long!"
+    - weight: 50
+      frames:
+        - "Это лучший день в моей жизни!"
+      frames_en:
+        - "This is the best day of my life!"
+    - weight: 50
+      frames:
+        - "Можно я повешу флажок? Я дотянусь!"
+      frames_en:
+        - "Can I hang a flag? I can reach!"
+    - weight: 50
+      frames:
+        - "Музыка! Хлопайте все!"
+      frames_en:
+        - "Music! Everybody clap!"
+    - weight: 50
+      frames:
+        - "А праздник будет каждый день?"
+      frames_en:
+        - "Will there be a party every day?"
+    - weight: 50
+      frames:
+        - "Я съел три пирожка и не лопнул!"
+      frames_en:
+        - "I ate three pies and I didn't pop!"
+
+- key: G16
+  id: kid_mourning
+  title: "Kid at the Mourning"
+  category: child
+  status: active
+  trigger: "a sad rite is finished; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Почему все стоят тихо?"
+      frames_en:
+        - "Why is everyone standing so quiet?"
+    - weight: 50
+      frames:
+        - "Можно я положу цветочек?"
+      frames_en:
+        - "Can I put down a flower?"
+    - weight: 50
+      frames:
+        - "Свечки красивые, но грустные."
+      frames_en:
+        - "The candles are pretty, but sad."
+    - weight: 50
+      frames:
+        - "Я буду вести себя тихо-тихо."
+      frames_en:
+        - "I'll be really, really quiet."
+    - weight: 50
+      frames:
+        - "Мама плачет. Я её обниму."
+      frames_en:
+        - "Mom is crying. I'll give her a hug."
+    - weight: 50
+      frames:
+        - "Огонь греет, а внутри всё равно холодно."
+      frames_en:
+        - "The fire is warm, but inside I still feel cold."
+    - weight: 50
+      frames:
+        - "А грусть пройдёт? Когда-нибудь?"
+      frames_en:
+        - "Will the sad go away? Someday?"
+    - weight: 50
+      frames:
+        - "Я буду помнить. Обещаю."
+      frames_en:
+        - "I'll remember. I promise."
+
+- key: G17
+  id: kid_tocsin_hide
+  title: "Kid Hides From the Tocsin"
+  category: child
+  status: active
+  trigger: "the Tocsin Golem appears or changes phase; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Великан проснулся! Прячемся!"
+      frames_en:
+        - "The giant woke up! Hide!"
+    - weight: 50
+      frames:
+        - "Он такой огромный! Больше дома!"
+      frames_en:
+        - "He's so big! Bigger than a house!"
+    - weight: 50
+      frames:
+        - "Я под одеялом, меня не найдут."
+      frames_en:
+        - "I'm under the blanket, nobody can find me."
+    - weight: 50
+      frames:
+        - "Тихо! Если не шуметь, он уйдёт."
+      frames_en:
+        - "Shhh! If we're quiet, he'll go away."
+    - weight: 50
+      frames:
+        - "Он звенит, как наш колокол, только злой."
+      frames_en:
+        - "He rings like our bell, but angry."
+    - weight: 50
+      frames:
+        - "Мама, а он ест детей?"
+      frames_en:
+        - "Mom, does he eat kids?"
+    - weight: 50
+      frames:
+        - "Герой, побей его! Ну пожалуйста!"
+      frames_en:
+        - "Hero, beat him! Pretty please!"
+    - weight: 50
+      frames:
+        - "Я смотрю в щёлочку. Ой, он смотрит на меня!"
+      frames_en:
+        - "I'm peeking through the crack. Oh no, he's looking at me!"
+    - weight: 50
+      frames:
+        - "Он ломается! Кусочки летят!"
+      frames_en:
+        - "He's breaking! Pieces are flying!"
+    - weight: 50
+      frames:
+        - "Я не плачу, это мне пыль в глаз попала."
+      frames_en:
+        - "I'm not crying, I just got dust in my eye."
+
+- key: G18
+  id: kid_tocsin_cheer
+  title: "Kid Cheers the Tocsin's Fall"
+  category: child
+  status: active
+  trigger: "the Tocsin Golem is beaten or leaves; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ура! Великан упал!"
+      frames_en:
+        - "Hooray! The giant fell down!"
+    - weight: 50
+      frames:
+        - "Ты его победил! Ты лучше всех!"
+      frames_en:
+        - "You beat him! You're the best!"
+    - weight: 50
+      frames:
+        - "Можно мне кусочек колокола на память?"
+      frames_en:
+        - "Can I keep a piece of the bell?"
+    - weight: 50
+      frames:
+        - "Я совсем-совсем не боялся. Почти."
+      frames_en:
+        - "I wasn't scared at all. Almost."
+    - weight: 50
+      frames:
+        - "Теперь можно выходить играть?"
+      frames_en:
+        - "Can we go out and play now?"
+    - weight: 50
+      frames:
+        - "Он ушёл спать. Тише, не будите его."
+      frames_en:
+        - "He went to sleep. Shhh, don't wake him."
+    - weight: 50
+      frames:
+        - "Я буду рассказывать про это всю жизнь!"
+      frames_en:
+        - "I'll tell this story my whole life!"
+    - weight: 50
+      frames:
+        - "Давай ещё раз! Нет, лучше не надо."
+      frames_en:
+        - "Let's do it again! No, actually, let's not."
+
+- key: G19
+  id: kid_build
+  title: "Kid Watches Building"
+  category: child
+  status: active
+  trigger: "a grown-up builds a workshop, house or monument; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Можно я тоже построю? Я умею!"
+      frames_en:
+        - "Can I build too? I know how!"
+    - weight: 50
+      frames:
+        - "Ого, стенка растёт!"
+      frames_en:
+        - "Wow, the wall is growing!"
+    - weight: 50
+      frames:
+        - "А там будет моя комната?"
+      frames_en:
+        - "Will there be a room for me?"
+    - weight: 50
+      frames:
+        - "Папа, ты забыл одну дощечку!"
+      frames_en:
+        - "Dad, you forgot a plank!"
+    - weight: 50
+      frames:
+        - "Когда вырасту, построю замок!"
+      frames_en:
+        - "When I grow up, I'll build a castle!"
+    - weight: 50
+      frames:
+        - "Я подаю кирпичики! Держи!"
+      frames_en:
+        - "I'm handing you the bricks! Here!"
+    - weight: 50
+      frames:
+        - "Тук-тук, молоточек!"
+      frames_en:
+        - "Tap, tap, little hammer!"
+    - weight: 50
+      frames:
+        - "Это будет самый высокий дом!"
+      frames_en:
+        - "This will be the tallest house ever!"
+    - weight: 50
+      frames:
+        - "Я нарисую на стене цветочек. Нельзя? Ладно."
+      frames_en:
+        - "I'll draw a flower on the wall. No? Okay."
+    - weight: 50
+      frames:
+        - "Можно я буду главным строителем?"
+      frames_en:
+        - "Can I be the boss builder?"
+
+- key: G20
+  id: kid_player_dies
+  title: "Kid Sees the Player Die"
+  category: child
+  status: active
+  trigger: "the player dies near the village; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ой! Ты исчез!"
+      frames_en:
+        - "Oh no! You disappeared!"
+    - weight: 50
+      frames:
+        - "Вставай! Ну вставай же!"
+      frames_en:
+        - "Get up! Come on, get up!"
+    - weight: 50
+      frames:
+        - "Ты вернёшься? Герои всегда возвращаются!"
+      frames_en:
+        - "Will you come back? Heroes always come back!"
+    - weight: 50
+      frames:
+        - "Я подержу твои вещи, пока тебя нет."
+      frames_en:
+        - "I'll hold onto your stuff while you're gone."
+    - weight: 50
+      frames:
+        - "Это была не очень хорошая идея."
+      frames_en:
+        - "That wasn't a very good idea."
+    - weight: 50
+      frames:
+        - "Мама, герой опять упал!"
+      frames_en:
+        - "Mom, the hero fell down again!"
+    - weight: 50
+      frames:
+        - "Я положу тебе цветочек на подушку."
+      frames_en:
+        - "I'll put a flower on your pillow."
+    - weight: 50
+      frames:
+        - "В следующий раз будь осторожнее, ладно?"
+      frames_en:
+        - "Be more careful next time, okay?"
+
+- key: G21
+  id: kid_play
+  title: "Kid Plays"
+  category: child
+  status: active
+  trigger: "a child walks around in the daytime"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Догони меня! Не догонишь!"
+      frames_en:
+        - "Catch me! You can't catch me!"
+    - weight: 50
+      frames:
+        - "Я рыцарь, а эта палка мой меч!"
+      frames_en:
+        - "I'm a knight, and this stick is my sword!"
+    - weight: 50
+      frames:
+        - "Раз, два, три, четыре, пять, я иду искать!"
+      frames_en:
+        - "Ready or not, here I come!"
+    - weight: 50
+      frames:
+        - "Пол это лава! Не наступай!"
+      frames_en:
+        - "The floor is lava! Don't step on it!"
+    - weight: 50
+      frames:
+        - "Я нашёл жука! Его зовут Боря."
+      frames_en:
+        - "I found a bug! His name is Bob."
+    - weight: 50
+      frames:
+        - "Ля-ля-ля, я пою песенку!"
+      frames_en:
+        - "La, la, la, I'm singing a song!"
+    - weight: 50
+      frames:
+        - "Смотри, как я умею прыгать!"
+      frames_en:
+        - "Look how I can jump!"
+    - weight: 50
+      frames:
+        - "Давай играть в торговцев!"
+      frames_en:
+        - "Let's play shopkeepers!"
+    - weight: 50
+      frames:
+        - "Я самый быстрый в деревне!"
+      frames_en:
+        - "I'm the fastest in the village!"
+    - weight: 50
+      frames:
+        - "Это мой секретный штаб. Никому не говори."
+      frames_en:
+        - "This is my secret base. Don't tell anyone."
+    - weight: 50
+      frames:
+        - "Я собираю камушки. У меня уже три!"
+      frames_en:
+        - "I'm collecting pebbles. I already have three!"
+    - weight: 50
+      frames:
+        - "Кто последний, тот тухлое яйцо!"
+      frames_en:
+        - "Last one there is a rotten egg!"
+    - weight: 50
+      frames:
+        - "Я сегодня буду драконом. Р-р-р!"
+      frames_en:
+        - "Today I'm a dragon. Rawr!"
+    - weight: 50
+      frames:
+        - "Строю домик из палочек. Будешь моим соседом?"
+      frames_en:
+        - "I'm building a house out of sticks. Want to be my neighbour?"
+
+- key: G22
+  id: kid_bedtime
+  title: "Kid Bedtime"
+  category: child
+  status: active
+  trigger: "a child walks around in the evening"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ну ещё пять минуточек!"
+      frames_en:
+        - "Just five more minutes!"
+    - weight: 50
+      frames:
+        - "Я не хочу спать. Ни капельки. Зева-аю."
+      frames_en:
+        - "I'm not sleepy. Not even a bit. Yaaawn."
+    - weight: 50
+      frames:
+        - "Мама, расскажи сказку!"
+      frames_en:
+        - "Mom, tell me a story!"
+    - weight: 50
+      frames:
+        - "А под кроватью никого нет?"
+      frames_en:
+        - "There's nobody under the bed, right?"
+    - weight: 50
+      frames:
+        - "Буду считать звёзды, пока не усну. Одна... две..."
+      frames_en:
+        - "I'll count the stars until I fall asleep. One... two..."
+    - weight: 50
+      frames:
+        - "Можно я возьму с собой котика?"
+      frames_en:
+        - "Can I take the kitty to bed?"
+    - weight: 50
+      frames:
+        - "Я буду спать с открытыми глазами. Чтобы видеть монстров."
+      frames_en:
+        - "I'll sleep with my eyes open. To watch for monsters."
+    - weight: 50
+      frames:
+        - "Уже темно? А я только начал играть!"
+      frames_en:
+        - "It's dark already? I just started playing!"
+    - weight: 50
+      frames:
+        - "Оставьте свет, пожалуйста."
+      frames_en:
+        - "Leave the light on, please."
+    - weight: 50
+      frames:
+        - "Мне приснится дракон. Хороший дракон."
+      frames_en:
+        - "I'm going to dream about a dragon. A nice one."
+
+- key: G23
+  id: kid_morning
+  title: "Kid Says Good Morning"
+  category: child
+  status: active
+  trigger: "a grown-up greets the morning; a child nearby follows"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Доброе утро, солнышко!"
+      frames_en:
+        - "Good morning, sunshine!"
+    - weight: 50
+      frames:
+        - "Я уже проснулся! Пошли играть!"
+      frames_en:
+        - "I'm awake! Let's go play!"
+    - weight: 50
+      frames:
+        - "А на завтрак будут блинчики?"
+      frames_en:
+        - "Are we having pancakes for breakfast?"
+    - weight: 50
+      frames:
+        - "Мне снился большой торт!"
+      frames_en:
+        - "I dreamed about a big cake!"
+    - weight: 50
+      frames:
+        - "Петушок меня разбудил."
+      frames_en:
+        - "The rooster woke me up."
+    - weight: 50
+      frames:
+        - "Я сам оделся! Ну, почти сам."
+      frames_en:
+        - "I got dressed all by myself! Well, almost."
+    - weight: 50
+      frames:
+        - "Новый день, новые приключения!"
+      frames_en:
+        - "A new day, new adventures!"
+    - weight: 50
+      frames:
+        - "Ещё чуточку полежу... Нет, встаю!"
+      frames_en:
+        - "Just a little longer in bed... No, I'm up!"

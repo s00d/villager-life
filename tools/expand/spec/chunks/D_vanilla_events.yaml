@@ -1,0 +1,1310 @@
+# Phase D — NeoForge/vanilla easy events + hold/env
+
+- key: D1
+  title: "Catch a Fish"
+  category: vanilla_event
+  status: active
+  trigger: "ItemFishedEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Улов! Рыба удивлена не меньше вашего. Жарим или отпускаем с нравоучением?"
+      frames_en:
+        - "A catch! The fish is as surprised as you are. Fry it, or let it go with a lecture?"
+    - weight: 50
+      frames:
+        - "Крючок сработал. Деревня аплодирует тихо."
+        - "Громко — только если угостите."
+      frames_en:
+        - "The hook worked. The village applauds quietly."
+        - "Loudly — only if you share."
+    - weight: 50
+      frames:
+        - "Рыбалка у нас — спорт и сплетни сразу."
+        - "Расскажите, какого размера была ложь."
+      frames_en:
+        - "Fishing here is sport and gossip at once."
+        - "Tell us how big the lie was."
+
+- key: D2
+  title: "Tame an Animal"
+  category: vanilla_event
+  status: active
+  trigger: "AnimalTameEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Приручили зверя — теперь у нас общий питомец площади!"
+        - "Только не пускайте его в погреб."
+      frames_en:
+        - "You tamed a beast — now we share a town-square pet!"
+        - "Just keep it out of the cellar."
+    - weight: 50
+      frames:
+        - "Сердечки в глазах и кости в кармане. Классика."
+        - "Мы тоже хотим дружить… за морковь."
+      frames_en:
+        - "Hearts in the eyes and bones in the pocket. Classic."
+        - "We want friendship too… for carrots."
+    - weight: 50
+      frames:
+        - "Новый друг деревни. Старые друзья уже ревнуют."
+        - "Куры особенно."
+      frames_en:
+        - "A new village friend. Old friends are already jealous."
+        - "Especially the chickens."
+
+- key: D3
+  title: "Use a Totem of Undying"
+  category: vanilla_event
+  status: active
+  trigger: "LivingUseTotemEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тотем сверкнул — смерть получила отказ по форме!"
+        - "Мы чуть не оплакали вас заранее."
+      frames_en:
+        - "The totem flashed — death got a formal rejection!"
+        - "We almost mourned you early."
+    - weight: 50
+      frames:
+        - "Бессмертие на секунду. Сплетни — на неделю."
+        - "Расскажете у колокола?"
+      frames_en:
+        - "Immortality for a second. Gossip for a week."
+        - "Tell it by the bell?"
+    - weight: 50
+      frames:
+        - "Вы упали и встали красивее, чем встаёт мэр."
+        - "Завидуем культурно."
+      frames_en:
+        - "You fell and stood up prettier than the mayor rises."
+        - "We envy culturally."
+
+- key: D4
+  title: "Block with a Shield"
+  category: vanilla_event
+  status: active
+  trigger: "LivingShieldBlockEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Щит принял удар — геройство со скрипом дерева."
+        - "Держите крепче, соседи болеют!"
+      frames_en:
+        - "Shield took the hit — heroics with a wooden creak."
+        - "Hold tighter, neighbors are cheering!"
+    - weight: 50
+      frames:
+        - "Блок щитом. Мы спрятались за щитом морально."
+        - "Спасибо за представление."
+      frames_en:
+        - "Blocked with a shield. We hid behind it morally."
+        - "Thanks for the show."
+    - weight: 50
+      frames:
+        - "Удар отскочил. Гордость — нет."
+        - "Зато урок для молодёжи."
+      frames_en:
+        - "The hit bounced. Pride did not."
+        - "But a lesson for the youth."
+
+- key: D5
+  title: "Draw a Bow"
+  category: vanilla_event
+  status: active
+  trigger: "ArrowNockEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тетиву натянули — воробьи уже в отпуске."
+        - "Целитесь мимо окон, пожалуйста."
+      frames_en:
+        - "Bow drawn — sparrows already on vacation."
+        - "Aim past the windows, please."
+    - weight: 50
+      frames:
+        - "Лук смотрит серьёзно. Мы смотрим осторожно."
+        - "Стрела — не сплетня, её не вернёшь."
+      frames_en:
+        - "The bow looks serious. We look careful."
+        - "An arrow is not gossip; you cannot take it back."
+    - weight: 50
+      frames:
+        - "Натянуто, как нервы деревенского совета. Отпускайте мягче, чем политики."
+      frames_en:
+        - "Tight as the village council's nerves. Let go gentler than politics does."
+
+- key: D6
+  title: "Use Bone Meal"
+  category: vanilla_event
+  status: active
+  trigger: "BonemealEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Костная мука — ускоритель сплетен и ростков. Грядка благодарит. Соседи подозревают магию."
+      frames_en:
+        - "Bone meal — accelerator for gossip and sprouts. The bed thanks you. Neighbors suspect magic."
+    - weight: 50
+      frames:
+        - "Посыпали — и жизнь позеленела быстрее отчёта мэра."
+        - "Можно и нам немного оптимизма?"
+      frames_en:
+        - "You sprinkled — and life greened faster than the mayor's report."
+        - "May we have a little optimism too?"
+    - weight: 50
+      frames:
+        - "Удобрение с характером. Растения уже важничают."
+        - "Мы тоже, чуть-чуть."
+      frames_en:
+        - "Fertilizer with attitude. Plants already strut."
+        - "So do we, a little."
+
+- key: D7
+  title: "Repair on an Anvil"
+  category: vanilla_event
+  status: active
+  trigger: "AnvilRepairEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Наковальня звенит — уровни плачут. Зато меч снова вежливый."
+      frames_en:
+        - "The anvil clangs — your levels weep. But the sword is polite again."
+    - weight: 50
+      frames:
+        - "Починка со стилем и со звуком соседа в шесть утра."
+        - "Мы не жалуемся. Почти."
+      frames_en:
+        - "A stylish repair with a 6 a.m. neighbor soundtrack."
+        - "We are not complaining. Almost."
+    - weight: 50
+      frames:
+        - "Сломали — починили — рассказали. Цикл героя."
+        - "Оставьте нам стружку на память."
+      frames_en:
+        - "Broke — fixed — told the tale. Hero cycle."
+        - "Leave us a scrap for memory."
+
+- key: D8
+  title: "Enchant an Item"
+  category: vanilla_event
+  status: active
+  trigger: "PlayerEnchantItemEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Чары легли на вещь — даже воздух стал умнее."
+        - "Переведите руны на крестьянский!"
+      frames_en:
+        - "Enchantments settled — even the air got smarter."
+        - "Translate the runes to peasant!"
+    - weight: 50
+      frames:
+        - "Стол зачарования шепчет. Мы делаем вид, что поняли."
+        - "Красиво блестит — этого хватит."
+      frames_en:
+        - "The enchanting table whispers. We pretend we understood."
+        - "Pretty shine is enough."
+    - weight: 50
+      frames:
+        - "Магия в предмете, скепсис в нас."
+        - "Проверьте, не кусается ли."
+      frames_en:
+        - "Magic in the item, skepticism in us."
+        - "Check it does not bite."
+
+- key: D9
+  title: "Pick Up XP"
+  category: vanilla_event
+  status: active
+  trigger: "PlayerXpEvent.PickupXp"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Опыт подбираете — мудрость звенит в кармане!"
+        - "Делитесь советом, не только уровнями."
+      frames_en:
+        - "Picking up XP — wisdom jingles in the pocket!"
+        - "Share advice, not only levels."
+    - weight: 50
+      frames:
+        - "Зелёные орбы — валюта героев и зависти."
+        - "Мы завидуем тихо."
+      frames_en:
+        - "Green orbs — currency of heroes and envy."
+        - "We envy quietly."
+    - weight: 50
+      frames:
+        - "Подняли опыт. Опустили скромность."
+        - "Нормально. Мы тоже так умеем… мысленно."
+      frames_en:
+        - "Picked up experience. Dropped modesty."
+        - "Fine. We can do that… mentally."
+
+- key: D10
+  title: "Change Dimension"
+  category: vanilla_event
+  status: active
+  trigger: "PlayerChangedDimensionEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Смена измерения — шляпы придержать, желудки тоже!"
+        - "Пришлите открытку из Незера без лавы."
+      frames_en:
+        - "Dimension change — hold hats and stomachs!"
+        - "Send a Nether postcard without lava."
+    - weight: 50
+      frames:
+        - "Вас не стало здесь, зато стало где-то опаснее."
+        - "Вернитесь с историями, не с криперами."
+      frames_en:
+        - "You vanished here and appeared somewhere worse."
+        - "Return with stories, not creepers."
+    - weight: 50
+      frames:
+        - "Портал забрал гостя. Площадь недосчиталась сплетен."
+        - "Мы подождём… недолго."
+      frames_en:
+        - "The portal took a guest. The square is short on gossip."
+        - "We will wait… briefly."
+
+- key: D11
+  title: "Respawn After Death"
+  category: vanilla_event
+  status: active
+  trigger: "PlayerRespawnEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Снова с нами! Смерть вас недолюбила."
+        - "Расскажете, что видели, пока мы паниковали?"
+      frames_en:
+        - "Back with us! Death did not love you enough."
+        - "Tell what you saw while we panicked?"
+    - weight: 50
+      frames:
+        - "Респаун — лучший фокус площади."
+        - "Только лут в следующий раз прихватите обратно."
+      frames_en:
+        - "Respawn — the square's best magic trick."
+        - "Next time fetch the loot back too."
+    - weight: 50
+      frames:
+        - "Вы вернулись. Куры выдохнули. Мы тоже. В колокол можно не бить."
+      frames_en:
+        - "You're back. The chickens exhaled. So did we. No need to ring the alarm."
+
+- key: D12
+  title: "Take Smelted Items"
+  category: vanilla_event
+  status: active
+  trigger: "ItemSmeltedEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Из печи достали горячее сокровище! Пахнет прогрессом и лёгким подгаром."
+      frames_en:
+        - "A hot treasure out of the furnace! Smells like progress and a little scorch."
+    - weight: 50
+      frames:
+        - "Горячий крафт. Холодные пальцы — ваши проблемы."
+        - "Мы подадим моральную прихватку."
+      frames_en:
+        - "Hot craft. Cold fingers — your problem."
+        - "We offer a moral oven mitt."
+    - weight: 50
+      frames:
+        - "Плавка готова. Зависть только начинается. Поделитесь слитком, будьте человеком."
+      frames_en:
+        - "Smelting done. Envy just starting. Share an ingot, be human."
+
+- key: D13
+  title: "Craft an Item Nearby"
+  category: vanilla_event
+  status: active
+  trigger: "ItemCraftedEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Верстак щёлкнул — родилась новая штуковина!"
+        - "Покажите, мы сделаем умное лицо."
+      frames_en:
+        - "The crafting table clicked — a new thingie was born!"
+        - "Show us, we will make a smart face."
+    - weight: 50
+      frames:
+        - "Крафт на глазах у деревни — театр инженерии."
+        - "Бис, если это еда."
+      frames_en:
+        - "Crafting before the village — engineering theater."
+        - "Encore if it is food."
+    - weight: 50
+      frames:
+        - "Скрафтили. Мы уже придумали, зачем вам это… шучу. Или нет."
+      frames_en:
+        - "Crafted. We already invented why you need it… joking. Or not."
+
+- key: D14
+  title: "Mount a Horse"
+  category: vanilla_event
+  status: active
+  trigger: "EntityMountEvent horse"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "В седло — и пыль столбом, как сплетни! Не топчите грядки галопом."
+      frames_en:
+        - "Into the saddle — dust like gossip! Do not stomp crops at a gallop."
+    - weight: 50
+      frames:
+        - "Конь фыркнул вашими амбициями."
+        - "Мы машем с безопасной бровки."
+      frames_en:
+        - "The horse snorted your ambitions."
+        - "We wave from a safe roadside."
+    - weight: 50
+      frames:
+        - "Кавалерия прибыла. Пехота деревни салютует."
+        - "Салют из лопат."
+      frames_en:
+        - "Cavalry arrived. Village infantry salutes."
+        - "With shovels."
+
+- key: D15
+  title: "Mount a Boat"
+  category: vanilla_event
+  status: active
+  trigger: "EntityMountEvent boat"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "В лодку — капитан площади выходит в рейс!"
+        - "Весла есть? Или надежда?"
+      frames_en:
+        - "Into the boat — square captain sets sail!"
+        - "Got oars? Or hope?"
+    - weight: 50
+      frames:
+        - "Плавучий транспорт. Куры остаются на берегу завидовать."
+        - "Правильно делают."
+      frames_en:
+        - "Floating transport. Chickens stay ashore to envy."
+        - "Smart chickens."
+    - weight: 50
+      frames:
+        - "Сели в лодку. Политика осталась на причале."
+        - "Удачи на волнах лужи."
+      frames_en:
+        - "Boarded the boat. Politics stayed on the pier."
+        - "Luck on puddle waves."
+
+- key: D16
+  title: "Mount a Mob"
+  category: vanilla_event
+  status: active
+  trigger: "EntityMountEvent other"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вы оседлали что-то странное — и нам странно смотреть."
+        - "Держитесь крепче морали!"
+      frames_en:
+        - "You mounted something weird — and we look weird watching."
+        - "Hold onto your morals!"
+    - weight: 50
+      frames:
+        - "Транспорт не из каталога деревни."
+        - "Билеты не продаём, советы — да."
+      frames_en:
+        - "Transport not in the village catalog."
+        - "No tickets, but advice yes."
+    - weight: 50
+      frames:
+        - "Едете верхом на сюрпризе. Мы снимаем шляпы."
+        - "И прячем кур."
+      frames_en:
+        - "Riding a surprise. We tip our hats."
+        - "And hide the chickens."
+
+- key: D17
+  title: "Play a Note Block"
+  category: vanilla_event
+  status: active
+  trigger: "NoteBlockEvent.Play"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Нота из блока — концерт без разрешения мэра!"
+        - "Мы всё равно подпеваем фальшиво."
+      frames_en:
+        - "A note-block note — concert without the mayor's permit!"
+        - "We still sing along off-key."
+    - weight: 50
+      frames:
+        - "Музыка площади. Свиньи в восторге, куры в шоке."
+        - "Ещё раз, только тише… или громче."
+      frames_en:
+        - "Square music. Pigs thrilled, chickens shocked."
+        - "Again, quieter… or louder."
+    - weight: 50
+      frames:
+        - "Звук такой, будто колокол решил сыграть джаз. Одобряем экспериментально."
+      frames_en:
+        - "Sounds like the bell tried jazz. Experimentally approved."
+
+- key: D18
+  title: "Throw an Item"
+  category: vanilla_event
+  status: active
+  trigger: "ItemTossEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Выбросили вещь — рынок слёз и халявы открыт!"
+        - "Мы не подбираем. Почти."
+      frames_en:
+        - "You tossed an item — market of tears and freebies is open!"
+        - "We do not pick it up. Almost."
+    - weight: 50
+      frames:
+        - "Предмет полетел. Достоинство — за ним."
+        - "Поднимите, пока свиньи не написали заявление."
+      frames_en:
+        - "The item flew. Dignity followed."
+        - "Pick it up before pigs file a claim."
+    - weight: 50
+      frames:
+        - "Бросок от сердца… или от переполненного инвентаря."
+        - "Понятно и без слов."
+      frames_en:
+        - "A throw from the heart… or a full inventory."
+        - "Clear without words."
+
+- key: D19
+  title: "Tool Breaks"
+  category: vanilla_event
+  status: active
+  trigger: "PlayerDestroyItemEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Инструмент сломался — минута молчания для рукоятки."
+        - "Запасной есть? Или характер?"
+      frames_en:
+        - "Tool broke — a moment of silence for the handle."
+        - "Got a spare? Or just attitude?"
+    - weight: 50
+      frames:
+        - "Хрусь — и прогресс встал на одной ноге."
+        - "Кузница вас уже вызывает взглядом."
+      frames_en:
+        - "Crack — and progress stands on one leg."
+        - "The forge is already staring at you."
+    - weight: 50
+      frames:
+        - "Сломанный инструмент — лучший учитель терпения."
+        - "И повод зайти к кузнецу с изумрудами."
+      frames_en:
+        - "A broken tool is the best patience teacher."
+        - "And a reason to visit the smith with emeralds."
+
+- key: D20
+  title: "Brew a Potion"
+  category: vanilla_event
+  status: active
+  trigger: "PlayerBrewedPotionEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Зелье готово — запах науки и лёгкой беды."
+        - "Не пейте рядом с колодцем, вдруг сработает дважды."
+      frames_en:
+        - "Potion ready — smell of science and mild trouble."
+        - "Do not drink by the well; it might work twice."
+    - weight: 50
+      frames:
+        - "Варите чудеса. Мы варим сплетни параллельно."
+        - "Обмен рецептами?"
+      frames_en:
+        - "You brew wonders. We brew gossip in parallel."
+        - "Trade recipes?"
+    - weight: 50
+      frames:
+        - "Бутылочка с характером. Этикетку читайте вслух."
+        - "Для храбрости площади."
+      frames_en:
+        - "A bottle with attitude. Read the label aloud."
+        - "For the square's courage."
+
+- key: D21
+  title: "Land a Critical Hit"
+  category: vanilla_event
+  status: active
+  trigger: "CriticalHitEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Крит! Даже воздух сказал: ай. Красиво. Жестоко. Эффективно."
+      frames_en:
+        - "Crit! Even the air said ouch. Pretty. Cruel. Effective."
+    - weight: 50
+      frames:
+        - "Удар с изюминкой. Изюминку мы не просили, но оценили. Продолжайте мимо нас."
+      frames_en:
+        - "A hit with real flair. We did not ask for flair, but we rate it. Keep going past us."
+    - weight: 50
+      frames:
+        - "Критический момент боя и нашего спокойствия."
+        - "Щит деревни — это вы сегодня."
+      frames_en:
+        - "Critical moment for the fight and our calm."
+        - "You are the village shield today."
+
+- key: D22
+  title: "Sweep Attack"
+  category: vanilla_event
+  status: active
+  trigger: "SweepAttackEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Размашистый удар — веер неприятностей для врагов!"
+        - "Для травы тоже, кстати."
+      frames_en:
+        - "A sweep attack — a fan of trouble for foes!"
+        - "For grass too, by the way."
+    - weight: 50
+      frames:
+        - "Взмах как метла героя. Двор чище, монстры нет. Спасибо от забора."
+      frames_en:
+        - "Sweep like a hero's broom. Yard cleaner, monsters not. Thanks from the fence."
+    - weight: 50
+      frames:
+        - "Широкий замах. Узкий шанс увернуться у крипера."
+        - "Мы болеем из укрытия."
+      frames_en:
+        - "Wide swing. Narrow dodge chance for the creeper."
+        - "We cheer from cover."
+
+- key: D23
+  title: "Lightning Hits Nearby"
+  category: vanilla_event
+  status: active
+  trigger: "EntityStruckByLightningEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Молния рядом — волосы и сплетни дыбом!"
+        - "Кто заказывал световое шоу?"
+      frames_en:
+        - "Lightning nearby — hair and gossip stand up!"
+        - "Who ordered the light show?"
+    - weight: 50
+      frames:
+        - "Гром как колокол, только злее."
+        - "Прячьте железо и гордость."
+      frames_en:
+        - "Thunder like the bell, only angrier."
+        - "Hide iron and pride."
+    - weight: 50
+      frames:
+        - "Небо хлопнуло. Мы подпрыгнули синхронно."
+        - "Запишем в хронику: было громко."
+      frames_en:
+        - "The sky clapped. We jumped in sync."
+        - "Chronicle note: it was loud."
+
+- key: D24
+  title: "Animals Have a Baby"
+  category: vanilla_event
+  status: active
+  trigger: "BabyEntitySpawnEvent"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Малыш у животных! Деревня официально в умилении. Имена предлагать будем голосованием."
+      frames_en:
+        - "An animal baby! Village officially melting. We will vote on names."
+    - weight: 50
+      frames:
+        - "Новорождённый хвостик. Сердца растаяли быстрее масла."
+        - "Кормите правильно, герои фермы."
+      frames_en:
+        - "A newborn fluff. Hearts melted faster than butter."
+        - "Feed them right, farm heroes."
+    - weight: 50
+      frames:
+        - "Пополнение в стаде. Налоги радости не берём."
+        - "Только фото на память… глазами."
+      frames_en:
+        - "Herd reinforcement. We do not tax joy."
+        - "Only a mental photo."
+
+- key: D25
+  title: "Thunderstorm"
+  category: vanilla_event
+  status: active
+  trigger: "playerContext weather"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Гроза! Ведра наготове, шляпы тоже."
+        - "И не стойте под деревом с киркой."
+      frames_en:
+        - "Thunderstorm! Buckets ready, hats too."
+        - "And do not stand under a tree with a pickaxe."
+    - weight: 50
+      frames:
+        - "У неба плохое настроение. У нас хорошее — под навесом. Заходите, с крыши почти не капает."
+      frames_en:
+        - "The sky's in a bad mood. Ours is fine — under a roof. Come in, the ceiling barely drips."
+    - weight: 50
+      frames:
+        - "Гром спорит с колоколом. Колокол пока вежливее."
+        - "Прячьте шерсть и нервы."
+      frames_en:
+        - "Thunder argues with the bell. The bell is still politer."
+        - "Hide wool and nerves."
+
+- key: D26
+  title: "Player on Fire"
+  category: vanilla_event
+  status: active
+  trigger: "playerContext onFire"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вы горите — это не новый модный аксессуар!"
+        - "Вода, земля, панда… что угодно, только тушите!"
+      frames_en:
+        - "You are on fire — that is not a fashion accessory!"
+        - "Water, dirt, a panda… anything, just put it out!"
+    - weight: 50
+      frames:
+        - "Огонёк на игроке. Мы уже зовём ведро."
+        - "И моральную поддержку."
+      frames_en:
+        - "A little flame on the player. We already call a bucket."
+        - "And moral support."
+    - weight: 50
+      frames:
+        - "Гореть ярко — это не буквально! Быстро к воде!"
+      frames_en:
+        - "Burning bright is not meant literally! To the water, quick!"
+
+- key: D27
+  title: "Player Swimming"
+  category: vanilla_event
+  status: active
+  trigger: "playerContext swim"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Плаваете — рыбы завидуют стилю."
+        - "Только не пейте лужу, она местная."
+      frames_en:
+        - "Swimming — fish envy the style."
+        - "Just do not drink the puddle; it is local."
+    - weight: 50
+      frames:
+        - "Заплыв героя. Мы сушим полотенца взглядом."
+        - "Вынырните к ужину."
+      frames_en:
+        - "A hero's swim. We dry towels with our eyes."
+        - "Surface by dinner."
+    - weight: 50
+      frames:
+        - "Бульк и достоинство. Совместимо на удивление."
+        - "Берег уже машет."
+      frames_en:
+        - "Glug and dignity. Surprisingly compatible."
+        - "The shore is already waving."
+
+- key: D28
+  title: "Hold a Spyglass"
+  category: vanilla_event
+  status: active
+  trigger: "hold spyglass"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Подзорная труба — теперь вы знаете наши секреты с расстояния!"
+        - "Моргайте реже, мы стесняемся."
+      frames_en:
+        - "A spyglass — now you know our secrets from afar!"
+        - "Blink less, we get shy."
+    - weight: 50
+      frames:
+        - "Смотрите вдаль. Сплетни всё равно ближе."
+        - "Что видно за холмом — кроме наших дел?"
+      frames_en:
+        - "Look far. Gossip is still closer."
+        - "What is past the hill — besides our business?"
+    - weight: 50
+      frames:
+        - "Оптика героя. Мы поправили причёски заранее."
+        - "Спасибо, что предупредили взглядом."
+      frames_en:
+        - "Hero optics. We fixed our hair early."
+        - "Thanks for the warning stare."
+
+- key: D29
+  title: "Hold a Totem"
+  category: vanilla_event
+  status: active
+  trigger: "hold totem"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тотем в руке — карманный план Б против судьбы."
+        - "Не роняйте, он обидчивый."
+      frames_en:
+        - "Totem in hand — a pocket plan B against fate."
+        - "Do not drop it; it gets offended."
+    - weight: 50
+      frames:
+        - "Страховка жизни в кармане. Одобряем паранойю. Золотая предусмотрительность."
+      frames_en:
+        - "Life insurance in your pocket. We approve the paranoia. Golden caution."
+    - weight: 50
+      frames:
+        - "Держите тотем ближе к сердцу и дальше от лавы."
+        - "Мудрость площади."
+      frames_en:
+        - "Keep the totem closer to the heart and farther from lava."
+        - "Square wisdom."
+
+- key: D30
+  title: "Hold a Shield"
+  category: vanilla_event
+  status: active
+  trigger: "hold shield"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Щит наготове — мир через дерево и железо."
+        - "Мы встанем за вами… морально."
+      frames_en:
+        - "Shield ready — peace through wood and iron."
+        - "We will stand behind you… morally."
+    - weight: 50
+      frames:
+        - "Крышка от неприятностей личного размера."
+        - "Красивый герб. Чей?"
+      frames_en:
+        - "A personal lid against trouble."
+        - "Nice emblem. Whose?"
+    - weight: 50
+      frames:
+        - "Щит говорит нет ударам. Мы говорим да герою. Только не бейте им соседей."
+      frames_en:
+        - "The shield says no to hits. We say yes to the hero. Just do not bash neighbors with it."
+
+- key: D31
+  title: "Hold a Map"
+  category: vanilla_event
+  status: active
+  trigger: "hold map"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Карта в руках — вы либо потерялись, либо важны."
+        - "Покажите, где мы нарисованы милыми."
+      frames_en:
+        - "A map in hand — you are either lost or important."
+        - "Show where we are drawn cute."
+    - weight: 50
+      frames:
+        - "Бумага знает больше дорог, чем мэр."
+        - "Не загните угол с нашей деревней!"
+      frames_en:
+        - "Paper knows more roads than the mayor."
+        - "Do not crease the corner with our village!"
+    - weight: 50
+      frames:
+        - "Картография приключений. Мы — стабильная точка дома. Возвращайтесь по линии."
+      frames_en:
+        - "Adventure cartography. We are the stable home dot. Return along the line."
+
+- key: D32
+  title: "Hold an Ender Eye"
+  category: vanilla_event
+  status: active
+  trigger: "hold ender_eye"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Око Эндера смотрит туда, куда нам страшно."
+        - "Бросайте аккуратно, вдруг найдёт нас."
+      frames_en:
+        - "An eye of ender looks where we fear to."
+        - "Toss carefully; it might find us."
+    - weight: 50
+      frames:
+        - "Глаз без лица. Жутковато и полезно."
+        - "Мы моргнули за него."
+      frames_en:
+        - "An eye without a face. Creepy and useful."
+        - "We blinked for it."
+    - weight: 50
+      frames:
+        - "Путеводный кошмар в ладони."
+        - "Удачи в крепости, пишите."
+      frames_en:
+        - "A guiding nightmare in the palm."
+        - "Luck in the fortress; write us."
+
+- key: D33
+  title: "Hold a Book and Quill"
+  category: vanilla_event
+  status: active
+  trigger: "hold book"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Книга и перо — опаснее меча в умелых руках."
+        - "Не пишите про нас гадости… или пишите красиво."
+      frames_en:
+        - "Book and quill — deadlier than a sword in clever hands."
+        - "Do not write mean things about us… or write them pretty."
+    - weight: 50
+      frames:
+        - "Летопись в процессе. Мы позируем скромно."
+        - "Автограф мэра будет дороже."
+      frames_en:
+        - "A chronicle in progress. We pose modestly."
+        - "The mayor's autograph will cost more."
+    - weight: 50
+      frames:
+        - "Чернила пахнут правдой и преувеличением."
+        - "Читайте вслух у костра."
+      frames_en:
+        - "Ink smells like truth and exaggeration."
+        - "Read it aloud by the fire."
+
+- key: D34
+  title: "Hold a Goat Horn"
+  category: vanilla_event
+  status: active
+  trigger: "hold goat_horn"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Козий рог — сигнал к панике или к празднику? Дуйте мягче, куры сердечные."
+      frames_en:
+        - "A goat horn — signal for panic or a party? Blow softer; chickens have hearts."
+    - weight: 50
+      frames:
+        - "Музыкальный инструмент природы. Соседи уже в курсе. Буквально."
+      frames_en:
+        - "Nature's musical instrument. The neighbors already know. Literally."
+    - weight: 50
+      frames:
+        - "Гудок судьбы. Мы прикрыли уши и гордость. Ещё раз — и колокол заревнует."
+      frames_en:
+        - "Honk of fate. We covered ears and pride. Once more and the bell gets jealous."
+
+- key: D35
+  title: "Hold a Brush"
+  category: vanilla_event
+  status: active
+  trigger: "hold brush"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кисть археолога — вы ищете прошлое в грязи."
+        - "Нашли наши старые долги? Верните молча."
+      frames_en:
+        - "An archaeology brush — you dig the past from dirt."
+        - "Found our old debts? Return them quietly."
+    - weight: 50
+      frames:
+        - "Чистите историю. Мы подметём настоящее."
+        - "Находки делите по-честному."
+      frames_en:
+        - "Cleaning history. We will sweep the present."
+        - "Share finds fairly."
+    - weight: 50
+      frames:
+        - "Щёточка судьбы. Пыль веков на сапогах."
+        - "Расскажите, что шепнул песок."
+      frames_en:
+        - "Brush of fate. Centuries of dust on boots."
+        - "Tell what the sand whispered."
+
+- key: D36
+  title: "Hold a Recovery Compass"
+  category: vanilla_event
+  status: active
+  trigger: "hold recovery_compass"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Компас восстановления — путь к месту, где вас не стало."
+        - "Мрачно. Полезно. Очень вы."
+      frames_en:
+        - "Recovery compass — path to where you stopped being."
+        - "Grim. Useful. Very you."
+    - weight: 50
+      frames:
+        - "Стрелка помнит вашу смерть лучше друзей."
+        - "Мы помним ужин. Приоритеты."
+      frames_en:
+        - "The needle remembers your death better than friends."
+        - "We remember dinner. Priorities."
+    - weight: 50
+      frames:
+        - "Навигатор по собственному концу. Философский гаджет."
+        - "Только вернитесь живыми в этот раз."
+      frames_en:
+        - "A navigator to your own ending. Philosophical gadget."
+        - "Just come back alive this time."
+
+- key: D37
+  title: "Mine Diamond Ore"
+  category: vanilla_event
+  status: active
+  trigger: "break diamond_ore"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Алмазы! Деревня внезапно стала вашим лучшим другом."
+        - "Делите блеск, не только взгляды."
+      frames_en:
+        - "Diamonds! The village suddenly became your best friend."
+        - "Share the sparkle, not only stares."
+    - weight: 50
+      frames:
+        - "Синий камень счастья. Кирка устала красиво."
+        - "Мы уже считаем, сколько заборов можно… шутка."
+      frames_en:
+        - "Blue stone of happiness. The pickaxe tired prettily."
+        - "We already count how many fences… joke."
+    - weight: 50
+      frames:
+        - "Находка века площади. Запишем в хронику крупно."
+        - "Автограф на слитке?"
+      frames_en:
+        - "Find of the square's century. Chronicle it big."
+        - "Autograph on the ingot?"
+
+- key: D38
+  title: "Mine Ancient Debris"
+  category: vanilla_event
+  status: active
+  trigger: "break ancient_debris"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Древние обломки — пахнет Незером и важностью. Только не плавьте у пекарни, пожалуйста."
+      frames_en:
+        - "Ancient debris — smells of the Nether and importance. Just don't smelt it by the bakery, please."
+    - weight: 50
+      frames:
+        - "Мусор богов. Сокровище упрямцев."
+        - "Мы отойдём от искр."
+      frames_en:
+        - "Gods' scrap. Stubborn folks' treasure."
+        - "We will step away from sparks."
+    - weight: 50
+      frames:
+        - "Добыли то, что земля прятала специально."
+        - "Шахтёрский респект от площади."
+      frames_en:
+        - "You mined what the ground hid on purpose."
+        - "Miner respect from the square."
+
+- key: D39
+  title: "Mine Emerald Ore"
+  category: vanilla_event
+  status: active
+  trigger: "break emerald_ore"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Изумрудная жила — валюта наших сердец и цен!"
+        - "Торговцы уже строят глазки."
+      frames_en:
+        - "Emerald ore — currency of our hearts and prices!"
+        - "Traders already make eyes."
+    - weight: 50
+      frames:
+        - "Зелёный блеск экономики. Карманы запели."
+        - "Скидка жителям? Хотя бы улыбка."
+      frames_en:
+        - "Green shine of economy. Pockets sang."
+        - "Discount for villagers? At least a smile."
+    - weight: 50
+      frames:
+        - "Руда сделок. Мы готовы торговать взглядами. И морковью, если надо."
+      frames_en:
+        - "Ore of deals. We are ready to trade stares. And carrots if needed."
+
+- key: D40
+  title: "Fill a Bucket"
+  category: vanilla_event
+  status: active
+  trigger: "use empty bucket"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ведро наполнили — прогресс со всплеском!"
+        - "Не перепутайте воду и лаву. Опять."
+      frames_en:
+        - "Bucket filled — progress with a splash!"
+        - "Do not mix water and lava. Again."
+    - weight: 50
+      frames:
+        - "Зачерпнули стихию. Стихия чуть обиделась."
+        - "Несите аккуратно мимо нас."
+      frames_en:
+        - "You scooped an element. The element is mildly offended."
+        - "Carry carefully past us."
+    - weight: 50
+      frames:
+        - "Полное ведро — полные планы. Мы за интригу. Только не лейте на крыльцо."
+      frames_en:
+        - "A full bucket — full plans. We love the intrigue. Just do not pour on the porch."
+
+- key: D41
+  title: "Milk a Cow"
+  category: vanilla_event
+  status: active
+  trigger: "entity interact cow+bucket"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Молоко у коровы — дипломатия фермы работает!"
+        - "Спасибо бурёнке от всего желудка."
+      frames_en:
+        - "Cow milked — farm diplomacy works!"
+        - "Thanks to the cow from the whole stomach."
+    - weight: 50
+      frames:
+        - "Ведро молока. Печенье где-то рядом по чутью."
+        - "Делитесь, герои пастбища."
+      frames_en:
+        - "A bucket of milk. Cookies sense nearby."
+        - "Share, pasture heroes."
+    - weight: 50
+      frames:
+        - "Доение со свидетелями. Корова сохраняет достоинство."
+        - "Мы тоже пытаемся."
+      frames_en:
+        - "Milking with witnesses. The cow keeps dignity."
+        - "We try too."
+
+- key: D42
+  title: "Place a Torch"
+  category: vanilla_event
+  status: active
+  trigger: "place torch/lantern"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Факел поставили — тьма подала жалобу."
+        - "Мы подписываем одобрение света."
+      frames_en:
+        - "Torch placed — darkness filed a complaint."
+        - "We sign approval for light."
+    - weight: 50
+      frames:
+        - "Огонёк цивилизации на стене. Монстры недовольны, а мы — очень даже."
+      frames_en:
+        - "A spark of civilization on the wall. Monsters will mind; we will not."
+    - weight: 50
+      frames:
+        - "Свет без бюрократии. Редкость."
+        - "Ещё один у колодца, пожалуйста."
+      frames_en:
+        - "Light without bureaucracy. Rare."
+        - "One more by the well, please."
+
+- key: D43
+  title: "Throw an Ender Eye"
+  category: vanilla_event
+  status: active
+  trigger: "use ender_eye"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Око полетело искать беду — классика героев!"
+        - "Мы машем и делаем шаг назад."
+      frames_en:
+        - "The eye flew to find trouble — hero classic!"
+        - "We wave and step back."
+    - weight: 50
+      frames:
+        - "Бросок в сторону Энда. Ужин подождёт… наверное. Вернитесь, пока настроение не испортилось."
+      frames_en:
+        - "A toss toward the End. Dinner will wait… probably. Come back before the mood goes sour."
+    - weight: 50
+      frames:
+        - "Глаз улетел. Тайна ушла за ним."
+        - "Рассказ обязателен по возвращении."
+      frames_en:
+        - "The eye left. The secret left with it."
+        - "A story is mandatory on return."
+
+- key: D44
+  title: "Drink Milk"
+  category: vanilla_event
+  status: active
+  trigger: "use milk_bucket"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Молоко выпили — все эффекты испугались и убежали!"
+        - "Включая хорошие. Жаль."
+      frames_en:
+        - "Milk drunk — all effects panicked and fled!"
+        - "Including the good ones. Pity."
+    - weight: 50
+      frames:
+        - "Белый антидот судьбы. Усы в молоке — опционально."
+        - "Мы уважаем выбор."
+      frames_en:
+        - "White antidote of fate. Milk mustache optional."
+        - "We respect the choice."
+    - weight: 50
+      frames:
+        - "Глоток спокойствия. Зелья в отставке."
+        - "Печенье выдадим за храбрость."
+      frames_en:
+        - "A sip of calm. Potions retired."
+        - "Cookies for bravery."
+
+- key: D45
+  title: "Drink Honey"
+  category: vanilla_event
+  status: active
+  trigger: "use honey_bottle"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Мёд — сладкая дипломатия в горле."
+        - "Липко, но душевно."
+      frames_en:
+        - "Honey — sweet diplomacy in the throat."
+        - "Sticky but heartfelt."
+    - weight: 50
+      frames:
+        - "Пчёлы где-то гордятся. Мы тоже, за чужой счёт."
+        - "Ещё глоток — и мэр улыбнётся."
+      frames_en:
+        - "Bees are proud somewhere. So are we, on your dime."
+        - "One more sip and the mayor smiles."
+    - weight: 50
+      frames:
+        - "Сладость против яда мира."
+        - "Оставьте каплю на хлеб соседу."
+      frames_en:
+        - "Sweetness against the world's poison."
+        - "Leave a drop on bread for a neighbor."
+
+- key: D46
+  title: "Blow a Goat Horn"
+  category: vanilla_event
+  status: active
+  trigger: "use goat_horn"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рог протрубил — деревня в боевой готовности… к чаю."
+        - "В следующий раз предупредите расписанием."
+      frames_en:
+        - "Horn blasted — village combat-ready… for tea."
+        - "Warn us with a schedule next time."
+    - weight: 50
+      frames:
+        - "Сигнал услышан даже под землёй."
+        - "Кроты подали жалобу, шутим."
+      frames_en:
+        - "Signal heard even underground."
+        - "Moles filed a complaint, joking."
+    - weight: 50
+      frames:
+        - "Громкий музыкальный аргумент."
+        - "Мы сдаёмся и приносим печенье."
+      frames_en:
+        - "A loud musical argument."
+        - "We surrender and bring cookies."
+
+- key: D47
+  title: "Feed an Animal"
+  category: vanilla_event
+  status: active
+  trigger: "entity interact food"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кормите животных — карма фермы растёт на глазах!"
+        - "Мы тоже голодные, кстати… шутка. Почти."
+      frames_en:
+        - "Feeding animals — farm karma rises visibly!"
+        - "We are hungry too… joke. Almost."
+    - weight: 50
+      frames:
+        - "Сердечки над мордой. Дипломатия работает."
+        - "Оставьте горсть и для кур площади."
+      frames_en:
+        - "Hearts over a snout. Diplomacy works."
+        - "Leave a handful for square chickens too."
+    - weight: 50
+      frames:
+        - "Угощение принято. Хвост виляет отчётностью."
+        - "Герой пастбища дня — вы."
+      frames_en:
+        - "Treat accepted. Tail wags the report."
+        - "Pasture hero of the day — you."

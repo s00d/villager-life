@@ -1,0 +1,6 @@
+# Apple Silicon / MLX: Fish S2 Pro TTS and Whisper for the clipped-ending check
+# Python >= 3.13 (mlx-speech): python3.13 -m venv .venv
+mlx-speech==0.5.4
+mlx-whisper>=0.4.3
+soundfile>=0.12
+numpy>=1.26

@@ -1,0 +1,490 @@
+# Phase N — generations: hamlets, the pantry, coming of age, mourning, godparents, quarrels, candles (speaker woman).
+
+- key: N15
+  id: n_w_leave
+  title: "Woman Leaves for a Hamlet"
+  category: home
+  status: active
+  trigger: "a young woman leaves the full village to found a hamlet"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Пора мне свить своё гнёздышко. Подальше отсюда."
+      frames_en:
+        - "Time I built a nest of my own. Somewhere further off."
+    - weight: 50
+      frames:
+        - "Возьму с собой только самое нужное. И его."
+      frames_en:
+        - "I'll take only what I need. And him."
+    - weight: 50
+      frames:
+        - "Ох, сколько дорог! Какую же выбрать?"
+      frames_en:
+        - "Oh, so many roads! Which one to take?"
+    - weight: 50
+      frames:
+        - "Не скучайте! Я буду присылать пироги. Как-нибудь."
+      frames_en:
+        - "Don't miss me! I'll send pies. Somehow."
+    - weight: 50
+      frames:
+        - "Там, где мы встанем, будет новая деревня."
+      frames_en:
+        - "Wherever we stop, there'll be a new village."
+- key: N16
+  id: n_w_goodbye
+  title: "Woman Says Goodbye"
+  category: home
+  status: active
+  trigger: "a woman sees off villagers leaving for a hamlet"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Берегите себя в дороге!"
+      frames_en:
+        - "Take care on the road!"
+    - weight: 50
+      frames:
+        - "Ой, я вам пирожков в дорогу не напекла!"
+      frames_en:
+        - "Oh, I didn't bake you any pies for the road!"
+    - weight: 50
+      frames:
+        - "Пишите! Ну, или кричите погромче."
+      frames_en:
+        - "Write! Or just shout really loud."
+    - weight: 50
+      frames:
+        - "Новое место — новое счастье."
+      frames_en:
+        - "A new place, a new happiness."
+- key: N17
+  id: n_w_settle
+  title: "Woman Settles the Hamlet"
+  category: home
+  status: active
+  trigger: "a woman settler has arrived at the new hamlet"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Тут мы и будем жить. Красота!"
+      frames_en:
+        - "This is where we'll live. Lovely!"
+    - weight: 50
+      frames:
+        - "Сначала — занавески. Потом — всё остальное."
+      frames_en:
+        - "Curtains first. Everything else after."
+    - weight: 50
+      frames:
+        - "Маленький хутор, а уже как дома."
+      frames_en:
+        - "A little hamlet, and it already feels like home."
+- key: N18
+  id: n_w_pantry_empty
+  title: "Woman Pantry Empty"
+  category: home
+  status: active
+  trigger: "a wife finds the pantry empty at mealtime"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "В кладовой шаром покати. Из чего готовить-то?"
+      frames_en:
+        - "The pantry's bare. What am I supposed to cook with?"
+    - weight: 50
+      frames:
+        - "Ни крошки! Сегодня ужина не будет."
+      frames_en:
+        - "Not a crumb! No dinner tonight."
+    - weight: 50
+      frames:
+        - "Надо сходить к фермеру. А то так и с голоду недолго."
+      frames_en:
+        - "I must go to the farmer. Or we'll go hungry."
+    - weight: 50
+      frames:
+        - "Кто съел все припасы? Признавайтесь!"
+      frames_en:
+        - "Who ate all the supplies? Own up!"
+    - weight: 50
+      frames:
+        - "Пустой ящик — пустые животы."
+      frames_en:
+        - "An empty crate means empty bellies."
+- key: N19
+  id: n_w_fetch
+  title: "Woman Fetches Food"
+  category: home
+  status: active
+  trigger: "a wife goes to the farmer's or fisher's chest for food"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Схожу за продуктами, пока всё не разобрали."
+      frames_en:
+        - "I'll fetch some food before it's all gone."
+    - weight: 50
+      frames:
+        - "Посмотрим, что у соседей уродилось."
+      frames_en:
+        - "Let's see what the neighbours have grown."
+    - weight: 50
+      frames:
+        - "Немного хлеба, немного рыбы — и ужин готов."
+      frames_en:
+        - "A little bread, a little fish, and dinner's ready."
+    - weight: 50
+      frames:
+        - "Сосед, я возьму чуть-чуть? Спасибо!"
+      frames_en:
+        - "Neighbour, may I take a little? Thank you!"
+    - weight: 50
+      frames:
+        - "Хозяйка без припасов — не хозяйка."
+      frames_en:
+        - "A housewife without supplies is no housewife."
+- key: N20
+  id: n_w_fill
+  title: "Woman Fills the Pantry"
+  category: home
+  status: active
+  trigger: "a wife puts food into the family pantry"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Вот теперь в кладовой порядок."
+      frames_en:
+        - "Now the pantry's in order."
+    - weight: 50
+      frames:
+        - "Полный ящик — спокойная душа."
+      frames_en:
+        - "A full crate, a calm heart."
+    - weight: 50
+      frames:
+        - "Этого на пару дней хватит. Если муж не доберётся."
+      frames_en:
+        - "That'll last a couple of days. If my husband doesn't find it."
+    - weight: 50
+      frames:
+        - "Всё по полочкам, всё на месте."
+      frames_en:
+        - "Everything on its shelf, everything in place."
+- key: N21
+  id: n_w_proud
+  title: "Woman Proud of Her Child"
+  category: home
+  status: active
+  trigger: "a mother is proud of her child coming of age"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Моя кровиночка выросла!"
+      frames_en:
+        - "My little one has grown up!"
+    - weight: 50
+      frames:
+        - "Ешь торт, ешь. Взрослым тоже можно."
+      frames_en:
+        - "Eat the cake, go on. Grown-ups can too."
+    - weight: 50
+      frames:
+        - "Я так тобой горжусь, что сейчас заплачу."
+      frames_en:
+        - "I'm so proud of you I'm about to cry."
+    - weight: 50
+      frames:
+        - "Ну вот, теперь и мне можно отдохнуть. Нет? Ладно."
+      frames_en:
+        - "There, now I can rest too. No? All right."
+    - weight: 50
+      frames:
+        - "Будь умницей. И заходи почаще."
+      frames_en:
+        - "Be good. And come by often."
+- key: N22
+  id: n_w_mourn
+  title: "Woman Mourns"
+  category: home
+  status: active
+  trigger: "a woman mourns at the funeral of family"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Как же так... Ещё вчера ты был рядом."
+      frames_en:
+        - "How can it be... Only yesterday you were here."
+    - weight: 50
+      frames:
+        - "Я сохраню всё, как было при тебе."
+      frames_en:
+        - "I'll keep everything as it was with you."
+    - weight: 50
+      frames:
+        - "Спи спокойно, родной."
+      frames_en:
+        - "Rest in peace, my dear."
+    - weight: 50
+      frames:
+        - "Ты научил меня быть сильной. Попробую."
+      frames_en:
+        - "You taught me to be strong. I'll try."
+    - weight: 50
+      frames:
+        - "Цветы будут всегда. Обещаю."
+      frames_en:
+        - "There'll always be flowers. I promise."
+- key: N23
+  id: n_w_grave
+  title: "Woman Visits the Grave"
+  category: home
+  status: active
+  trigger: "a widow visits her late husband's grave"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Здравствуй, мой хороший. Я пришла."
+      frames_en:
+        - "Hello, my love. I've come."
+    - weight: 50
+      frames:
+        - "Дома всё по-старому. Только тебя не хватает."
+      frames_en:
+        - "Everything at home is as it was. Only you are missing."
+    - weight: 50
+      frames:
+        - "Принесла тебе цветов. Твоих любимых."
+      frames_en:
+        - "I've brought you flowers. Your favourites."
+    - weight: 50
+      frames:
+        - "Дети помнят тебя. И я помню."
+      frames_en:
+        - "The children remember you. And so do I."
+- key: N24
+  id: n_w_godparent
+  title: "Woman Thanks the Godparent"
+  category: home
+  status: active
+  trigger: "a mother thanks the player who named her baby"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Какое чудесное имя! Будешь крёстным."
+      frames_en:
+        - "What a wonderful name! You'll be the godparent."
+    - weight: 50
+      frames:
+        - "Теперь ты почти член семьи."
+      frames_en:
+        - "Now you're almost family."
+    - weight: 50
+      frames:
+        - "Малыш будет носить это имя с гордостью."
+      frames_en:
+        - "The little one will wear that name with pride."
+    - weight: 50
+      frames:
+        - "Заходи к нам. Крёстных у нас кормят."
+      frames_en:
+        - "Come and see us. We feed godparents here."
+- key: N25
+  id: n_w_scold
+  title: "Woman Scolds"
+  category: home
+  status: active
+  trigger: "a wife scolds her husband in a quarrel"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "А кто обещал принести продуктов? Кто, я спрашиваю?"
+      frames_en:
+        - "And who promised to bring food? Who, I ask you?"
+    - weight: 50
+      frames:
+        - "Опять весь день пропадал!"
+      frames_en:
+        - "Gone all day again!"
+    - weight: 50
+      frames:
+        - "Я тебе не служанка!"
+      frames_en:
+        - "I'm not your servant!"
+    - weight: 50
+      frames:
+        - "Вот и ужинай теперь сам! Если найдёшь чем."
+      frames_en:
+        - "Then make your own dinner! If you can find anything."
+    - weight: 50
+      frames:
+        - "И не смотри на меня так."
+      frames_en:
+        - "And don't look at me like that."
+- key: N26
+  id: n_w_makeup
+  title: "Woman Makes Up"
+  category: home
+  status: active
+  trigger: "a wife makes up with her husband"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ну ладно, мир. Но в последний раз!"
+      frames_en:
+        - "All right, peace. But this is the last time!"
+    - weight: 50
+      frames:
+        - "Дурачок ты мой."
+      frames_en:
+        - "You silly thing."
+    - weight: 50
+      frames:
+        - "Пойдём домой. Я что-нибудь приготовлю."
+      frames_en:
+        - "Let's go home. I'll make something."
+    - weight: 50
+      frames:
+        - "Цветы — это мило. Прощаю."
+      frames_en:
+        - "Flowers are sweet. You're forgiven."
+- key: N27
+  id: n_w_candle
+  title: "Woman Lights the Candle"
+  category: home
+  status: active
+  trigger: "a wife lights the candle by the bed in the evening"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Зажгу свечу, чтобы в окнах было светло."
+      frames_en:
+        - "I'll light a candle so the windows glow."
+    - weight: 50
+      frames:
+        - "Вечер. Пора домой, все."
+      frames_en:
+        - "Evening. Time to come home, everyone."
+    - weight: 50
+      frames:
+        - "Пусть огонёк горит — так уютнее."
+      frames_en:
+        - "Let the little flame burn. It's cosier."
+    - weight: 50
+      frames:
+        - "Свеча горит — значит, дома ждут."
+      frames_en:
+        - "A candle burning means someone's waiting at home."
+- key: N28
+  id: n_young_woman
+  title: "Young Woman Comes of Age"
+  category: home
+  status: active
+  trigger: "a daughter comes of age at her party"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Я взрослая! Теперь мне можно задерживаться допоздна!"
+      frames_en:
+        - "I'm grown up! Now I can stay out late!"
+    - weight: 50
+      frames:
+        - "Эта свечка для меня? Тогда загадаю что-то очень большое."
+      frames_en:
+        - "Is that candle for me? Then I'm making a very big wish."
+    - weight: 50
+      frames:
+        - "Спасибо, мама. Спасибо, папа. Я вас люблю."
+      frames_en:
+        - "Thank you, Mum. Thank you, Dad. I love you."
+    - weight: 50
+      frames:
+        - "Ну что, где тут выдают свой дом?"
+      frames_en:
+        - "So, where do they hand out houses of your own?"
+    - weight: 50
+      frames:
+        - "Как же быстро всё! Только вчера в куклы играла."
+      frames_en:
+        - "It all went so fast! Only yesterday I played with dolls."
+- key: N29
+  id: n_w_elder_story
+  title: "Elder Woman Tells a Story"
+  category: home
+  status: active
+  trigger: "an old woman tells the children a story"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Подходите, детки. Бабушка расскажет сказку."
+      frames_en:
+        - "Come here, children. Granny will tell you a tale."
+    - weight: 50
+      frames:
+        - "Когда я была маленькой, ночью по деревне ходили зомби. Но мы не боялись!"
+      frames_en:
+        - "When I was little, zombies walked the village at night. But we weren't afraid!"
+    - weight: 50
+      frames:
+        - "Самое главное в жизни — тёплый дом и добрые соседи."
+      frames_en:
+        - "The most important things in life are a warm home and kind neighbours."
+    - weight: 50
+      frames:
+        - "Мой первый пирог сгорел. А второй — нет. Вот и вся мудрость."
+      frames_en:
+        - "My first pie burned. The second didn't. That's all the wisdom there is."
+    - weight: 50
+      frames:
+        - "Не дёргайте друг друга за косички. А то расскажу маме."
+      frames_en:
+        - "Don't pull each other's braids. Or I'll tell your mother."
+    - weight: 50
+      frames:
+        - "Ох, старость — не радость. Но с вами — радость."
+      frames_en:
+        - "Oh, old age is no joy. But with you it is."
+- key: N30
+  id: n_w_funeral
+  title: "Woman Funeral Words"
+  category: home
+  status: active
+  trigger: "the eldest woman says a few words at a funeral"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Светлая память. Мы тебя не забудем."
+      frames_en:
+        - "Bright be your memory. We won't forget you."
+    - weight: 50
+      frames:
+        - "Деревня стала меньше на одно доброе сердце."
+      frames_en:
+        - "The village is one kind heart smaller."
+    - weight: 50
+      frames:
+        - "Спи спокойно. Мы присмотрим за твоими."
+      frames_en:
+        - "Rest in peace. We'll look after yours."
+    - weight: 50
+      frames:
+        - "Пусть цветы у камня не вянут."
+      frames_en:
+        - "May the flowers by the stone never fade."

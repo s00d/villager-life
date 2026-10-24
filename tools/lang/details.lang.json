@@ -1,0 +1,40 @@
+{
+  "en": {
+    "item.villager_life.hand_cart": "Hand Cart",
+    "entity.villager_life.hand_cart": "Hand Cart",
+    "entity.villager_life.seat": "Seat",
+    "entity.villager_life.hand_cart.empty": "An empty hand cart",
+    "entity.villager_life.hand_cart.load": "A hand cart carrying %s goods, mostly %s",
+    "block.villager_life.cooking_pot": "Cooking Pot",
+    "block.villager_life.market_crate": "Market Crate",
+    "block.villager_life.door_bell": "Door Bell",
+    "block.villager_life.shop_sign": "Hanging Shop Sign",
+    "tooltip.villager_life.town_decor": "Town decor",
+    "subtitles.villager_life.cart.roll": "Cart wheels creak",
+    "subtitles.villager_life.cart.load": "Sacks loaded",
+    "subtitles.villager_life.door_bell.ring": "Door bell rings",
+    "subtitles.villager_life.pot.bubble": "Pot bubbles",
+    "subtitles.villager_life.sign.creak": "Sign creaks",
+    "board.villager_life.build.signs": "Trade signs",
+    "board.villager_life.build.greens": "Green between the houses"
+  },
+  "ru": {
+    "item.villager_life.hand_cart": "Ручная тележка",
+    "entity.villager_life.hand_cart": "Ручная тележка",
+    "entity.villager_life.seat": "Сиденье",
+    "entity.villager_life.hand_cart.empty": "Пустая ручная тележка",
+    "entity.villager_life.hand_cart.load": "В тележке %s шт. товара, больше всего — %s",
+    "block.villager_life.cooking_pot": "Котелок",
+    "block.villager_life.market_crate": "Ящик с товаром",
+    "block.villager_life.door_bell": "Дверной колокольчик",
+    "block.villager_life.shop_sign": "Вывеска на цепях",
+    "tooltip.villager_life.town_decor": "Городской декор",
+    "subtitles.villager_life.cart.roll": "Скрипят колёса тележки",
+    "subtitles.villager_life.cart.load": "Грузят мешки",
+    "subtitles.villager_life.door_bell.ring": "Звенит дверной колокольчик",
+    "subtitles.villager_life.pot.bubble": "Булькает котелок",
+    "subtitles.villager_life.sign.creak": "Скрипит вывеска",
+    "board.villager_life.build.signs": "Вывески",
+    "board.villager_life.build.greens": "Зелень между домами"
+  }
+}

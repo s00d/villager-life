@@ -1,0 +1,33 @@
+# Villages of the world "Новый мир" in four biomes, as the world made them (found with /locate from 8000 8000):
+# two days of each, held as a player would hold them (creative, a little above the bell: the commands look for
+# villagers near the player), then the checks. Vanilla zombie sieges at midnight kill a few; the snowy one fell
+# below four grown-ups that way and has no mayor, so only its stall is checked.
+# Desert 12256 5648, savanna 8256 9088, taiga 6656 7968 (its bell down in a valley at 6660 62 7972: the player keeps low), snowy 4416 3392.
+/gamemode creative
+/tp Dev 12255 95 5651
+sleep 10
+/time set 1000
+sprint 48000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 8262 125 9094
+sleep 10
+/time set 1000
+sprint 48000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 6662 80 7975
+sleep 10
+/time set 1000
+sprint 48000
+expect check: 0 problems :: /vnap check 96
+expect office .*: [A-Z][a-z]+ since :: /vnap mayor info
+expect counter :: /vnap shop info
+/tp Dev 4411 110 3401
+sleep 10
+/time set 1000
+sprint 48000
+expect check: 0 problems :: /vnap check 96
+expect counter :: /vnap shop info

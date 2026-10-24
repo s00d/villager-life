@@ -1,0 +1,556 @@
+{
+ "game": 1.5,
+ "music_vol": 0.16,
+ "vo_vol": 1.7,
+ "fade_out": 3.0,
+ "shots": [
+  {
+   "clip": "card_intro",
+   "in": 0.0,
+   "dur": 4.2,
+   "x": "fadeblack",
+   "t": 0.6
+  },
+  {
+   "clip": "p1_s01_arrive",
+   "in": 0.3,
+   "dur": 13.5,
+   "x": "fadeblack",
+   "t": 0.8
+  },
+  {
+   "clip": "p1_s03_leave",
+   "in": 0.3,
+   "dur": 8.0,
+   "x": "fadeblack",
+   "t": 1.0
+  },
+  {
+   "clip": "p1_s04_mine",
+   "in": 1.0,
+   "dur": 7.5,
+   "x": "fadeblack",
+   "t": 1.2,
+   "shared": true
+  },
+  {
+   "clip": "p1_s06_return",
+   "in": 0.3,
+   "dur": 8.4,
+   "x": "fade",
+   "t": 0.7,
+   "shared": true
+  },
+  {
+   "clip": "p1_s07_build",
+   "in": 0.3,
+   "dur": 10.5,
+   "x": "fade",
+   "t": 0.7,
+   "shared": true
+  },
+  {
+   "clip": "p1_s08_door",
+   "in": 0.3,
+   "dur": 7.4,
+   "x": "fade",
+   "t": 0.7
+  },
+  {
+   "clip": "p1_s09_shop",
+   "in": 0.3,
+   "dur": 10.8,
+   "x": "fade",
+   "t": 0.7
+  },
+  {
+   "clip": "p1_s10_wedding",
+   "in": 0.3,
+   "dur": 12.4,
+   "x": "fade",
+   "t": 0.7
+  },
+  {
+   "clip": "p1_s11_cradle",
+   "in": 0.3,
+   "dur": 9.4,
+   "x": "fade",
+   "t": 0.7
+  },
+  {
+   "clip": "p1_s12_board",
+   "in": 0.3,
+   "dur": 11.2,
+   "x": "fadeblack",
+   "t": 0.9
+  },
+  {
+   "clip": "p1_s13_dusk",
+   "in": 0.3,
+   "dur": 9.4,
+   "x": "fadeblack",
+   "t": 1.0,
+   "shared": true
+  },
+  {
+   "clip": "p1_s14_spire",
+   "in": 2.0,
+   "dur": 28.0,
+   "x": "fadewhite",
+   "t": 0.25,
+   "shared": true
+  },
+  {
+   "clip": "p2_summit",
+   "in": 5.0,
+   "dur": 3.2,
+   "x": "fade",
+   "t": 0.12,
+   "shared": true
+  },
+  {
+   "clip": "p2_portal",
+   "in": 0.4,
+   "dur": 3.2,
+   "x": "fadewhite",
+   "t": 0.12,
+   "shared": true
+  },
+  {
+   "clip": "p2_f003_pack",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f005_keeper",
+   "in": 3.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 12.0
+  },
+  {
+   "clip": "p2_f010_keeper",
+   "in": 3.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 1.0
+  },
+  {
+   "clip": "p2_f013_pack",
+   "in": 3.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 12.0
+  },
+  {
+   "clip": "p2_f015_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 26.0
+  },
+  {
+   "clip": "p2_f020_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 1.5
+  },
+  {
+   "clip": "p2_f023_pack",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 3.0
+  },
+  {
+   "clip": "p2_f025_keeper",
+   "in": 6.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f030_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f033_pack",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 2.0
+  },
+  {
+   "clip": "p2_f035_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f040_keeper",
+   "in": 5.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f045_keeper",
+   "in": 4.0,
+   "dur": 3.2,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 3.0
+  },
+  {
+   "clip": "p2_f050_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 13.0
+  },
+  {
+   "clip": "p2_f053_pack",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 7.0
+  },
+  {
+   "clip": "p2_f055_keeper",
+   "in": 3.0,
+   "dur": 1.6,
+   "x": "fadewhite",
+   "t": 0.1,
+   "in_ru": 7.0
+  },
+  {
+   "clip": "p2_f060_die",
+   "in": 2.6,
+   "dur": 4.8,
+   "x": "fadeblack",
+   "t": 0.2,
+   "in_ru": 1.0
+  },
+  {
+   "clip": "p2_anvil_0",
+   "in": 1.9,
+   "dur": 0.8,
+   "x": "fade",
+   "t": 0.08
+  },
+  {
+   "clip": "p2_anvil_1",
+   "in": 1.9,
+   "dur": 0.8,
+   "x": "fade",
+   "t": 0.08
+  },
+  {
+   "clip": "p2_anvil_2",
+   "in": 1.9,
+   "dur": 0.8,
+   "x": "fade",
+   "t": 0.08
+  },
+  {
+   "clip": "p2_anvil_3",
+   "in": 1.9,
+   "dur": 0.8,
+   "x": "fadewhite",
+   "t": 0.1
+  },
+  {
+   "clip": "p2_f060_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f063_pack",
+   "in": 3.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 3.0
+  },
+  {
+   "clip": "p2_f070_keeper",
+   "in": 5.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 5.0
+  },
+  {
+   "clip": "p2_f073_pack",
+   "in": 3.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 1.5
+  },
+  {
+   "clip": "p2_f080_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f083_pack",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f090_keeper",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 4.0
+  },
+  {
+   "clip": "p2_f093_pack",
+   "in": 4.0,
+   "dur": 1.6,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 7.0
+  },
+  {
+   "clip": "p2_f100_keeper",
+   "in": 3.0,
+   "dur": 3.2,
+   "x": "fade",
+   "t": 0.1,
+   "in_ru": 3.0
+  },
+  {
+   "clip": "p2_f005_keeper",
+   "in": 15.0,
+   "dur": 3.2,
+   "x": "fade",
+   "t": 0.15,
+   "in_ru": 26.0
+  },
+  {
+   "clip": "p2_heroes",
+   "in": 5.6,
+   "dur": 3.2,
+   "x": "fadeblack",
+   "t": 0.4
+  },
+  {
+   "clip": "p2_summit",
+   "in": 0.3,
+   "dur": 8.0,
+   "x": "fadeblack",
+   "t": 1.0,
+   "shared": true
+  },
+  {
+   "clip": "card_outro",
+   "in": 0.0,
+   "dur": 7.0,
+   "x": "fade",
+   "t": 0.5
+  }
+ ],
+ "vo": [
+  {
+   "id": "P01",
+   "at": 4.8
+  },
+  {
+   "id": "P02",
+   "at": 15.4
+  },
+  {
+   "id": "P03",
+   "at": 18.3
+  },
+  {
+   "id": "P04",
+   "at": 36.6
+  },
+  {
+   "id": "P05",
+   "at": 44.1
+  },
+  {
+   "id": "P06",
+   "at": 56.9
+  },
+  {
+   "id": "P07",
+   "at": 63.5
+  },
+  {
+   "id": "P08",
+   "at": 68.7
+  },
+  {
+   "id": "P09",
+   "at": 88.1
+  },
+  {
+   "id": "P10",
+   "at": 95.1
+  },
+  {
+   "id": "P11",
+   "at": 106.3
+  },
+  {
+   "id": "P12",
+   "at": 123.7
+  },
+  {
+   "id": "P13",
+   "at": 144.2
+  },
+  {
+   "id": "P14",
+   "at": 177.3
+  },
+  {
+   "id": "P15",
+   "at": 208.7
+  }
+ ],
+ "titles": [
+  {
+   "at": 33.400000000000006,
+   "dur": 2.6,
+   "style": "chapter",
+   "en": "Three days later",
+   "ru": "Три дня спустя"
+  },
+  {
+   "at": 140.85000000000002,
+   "dur": 3.0,
+   "style": "logo",
+   "en": "THE BUILDERS' SPIRE",
+   "ru": "ШПИЛЬ ЗОДЧИХ"
+  }
+ ],
+ "music": [
+  {
+   "file": "cozy",
+   "from": 0.0,
+   "at": 0.0,
+   "dur": 126.70000000000002,
+   "vol": 1.0,
+   "fin": 2.0,
+   "fout": 5.0
+  },
+  {
+   "file": "epic",
+   "from": 12.79,
+   "at": 140.70000000000002,
+   "dur": 78.99999999999986,
+   "vol": 3.2,
+   "fin": 0.05,
+   "fout": 4.0
+  }
+ ],
+ "sfx": [
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 119.7,
+   "vol": 0.25
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 121.7,
+   "vol": 0.29
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 123.7,
+   "vol": 0.33
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 125.7,
+   "vol": 0.37
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 127.7,
+   "vol": 0.41
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 129.7,
+   "vol": 0.45
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 131.7,
+   "vol": 0.49
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 133.7,
+   "vol": 0.53
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 135.7,
+   "vol": 0.57
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/spire_grow.ogg",
+   "at": 137.7,
+   "vol": 0.61
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/wall_rise.ogg",
+   "at": 127.2,
+   "vol": 0.7
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/wall_rise.ogg",
+   "at": 131.7,
+   "vol": 0.7
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/wall_rise.ogg",
+   "at": 135.7,
+   "vol": 0.7
+  },
+  {
+   "file": "/Users/s00d/Downloads/FireShot/villager-news-ru-port/neoforge/src/main/resources/assets/villager_life/sounds/sfx/wall_rise.ogg",
+   "at": 139.3,
+   "vol": 0.7
+  }
+ ]
+}

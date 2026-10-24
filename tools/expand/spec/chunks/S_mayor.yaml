@@ -1,0 +1,773 @@
+# Phase S — the elected mayor (village/home/Mayors.java): election, the hall, the morning speech, the round after
+# work, weddings, funerals, resigning. A man speaks as `mayor`, a woman mayor as `woman` (same titles); the village
+# answers as `villager` / `woman`.
+
+- key: S01
+  id: s_elect
+  title: "Mayor Elected"
+  category: home
+  status: active
+  trigger: "a villager without a trade is elected mayor of its village"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[clears throat] Благодарю, благодарю! Я не подведу. Наверное."
+      frames_en:
+        - "[clears throat] Thank you, thank you! I won't let you down. Probably."
+    - weight: 50
+      frames:
+        - "Мэр! Я мэр! Кто-нибудь, запишите это."
+      frames_en:
+        - "Mayor! I'm the mayor! Somebody write that down."
+    - weight: 50
+      frames:
+        - "Работы у меня не было, зато теперь есть должность."
+      frames_en:
+        - "I had no job, and now I have an office."
+    - weight: 50
+      frames:
+        - "[proud] Обещаю: тёплые дома, полные кладовые и поменьше криперов."
+      frames_en:
+        - "[proud] I promise warm houses, full pantries and fewer creepers."
+- key: S02
+  id: s_w_elect
+  title: "Mayor Elected"
+  category: home
+  status: active
+  trigger: "a woman without a trade is elected mayor of her village"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[clears throat] Спасибо за доверие! Порядок наведу быстро."
+      frames_en:
+        - "[clears throat] Thank you for your trust! I'll have this place in order in no time."
+    - weight: 50
+      frames:
+        - "Мэр? Я? Ну что ж, кто-то же должен за вами присматривать."
+      frames_en:
+        - "Mayor? Me? Well, somebody has to keep an eye on you lot."
+    - weight: 50
+      frames:
+        - "[proud] Первым делом — чистые улицы. Вторым — пироги на площади."
+      frames_en:
+        - "[proud] First, clean streets. Second, pies at the square."
+- key: S03
+  id: s_cheer
+  title: "Villager Cheers the New Mayor"
+  category: home
+  status: active
+  trigger: "a villager cheers the newly elected mayor"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[cheering] Да здравствует мэр!"
+      frames_en:
+        - "[cheering] Long live the mayor!"
+    - weight: 50
+      frames:
+        - "Ну, хоть кто-то теперь будет отвечать за колокол."
+      frames_en:
+        - "Well, at least someone's in charge of the bell now."
+    - weight: 50
+      frames:
+        - "Я за него голосовал! Кажется."
+      frames_en:
+        - "I voted for him! I think."
+- key: S04
+  id: s_w_cheer
+  title: "Villager Cheers the New Mayor"
+  category: home
+  status: active
+  trigger: "a woman cheers the newly elected mayor"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[cheering] Поздравляю! Только не зазнавайтесь."
+      frames_en:
+        - "[cheering] Congratulations! Just don't let it go to your head."
+    - weight: 50
+      frames:
+        - "Наконец-то в деревне будет порядок!"
+      frames_en:
+        - "At last there'll be some order in this village!"
+    - weight: 50
+      frames:
+        - "Мэр! Надо срочно испечь торт."
+      frames_en:
+        - "A mayor! I must bake a cake at once."
+- key: S05
+  id: s_stone
+  title: "Mayor Lays the First Stone"
+  category: home
+  status: active
+  trigger: "the mayor starts building the mayor's hall"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Мэру нужен дом с балконом. Для речей, разумеется."
+      frames_en:
+        - "A mayor needs a house with a balcony. For speeches, of course."
+    - weight: 50
+      frames:
+        - "Закладываю первый камень! Остальные тоже заложу я."
+      frames_en:
+        - "I lay the first stone! And the rest of them too, it seems."
+    - weight: 50
+      frames:
+        - "Здесь будет ратуша. Ну, большой дом. С флагами!"
+      frames_en:
+        - "Here stands the town hall. Well, a big house. With banners!"
+- key: S06
+  id: s_w_stone
+  title: "Mayor Lays the First Stone"
+  category: home
+  status: active
+  trigger: "a woman mayor starts building the mayor's hall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Мэру нужен приличный дом. С крыльцом и цветами."
+      frames_en:
+        - "A mayor needs a proper house. With a porch and flowers."
+    - weight: 50
+      frames:
+        - "Первый камень кладу сама. Так надёжнее."
+      frames_en:
+        - "I'll lay the first stone myself. It's safer that way."
+    - weight: 50
+      frames:
+        - "Здесь будет мой дом. И балкон, чтобы всех видеть."
+      frames_en:
+        - "My house goes here. And a balcony, so I can see everyone."
+- key: S07
+  id: s_hall
+  title: "Mayor Moves Into the Hall"
+  category: home
+  status: active
+  trigger: "the mayor moves into the finished mayor's hall"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[happy sigh] Достроили! Теперь у деревни есть ратуша."
+      frames_en:
+        - "[happy sigh] It's done! The village has a town hall now."
+    - weight: 50
+      frames:
+        - "Красные знамёна, ковровая дорожка... Я тронут."
+      frames_en:
+        - "Red banners, a carpet runner... I'm touched."
+    - weight: 50
+      frames:
+        - "Двери ратуши всегда открыты. Кроме ночи."
+      frames_en:
+        - "The doors of the hall are always open. Except at night."
+- key: S08
+  id: s_w_hall
+  title: "Mayor Moves Into the Hall"
+  category: home
+  status: active
+  trigger: "a woman mayor moves into the finished mayor's hall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[happy sigh] Какой дом! Здесь и гостей принять не стыдно."
+      frames_en:
+        - "[happy sigh] What a house! I won't be ashamed to have guests here."
+    - weight: 50
+      frames:
+        - "Цветы у крыльца, знамёна на стене. Красота!"
+      frames_en:
+        - "Flowers by the porch, banners on the wall. Lovely!"
+    - weight: 50
+      frames:
+        - "Ратуша готова. Заходите, только ноги вытирайте."
+      frames_en:
+        - "The hall is ready. Come in, but wipe your feet."
+- key: S09
+  id: s_speech
+  title: "Mayor Morning Speech"
+  category: home
+  status: active
+  trigger: "mornings the mayor gives a little speech at the bell"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[clears throat] Граждане! Новый день, новые изумруды. За работу!"
+      frames_en:
+        - "[clears throat] Citizens! A new day, new emeralds. To work!"
+    - weight: 50
+      frames:
+        - "Доброе утро, деревня! Сегодня никто не дразнит големов."
+      frames_en:
+        - "Good morning, village! Today nobody teases the golems."
+    - weight: 50
+      frames:
+        - "Сводка: урожай растёт, колокол звонит, мэр бодр."
+      frames_en:
+        - "The news: the crops are growing, the bell is ringing, the mayor is awake."
+    - weight: 50
+      frames:
+        - "Напоминаю: двери на ночь закрывать. Особенно от зомби."
+      frames_en:
+        - "A reminder: shut your doors at night. Especially against zombies."
+- key: S10
+  id: s_w_speech
+  title: "Mayor Morning Speech"
+  category: home
+  status: active
+  trigger: "mornings a woman mayor gives a little speech at the bell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[clears throat] Доброе утро! Дети — в школу, взрослые — к станкам."
+      frames_en:
+        - "[clears throat] Good morning! Children to school, grown-ups to work."
+    - weight: 50
+      frames:
+        - "Объявление: кто брал мою лейку, верните к обеду."
+      frames_en:
+        - "An announcement: whoever took my watering can, bring it back by lunch."
+    - weight: 50
+      frames:
+        - "Сегодня отличный день, чтобы ничего не взорвалось."
+      frames_en:
+        - "Today is a fine day for nothing to explode."
+- key: S11
+  id: s_answer
+  title: "Villager Answers the Mayor"
+  category: home
+  status: active
+  trigger: "a villager answers the mayor's morning speech"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Хорошо сказано, господин мэр!"
+      frames_en:
+        - "Well said, Mister Mayor!"
+    - weight: 50
+      frames:
+        - "[mumbling] Каждое утро одно и то же..."
+      frames_en:
+        - "[mumbling] Same speech every morning..."
+    - weight: 50
+      frames:
+        - "А про изумруды можно подробнее?"
+      frames_en:
+        - "Could you say more about the emeralds?"
+- key: S12
+  id: s_w_answer
+  title: "Villager Answers the Mayor"
+  category: home
+  status: active
+  trigger: "a woman answers the mayor's morning speech"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Правильно говорите! Я всегда так считала."
+      frames_en:
+        - "Quite right! I always thought so."
+    - weight: 50
+      frames:
+        - "А когда починят дорогу к колодцу?"
+      frames_en:
+        - "And when will the road to the well be fixed?"
+    - weight: 50
+      frames:
+        - "[laughing] Ох, наш мэр сегодня в ударе!"
+      frames_en:
+        - "[laughing] Oh, our mayor is in fine form today!"
+- key: S13
+  id: s_inspect
+  title: "Mayor Inspects the Building"
+  category: home
+  status: active
+  trigger: "after work the mayor looks in on a house going up"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Так, стены ровные, крыша будет. Одобряю!"
+      frames_en:
+        - "Right, the walls are straight, the roof is coming. Approved!"
+    - weight: 50
+      frames:
+        - "Хороший дом растёт. Ещё одна семья, ещё один голос."
+      frames_en:
+        - "A good house going up. One more family, one more vote."
+    - weight: 50
+      frames:
+        - "[impressed] Быстро строите! Может, и мне ратушу подновите?"
+      frames_en:
+        - "[impressed] You build fast! Perhaps you'll touch up my hall too?"
+- key: S14
+  id: s_w_inspect
+  title: "Mayor Inspects the Building"
+  category: home
+  status: active
+  trigger: "after work a woman mayor looks in on a house going up"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Окна побольше, пожалуйста. В доме должно быть светло."
+      frames_en:
+        - "Bigger windows, please. A house should be full of light."
+    - weight: 50
+      frames:
+        - "Аккуратно кладёте! Мне нравится."
+      frames_en:
+        - "Neat work! I like it."
+    - weight: 50
+      frames:
+        - "Скоро здесь будут жить. Надо будет зайти с пирогом."
+      frames_en:
+        - "Someone will live here soon. I must drop by with a pie."
+- key: S15
+  id: s_praise
+  title: "Mayor Praises a Worker"
+  category: home
+  status: active
+  trigger: "after work the mayor has a word for a villager at its trade"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Отличная работа! Деревня гордится тобой."
+      frames_en:
+        - "Excellent work! The village is proud of you."
+    - weight: 50
+      frames:
+        - "Вот на таких, как ты, деревня и держится."
+      frames_en:
+        - "It's people like you who hold this village together."
+    - weight: 50
+      frames:
+        - "Продолжай в том же духе. Премии не будет, но спасибо."
+      frames_en:
+        - "Keep it up. There's no bonus, but thank you."
+- key: S16
+  id: s_w_praise
+  title: "Mayor Praises a Worker"
+  category: home
+  status: active
+  trigger: "after work a woman mayor has a word for a villager at its trade"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Умница! Так держать."
+      frames_en:
+        - "Well done! Keep it up."
+    - weight: 50
+      frames:
+        - "Хорошо поработали. Идите домой, вас ждут к ужину."
+      frames_en:
+        - "Good work today. Go home, they're waiting for you at supper."
+    - weight: 50
+      frames:
+        - "Без тебя деревня бы пропала. Честное слово."
+      frames_en:
+        - "The village would be lost without you. Honestly."
+- key: S17
+  id: s_wed
+  title: "Mayor Weds the Couple"
+  category: home
+  status: active
+  trigger: "the mayor leads a wedding at the bell"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[solemn] Властью, данной мне колоколом, объявляю вас мужем и женой!"
+      frames_en:
+        - "[solemn] By the power vested in me by the bell, I now pronounce you husband and wife!"
+    - weight: 50
+      frames:
+        - "Дорогие жители! Сегодня в деревне на одну семью больше."
+      frames_en:
+        - "Dear villagers! Today our village has one more family."
+    - weight: 50
+      frames:
+        - "Любите друг друга и не ссорьтесь из-за кладовой."
+      frames_en:
+        - "Love each other and don't quarrel over the pantry."
+- key: S18
+  id: s_w_wed
+  title: "Mayor Weds the Couple"
+  category: home
+  status: active
+  trigger: "a woman mayor leads a wedding at the bell"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[solemn] Властью, данной мне колоколом, объявляю вас мужем и женой!"
+      frames_en:
+        - "[solemn] By the power vested in me by the bell, I now pronounce you husband and wife!"
+    - weight: 50
+      frames:
+        - "[sniffing] Я всегда плачу на свадьбах. Совет вам да любовь!"
+      frames_en:
+        - "[sniffing] I always cry at weddings. Love and happiness to you both!"
+    - weight: 50
+      frames:
+        - "Берегите друг друга. И дом не забудьте подмести."
+      frames_en:
+        - "Look after each other. And don't forget to sweep the house."
+- key: S19
+  id: s_funeral
+  title: "Mayor Funeral Words"
+  category: home
+  status: active
+  trigger: "the mayor speaks over a grave at a funeral"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[sad sigh] Деревня потеряла хорошего жителя. Мы будем помнить."
+      frames_en:
+        - "[sad sigh] The village has lost a good neighbour. We will remember."
+    - weight: 50
+      frames:
+        - "Покойся с миром. Твой дом и твоё дело не забудут."
+      frames_en:
+        - "Rest in peace. Your house and your work won't be forgotten."
+    - weight: 50
+      frames:
+        - "Колокол сегодня звонит тише. Прощай, друг."
+      frames_en:
+        - "The bell rings softer today. Farewell, friend."
+- key: S20
+  id: s_w_funeral
+  title: "Mayor Funeral Words"
+  category: home
+  status: active
+  trigger: "a woman mayor speaks over a grave at a funeral"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sad sigh] Мы собрались, чтобы проститься. Спи спокойно."
+      frames_en:
+        - "[sad sigh] We have gathered to say goodbye. Sleep peacefully."
+    - weight: 50
+      frames:
+        - "Ты был частью нашей деревни. И останешься ею."
+      frames_en:
+        - "You were part of our village. And you always will be."
+    - weight: 50
+      frames:
+        - "Пусть земля будет мягкой, а цветы на могиле — яркими."
+      frames_en:
+        - "May the earth be soft and the flowers on your grave bright."
+- key: S21
+  id: s_resign
+  title: "Mayor Resigns"
+  category: home
+  status: active
+  trigger: "the mayor leaves office (no home for days, moved to another village)"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Мэр без дома — не мэр. Ухожу в отставку."
+      frames_en:
+        - "[sigh] A mayor without a home is no mayor. I resign."
+    - weight: 50
+      frames:
+        - "Пусть деревня выберет кого-нибудь получше. Или хотя бы с кроватью."
+      frames_en:
+        - "Let the village choose someone better. Or at least someone with a bed."
+    - weight: 50
+      frames:
+        - "Сдаю должность. Шляпу, пожалуй, оставлю себе."
+      frames_en:
+        - "I hand back the office. I'll keep the hat, though."
+- key: S22
+  id: s_w_resign
+  title: "Mayor Resigns"
+  category: home
+  status: active
+  trigger: "a woman mayor leaves office (no home for days, moved to another village)"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Без своего угла деревней не управишь. Ухожу."
+      frames_en:
+        - "[sigh] You can't run a village without a roof of your own. I'm stepping down."
+    - weight: 50
+      frames:
+        - "Выбирайте нового мэра. И пусть он будет аккуратнее меня."
+      frames_en:
+        - "Choose a new mayor. And may they be tidier than me."
+    - weight: 50
+      frames:
+        - "Хватит с меня речей. Пойду лучше испеку пирог."
+      frames_en:
+        - "That's enough speeches for me. I'll go bake a pie instead."
+- key: S23
+  id: s_inherit
+  title: "Mayor Takes Up the Office"
+  category: home
+  status: active
+  trigger: "the late mayor's grown child or spouse takes up the office"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Отец бы хотел, чтобы деревней правил я. Не подведу."
+      frames_en:
+        - "[sigh] Father would have wanted me to look after the village. I won't let him down."
+    - weight: 50
+      frames:
+        - "Должность досталась мне по наследству. Вместе со шляпой."
+      frames_en:
+        - "The office came down to me. Along with the hat."
+    - weight: 50
+      frames:
+        - "Семья мэра не бросает деревню. Теперь мой черёд."
+      frames_en:
+        - "The mayor's family doesn't abandon the village. It's my turn now."
+- key: S24
+  id: s_w_inherit
+  title: "Mayor Takes Up the Office"
+  category: home
+  status: active
+  trigger: "the late mayor's grown daughter or widow takes up the office"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Он столько сделал для деревни. Я продолжу его дело."
+      frames_en:
+        - "[sigh] He did so much for the village. I'll carry on his work."
+    - weight: 50
+      frames:
+        - "Теперь мэр — я. Семья не оставит вас без присмотра."
+      frames_en:
+        - "I'm the mayor now. The family won't leave you unattended."
+    - weight: 50
+      frames:
+        - "Я всё видела, всё помню. Справлюсь."
+      frames_en:
+        - "I saw it all and I remember it all. I'll manage."
+- key: S25
+  id: s_noroom
+  title: "Mayor Has No Room for the Hall"
+  category: home
+  status: active
+  trigger: "the mayor finds no ground for the hall yet (it looks again every day)"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Ратуше негде встать. Посмотрю ещё завтра."
+      frames_en:
+        - "[sigh] There's nowhere for the hall to stand. I'll look again tomorrow."
+    - weight: 50
+      frames:
+        - "Деревня тесная, а ратуша большая. Подожду, пока место освободится."
+      frames_en:
+        - "The village is cramped and the hall is big. I'll wait for some ground to free up."
+    - weight: 50
+      frames:
+        - "Ни одного ровного клочка земли! Кто строил эту деревню?"
+      frames_en:
+        - "Not one flat patch of ground! Who built this village?"
+- key: S26
+  id: s_w_noroom
+  title: "Mayor Has No Room for the Hall"
+  category: home
+  status: active
+  trigger: "a woman mayor finds no ground for the hall yet (she looks again every day)"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Места под ратушу нет. Завтра поищу снова."
+      frames_en:
+        - "[sigh] No room for the hall. I'll look again tomorrow."
+    - weight: 50
+      frames:
+        - "Всё занято: дома, огороды, загоны. Ничего, подождём."
+      frames_en:
+        - "Everything's taken: houses, gardens, pens. Never mind, we'll wait."
+    - weight: 50
+      frames:
+        - "Ратуша подождёт. Деревня важнее."
+      frames_en:
+        - "The hall can wait. The village comes first."
+- key: S27
+  id: s_clear
+  title: "Mayor Clears an Empty House"
+  category: home
+  status: active
+  trigger: "the mayor takes an empty house apart by hand to make room for the hall"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Этот дом давно пустует. Разберём его, здесь встанет ратуша."
+      frames_en:
+        - "This house has stood empty for ages. We'll take it apart, the hall goes here."
+    - weight: 50
+      frames:
+        - "Так, бревно за бревном. Старому дому — почётная отставка."
+      frames_en:
+        - "Right, beam by beam. An honourable retirement for the old house."
+    - weight: 50
+      frames:
+        - "[grunting] Пустой дом — пустое место. А ратуша — не пустое!"
+      frames_en:
+        - "[grunting] An empty house is wasted ground. A hall is not!"
+- key: S28
+  id: s_w_clear
+  title: "Mayor Clears an Empty House"
+  category: home
+  status: active
+  trigger: "a woman mayor takes an empty house apart by hand to make room for the hall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "В этом доме никто не живёт. Разберём — и построим ратушу."
+      frames_en:
+        - "Nobody lives in this house. We'll take it apart and build the hall."
+    - weight: 50
+      frames:
+        - "Жалко старый дом. Но ратуша нужнее."
+      frames_en:
+        - "A pity about the old house. But the hall is needed more."
+    - weight: 50
+      frames:
+        - "Аккуратно, по дощечке. Доски ещё пригодятся."
+      frames_en:
+        - "Carefully, plank by plank. We'll want those boards."
+- key: S29
+  id: s_rebuild
+  title: "Mayor Rebuilds on the Old Ground"
+  category: home
+  status: active
+  trigger: "with no other ground the mayor takes down its own house to build the hall in its place"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Другого места нет. Разберу свой дом, на его месте встанет ратуша."
+      frames_en:
+        - "[sigh] There's no other place. I'll take my own house down, the hall will stand in its place."
+    - weight: 50
+      frames:
+        - "Поживём пока у соседей. Зато потом — ратуша!"
+      frames_en:
+        - "We'll stay with the neighbours for now. A hall afterwards, though!"
+    - weight: 50
+      frames:
+        - "Старый дом, прощай. Ты был хорошим, но тесным."
+      frames_en:
+        - "Goodbye, old house. You were good, but cramped."
+- key: S30
+  id: s_w_rebuild
+  title: "Mayor Rebuilds on the Old Ground"
+  category: home
+  status: active
+  trigger: "with no other ground a woman mayor takes down her own house to build the hall in its place"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[sigh] Придётся разобрать наш дом. Ратуша встанет на его месте."
+      frames_en:
+        - "[sigh] We'll have to take our house down. The hall will stand in its place."
+    - weight: 50
+      frames:
+        - "Ничего, перетерпим. Новый дом будет просторнее."
+      frames_en:
+        - "Never mind, we'll manage. The new house will be roomier."
+    - weight: 50
+      frames:
+        - "Здесь мы жили, здесь и ратуша будет. Так даже правильнее."
+      frames_en:
+        - "We lived here, and the hall will be here too. That feels right."
+- key: S31
+  id: s_office
+  title: "Mayor Furnishes the Office"
+  category: home
+  status: active
+  trigger: "the mayor carries the office furniture up into the hall, a piece at a time"
+  speaker: mayor
+  variants:
+    - weight: 50
+      frames:
+        - "Стол сюда, шкафы туда. Кабинет должен внушать уважение."
+      frames_en:
+        - "The desk here, the shelves there. An office should command respect."
+    - weight: 50
+      frames:
+        - "[grunting] Книги тяжёлые. Мудрость всегда тяжёлая."
+      frames_en:
+        - "[grunting] Books are heavy. Wisdom always is."
+    - weight: 50
+      frames:
+        - "Вот так. Теперь здесь можно принимать посетителей."
+      frames_en:
+        - "There. Now I can receive visitors here."
+- key: S32
+  id: s_w_office
+  title: "Mayor Furnishes the Office"
+  category: home
+  status: active
+  trigger: "a woman mayor carries the office furniture up into the hall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Стол у окна, цветы на стол. Работать надо в красоте."
+      frames_en:
+        - "The desk by the window, flowers on the desk. Work should be done somewhere pretty."
+    - weight: 50
+      frames:
+        - "[sigh] Кто придумал такие тяжёлые шкафы?"
+      frames_en:
+        - "[sigh] Who invented such heavy bookshelves?"
+    - weight: 50
+      frames:
+        - "Кабинет почти готов. Осталось знамя повесить."
+      frames_en:
+        - "The office is nearly done. Just the banner left to hang."
+- key: S33
+  id: s_w_settle
+  title: "Woman Settles Into the Hall"
+  category: home
+  status: active
+  trigger: "the mayor's wife furnishes the family's floor of the hall"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ковёр сюда, свечку на тумбочку. Вот теперь это дом."
+      frames_en:
+        - "A rug here, a candle on the night table. Now it's a home."
+    - weight: 50
+      frames:
+        - "Ратуша ратушей, а детям нужен уют."
+      frames_en:
+        - "A town hall is all very well, but children need a cosy home."
+    - weight: 50
+      frames:
+        - "[happy sigh] Стол у окна, цветы в углу. Красота!"
+      frames_en:
+        - "[happy sigh] A table by the window, flowers in the corner. Lovely!"

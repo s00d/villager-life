@@ -1,0 +1,357 @@
+# Phase L — home life: husbands build beds and rooms, the librarian teaches (speaker villager).
+
+- key: L01
+  id: m_carry_bed
+  title: "Man Carries a Bed"
+  category: home
+  status: active
+  trigger: "a husband carries a bed in for a family member"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Посторонись! Несу кровать!"
+      frames_en:
+        - "Coming through! Carrying a bed!"
+    - weight: 50
+      frames:
+        - "Тяжёлая, зараза, но для своих не жалко."
+      frames_en:
+        - "Heavy thing, but nothing's too heavy for family."
+    - weight: 50
+      frames:
+        - "Сейчас будет тебе своя кровать."
+      frames_en:
+        - "You'll have your own bed in a moment."
+    - weight: 50
+      frames:
+        - "Не подсказывайте, я сам знаю, куда ставить."
+      frames_en:
+        - "No advice, please, I know where it goes."
+    - weight: 50
+      frames:
+        - "Раз-два, взяли! Ещё немного."
+      frames_en:
+        - "Heave-ho! Almost there."
+    - weight: 50
+      frames:
+        - "Кровать сама себя не поставит."
+      frames_en:
+        - "A bed won't set itself up."
+
+- key: L02
+  id: m_built_bed
+  title: "Man Builds a Bed"
+  category: home
+  status: active
+  trigger: "a husband finishes a bed by hand"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Готово! Ложись, пробуй."
+      frames_en:
+        - "Done! Lie down, try it out."
+    - weight: 50
+      frames:
+        - "Ровно, крепко, ни одной щели. Мастер!"
+      frames_en:
+        - "Level, sturdy, not a gap. A master's work!"
+    - weight: 50
+      frames:
+        - "Теперь у всех есть где спать."
+      frames_en:
+        - "Now everyone has a place to sleep."
+    - weight: 50
+      frames:
+        - "Подушку взбил, одеяло постелил. Почти как в гостинице."
+      frames_en:
+        - "Pillow fluffed, blanket spread. Almost like an inn."
+    - weight: 50
+      frames:
+        - "Спи сладко, тут тебе будет уютно."
+      frames_en:
+        - "Sleep sweet, it'll be cozy here."
+    - weight: 50
+      frames:
+        - "Сам сделал, своими руками!"
+      frames_en:
+        - "I made it myself, with my own hands!"
+
+- key: L03
+  id: m_start_room
+  title: "Man Starts a Room"
+  category: home
+  status: active
+  trigger: "a husband starts building an extension room"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Семья растёт, значит, и дом будет расти."
+      frames_en:
+        - "The family is growing, so the house will grow too."
+    - weight: 50
+      frames:
+        - "Пристрою комнату. Будет детская!"
+      frames_en:
+        - "I'll build on a room. A nursery!"
+    - weight: 50
+      frames:
+        - "Так, тут будет стена, тут окно, а тут кроватка."
+      frames_en:
+        - "Right, a wall here, a window there, and a little bed here."
+    - weight: 50
+      frames:
+        - "Доски есть, руки есть, начинаем!"
+      frames_en:
+        - "Planks — check, hands — check, let's begin!"
+    - weight: 50
+      frames:
+        - "Тесновато стало. Ничего, расширимся."
+      frames_en:
+        - "It's getting a bit cramped. No matter, we'll expand."
+    - weight: 50
+      frames:
+        - "Новая комната к выходным! Ну, может, к следующим."
+      frames_en:
+        - "A new room by the weekend! Well, maybe the next one."
+
+- key: L04
+  id: m_room_done
+  title: "Man Finishes the Room"
+  category: home
+  status: active
+  trigger: "a husband finishes the extension room"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Готово! Заходите, смотрите!"
+      frames_en:
+        - "Done! Come in, have a look!"
+    - weight: 50
+      frames:
+        - "Своя комната, светлая, с окошком. Красота!"
+      frames_en:
+        - "A room of its own, bright, with a window. Lovely!"
+    - weight: 50
+      frames:
+        - "Вот это я понимаю — настоящий дом."
+      frames_en:
+        - "Now that's what I call a real home."
+    - weight: 50
+      frames:
+        - "Стены стоят, крыша не течёт. Принимайте работу!"
+      frames_en:
+        - "The walls stand, the roof doesn't leak. Inspection time!"
+    - weight: 50
+      frames:
+        - "Малыш, это всё тебе."
+      frames_en:
+        - "Little one, this is all for you."
+    - weight: 50
+      frames:
+        - "Отпразднуем новоселье!"
+      frames_en:
+        - "Let's celebrate a housewarming!"
+
+- key: L05
+  id: m_help
+  title: "Man Thanks for the Help"
+  category: home
+  status: active
+  trigger: "the player places a block the room still needed"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "О, спасибо за помощь!"
+      frames_en:
+        - "Oh, thanks for the help!"
+    - weight: 50
+      frames:
+        - "Вдвоём быстрее! Подай ещё досочку."
+      frames_en:
+        - "Two pairs of hands are faster! Pass another plank."
+    - weight: 50
+      frames:
+        - "Ты прирождённый строитель."
+      frames_en:
+        - "You're a born builder."
+    - weight: 50
+      frames:
+        - "С таким помощником и дворец построим."
+      frames_en:
+        - "With a helper like you, we could build a palace."
+    - weight: 50
+      frames:
+        - "Спасибо, сосед! Приходи на новоселье."
+      frames_en:
+        - "Thanks, neighbor! Come to the housewarming."
+    - weight: 50
+      frames:
+        - "Ровно положил! Почти как я."
+      frames_en:
+        - "Nice and straight! Almost as good as me."
+
+- key: L06
+  id: m_praise
+  title: "Man Praises Dinner"
+  category: home
+  status: active
+  trigger: "a husband thanks his wife for the meal"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вкуснотища! Ты лучшая хозяйка."
+      frames_en:
+        - "Delicious! You're the best cook."
+    - weight: 50
+      frames:
+        - "М-м-м, как дома! Ну, мы и есть дома."
+      frames_en:
+        - "Mmm, tastes like home! Well, we are home."
+    - weight: 50
+      frames:
+        - "Можно добавки? Совсем чуть-чуть."
+      frames_en:
+        - "Can I have seconds? Just a little."
+    - weight: 50
+      frames:
+        - "С таким обедом и работа пойдёт веселее."
+      frames_en:
+        - "With a meal like this, work will go better."
+    - weight: 50
+      frames:
+        - "Спасибо, дорогая. Всё до крошки!"
+      frames_en:
+        - "Thank you, dear. Every last crumb!"
+    - weight: 50
+      frames:
+        - "Ты опять положила больше морковки. Люблю!"
+      frames_en:
+        - "You put in extra carrots again. I love it!"
+
+- key: L07
+  id: m_chat_wife
+  title: "Man Chats With Wife"
+  category: home
+  status: active
+  trigger: "a husband answers his wife in passing"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Да, дорогая, всё сделаю."
+      frames_en:
+        - "Yes, dear, I'll take care of it."
+    - weight: 50
+      frames:
+        - "Ты сегодня особенно красивая."
+      frames_en:
+        - "You look especially lovely today."
+    - weight: 50
+      frames:
+        - "Я тоже об этом думал!"
+      frames_en:
+        - "I was thinking the same thing!"
+    - weight: 50
+      frames:
+        - "А давай вечером погуляем у колокола?"
+      frames_en:
+        - "How about a walk by the bell tonight?"
+    - weight: 50
+      frames:
+        - "Конечно, крыша. Завтра. Наверное."
+      frames_en:
+        - "The roof, of course. Tomorrow. Probably."
+    - weight: 50
+      frames:
+        - "С тобой каждый день праздник."
+      frames_en:
+        - "With you, every day is a holiday."
+
+- key: L08
+  id: m_home
+  title: "Man Comes Home"
+  category: home
+  status: active
+  trigger: "a father comes home in the evening"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Я дома! Кто тут меня встречает?"
+      frames_en:
+        - "I'm home! Who's here to meet me?"
+    - weight: 50
+      frames:
+        - "Ух, какой день! Иди сюда, обниму."
+      frames_en:
+        - "Phew, what a day! Come here, let me hug you."
+    - weight: 50
+      frames:
+        - "Принёс тебе камушек. Красивый, правда?"
+      frames_en:
+        - "I brought you a pebble. Pretty, isn't it?"
+    - weight: 50
+      frames:
+        - "Ну что, слушались маму?"
+      frames_en:
+        - "So, did you listen to your mom?"
+    - weight: 50
+      frames:
+        - "Дома лучше всего."
+      frames_en:
+        - "There's no place like home."
+    - weight: 50
+      frames:
+        - "Пахнет ужином! Я голодный как волк."
+      frames_en:
+        - "Smells like dinner! I'm hungry as a wolf."
+
+- key: L09
+  id: teacher
+  title: "Librarian Teaches the Kids"
+  category: home
+  status: active
+  trigger: "the librarian gives the village children a lesson"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Дети, тише! Сегодня учим буквы."
+      frames_en:
+        - "Quiet, children! Today we learn our letters."
+    - weight: 50
+      frames:
+        - "Сколько будет два изумруда плюс два? Правильно, четыре!"
+      frames_en:
+        - "What's two emeralds plus two? Right, four!"
+    - weight: 50
+      frames:
+        - "Сегодня расскажу вам про драконов. Они далеко, не бойтесь."
+      frames_en:
+        - "Today I'll tell you about dragons. They're far away, don't worry."
+    - weight: 50
+      frames:
+        - "Кто прочитает эту строчку? Смелее!"
+      frames_en:
+        - "Who can read this line? Don't be shy!"
+    - weight: 50
+      frames:
+        - "Книга — лучший друг жителя. После колокола."
+      frames_en:
+        - "A book is a villager's best friend. After the bell."
+    - weight: 50
+      frames:
+        - "Урок окончен, можно бегать!"
+      frames_en:
+        - "Class dismissed, off you run!"
+    - weight: 50
+      frames:
+        - "Запомните: зомби не любят свет. И солнце тоже."
+      frames_en:
+        - "Remember: zombies don't like light. Or sunshine."

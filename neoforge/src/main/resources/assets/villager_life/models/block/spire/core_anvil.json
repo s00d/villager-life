@@ -1,0 +1,2 @@
+{"parent": "minecraft:block/template_anvil", "render_type": "minecraft:cutout",
+  "textures": {"particle": "minecraft:block/polished_deepslate", "body": "minecraft:block/polished_deepslate", "top": "villager_life:block/spire/crystal"}}

@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:tocsin/awaken",
+  "display": {
+    "icon": {
+      "id": "villager_life:villager_blessing_staff"
+    },
+    "title": {
+      "translate": "advancements.villager_life.tocsin.counter_toll.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.tocsin.counter_toll.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

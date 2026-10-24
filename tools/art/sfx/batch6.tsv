@@ -1,0 +1,15 @@
+sentinel_idle	2.0	loud close-up ancient stone sentinel construct idling, low grinding hum and soft crystal ticking
+sentinel_attack	1.0	loud close-up stone construct swinging a heavy crystal lance, whoosh and grind
+hound_idle	2.0	loud close-up mechanical stone hound sniffing and growling, metallic clicks
+hound_attack	1.0	loud close-up stone hound snarling lunge and snapping bite
+vine_idle	2.0	loud close-up carnivorous plant creature rustling leaves and slow wet creak
+vine_attack	1.0	loud close-up carnivorous plant jaws snapping shut, leafy whip
+moth_idle	2.0	loud close-up giant moth fluttering dusty wings, soft powdery flutter
+moth_attack	1.0	loud close-up giant moth diving with a sharp wing beat and screech
+ray_idle	2.0	loud close-up flying manta ray gliding through air, smooth wing whoosh and soft hum
+ray_attack	1.0	loud close-up manta ray tail lashing with a sharp whip crack
+wisp_idle	2.0	loud close-up glowing spirit wisp humming, airy crystalline chiming
+wisp_attack	1.0	loud close-up spirit wisp darting with a bright magical zip
+fish_idle	2.0	loud close-up anglerfish underwater, bubbles and deep gulps
+fish_attack	1.0	loud close-up anglerfish snapping jaws underwater with a bubble burst
+elite_roar	1.5	loud close-up elite stone guardian roar with golden crystalline ringing

@@ -1,0 +1,52 @@
+# The second age in the dev world's town at 18211 71 20919 (ten villagers, grown houses of the world): a spire sprouted, twenty days run; each day the
+# housing line (treasury, minted, debts) and the restyles ("vnap restyle" in the server log) are what to look at.
+/gamemode creative
+/tp Dev 18211 95 20919
+sleep 8
+/time set 1000
+/vnap spire sprout
+/time set 13000
+sprint 12000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+sprint 24000
+expect housing: :: /vnap housing
+expect check: 0 problems :: /vnap check 96
+deaths

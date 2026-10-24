@@ -1,0 +1,236 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "frame": "minecraft:block/spruce_planks",
+    "post": "minecraft:block/stripped_spruce_log",
+    "sheet": "minecraft:block/white_wool",
+    "blanket": "minecraft:block/red_wool",
+    "particle": "minecraft:block/spruce_planks"
+  },
+  "elements": [
+    {
+      "from": [
+        14,
+        0,
+        14
+      ],
+      "to": [
+        16,
+        11,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#post"
+        },
+        "south": {
+          "texture": "#post"
+        },
+        "east": {
+          "texture": "#post"
+        },
+        "west": {
+          "texture": "#post"
+        },
+        "up": {
+          "texture": "#post"
+        },
+        "down": {
+          "texture": "#post"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        3,
+        14
+      ],
+      "to": [
+        14,
+        10,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#frame"
+        },
+        "south": {
+          "texture": "#frame"
+        },
+        "east": {
+          "texture": "#frame"
+        },
+        "west": {
+          "texture": "#frame"
+        },
+        "up": {
+          "texture": "#frame"
+        },
+        "down": {
+          "texture": "#frame"
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        3,
+        0
+      ],
+      "to": [
+        16,
+        7,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#frame"
+        },
+        "south": {
+          "texture": "#frame"
+        },
+        "east": {
+          "texture": "#frame"
+        },
+        "west": {
+          "texture": "#frame"
+        },
+        "up": {
+          "texture": "#frame"
+        },
+        "down": {
+          "texture": "#frame"
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        3,
+        2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#post"
+        },
+        "south": {
+          "texture": "#post"
+        },
+        "east": {
+          "texture": "#post"
+        },
+        "west": {
+          "texture": "#post"
+        },
+        "up": {
+          "texture": "#post"
+        },
+        "down": {
+          "texture": "#post"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        3,
+        0
+      ],
+      "to": [
+        14,
+        8,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#sheet"
+        },
+        "south": {
+          "texture": "#sheet"
+        },
+        "east": {
+          "texture": "#sheet"
+        },
+        "west": {
+          "texture": "#sheet"
+        },
+        "up": {
+          "texture": "#sheet"
+        },
+        "down": {
+          "texture": "#sheet"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        8,
+        0
+      ],
+      "to": [
+        14,
+        9,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#blanket"
+        },
+        "south": {
+          "texture": "#blanket"
+        },
+        "east": {
+          "texture": "#blanket"
+        },
+        "west": {
+          "texture": "#blanket"
+        },
+        "up": {
+          "texture": "#blanket"
+        },
+        "down": {
+          "texture": "#blanket"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        5,
+        13.5
+      ],
+      "to": [
+        14,
+        9,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#blanket"
+        },
+        "south": {
+          "texture": "#blanket"
+        },
+        "east": {
+          "texture": "#blanket"
+        },
+        "west": {
+          "texture": "#blanket"
+        },
+        "up": {
+          "texture": "#blanket"
+        },
+        "down": {
+          "texture": "#blanket"
+        }
+      }
+    }
+  ]
+}

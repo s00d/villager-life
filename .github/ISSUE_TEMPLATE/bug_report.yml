@@ -1,0 +1,29 @@
+name: Bug report
+description: Something does not work or crashes
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Minecraft, NeoForge and Villager Life versions
+      placeholder: Minecraft 1.21.1, NeoForge 21.1.252, Villager Life 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead. Village coordinates or screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: The list of other mods, or a link to the modpack
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Link to logs/latest.log or the crash report (mclo.gs, gist)

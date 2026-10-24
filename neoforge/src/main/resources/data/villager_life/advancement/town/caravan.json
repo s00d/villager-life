@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/shop",
+  "display": {
+    "icon": {
+      "id": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.caravan.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.caravan.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

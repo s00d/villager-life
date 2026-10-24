@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FDF",
+    "NHN",
+    "FPF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "D": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "P": {
+      "item": "villager_life:mega_part_colosseum"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_quarry",
+    "count": 1
+  }
+}

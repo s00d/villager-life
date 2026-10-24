@@ -1,0 +1,2342 @@
+# Phase R — a child's own lines for situations a child would comment on (speaker child): the same title as the men's group, written per situation.
+
+- key: Rk001
+  id: r_k_001
+  title: "Aether Portal Frame"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А там облака мягкие? На них можно спать?"
+      frames_en:
+        - "Are the clouds soft there? Can you sleep on them?"
+    - weight: 50
+      frames:
+        - "Я туда загляну одним глазком!"
+      frames_en:
+        - "I will peek in with just one eye!"
+- key: Rk002
+  id: r_k_002
+  title: "Allay"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Тихоня, принеси мне печенье! Пожалуйста!"
+      frames_en:
+        - "Allay, bring me a cookie! Please!"
+    - weight: 50
+      frames:
+        - "Она синяя и поёт! Я тоже хочу такую!"
+      frames_en:
+        - "It's blue and it sings! I want one too!"
+- key: Rk003
+  id: r_k_003
+  title: "Angry Bee"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Пчела за мной гонится! Мама!"
+      frames_en:
+        - "The bee is chasing me! Mum!"
+    - weight: 50
+      frames:
+        - "Я её не трогал, честно!"
+      frames_en:
+        - "I didn't touch it, honest!"
+- key: Rk004
+  id: r_k_004
+  title: "Animals Have a Baby"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Малыш! Можно я его назову? Пусть будет Пушок!"
+      frames_en:
+        - "A baby! Can I name it? Let it be Fluffy!"
+    - weight: 50
+      frames:
+        - "Он такой маленький! Он со мной будет играть?"
+      frames_en:
+        - "It is so tiny! Will it play with me?"
+- key: Rk005
+  id: r_k_005
+  title: "Baby Bee"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Пчёлка-малышка! Можно я её поглажу?"
+      frames_en:
+        - "A baby bee! Can I pet it?"
+    - weight: 50
+      frames:
+        - "Она меня не ужалит? Она же маленькая."
+      frames_en:
+        - "Will it sting me? It's so little."
+- key: Rk006
+  id: r_k_006
+  title: "Baby Cat"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама, можно он будет спать со мной?"
+      frames_en:
+        - "Mum, can it sleep in my bed?"
+    - weight: 50
+      frames:
+        - "Он мне лапкой по носу дал!"
+      frames_en:
+        - "It just bopped my nose with its paw!"
+- key: Rk007
+  id: r_k_007
+  title: "Baby Chicken"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он пищит! Можно я его подержу?"
+      frames_en:
+        - "It's peeping! Can I hold it?"
+    - weight: 50
+      frames:
+        - "Я назову его Крошка. Нет, Пушок!"
+      frames_en:
+        - "I'll call it Crumb. No, Fluffy!"
+- key: Rk008
+  id: r_k_008
+  title: "Baby Cow"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он меня облизал! Шершавым языком!"
+      frames_en:
+        - "It licked me! With a scratchy tongue!"
+    - weight: 50
+      frames:
+        - "Телёнок, давай наперегонки!"
+      frames_en:
+        - "Hey calf, race you!"
+- key: Rk009
+  id: r_k_009
+  title: "Baby Horse"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Когда вырастет, я на нём кататься буду!"
+      frames_en:
+        - "When it grows up, I'm going to ride it!"
+    - weight: 50
+      frames:
+        - "Он смешно брыкается! Смотри, смотри!"
+      frames_en:
+        - "It kicks so funny! Look, look!"
+- key: Rk010
+  id: r_k_010
+  title: "Baby Panda"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он кувыркается! Я тоже так умею!"
+      frames_en:
+        - "It's doing somersaults! I can do that too!"
+    - weight: 50
+      frames:
+        - "Можно я его обниму? Только разочек!"
+      frames_en:
+        - "Can I hug it? Just once!"
+- key: Rk011
+  id: r_k_011
+  title: "Baby Pig"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он хрюкнул на меня! Хрю тебе тоже!"
+      frames_en:
+        - "It oinked at me! Oink to you too!"
+    - weight: 50
+      frames:
+        - "Поросёнок, хочешь мою морковку?"
+      frames_en:
+        - "Piggy, do you want my carrot?"
+- key: Rk012
+  id: r_k_012
+  title: "Baby Sheep"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ягнёнок прыгает! Как я!"
+      frames_en:
+        - "The lamb is jumping! Like me!"
+    - weight: 50
+      frames:
+        - "Можно я его покрашу в розовый?"
+      frames_en:
+        - "Can I dye it pink?"
+- key: Rk013
+  id: r_k_013
+  title: "Baby Wolf"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Волчонок! Он рычит, как котик!"
+      frames_en:
+        - "A wolf pup! It growls like a kitty!"
+    - weight: 50
+      frames:
+        - "Можно он будет мой? Я ему кость дам!"
+      frames_en:
+        - "Can it be mine? I'll give it a bone!"
+- key: Rk014
+  id: r_k_014
+  title: "Baby Zombie"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама! Он бегает быстрее меня!"
+      frames_en:
+        - "Mum! It runs faster than me!"
+    - weight: 50
+      frames:
+        - "Я не хочу с тобой играть! Уходи!"
+      frames_en:
+        - "I don't want to play with you! Go away!"
+- key: Rk015
+  id: r_k_015
+  title: "Baby Zombie Piglin"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама! Там злой поросёнок с мечом!"
+      frames_en:
+        - "Mum! There's a mean piglet with a sword!"
+    - weight: 50
+      frames:
+        - "Он маленький, как я, а уже с мечом!"
+      frames_en:
+        - "He's little like me and he's got a sword!"
+- key: Rk016
+  id: r_k_016
+  title: "Baby Zombie Villager"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он раньше со мной играл! Почему он зелёный?"
+      frames_en:
+        - "He used to play with me! Why is he green?"
+    - weight: 50
+      frames:
+        - "Не догонит, не догонит! Ой, догоняет!"
+      frames_en:
+        - "Can't catch me, can't catch me! Oh no, he can!"
+- key: Rk017
+  id: r_k_017
+  title: "Bat"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Летучая мышь! Она вверх ногами спит, я знаю!"
+      frames_en:
+        - "A bat! They sleep upside down, I know!"
+    - weight: 50
+      frames:
+        - "Мам, она пищит! Можно я её оставлю?"
+      frames_en:
+        - "Mum, it squeaks! Can I keep it?"
+- key: Rk018
+  id: r_k_018
+  title: "Bee"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Пчёлка жужжит прямо у меня над ухом!"
+      frames_en:
+        - "The bee is buzzing right by my ear!"
+    - weight: 50
+      frames:
+        - "А она даст мне мёда, если попросить?"
+      frames_en:
+        - "Will it give me honey if I ask nicely?"
+- key: Rk019
+  id: r_k_019
+  title: "Begin Building a Monument"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Можно я камушек положу? Самый маленький!"
+      frames_en:
+        - "Can I put a stone in? The smallest one!"
+    - weight: 50
+      frames:
+        - "А он будет выше колокольни? Выше всех?"
+      frames_en:
+        - "Will it be taller than the bell tower? Tallest ever?"
+- key: Rk020
+  id: r_k_020
+  title: "Botania Flowers Nearby"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Цветочек мне подмигнул! Правда-правда!"
+      frames_en:
+        - "That flower winked at me! Really truly!"
+    - weight: 50
+      frames:
+        - "Я маме сорву один. Она не заругается?"
+      frames_en:
+        - "I will pick one for Mum. Will she be cross?"
+- key: Rk021
+  id: r_k_021
+  title: "Brew a Potion"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Оно булькает и пузырится! Это волшебный суп?"
+      frames_en:
+        - "It bubbles and fizzes! Is it magic soup?"
+    - weight: 50
+      frames:
+        - "А если я выпью, я стану невидимым?"
+      frames_en:
+        - "If I drink it, will I turn invisible?"
+- key: Rk022
+  id: r_k_022
+  title: "Camel"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Можно покататься? Я крепко держаться буду!"
+      frames_en:
+        - "Can I ride it? I'll hold on tight!"
+    - weight: 50
+      frames:
+        - "Он всё жуёт и жуёт! Что он ест?"
+      frames_en:
+        - "It's chewing and chewing! What is it eating?"
+- key: Rk023
+  id: r_k_023
+  title: "Cat"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Котик мурчит! Громко-громко!"
+      frames_en:
+        - "The kitty's purring! Really, really loud!"
+    - weight: 50
+      frames:
+        - "Он принёс мне дохлую мышку. Фу!"
+      frames_en:
+        - "It brought me a dead mouse. Yuck!"
+- key: Rk024
+  id: r_k_024
+  title: "Chicken"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Курица за мной гонится! Ой, нет, это я за ней!"
+      frames_en:
+        - "The chicken's chasing me! No wait, I'm chasing it!"
+    - weight: 50
+      frames:
+        - "Можно я соберу яйца? Я аккуратно!"
+      frames_en:
+        - "Can I collect the eggs? I'll be careful!"
+- key: Rk025
+  id: r_k_025
+  title: "Christmas Day"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мне подарили подарок! Настоящий! Смотри!"
+      frames_en:
+        - "I got a present! A real one! Look!"
+    - weight: 50
+      frames:
+        - "А ты мне что-нибудь блестящее принёс?"
+      frames_en:
+        - "Did you bring me something shiny?"
+- key: Rk026
+  id: r_k_026
+  title: "Christmas Eve"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Не могу уснуть! Уже завтра?"
+      frames_en:
+        - "I can't sleep! Is it tomorrow yet?"
+    - weight: 50
+      frames:
+        - "Мама спрятала подарки. А я знаю где!"
+      frames_en:
+        - "Mum hid the presents. I know where!"
+- key: Rk027
+  id: r_k_027
+  title: "Copper Golem"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Медный человечек! Он со мной поиграет?"
+      frames_en:
+        - "A little copper man! Will it play with me?"
+    - weight: 50
+      frames:
+        - "Он нажал кнопку! Можно я тоже нажму?"
+      frames_en:
+        - "It pressed a button! Can I press it too?"
+- key: Rk028
+  id: r_k_028
+  title: "Cow"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Корова большая-пребольшая! Больше папы!"
+      frames_en:
+        - "The cow is huge! Bigger than Dad!"
+    - weight: 50
+      frames:
+        - "А почему она всё время жуёт?"
+      frames_en:
+        - "Why is it always chewing?"
+- key: Rk029
+  id: r_k_029
+  title: "Craft an Item Nearby"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Что вы сделали? Покажите! Это мне?"
+      frames_en:
+        - "What did you make? Show me! Is it for me?"
+    - weight: 50
+      frames:
+        - "Я тоже умею из палочек строить! Дома покажу!"
+      frames_en:
+        - "I can build with sticks too! I will show you at home!"
+- key: Rk030
+  id: r_k_030
+  title: "Creaking"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мам, дерево на меня смотрит. Правда смотрит!"
+      frames_en:
+        - "Mum, the tree is looking at me. Really looking!"
+    - weight: 50
+      frames:
+        - "Я больше не пойду за грибами. Никогда!"
+      frames_en:
+        - "I'm never going mushroom picking again. Never!"
+- key: Rk031
+  id: r_k_031
+  title: "Cure a Zombie Villager"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я больше не зомби? Можно к маме?"
+      frames_en:
+        - "I'm not a zombie anymore? Can I go to Mum?"
+    - weight: 50
+      frames:
+        - "Фу, во рту вкус гнилой плоти."
+      frames_en:
+        - "Ew, my mouth tastes like rotten flesh."
+- key: Rk032
+  id: r_k_032
+  title: "Dolphin"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Дельфин! Можно с ним поплавать?"
+      frames_en:
+        - "A dolphin! Can I swim with it?"
+    - weight: 50
+      frames:
+        - "Он прыгнул! Так высоко прыгнул!"
+      frames_en:
+        - "It jumped! It jumped so high!"
+- key: Rk033
+  id: r_k_033
+  title: "Draw a Bow"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А попадёте вон в ту тыкву? Спорим, нет?"
+      frames_en:
+        - "Can you hit that pumpkin over there? Bet you cannot!"
+    - weight: 50
+      frames:
+        - "Дайте мне разок натянуть! Я только посмотреть!"
+      frames_en:
+        - "Let me pull the string once! Just to see!"
+- key: Rk034
+  id: r_k_034
+  title: "Enchant an Item"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Оно светится фиолетовым! А меч теперь волшебный?"
+      frames_en:
+        - "It glows purple! Is the sword magic now?"
+    - weight: 50
+      frames:
+        - "Книга сама страницы листает! Страшно и интересно!"
+      frames_en:
+        - "The book turns its own pages! Scary and cool!"
+- key: Rk035
+  id: r_k_035
+  title: "Ender Dragon"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Дракон! Настоящий! Он сюда летит?"
+      frames_en:
+        - "A dragon! A real one! Is it coming here?"
+    - weight: 50
+      frames:
+        - "Я не боюсь! Ну... чуть-чуть боюсь."
+      frames_en:
+        - "I'm not scared! Well... a little bit."
+- key: Rk036
+  id: r_k_036
+  title: "Fish"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Рыбка! Можно я её руками поймаю?"
+      frames_en:
+        - "A fish! Can I catch it with my hands?"
+    - weight: 50
+      frames:
+        - "Смотри, она пузыри пускает!"
+      frames_en:
+        - "Look, it's blowing bubbles!"
+- key: Rk037
+  id: r_k_037
+  title: "Frog"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Лягушка! Я её в кармане домой отнесу!"
+      frames_en:
+        - "A frog! I'll take it home in my pocket!"
+    - weight: 50
+      frames:
+        - "Ква! Она мне ответила! Ква!"
+      frames_en:
+        - "Ribbit! It answered me! Ribbit!"
+- key: Rk038
+  id: r_k_038
+  title: "Gather for a Festoon"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Флажки! Можно я красный повешу?"
+      frames_en:
+        - "Flags! Can I hang the red one?"
+    - weight: 50
+      frames:
+        - "А фонарики ночью будут гореть? Все-все?"
+      frames_en:
+        - "Will the lanterns glow at night? Every single one?"
+- key: Rk039
+  id: r_k_039
+  title: "Gather for a Pavilion"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Шатёр! Я под ним в прятки играть буду!"
+      frames_en:
+        - "A tent! I will play hide-and-seek under it!"
+    - weight: 50
+      frames:
+        - "Жёлтый, как цыплёнок! Мне нравится!"
+      frames_en:
+        - "Yellow like a chick! I love it!"
+- key: Rk040
+  id: r_k_040
+  title: "Gather for a Pyre"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Синий огонь! А почему он не горячий?"
+      frames_en:
+        - "Blue fire! Why is it not hot?"
+    - weight: 50
+      frames:
+        - "Можно я палку в костёр брошу?"
+      frames_en:
+        - "Can I throw a stick in the fire?"
+- key: Rk041
+  id: r_k_041
+  title: "Gather for the Festival"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Праздник! Будут сладости? Скажите, что будут!"
+      frames_en:
+        - "A festival! Will there be sweets? Say there will!"
+    - weight: 50
+      frames:
+        - "Я буду плясать до самой ночи!"
+      frames_en:
+        - "I will dance until it is dark!"
+- key: Rk042
+  id: r_k_042
+  title: "Give a Villager a Nose"
+  category: situation
+  status: removed
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мой нос! Я его сразу узнал!"
+      frames_en:
+        - "My nose! I knew it right away!"
+    - weight: 50
+      frames:
+        - "Ура, теперь я опять чую печенье!"
+      frames_en:
+        - "Yay, now I can smell cookies again!"
+- key: Rk043
+  id: r_k_043
+  title: "Halloween"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Бу! Испугался? Скажи, что да!"
+      frames_en:
+        - "Boo! Did I scare you? Say yes!"
+    - weight: 50
+      frames:
+        - "Конфеты давай, а то яйцами закидаю!"
+      frames_en:
+        - "Sweets, or I'll throw eggs at your house!"
+- key: Rk044
+  id: r_k_044
+  title: "Happy Ghast"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Можно на нём полетать? Ну пожалуйста!"
+      frames_en:
+        - "Can I fly on it? Please, please!"
+    - weight: 50
+      frames:
+        - "Он как огромная подушка в небе!"
+      frames_en:
+        - "It's like a giant pillow in the sky!"
+- key: Rk045
+  id: r_k_045
+  title: "Harming Potion"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ай! Ведьма в меня бутылкой кинула!"
+      frames_en:
+        - "Ow! The witch threw a bottle at me!"
+    - weight: 50
+      frames:
+        - "Я маме всё расскажу, злая Ведьма!"
+      frames_en:
+        - "I'm telling my mum, you mean witch!"
+- key: Rk046
+  id: r_k_046
+  title: "Hold Boss Trophy"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Это ты его победил? Сам? Расскажи!"
+      frames_en:
+        - "You beat it? All by yourself? Tell me!"
+    - weight: 50
+      frames:
+        - "Можно потрогать? Он точно не оживёт?"
+      frames_en:
+        - "Can I touch it? It will not come alive, right?"
+- key: Rk047
+  id: r_k_047
+  title: "Hold a Blaze Cake"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Тортик! Он горячий? Можно кусочек?"
+      frames_en:
+        - "A cake! Is it hot? Can I have a piece?"
+    - weight: 50
+      frames:
+        - "Мама сказала, его есть нельзя. А лизнуть можно?"
+      frames_en:
+        - "Mum said I cannot eat it. Can I lick it?"
+- key: Rk048
+  id: r_k_048
+  title: "Hold a Divers Helmet"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ты рыбок видел? Каких? Больших?"
+      frames_en:
+        - "Did you see fish? What kind? Big ones?"
+    - weight: 50
+      frames:
+        - "Можно в шлем покричать? Эхо будет!"
+      frames_en:
+        - "Can I shout into the helmet? It will echo!"
+- key: Rk049
+  id: r_k_049
+  title: "Hold a Honeyed Apple"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Яблоко в меду! Я руки помою, честно!"
+      frames_en:
+        - "A honey apple! I will wash my hands, promise!"
+    - weight: 50
+      frames:
+        - "Половинку мне, половинку сестрёнке!"
+      frames_en:
+        - "Half for me, half for my little sister!"
+- key: Rk050
+  id: r_k_050
+  title: "Hold a Potato Cannon"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Бах! Картошка улетела до самого леса!"
+      frames_en:
+        - "Boom! The potato flew all the way to the woods!"
+    - weight: 50
+      frames:
+        - "Дай стрельнуть разок! Я в бочку попаду!"
+      frames_en:
+        - "Let me shoot once! I will hit the barrel!"
+- key: Rk051
+  id: r_k_051
+  title: "Hold an Elytra with Jetpack"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ты как птица! Как большая шумная птица!"
+      frames_en:
+        - "You are like a bird! A big noisy bird!"
+    - weight: 50
+      frames:
+        - "Сделай петлю! Ну пожалуйста, одну петлю!"
+      frames_en:
+        - "Do a loop! Please, just one loop!"
+- key: Rk052
+  id: r_k_052
+  title: "Hold an Extendo Grip"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ух ты, рука длинная! Почеши мне спину!"
+      frames_en:
+        - "Wow, a long arm! Scratch my back!"
+    - weight: 50
+      frames:
+        - "Достань мой мячик с крыши, пожалуйста!"
+      frames_en:
+        - "Get my ball off the roof, please!"
+- key: Rk053
+  id: r_k_053
+  title: "Horse"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Покатай меня! Ну пожалуйста!"
+      frames_en:
+        - "Give me a ride! Please, please!"
+    - weight: 50
+      frames:
+        - "У неё хвост как коса у моей сестры!"
+      frames_en:
+        - "Its tail looks like my sister's braid!"
+- key: Rk054
+  id: r_k_054
+  title: "Iron Golem"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Голем, подкинь меня высоко-высоко!"
+      frames_en:
+        - "Golem, throw me up high, really high!"
+    - weight: 50
+      frames:
+        - "Он мне цветок дал! Это мне!"
+      frames_en:
+        - "He gave me a flower! It's for me!"
+- key: Rk055
+  id: r_k_055
+  title: "Iron Golem Targets the Player"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Голем, не надо! Он хороший! Иногда."
+      frames_en:
+        - "Golem, don't! He's nice! Sometimes."
+    - weight: 50
+      frames:
+        - "Беги быстрее! Голем бегает медленно!"
+      frames_en:
+        - "Run faster! The golem is slow!"
+- key: Rk056
+  id: r_k_056
+  title: "Jockey"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он верхом! Я тоже хочу покататься!"
+      frames_en:
+        - "He's riding! I want a ride too!"
+    - weight: 50
+      frames:
+        - "Маленький на большом! Как я на папе!"
+      frames_en:
+        - "A little one on a big one! Like me on Dad!"
+- key: Rk057
+  id: r_k_057
+  title: "Lava"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ай-ай-ай! Горячо! Мама, вытащи меня!"
+      frames_en:
+        - "Ow ow ow! It's hot! Mum, get me out!"
+    - weight: 50
+      frames:
+        - "Я думал, это красный сок!"
+      frames_en:
+        - "I thought it was red juice!"
+- key: Rk058
+  id: r_k_058
+  title: "Llama"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Лама! Она правда плюётся? Покажи!"
+      frames_en:
+        - "A llama! Does it really spit? Show me!"
+    - weight: 50
+      frames:
+        - "У неё такая длинная шея! Как лестница!"
+      frames_en:
+        - "Its neck is so long! Like a ladder!"
+- key: Rk059
+  id: r_k_059
+  title: "Load or Fire Artillery"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ещё! Пальни ещё раз!"
+      frames_en:
+        - "Again! Fire it again!"
+    - weight: 50
+      frames:
+        - "Я уши закрыл! Почти!"
+      frames_en:
+        - "I covered my ears! Mostly!"
+- key: Rk060
+  id: r_k_060
+  title: "Minecraft's Birthday"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "У мира день рождения? Он уже старый?"
+      frames_en:
+        - "The world has a birthday? Is it very old?"
+    - weight: 50
+      frames:
+        - "Можно я задую свечки? Ну можно?"
+      frames_en:
+        - "Can I blow out the candles? Can I?"
+- key: Rk061
+  id: r_k_061
+  title: "Mount a Boat"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Лодочка! Я тоже хочу, я буду капитаном!"
+      frames_en:
+        - "A boat! I want to come, I will be captain!"
+    - weight: 50
+      frames:
+        - "А там рыбы кусаются? А спруты есть?"
+      frames_en:
+        - "Do the fish bite out there? Are there squids?"
+- key: Rk062
+  id: r_k_062
+  title: "Mount a Horse"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Лошадка! А покатайте меня, я лёгкий!"
+      frames_en:
+        - "A horsey! Give me a ride, I am light!"
+    - weight: 50
+      frames:
+        - "Я ей морковку дам, а вы меня посадите!"
+      frames_en:
+        - "I will give her a carrot, and you lift me up!"
+- key: Rk063
+  id: r_k_063
+  title: "Mount a Mob"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Вот это да! А можно я сзади сяду?"
+      frames_en:
+        - "Wow! Can I sit behind you?"
+    - weight: 50
+      frames:
+        - "Оно не укусит? Скажите, что не укусит!"
+      frames_en:
+        - "It will not bite? Tell me it will not bite!"
+- key: Rk064
+  id: r_k_064
+  title: "Name a Villager \"Dinnerbone\""
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ура, я вверх ногами! Смотрите, я акробат!"
+      frames_en:
+        - "Yay, I'm upside down! Look, I'm an acrobat!"
+    - weight: 50
+      frames:
+        - "Ой, всё кружится, и шапка падает!"
+      frames_en:
+        - "Whoa, everything's spinning and my hat's falling!"
+- key: Rk065
+  id: r_k_065
+  title: "Name a Villager \"Jeb\""
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я разноцветный! Я как радуга!"
+      frames_en:
+        - "I'm all colours! I'm like a rainbow!"
+    - weight: 50
+      frames:
+        - "Смотрите, я теперь мигаю! Здорово!"
+      frames_en:
+        - "Look, I'm flashing now! So cool!"
+- key: Rk066
+  id: r_k_066
+  title: "New Year's Day"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я не спал всю ночь! Почти!"
+      frames_en:
+        - "I stayed up all night! Almost!"
+    - weight: 50
+      frames:
+        - "С Новым годом! Я теперь на целый год старше!"
+      frames_en:
+        - "Happy New Year! I'm a whole year older now!"
+- key: Rk067
+  id: r_k_067
+  title: "Panda"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Панда спит на спине! Можно я на неё лягу?"
+      frames_en:
+        - "The panda sleeps on its back! Can I lie on it?"
+    - weight: 50
+      frames:
+        - "Панда, а ты умеешь лазить по деревьям?"
+      frames_en:
+        - "Panda, can you climb trees?"
+- key: Rk068
+  id: r_k_068
+  title: "Parrot"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Попугай, скажи моё имя! Ну скажи!"
+      frames_en:
+        - "Parrot, say my name! Go on, say it!"
+    - weight: 50
+      frames:
+        - "Он танцует! Он танцует лучше папы!"
+      frames_en:
+        - "It's dancing! It dances better than Dad!"
+- key: Rk069
+  id: r_k_069
+  title: "Pick Up Armor"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Она мне велика, но я дорасту!"
+      frames_en:
+        - "It's too big, but I'll grow into it!"
+    - weight: 50
+      frames:
+        - "Тяжёлая какая! Папа такую носит?"
+      frames_en:
+        - "So heavy! Does Dad wear this?"
+- key: Rk070
+  id: r_k_070
+  title: "Pick Up Enchanted Armor"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Блестит! Я теперь рыцарь, как в сказке!"
+      frames_en:
+        - "It sparkles! I'm a knight like in the stories!"
+    - weight: 50
+      frames:
+        - "Мама, смотри, волшебная броня! Можно я её оставлю?"
+      frames_en:
+        - "Mum, look, magic armour! Can I keep it?"
+- key: Rk071
+  id: r_k_071
+  title: "Pick Up XP"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Зелёные шарики! Они звенят, когда их ловишь!"
+      frames_en:
+        - "Green orbs! They ding when you catch them!"
+    - weight: 50
+      frames:
+        - "А мне шарик оставите? Хоть один маленький!"
+      frames_en:
+        - "Will you leave me an orb? Just a little one!"
+- key: Rk072
+  id: r_k_072
+  title: "Pick Up an Item"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я нашёл! Это теперь моё сокровище!"
+      frames_en:
+        - "I found it! It's my treasure now!"
+    - weight: 50
+      frames:
+        - "Ух ты, а что это? Это едят?"
+      frames_en:
+        - "Whoa, what's this? Can you eat it?"
+- key: Rk073
+  id: r_k_073
+  title: "Pig"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Свинья! Можно я на ней покатаюсь?"
+      frames_en:
+        - "A pig! Can I ride it?"
+    - weight: 50
+      frames:
+        - "У неё хвостик крючком! Смешно!"
+      frames_en:
+        - "Its tail is all curly! So funny!"
+- key: Rk074
+  id: r_k_074
+  title: "Place Aeronautics Parts"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мы полетим? Я первым сяду, ладно?"
+      frames_en:
+        - "Are we going to fly? I get the first seat, okay?"
+    - weight: 50
+      frames:
+        - "Я с неба наш дом увижу! И маму!"
+      frames_en:
+        - "I will see our house from the sky! And Mum!"
+- key: Rk075
+  id: r_k_075
+  title: "Place Create Contraption Anchor"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А можно мне прокатиться? Я буду держаться!"
+      frames_en:
+        - "Can I have a ride? I will hold on tight!"
+    - weight: 50
+      frames:
+        - "Оно поедет само? Совсем без лошадки?"
+      frames_en:
+        - "Will it move by itself? With no horse at all?"
+- key: Rk076
+  id: r_k_076
+  title: "Place Create Machinery"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Крутится! Можно я большое колесо покручу?"
+      frames_en:
+        - "It spins! Can I turn the big wheel?"
+    - weight: 50
+      frames:
+        - "Когда вырасту, тоже машину построю!"
+      frames_en:
+        - "When I grow up, I'll build a machine too!"
+- key: Rk077
+  id: r_k_077
+  title: "Place Space Gear"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ракета! Настоящая! Возьмите меня на луну!"
+      frames_en:
+        - "A rocket! A real one! Take me to the moon!"
+    - weight: 50
+      frames:
+        - "А на луне есть другие дети?"
+      frames_en:
+        - "Are there other kids on the moon?"
+- key: Rk078
+  id: r_k_078
+  title: "Place Train Tracks"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Рельсы! Можно я по ним как по бревну пройду?"
+      frames_en:
+        - "Tracks! Can I balance on them like a log?"
+    - weight: 50
+      frames:
+        - "А паровозик гудеть будет? Ту-ту!"
+      frames_en:
+        - "Will the train whistle? Choo choo!"
+- key: Rk079
+  id: r_k_079
+  title: "Place a Big Cannon"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ого! Настоящая пушка! Можно на неё сесть?"
+      frames_en:
+        - "Whoa! A real cannon! Can I sit on it?"
+    - weight: 50
+      frames:
+        - "Она бабахает? Сильно бабахает?"
+      frames_en:
+        - "Does it go boom? How big a boom?"
+- key: Rk080
+  id: r_k_080
+  title: "Place a Computer"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Огоньки мигают! А он умеет играть?"
+      frames_en:
+        - "The lights blink! Can it play games?"
+    - weight: 50
+      frames:
+        - "Можно я нажму кнопку? Одну только!"
+      frames_en:
+        - "Can I press a button? Just one!"
+- key: Rk081
+  id: r_k_081
+  title: "Place a Cooking Pot or Skillet"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А что варится? Можно я ложку оближу?"
+      frames_en:
+        - "What is cooking? Can I lick the spoon?"
+    - weight: 50
+      frames:
+        - "Я помогу мешать! Я умею, честно!"
+      frames_en:
+        - "I can help stir! I know how, honestly!"
+- key: Rk082
+  id: r_k_082
+  title: "Place a Monument Brick"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я считаю кирпичи! Уже сто! Или десять!"
+      frames_en:
+        - "I am counting bricks! A hundred already! Or ten!"
+    - weight: 50
+      frames:
+        - "А можно я тут ладошку отпечатаю?"
+      frames_en:
+        - "Can I press my handprint right here?"
+- key: Rk083
+  id: r_k_083
+  title: "Play a Note Block"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Динь-дон! А можно я тоже постучу?"
+      frames_en:
+        - "Ding-dong! Can I bang on it too?"
+    - weight: 50
+      frames:
+        - "Сыграйте песенку про корову! Ну пожалуйста!"
+      frames_en:
+        - "Play the song about the cow! Please!"
+- key: Rk084
+  id: r_k_084
+  title: "Polar Bear"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Белый мишка! Он как моя игрушка, только большой!"
+      frames_en:
+        - "A white bear! Like my toy, only big!"
+    - weight: 50
+      frames:
+        - "Мишка, хочешь рыбку? Я тебе дам!"
+      frames_en:
+        - "Bear, do you want a fish? I'll give you one!"
+- key: Rk085
+  id: r_k_085
+  title: "Rabbit"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Зайчик! Можно я его поглажу?"
+      frames_en:
+        - "A bunny! Can I pet it?"
+    - weight: 50
+      frames:
+        - "Я прыгаю выше зайца! Смотри!"
+      frames_en:
+        - "I can jump higher than the bunny! Watch!"
+- key: Rk086
+  id: r_k_086
+  title: "See Another Entity Get Hurt"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ой! Ему больно? Подуть надо!"
+      frames_en:
+        - "Ouch! Does it hurt? You need to blow on it!"
+    - weight: 50
+      frames:
+        - "Я не смотрел, я глаза закрыл!"
+      frames_en:
+        - "I didn't look, I closed my eyes!"
+- key: Rk087
+  id: r_k_087
+  title: "See Enriching Fire"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Огонь какой-то волшебный! Как он так горит?"
+      frames_en:
+        - "That fire looks magic! How does it burn like that?"
+    - weight: 50
+      frames:
+        - "Я только палочкой ткну, совсем чуть-чуть."
+      frames_en:
+        - "I will just poke it with a stick, only a bit."
+- key: Rk088
+  id: r_k_088
+  title: "See XP Orbs"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Зелёные шарики! Они ко мне катятся!"
+      frames_en:
+        - "Green marbles! They're rolling towards me!"
+    - weight: 50
+      frames:
+        - "Я поймал один! А он пропал!"
+      frames_en:
+        - "I caught one! And it vanished!"
+- key: Rk089
+  id: r_k_089
+  title: "See a Baby Villager"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Малыш! Давай я научу тебя бегать!"
+      frames_en:
+        - "A little one! I'll teach you to run!"
+    - weight: 50
+      frames:
+        - "Он меньше меня! Я теперь старший!"
+      frames_en:
+        - "He's smaller than me! I'm the big one now!"
+- key: Rk090
+  id: r_k_090
+  title: "See a Blaze Burner"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Там внутри кто-то сидит и смотрит на меня!"
+      frames_en:
+        - "Something is sitting in there and looking at me!"
+    - weight: 50
+      frames:
+        - "Ой, горячо! Я только чуть-чуть потрогать хотел."
+      frames_en:
+        - "Ow, hot! I only wanted to touch it a little."
+- key: Rk091
+  id: r_k_091
+  title: "See a DivineRPG or AoA Mob"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама! Там чудище с тремя глазами!"
+      frames_en:
+        - "Mum! There is a monster with three eyes!"
+    - weight: 50
+      frames:
+        - "Я не боюсь… Я только за маму подержусь."
+      frames_en:
+        - "I am not scared… I will just hold Mum's hand."
+- key: Rk092
+  id: r_k_092
+  title: "See a Pile of Dropped Items"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ух ты, клад! Можно я возьму одну штучку?"
+      frames_en:
+        - "Whoa, treasure! Can I take just one thing?"
+    - weight: 50
+      frames:
+        - "Мам, смотри, тут кто-то все игрушки потерял!"
+      frames_en:
+        - "Mum, look, someone lost all their toys!"
+- key: Rk093
+  id: r_k_093
+  title: "See a Villager Wearing a Cosmetic"
+  category: situation
+  status: removed
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Дядя смешной! Я тоже хочу такую шапку!"
+      frames_en:
+        - "He looks so funny! I want a hat like that!"
+    - weight: 50
+      frames:
+        - "Давай играть, ты будешь разбойник!"
+      frames_en:
+        - "Let's play, you can be the robber!"
+- key: Rk094
+  id: r_k_094
+  title: "See an Unknown Mob"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Это кто? Можно потрогать?"
+      frames_en:
+        - "What is that? Can I touch it?"
+    - weight: 50
+      frames:
+        - "Мам! Странный зверь! Можно его оставить?"
+      frames_en:
+        - "Mum! A weird animal! Can we keep it?"
+- key: Rk095
+  id: r_k_095
+  title: "Share Food with Another Villager"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Держи, мне мама дала два яблока."
+      frames_en:
+        - "Here, Mum gave me two apples."
+    - weight: 50
+      frames:
+        - "Бери половинку, я честно поделил."
+      frames_en:
+        - "Take half, I split it fair and square."
+- key: Rk096
+  id: r_k_096
+  title: "Shear Off a Villager's Nose"
+  category: situation
+  status: removed
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ай! Мой нос! Я маме скажу!"
+      frames_en:
+        - "Ow! My nose! I'm telling Mum!"
+    - weight: 50
+      frames:
+        - "А он обратно вырастет? Правда вырастет?"
+      frames_en:
+        - "Will it grow back? Will it really?"
+- key: Rk097
+  id: r_k_097
+  title: "Sheared Sheep"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Овечка лысая! Ей холодно?"
+      frames_en:
+        - "The sheep is bald! Is it cold?"
+    - weight: 50
+      frames:
+        - "Ха, она теперь как поросёнок!"
+      frames_en:
+        - "Ha, it looks like a piglet now!"
+- key: Rk098
+  id: r_k_098
+  title: "Slime"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он как желе! Можно я его потыкаю?"
+      frames_en:
+        - "It's like jelly! Can I poke it?"
+    - weight: 50
+      frames:
+        - "Ой, он на меня прыгает! Мама!"
+      frames_en:
+        - "Oh, it's jumping at me! Mummy!"
+- key: Rk099
+  id: r_k_099
+  title: "Sniffer"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Нюхач большой и добрый! Можно на нём покататься?"
+      frames_en:
+        - "The Sniffer's big and friendly! Can I ride it?"
+    - weight: 50
+      frames:
+        - "Он нашёл что-то! Что там, что там?"
+      frames_en:
+        - "It found something! What is it, what is it?"
+- key: Rk100
+  id: r_k_100
+  title: "Snow Golem"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Снеговик живой! Он кидается снежками!"
+      frames_en:
+        - "The snowman's alive! It throws snowballs!"
+    - weight: 50
+      frames:
+        - "Можно я ему морковку вместо носа дам?"
+      frames_en:
+        - "Can I give it a carrot for a nose?"
+- key: Rk101
+  id: r_k_101
+  title: "Spawn a Villager with a Spawn Egg"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он из яйца вылез! Как цыплёнок!"
+      frames_en:
+        - "He came out of an egg! Like a chick!"
+    - weight: 50
+      frames:
+        - "Мам, а я тоже был в яйце?"
+      frames_en:
+        - "Mum, was I in an egg too?"
+- key: Rk102
+  id: r_k_102
+  title: "Suddenly Turns to Night"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Уже ночь? Я ещё не наигрался!"
+      frames_en:
+        - "Night already? I haven't finished playing!"
+    - weight: 50
+      frames:
+        - "Темно! Мама, а монстры уже вышли?"
+      frames_en:
+        - "It's dark! Mum, are the monsters out yet?"
+- key: Rk103
+  id: r_k_103
+  title: "Sulfur Cube"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он вонючий кубик! Ха-ха, вонючка!"
+      frames_en:
+        - "It's a stinky cube! Ha ha, stinky!"
+    - weight: 50
+      frames:
+        - "Можно я ему дам свой камушек съесть?"
+      frames_en:
+        - "Can I feed it my pebble?"
+- key: Rk104
+  id: r_k_104
+  title: "Take Smelted Items"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ой, слиток светится! Можно потрогать? Ну чуть-чуть?"
+      frames_en:
+        - "Ooh, the ingot is glowing! Can I touch it? A tiny bit?"
+    - weight: 50
+      frames:
+        - "А из печки ещё что-нибудь вылезет? Ещё!"
+      frames_en:
+        - "Will anything else come out of the furnace? More!"
+- key: Rk105
+  id: r_k_105
+  title: "Tame an Animal"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Можно погладить? Он не кусается?"
+      frames_en:
+        - "Can I pet him? He does not bite?"
+    - weight: 50
+      frames:
+        - "Давай назовём его Пирожок!"
+      frames_en:
+        - "Let us call him Dumpling!"
+- key: Rk106
+  id: r_k_106
+  title: "Tamed Baby Wolf"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Щенок! Он виляет хвостиком!"
+      frames_en:
+        - "A puppy! It's wagging its tail!"
+    - weight: 50
+      frames:
+        - "Пёсик, принеси палку! Ну принеси!"
+      frames_en:
+        - "Doggy, fetch the stick! Go on, fetch!"
+- key: Rk107
+  id: r_k_107
+  title: "The Altar Awakens"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама, оно светится! Оно живое?"
+      frames_en:
+        - "Mum, it is glowing! Is it alive?"
+    - weight: 50
+      frames:
+        - "Я не боюсь! Ну, чуть-чуть боюсь."
+      frames_en:
+        - "I am not scared! Well, a little scared."
+- key: Rk108
+  id: r_k_108
+  title: "Time Skips"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Солнце так быстро бегает! Как зайчик!"
+      frames_en:
+        - "The sun's running so fast! Like a bunny!"
+    - weight: 50
+      frames:
+        - "Ещё! Пусть солнце опять прыгнет!"
+      frames_en:
+        - "Again! Make the sun jump again!"
+- key: Rk109
+  id: r_k_109
+  title: "Tocsin Awakens"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама! Он огромный! Он нас съест?"
+      frames_en:
+        - "Mum! It is huge! Will it eat us?"
+    - weight: 50
+      frames:
+        - "У него в животе огонь, я видел!"
+      frames_en:
+        - "There is fire in its belly, I saw it!"
+- key: Rk110
+  id: r_k_110
+  title: "Tocsin Sheds Plates"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Железные жуки! Они за мной бегут!"
+      frames_en:
+        - "Iron beetles! They are chasing me!"
+    - weight: 50
+      frames:
+        - "Я на лавку залез, сюда не достанут!"
+      frames_en:
+        - "I climbed on the bench, they cannot reach me!"
+- key: Rk111
+  id: r_k_111
+  title: "Tocsin Silenced"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мы победили! Я тоже помогал, я камень кинул!"
+      frames_en:
+        - "We won! I helped too, I threw a stone!"
+    - weight: 50
+      frames:
+        - "Можно забрать кусочек колокола на память?"
+      frames_en:
+        - "Can I keep a piece of the bell?"
+- key: Rk112
+  id: r_k_112
+  title: "Turtle"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Черепаха! А она в домик спрячется?"
+      frames_en:
+        - "A turtle! Will it hide in its shell?"
+    - weight: 50
+      frames:
+        - "Я её обгоню! Ой, она уже уплыла."
+      frames_en:
+        - "I'll race it! Oh, it's swum away already."
+- key: Rk113
+  id: r_k_113
+  title: "Turtle Wandering in Village"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Черепашка! Она за мной ходит!"
+      frames_en:
+        - "A little turtle! It follows me around!"
+    - weight: 50
+      frames:
+        - "Можно её домой взять? Я буду с ней гулять!"
+      frames_en:
+        - "Can I take it home? I will walk it every day!"
+- key: Rk114
+  id: r_k_114
+  title: "Twilight Forest Relic"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Это из сказочного леса? Расскажи про него!"
+      frames_en:
+        - "Is that from the fairy-tale forest? Tell me about it!"
+    - weight: 50
+      frames:
+        - "Ух ты, блестит! Дай подержать!"
+      frames_en:
+        - "Wow, it sparkles! Let me hold it!"
+- key: Rk115
+  id: r_k_115
+  title: "Two Villagers at a Campfire"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Расскажите страшную историю! Ну пожалуйста!"
+      frames_en:
+        - "Tell a scary story! Please!"
+    - weight: 50
+      frames:
+        - "Можно я хлебушек на палочке поджарю?"
+      frames_en:
+        - "Can I toast bread on a stick?"
+- key: Rk116
+  id: r_k_116
+  title: "Two Villagers in One Boat"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я на носу сижу, я впередсмотрящий!"
+      frames_en:
+        - "I sit at the front, I'm the lookout!"
+    - weight: 50
+      frames:
+        - "А мы до моря доплывём?"
+      frames_en:
+        - "Will we sail all the way to the sea?"
+- key: Rk117
+  id: r_k_117
+  title: "Use a Totem of Undying"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ого, зелёная вспышка, а вы живой!"
+      frames_en:
+        - "Whoa, a green flash, and you are alive!"
+    - weight: 50
+      frames:
+        - "А можно мне такую куколку от смерти?"
+      frames_en:
+        - "Can I have a little doll against dying too?"
+- key: Rk118
+  id: r_k_118
+  title: "Use a Waystone Nearby"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Пуф! Куда он делся? Я тоже хочу!"
+      frames_en:
+        - "Poof! Where did he go? I want to do that!"
+    - weight: 50
+      frames:
+        - "Мама, а он вернётся к ужину?"
+      frames_en:
+        - "Mum, will he be back for supper?"
+- key: Rk119
+  id: r_k_119
+  title: "Wander in December"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скоро подарки! Я весь год был хороший!"
+      frames_en:
+        - "Presents soon! I've been good all year!"
+    - weight: 50
+      frames:
+        - "Мы будем лепить снеговика? Мам, ну пожалуйста!"
+      frames_en:
+        - "Can we build a snowman? Mum, please!"
+- key: Rk120
+  id: r_k_120
+  title: "Wander in October"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я буду привидением! У-у-у!"
+      frames_en:
+        - "I'll be a ghost! Ooo-ooo!"
+    - weight: 50
+      frames:
+        - "Конфеты! Я соберу больше всех!"
+      frames_en:
+        - "Sweets! I'll collect the most!"
+- key: Rk121
+  id: r_k_121
+  title: "Wander on April Fools' Day"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мам, у тебя молоко убежало! Первое апреля!"
+      frames_en:
+        - "Mum, your milk boiled over! April Fools!"
+    - weight: 50
+      frames:
+        - "Я спрятал папины сапоги. Это шутка такая!"
+      frames_en:
+        - "I hid Dad's boots. It's a joke!"
+- key: Rk122
+  id: r_k_122
+  title: "Wander on New Year's Eve"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Можно мне сегодня не спать до полуночи?"
+      frames_en:
+        - "Can I stay up till midnight tonight?"
+    - weight: 50
+      frames:
+        - "Я загадаю щенка! Нет, двух щенков!"
+      frames_en:
+        - "I'll wish for a puppy! No, two puppies!"
+- key: Rk123
+  id: r_k_123
+  title: "Wander on the Weekend"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ура, никаких уроков! Весь день играем!"
+      frames_en:
+        - "Hooray, no lessons! We play all day!"
+    - weight: 50
+      frames:
+        - "Папа сегодня дома! Он обещал мне лодочку!"
+      frames_en:
+        - "Dad's home today! He promised me a toy boat!"
+- key: Rk124
+  id: r_k_124
+  title: "Wear a Huge Backpack"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "А в рюкзак можно меня посадить?"
+      frames_en:
+        - "Can I sit inside your backpack?"
+    - weight: 50
+      frames:
+        - "У тебя там конфеты есть? Хоть одна?"
+      frames_en:
+        - "Do you have sweets in there? Just one?"
+- key: Rk125
+  id: r_k_125
+  title: "Wear a Jetpack"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ты летаешь! Поймай меня в воздухе!"
+      frames_en:
+        - "You are flying! Catch me up in the air!"
+    - weight: 50
+      frames:
+        - "Я, когда вырасту, тоже так полечу!"
+      frames_en:
+        - "When I grow up, I will fly like that too!"
+- key: Rk126
+  id: r_k_126
+  title: "Wear a Space Suit"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ты космонавт? Покажи, как по луне прыгают!"
+      frames_en:
+        - "Are you an astronaut? Show me how to hop on the moon!"
+    - weight: 50
+      frames:
+        - "Можно постучать по шлему? Тук-тук!"
+      frames_en:
+        - "Can I knock on the helmet? Knock knock!"
+- key: Rk127
+  id: r_k_127
+  title: "Weekend"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Уроков нет! Я весь день на речке!"
+      frames_en:
+        - "No lessons! I'm at the river all day!"
+    - weight: 50
+      frames:
+        - "Давай в догонялки! Ты водишь!"
+      frames_en:
+        - "Play tag with me! You're it!"
+- key: Rk128
+  id: r_k_128
+  title: "Wither"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама, у него три головы! Мне страшно!"
+      frames_en:
+        - "Mum, it has three heads! I'm scared!"
+    - weight: 50
+      frames:
+        - "Я под кровать спрячусь, он меня не найдёт!"
+      frames_en:
+        - "I'll hide under the bed, it won't find me!"
+- key: Rk129
+  id: r_k_129
+  title: "Wolf"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Это волк из сказки? Он злой?"
+      frames_en:
+        - "Is that the wolf from the fairy tale? Is it bad?"
+    - weight: 50
+      frames:
+        - "Мама, я за тобой спрячусь!"
+      frames_en:
+        - "Mum, I'm hiding behind you!"
+- key: Rk130
+  id: r_k_130
+  title: "Workshop begins"
+  category: situation
+  status: active
+  trigger: "the same situation as the villager group of this title"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Папа, можно я буду гвозди подавать?"
+      frames_en:
+        - "Dad, can I hand you the nails?"
+    - weight: 50
+      frames:
+        - "А там будет мой уголок? Маленький?"
+      frames_en:
+        - "Will there be a corner for me? A little one?"

@@ -1,0 +1,5 @@
+# Anywhere in the dev world: the debug commands answer and the world saves.
+expect Saved the game :: /vnap save
+expect villagers within :: /vnap who 32
+expect check: \d+ problems :: /vnap check 32
+expect house projects :: /vnap houses

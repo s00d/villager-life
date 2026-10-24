@@ -1,0 +1,8 @@
+{
+  "parent": "villager_life:block/totem",
+  "textures": {
+    "face": "villager_life:block/mourning_totem",
+    "wing": "villager_life:block/mourning_totem_wing",
+    "top": "villager_life:block/mourning_totem_top"
+  }
+}

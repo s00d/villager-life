@@ -1,0 +1,70 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "villager_life:block/spire/mech/plate",
+  "p": "villager_life:block/spire/mech/plate",
+  "s": "villager_life:block/spire/mech/slate"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    1,
+    15
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#p"
+    },
+    "north": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "south": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "east": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "west": {
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ],
+     "texture": "#s"
+    }
+   }
+  }
+ ]
+}

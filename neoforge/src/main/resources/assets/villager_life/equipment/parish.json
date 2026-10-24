@@ -1,0 +1,6 @@
+{
+  "layers": {
+    "humanoid": [{ "texture": "villager_life:parish" }],
+    "humanoid_leggings": [{ "texture": "villager_life:parish" }]
+  }
+}

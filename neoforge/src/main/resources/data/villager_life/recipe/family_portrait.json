@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:painting"
+    }
+  ],
+  "result": {
+    "id": "villager_life:family_portrait",
+    "count": 1
+  }
+}

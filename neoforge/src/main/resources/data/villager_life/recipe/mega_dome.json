@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FBF",
+    "SGS",
+    "FPF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "B": {
+      "item": "minecraft:bone_block"
+    },
+    "S": {
+      "item": "minecraft:oak_sapling"
+    },
+    "G": {
+      "item": "minecraft:glow_berries"
+    },
+    "P": {
+      "item": "villager_life:mega_part_path"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_dome",
+    "count": 1
+  }
+}

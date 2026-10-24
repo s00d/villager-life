@@ -1,0 +1,14 @@
+{
+  "en": {
+    "vnap.hamlet.leaves": "%s leaves the full village to found a hamlet",
+    "vnap.hamlet.leave_together": "%s and %s leave the full village to found a hamlet together",
+    "vnap.wedding.wish": "%s asks you for a wedding gift: %s",
+    "vnap.wedding.invite": "%s is getting married at the bell — you are invited!"
+  },
+  "ru": {
+    "vnap.hamlet.leaves": "%s уходит из переполненной деревни основать хутор",
+    "vnap.hamlet.leave_together": "%s и %s вместе уходят из переполненной деревни основать хутор",
+    "vnap.wedding.wish": "%s просит подарок на свадьбу: %s",
+    "vnap.wedding.invite": "%s выходит замуж у колокола — вас зовут на свадьбу!"
+  }
+}

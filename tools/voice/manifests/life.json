@@ -1,0 +1,1397 @@
+{
+  "count": 50,
+  "items": [
+    {
+      "id": "life_warm.0",
+      "group": "Warm village",
+      "group_id": "life_warm",
+      "expand_key": "life_warm",
+      "variant": 0,
+      "voice": "life_warm_0",
+      "ogg": "voice/life/life_warm_0.ogg",
+      "duration": 2.17,
+      "en": "The village feels bright today.",
+      "ru": "Сегодня в деревне светло.",
+      "en_tts": "The village feels bright today.",
+      "ru_tts": "Сегодня в деревне светло.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Сегодня в деревне светло."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_warm.0.0"
+      ],
+      "title": "Warm village",
+      "category": "life",
+      "spec_key": "life_warm"
+    },
+    {
+      "id": "life_warm.1",
+      "group": "Warm village",
+      "group_id": "life_warm",
+      "expand_key": "life_warm",
+      "variant": 1,
+      "voice": "life_warm_1",
+      "ogg": "voice/life/life_warm_1.ogg",
+      "duration": 1.89,
+      "en": "Stay a while. We have room.",
+      "ru": "Останься. Места хватит.",
+      "en_tts": "Stay a while. We have room.",
+      "ru_tts": "Останься. Места хватит.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Останься. Места хватит."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_warm.1.0"
+      ],
+      "title": "Warm village",
+      "category": "life",
+      "spec_key": "life_warm"
+    },
+    {
+      "id": "life_warm.2",
+      "group": "Warm village",
+      "group_id": "life_warm",
+      "expand_key": "life_warm",
+      "variant": 2,
+      "voice": "life_warm_2",
+      "ogg": "voice/life/life_warm_2.ogg",
+      "duration": 1.96,
+      "en": "Good to see a friendly face.",
+      "ru": "Приятно видеть доброе лицо.",
+      "en_tts": "Good to see a friendly face.",
+      "ru_tts": "Приятно видеть доброе лицо.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Рад знакомому лицу."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_warm.2.0"
+      ],
+      "title": "Warm village",
+      "category": "life",
+      "spec_key": "life_warm"
+    },
+    {
+      "id": "life_kind.0",
+      "group": "Kind village",
+      "group_id": "life_kind",
+      "expand_key": "life_kind",
+      "variant": 0,
+      "voice": "life_kind_0",
+      "ogg": "voice/life/life_kind_0.ogg",
+      "duration": 2.03,
+      "en": "Things are going well enough.",
+      "ru": "Дела идут неплохо.",
+      "en_tts": "Things are going well enough.",
+      "ru_tts": "Дела идут неплохо.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Дела идут неплохо."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_kind.0.0"
+      ],
+      "title": "Kind village",
+      "category": "life",
+      "spec_key": "life_kind"
+    },
+    {
+      "id": "life_kind.1",
+      "group": "Kind village",
+      "group_id": "life_kind",
+      "expand_key": "life_kind",
+      "variant": 1,
+      "voice": "life_kind_1",
+      "ogg": "voice/life/life_kind_1.ogg",
+      "duration": 1.47,
+      "en": "You are welcome here.",
+      "ru": "Тебе здесь рады.",
+      "en_tts": "You are welcome here.",
+      "ru_tts": "Тебе здесь рады.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Тебе здесь рады."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_kind.1.0"
+      ],
+      "title": "Kind village",
+      "category": "life",
+      "spec_key": "life_kind"
+    },
+    {
+      "id": "life_kind.2",
+      "group": "Kind village",
+      "group_id": "life_kind",
+      "expand_key": "life_kind",
+      "variant": 2,
+      "voice": "life_kind_2",
+      "ogg": "voice/life/life_kind_2.ogg",
+      "duration": 2.1,
+      "en": "The day is treating us kindly.",
+      "ru": "День к нам добр.",
+      "en_tts": "The day is treating us kindly.",
+      "ru_tts": "День к нам добр.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "День к нам добр."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_kind.2.0"
+      ],
+      "title": "Kind village",
+      "category": "life",
+      "spec_key": "life_kind"
+    },
+    {
+      "id": "life_plain.0",
+      "group": "Plain village",
+      "group_id": "life_plain",
+      "expand_key": "life_plain",
+      "variant": 0,
+      "voice": "life_plain_0",
+      "ogg": "voice/life/life_plain_0.ogg",
+      "duration": 1.47,
+      "en": "Another ordinary day.",
+      "ru": "Обычный день.",
+      "en_tts": "Another ordinary day.",
+      "ru_tts": "Обычный день.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Обычный день."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_plain.0.0"
+      ],
+      "title": "Plain village",
+      "category": "life",
+      "spec_key": "life_plain"
+    },
+    {
+      "id": "life_plain.1",
+      "group": "Plain village",
+      "group_id": "life_plain",
+      "expand_key": "life_plain",
+      "variant": 1,
+      "voice": "life_plain_1",
+      "ogg": "voice/life/life_plain_1.ogg",
+      "duration": 1.54,
+      "en": "Nothing new to report.",
+      "ru": "Новостей нет.",
+      "en_tts": "Nothing new to report.",
+      "ru_tts": "Новостей нет.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Новостей нет."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_plain.1.0"
+      ],
+      "title": "Plain village",
+      "category": "life",
+      "spec_key": "life_plain"
+    },
+    {
+      "id": "life_plain.2",
+      "group": "Plain village",
+      "group_id": "life_plain",
+      "expand_key": "life_plain",
+      "variant": 2,
+      "voice": "life_plain_2",
+      "ogg": "voice/life/life_plain_2.ogg",
+      "duration": 1.2,
+      "en": "Work, then rest.",
+      "ru": "Сначала дело, потом отдых.",
+      "en_tts": "Work, then rest.",
+      "ru_tts": "Сначала дело, потом отдых.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Сначала дело, потом отдых."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_plain.2.0"
+      ],
+      "title": "Plain village",
+      "category": "life",
+      "spec_key": "life_plain"
+    },
+    {
+      "id": "life_sour.0",
+      "group": "Sour village",
+      "group_id": "life_sour",
+      "expand_key": "life_sour",
+      "variant": 0,
+      "voice": "life_sour_0",
+      "ogg": "voice/life/life_sour_0.ogg",
+      "duration": 1.33,
+      "en": "Keep your distance.",
+      "ru": "Держись подальше.",
+      "en_tts": "Keep your distance.",
+      "ru_tts": "Держись подальше.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Держись подальше."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_sour.0.0"
+      ],
+      "title": "Sour village",
+      "category": "life",
+      "spec_key": "life_sour"
+    },
+    {
+      "id": "life_sour.1",
+      "group": "Sour village",
+      "group_id": "life_sour",
+      "expand_key": "life_sour",
+      "variant": 1,
+      "voice": "life_sour_1",
+      "ogg": "voice/life/life_sour_1.ogg",
+      "duration": 1.75,
+      "en": "This place has gone cold.",
+      "ru": "Здесь стало холодно.",
+      "en_tts": "This place has gone cold.",
+      "ru_tts": "Здесь стало холодно.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Здесь стало холодно."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_sour.1.0"
+      ],
+      "title": "Sour village",
+      "category": "life",
+      "spec_key": "life_sour"
+    },
+    {
+      "id": "life_sour.2",
+      "group": "Sour village",
+      "group_id": "life_sour",
+      "expand_key": "life_sour",
+      "variant": 2,
+      "voice": "life_sour_2",
+      "ogg": "voice/life/life_sour_2.ogg",
+      "duration": 1.89,
+      "en": "I have nothing kind to say.",
+      "ru": "Доброго слова не будет.",
+      "en_tts": "I have nothing kind to say.",
+      "ru_tts": "Доброго слова не будет.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Доброго слова не будет."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_sour.2.0"
+      ],
+      "title": "Sour village",
+      "category": "life",
+      "spec_key": "life_sour"
+    },
+    {
+      "id": "life_harsh.0",
+      "group": "Harsh village",
+      "group_id": "life_harsh",
+      "expand_key": "life_harsh",
+      "variant": 0,
+      "voice": "life_harsh_0",
+      "ogg": "voice/life/life_harsh_0.ogg",
+      "duration": 1.4,
+      "en": "Get out of my sight.",
+      "ru": "Уйди с глаз.",
+      "en_tts": "Get out of my sight.",
+      "ru_tts": "Уйди с глаз.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Уйди с глаз."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_harsh.0.0"
+      ],
+      "title": "Harsh village",
+      "category": "life",
+      "spec_key": "life_harsh"
+    },
+    {
+      "id": "life_harsh.1",
+      "group": "Harsh village",
+      "group_id": "life_harsh",
+      "expand_key": "life_harsh",
+      "variant": 1,
+      "voice": "life_harsh_1",
+      "ogg": "voice/life/life_harsh_1.ogg",
+      "duration": 1.75,
+      "en": "You are not welcome here.",
+      "ru": "Тебе здесь не рады.",
+      "en_tts": "You are not welcome here.",
+      "ru_tts": "Тебе здесь не рады.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Тебе здесь не рады."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_harsh.1.0"
+      ],
+      "title": "Harsh village",
+      "category": "life",
+      "spec_key": "life_harsh"
+    },
+    {
+      "id": "life_harsh.2",
+      "group": "Harsh village",
+      "group_id": "life_harsh",
+      "expand_key": "life_harsh",
+      "variant": 2,
+      "voice": "life_harsh_2",
+      "ogg": "voice/life/life_harsh_2.ogg",
+      "duration": 2.1,
+      "en": "Leave, before this gets worse.",
+      "ru": "Уходи, пока не стало хуже.",
+      "en_tts": "Leave, before this gets worse.",
+      "ru_tts": "Уходи, пока не стало хуже.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Уходи, пока не стало хуже."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_harsh.2.0"
+      ],
+      "title": "Harsh village",
+      "category": "life",
+      "spec_key": "life_harsh"
+    },
+    {
+      "id": "life_home.1",
+      "group": "Own house",
+      "group_id": "life_home",
+      "expand_key": "life_home",
+      "variant": 1,
+      "voice": "life_home_1",
+      "ogg": "voice/life/life_home_1.ogg",
+      "duration": 2.17,
+      "en": "I sleep here, and nowhere else.",
+      "ru": "Сплю здесь и больше нигде.",
+      "en_tts": "I sleep here, and nowhere else.",
+      "ru_tts": "Сплю здесь и больше нигде.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Сплю здесь и больше нигде."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home.1.0"
+      ],
+      "title": "Own house",
+      "category": "life",
+      "spec_key": "life_home"
+    },
+    {
+      "id": "life_home.2",
+      "group": "Own house",
+      "group_id": "life_home",
+      "expand_key": "life_home",
+      "variant": 2,
+      "voice": "life_home_2",
+      "ogg": "voice/life/life_home_2.ogg",
+      "duration": 2.24,
+      "en": "The door is mine. So is the bed.",
+      "ru": "Дверь моя. И кровать тоже.",
+      "en_tts": "The door is mine. So is the bed.",
+      "ru_tts": "Дверь моя. И кровать тоже.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Дверь моя. И кровать тоже."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home.2.0"
+      ],
+      "title": "Own house",
+      "category": "life",
+      "spec_key": "life_home"
+    },
+    {
+      "id": "life_home_hurt.0",
+      "group": "House damaged",
+      "group_id": "life_home_hurt",
+      "expand_key": "life_home_hurt",
+      "variant": 0,
+      "voice": "life_home_hurt_0",
+      "ogg": "voice/life/life_home_hurt_0.ogg",
+      "duration": 1.54,
+      "en": "You tore down my home.",
+      "ru": "Ты снёс мой дом.",
+      "en_tts": "You tore down my home.",
+      "ru_tts": "Ты снёс мой дом.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Ты снёс мой дом."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home_hurt.0.0"
+      ],
+      "title": "House damaged",
+      "category": "life",
+      "spec_key": "life_home_hurt"
+    },
+    {
+      "id": "life_home_hurt.1",
+      "group": "House damaged",
+      "group_id": "life_home_hurt",
+      "expand_key": "life_home_hurt",
+      "variant": 1,
+      "voice": "life_home_hurt_1",
+      "ogg": "voice/life/life_home_hurt_1.ogg",
+      "duration": 1.26,
+      "en": "That bed was mine.",
+      "ru": "Эта кровать была моей.",
+      "en_tts": "That bed was mine.",
+      "ru_tts": "Эта кровать была моей.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Эта кровать была моей."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home_hurt.1.0"
+      ],
+      "title": "House damaged",
+      "category": "life",
+      "spec_key": "life_home_hurt"
+    },
+    {
+      "id": "life_home_hurt.2",
+      "group": "House damaged",
+      "group_id": "life_home_hurt",
+      "expand_key": "life_home_hurt",
+      "variant": 2,
+      "voice": "life_home_hurt_2",
+      "ogg": "voice/life/life_home_hurt_2.ogg",
+      "duration": 1.89,
+      "en": "Do not touch my door again.",
+      "ru": "Не трогай мою дверь.",
+      "en_tts": "Do not touch my door again.",
+      "ru_tts": "Не трогай мою дверь.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Не трогай мою дверь."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home_hurt.2.0"
+      ],
+      "title": "House damaged",
+      "category": "life",
+      "spec_key": "life_home_hurt"
+    },
+    {
+      "id": "life_home_thanks.0",
+      "group": "House improved",
+      "group_id": "life_home_thanks",
+      "expand_key": "life_home_thanks",
+      "variant": 0,
+      "voice": "life_home_thanks_0",
+      "ogg": "voice/life/life_home_thanks_0.ogg",
+      "duration": 2.03,
+      "en": "That painting suits the wall.",
+      "ru": "Картина к стене подходит.",
+      "en_tts": "That painting suits the wall.",
+      "ru_tts": "Картина к стене подходит.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Картина к стене подходит."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home_thanks.0.0"
+      ],
+      "title": "House improved",
+      "category": "life",
+      "spec_key": "life_home_thanks"
+    },
+    {
+      "id": "life_home_thanks.1",
+      "group": "House improved",
+      "group_id": "life_home_thanks",
+      "expand_key": "life_home_thanks",
+      "variant": 1,
+      "voice": "life_home_thanks_1",
+      "ogg": "voice/life/life_home_thanks_1.ogg",
+      "duration": 2.38,
+      "en": "Thank you. The house looks better.",
+      "ru": "Спасибо. В доме стало лучше.",
+      "en_tts": "Thank you. The house looks better.",
+      "ru_tts": "Спасибо. В доме стало лучше.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Спасибо. В доме стало лучше."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home_thanks.1.0"
+      ],
+      "title": "House improved",
+      "category": "life",
+      "spec_key": "life_home_thanks"
+    },
+    {
+      "id": "life_home_thanks.2",
+      "group": "House improved",
+      "group_id": "life_home_thanks",
+      "expand_key": "life_home_thanks",
+      "variant": 2,
+      "voice": "life_home_thanks_2",
+      "ogg": "voice/life/life_home_thanks_2.ogg",
+      "duration": 1.75,
+      "en": "I will keep that picture.",
+      "ru": "Картину оставлю.",
+      "en_tts": "I will keep that picture.",
+      "ru_tts": "Картину оставлю.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Картину оставлю."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_home_thanks.2.0"
+      ],
+      "title": "House improved",
+      "category": "life",
+      "spec_key": "life_home_thanks"
+    },
+    {
+      "id": "life_job_armorer.0",
+      "group": "armorer chore",
+      "group_id": "life_job_armorer",
+      "expand_key": "life_job_armorer",
+      "variant": 0,
+      "voice": "life_job_armorer_0",
+      "ogg": "voice/life/life_job_armorer_0.ogg",
+      "duration": 3.01,
+      "en": "The armor stand can wait. The bench cannot.",
+      "ru": "Стойка подождёт. Верстак нет.",
+      "en_tts": "The armor stand can wait. The bench cannot.",
+      "ru_tts": "Стойка подождёт. Верстак нет.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Стойка подождёт. Верстак нет."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_armorer.0.0"
+      ],
+      "title": "armorer chore",
+      "category": "life",
+      "spec_key": "life_job_armorer"
+    },
+    {
+      "id": "life_job_armorer.1",
+      "group": "armorer chore",
+      "group_id": "life_job_armorer",
+      "expand_key": "life_job_armorer",
+      "variant": 1,
+      "voice": "life_job_armorer_1",
+      "ogg": "voice/life/life_job_armorer_1.ogg",
+      "duration": 2.03,
+      "en": "I keep the edge on the stone.",
+      "ru": "Кромку правлю на камне.",
+      "en_tts": "I keep the edge on the stone.",
+      "ru_tts": "Кромку правлю на камне.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Кромку правлю на камне."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_armorer.1.0"
+      ],
+      "title": "armorer chore",
+      "category": "life",
+      "spec_key": "life_job_armorer"
+    },
+    {
+      "id": "life_job_butcher.0",
+      "group": "butcher chore",
+      "group_id": "life_job_butcher",
+      "expand_key": "life_job_butcher",
+      "variant": 0,
+      "voice": "life_job_butcher_0",
+      "ogg": "voice/life/life_job_butcher_0.ogg",
+      "duration": 2.31,
+      "en": "The pen is up. One cow is enough.",
+      "ru": "Загон стоит. Одной коровы хватит.",
+      "en_tts": "The pen is up. One cow is enough.",
+      "ru_tts": "Загон стоит. Одной коровы хватит.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Загон стоит. Одной коровы хватит."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_butcher.0.0"
+      ],
+      "title": "butcher chore",
+      "category": "life",
+      "spec_key": "life_job_butcher"
+    },
+    {
+      "id": "life_job_butcher.1",
+      "group": "butcher chore",
+      "group_id": "life_job_butcher",
+      "expand_key": "life_job_butcher",
+      "variant": 1,
+      "voice": "life_job_butcher_1",
+      "ogg": "voice/life/life_job_butcher_1.ogg",
+      "duration": 1.89,
+      "en": "Meat comes after the fence.",
+      "ru": "Мясо после забора.",
+      "en_tts": "Meat comes after the fence.",
+      "ru_tts": "Мясо после забора.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Мясо после забора."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_butcher.1.0"
+      ],
+      "title": "butcher chore",
+      "category": "life",
+      "spec_key": "life_job_butcher"
+    },
+    {
+      "id": "life_job_cartographer.0",
+      "group": "cartographer chore",
+      "group_id": "life_job_cartographer",
+      "expand_key": "life_job_cartographer",
+      "variant": 0,
+      "voice": "life_job_cartographer_0",
+      "ogg": "voice/life/life_job_cartographer_0.ogg",
+      "duration": 2.17,
+      "en": "The map table goes by the wall.",
+      "ru": "Картографический стол поставлю к стене.",
+      "en_tts": "The map table goes by the wall.",
+      "ru_tts": "Картографический стол поставлю к стене.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Стол карт ставлю к стене."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_cartographer.0.0"
+      ],
+      "title": "cartographer chore",
+      "category": "life",
+      "spec_key": "life_job_cartographer"
+    },
+    {
+      "id": "life_job_cartographer.1",
+      "group": "cartographer chore",
+      "group_id": "life_job_cartographer",
+      "expand_key": "life_job_cartographer",
+      "variant": 1,
+      "voice": "life_job_cartographer_1",
+      "ogg": "voice/life/life_job_cartographer_1.ogg",
+      "duration": 1.96,
+      "en": "I need a flat place to draw.",
+      "ru": "Нужна ровная плоскость для чертежа.",
+      "en_tts": "I need a flat place to draw.",
+      "ru_tts": "Нужна ровная плоскость для чертежа.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Нужна ровная плоскость для чертежа."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_cartographer.1.0"
+      ],
+      "title": "cartographer chore",
+      "category": "life",
+      "spec_key": "life_job_cartographer"
+    },
+    {
+      "id": "life_job_cleric.0",
+      "group": "cleric chore",
+      "group_id": "life_job_cleric",
+      "expand_key": "life_job_cleric",
+      "variant": 0,
+      "voice": "life_job_cleric_0",
+      "ogg": "voice/life/life_job_cleric_0.ogg",
+      "duration": 2.17,
+      "en": "A candle is enough for tonight.",
+      "ru": "На сегодня хватит свечи.",
+      "en_tts": "A candle is enough for tonight.",
+      "ru_tts": "На сегодня хватит свечи.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "На сегодня хватит свечи."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_cleric.0.0"
+      ],
+      "title": "cleric chore",
+      "category": "life",
+      "spec_key": "life_job_cleric"
+    },
+    {
+      "id": "life_job_cleric.1",
+      "group": "cleric chore",
+      "group_id": "life_job_cleric",
+      "expand_key": "life_job_cleric",
+      "variant": 1,
+      "voice": "life_job_cleric_1",
+      "ogg": "voice/life/life_job_cleric_1.ogg",
+      "duration": 2.24,
+      "en": "I keep a small light by the bed.",
+      "ru": "Держу небольшой свет у кровати.",
+      "en_tts": "I keep a small light by the bed.",
+      "ru_tts": "Держу небольшой свет у кровати.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Держу небольшой свет у кровати."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_cleric.1.0"
+      ],
+      "title": "cleric chore",
+      "category": "life",
+      "spec_key": "life_job_cleric"
+    },
+    {
+      "id": "life_job_farmer.0",
+      "group": "farmer chore",
+      "group_id": "life_job_farmer",
+      "expand_key": "life_job_farmer",
+      "variant": 0,
+      "voice": "life_job_farmer_0",
+      "ogg": "voice/life/life_job_farmer_0.ogg",
+      "duration": 2.17,
+      "en": "The row is in. It will come up.",
+      "ru": "Грядка есть. Взойдёт.",
+      "en_tts": "The row is in. It will come up.",
+      "ru_tts": "Грядка есть. Взойдёт.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Грядка есть. Взойдёт."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_farmer.0.0"
+      ],
+      "title": "farmer chore",
+      "category": "life",
+      "spec_key": "life_job_farmer"
+    },
+    {
+      "id": "life_job_farmer.1",
+      "group": "farmer chore",
+      "group_id": "life_job_farmer",
+      "expand_key": "life_job_farmer",
+      "variant": 1,
+      "voice": "life_job_farmer_1",
+      "ogg": "voice/life/life_job_farmer_1.ogg",
+      "duration": 2.8,
+      "en": "Seed goes in the ground, not in a chest.",
+      "ru": "Семя в землю, не в сундук.",
+      "en_tts": "Seed goes in the ground, not in a chest.",
+      "ru_tts": "Семя в землю, не в сундук.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Семя в землю, не в сундук."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_farmer.1.0"
+      ],
+      "title": "farmer chore",
+      "category": "life",
+      "spec_key": "life_job_farmer"
+    },
+    {
+      "id": "life_job_fisherman.0",
+      "group": "fisherman chore",
+      "group_id": "life_job_fisherman",
+      "expand_key": "life_job_fisherman",
+      "variant": 0,
+      "voice": "life_job_fisherman_0",
+      "ogg": "voice/life/life_job_fisherman_0.ogg",
+      "duration": 2.59,
+      "en": "The barrel stays dry until the catch.",
+      "ru": "Бочка сухая, пока нет улова.",
+      "en_tts": "The barrel stays dry until the catch.",
+      "ru_tts": "Бочка сухая, пока нет улова.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Бочка сухая, пока нет улова."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_fisherman.0.0"
+      ],
+      "title": "fisherman chore",
+      "category": "life",
+      "spec_key": "life_job_fisherman"
+    },
+    {
+      "id": "life_job_fisherman.1",
+      "group": "fisherman chore",
+      "group_id": "life_job_fisherman",
+      "expand_key": "life_job_fisherman",
+      "variant": 1,
+      "voice": "life_job_fisherman_1",
+      "ogg": "voice/life/life_job_fisherman_1.ogg",
+      "duration": 2.31,
+      "en": "I work from a barrel, not a dock.",
+      "ru": "Работаю от бочки, не от причала.",
+      "en_tts": "I work from a barrel, not a dock.",
+      "ru_tts": "Работаю от бочки, не от причала.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Работаю от бочки, не от причала."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_fisherman.1.0"
+      ],
+      "title": "fisherman chore",
+      "category": "life",
+      "spec_key": "life_job_fisherman"
+    },
+    {
+      "id": "life_job_fletcher.0",
+      "group": "fletcher chore",
+      "group_id": "life_job_fletcher",
+      "expand_key": "life_job_fletcher",
+      "variant": 0,
+      "voice": "life_job_fletcher_0",
+      "ogg": "voice/life/life_job_fletcher_0.ogg",
+      "duration": 2.52,
+      "en": "The target faces away from the door.",
+      "ru": "Мишень смотрит не на дверь.",
+      "en_tts": "The target faces away from the door.",
+      "ru_tts": "Мишень смотрит не на дверь.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Мишень смотрит не на дверь."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_fletcher.0.0"
+      ],
+      "title": "fletcher chore",
+      "category": "life",
+      "spec_key": "life_job_fletcher"
+    },
+    {
+      "id": "life_job_fletcher.1",
+      "group": "fletcher chore",
+      "group_id": "life_job_fletcher",
+      "expand_key": "life_job_fletcher",
+      "variant": 1,
+      "voice": "life_job_fletcher_1",
+      "ogg": "voice/life/life_job_fletcher_1.ogg",
+      "duration": 2.66,
+      "en": "Arrows need a wall that can take them.",
+      "ru": "Стрелам нужна стена, которая выдержит.",
+      "en_tts": "Arrows need a wall that can take them.",
+      "ru_tts": "Стрелам нужна стена, которая выдержит.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Стрелам нужна стена, которая выдержит."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_fletcher.1.0"
+      ],
+      "title": "fletcher chore",
+      "category": "life",
+      "spec_key": "life_job_fletcher"
+    },
+    {
+      "id": "life_job_leatherworker.0",
+      "group": "leatherworker chore",
+      "group_id": "life_job_leatherworker",
+      "expand_key": "life_job_leatherworker",
+      "variant": 0,
+      "voice": "life_job_leatherworker_0",
+      "ogg": "voice/life/life_job_leatherworker_0.ogg",
+      "duration": 2.52,
+      "en": "The cauldron is for hides, not soup.",
+      "ru": "Котёл для шкур, не для супа.",
+      "en_tts": "The cauldron is for hides, not soup.",
+      "ru_tts": "Котёл для шкур, не для супа.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Котёл для шкур, не для супа."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_leatherworker.0.0"
+      ],
+      "title": "leatherworker chore",
+      "category": "life",
+      "spec_key": "life_job_leatherworker"
+    },
+    {
+      "id": "life_job_leatherworker.1",
+      "group": "leatherworker chore",
+      "group_id": "life_job_leatherworker",
+      "expand_key": "life_job_leatherworker",
+      "variant": 1,
+      "voice": "life_job_leatherworker_1",
+      "ogg": "voice/life/life_job_leatherworker_1.ogg",
+      "duration": 2.17,
+      "en": "I need water and a fire nearby.",
+      "ru": "Нужны вода и огонь рядом.",
+      "en_tts": "I need water and a fire nearby.",
+      "ru_tts": "Нужны вода и огонь рядом.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Нужны вода и огонь рядом."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_leatherworker.1.0"
+      ],
+      "title": "leatherworker chore",
+      "category": "life",
+      "spec_key": "life_job_leatherworker"
+    },
+    {
+      "id": "life_job_librarian.0",
+      "group": "librarian chore",
+      "group_id": "life_job_librarian",
+      "expand_key": "life_job_librarian",
+      "variant": 0,
+      "voice": "life_job_librarian_0",
+      "ogg": "voice/life/life_job_librarian_0.ogg",
+      "duration": 2.24,
+      "en": "The lectern gets the good light.",
+      "ru": "Кафедра стоит на свету.",
+      "en_tts": "The lectern gets the good light.",
+      "ru_tts": "Кафедра стоит на свету.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Кафедра стоит на свету."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_librarian.0.0"
+      ],
+      "title": "librarian chore",
+      "category": "life",
+      "spec_key": "life_job_librarian"
+    },
+    {
+      "id": "life_job_librarian.1",
+      "group": "librarian chore",
+      "group_id": "life_job_librarian",
+      "expand_key": "life_job_librarian",
+      "variant": 1,
+      "voice": "life_job_librarian_1",
+      "ogg": "voice/life/life_job_librarian_1.ogg",
+      "duration": 1.75,
+      "en": "Books stay off the floor.",
+      "ru": "Книги не валяются на полу.",
+      "en_tts": "Books stay off the floor.",
+      "ru_tts": "Книги не валяются на полу.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Книги не валяются на полу."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_librarian.1.0"
+      ],
+      "title": "librarian chore",
+      "category": "life",
+      "spec_key": "life_job_librarian"
+    },
+    {
+      "id": "life_job_mason.0",
+      "group": "mason chore",
+      "group_id": "life_job_mason",
+      "expand_key": "life_job_mason",
+      "variant": 0,
+      "voice": "life_job_mason_0",
+      "ogg": "voice/life/life_job_mason_0.ogg",
+      "duration": 2.66,
+      "en": "The cutter stays where the chips fall.",
+      "ru": "Резак там, куда сыплется крошка.",
+      "en_tts": "The cutter stays where the chips fall.",
+      "ru_tts": "Резак там, куда сыплется крошка.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Резак там, куда сыплется крошка."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_mason.0.0"
+      ],
+      "title": "mason chore",
+      "category": "life",
+      "spec_key": "life_job_mason"
+    },
+    {
+      "id": "life_job_shepherd.0",
+      "group": "shepherd chore",
+      "group_id": "life_job_shepherd",
+      "expand_key": "life_job_shepherd",
+      "variant": 0,
+      "voice": "life_job_shepherd_0",
+      "ogg": "voice/life/life_job_shepherd_0.ogg",
+      "duration": 1.82,
+      "en": "Hay first, then the fence.",
+      "ru": "Сначала сено, потом забор.",
+      "en_tts": "Hay first, then the fence.",
+      "ru_tts": "Сначала сено, потом забор.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Сначала сено, потом забор."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_shepherd.0.0"
+      ],
+      "title": "shepherd chore",
+      "category": "life",
+      "spec_key": "life_job_shepherd"
+    },
+    {
+      "id": "life_job_shepherd.1",
+      "group": "shepherd chore",
+      "group_id": "life_job_shepherd",
+      "expand_key": "life_job_shepherd",
+      "variant": 1,
+      "voice": "life_job_shepherd_1",
+      "ogg": "voice/life/life_job_shepherd_1.ogg",
+      "duration": 2.73,
+      "en": "The flock needs a corner, not a palace.",
+      "ru": "Отаре нужен угол, не дворец.",
+      "en_tts": "The flock needs a corner, not a palace.",
+      "ru_tts": "Отаре нужен угол, не дворец.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Отаре нужен угол, не дворец."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_shepherd.1.0"
+      ],
+      "title": "shepherd chore",
+      "category": "life",
+      "spec_key": "life_job_shepherd"
+    },
+    {
+      "id": "life_job_toolsmith.0",
+      "group": "toolsmith chore",
+      "group_id": "life_job_toolsmith",
+      "expand_key": "life_job_toolsmith",
+      "variant": 0,
+      "voice": "life_job_toolsmith_0",
+      "ogg": "voice/life/life_job_toolsmith_0.ogg",
+      "duration": 2.17,
+      "en": "The grindstone earns its place.",
+      "ru": "Точило отрабатывает место.",
+      "en_tts": "The grindstone earns its place.",
+      "ru_tts": "Точило отрабатывает место.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Точило отрабатывает место."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_toolsmith.0.0"
+      ],
+      "title": "toolsmith chore",
+      "category": "life",
+      "spec_key": "life_job_toolsmith"
+    },
+    {
+      "id": "life_job_toolsmith.1",
+      "group": "toolsmith chore",
+      "group_id": "life_job_toolsmith",
+      "expand_key": "life_job_toolsmith",
+      "variant": 1,
+      "voice": "life_job_toolsmith_1",
+      "ogg": "voice/life/life_job_toolsmith_1.ogg",
+      "duration": 1.54,
+      "en": "Tools before trinkets.",
+      "ru": "Сначала инструмент, потом безделушки.",
+      "en_tts": "Tools before trinkets.",
+      "ru_tts": "Сначала инструмент, потом безделушки.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Сначала инструмент, потом безделушки."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_toolsmith.1.0"
+      ],
+      "title": "toolsmith chore",
+      "category": "life",
+      "spec_key": "life_job_toolsmith"
+    },
+    {
+      "id": "life_job_weaponsmith.0",
+      "group": "weaponsmith chore",
+      "group_id": "life_job_weaponsmith",
+      "expand_key": "life_job_weaponsmith",
+      "variant": 0,
+      "voice": "life_job_weaponsmith_0",
+      "ogg": "voice/life/life_job_weaponsmith_0.ogg",
+      "duration": 2.38,
+      "en": "The smithing table is not a shelf.",
+      "ru": "Кузнечный стол не полка.",
+      "en_tts": "The smithing table is not a shelf.",
+      "ru_tts": "Кузнечный стол не полка.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Кузнечный стол не полка."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_weaponsmith.0.0"
+      ],
+      "title": "weaponsmith chore",
+      "category": "life",
+      "spec_key": "life_job_weaponsmith"
+    },
+    {
+      "id": "life_job_weaponsmith.1",
+      "group": "weaponsmith chore",
+      "group_id": "life_job_weaponsmith",
+      "expand_key": "life_job_weaponsmith",
+      "variant": 1,
+      "voice": "life_job_weaponsmith_1",
+      "ogg": "voice/life/life_job_weaponsmith_1.ogg",
+      "duration": 1.54,
+      "en": "I leave room to swing.",
+      "ru": "Оставляю место для замаха.",
+      "en_tts": "I leave room to swing.",
+      "ru_tts": "Оставляю место для замаха.",
+      "ru_frames": [
+        {
+          "time": 0,
+          "text": "Оставляю место для замаха."
+        }
+      ],
+      "status_en": "PENDING_TTS",
+      "status_ru": "PENDING_TTS",
+      "status": "PENDING_TTS",
+      "subtitle_keys": [
+        "subtitles.villager_life.dialogue.life_job_weaponsmith.1.0"
+      ],
+      "title": "weaponsmith chore",
+      "category": "life",
+      "spec_key": "life_job_weaponsmith"
+    }
+  ]
+}

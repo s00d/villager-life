@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " T ",
+    "TCT",
+    " L "
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:blue_terracotta"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "id": "villager_life:mailbox",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/summit",
+  "display": {
+    "icon": {
+      "id": "villager_life:mega_part_colosseum"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.outer.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.outer.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

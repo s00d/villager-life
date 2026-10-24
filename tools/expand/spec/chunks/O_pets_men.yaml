@@ -1,0 +1,101 @@
+# Phase O — family pets: welcome, the kennel (speaker villager).
+
+- key: O10
+  id: o_m_welcome
+  title: "Man Welcomes the Pet"
+  category: home
+  status: active
+  trigger: "the head of the house welcomes the new family pet"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну, добро пожаловать в семью, зверь."
+      frames_en:
+        - "Well, welcome to the family, beastie."
+    - weight: 50
+      frames:
+        - "Только чтобы на кровати не спал! Ну... разве что иногда."
+      frames_en:
+        - "No sleeping on the bed! Well... maybe sometimes."
+    - weight: 50
+      frames:
+        - "Ещё один рот в доме. Ладно, прокормим."
+      frames_en:
+        - "One more mouth in the house. Fine, we'll manage."
+    - weight: 50
+      frames:
+        - "Будешь дом сторожить, договорились?"
+      frames_en:
+        - "You'll guard the house, deal?"
+    - weight: 50
+      frames:
+        - "Дети его уже обожают. Куда деваться."
+      frames_en:
+        - "The children already adore it. No way out now."
+- key: O11
+  id: o_m_kennel
+  title: "Man Builds a Kennel"
+  category: home
+  status: active
+  trigger: "a husband starts building a kennel for the dog"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Собаке нужен свой дом. Будет будка!"
+      frames_en:
+        - "A dog needs a home of its own. A kennel it is!"
+    - weight: 50
+      frames:
+        - "Так, доски, гвозди... и где мой молоток?"
+      frames_en:
+        - "Right, planks, nails... and where's my hammer?"
+    - weight: 50
+      frames:
+        - "Построю будку лучше, чем у соседей."
+      frames_en:
+        - "I'll build a kennel better than the neighbours'."
+    - weight: 50
+      frames:
+        - "Не крутись под ногами, это для тебя же!"
+      frames_en:
+        - "Stop getting under my feet, it's for you!"
+    - weight: 50
+      frames:
+        - "Маленький дом — тоже дом."
+      frames_en:
+        - "A small house is still a house."
+- key: O12
+  id: o_m_kennel_done
+  title: "Man Finishes the Kennel"
+  category: home
+  status: active
+  trigger: "a husband finishes the dog's kennel"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Готово! Заходи, обживайся."
+      frames_en:
+        - "Done! In you go, make yourself at home."
+    - weight: 50
+      frames:
+        - "Будка что надо. Крыша не течёт, проверял."
+      frames_en:
+        - "A fine kennel. The roof doesn't leak, I checked."
+    - weight: 50
+      frames:
+        - "Вот тебе и дом, и миска. Сторожи!"
+      frames_en:
+        - "There's your house and your bowl. On guard!"
+    - weight: 50
+      frames:
+        - "Эх, себе бы такую тишину."
+      frames_en:
+        - "Ah, I wish I had such peace and quiet."
+    - weight: 50
+      frames:
+        - "Теперь у каждого в семье своя крыша."
+      frames_en:
+        - "Now everyone in the family has a roof of their own."

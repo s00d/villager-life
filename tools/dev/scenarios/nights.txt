@@ -1,0 +1,15 @@
+# Three nights in three villages of "Новый мир" held by a player nearby (creative): how many villagers the night
+# takes and how (the "vnap death" lines of the client log say when, where, doing what).
+/gamemode creative
+/tp Dev 12255 95 5651
+sleep 8
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+/tp Dev 8262 125 9094
+sleep 8
+sprint 72000
+expect check: 0 problems :: /vnap check 96
+/tp Dev 7412 140 7970
+sleep 8
+sprint 72000
+expect check: 0 problems :: /vnap check 96

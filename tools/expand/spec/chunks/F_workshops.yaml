@@ -1,0 +1,44 @@
+# Phase F — profession workshops (Workshops.startNext: a new tier or the daily repair)
+
+- key: F01
+  id: life_ws_begin
+  title: "Workshop begins"
+  category: life
+  status: active
+  trigger: "workshop tier starts"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Пора обустроить мастерскую."
+      frames_en:
+        - "Time to set up my workshop."
+    - weight: 50
+      frames:
+        - "Сначала верстак, потом всё остальное."
+      frames_en:
+        - "Workbench first, everything else after."
+    - weight: 50
+      frames:
+        - "Пара досок, и будет настоящая мастерская."
+      frames_en:
+        - "A few planks, and it will be a real workshop."
+
+- key: F02
+  id: life_ws_repair
+  title: "Workshop repair"
+  category: life
+  status: active
+  trigger: "workshop daily repair"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кто-то растащил мою мастерскую. Починю."
+      frames_en:
+        - "Someone took my workshop apart. I will fix it."
+    - weight: 50
+      frames:
+        - "Опять не хватает досок. Ладно, поправлю."
+      frames_en:
+        - "Planks are missing again. Fine, I will patch it."

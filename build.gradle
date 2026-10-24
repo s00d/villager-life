@@ -1,0 +1,7 @@
+plugins {
+    id 'base'
+}
+
+tasks.named('check') {
+    dependsOn ':neoforge:1.21.1:check'
+}

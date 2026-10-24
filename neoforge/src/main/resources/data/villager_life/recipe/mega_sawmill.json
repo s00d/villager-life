@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FAF",
+    "CSC",
+    "FNF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "A": {
+      "item": "minecraft:diamond_axe"
+    },
+    "C": {
+      "item": "villager_life:mega_part_colosseum"
+    },
+    "S": {
+      "item": "minecraft:stonecutter"
+    },
+    "N": {
+      "item": "villager_life:mega_part_nameless"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_sawmill",
+    "count": 1
+  }
+}

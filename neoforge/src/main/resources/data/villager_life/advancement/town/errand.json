@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:writable_book"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.errand.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.errand.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

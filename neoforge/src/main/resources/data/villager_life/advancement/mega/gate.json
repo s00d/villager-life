@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:mega/formed",
+  "display": {
+    "icon": {
+      "id": "villager_life:gate_key_red"
+    },
+    "title": {
+      "translate": "advancements.villager_life.mega.gate.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.mega.gate.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

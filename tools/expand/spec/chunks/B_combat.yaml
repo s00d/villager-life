@@ -1,0 +1,248 @@
+# Phase B — CBC / TACZ
+
+- key: B9
+  title: "Place a Big Cannon"
+  category: cbc_cat
+  status: active
+  trigger: "soft B9"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Большая пушка у деревни — тонкий намёк."
+        - "Стреляйте в небо, не в амбар!"
+      frames_en:
+        - "A big cannon by the village — subtle hint."
+        - "Aim at the sky, not the barn!"
+    - weight: 50
+      frames:
+        - "Артиллерия на площади. Мэр будет в восторге… нет."
+        - "Нацельте её вон туда, в пустошь."
+      frames_en:
+        - "Artillery on the square. The mayor will love it… no."
+        - "Point it at the wasteland over there."
+    - weight: 50
+      frames:
+        - "Калибр больше нашей политики."
+        - "И громче наших собраний."
+      frames_en:
+        - "Caliber bigger than our politics."
+        - "And louder than our meetings."
+
+- key: B10
+  title: "Load or Fire Artillery"
+  category: cbc_cat
+  status: active
+  trigger: "soft B10"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Заряжаете пушку — мы уже в укрытии за стогом. Хотя бы крикните бабах для предупреждения!"
+      frames_en:
+        - "Loading the cannon — we are already behind the haystack. At least shout boom as a warning!"
+    - weight: 50
+      frames:
+        - "Выстрел из большой пушки — отличный способ разбудить всю округу."
+        - "Спасибо, соседи не спали."
+      frames_en:
+        - "A big-gun shot — perfect way to wake the county."
+        - "Thanks, the neighbors were not sleeping."
+    - weight: 50
+      frames:
+        - "Орудийный расчёт прибыл. Деревня уходит в отпуск."
+        - "Мысленно уже пакуем чемоданы."
+      frames_en:
+        - "Gun crew has arrived. The village goes on vacation."
+        - "Mentally."
+
+- key: B11
+  title: "See a Shell Explosion"
+  category: cbc_cat
+  status: active
+  trigger: "soft B11"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Снаряд взорвался рядом — фейерверк для храбрых."
+        - "Уши верните, если найдёте."
+      frames_en:
+        - "A shell exploded nearby — fireworks for the brave."
+        - "Return the ears if you find them."
+    - weight: 50
+      frames:
+        - "Кратер от снаряда — новая клумба?"
+        - "Сажайте цветы, не мины."
+      frames_en:
+        - "Shell crater — a new flower bed?"
+        - "Plant flowers, not mines."
+    - weight: 50
+      frames:
+        - "Пыль осела. Гордость — нет."
+        - "Зато материал для сплетен на месяц."
+      frames_en:
+        - "Dust settled. Pride did not."
+        - "At least a month of gossip material."
+
+- key: B12
+  title: "Hold Cannon Munitions"
+  category: cbc_cat
+  status: active
+  trigger: "soft B12"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Держите снаряд как букет — романтично и опасно."
+        - "Не роняйте у колодца!"
+      frames_en:
+        - "Holding a shell like a bouquet — romantic and dangerous."
+        - "Do not drop it by the well!"
+    - weight: 50
+      frames:
+        - "Боеприпас в руках — мы делаем шаг назад. Два шага."
+        - "Три шага — и можно дышать."
+      frames_en:
+        - "Munitions in hand — we take a step back. Two steps."
+        - "Three."
+    - weight: 50
+      frames:
+        - "Тяжёлая штука. Тяжёлые последствия."
+        - "Мы верим в вашу аккуратность… слабо."
+      frames_en:
+        - "Heavy thing. Heavy consequences."
+        - "We trust your carefulness… weakly."
+
+- key: B13
+  title: "Hold a Gun"
+  category: tacz_cat
+  status: active
+  trigger: "soft B13"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Оружие в руках — деревня сразу тише шёпота."
+        - "Направьте ствол в небо, герой."
+      frames_en:
+        - "A gun in hand — the village goes quieter than a whisper."
+        - "Point the barrel at the sky, hero."
+    - weight: 50
+      frames:
+        - "С этой штукой вы не похожи на мирного торговца."
+        - "Мы это заметили, да."
+      frames_en:
+        - "With that thing you do not look like a peaceful trader."
+        - "Yes, we noticed."
+    - weight: 50
+      frames:
+        - "Ствол блестит. Изумруды тоже умеют, но безопаснее."
+        - "Выбирайте блеск."
+      frames_en:
+        - "The barrel shines. Emeralds can shine safer."
+        - "Choose your shine."
+    - weight: 50
+      frames:
+        - "Огнестрел на виду — торговля замирает."
+        - "Опустите его, и цены снова оживут."
+      frames_en:
+        - "A firearm on display — trade freezes."
+        - "Lower it and prices live again."
+    - weight: 50
+      frames:
+        - "Ствол блестит. Мы предпочитаем блеск изумрудов."
+        - "Менее смертельный блеск."
+      frames_en:
+        - "The barrel shines. We prefer emerald shine."
+        - "Less lethal shine."
+    - weight: 50
+      frames:
+        - "Оружие как аксессуар. Аксессуар плохой."
+        - "Спрячьте за спину хотя бы."
+      frames_en:
+        - "A gun as an accessory. Bad accessory."
+        - "At least hide it behind your back."
+
+- key: B14
+  title: "Attacked with a Gun"
+  category: tacz_cat
+  status: active
+  trigger: "soft B14"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Стреляете в жителя — это уже не торг, это война! Опустите ствол, пока не ударили в набат!"
+      frames_en:
+        - "Shooting a villager — that is not a trade, that is war! Lower the barrel before the bell rings alarm!"
+    - weight: 50
+      frames:
+        - "Пуля свистнула мимо вежливости."
+        - "Мы жалобную книгу откроем… если выживем."
+      frames_en:
+        - "A bullet whistled past politeness."
+        - "We will open the complaint book… if we survive."
+    - weight: 50
+      frames:
+        - "Огнестрельный аргумент в споре — слабая дипломатия."
+        - "Попробуйте изумруды в следующий раз."
+      frames_en:
+        - "A firearm argument is weak diplomacy."
+        - "Try emeralds next time."
+
+- key: B15
+  title: "Hear Gunfire Nearby"
+  category: tacz_cat
+  status: active
+  trigger: "soft B15"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Стрельба рядом — прячемся за бочками!"
+        - "Кто устроил тир на площади?"
+      frames_en:
+        - "Gunfire nearby — hide behind the barrels!"
+        - "Who set up a shooting range on the square?"
+    - weight: 50
+      frames:
+        - "Громкие хлопки. Не фейерверк. Хуже."
+        - "Дети, в дома! Взрослые тоже!"
+      frames_en:
+        - "Loud cracks. Not fireworks. Worse."
+        - "Kids, indoors! Adults too!"
+    - weight: 50
+      frames:
+        - "Эхо выстрелов по дворам. Куры подали заявление."
+        - "Мы тоже хотим отпуск."
+      frames_en:
+        - "Shot echoes across the yards. Chickens filed a complaint."
+        - "We want vacation too."
+
+- key: B16
+  title: "Place Ammo or Gun Bench"
+  category: tacz_cat
+  status: active
+  trigger: "soft B16"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Верстак для пушек в деревне — спорное зонирование."
+        - "Может, за околицей?"
+      frames_en:
+        - "A gun bench in the village — questionable zoning."
+        - "Maybe outside the outskirts?"
+    - weight: 50
+      frames:
+        - "Ящики с патронами у пекарни. Пахнет уже не хлебом."
+        - "Увезите арсенал."
+      frames_en:
+        - "Ammo crates by the bakery. It no longer smells like bread."
+        - "Move the arsenal."
+    - weight: 50
+      frames:
+        - "Оружейная без лицензии, зато с характером. Мы предпочли бы булочную."
+      frames_en:
+        - "An unlicensed armory with attitude. We would prefer a bun shop."

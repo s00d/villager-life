@@ -1,0 +1,93 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "villager_life:block/spire/mech/glyph",
+  "g": "villager_life:block/spire/mech/glyph",
+  "f": "villager_life:block/spire/mech/brass"
+ },
+ "elements": [
+  {
+   "from": [
+    2,
+    2,
+    13
+   ],
+   "to": [
+    14,
+    14,
+    16
+   ],
+   "faces": {
+    "south": {
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "texture": "#f"
+    },
+    "east": {
+     "uv": [
+      0,
+      2,
+      3,
+      14
+     ],
+     "texture": "#f"
+    },
+    "west": {
+     "uv": [
+      13,
+      2,
+      16,
+      14
+     ],
+     "texture": "#f"
+    },
+    "up": {
+     "uv": [
+      2,
+      13,
+      14,
+      16
+     ],
+     "texture": "#f"
+    },
+    "down": {
+     "uv": [
+      2,
+      0,
+      14,
+      3
+     ],
+     "texture": "#f"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    2,
+    13
+   ],
+   "to": [
+    14,
+    14,
+    16
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#g"
+    }
+   }
+  }
+ ]
+}

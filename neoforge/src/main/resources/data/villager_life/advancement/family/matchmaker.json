@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/wedding",
+  "display": {
+    "icon": {
+      "id": "villager_life:wedding_ring"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.matchmaker.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.matchmaker.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

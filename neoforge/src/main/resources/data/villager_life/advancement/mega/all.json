@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:mega/formed",
+  "display": {
+    "icon": {
+      "id": "villager_life:mega_calm"
+    },
+    "title": {
+      "translate": "advancements.villager_life.mega.all.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.mega.all.description"
+    },
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

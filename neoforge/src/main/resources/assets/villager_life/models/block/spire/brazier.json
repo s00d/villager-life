@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
+  "textures": {"particle": "villager_life:block/spire/brazier", "b": "villager_life:block/spire/brazier", "c": "villager_life:block/spire/coals"},
+  "elements": [
+    {"from": [5, 0, 5], "to": [11, 1, 11], "faces": {
+      "north": {"uv": [5, 15, 11, 16], "texture": "#b"}, "south": {"uv": [5, 15, 11, 16], "texture": "#b"},
+      "east": {"uv": [5, 15, 11, 16], "texture": "#b"}, "west": {"uv": [5, 15, 11, 16], "texture": "#b"},
+      "up": {"uv": [5, 5, 11, 11], "texture": "#b"}, "down": {"uv": [5, 5, 11, 11], "texture": "#b"}}},
+    {"from": [6.5, 1, 6.5], "to": [9.5, 6, 9.5], "faces": {
+      "north": {"uv": [6, 4, 9, 9], "texture": "#b"}, "south": {"uv": [6, 4, 9, 9], "texture": "#b"},
+      "east": {"uv": [6, 4, 9, 9], "texture": "#b"}, "west": {"uv": [6, 4, 9, 9], "texture": "#b"}}},
+    {"from": [3, 6, 3], "to": [13, 11, 13], "faces": {
+      "north": {"uv": [3, 0, 13, 5], "texture": "#b"}, "south": {"uv": [3, 0, 13, 5], "texture": "#b"},
+      "east": {"uv": [3, 0, 13, 5], "texture": "#b"}, "west": {"uv": [3, 0, 13, 5], "texture": "#b"},
+      "down": {"uv": [3, 3, 13, 13], "texture": "#b"}}},
+    {"from": [4, 10, 4], "to": [12, 10.5, 12], "light_emission": 15, "faces": {
+      "up": {"uv": [4, 4, 12, 12], "texture": "#c"}}},
+    {"from": [3, 11, 3], "to": [13, 11, 13], "faces": {
+      "up": {"uv": [3, 3, 13, 13], "texture": "#b", "cullface": "up"}}}
+  ]
+}

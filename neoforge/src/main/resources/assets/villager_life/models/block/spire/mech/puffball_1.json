@@ -1,0 +1,126 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "villager_life:block/spire/mech/puff",
+  "p": "villager_life:block/spire/mech/puff",
+  "s": "villager_life:block/spire/mech/puff_spot",
+  "g": "villager_life:block/spire/mech/leaf"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    0.5,
+    15
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ],
+     "texture": "#g"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    0.5,
+    2
+   ],
+   "to": [
+    14,
+    2,
+    14
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      2,
+      14,
+      14,
+      15.5
+     ],
+     "texture": "#p"
+    },
+    "south": {
+     "uv": [
+      2,
+      14,
+      14,
+      15.5
+     ],
+     "texture": "#p"
+    },
+    "east": {
+     "uv": [
+      2,
+      14,
+      14,
+      15.5
+     ],
+     "texture": "#p"
+    },
+    "west": {
+     "uv": [
+      2,
+      14,
+      14,
+      15.5
+     ],
+     "texture": "#p"
+    },
+    "up": {
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "texture": "#p"
+    },
+    "down": {
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ],
+     "texture": "#p"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    2,
+    3
+   ],
+   "to": [
+    13,
+    2.5,
+    13
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      3,
+      3,
+      13,
+      13
+     ],
+     "texture": "#s"
+    }
+   }
+  }
+ ]
+}

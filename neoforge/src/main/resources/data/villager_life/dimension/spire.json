@@ -1,0 +1,12 @@
+{
+  "type": "villager_life:spire",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "layers": [],
+      "lakes": false,
+      "features": false
+    }
+  }
+}

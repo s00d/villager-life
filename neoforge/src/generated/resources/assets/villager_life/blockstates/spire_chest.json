@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "villager_life:block/spire/chest"
+    },
+    "open=true": {
+      "model": "villager_life:block/spire/chest_open"
+    }
+  }
+}

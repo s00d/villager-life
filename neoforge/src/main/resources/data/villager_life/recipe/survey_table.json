@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:cartography_table"
+    },
+    {
+      "item": "minecraft:compass"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "id": "villager_life:survey_table",
+    "count": 1
+  }
+}

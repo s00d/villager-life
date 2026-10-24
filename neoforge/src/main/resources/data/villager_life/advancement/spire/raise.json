@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/hone",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_root_sword"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.raise.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.raise.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

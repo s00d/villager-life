@@ -1,0 +1,316 @@
+{
+ "game": 1.5,
+ "music_vol": 0.13,
+ "vo_vol": 1.5,
+ "shots": [
+  {
+   "clip": "a01_orbit",
+   "in": 0.5,
+   "dur": 9.5,
+   "x": "fade",
+   "t": 1.0
+  },
+  {
+   "clip": "s02_greet",
+   "in": 0.3,
+   "dur": 9.6,
+   "x": "fade",
+   "t": 0.7
+  },
+  {
+   "clip": "s03_speech",
+   "in": 0.5,
+   "dur": 10.0,
+   "x": "slideleft",
+   "t": 0.7
+  },
+  {
+   "clip": "s04_shop",
+   "in": 0.3,
+   "dur": 11.0,
+   "x": "fadeblack",
+   "t": 0.9
+  },
+  {
+   "clip": "s05_build",
+   "in": 0.3,
+   "dur": 14.0,
+   "x": "fade",
+   "t": 0.8,
+   "shared": true
+  },
+  {
+   "clip": "s06_wedding",
+   "in": 0.3,
+   "dur": 12.4,
+   "x": "fade",
+   "t": 0.8
+  },
+  {
+   "clip": "s07_cradle",
+   "in": 0.3,
+   "dur": 9.4,
+   "x": "fadeblack",
+   "t": 1.0
+  },
+  {
+   "clip": "s08_dusk",
+   "in": 0.5,
+   "dur": 12.5,
+   "x": "fadeblack",
+   "t": 1.4
+  },
+  {
+   "clip": "d01_town_orbit",
+   "in": 0.5,
+   "dur": 9.0,
+   "x": "fade",
+   "t": 0.8
+  },
+  {
+   "clip": "d02_chapel",
+   "in": 0.5,
+   "dur": 6.0,
+   "x": "smoothleft",
+   "t": 0.7
+  },
+  {
+   "clip": "c02_board",
+   "in": 0.5,
+   "dur": 9.0,
+   "x": "fadeblack",
+   "t": 1.2
+  },
+  {
+   "clip": "s12_spire_rise",
+   "in": 0.5,
+   "dur": 15.0,
+   "x": "fadewhite",
+   "t": 0.5,
+   "speed": 3,
+   "shared": true
+  },
+  {
+   "clip": "s13_floor",
+   "in": 6.0,
+   "dur": 8.0,
+   "x": "fade",
+   "t": 0.6,
+   "in_ru": 14.0
+  },
+  {
+   "clip": "s13_floor",
+   "in": 62.5,
+   "dur": 12.0,
+   "x": "fadewhite",
+   "t": 0.4,
+   "in_ru": 56.0
+  },
+  {
+   "clip": "s13_floor",
+   "in": 82.0,
+   "dur": 6.0,
+   "x": "fadeblack",
+   "t": 1.0,
+   "in_ru": 95.0
+  },
+  {
+   "clip": "g01_anvil",
+   "in": 1.5,
+   "dur": 8.5,
+   "x": "fade",
+   "t": 0.8
+  },
+  {
+   "clip": "s16_hero",
+   "in": 0.3,
+   "dur": 11.5,
+   "x": "fade",
+   "t": 0.8
+  },
+  {
+   "clip": "h01_statue",
+   "in": 0.3,
+   "dur": 6.0,
+   "x": "fade",
+   "t": 1.0
+  },
+  {
+   "clip": "s17_finale",
+   "in": 0.5,
+   "dur": 13.5
+  }
+ ],
+ "titles": [
+  {
+   "at": 1.0,
+   "dur": 4.6,
+   "style": "logo",
+   "en": "Villager Life",
+   "ru": "Жизнь деревни"
+  },
+  {
+   "at": 9.9,
+   "dur": 3.6,
+   "style": "caption",
+   "en": "Every villager has a voice\nin English or in Russian",
+   "ru": "У каждого жителя свой голос\nпо-русски или по-английски"
+  },
+  {
+   "at": 19.5,
+   "dur": 3.4,
+   "style": "caption",
+   "en": "The mayor\nelected by the village",
+   "ru": "Мэр\nвыбран деревней"
+  },
+  {
+   "at": 29.5,
+   "dur": 3.4,
+   "style": "caption",
+   "en": "The shop\nreal coins, real goods",
+   "ru": "Лавка\nнастоящие монеты и товары"
+  },
+  {
+   "at": 40.4,
+   "dur": 3.2,
+   "style": "chapter",
+   "en": "Built by hand",
+   "ru": "Своими руками"
+  },
+  {
+   "at": 54.5,
+   "dur": 3.4,
+   "style": "caption",
+   "en": "Families\ncourtship and weddings",
+   "ru": "Семьи\nухаживания и свадьбы"
+  },
+  {
+   "at": 66.9,
+   "dur": 3.4,
+   "style": "caption",
+   "en": "A newborn's first day",
+   "ru": "Первый день малыша"
+  },
+  {
+   "at": 88.7,
+   "dur": 3.2,
+   "style": "chapter",
+   "en": "Years later",
+   "ru": "Годы спустя"
+  },
+  {
+   "at": 103.8,
+   "dur": 3.6,
+   "style": "caption",
+   "en": "The notice board\nerrands, builds and lots",
+   "ru": "Доска объявлений\nзадания, стройки и участки"
+  },
+  {
+   "at": 117.4,
+   "dur": 3.6,
+   "style": "chapter",
+   "en": "The Builders' Spire",
+   "ru": "Шпиль Зодчих"
+  },
+  {
+   "at": 135.8,
+   "dur": 3.6,
+   "style": "caption",
+   "en": "Keepers\na boss on every tenth floor",
+   "ru": "Хранители\nбосс на каждом десятом этаже"
+  },
+  {
+   "at": 153.8,
+   "dur": 3.6,
+   "style": "caption",
+   "en": "The Core Anvil\nforge your gear",
+   "ru": "Наковальня Ядра\nкуй своё снаряжение"
+  },
+  {
+   "at": 162.3,
+   "dur": 3.4,
+   "style": "caption",
+   "en": "Heroes\nvillagers who climbed the Spire",
+   "ru": "Герои\nжители, прошедшие Шпиль"
+  },
+  {
+   "at": 183.9,
+   "dur": 7.5,
+   "style": "logo",
+   "en": "Villager Life\nMinecraft · NeoForge",
+   "ru": "Жизнь деревни\nMinecraft · NeoForge"
+  }
+ ],
+ "music": [
+  {
+   "file": "village",
+   "from": 0,
+   "at": 0,
+   "dur": 41.6,
+   "fin": 1.0,
+   "fout": 3.0
+  },
+  {
+   "file": "town",
+   "from": 8,
+   "at": 39.1,
+   "dur": 74.30000000000001,
+   "fin": 2.5,
+   "fout": 3.0
+  },
+  {
+   "file": "spire",
+   "from": 0,
+   "at": 111.9,
+   "dur": 81.5,
+   "fin": 2.5,
+   "fout": 6.0
+  }
+ ],
+ "vo": [
+  {
+   "id": "N01",
+   "at": 1.2
+  },
+  {
+   "id": "N02",
+   "at": 5.9
+  },
+  {
+   "id": "N03",
+   "at": 41.1
+  },
+  {
+   "id": "N04",
+   "at": 47.7
+  },
+  {
+   "id": "N05",
+   "at": 78.9
+  },
+  {
+   "id": "N06",
+   "at": 92.2
+  },
+  {
+   "id": "N07",
+   "at": 113.0
+  },
+  {
+   "id": "N08",
+   "at": 120.4
+  },
+  {
+   "id": "N09",
+   "at": 157.3
+  },
+  {
+   "id": "N10",
+   "at": 173.8
+  },
+  {
+   "id": "N11",
+   "at": 184.0
+  }
+ ]
+}

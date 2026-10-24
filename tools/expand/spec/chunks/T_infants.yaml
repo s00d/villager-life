@@ -1,0 +1,241 @@
+# Phase T — a newborn's first day in its cradle. The baby speaks as `infant` (its own voice:
+# tools/voice/speaker/<lang>/infant), the mother as `woman`, the father as `villager`, brothers and sisters as `child`.
+
+- key: TI01
+  id: in_cry
+  title: "Baby Cries"
+  category: family
+  status: active
+  trigger: "a newborn in its cradle cries (at night, or with its mother away)"
+  speaker: infant
+  variants:
+    - weight: 50
+      frames:
+        - "У-у-у-у…"
+      frames_en:
+        - "Waaah…"
+    - weight: 50
+      frames:
+        - "А-а-а-а!"
+      frames_en:
+        - "Aaaah!"
+    - weight: 50
+      frames:
+        - "Уааа…"
+      frames_en:
+        - "Waaa-aaa!"
+    - weight: 50
+      frames:
+        - "Хны-ы-ы…"
+      frames_en:
+        - "Whimper…"
+    - weight: 50
+      frames:
+        - "И-и-и-и!"
+      frames_en:
+        - "Eee-eee!"
+    - weight: 50
+      frames:
+        - "Бу-у-у…"
+      frames_en:
+        - "Boo-hoo…"
+- key: TI02
+  id: in_coo
+  title: "Baby Coos"
+  category: family
+  status: active
+  trigger: "a newborn in its cradle coos, or when its mother rocks it"
+  speaker: infant
+  variants:
+    - weight: 50
+      frames:
+        - "Бву-у-у!"
+      frames_en:
+        - "Bwoo-oo!"
+    - weight: 50
+      frames:
+        - "Мии-и-и!"
+      frames_en:
+        - "Mwee-ee!"
+    - weight: 50
+      frames:
+        - "Мва-а-а!"
+      frames_en:
+        - "Mwaaah!"
+- key: TI03
+  id: in_w_rock
+  title: "Rocks the Cradle"
+  category: family
+  status: active
+  trigger: "a mother rocks her newborn's cradle"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[softly] Баю-бай, мой маленький. Мама рядом."
+      frames_en:
+        - "[softly] Hush now, little one. Mama's right here."
+    - weight: 50
+      frames:
+        - "[whisper] Спи, моя радость. Завтра будем гулять."
+      frames_en:
+        - "[whisper] Sleep, my sweet. Tomorrow we'll go outside."
+    - weight: 50
+      frames:
+        - "Качу-качу. Посмотри, какие у тебя пальчики!"
+      frames_en:
+        - "Rock-a-bye. Look at those tiny fingers!"
+- key: TI04
+  id: in_w_hush
+  title: "Hushes the Baby"
+  category: family
+  status: active
+  trigger: "the newborn cries and its mother comforts it"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Тише, тише, я здесь. Никуда не ушла."
+      frames_en:
+        - "Shh, shh, I'm here. I haven't gone anywhere."
+    - weight: 50
+      frames:
+        - "[sigh] Ну что ты, маленький? Голодный? Сейчас."
+      frames_en:
+        - "[sigh] What is it, little one? Hungry? Just a moment."
+    - weight: 50
+      frames:
+        - "[softly] Не плачь, солнышко. Мама с тобой."
+      frames_en:
+        - "[softly] Don't cry, sunshine. Mama's with you."
+- key: TI05
+  id: in_w_out
+  title: "Baby Out of the Cradle"
+  category: family
+  status: active
+  trigger: "the morning after the birth the baby leaves the cradle"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Смотрите-ка, кто уже на ножках! Ну, беги, только осторожно."
+      frames_en:
+        - "Look who's up on their feet! Off you go, carefully now."
+    - weight: 50
+      frames:
+        - "Вот и первый день позади. Теперь только успевай за тобой."
+      frames_en:
+        - "That's the first day behind us. Now I'll have to keep up with you."
+- key: TI06
+  id: in_visit
+  title: "Visits the Baby"
+  category: family
+  status: active
+  trigger: "the father comes to the cradle after work"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну здравствуй, малыш. Это я, папа. Весь день о тебе думал."
+      frames_en:
+        - "Well, hello, little one. It's me, Papa. I thought about you all day."
+    - weight: 50
+      frames:
+        - "[whisper] Спит. Какой же он маленький… и какой громкий."
+      frames_en:
+        - "[whisper] Asleep. So tiny… and so loud."
+    - weight: 50
+      frames:
+        - "Вырастешь — научу тебя всему, что сам умею."
+      frames_en:
+        - "When you grow up, I'll teach you everything I know."
+- key: TI07
+  id: in_w_visit
+  title: "Visits the Baby"
+  category: family
+  status: active
+  trigger: "a woman comes to the newborn's cradle"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ой, какой хорошенький! Носик мамин, точно."
+      frames_en:
+        - "Oh, how sweet! That's his mother's nose, for sure."
+    - weight: 50
+      frames:
+        - "[whisper] Тсс, спит. Не будем будить."
+      frames_en:
+        - "[whisper] Shh, asleep. Let's not wake it."
+- key: TI08
+  id: in_kid_peek
+  title: "Kid Peeks at the Baby"
+  category: family
+  status: active
+  trigger: "a brother or sister peeks into the newborn's cradle"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он такой маленький! А когда он будет со мной играть?"
+      frames_en:
+        - "It's so small! When will it play with me?"
+    - weight: 50
+      frames:
+        - "Привет, малыш! Я твой старший. Буду тебя защищать!"
+      frames_en:
+        - "Hi, baby! I'm the big one. I'll look after you!"
+    - weight: 50
+      frames:
+        - "[giggle] Он схватил меня за палец! Мама, смотри!"
+      frames_en:
+        - "[giggle] It grabbed my finger! Mama, look!"
+- key: TI11
+  id: in_rock
+  title: "Rocks the Cradle"
+  category: family
+  status: active
+  trigger: "a father rocks the cradle (its mother is gone)"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[softly] Тише, малыш. Папа здесь. Никуда не уйду."
+      frames_en:
+        - "[softly] Easy, little one. Papa's here. I'm not going anywhere."
+    - weight: 50
+      frames:
+        - "Качу-качу… Мама бы спела, а я уж как умею."
+      frames_en:
+        - "Rock-a-bye… Your mother would sing. I'll do what I can."
+- key: TI12
+  id: in_hush
+  title: "Hushes the Baby"
+  category: family
+  status: active
+  trigger: "the newborn cries and its father comforts it"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ну, не плачь. Я рядом, я тебя не оставлю."
+      frames_en:
+        - "There, there, don't cry. I'm right here, I won't leave you."
+    - weight: 50
+      frames:
+        - "[sigh] Голодный? Сейчас что-нибудь придумаем."
+      frames_en:
+        - "[sigh] Hungry? We'll think of something."
+- key: TI13
+  id: in_out
+  title: "Baby Out of the Cradle"
+  category: family
+  status: active
+  trigger: "the morning after the birth the baby leaves the cradle (its father minds it)"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Смотри-ка, уже на ногах! Ну пойдём, покажу тебе деревню."
+      frames_en:
+        - "Look at you, up already! Come on, I'll show you the village."

@@ -1,0 +1,522 @@
+# Phase P — the family parrot learns ten words from the family and says them (speakers villager, woman, child, parrot).
+
+- key: P01
+  id: p_parrot_1
+  title: "Parrot Says 1"
+  category: home
+  status: active
+  trigger: "the family parrot says word 1"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Привет, привет!"
+      frames_en:
+        - "Hello, hello!"
+- key: P02
+  id: p_m_teach_1
+  title: "Man Teaches the Parrot 1"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 1"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Привет, привет!»"
+      frames_en:
+        - "Come on, say it: \"Hello, hello!\""
+- key: P03
+  id: p_w_teach_1
+  title: "Woman Teaches the Parrot 1"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 1"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Привет, привет!» Умница, скажи!"
+      frames_en:
+        - "Say \"Hello, hello!\" Clever bird, say it!"
+- key: P04
+  id: p_k_teach_1
+  title: "Kid Teaches the Parrot 1"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 1"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Привет, привет!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Hello, hello!\" Go on, please!"
+- key: P05
+  id: p_parrot_2
+  title: "Parrot Says 2"
+  category: home
+  status: active
+  trigger: "the family parrot says word 2"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Доброе утро! Доброе утро!"
+      frames_en:
+        - "Good morning! Good morning!"
+- key: P06
+  id: p_m_teach_2
+  title: "Man Teaches the Parrot 2"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 2"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Доброе утро!»"
+      frames_en:
+        - "Come on, say it: \"Good morning!\""
+- key: P07
+  id: p_w_teach_2
+  title: "Woman Teaches the Parrot 2"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 2"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Доброе утро!» Умница, скажи!"
+      frames_en:
+        - "Say \"Good morning!\" Clever bird, say it!"
+- key: P08
+  id: p_k_teach_2
+  title: "Kid Teaches the Parrot 2"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 2"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Доброе утро!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Good morning!\" Go on, please!"
+- key: P09
+  id: p_parrot_3
+  title: "Parrot Says 3"
+  category: home
+  status: active
+  trigger: "the family parrot says word 3"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Кто пришёл?"
+      frames_en:
+        - "Who's there?"
+- key: P10
+  id: p_m_teach_3
+  title: "Man Teaches the Parrot 3"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 3"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Кто пришёл?»"
+      frames_en:
+        - "Come on, say it: \"Who's there?\""
+- key: P11
+  id: p_w_teach_3
+  title: "Woman Teaches the Parrot 3"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 3"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Кто пришёл?» Умница, скажи!"
+      frames_en:
+        - "Say \"Who's there?\" Clever bird, say it!"
+- key: P12
+  id: p_k_teach_3
+  title: "Kid Teaches the Parrot 3"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 3"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Кто пришёл?» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Who's there?\" Go on, please!"
+- key: P13
+  id: p_parrot_4
+  title: "Parrot Says 4"
+  category: home
+  status: active
+  trigger: "the family parrot says word 4"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Ужин готов!"
+      frames_en:
+        - "Dinner's ready!"
+- key: P14
+  id: p_m_teach_4
+  title: "Man Teaches the Parrot 4"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 4"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Ужин готов!»"
+      frames_en:
+        - "Come on, say it: \"Dinner's ready!\""
+- key: P15
+  id: p_w_teach_4
+  title: "Woman Teaches the Parrot 4"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 4"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Ужин готов!» Умница, скажи!"
+      frames_en:
+        - "Say \"Dinner's ready!\" Clever bird, say it!"
+- key: P16
+  id: p_k_teach_4
+  title: "Kid Teaches the Parrot 4"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 4"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Ужин готов!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Dinner's ready!\" Go on, please!"
+- key: P17
+  id: p_parrot_5
+  title: "Parrot Says 5"
+  category: home
+  status: active
+  trigger: "the family parrot says word 5"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Хорошая птичка!"
+      frames_en:
+        - "Pretty bird!"
+- key: P18
+  id: p_m_teach_5
+  title: "Man Teaches the Parrot 5"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 5"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Хорошая птичка!»"
+      frames_en:
+        - "Come on, say it: \"Pretty bird!\""
+- key: P19
+  id: p_w_teach_5
+  title: "Woman Teaches the Parrot 5"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 5"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Хорошая птичка!» Умница, скажи!"
+      frames_en:
+        - "Say \"Pretty bird!\" Clever bird, say it!"
+- key: P20
+  id: p_k_teach_5
+  title: "Kid Teaches the Parrot 5"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 5"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Хорошая птичка!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Pretty bird!\" Go on, please!"
+- key: P21
+  id: p_parrot_6
+  title: "Parrot Says 6"
+  category: home
+  status: active
+  trigger: "the family parrot says word 6"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Пока-пока!"
+      frames_en:
+        - "Bye-bye!"
+- key: P22
+  id: p_m_teach_6
+  title: "Man Teaches the Parrot 6"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 6"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Пока-пока!»"
+      frames_en:
+        - "Come on, say it: \"Bye-bye!\""
+- key: P23
+  id: p_w_teach_6
+  title: "Woman Teaches the Parrot 6"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 6"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Пока-пока!» Умница, скажи!"
+      frames_en:
+        - "Say \"Bye-bye!\" Clever bird, say it!"
+- key: P24
+  id: p_k_teach_6
+  title: "Kid Teaches the Parrot 6"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 6"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Пока-пока!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Bye-bye!\" Go on, please!"
+- key: P25
+  id: p_parrot_7
+  title: "Parrot Says 7"
+  category: home
+  status: active
+  trigger: "the family parrot says word 7"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Хочу сухарик!"
+      frames_en:
+        - "Want a cracker!"
+- key: P26
+  id: p_m_teach_7
+  title: "Man Teaches the Parrot 7"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 7"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Хочу сухарик!»"
+      frames_en:
+        - "Come on, say it: \"Want a cracker!\""
+- key: P27
+  id: p_w_teach_7
+  title: "Woman Teaches the Parrot 7"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 7"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Хочу сухарик!» Умница, скажи!"
+      frames_en:
+        - "Say \"Want a cracker!\" Clever bird, say it!"
+- key: P28
+  id: p_k_teach_7
+  title: "Kid Teaches the Parrot 7"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 7"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Хочу сухарик!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Want a cracker!\" Go on, please!"
+- key: P29
+  id: p_parrot_8
+  title: "Parrot Says 8"
+  category: home
+  status: active
+  trigger: "the family parrot says word 8"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Тише, малыш спит!"
+      frames_en:
+        - "Hush, the baby's asleep!"
+- key: P30
+  id: p_m_teach_8
+  title: "Man Teaches the Parrot 8"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 8"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Тише, малыш спит!»"
+      frames_en:
+        - "Come on, say it: \"Hush, the baby's asleep!\""
+- key: P31
+  id: p_w_teach_8
+  title: "Woman Teaches the Parrot 8"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 8"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Тише, малыш спит!» Умница, скажи!"
+      frames_en:
+        - "Say \"Hush, the baby's asleep!\" Clever bird, say it!"
+- key: P32
+  id: p_k_teach_8
+  title: "Kid Teaches the Parrot 8"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 8"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Тише, малыш спит!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Hush, the baby's asleep!\" Go on, please!"
+- key: P33
+  id: p_parrot_9
+  title: "Parrot Says 9"
+  category: home
+  status: active
+  trigger: "the family parrot says word 9"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Изумруды!"
+      frames_en:
+        - "Emeralds!"
+- key: P34
+  id: p_m_teach_9
+  title: "Man Teaches the Parrot 9"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 9"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Изумруды!»"
+      frames_en:
+        - "Come on, say it: \"Emeralds!\""
+- key: P35
+  id: p_w_teach_9
+  title: "Woman Teaches the Parrot 9"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 9"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Изумруды!» Умница, скажи!"
+      frames_en:
+        - "Say \"Emeralds!\" Clever bird, say it!"
+- key: P36
+  id: p_k_teach_9
+  title: "Kid Teaches the Parrot 9"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 9"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Изумруды!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Emeralds!\" Go on, please!"
+- key: P37
+  id: p_parrot_10
+  title: "Parrot Says 10"
+  category: home
+  status: active
+  trigger: "the family parrot says word 10"
+  speaker: parrot
+  variants:
+    - weight: 50
+      frames:
+        - "Спокойной ночи!"
+      frames_en:
+        - "Good night!"
+- key: P38
+  id: p_m_teach_10
+  title: "Man Teaches the Parrot 10"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 10"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну-ка, повторяй: «Спокойной ночи!»"
+      frames_en:
+        - "Come on, say it: \"Good night!\""
+- key: P39
+  id: p_w_teach_10
+  title: "Woman Teaches the Parrot 10"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 10"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи: «Спокойной ночи!» Умница, скажи!"
+      frames_en:
+        - "Say \"Good night!\" Clever bird, say it!"
+- key: P40
+  id: p_k_teach_10
+  title: "Kid Teaches the Parrot 10"
+  category: home
+  status: active
+  trigger: "teaching the parrot word 10"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Скажи «Спокойной ночи!» Ну скажи, ну пожалуйста!"
+      frames_en:
+        - "Say \"Good night!\" Go on, please!"

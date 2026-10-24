@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "SAS",
+    " D "
+  ],
+  "key": {
+    "S": {
+      "item": "villager_life:core_shard"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "minecraft:light_gray_dye"
+    }
+  },
+  "result": {
+    "id": "villager_life:gate_key_light_gray",
+    "count": 2
+  }
+}

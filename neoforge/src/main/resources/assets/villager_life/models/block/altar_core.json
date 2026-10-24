@@ -1,0 +1,172 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "villager_life:block/altar_core",
+    "hearth": "villager_life:block/altar_core",
+    "coals": "villager_life:block/altar_core_coals_0",
+    "anvil": "villager_life:block/altar_core_anvil",
+    "anvil_top": "villager_life:block/altar_core_anvil_top"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        6,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#hearth"
+        },
+        "south": {
+          "texture": "#hearth"
+        },
+        "east": {
+          "texture": "#hearth"
+        },
+        "west": {
+          "texture": "#hearth"
+        },
+        "up": {
+          "texture": "#coals"
+        },
+        "down": {
+          "texture": "#coals"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        6,
+        2
+      ],
+      "to": [
+        14,
+        7,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#coals"
+        },
+        "south": {
+          "texture": "#coals"
+        },
+        "east": {
+          "texture": "#coals"
+        },
+        "west": {
+          "texture": "#coals"
+        },
+        "up": {
+          "texture": "#coals"
+        },
+        "down": {
+          "texture": "#coals"
+        }
+      }
+    },
+    {
+      "from": [
+        4,
+        7,
+        5
+      ],
+      "to": [
+        12,
+        9,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#anvil"
+        },
+        "south": {
+          "texture": "#anvil"
+        },
+        "east": {
+          "texture": "#anvil"
+        },
+        "west": {
+          "texture": "#anvil"
+        },
+        "up": {
+          "texture": "#anvil"
+        },
+        "down": {
+          "texture": "#anvil"
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        9,
+        6
+      ],
+      "to": [
+        10,
+        12,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#anvil"
+        },
+        "south": {
+          "texture": "#anvil"
+        },
+        "east": {
+          "texture": "#anvil"
+        },
+        "west": {
+          "texture": "#anvil"
+        },
+        "up": {
+          "texture": "#anvil"
+        },
+        "down": {
+          "texture": "#anvil"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        12,
+        4
+      ],
+      "to": [
+        14,
+        16,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#anvil"
+        },
+        "south": {
+          "texture": "#anvil"
+        },
+        "east": {
+          "texture": "#anvil"
+        },
+        "west": {
+          "texture": "#anvil"
+        },
+        "up": {
+          "texture": "#anvil_top"
+        },
+        "down": {
+          "texture": "#anvil_top"
+        }
+      }
+    }
+  ]
+}

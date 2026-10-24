@@ -1,0 +1,8 @@
+{
+  "comparator_output": 9,
+  "description": {
+    "translate": "jukebox_song.villager_life.evening"
+  },
+  "length_in_seconds": 159.5,
+  "sound_event": "villager_life:music.evening"
+}

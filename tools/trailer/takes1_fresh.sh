@@ -1,0 +1,16 @@
+#!/bin/zsh
+# film 1 (Movies/VillagerLife/film1), the scenes in the world Fresh, in the language of its work/.lang (shoot.py lang)
+cd ~/Downloads/FireShot/villager-news-ru-port
+export VL_FILM=~/Movies/VillagerLife/film1
+S=tools/trailer/shoot.py
+python3 tools/dev/mcc.py '/execute as @e[type=villager] run data merge entity @s {NoAI:0b}' '/vnap stage true' '/team join cast @e[type=villager]' >/dev/null
+python3 $S take a01_orbit 14 "orbit -551 64 535 70 38 150 215" --pre "/gamemode spectator" --pre "/time set 1000"
+python3 $S take s02_greet 10 "path -551.5 63.8 552.6 -90 4; -549.4 63.7 552.6 -90 6" --pre "/time set 1500" --pre "s:Bram -546 64 552.2 90" --pre "s:Pia -545.2 64 553.6 90" --pre "s:Agnes -546.3 64 554.3 90" --at 0.8 "say:Bram Sees the Player" --at 5.6 "say:Agnes Meet a Player"
+python3 $S take s03_speech 11 "path -546.0 63.8 558.5 90 3; -546.8 63.8 558.5 90 3" --pre "/time set 2000" --pre "a:Bram 0 7.0 @cam" --pre "a:Viggo -1.8 4.4 @Bram!" --pre "a:Pia 1.7 4.6 @Bram!" --pre "a:Agnes 0.6 4.0 @Bram!" --pre "a:Klara -0.6 3.8 @Bram!" --pre "a:Fedor 2.8 5.4 @Bram!" --at 1.0 "say:Bram Mayor Morning Speech" --at 6.8 "say:Klara Kid Says Good Morning"
+python3 tools/dev/mcc.py '/clear @s' '/vnap shop coins 120' 'sleep 2' >/dev/null
+python3 $S take s04_shop 11.5 "path -559.5 64 489.6 0 9; -559.5 64 491.4 0 12" --hud --pre "/gamemode adventure" --pre "/time set 2600" --pre "/tp @e[type=villager,name=Nikita,limit=1] -556 64 500" --pre "s:Mina -559.5 64 495.4 180" --at 0.8 "say:Mina Shopkeeper Greets a Customer" --at 3.6 "i:-559 64 494 north" --at 4.6 "c:vnapbot mouse 209 109" --at 5.3 "c:vnapbot click" --at 5.9 "c:vnapbot click" --at 6.5 "c:vnapbot mouse 245 109" --at 7.1 "c:vnapbot click" --at 8.6 "k:escape" --at 8.9 "say:Mina Shopkeeper Thanks a Customer"
+python3 tools/dev/mcc.py "/gamemode spectator" >/dev/null
+python3 $S take s06_wedding 13 "path -546.0 63.9 558.5 90 2; -546.8 63.9 558.5 90 2" --pre "/time set 5000" --pre "a:Nestor 1.0 4.6 @Mina!" --pre "a:Mina -1.0 4.6 @Nestor!" --pre "a:Bram 0 6.6 @cam" --pre "a:Viggo 2.8 6.0 @Nestor!" --pre "a:Pia -2.8 6.0 @Mina!" --pre "a:Klara -2.2 5.0 @Mina!" --pre "a:Agnes 2.3 5.2 @Nestor!" --at 0.6 "say:Bram Mayor Weds the Couple" --at 4.6 "say:Nestor Man Wedding Vow" --at 8.0 "say:Mina Woman Wedding Vow" --at 11.0 "/execute at @e[type=villager,name=Mina,limit=1] run particle minecraft:heart ~0.8 ~2.1 ~ 0.6 0.3 0.6 0.02 30" --at 11.2 "say:Viggo Wedding Cheers"
+python3 $S take s07_cradle 10 "path -521.0 68.3 595.6 -145 22; -520.7 68.3 595.2 -143 26" --pre "/time set 6000" --pre "/execute as @e[type=villager,x=-520,y=68,z=593,distance=..14,name=!Pia] unless entity @s[nbt={NoAI:1b}] run tp @s -510 64 606" --pre "/execute as @e[type=villager,x=-520,y=68,z=593,distance=..40,name=!Pia] unless entity @s[nbt={NoAI:1b}] run data merge entity @s {NoAI:1b}" --pre "s:Pia -519.5 68 591.9 0" --pre "/execute as @e[type=villager,name=Pia,limit=1] at @s run tp @s ~ ~ ~ facing -519.5 68.5 593.5" --at 0.8 "say:Pia Rocks the Cradle" --at 5.6 "sayat:-520 68 593 Baby Coos"
+python3 tools/dev/mcc.py '/execute as @e[type=villager] run data merge entity @s {NoAI:0b}' '/time set 11300' >/dev/null
+python3 $S take s08_dusk 14 "path -560 72 560 -140 18; -558.5 71.5 558.5 -140 17" --rate 160 --pre "/gamemode spectator"

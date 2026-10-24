@@ -1,0 +1,9 @@
+# The hamlet of the dev world (bell 620 221 400): its settlers live in its manor.
+/gamemode spectator
+/tp Dev 633 235 403
+sleep 6
+/time set 1000
+sprint 24000
+expect check: 0 problems :: /vnap check 40
+expect-no homeless :: /vnap who 40
+/gamemode creative

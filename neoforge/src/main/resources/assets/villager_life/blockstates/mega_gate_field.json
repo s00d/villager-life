@@ -1,0 +1,116 @@
+{
+  "variants": {
+    "axis=x,colour=0": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=0": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=1": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=1": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=2": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=2": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=3": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=3": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=4": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=4": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=5": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=5": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=6": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=6": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=7": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=7": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=8": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=8": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=9": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=9": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=10": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=10": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=11": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=11": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=12": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=12": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=13": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=13": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=14": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=14": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    },
+    "axis=x,colour=15": {
+      "model": "villager_life:block/mega/field"
+    },
+    "axis=z,colour=15": {
+      "model": "villager_life:block/mega/field",
+      "y": 90
+    }
+  }
+}

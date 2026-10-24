@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/arrow_turret",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/arrow_turret"
+    },
+    "facing=south": {
+      "model": "villager_life:block/arrow_turret",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/arrow_turret",
+      "y": 270
+    }
+  }
+}

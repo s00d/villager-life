@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:bell"
+    },
+    "title": {
+      "translate": "advancements.villager_life.tocsin.awaken.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.tocsin.awaken.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

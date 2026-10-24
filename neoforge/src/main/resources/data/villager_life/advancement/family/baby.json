@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/wedding",
+  "display": {
+    "icon": {
+      "id": "minecraft:white_bed"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.baby.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.baby.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

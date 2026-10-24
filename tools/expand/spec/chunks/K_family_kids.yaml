@@ -1,0 +1,148 @@
+# Phase J — children in family moments (speaker child): echoes of wedding cheers and of their mother.
+
+- key: J09
+  id: kid_wedding
+  title: "Kid at the Wedding"
+  category: child
+  status: active
+  trigger: "a child at a wedding"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ура! Свадьба! А торт будет?"
+      frames_en:
+        - "Hooray! A wedding! Will there be cake?"
+    - weight: 50
+      frames:
+        - "Когда вырасту, тоже женюсь. На собачке."
+      frames_en:
+        - "When I grow up, I'll get married too. To a doggy."
+    - weight: 50
+      frames:
+        - "Они целуются! Фу-у-у!"
+      frames_en:
+        - "They're kissing! Ewww!"
+    - weight: 50
+      frames:
+        - "Можно я буду кидать лепестки?"
+      frames_en:
+        - "Can I throw the petals?"
+    - weight: 50
+      frames:
+        - "Это самый красивый день!"
+      frames_en:
+        - "This is the prettiest day ever!"
+    - weight: 50
+      frames:
+        - "Тётя такая красивая, как принцесса!"
+      frames_en:
+        - "She looks like a princess!"
+    - weight: 50
+      frames:
+        - "Я буду танцевать до самой ночи!"
+      frames_en:
+        - "I'm going to dance all night!"
+    - weight: 50
+      frames:
+        - "А можно мне тоже кусочек счастья? И торта."
+      frames_en:
+        - "Can I have a piece of happiness too? And cake."
+
+- key: J10
+  id: kid_answer_mom
+  title: "Kid Answers Mom"
+  category: child
+  status: active
+  trigger: "a child answers its mother after she comforts or protects it"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Мама, ты так быстро пришла! Ты бежала?"
+      frames_en:
+        - "You came so fast, Mama! Were you running?"
+    - weight: 50
+      frames:
+        - "Уже не больно. Почти."
+      frames_en:
+        - "It doesn't hurt anymore. Almost."
+    - weight: 50
+      frames:
+        - "Мама самая сильная!"
+      frames_en:
+        - "My mom is the strongest!"
+    - weight: 50
+      frames:
+        - "Можно я с тобой посижу?"
+      frames_en:
+        - "Can I stay with you?"
+    - weight: 50
+      frames:
+        - "Подуй ещё разок, пожалуйста."
+      frames_en:
+        - "Blow on it one more time, please."
+    - weight: 50
+      frames:
+        - "Я больше не буду убегать далеко."
+      frames_en:
+        - "I won't run so far away again."
+    - weight: 50
+      frames:
+        - "Мамочка, я тебя люблю."
+      frames_en:
+        - "Mommy, I love you."
+    - weight: 50
+      frames:
+        - "А ты дашь мне за это печеньку?"
+      frames_en:
+        - "Will I get a cookie for being brave?"
+
+- key: J11
+  id: kid_sibling
+  title: "Kid Gets a Sibling"
+  category: child
+  status: active
+  trigger: "a child's new brother or sister is born"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "У меня теперь братик! Или сестрёнка!"
+      frames_en:
+        - "I have a little brother now! Or a sister!"
+    - weight: 50
+      frames:
+        - "Он такой маленький! Можно потрогать?"
+      frames_en:
+        - "It's so tiny! Can I touch it?"
+    - weight: 50
+      frames:
+        - "Я буду делиться с ним игрушками. Некоторыми."
+      frames_en:
+        - "I'll share my toys with it. Some of them."
+    - weight: 50
+      frames:
+        - "Теперь я старший! Слушайтесь меня!"
+      frames_en:
+        - "Now I'm the big one! Everyone listen to me!"
+    - weight: 50
+      frames:
+        - "А почему он всё время спит?"
+      frames_en:
+        - "Why does it sleep all the time?"
+    - weight: 50
+      frames:
+        - "Я научу его бегать быстрее всех!"
+      frames_en:
+        - "I'll teach it to run faster than everyone!"
+    - weight: 50
+      frames:
+        - "Мама, а он тоже будет есть мою морковку?"
+      frames_en:
+        - "Mom, will it eat my carrots too?"
+    - weight: 50
+      frames:
+        - "Привет, малыш! Я твой лучший друг."
+      frames_en:
+        - "Hi, baby! I'm your best friend."

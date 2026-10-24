@@ -1,0 +1,469 @@
+# Phase N — generations: hamlets, coming of age, elders, funerals, the wedding wish, quarrels (speaker villager).
+
+- key: N01
+  id: n_m_leave
+  title: "Man Leaves for a Hamlet"
+  category: home
+  status: active
+  trigger: "a young man leaves the full village to found a hamlet"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тесно тут стало. Пойду искать своё место."
+      frames_en:
+        - "It's crowded here now. I'll go and find a place of my own."
+    - weight: 50
+      frames:
+        - "Где-то за холмами есть земля и для меня."
+      frames_en:
+        - "Somewhere past the hills there's land for me too."
+    - weight: 50
+      frames:
+        - "Не поминайте лихом! Я ещё напишу... если научусь."
+      frames_en:
+        - "Don't think badly of me! I'll write... once I learn how."
+    - weight: 50
+      frames:
+        - "Новый колокол, новый дом. Новая жизнь!"
+      frames_en:
+        - "A new bell, a new house. A new life!"
+    - weight: 50
+      frames:
+        - "Мама, не плачь. Я недалеко. Ну, относительно."
+      frames_en:
+        - "Don't cry, Mum. I won't be far. Well, fairly far."
+- key: N02
+  id: n_goodbye
+  title: "Neighbour Says Goodbye"
+  category: home
+  status: active
+  trigger: "a neighbour sees off villagers leaving for a hamlet"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Удачи вам на новом месте!"
+      frames_en:
+        - "Good luck in your new place!"
+    - weight: 50
+      frames:
+        - "Эх, молодёжь. Всё им мало места."
+      frames_en:
+        - "Ah, the young. Never enough room for them."
+    - weight: 50
+      frames:
+        - "Возвращайтесь в гости, слышите?"
+      frames_en:
+        - "Come back and visit, you hear?"
+    - weight: 50
+      frames:
+        - "Без вас будет тише. И скучнее."
+      frames_en:
+        - "It'll be quieter without you. And duller."
+    - weight: 50
+      frames:
+        - "Пусть колокол у вас звенит громко!"
+      frames_en:
+        - "May your bell ring loud!"
+- key: N03
+  id: n_settle
+  title: "Settlers Found a Hamlet"
+  category: home
+  status: active
+  trigger: "settlers have founded their hamlet"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вот он, наш хутор! Маленький, но свой."
+      frames_en:
+        - "Here it is, our hamlet! Small, but ours."
+    - weight: 50
+      frames:
+        - "Колокол висит, дом стоит. Можно жить!"
+      frames_en:
+        - "The bell is up, the house stands. We can live here!"
+    - weight: 50
+      frames:
+        - "Тут тихо. Даже слишком. Надо будет завести соседей."
+      frames_en:
+        - "It's quiet here. Too quiet. We'll need neighbours."
+    - weight: 50
+      frames:
+        - "Первый день на новом месте. Пахнет травой и свободой."
+      frames_en:
+        - "First day in a new place. It smells of grass and freedom."
+    - weight: 50
+      frames:
+        - "Ну что, путник, будешь нашим первым гостем?"
+      frames_en:
+        - "Well, traveller, will you be our first guest?"
+- key: N04
+  id: n_m_proud
+  title: "Man Proud of His Child"
+  category: home
+  status: active
+  trigger: "a father is proud of his child coming of age"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Совсем взрослый стал! Когда успел?"
+      frames_en:
+        - "All grown up! When did that happen?"
+    - weight: 50
+      frames:
+        - "Весь в меня. Ну, почти весь."
+      frames_en:
+        - "Takes after me. Well, mostly."
+    - weight: 50
+      frames:
+        - "Вчера ещё под стол пешком ходил, а сегодня глянь!"
+      frames_en:
+        - "Yesterday you walked under the table, and look at you today!"
+    - weight: 50
+      frames:
+        - "Горжусь тобой. Только виду не подаю."
+      frames_en:
+        - "I'm proud of you. I just don't show it."
+    - weight: 50
+      frames:
+        - "Ну, теперь сам будешь кровати таскать."
+      frames_en:
+        - "Well, now you'll be carrying beds yourself."
+- key: N05
+  id: n_m_apprentice
+  title: "Man Proud of His Apprentice"
+  category: home
+  status: active
+  trigger: "a father sees his child take up his trade"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Моё ремесло — в надёжных руках."
+      frames_en:
+        - "My trade is in good hands."
+    - weight: 50
+      frames:
+        - "Учись, пока я жив. Шучу. Но учись."
+      frames_en:
+        - "Learn while I'm still around. Joking. But learn."
+    - weight: 50
+      frames:
+        - "Династия! Звучит гордо."
+      frames_en:
+        - "A dynasty! Has a proud ring to it."
+    - weight: 50
+      frames:
+        - "Главное — не торопись. И не продешеви."
+      frames_en:
+        - "The main thing: don't rush. And don't sell yourself cheap."
+    - weight: 50
+      frames:
+        - "Теперь в деревне два мастера. И оба — наши."
+      frames_en:
+        - "Now the village has two masters. And both are ours."
+- key: N06
+  id: n_elder_story
+  title: "Elder Tells a Story"
+  category: home
+  status: active
+  trigger: "an elder tells the children a story"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Садитесь, детки. Расскажу, как я в молодости голема видел."
+      frames_en:
+        - "Sit down, children. I'll tell you how I saw a golem when I was young."
+    - weight: 50
+      frames:
+        - "Давным-давно на месте этого колодца была просто яма. Большая яма."
+      frames_en:
+        - "Long ago there was just a hole where this well stands. A big hole."
+    - weight: 50
+      frames:
+        - "В моё время изумруды были крупнее. И трава зеленее."
+      frames_en:
+        - "In my day emeralds were bigger. And grass was greener."
+    - weight: 50
+      frames:
+        - "А знаете, почему колокол звенит? Чтобы помнили друг о друге."
+      frames_en:
+        - "Do you know why the bell rings? So we remember each other."
+    - weight: 50
+      frames:
+        - "Однажды пришёл к нам странник в синем... Ой, это другая история."
+      frames_en:
+        - "Once a wanderer in blue came to us... Oh, that's another story."
+    - weight: 50
+      frames:
+        - "Слушайте старших — и ни один зомби вас не догонит."
+      frames_en:
+        - "Listen to your elders, and no zombie will ever catch you."
+    - weight: 50
+      frames:
+        - "Мой дед говорил: дом — это не стены, а кто в них живёт."
+      frames_en:
+        - "My grandfather said: a home isn't the walls, it's who lives in them."
+    - weight: 50
+      frames:
+        - "Ну вот, опять забыл, чем кончилось. Завтра доскажу."
+      frames_en:
+        - "There, I've forgotten the ending again. I'll finish it tomorrow."
+- key: N07
+  id: n_funeral
+  title: "Funeral Words"
+  category: home
+  status: active
+  trigger: "the eldest says a few words at a funeral"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Хороший был житель. Добрый сосед. Пусть земля будет пухом."
+      frames_en:
+        - "A good villager. A kind neighbour. May the earth rest light on them."
+    - weight: 50
+      frames:
+        - "Мы помним тебя. И колокол помнит."
+      frames_en:
+        - "We remember you. And the bell remembers too."
+    - weight: 50
+      frames:
+        - "Тихая была жизнь, тихим был и уход. Спи спокойно."
+      frames_en:
+        - "Gone quietly, as they lived. Rest in peace."
+    - weight: 50
+      frames:
+        - "Каждый, кто жил здесь, — часть деревни навсегда."
+      frames_en:
+        - "Everyone who lived here is part of the village forever."
+    - weight: 50
+      frames:
+        - "Не будем грустить слишком долго. Наш друг этого бы не хотел."
+      frames_en:
+        - "Let's not grieve too long. They wouldn't have wanted that."
+    - weight: 50
+      frames:
+        - "Спасибо за всё, старый друг."
+      frames_en:
+        - "Thank you for everything, old friend."
+- key: N08
+  id: n_m_mourn
+  title: "Man Mourns"
+  category: home
+  status: active
+  trigger: "a man mourns at the funeral of family"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Как же теперь без тебя..."
+      frames_en:
+        - "How will we manage without you..."
+    - weight: 50
+      frames:
+        - "Я буду приходить. Обещаю."
+      frames_en:
+        - "I'll come by. I promise."
+    - weight: 50
+      frames:
+        - "Дом стал таким пустым."
+      frames_en:
+        - "The house feels so empty."
+    - weight: 50
+      frames:
+        - "У тебя всегда находились нужные слова. А у меня нет."
+      frames_en:
+        - "You always knew what to say. I don't."
+    - weight: 50
+      frames:
+        - "Отдыхай. Это заслуженный отдых."
+      frames_en:
+        - "Rest now. You've earned it."
+- key: N09
+  id: n_m_grave
+  title: "Man Visits the Grave"
+  category: home
+  status: active
+  trigger: "a widower visits his late wife's grave"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Здравствуй. Я опять пришёл."
+      frames_en:
+        - "Hello. It's me again."
+    - weight: 50
+      frames:
+        - "У нас всё хорошо. Дети растут."
+      frames_en:
+        - "We're all right. The children are growing."
+    - weight: 50
+      frames:
+        - "Принёс тебе новости. Хорошие, в основном."
+      frames_en:
+        - "I've brought you news. Mostly good."
+    - weight: 50
+      frames:
+        - "Скучаю. Каждый день."
+      frames_en:
+        - "I miss you. Every day."
+- key: N10
+  id: n_m_wish
+  title: "Man Asks for a Wedding Gift"
+  category: home
+  status: active
+  trigger: "a courting man asks the player for something for the wedding"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Слушай, у меня скоро свадьба. Не поможешь с одной вещью?"
+      frames_en:
+        - "Listen, my wedding's coming up. Could you help me with one thing?"
+    - weight: 50
+      frames:
+        - "Хочу удивить невесту. Принеси, а? Я в долгу не останусь."
+      frames_en:
+        - "I want to surprise my bride. Bring it, would you? I won't forget it."
+    - weight: 50
+      frames:
+        - "Без этого свадьба — не свадьба. Выручишь?"
+      frames_en:
+        - "A wedding's not a wedding without it. Will you help?"
+    - weight: 50
+      frames:
+        - "Только ей ни слова! Это сюрприз."
+      frames_en:
+        - "Not a word to her! It's a surprise."
+    - weight: 50
+      frames:
+        - "Ты же друг деревни. Найдёшь для меня?"
+      frames_en:
+        - "You're a friend of the village. Will you find it for me?"
+- key: N11
+  id: n_m_wish_thanks
+  title: "Man Thanks for the Wish"
+  category: home
+  status: active
+  trigger: "a groom thanks the player for the wedding gift"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "То, что надо! Спасибо, друг!"
+      frames_en:
+        - "Just what I needed! Thank you, friend!"
+    - weight: 50
+      frames:
+        - "Ну теперь свадьба будет — загляденье!"
+      frames_en:
+        - "Now this wedding will be something to see!"
+    - weight: 50
+      frames:
+        - "Приходи на свадьбу. Будет красиво, обещаю."
+      frames_en:
+        - "Come to the wedding. It'll be beautiful, I promise."
+    - weight: 50
+      frames:
+        - "Я этого не забуду. Честно."
+      frames_en:
+        - "I won't forget this. Honestly."
+- key: N12
+  id: n_m_grumble
+  title: "Man Grumbles"
+  category: home
+  status: active
+  trigger: "a husband grumbles in a quarrel with his wife"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Можно хоть сапоги снять, прежде чем начнётся крик?"
+      frames_en:
+        - "Can't a man take his boots off before the shouting starts?"
+    - weight: 50
+      frames:
+        - "Я весь день работал, между прочим!"
+      frames_en:
+        - "I worked all day, you know!"
+    - weight: 50
+      frames:
+        - "Это не я съел последний хлеб. Ну, почти не я."
+      frames_en:
+        - "It wasn't me who ate the last bread. Well, mostly not me."
+    - weight: 50
+      frames:
+        - "Ладно-ладно, понял. Молчу."
+      frames_en:
+        - "All right, all right, I get it. I'll be quiet."
+    - weight: 50
+      frames:
+        - "Пойду-ка я... куда-нибудь."
+      frames_en:
+        - "I think I'll go... somewhere."
+- key: N13
+  id: n_m_makeup
+  title: "Man Makes Up"
+  category: home
+  status: active
+  trigger: "a husband makes up with his wife"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Прости меня. Я был неправ. Наверное."
+      frames_en:
+        - "Forgive me. I was wrong. Probably."
+    - weight: 50
+      frames:
+        - "Мир? Мир."
+      frames_en:
+        - "Peace? Peace."
+    - weight: 50
+      frames:
+        - "Без тебя и хлеб не такой вкусный."
+      frames_en:
+        - "Even bread isn't as good without you."
+    - weight: 50
+      frames:
+        - "Давай больше не ссориться. Хотя бы до завтра."
+      frames_en:
+        - "Let's not quarrel any more. At least till tomorrow."
+- key: N14
+  id: n_young_man
+  title: "Young Man Comes of Age"
+  category: home
+  status: active
+  trigger: "a son comes of age at his party"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Я взрослый! Теперь мне можно всё! Ну, почти."
+      frames_en:
+        - "I'm grown up! Now I can do anything! Well, almost."
+    - weight: 50
+      frames:
+        - "Торт! Это всё мне?"
+      frames_en:
+        - "Cake! Is it all for me?"
+    - weight: 50
+      frames:
+        - "Спасибо, мама, спасибо, папа. Я вас не подведу."
+      frames_en:
+        - "Thank you, Mum, thank you, Dad. I won't let you down."
+    - weight: 50
+      frames:
+        - "Ну всё, пора искать работу. И дом. И... ой, сколько всего."
+      frames_en:
+        - "Well, time to find work. And a house. And... oh, so much."
+    - weight: 50
+      frames:
+        - "Вчера — ребёнок, сегодня — житель. Как быстро!"
+      frames_en:
+        - "Yesterday a child, today a villager. So fast!"

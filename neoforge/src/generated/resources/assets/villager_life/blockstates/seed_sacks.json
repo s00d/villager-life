@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/seed_sacks",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/seed_sacks"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/seed_sacks",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/seed_sacks",
+      "y": 270
+    }
+  }
+}

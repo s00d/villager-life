@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/trial",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_seal_root"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.keeper.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.keeper.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

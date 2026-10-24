@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "villager_life:item/spire_clockwork_bow_s2_pulling_1"
+  }
+}

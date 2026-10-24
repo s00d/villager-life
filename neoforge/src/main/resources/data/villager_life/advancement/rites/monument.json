@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:rites/festival",
+  "display": {
+    "icon": {
+      "id": "villager_life:monument_plaque"
+    },
+    "title": {
+      "translate": "advancements.villager_life.rites.monument.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.rites.monument.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

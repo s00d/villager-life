@@ -1,0 +1,90 @@
+Villager Life License
+Version 1.0, October 2026
+
+Copyright (c) 2026 s00d. All rights reserved.
+
+Villager Life (the "Mod") — its source code, compiled files, models, textures,
+structures, sounds, voices, music, texts and every other part of it — is the
+property of s00d. The source code is published so that people can read it and
+learn from it. It is not open source: this licence gives you only the rights
+listed below and nothing more.
+
+1. What you may do
+
+   a. Read and study the source code and other files of the Mod, and talk about
+      them, including quoting short excerpts for review, discussion or bug
+      reports.
+   b. Download the official releases of the Mod and use them to play, alone or
+      on any server, public or private.
+   c. Include the Mod in a modpack, as long as the modpack downloads the
+      official, unmodified file from an official source (Modrinth, CurseForge
+      or the GitHub releases of s00d/villager-life) rather than carrying a
+      copy of it.
+   d. Make and publish videos, streams, screenshots, reviews and guides that
+      show the Mod, including monetised ones.
+   e. Build the unmodified source code on your own computer for your personal
+      study and testing, without giving the result to anyone.
+
+2. What you may not do
+
+   Without written permission from s00d, you may not:
+
+   a. copy the source code or other files of the Mod, in whole or in part, into
+      any other project, mod, plugin, program or product;
+   b. modify the Mod, or publish or distribute modified versions, forks, ports
+      to other loaders or games, or works derived from it;
+   c. reupload, mirror, redistribute, sell or sublicense the Mod or any part of
+      it, whether as source code or compiled files;
+   d. use the Mod's assets (models, textures, structures, sounds, voices, music,
+      texts) outside the Mod;
+   e. use the Mod or its files to train or tune machine-learning models;
+   f. remove or change this licence or the copyright notices.
+
+   GitHub's Terms of Service let users view and fork public repositories on
+   GitHub itself. A fork made that way may be used only to read the code and
+   to prepare a contribution to the original repository; it may not be used
+   for anything this section forbids.
+
+3. Contributions
+
+   If you send a contribution (a pull request, a patch, a translation, an asset
+   or any other material) to the Mod, you confirm that you have the right to
+   send it, and you grant s00d a perpetual, worldwide, irrevocable, royalty-free
+   right to use, change, distribute and license it as part of the Mod or
+   otherwise. You keep the copyright in your contribution.
+
+4. Permission
+
+   To ask for anything this licence does not allow, contact s00d through the
+   project's GitHub (https://github.com/s00d/villager-life) or Discord
+   (https://discord.gg/JkNspxqWk9).
+
+5. No warranty
+
+   THE MOD IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE MOD OR THE USE OR OTHER DEALINGS IN THE MOD.
+
+6. Termination
+
+   If you break this licence, the rights it gives you end at once.
+
+Generated assets
+
+Some of the Mod's assets were made with generative tools. They are part of the
+Mod and come under this licence:
+
+- Voices: Fish Audio S2 Pro, run locally (tools/voice/).
+- Sound effects (sounds/sfx/): ElevenLabs Sound Effects v2 through fal
+  (tools/art/sfx/, prompts in batch*.tsv; tools/art/fal/sfx/fal_manifest.jsonl).
+- Music (all nine tracks): Google Lyria 3.5 through fal; the fair tune:
+  ElevenLabs Music through fal (tools/art/fal/music/fal_manifest.jsonl).
+
+Everything else (models, block textures, the icon, structures) is made by hand
+or drawn by scripts in tools/art/.
+
+Minecraft is a trademark of Mojang AB. The Mod is not an official Minecraft
+product and is not approved by or associated with Mojang or Microsoft.

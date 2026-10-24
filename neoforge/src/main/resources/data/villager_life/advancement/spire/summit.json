@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/halfway",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_seal_summit"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.summit.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.summit.description"
+    },
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

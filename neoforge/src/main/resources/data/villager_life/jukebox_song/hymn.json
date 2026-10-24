@@ -1,0 +1,8 @@
+{
+  "comparator_output": 13,
+  "description": {
+    "translate": "jukebox_song.villager_life.hymn"
+  },
+  "length_in_seconds": 178.4,
+  "sound_event": "villager_life:music.hymn"
+}

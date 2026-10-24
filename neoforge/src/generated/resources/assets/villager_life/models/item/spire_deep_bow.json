@@ -1,0 +1,115 @@
+{
+  "parent": "minecraft:item/bow",
+  "overrides": [
+    {
+      "model": "villager_life:item/spire_deep_bow_pulling_0",
+      "predicate": {
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_pulling_1",
+      "predicate": {
+        "minecraft:pull": 0.65,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_pulling_2",
+      "predicate": {
+        "minecraft:pull": 0.9,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s1",
+      "predicate": {
+        "minecraft:custom_model_data": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s1_pulling_0",
+      "predicate": {
+        "minecraft:custom_model_data": 1.0,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s1_pulling_1",
+      "predicate": {
+        "minecraft:custom_model_data": 1.0,
+        "minecraft:pull": 0.65,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s1_pulling_2",
+      "predicate": {
+        "minecraft:custom_model_data": 1.0,
+        "minecraft:pull": 0.9,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s2",
+      "predicate": {
+        "minecraft:custom_model_data": 2.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s2_pulling_0",
+      "predicate": {
+        "minecraft:custom_model_data": 2.0,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s2_pulling_1",
+      "predicate": {
+        "minecraft:custom_model_data": 2.0,
+        "minecraft:pull": 0.65,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s2_pulling_2",
+      "predicate": {
+        "minecraft:custom_model_data": 2.0,
+        "minecraft:pull": 0.9,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s3",
+      "predicate": {
+        "minecraft:custom_model_data": 3.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s3_pulling_0",
+      "predicate": {
+        "minecraft:custom_model_data": 3.0,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s3_pulling_1",
+      "predicate": {
+        "minecraft:custom_model_data": 3.0,
+        "minecraft:pull": 0.65,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_deep_bow_s3_pulling_2",
+      "predicate": {
+        "minecraft:custom_model_data": 3.0,
+        "minecraft:pull": 0.9,
+        "minecraft:pulling": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "villager_life:item/spire_deep_bow"
+  }
+}

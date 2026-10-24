@@ -1,0 +1,12 @@
+// 1.21.1	2026-10-22T16:24:26.566114	Tags for minecraft:item mod id villager_life
+95e11b370112a3fa697044a75afe048d0c30a5af data/minecraft/tags/item/axes.json
+5397a63f1c22f574a1bd64015388c69c200326c4 data/minecraft/tags/item/chest_armor.json
+7c918e7edaed8865a6f3c5eabf57bb9f44036e0c data/minecraft/tags/item/enchantable/bow.json
+7c918e7edaed8865a6f3c5eabf57bb9f44036e0c data/minecraft/tags/item/enchantable/durability.json
+bcd29eb1ea477ff4bb7d93c6134927468539e8f1 data/minecraft/tags/item/foot_armor.json
+3e56adc52f6492076630be95d577bbf5ba107c18 data/minecraft/tags/item/head_armor.json
+baab283de97c0b2fccffd008f8d3aa6e73ead045 data/minecraft/tags/item/leg_armor.json
+61ff660942776bd3a3a23456794f5eefb3f61f5c data/minecraft/tags/item/swords.json
+87e6c7331edf9c42e2a5a3bc05122e0c9fafddb7 data/villager_life/tags/item/home_decor.json
+fbef661203993964f6d3e71b69216c17991b5fd7 data/villager_life/tags/item/profession_decor.json
+b3faf4bb7871d1998f04c415d004d6a031afec50 data/villager_life/tags/item/profession_machines.json

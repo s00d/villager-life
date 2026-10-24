@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "villager_life:tocsin_core"
+    },
+    {
+      "item": "minecraft:bell"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "id": "villager_life:villager_blessing_staff",
+    "count": 1
+  }
+}

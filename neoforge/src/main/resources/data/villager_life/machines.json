@@ -1,0 +1,182 @@
+[
+  {
+    "id": "greenhouse_box",
+    "profession": "farmer",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "smokehouse",
+    "profession": "butcher",
+    "sound": "stone",
+    "light": 0,
+    "smoke": true,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "dye_vat",
+    "profession": "shepherd",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "fish_trap",
+    "profession": "fisherman",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      0,
+      14,
+      10,
+      14
+    ]
+  },
+  {
+    "id": "reading_desk",
+    "profession": "librarian",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      12,
+      14
+    ]
+  },
+  {
+    "id": "survey_table",
+    "profession": "cartographer",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "font",
+    "profession": "cleric",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      2,
+      0,
+      2,
+      14,
+      12,
+      14
+    ]
+  },
+  {
+    "id": "tanning_vat",
+    "profession": "leatherworker",
+    "sound": "wood",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "kiln",
+    "profession": "mason",
+    "sound": "stone",
+    "light": 0,
+    "smoke": true,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "armor_bench",
+    "profession": "armorer",
+    "sound": "metal",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      13,
+      16
+    ]
+  },
+  {
+    "id": "grinding_wheel",
+    "profession": "toolsmith",
+    "sound": "stone",
+    "light": 0,
+    "smoke": false,
+    "shape": [
+      0,
+      0,
+      2,
+      16,
+      16,
+      14
+    ]
+  },
+  {
+    "id": "weapon_forge",
+    "profession": "weaponsmith",
+    "sound": "stone",
+    "light": 7,
+    "smoke": true,
+    "shape": [
+      0,
+      0,
+      0,
+      16,
+      10,
+      16
+    ]
+  }
+]

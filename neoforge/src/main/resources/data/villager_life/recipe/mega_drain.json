@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FSF",
+    "BHB",
+    "FPF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "S": {
+      "item": "minecraft:sponge"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "P": {
+      "item": "villager_life:mega_part_path"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_drain",
+    "count": 1
+  }
+}

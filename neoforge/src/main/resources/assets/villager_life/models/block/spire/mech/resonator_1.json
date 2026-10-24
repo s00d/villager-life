@@ -1,0 +1,355 @@
+{
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout",
+ "textures": {
+  "particle": "villager_life:block/spire/mech/slate",
+  "s": "villager_life:block/spire/mech/slate",
+  "c": "villager_life:block/spire/mech/resonator_lit",
+  "b": "villager_life:block/spire/mech/brass"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    2,
+    15
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      1,
+      14,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "south": {
+     "uv": [
+      1,
+      14,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "east": {
+     "uv": [
+      1,
+      14,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "west": {
+     "uv": [
+      1,
+      14,
+      15,
+      16
+     ],
+     "texture": "#s"
+    },
+    "up": {
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ],
+     "texture": "#s"
+    },
+    "down": {
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ],
+     "texture": "#s"
+    }
+   }
+  },
+  {
+   "from": [
+    2.5,
+    2,
+    2.5
+   ],
+   "to": [
+    13.5,
+    3,
+    13.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      2.5,
+      13,
+      13.5,
+      14
+     ],
+     "texture": "#b"
+    },
+    "south": {
+     "uv": [
+      2.5,
+      13,
+      13.5,
+      14
+     ],
+     "texture": "#b"
+    },
+    "east": {
+     "uv": [
+      2.5,
+      13,
+      13.5,
+      14
+     ],
+     "texture": "#b"
+    },
+    "west": {
+     "uv": [
+      2.5,
+      13,
+      13.5,
+      14
+     ],
+     "texture": "#b"
+    },
+    "up": {
+     "uv": [
+      2.5,
+      2.5,
+      13.5,
+      13.5
+     ],
+     "texture": "#b"
+    },
+    "down": {
+     "uv": [
+      2.5,
+      2.5,
+      13.5,
+      13.5
+     ],
+     "texture": "#b"
+    }
+   }
+  },
+  {
+   "from": [
+    4.5,
+    3,
+    4.5
+   ],
+   "to": [
+    11.5,
+    11,
+    11.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      4.5,
+      5,
+      11.5,
+      13
+     ],
+     "texture": "#c"
+    },
+    "south": {
+     "uv": [
+      4.5,
+      5,
+      11.5,
+      13
+     ],
+     "texture": "#c"
+    },
+    "east": {
+     "uv": [
+      4.5,
+      5,
+      11.5,
+      13
+     ],
+     "texture": "#c"
+    },
+    "west": {
+     "uv": [
+      4.5,
+      5,
+      11.5,
+      13
+     ],
+     "texture": "#c"
+    },
+    "up": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#c"
+    },
+    "down": {
+     "uv": [
+      4.5,
+      4.5,
+      11.5,
+      11.5
+     ],
+     "texture": "#c"
+    }
+   },
+   "light_emission": 8
+  },
+  {
+   "from": [
+    5.5,
+    11,
+    5.5
+   ],
+   "to": [
+    10.5,
+    14,
+    10.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      5.5,
+      2,
+      10.5,
+      5
+     ],
+     "texture": "#c"
+    },
+    "south": {
+     "uv": [
+      5.5,
+      2,
+      10.5,
+      5
+     ],
+     "texture": "#c"
+    },
+    "east": {
+     "uv": [
+      5.5,
+      2,
+      10.5,
+      5
+     ],
+     "texture": "#c"
+    },
+    "west": {
+     "uv": [
+      5.5,
+      2,
+      10.5,
+      5
+     ],
+     "texture": "#c"
+    },
+    "up": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#c"
+    },
+    "down": {
+     "uv": [
+      5.5,
+      5.5,
+      10.5,
+      10.5
+     ],
+     "texture": "#c"
+    }
+   },
+   "light_emission": 8
+  },
+  {
+   "from": [
+    6.5,
+    14,
+    6.5
+   ],
+   "to": [
+    9.5,
+    16,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      6.5,
+      0,
+      9.5,
+      2
+     ],
+     "texture": "#c"
+    },
+    "south": {
+     "uv": [
+      6.5,
+      0,
+      9.5,
+      2
+     ],
+     "texture": "#c"
+    },
+    "east": {
+     "uv": [
+      6.5,
+      0,
+      9.5,
+      2
+     ],
+     "texture": "#c"
+    },
+    "west": {
+     "uv": [
+      6.5,
+      0,
+      9.5,
+      2
+     ],
+     "texture": "#c"
+    },
+    "up": {
+     "uv": [
+      6.5,
+      6.5,
+      9.5,
+      9.5
+     ],
+     "texture": "#c"
+    },
+    "down": {
+     "uv": [
+      6.5,
+      6.5,
+      9.5,
+      9.5
+     ],
+     "texture": "#c"
+    }
+   },
+   "light_emission": 8
+  }
+ ]
+}

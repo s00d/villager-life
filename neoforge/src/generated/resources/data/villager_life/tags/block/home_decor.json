@@ -1,0 +1,23 @@
+{
+  "values": [
+    "villager_life:gravestone",
+    "villager_life:clothesline",
+    "villager_life:vanity_table",
+    "villager_life:standing_mirror",
+    "villager_life:cradle",
+    "villager_life:family_portrait",
+    "villager_life:flower_vase",
+    "villager_life:hearth",
+    "villager_life:pet_bowl",
+    "villager_life:dog_kennel",
+    "villager_life:cat_bed",
+    "villager_life:parrot_perch",
+    "villager_life:aquarium",
+    "villager_life:market_counter",
+    "villager_life:pantry_crate",
+    "villager_life:cooking_pot",
+    "villager_life:market_crate",
+    "villager_life:door_bell",
+    "villager_life:shop_sign"
+  ]
+}

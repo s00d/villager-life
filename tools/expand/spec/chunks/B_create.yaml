@@ -1,0 +1,229 @@
+# Phase B — Create / kinetics / diesel / COE
+
+- key: B1
+  title: "Place Create Machinery"
+  category: create_cat
+  status: active
+  trigger: "soft B1"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Опять шестерёнки — деревня скоро зазвенит как завод."
+        - "Кто заказывал фабрику на площади?"
+      frames_en:
+        - "More gears — the village will soon ring like a factory."
+        - "Who ordered a plant on the square?"
+    - weight: 50
+      frames:
+        - "Механизмы такие серьёзные, а живём мы всё ещё крестьянами."
+        - "Хотя бы смазку не лей на грядки."
+      frames_en:
+        - "Serious machines, and we still live like peasants."
+        - "At least keep the grease off the crops."
+    - weight: 50
+      frames:
+        - "Создаёте чудо техники рядом с курятником."
+        - "Куры уже нервничают громче колокола."
+      frames_en:
+        - "Building technical miracles next to the henhouse."
+        - "The chickens already out-noise the bell."
+
+- key: B2
+  title: "Place Create Contraption Anchor"
+  category: create_cat
+  status: active
+  trigger: "soft B2"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Якорь контрапшена — сейчас тут проедет цирк на рельсах."
+        - "Держитесь за шляпы!"
+      frames_en:
+        - "Contraption anchor — a circus on rails is incoming."
+        - "Hold onto your hats!"
+    - weight: 50
+      frames:
+        - "Собираете повозку будущего у нас во дворе?"
+        - "Только не задавите тыквы."
+      frames_en:
+        - "Building the wagon of the future in our yard?"
+        - "Just do not crush the pumpkins."
+    - weight: 50
+      frames:
+        - "Контрапшен на старте — билеты продаём или убегаем?"
+        - "Мы пока машем платочками."
+      frames_en:
+        - "Contraption ready to roll — selling tickets or running?"
+        - "We are waving handkerchiefs for now."
+
+- key: B3
+  title: "Break Create Machinery"
+  category: create_cat
+  status: active
+  trigger: "soft B3"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ломаете машину Create — инженеры плачут маслом."
+        - "Хотя бы винтики подберите!"
+      frames_en:
+        - "Breaking Create machines — engineers cry oil."
+        - "At least pick up the screws!"
+    - weight: 50
+      frames:
+        - "Механизм страдал, а вы ещё и ломаете."
+        - "Ремонт за ваш счёт, шучу… почти."
+      frames_en:
+        - "The mechanism was suffering, and you smash it further."
+        - "Repairs are on you… almost joking."
+    - weight: 50
+      frames:
+        - "Шестерёнки разлетелись как сплетни по площади."
+        - "Соберите хотя бы половину."
+      frames_en:
+        - "Gears scattered like gossip across the square."
+        - "Collect at least half of them."
+
+- key: B4
+  title: "Hold a Create Wrench"
+  category: create_cat
+  status: active
+  trigger: "soft B4"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Гаечный ключ Create — классика человека, который всё чуть-чуть подкрутит. Не подкрутите нам колокол!"
+      frames_en:
+        - "A Create wrench — classic for someone who will just tweak it. Do not tweak our bell!"
+    - weight: 50
+      frames:
+        - "С этим ключом вы выглядите опасно компетентно."
+        - "Держите его подальше от моей двери."
+      frames_en:
+        - "That wrench makes you look dangerously competent."
+        - "Keep it away from my door."
+    - weight: 50
+      frames:
+        - "Один оборот ключа — и жизнь меняется."
+        - "Обычно в сторону шума."
+      frames_en:
+        - "One turn of the wrench and life changes."
+        - "Usually toward more noise."
+
+- key: B5
+  title: "Ride a Create Train or Contraption"
+  category: create_cat
+  status: active
+  trigger: "soft B5"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Вы несётесь на контрапшене — мы машем платочками!"
+        - "И прячем кур."
+      frames_en:
+        - "You roar by on a contraption — we wave handkerchiefs!"
+        - "And hide the chickens."
+    - weight: 50
+      frames:
+        - "Поезд через деревню — романтика и травмоопасность в одном."
+        - "Сигнальте заранее!"
+      frames_en:
+        - "A train through the village — romance and hazard in one."
+        - "Signal ahead of time!"
+    - weight: 50
+      frames:
+        - "Катится чудо техники. Шляпы улетают первыми."
+        - "Потом куры. Потом спокойствие."
+      frames_en:
+        - "A technical marvel rolls past. Hats leave first."
+        - "Then chickens. Then peace."
+
+- key: B6
+  title: "See a Blaze Burner"
+  category: create_cat
+  status: active
+  trigger: "soft B6"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Горелка ифрита — уютно, как адский камин. Маршмеллоу не жарьте над ней при детях."
+      frames_en:
+        - "A blaze burner — cozy like a hellish fireplace. Do not roast marshmallows over it near kids."
+    - weight: 50
+      frames:
+        - "Огонь в клетке смотрит на меня осуждающе."
+        - "Я тоже на него."
+      frames_en:
+        - "Caged fire stares at me judgmentally."
+        - "I stare back."
+    - weight: 50
+      frames:
+        - "Жар такой, что сплетни испаряются."
+        - "Оставьте немного для вечера."
+      frames_en:
+        - "Heat so strong gossip evaporates."
+        - "Save some for the evening."
+
+- key: B7
+  title: "Diesel or Fuel Smell"
+  category: create_cat
+  status: active
+  trigger: "soft B7"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Пахнет дизелем — деревня стала заправкой."
+        - "Окна закрыть или привыкнуть?"
+      frames_en:
+        - "Smells like diesel — the village became a petrol station."
+        - "Close the windows or get used to it?"
+    - weight: 50
+      frames:
+        - "Топливо течёт, настроение тоже."
+        - "Увезите канистры подальше от колодца."
+      frames_en:
+        - "Fuel is leaking, and so is the mood."
+        - "Move those cans away from the well."
+    - weight: 50
+      frames:
+        - "Аромат прогресса щекочет нос и совесть."
+        - "Проветрите площадь, пожалуйста."
+      frames_en:
+        - "The scent of progress tickles nose and conscience."
+        - "Air out the square, please."
+
+- key: B8
+  title: "Ore Excavation Drill"
+  category: create_cat
+  status: active
+  trigger: "soft B8"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Бур для жил — вы прямо геолог с характером."
+        - "Только не пробурите нам погреб!"
+      frames_en:
+        - "A vein drill — you are a geologist with attitude."
+        - "Just do not drill into our cellar!"
+    - weight: 50
+      frames:
+        - "Земля дрожит от радости… или от ужаса."
+        - "Мы на стороне погреба."
+      frames_en:
+        - "The ground shakes with joy… or terror."
+        - "We side with the cellar."
+    - weight: 50
+      frames:
+        - "Дыра в земле растёт быстрее, чем слухи."
+        - "Это достижение, спорное."
+      frames_en:
+        - "The hole grows faster than rumors."
+        - "An achievement, debatable."

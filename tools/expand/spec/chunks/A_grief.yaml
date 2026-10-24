@@ -1,0 +1,393 @@
+# Phase A — grief / fire / home
+
+- key: A1
+  title: "Set Fire Near a Villager's Home"
+  category: grief_fire
+  status: active
+  trigger: "RC flint/fire_charge + home"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Эй, это же наш дом, гений!"
+        - "Туши, пока мэр не выписал штраф!"
+      frames_en:
+        - "Hey, that's our house, genius!"
+        - "Put it out before the mayor writes a fine!"
+    - weight: 50
+      frames:
+        - "Огонь у порога — классика гостевого этикета."
+        - "Мы не подписывались на шашлык из крыши!"
+      frames_en:
+        - "Fire at the doorstep — classic guest etiquette."
+        - "We did not order roof barbecue!"
+    - weight: 50
+      frames:
+        - "Кто-то решил согреть деревню слишком буквально."
+        - "Ведро воды, живо!"
+      frames_en:
+        - "Someone decided to warm the village too literally."
+        - "Grab a water bucket, now!"
+
+- key: A2
+  title: "Village House on Fire"
+  category: grief_fire
+  status: active
+  trigger: "TICK fire in home"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Дом горит, а вы стоите как на ярмарке!"
+        - "Тушите, соседи, не фоткайте!"
+      frames_en:
+        - "The house is burning and you stand like at a fair!"
+        - "Put it out, neighbors, stop taking selfies!"
+    - weight: 50
+      frames:
+        - "Это не праздничный фейерверк — это наша крыша!"
+        - "Кто-нибудь вызовите… ну, ведро!"
+      frames_en:
+        - "That is not a festive firework — that is our roof!"
+        - "Someone call… a bucket!"
+    - weight: 50
+      frames:
+        - "Пожар в деревне — мой любимый жанр кошмаров."
+        - "Бегом за водой!"
+      frames_en:
+        - "Village fire is my favorite nightmare genre."
+        - "Run for water!"
+
+- key: A3
+  title: "Light a Roof on Fire"
+  category: grief_fire
+  status: active
+  trigger: "RC igniter above bed"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Крышу подожгли — смело и тупо одновременно. Слезай с чердака, пироман!"
+      frames_en:
+        - "You lit the roof — bold and stupid at once. Get off the attic, pyromaniac!"
+    - weight: 50
+      frames:
+        - "Мы чинили эту крышу всю зиму, спасибо огромное."
+        - "Теперь будет сквозняк… и пламя."
+      frames_en:
+        - "We fixed that roof all winter, thanks a lot."
+        - "Now we get drafts… and flames."
+    - weight: 50
+      frames:
+        - "Огонь сверху — новый стиль ландшафтного дизайна?"
+        - "Нет. Просто поджог."
+      frames_en:
+        - "Fire on top — new landscape design?"
+        - "No. Just arson."
+
+- key: A4
+  title: "Try to Burn a Villager's Bed"
+  category: grief_fire
+  status: active
+  trigger: "RC igniter on bed"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Кровать поджигать — это уже личное."
+        - "Я тут сплю, а не устраиваю барбекю!"
+      frames_en:
+        - "Burning a bed is getting personal."
+        - "I sleep here, this is not a barbecue!"
+    - weight: 50
+      frames:
+        - "Подушка не дрова, имей совесть!"
+        - "Отставь огниво от матраса!"
+      frames_en:
+        - "Pillows are not firewood, have a heart!"
+        - "Keep that flint away from the mattress!"
+    - weight: 50
+      frames:
+        - "Сожжёшь кровать — будешь ночевать на улице со мной."
+        - "И я буду жаловаться громко."
+      frames_en:
+        - "Burn the bed and you sleep outside with me."
+        - "And I will complain loudly."
+
+- key: A5
+  title: "Break Blocks Inside a Villager's Home"
+  category: grief_home
+  status: active
+  trigger: "BRK inside home"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Внутри дома ломаешь — как будто ремонт без сметы."
+        - "Хотя бы дверь оставь на петлях!"
+      frames_en:
+        - "Breaking stuff indoors is renovation without a quote."
+        - "At least leave the door on its hinges!"
+    - weight: 50
+      frames:
+        - "Это не творческая перепланировка, это вандализм."
+        - "Соседи всё видят, кстати."
+      frames_en:
+        - "That is not creative redesign, that is vandalism."
+        - "The neighbors are watching, by the way."
+    - weight: 50
+      frames:
+        - "Стена держала крышу, спасибо что напомнил."
+        - "Теперь у нас открытая планировка… принудительно."
+      frames_en:
+        - "That wall held the roof, thanks for the reminder."
+        - "Open floor plan… involuntarily."
+
+- key: A6
+  title: "Place Lava Near a Villager's Home"
+  category: grief_fire
+  status: active
+  trigger: "RC lava_bucket near home"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Лава у дома — спасибо, очень уютно. Мы не в Незере, на всякий случай!"
+      frames_en:
+        - "Lava by the house — so cozy, thanks. We are not in the Nether, just saying!"
+    - weight: 50
+      frames:
+        - "Горячий ручеёк под окном? Нет уж."
+        - "Забери свою магму обратно!"
+      frames_en:
+        - "A hot little stream under the window? Nope."
+        - "Take your magma back!"
+    - weight: 50
+      frames:
+        - "Соседи просили фонтан, а не адский суп."
+        - "Ведро, и чтобы пустое!"
+      frames_en:
+        - "Neighbors asked for a fountain, not hell soup."
+        - "Bucket. Empty. Now!"
+
+- key: A7
+  title: "Dump Water on a Villager"
+  category: grief_misc
+  status: active
+  trigger: "RC water_bucket on villager"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Облил водой — освежил, как душ на площади."
+        - "Спасибо, теперь скриплю сапогами!"
+      frames_en:
+        - "Dumped water on me — refreshing, like a town-square shower."
+        - "Thanks, now my boots squeak!"
+    - weight: 50
+      frames:
+        - "Я не грядка, меня поливать не надо!"
+        - "Полотенце есть? Хотя бы эмоциональное?"
+      frames_en:
+        - "I am not a crop, stop watering me!"
+        - "Got a towel? Even an emotional one?"
+    - weight: 50
+      frames:
+        - "Водные процедуры без согласия — смело."
+        - "В следующий раз предупреждай, капитан ведра!"
+      frames_en:
+        - "Spa treatment without consent — bold."
+        - "Warn me next time, captain bucket!"
+
+- key: A8
+  title: "Trap a Villager with Blocks"
+  category: grief_misc
+  status: active
+  trigger: "TICK 1x1 cell"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Клетка из блоков — очень гостеприимно."
+        - "Дверь была бесплатной опцией, кстати!"
+      frames_en:
+        - "A block cage — so hospitable."
+        - "A door was a free option, just saying!"
+    - weight: 50
+      frames:
+        - "Я тут не экспонат для зоопарка!"
+        - "Разбери стены, пока не позвал мэра."
+      frames_en:
+        - "I am not a zoo exhibit!"
+        - "Take the walls down before I call the mayor."
+    - weight: 50
+      frames:
+        - "Один на один с четырьмя стенами — уютненько."
+        - "Выпускай, архитектор тюрем!"
+      frames_en:
+        - "One-on-one with four walls — cozy."
+        - "Let me out, prison architect!"
+
+- key: A9
+  title: "Seal a Villager's Door Shut"
+  category: grief_home
+  status: active
+  trigger: "place against door"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Дверь замуровали — мы теперь концептуально дома."
+        - "Откопайте вход, пожалуйста!"
+      frames_en:
+        - "You sealed the door — we are conceptually home now."
+        - "Dig the entrance back open, please!"
+    - weight: 50
+      frames:
+        - "Как выходить на работу через стену?"
+        - "Снимите блок, каменотёс-шутник!"
+      frames_en:
+        - "How do I go to work through a wall?"
+        - "Remove the block, jokester mason!"
+    - weight: 50
+      frames:
+        - "Вход закрыт на постоянной основе? Мило."
+        - "Мы ещё не выселялись официально!"
+      frames_en:
+        - "Entrance permanently closed? Cute."
+        - "We have not officially moved out!"
+
+- key: A10
+  title: "Steal from a Farmer's Crops"
+  category: grief_misc
+  status: active
+  trigger: "BRK crop + farmer"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Рвёшь урожай прямо при фермере — смело. Верни морковку, фермер всё запомнил!"
+      frames_en:
+        - "Picking crops in front of the farmer — brave. Return the carrot, he remembers everything!"
+    - weight: 50
+      frames:
+        - "Это не дегустация, это рейд на грядки!"
+        - "В следующий раз хотя бы поздоровайся."
+      frames_en:
+        - "That is not tasting, that is a garden raid!"
+        - "Next time at least say hello."
+    - weight: 50
+      frames:
+        - "Фермер смотрит. Фермер не моргает."
+        - "Положи овощ обратно, герой полей."
+      frames_en:
+        - "The farmer is staring. The farmer does not blink."
+        - "Put the veggie back, field hero."
+
+- key: A11
+  title: "Kill a Villager's Iron Golem"
+  category: grief_misc
+  status: active
+  trigger: "iron_golem death"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Голема убили — кто теперь будет нас обнимать железом?"
+        - "Это был страж, а не тренировочный манекен!"
+      frames_en:
+        - "You killed the golem — who hugs us with iron now?"
+        - "That was a guard, not a training dummy!"
+    - weight: 50
+      frames:
+        - "Железный друг пал. Деревня в трауре… и в опасности."
+        - "Надеюсь, совесть у тебя тоже железная."
+      frames_en:
+        - "Iron friend down. Village mourning… and unsafe."
+        - "Hope your conscience is iron too."
+    - weight: 50
+      frames:
+        - "Спасибо, защитник деревни теперь в металлоломе."
+        - "Собери нового, раз уж развлекаешься."
+      frames_en:
+        - "Thanks, the village guardian is scrap now."
+        - "Build a new one if you are having fun."
+
+- key: A12
+  title: "Spawn Hostile Mobs in the Village"
+  category: grief_misc
+  status: active
+  trigger: "hostile spawn egg"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Яйца призыва в деревне — отличный план… для хаоса. Забери монстров обратно в карман!"
+      frames_en:
+        - "Spawn eggs in the village — great plan… for chaos. Put the monsters back in your pocket!"
+    - weight: 50
+      frames:
+        - "Мы звали гостей, но не этих! Убери рассадник монстров подальше от колокольни."
+      frames_en:
+        - "We invited guests, but not these! Move that spawner away from the bell."
+    - weight: 50
+      frames:
+        - "Монстры на площади — фестиваль страха. Кто заказывал апокалипсис на обед?"
+      frames_en:
+        - "Monsters on the square — a festival of fear. Who ordered apocalypse for lunch?"
+
+- key: A13
+  title: "Set Off TNT Near Homes"
+  category: grief_fire
+  status: active
+  trigger: "TNT near home"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Динамит у домов — ты градостроитель или подрывник? Фитиль туда же, откуда пришёл!"
+      frames_en:
+        - "TNT by homes — city planner or demolisher? Take that fuse back where it came from!"
+    - weight: 50
+      frames:
+        - "Эвакуация! Кто-то решил сделать площадь шире… взрывом."
+        - "Оттащи динамит от кроватей!"
+      frames_en:
+        - "Evacuation! Someone wants a wider square… via boom."
+        - "Drag the dynamite away from the beds!"
+    - weight: 50
+      frames:
+        - "Громкий план благоустройства, очень громкий."
+        - "Мы хотим стены целыми, спасибо."
+      frames_en:
+        - "A loud landscaping plan, very loud."
+        - "We prefer walls intact, thanks."
+
+- key: A14
+  title: "Explode Near the Village"
+  category: grief_fire
+  status: active
+  trigger: "explosion near village"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Взрыв у деревни — уши звенят, крыши тоже."
+        - "Предупреждать надо хотя бы колоколом!"
+      frames_en:
+        - "Explosion by the village — ears ringing, roofs too."
+        - "At least warn us with the bell!"
+    - weight: 50
+      frames:
+        - "Кратер как достопримечательность? Нет, спасибо."
+        - "Чините забор, если остался забор."
+      frames_en:
+        - "A crater as a landmark? No thank you."
+        - "Fix the fence if any fence remains."
+    - weight: 50
+      frames:
+        - "Громко. Пыльно. Совершенно несогласовано с советом."
+        - "В следующий раз взрывайте пустыню."
+      frames_en:
+        - "Loud. Dusty. Totally unapproved by the council."
+        - "Next time explode the desert."

@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "VILLAGER_LIFE_STAFF_TOLL",
+      "constructor": "(ZLnet/neoforged/neoforge/client/IArmPoseTransformer;)V",
+      "parameters": {
+        "class": "com/vnap/client/StaffClient",
+        "field": "TOLL_POSE"
+      }
+    }
+  ]
+}

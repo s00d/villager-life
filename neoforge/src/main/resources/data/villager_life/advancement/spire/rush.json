@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/outer",
+  "display": {
+    "icon": {
+      "id": "villager_life:mega_part_nameless"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.rush.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.rush.description"
+    },
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

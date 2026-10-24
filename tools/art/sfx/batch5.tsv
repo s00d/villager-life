@@ -1,0 +1,50 @@
+spire_grow	3.0	loud deep stone grinding rumble as a colossal ancient tower rises out of the ground, distant thunderous masonry
+spire_portal_in	2.0	loud magical portal whoosh pulling inward, crystalline shimmer and low hum
+spire_portal_out	2.0	loud magical portal whoosh pushing outward, airy crystalline release
+spire_floor_clear	2.5	loud short bright crystalline chime fanfare, ancient doors unlocking, the way opens
+spire_chest	1.5	loud close-up heavy stone reliquary lid sliding open, crystal sparkle inside
+spire_secret_break	2.0	loud close-up brittle old brick wall crumbling and collapsing, followed by a soft magical chime
+spire_cache	1.5	loud close-up small hidden treasure found, bright sparkling magical jingle
+spire_tablet	1.5	loud close-up old parchment scroll unrolled with a faint warm magical hum
+spire_hone	1.5	loud close-up blacksmith hammer striking a glowing crystal anvil, bright ringing metal
+spire_raise	2.5	loud powerful magical forging surge, metal reshaping with a rising shimmering ring
+spire_stage	2.0	loud close-up enchanted sword flaring brighter, shimmering power-up hum
+guard_hit1	1.0	loud close-up crystal golem struck by a sword, crystalline crack and stone thud
+guard_hit2	1.0	loud close-up stone construct hit, chipped crystal shards tinkling
+guard_death	1.5	loud magical stone construct shattering and dissolving into light sparks
+guard_tell	1.0	loud rising crystalline warning chime, attack about to land
+guard_bolt	1.0	loud close-up crystal shard projectile launched with a whistling zip
+keeper_appear	3.0	loud huge ancient stone and crystal guardian awakening, deep resonant roar and grinding
+keeper_phase	2.5	loud enraged colossal guardian roar with a crystal shockwave burst
+keeper_death	3.5	loud colossal ancient construct collapsing, cracking apart and bursting into echoing light
+keeper_stun	1.5	loud heavy dazed metallic clang, ringing like a struck bell
+mark_warn	1.5	loud rising magical energy hum charging up before an impact
+mark_impact	1.5	loud heavy stone impact crash with crumbling debris
+beam_charge	1.5	loud energy beam charging, high rising electric whine
+beam_fire	2.5	loud sustained crackling energy beam sweeping, sizzling
+victory	4.0	short triumphant orchestral victory sting, brass fanfare and choir, ancient and grand
+wyrm_burrow	2.0	loud giant worm burrowing into the earth, rumbling dirt and roots tearing
+wyrm_erupt	1.5	loud giant worm bursting out of the ground, explosion of earth and stones
+pages_storm	1.5	loud close-up flurry of many flapping paper pages and book bindings
+ink_splash	1.0	loud close-up thick ink splash, wet splatter
+clock_stop	2.0	loud time stopping, clock ticking slowing down into a frozen ringing silence
+clock_rewind	2.0	loud time rewinding, reverse whoosh with fast backward clock ticking
+echo_swing	1.5	loud ghostly reverberating echo of a heavy blade swing
+wood_morph	1.5	loud creaking living wood and rustling leaves reshaping into blades
+roots_burst	1.5	loud thick roots erupting through a stone floor, cracking stone
+ice_form	1.5	loud ice crystal rapidly forming with a glassy ringing chime
+frost_breath	2.5	loud freezing icy wind breath, howling cold blast with crackling frost
+spore_puff	1.0	loud close-up mushroom spores puff burst, soft wet pop
+hydra_hiss	1.5	loud fungal hydra head hissing, wet organic hiss
+honey_seal	1.5	loud close-up thick honey hardening into amber, sticky crackle
+bee_swarm	2.0	loud angry bee swarm buzzing close and intense
+gravity_flip	2.0	loud gravity shifting, deep whoomp with a rising otherworldly hum
+starfall	1.5	loud falling star whistling down and exploding into sparkles
+glass_split	1.5	loud mirror shattering and splitting into copies, glassy chime
+wall_rise	1.5	loud heavy stone blocks slamming into place, a wall rising fast
+grid_chalk	1.0	loud magical chalk lines drawn on stone, shimmering scrape
+power_transfer	3.0	loud dark power flowing into a guardian, rising roar and crackling energy
+steam_vent	1.5	loud pressurized steam vent hissing from clockwork machinery
+serpent_dive	1.5	loud large sea serpent diving into water with a big splash
+rockfall	1.5	loud rocks falling from a high ceiling and crashing onto stone
+mind_whisper	2.5	deep chorus of ethereal whispers, unsettling and vast

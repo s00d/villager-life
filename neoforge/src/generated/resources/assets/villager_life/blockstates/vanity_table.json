@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/vanity_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/vanity_table"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/vanity_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/vanity_table",
+      "y": 270
+    }
+  }
+}

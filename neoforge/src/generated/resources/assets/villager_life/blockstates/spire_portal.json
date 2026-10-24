@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "kind=exit,lit=false": {
+      "model": "villager_life:block/spire/portal_dark"
+    },
+    "kind=exit,lit=true": {
+      "model": "villager_life:block/spire/portal"
+    },
+    "kind=gate,lit=false": {
+      "model": "villager_life:block/spire/portal_dark"
+    },
+    "kind=gate,lit=true": {
+      "model": "villager_life:block/spire/portal"
+    },
+    "kind=onward,lit=false": {
+      "model": "villager_life:block/spire/portal_dark"
+    },
+    "kind=onward,lit=true": {
+      "model": "villager_life:block/spire/portal"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+ "variants": {
+  "facing=north,lit=false,note=0": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 0
+  },
+  "facing=north,lit=false,note=1": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 0
+  },
+  "facing=north,lit=false,note=2": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 0
+  },
+  "facing=north,lit=false,note=3": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 0
+  },
+  "facing=north,lit=true,note=0": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 0
+  },
+  "facing=north,lit=true,note=1": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 0
+  },
+  "facing=north,lit=true,note=2": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 0
+  },
+  "facing=north,lit=true,note=3": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 0
+  },
+  "facing=east,lit=false,note=0": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 90
+  },
+  "facing=east,lit=false,note=1": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 90
+  },
+  "facing=east,lit=false,note=2": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 90
+  },
+  "facing=east,lit=false,note=3": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 90
+  },
+  "facing=east,lit=true,note=0": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 90
+  },
+  "facing=east,lit=true,note=1": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 90
+  },
+  "facing=east,lit=true,note=2": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 90
+  },
+  "facing=east,lit=true,note=3": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 90
+  },
+  "facing=south,lit=false,note=0": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 180
+  },
+  "facing=south,lit=false,note=1": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 180
+  },
+  "facing=south,lit=false,note=2": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 180
+  },
+  "facing=south,lit=false,note=3": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 180
+  },
+  "facing=south,lit=true,note=0": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 180
+  },
+  "facing=south,lit=true,note=1": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 180
+  },
+  "facing=south,lit=true,note=2": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 180
+  },
+  "facing=south,lit=true,note=3": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 180
+  },
+  "facing=west,lit=false,note=0": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 270
+  },
+  "facing=west,lit=false,note=1": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 270
+  },
+  "facing=west,lit=false,note=2": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 270
+  },
+  "facing=west,lit=false,note=3": {
+   "model": "villager_life:block/spire/mech/glyph",
+   "y": 270
+  },
+  "facing=west,lit=true,note=0": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 270
+  },
+  "facing=west,lit=true,note=1": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 270
+  },
+  "facing=west,lit=true,note=2": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 270
+  },
+  "facing=west,lit=true,note=3": {
+   "model": "villager_life:block/spire/mech/glyph_lit",
+   "y": 270
+  }
+ }
+}

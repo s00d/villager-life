@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "villager_life:block/mega/drain_front_on",
+    "side": "villager_life:block/mega/frame",
+    "top": "villager_life:block/mega/frame"
+  }
+}

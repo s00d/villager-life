@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_journal"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.root.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.root.description"
+    },
+    "background": "villager_life:textures/block/spire/cracked_wall.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "villager_life:item/villager_blessing_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "villager_life:item/villager_blessing_staff"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "villager_life:item/villager_blessing_staff"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "villager_life:charge": 1.0
+      },
+      "model": "villager_life:item/villager_blessing_staff_charged"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+golem_step1	1.0	heavy footstep of a giant iron golem with a bronze bell for a chest, iron foot on stone, deep clank and dull thud, dry
+golem_step2	1.0	heavy stomp of a huge iron automaton on stone, metallic thud with rattling plates, dry
+golem_hurt1	0.8	a sword hits a giant iron bell golem, bright iron clang with a short bell ring
+golem_hurt2	0.8	an axe strikes thick iron armour plate, heavy metallic clang with a low bell hum
+golem_death	3.5	giant iron bell golem collapses, metal plates crash onto stone, a cracked bronze bell rings out and fades, a last hiss of steam
+golem_toll1	3.0	single deep toll of a large bronze church bell, long resonant ring, outdoors
+golem_toll2	3.0	one heavy strike of a huge old bronze bell, low and ominous, long decay
+golem_clang1	0.6	quick clang of iron plates striking each other, armour impact
+golem_clang2	0.6	short sharp metal clank, iron hitting iron
+golem_slam	1.5	giant iron fist slams into the ground, heavy boom with stone debris and a metallic ring
+golem_steam	1.2	short burst of pressurized steam venting from an iron machine, hiss
+golem_crack	1.5	a large bronze bell cracks, harsh metallic crack with a shattering ring
+golem_awaken	3.5	an ancient iron bell golem awakens, rising mechanical groan and grinding gears, ending in a deep bell resonance
+golem_chain1	1.0	heavy iron chain whipping and rattling, clanking links
+golem_chain2	1.0	thick iron chain dragged and snapped taut, metal links rattling
+crawler_step1	0.6	small metal crawler skittering, quick tiny metallic taps of thin iron legs
+crawler_step2	0.6	little iron plate creature scuttling over stone, light clinking steps
+forge_ingot	1.2	blacksmith hammer strikes glowing iron on an anvil, two ringing hits
+staff_toll	1.5	a small brass hand bell rung once, clear bright chime with a soft shimmer
+turret_shot	0.8	a heavy wall-mounted crossbow fires a bolt, wooden thunk, string snap and arrow whoosh
+turret_load	1.2	a large crossbow cranked and loaded, wooden ratchet clicks and a latch closing
+clock_strike	4.0	single strike of a big tower clock bell, deep bronze bong with a long resonant decay, distant
+clock_wind	2.0	winding a large tower clock by hand with a crank, heavy ratchet clicks and turning gears
+greenhouse_box_work	1.5	gentle watering of plants in a small wooden greenhouse, soft drips and trickle
+greenhouse_box_done	0.6	leaves rustle as a plant is picked, soft pop
+smokehouse_work	1.5	crackling small fire and sizzling meat in a smokehouse
+smokehouse_done	0.6	wooden hatch opens, short sizzle
+dye_vat_work	1.5	stirring thick liquid in a wooden vat with a paddle, sloshing
+dye_vat_done	0.8	cloth lifted dripping from a dye vat, splashing drips
+fish_trap_work	1.5	water lapping against a wicker fish trap, gentle splashes
+fish_trap_done	0.8	a fish flops in a wicker basket, wet slap
+reading_desk_work	1.5	quill scratching on parchment and a page turning
+reading_desk_done	0.5	a book closes softly
+survey_table_work	1.5	pencil and ruler drawing on paper, a compass scratching
+survey_table_done	0.6	a paper map rolled up
+font_work	1.5	holy water gently bubbling in a stone font, soft magical shimmer
+font_done	0.8	sparkling chime of a blessing and a water drop
+tanning_vat_work	1.5	scraping a leather hide with a blade, wet squelch
+tanning_vat_done	0.5	a leather hide slapped down on wood
+kiln_work	1.5	roaring kiln fire, crackling embers, low whoosh
+kiln_done	0.6	ceramic clink of fired pottery taken from a kiln
+armor_bench_work	1.5	hammering metal armour plates, small rivet taps
+armor_bench_done	0.6	an armour piece set down, metallic clatter
+grinding_wheel_work	1.5	spinning stone grinding wheel sharpening steel, scraping whir
+grinding_wheel_done	0.6	a blade lifted off a grindstone, metallic ring
+weapon_forge_work	1.5	forge bellows blowing and fire roaring
+weapon_forge_done	1.0	hot steel quenched in water, loud hiss

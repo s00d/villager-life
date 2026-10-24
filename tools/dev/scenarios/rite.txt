@@ -1,0 +1,11 @@
+# A festoon rite in the dev world's plains village: it finds a site, the workers build it and are freed again.
+/gamemode spectator
+/tp Dev 275 125 1385
+sleep 6
+/time set 2500
+expect Build started :: /vnap mood build festoon
+expect script=BUILD_FESTOON :: /vnap mood get
+sprint 2400
+expect script=NONE.*last=null :: /vnap mood get
+expect Test failed|Проверка неуспешна :: /execute if entity @e[type=villager,tag=vnap_script_worker]
+/gamemode creative

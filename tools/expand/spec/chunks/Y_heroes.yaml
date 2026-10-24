@@ -1,0 +1,499 @@
+# Heroes of the town (spire/Heroes, dialogue/Heroes): a hero keeps watch and never grows older, neighbours stop for a
+# word, children follow it about, a monster it fells is cheered, a fallen hero is mourned, and very rarely the spire
+# keeps one who went up. Own words throughout.
+
+- key: Y01
+  id: hro_watch
+  title: "Hero Keeps Watch"
+  category: home
+  status: active
+  trigger: "a hero walks its town by day, sword on its back"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Хожу, смотрю. Пока я здесь — спите спокойно."
+      frames_en:
+        - "I walk, I look. While I'm about, you sleep easy."
+    - weight: 50
+      frames:
+        - "Меч тяжёлый, а без него теперь как без рук."
+      frames_en:
+        - "The sword is heavy, but I'd feel naked without it now."
+    - weight: 50
+      frames:
+        - "Наверху я видел вещи похуже зомби. Пусть только сунутся."
+      frames_en:
+        - "I've seen worse than zombies up there. Let them try."
+    - weight: 50
+      frames:
+        - "Каждый забор знаю. Каждую калитку. Каждую дыру в стене."
+      frames_en:
+        - "I know every fence. Every gate. Every gap in the wall."
+    - weight: 50
+      frames:
+        - "[sigh] Раньше я пшеницу сторожил. Теперь — всех вас."
+      frames_en:
+        - "[sigh] I used to guard the wheat. Now I guard all of you."
+- key: Y02
+  id: hro_watch_w
+  title: "Hero Keeps Watch"
+  category: home
+  status: active
+  trigger: "a woman hero walks her town by day"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Обхожу дома. Если что — кричите, я рядом."
+      frames_en:
+        - "I'm going round the houses. Shout if anything comes, I'm close."
+    - weight: 50
+      frames:
+        - "Доспех Строителей, а сидит, будто по мне шили."
+      frames_en:
+        - "The Builders' armour, and it fits like it was sewn for me."
+    - weight: 50
+      frames:
+        - "Дети опять бегают за мной хвостом. Пусть бегают."
+      frames_en:
+        - "The children are trailing me again. Let them."
+    - weight: 50
+      frames:
+        - "Наверху страшнее. Здесь — дом, его я в обиду не дам."
+      frames_en:
+        - "It's scarier up there. Here is home, and I won't let it come to harm."
+    - weight: 50
+      frames:
+        - "Меч наточен, ужин в печи. Всё на своих местах."
+      frames_en:
+        - "Sword sharpened, supper in the oven. All as it should be."
+- key: Y03
+  id: hro_talk
+  title: "Talks With the Hero"
+  category: home
+  status: active
+  trigger: "a villager stops to talk to a hero of the town"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ну как там, наверху? Правда, что этажи сами меняются?"
+      frames_en:
+        - "So what's it like up there? Is it true the floors change by themselves?"
+    - weight: 50
+      frames:
+        - "Спасибо, что ночью был у колокола. Я слышал, как ты рубился."
+      frames_en:
+        - "Thanks for being by the bell last night. I heard you fighting."
+    - weight: 50
+      frames:
+        - "Слушай, а меч тяжёлый? Можно подержать? Нет? Ладно."
+      frames_en:
+        - "Say, is the sword heavy? Can I hold it? No? All right."
+    - weight: 50
+      frames:
+        - "Мой сын говорит, что тоже станет героем. Отговори его, а?"
+      frames_en:
+        - "My boy says he'll be a hero too. Talk him out of it, will you?"
+    - weight: 50
+      frames:
+        - "Ты всё такой же, как в тот день, когда вернулся. Как это у тебя?"
+      frames_en:
+        - "You look just as you did the day you came back. How do you do it?"
+- key: Y04
+  id: hro_talk_w
+  title: "Talks With the Hero"
+  category: home
+  status: active
+  trigger: "a woman stops to talk to a hero of the town"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Я тебе пирог отложила. Не спорь, герои тоже едят."
+      frames_en:
+        - "I've put a pie aside for you. Don't argue, heroes eat too."
+    - weight: 50
+      frames:
+        - "Береги себя там, наверху. Нам тут без тебя никак."
+      frames_en:
+        - "Look after yourself up there. We'd be lost without you."
+    - weight: 50
+      frames:
+        - "Ты не стареешь совсем. Поделись секретом, а?"
+      frames_en:
+        - "You don't age at all. Share the secret, would you?"
+    - weight: 50
+      frames:
+        - "Дочка нарисовала тебя на заборе. С мечом. Похоже вышло."
+      frames_en:
+        - "My daughter drew you on the fence. With the sword. It's a good likeness."
+    - weight: 50
+      frames:
+        - "Спасибо за ночь. Я впервые спала без страха."
+      frames_en:
+        - "Thank you for last night. I slept without fear for the first time."
+- key: Y05
+  id: hro_answer
+  title: "Hero Answers"
+  category: home
+  status: active
+  trigger: "a hero answers a neighbour who stopped to talk"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Наверху всё иначе. Но вернуться сюда — лучшее, что там есть."
+      frames_en:
+        - "It's all different up there. But coming back here is the best of it."
+    - weight: 50
+      frames:
+        - "Не за что. Я бы и без меча вышел, просто с мечом удобнее."
+      frames_en:
+        - "Don't mention it. I'd have gone out without the sword, it's just handier with it."
+    - weight: 50
+      frames:
+        - "Шпиль меня не отпускает. А годы — те отпустили, видишь."
+      frames_en:
+        - "The spire won't let go of me. The years did, though, as you see."
+    - weight: 50
+      frames:
+        - "Пусть растёт. Только меч пусть сначала научится чистить."
+      frames_en:
+        - "Let him grow. Just have him learn to clean a sword first."
+    - weight: 50
+      frames:
+        - "[laughs] Ты спрашиваешь это каждый день. И каждый день — нет."
+      frames_en:
+        - "[laughs] You ask me that every day. And every day it's no."
+- key: Y06
+  id: hro_answer_w
+  title: "Hero Answers"
+  category: home
+  status: active
+  trigger: "a woman hero answers a neighbour"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Пирог возьму. Героям тоже нужна корочка."
+      frames_en:
+        - "I'll take the pie. Heroes need a crust too."
+    - weight: 50
+      frames:
+        - "Берегу. Но вас — сильнее, чем себя."
+      frames_en:
+        - "I do look after myself. But I look after you more."
+    - weight: 50
+      frames:
+        - "Секрета нет. Шпиль держит меня в том дне, когда я вернулась."
+      frames_en:
+        - "There's no secret. The spire keeps me in the day I came back."
+    - weight: 50
+      frames:
+        - "Передай ей, что меч у меня чуть длиннее. Пусть дорисует."
+      frames_en:
+        - "Tell her my sword is a bit longer. She can draw the rest."
+    - weight: 50
+      frames:
+        - "Спи так и дальше. Для этого я и хожу ночами."
+      frames_en:
+        - "Keep sleeping like that. That's why I walk at night."
+- key: Y07
+  id: hro_felled
+  title: "Hero Drives Off a Monster"
+  category: home
+  status: active
+  trigger: "a hero strikes a monster down on its town's land"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Не в мою смену."
+      frames_en:
+        - "Not on my watch."
+    - weight: 50
+      frames:
+        - "[grunts] Один готов. Кто следующий?"
+      frames_en:
+        - "[grunts] One down. Who's next?"
+    - weight: 50
+      frames:
+        - "Наверху такие пачками. Здесь — по одному."
+      frames_en:
+        - "Up there they come in packs. Here, one at a time."
+    - weight: 50
+      frames:
+        - "Иди туда, откуда пришёл. Ах да, ты уже не идёшь."
+      frames_en:
+        - "Go back where you came from. Oh, right, you're not going anywhere."
+    - weight: 50
+      frames:
+        - "Чисто. Можно выходить."
+      frames_en:
+        - "All clear. You can come out."
+- key: Y08
+  id: hro_felled_w
+  title: "Hero Drives Off a Monster"
+  category: home
+  status: active
+  trigger: "a woman hero strikes a monster down"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Не трогай мой город."
+      frames_en:
+        - "Hands off my town."
+    - weight: 50
+      frames:
+        - "[grunts] Вот так. Больше не полезет."
+      frames_en:
+        - "[grunts] There. It won't come again."
+    - weight: 50
+      frames:
+        - "Двери можно не запирать. Почти."
+      frames_en:
+        - "You can leave the doors open. Almost."
+    - weight: 50
+      frames:
+        - "Я этих наверху сотню видела. Этот был лёгкий."
+      frames_en:
+        - "I saw a hundred of these up there. This one was easy."
+    - weight: 50
+      frames:
+        - "Готово. Кто-нибудь, уберите это с дороги."
+      frames_en:
+        - "Done. Somebody clear that off the road."
+- key: Y09
+  id: hro_thanks
+  title: "Thanks the Hero"
+  category: home
+  status: active
+  trigger: "a villager sees a hero kill a monster near it"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Ты его одним ударом! Спасибо!"
+      frames_en:
+        - "[gasp] You got it with one blow! Thank you!"
+    - weight: 50
+      frames:
+        - "Я уж думал, конец мне. Спасибо, друг."
+      frames_en:
+        - "I thought I was done for. Thanks, friend."
+    - weight: 50
+      frames:
+        - "Вот за это мы и скидывались на твой меч."
+      frames_en:
+        - "That's what we chipped in for your sword for."
+    - weight: 50
+      frames:
+        - "Ух. Я ничего не видел. Ну, почти ничего."
+      frames_en:
+        - "Phew. I saw nothing. Well, almost nothing."
+    - weight: 50
+      frames:
+        - "Герой, настоящий. Пойду жене расскажу."
+      frames_en:
+        - "A real hero. I'm going to tell my wife."
+- key: Y10
+  id: hro_thanks_w
+  title: "Thanks the Hero"
+  category: home
+  status: active
+  trigger: "a woman sees a hero kill a monster near her"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Спасибо! У меня аж ноги подкосились."
+      frames_en:
+        - "[gasp] Thank you! My knees went weak."
+    - weight: 50
+      frames:
+        - "Как вовремя! Я как раз шла с корзиной."
+      frames_en:
+        - "Just in time! I was walking by with my basket."
+    - weight: 50
+      frames:
+        - "Ты наш ангел с мечом."
+      frames_en:
+        - "You're our angel with a sword."
+    - weight: 50
+      frames:
+        - "Заходи вечером, накормлю. Это не просьба."
+      frames_en:
+        - "Come by tonight, I'll feed you. That's not a request."
+    - weight: 50
+      frames:
+        - "Я детям расскажу. Они ведь не поверят."
+      frames_en:
+        - "I'll tell the children. They won't believe it."
+- key: Y11
+  id: hro_kid
+  title: "Kid Admires the Hero"
+  category: home
+  status: active
+  trigger: "a child sees a hero of the town"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Вырасту — тоже буду героем! С двумя мечами!"
+      frames_en:
+        - "When I grow up I'll be a hero too! With two swords!"
+    - weight: 50
+      frames:
+        - "[gasp] Видел, как он махнул? Вжух!"
+      frames_en:
+        - "[gasp] Did you see that swing? Whoosh!"
+    - weight: 50
+      frames:
+        - "А можно потрогать доспех? Чуть-чуть?"
+      frames_en:
+        - "Can I touch the armour? Just a little?"
+    - weight: 50
+      frames:
+        - "Я тоже палкой тренируюсь. Каждый день!"
+      frames_en:
+        - "I practise with a stick too. Every day!"
+    - weight: 50
+      frames:
+        - "Мама говорит, герои не стареют. Это правда?"
+      frames_en:
+        - "Mum says heroes never get old. Is that true?"
+- key: Y12
+  id: hro_fallen
+  title: "A Hero Has Fallen"
+  category: home
+  status: active
+  trigger: "a villager sees a hero of the town die"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Нет... Он же всегда возвращался."
+      frames_en:
+        - "[gasp] No... He always came back."
+    - weight: 50
+      frames:
+        - "Он стоял за нас до последнего. Мы его не забудем."
+      frames_en:
+        - "He stood for us to the last. We won't forget him."
+    - weight: 50
+      frames:
+        - "Кто теперь будет ходить ночами у колокола?"
+      frames_en:
+        - "Who'll walk by the bell at night now?"
+    - weight: 50
+      frames:
+        - "[sigh] Меч перейдёт семье. А пустое место — нам."
+      frames_en:
+        - "[sigh] The sword goes to the family. The empty place, to us."
+    - weight: 50
+      frames:
+        - "Позовите мэра. И звоните в колокол."
+      frames_en:
+        - "Call the mayor. And ring the bell."
+- key: Y13
+  id: hro_fallen_w
+  title: "A Hero Has Fallen"
+  category: home
+  status: active
+  trigger: "a woman sees a hero of the town die"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Нет, только не он... только не он."
+      frames_en:
+        - "[gasp] No, not him... not him."
+    - weight: 50
+      frames:
+        - "Он закрыл нас собой. Как всегда."
+      frames_en:
+        - "He stood between us and it. Like always."
+    - weight: 50
+      frames:
+        - "Я принесу цветы. Каждый день буду приносить."
+      frames_en:
+        - "I'll bring flowers. I'll bring them every day."
+    - weight: 50
+      frames:
+        - "Кто скажет его детям? Я не смогу."
+      frames_en:
+        - "Who'll tell his children? I can't."
+    - weight: 50
+      frames:
+        - "[sobs] Он обещал вернуться к ужину."
+      frames_en:
+        - "[sobs] He promised to be back for supper."
+- key: Y14
+  id: hro_lost
+  title: "Lost to the Spire"
+  category: home
+  status: active
+  trigger: "a villager learns one of the town went up the spire and did not come back"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Ушёл в шпиль и не вернулся. Ворота молчат."
+      frames_en:
+        - "Went up the spire and didn't come back. The gate is silent."
+    - weight: 50
+      frames:
+        - "Говорил, что сходит на пару этажей. Пару этажей..."
+      frames_en:
+        - "Said he'd go up a couple of floors. A couple of floors..."
+    - weight: 50
+      frames:
+        - "Шпиль забирает редко. Но забирает."
+      frames_en:
+        - "The spire rarely keeps anyone. But it does."
+    - weight: 50
+      frames:
+        - "Оставим ему место у очага. Вдруг."
+      frames_en:
+        - "We'll keep a place for him by the hearth. Just in case."
+    - weight: 50
+      frames:
+        - "[sigh] Скажу семье. Кто-то же должен."
+      frames_en:
+        - "[sigh] I'll tell the family. Somebody has to."
+- key: Y15
+  id: hro_lost_w
+  title: "Lost to the Spire"
+  category: home
+  status: active
+  trigger: "a woman learns one of the town did not come back from the spire"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Я ждала у ворот до ночи. Никто не вышел."
+      frames_en:
+        - "I waited by the gate till nightfall. No one came out."
+    - weight: 50
+      frames:
+        - "Шпиль красивый. Я его теперь ненавижу."
+      frames_en:
+        - "The spire is beautiful. I hate it now."
+    - weight: 50
+      frames:
+        - "Она обещала принести мне камешек с вершины."
+      frames_en:
+        - "She promised to bring me a pebble from the top."
+    - weight: 50
+      frames:
+        - "Пусть хоть летопись помнит её имя."
+      frames_en:
+        - "At least let the chronicle keep her name."
+    - weight: 50
+      frames:
+        - "[sobs] Почему именно наши? Почему?"
+      frames_en:
+        - "[sobs] Why ours? Why?"

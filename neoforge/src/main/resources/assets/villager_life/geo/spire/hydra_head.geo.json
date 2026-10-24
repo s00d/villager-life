@@ -1,0 +1,171 @@
+{
+ "format_version": "1.12.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.spire_hydra_head",
+    "texture_width": 64,
+    "texture_height": 32,
+    "visible_bounds_width": 5,
+    "visible_bounds_height": 5,
+    "visible_bounds_offset": [
+     0,
+     2,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "seg_1",
+     "pivot": [
+      0,
+      0,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        6,
+        4
+       ],
+       "uv": [
+        34,
+        0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "seg_2",
+     "pivot": [
+      0,
+      6,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.5,
+        6,
+        -1.5
+       ],
+       "size": [
+        3,
+        6,
+        3
+       ],
+       "uv": [
+        40,
+        15
+       ]
+      }
+     ],
+     "parent": "seg_1"
+    },
+    {
+     "name": "head",
+     "pivot": [
+      0,
+      12,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4,
+        12,
+        -5
+       ],
+       "size": [
+        8,
+        6,
+        9
+       ],
+       "uv": [
+        0,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        17,
+        -4
+       ],
+       "size": [
+        12,
+        2,
+        8
+       ],
+       "uv": [
+        0,
+        15
+       ]
+      }
+     ],
+     "parent": "seg_2"
+    },
+    {
+     "name": "eye",
+     "pivot": [
+      0,
+      12,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -3,
+        14,
+        -5.3
+       ],
+       "size": [
+        6,
+        1.5,
+        1
+       ],
+       "uv": [
+        32,
+        25
+       ]
+      }
+     ],
+     "parent": "head"
+    },
+    {
+     "name": "gem_gills",
+     "pivot": [
+      0,
+      12,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5,
+        16.6,
+        -3
+       ],
+       "size": [
+        10,
+        0.5,
+        6
+       ],
+       "uv": [
+        0,
+        25
+       ]
+      }
+     ],
+     "parent": "head"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BB",
+    "PP"
+  ],
+  "key": {
+    "B": {
+      "tag": "minecraft:beds"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "villager_life:double_bed",
+    "count": 1
+  }
+}

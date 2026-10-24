@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "villager_life:block/town/parcel_box_side",
+    "side": "villager_life:block/town/parcel_box_side",
+    "front": "villager_life:block/town/parcel_box_front",
+    "top": "villager_life:block/town/parcel_box_top"
+  },
+  "elements": [
+    {
+      "from": [1, 0, 1],
+      "to": [15, 12, 15],
+      "faces": {
+        "north": {"uv": [1, 4, 15, 16], "texture": "#front"},
+        "south": {"uv": [1, 4, 15, 16], "texture": "#side"},
+        "east": {"uv": [1, 4, 15, 16], "texture": "#side"},
+        "west": {"uv": [1, 4, 15, 16], "texture": "#side"},
+        "up": {"uv": [1, 1, 15, 15], "texture": "#top"},
+        "down": {"uv": [1, 1, 15, 15], "texture": "#side", "cullface": "down"}
+      }
+    }
+  ]
+}

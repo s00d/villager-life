@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/shop",
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_fence"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.lot.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.lot.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

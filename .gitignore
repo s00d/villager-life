@@ -1,0 +1,91 @@
+# Gradle and compiled output
+.gradle/
+build/
+!tools/build/
+!**/src/**/build/
+__pycache__/
+out/
+classes/
+bin/
+libs/
+
+# Minecraft development runtime
+run/
+logs/
+saves/
+downloads/
+resourcepacks/
+eula.txt
+usercache.json
+command_history.txt
+debug-profile.json
+options.txt
+
+# IntelliJ IDEA, Eclipse, and VS Code
+.idea/
+.settings/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.launch
+.classpath
+.project
+
+# Local Codex files
+.agents/
+.codex/
+Port Plan.md
+
+# Local environment and temporary files
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
+# Source add-on archives and operating-system metadata
+*.mcaddon
+*.mcpack
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+port-report.txt
+smoke-report.txt
+errors.txt
+server-errors.txt
+
+.venv/
+
+# universal-modder: fal drafts and their manifest (adopted assets are copied into resources, their lines into tools/art/fal_manifest.jsonl)
+tools/art/fal/*
+# the fal manifests stay: model, prompt and request id of every generated track and sound (where each asset came from)
+!tools/art/fal/music/
+!tools/art/fal/sfx/
+tools/art/fal/music/*
+tools/art/fal/sfx/*
+!tools/art/fal/music/fal_manifest.jsonl
+!tools/art/fal/sfx/fal_manifest.jsonl
+
+# agent worktrees (Claude Code)
+.claude/worktrees/
+
+# the player's video options kept while tools/dev/restart.sh --lite runs
+neoforge/versions/1.21.1/run/options.txt.video
+
+# test servers of tools/dev/gts_shards.py
+neoforge/versions/1.21.1/run-gts/
+neoforge/versions/1.21.1/run-c2/
+
+# per-version production client (portablemc) of the multiversion checks
+neoforge/versions/*/run-prod/
+neoforge/versions/*/run-gts/
+neoforge/versions/*/run-c2/
+
+# voice references for TTS cloning are real recordings: kept locally, never published (tools/voice/speaker/README.md)
+tools/voice/speaker/**/ref.wav

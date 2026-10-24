@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "axis=x,kind=arena": {
+      "model": "villager_life:block/outer/gate_arena"
+    },
+    "axis=z,kind=arena": {
+      "model": "villager_life:block/outer/gate_arena",
+      "y": 90
+    },
+    "axis=x,kind=isles": {
+      "model": "villager_life:block/outer/gate_isles"
+    },
+    "axis=z,kind=isles": {
+      "model": "villager_life:block/outer/gate_isles",
+      "y": 90
+    },
+    "axis=x,kind=rush": {
+      "model": "villager_life:block/outer/gate_rush"
+    },
+    "axis=z,kind=rush": {
+      "model": "villager_life:block/outer/gate_rush",
+      "y": 90
+    },
+    "axis=x,kind=exit": {
+      "model": "villager_life:block/outer/gate_exit"
+    },
+    "axis=z,kind=exit": {
+      "model": "villager_life:block/outer/gate_exit",
+      "y": 90
+    }
+  }
+}

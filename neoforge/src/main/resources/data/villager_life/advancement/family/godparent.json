@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/baby",
+  "display": {
+    "icon": {
+      "id": "minecraft:name_tag"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.godparent.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.godparent.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

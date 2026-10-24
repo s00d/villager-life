@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:spire/schism",
+  "display": {
+    "icon": {
+      "id": "villager_life:spire_seal_ice"
+    },
+    "title": {
+      "translate": "advancements.villager_life.spire.halfway.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.spire.halfway.description"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

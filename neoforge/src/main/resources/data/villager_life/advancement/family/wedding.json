@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:poppy"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.wedding.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.wedding.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

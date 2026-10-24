@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FBF",
+    "NTN",
+    "FPF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "B": {
+      "item": "minecraft:beacon"
+    },
+    "N": {
+      "item": "villager_life:mega_part_nameless"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "P": {
+      "item": "villager_life:mega_part_path"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_calm",
+    "count": 1
+  }
+}

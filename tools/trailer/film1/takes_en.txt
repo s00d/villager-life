@@ -1,0 +1,52 @@
+===== a01_orbit
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S lang en >/dev/null; python3 $S take a01_orbit 14 "orbit -551 64 535 70 38 150 215"
+
+===== c02_board
+cd ~/Downloads/FireShot/villager-news-ru-port; python3 tools/dev/mcc.py '/setblock -553 64 547 air' '/execute if block -549 63 543 villager_life:notice_board' '/clear @s' | cut -c1-100; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take c02_board 12 "still -549 64 540.5 0 15" --hud --at 0.6 "i:-549 63 543 north" --at 1.0 "c:vnapbot mouse 152 93" --at 2.4 "c:vnapbot mouse 267 95" --at 2.8 "c:vnapbot click" --at 4.6 "c:vnapbot mouse 320 95" --at 5.0 "c:vnapbot click" --at 6.8 "c:vnapbot mouse 373 95" --at 7.2 "c:vnapbot click" --at 8.4 "c:vnapbot mouse 300 200" --at 9.8 "c:vnapbot mouse 408 95" --at 10.2 "c:vnapbot click" 2>&1 | grep mp4; python3 tools/dev/mcp.py mc.client.keyboard.press '{"key":"escape"}' >/dev/null
+
+===== d01_town_orbit
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 tools/dev/mcc.py '/time set 4500' >/dev/null; python3 $S take d01_town_orbit 14 "orbit -545 64 540 85 48 120 190" 2>&1 | grep -v "^  /"; python3 $S take d02_chapel 10 "orbit -522 70 596 24 9 10 70" 2>&1 | grep -v "^  /"; python3 $S take h01_statue 9 "orbit -555.5 65.5 554.5 5 1.2 140 220" 2>&1 | grep -v "^  /"
+
+===== d02_chapel
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 tools/dev/mcc.py '/time set 4500' >/dev/null; python3 $S take d01_town_orbit 14 "orbit -545 64 540 85 48 120 190" 2>&1 | grep -v "^  /"; python3 $S take d02_chapel 10 "orbit -522 70 596 24 9 10 70" 2>&1 | grep -v "^  /"; python3 $S take h01_statue 9 "orbit -555.5 65.5 554.5 5 1.2 140 220" 2>&1 | grep -v "^  /"
+
+===== g01_anvil
+cd ~/Downloads/FireShot/villager-news-ru-port; python3 tools/dev/mcc.py '/vnap stage true' '/gamemode survival' '/time set 5000' '/tp @s -553 64 544.5 0 30' '/setblock -553 64 547 villager_life:core_anvil' '/clear @s' '/give @s villager_life:spire_root_sword[custom_data={vnap_hone:2}]' '/give @s villager_life:core_shard 48' '/give @s villager_life:spire_seal_archive 1' '/vnap shop coins 600' 'sleep 2' | tail -1; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take g01_anvil 11 "still -552.5 64 544.5 0 30" --hud --at 0.6 "i:-553 64 547 north" --at 2.0 "q:30" --at 3.0 "q:31" --at 4.0 "q:32" --at 5.0 "c:vnapbot mouse 390 118" --at 7.0 "c:vnapbot mouse 368 179" --at 7.8 "c:vnapbot click 0" --at 8.6 "c:vnapbot mouse 390 118" 2>&1 | grep mp4; python3 tools/dev/mcp.py mc.client.keyboard.press '{"key":"escape"}' >/dev/null
+
+===== h01_statue
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 tools/dev/mcc.py '/time set 4500' >/dev/null; python3 $S take d01_town_orbit 14 "orbit -545 64 540 85 48 120 190" 2>&1 | grep -v "^  /"; python3 $S take d02_chapel 10 "orbit -522 70 596 24 9 10 70" 2>&1 | grep -v "^  /"; python3 $S take h01_statue 9 "orbit -555.5 65.5 554.5 5 1.2 140 220" 2>&1 | grep -v "^  /"
+
+===== s02_greet
+cd ~/Downloads/FireShot/villager-news-ru-port; grep chattiness neoforge/versions/1.21.1/run/config/villager-life.json; sed -i '' 's/"chattiness": 0/"chattiness": 2/' neoforge/versions/1.21.1/run/config/villager-life.json; /private/tmp/claude-502/-Users-s00d-Downloads-FireShot-villager-news-ru-port/26d5041f-3da3-4f49-a7ba-22682d481956/scratchpad/client.sh Fresh | tail -1; echo "python3 tools/dev/mcc.py '/vnap stage true' > /dev/null" >> /private/tmp/claude-502/-Users-s00d-Downloads-FireShot-villager-news-ru-port/26d5041f-3da3-4f49-a7ba-22682d481956/scratchpad/client.sh; python3 tools/dev/mcc.py '/vnap stage true' '/time set 1500' '/team join cast @e[type=villager]' | cut -c1-80; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s02_greet 10 "path -551.5 63.8 552.6 -90 4; -549.4 63.7 552.6 -90 6" --pre "s:Bram -546 64 552.2 90" --pre "s:Pia -545.2 64 553.6 90" --pre "s:Runa -546.3 64 554.3 90" --at 0.8 "say:Bram Sees the Player" --at 5.6 "say:Runa Meet a Player" 2>&1 | grep -i "said\|silent\|mp4"; cd ~/Movies/VillagerLife-trailer/work/en; for t in 0 1 2 3 4 5 6 7 8 9; do ffmpeg -hide_banner -ss $t -t 1 -i s02_greet.mp4 -vn -af volumedetect -f null - 2>&1 | grep -o "max_volume: [-0-9.]*" | tr '\n' ' '; done
+
+===== s03_speech
+cd ~/Downloads/FireShot/villager-news-ru-port; python3 tools/dev/mcc.py '/time set 2000' '/execute as @e[type=villager] run data merge entity @s {NoAI:0b}' >/dev/null; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s03_speech 11 "path -546.0 63.8 558.5 90 3; -546.8 63.8 558.5 90 3" --pre "a:Bram 0 7.0 @cam" --pre "a:Viggo -1.8 4.4 @Bram!" --pre "a:Pia 1.7 4.6 @Bram!" --pre "a:Agnes 0.6 4.0 @Bram!" --pre "a:Klara -0.6 3.8 @Bram!" --pre "a:Fedor 2.8 5.4 @Bram!" --at 1.0 "say:Bram Mayor Morning Speech" --at 6.8 "say:Klara Kid Says Good Morning" 2>&1 | grep -i "silent\|mp4"
+
+===== s04_shop
+cd ~/Downloads/FireShot/villager-news-ru-port; /private/tmp/claude-502/-Users-s00d-Downloads-FireShot-villager-news-ru-port/26d5041f-3da3-4f49-a7ba-22682d481956/scratchpad/client.sh Fresh | tail -1; python3 tools/dev/mcc.py '/time set 2600' '/clear @s' '/vnap shop coins 120' 'sleep 3' >/dev/null; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s04_shop 11.5 "path -559.5 64 489.6 0 9; -559.5 64 491.4 0 12" --pre "s:Nikita -559.5 64 495.4 180" --at 0.8 "say:Nikita Shopkeeper Greets a Customer" --at 3.6 "i:-559 64 494 north" --at 4.6 "c:vnapbot mouse 209 109" --at 5.3 "c:vnapbot click" --at 5.9 "c:vnapbot click" --at 6.5 "c:vnapbot mouse 245 109" --at 7.1 "c:vnapbot click" --at 8.6 "k:escape" --at 8.9 "say:Nikita Shopkeeper Thanks a Customer" 2>&1 | grep -i "silent\|mp4"
+
+===== s05_build
+MISSING
+
+===== s06_wedding
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s06_wedding 13 "path -546.0 63.9 558.5 90 2; -546.8 63.9 558.5 90 2" --pre "a:Nestor 0.8 4.6 @Mina!" --pre "a:Mina -0.8 4.6 @Nestor!" --pre "a:Bram 0 6.4 @cam" --pre "a:Viggo 2.2 6.2 @Nestor!" --pre "a:Pia -2.2 6.0 @Mina!" --pre "a:Klara -1.6 5.4 @Mina!" --pre "a:Agnes 1.7 5.6 @Nestor!" --at 0.6 "say:Bram Mayor Weds the Couple" --at 4.6 "say:Nestor Man Wedding Vow" --at 8.0 "say:Mina Woman Wedding Vow" --at 11.0 "/execute at @e[type=villager,name=Mina,limit=1] run particle minecraft:heart ~0.8 ~2.1 ~ 0.6 0.3 0.6 0.02 30" --at 11.2 "say:Viggo Wedding Cheers" 2>&1 | grep -i "silent\|mp4"
+
+===== s07_cradle
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s07_cradle 10 "path -521.0 69.3 594.2 -112 24; -520.3 69.1 593.9 -110 26" --at 0.8 "say:Pia Rocks the Cradle" --at 5.6 "say:Lina Baby Coos" 2>&1 | grep -i "silent\|mp4"
+
+===== s08_dusk
+cd ~/Downloads/FireShot/villager-news-ru-port; python3 -c "
+import sys; sys.path.insert(0,'/Users/s00d/Movies/VillagerLife-trailer/tools'); import shoot; shoot.release()" >/dev/null; python3 tools/dev/mcc.py '/fill -563 63 538 -553 66 547 air replace #minecraft:beds' | cut -c1-100; python3 tools/dev/mcc.py '/time set 11300' >/dev/null; python3 ~/Movies/VillagerLife-trailer/tools/shoot.py take s08_dusk 14 "path -560 72 560 -140 18; -558.5 71.5 558.5 -140 17" --rate 160 2>&1 | grep -i "mp4"
+
+===== s12_spire_rise
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s12_spire_rise 46 "path -551 75 520 180 -10; -551 78 512 180 -22" 2>&1 | grep -i "mp4"; python3 tools/dev/mcc.py '/vnap spire' | tail -1 | grep -o "grown to [0-9]*"
+
+===== s13_floor
+cd ~/Downloads/FireShot/villager-news-ru-port; python3 tools/dev/mcp.py mc.client.command.run '{"command":"vnaprec hud true"}' >/dev/null; python3 tools/dev/mcp.py mc.client.command.run '{"command":"vnaprec start s13_floor"}' >/dev/null; python3 tools/dev/mcp.py mc.client.command.run '{"command":"vnapbot climb 20 20 30 300"}' >/dev/null; sleep 120; python3 tools/dev/mcp.py mc.client.command.run '{"command":"vnaprec stop"}' >/dev/null; python3 tools/dev/mcp.py mc.client.command.run '{"command":"vnapbot stop"}' >/dev/null; sleep 3; grep -A30 "$(date +%H:%M -v-3M)" neoforge/versions/1.21.1/run/devbot.log | grep -E "PASSED|left|died" | tail -5 | cut -c1-150; T=~/Movies/VillagerLife-trailer; python3 $T/tools/mux.py neoforge/versions/1.21.1/run/recordings s13_floor $T/work/en && python3 $T/tools/frames.py $T/work/en/s13_floor.mp4 $T/work/en/s13_floor.png
+
+===== s16_hero
+cd ~/Downloads/FireShot/villager-news-ru-port; S=~/Movies/VillagerLife-trailer/tools/shoot.py; python3 $S take s16_hero 12 "path -546.0 64.0 558.5 90 3; -546.6 64.0 558.5 90 4" --pre "a:Viggo 0 4.6 @cam" --pre "a:Iris -1.4 3.9 @Viggo!" --pre "a:Edda 1.2 3.4 @Viggo!" --at 0.6 "say:Edda Kid Admires the Hero" --at 4.4 "say:Iris Talks With the Hero" --at 8.2 "say:Viggo Hero Answers" 2>&1 | grep -i "silent\|mp4"
+
+===== s17_finale
+cd ~/Downloads/FireShot/villager-news-ru-port; python3 tools/dev/mcc.py '/vnap spire leave' 'sleep 4' '/gamemode creative' '/execute in minecraft:overworld run tp @s -551 90 540' '/time set 11900' 'sleep 3' | tail -1; python3 ~/Movies/VillagerLife-trailer/tools/shoot.py take s17_finale 14 "orbit -545 66 520 90 42 200 260" 2>&1 | grep mp4
+

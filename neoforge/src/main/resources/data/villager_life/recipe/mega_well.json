@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FEF",
+    "BXB",
+    "FNF"
+  ],
+  "key": {
+    "F": {
+      "item": "villager_life:mega_frame"
+    },
+    "E": {
+      "item": "minecraft:enchanting_table"
+    },
+    "B": {
+      "item": "minecraft:experience_bottle"
+    },
+    "X": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "N": {
+      "item": "villager_life:mega_part_nameless"
+    }
+  },
+  "result": {
+    "id": "villager_life:mega_well",
+    "count": 1
+  }
+}

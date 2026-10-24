@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:tocsin/awaken",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": {
+      "translate": "advancements.villager_life.tocsin.heart.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.tocsin.heart.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

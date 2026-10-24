@@ -1,0 +1,196 @@
+# Phase L — home life: children at dinner, at school, with toys and new rooms (speaker child).
+
+- key: L23
+  id: kid_dinner
+  title: "Kid Eats Dinner"
+  category: home
+  status: active
+  trigger: "a child eats the meal its mother brings"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Ням-ням! Мама, ещё!"
+      frames_en:
+        - "Yum yum! Mom, more!"
+    - weight: 50
+      frames:
+        - "Самая вкусная еда на свете!"
+      frames_en:
+        - "The best food in the world!"
+    - weight: 50
+      frames:
+        - "А десерт будет?"
+      frames_en:
+        - "Is there dessert?"
+    - weight: 50
+      frames:
+        - "Я всё съел! Даже морковку!"
+      frames_en:
+        - "I ate it all! Even the carrot!"
+    - weight: 50
+      frames:
+        - "Спасибо, мамочка!"
+      frames_en:
+        - "Thank you, mommy!"
+    - weight: 50
+      frames:
+        - "Теперь я сильный, как голем!"
+      frames_en:
+        - "Now I'm strong like a golem!"
+
+- key: L24
+  id: kid_toy
+  title: "Kid Gets a Toy"
+  category: home
+  status: active
+  trigger: "the player gives a child a toy"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Лошадка! Моя собственная лошадка!"
+      frames_en:
+        - "A horsey! My very own horsey!"
+    - weight: 50
+      frames:
+        - "Спасибо-спасибо-спасибо!"
+      frames_en:
+        - "Thank you, thank you, thank you!"
+    - weight: 50
+      frames:
+        - "Я назову её Звёздочка."
+      frames_en:
+        - "I'll name her Starlight."
+    - weight: 50
+      frames:
+        - "Буду играть с ней весь день!"
+      frames_en:
+        - "I'll play with her all day!"
+    - weight: 50
+      frames:
+        - "Ты самый лучший взрослый!"
+      frames_en:
+        - "You're the best grown-up ever!"
+    - weight: 50
+      frames:
+        - "Покажу всем друзьям!"
+      frames_en:
+        - "I'm going to show all my friends!"
+
+- key: L25
+  id: kid_dad
+  title: "Kid Welcomes Dad"
+  category: home
+  status: active
+  trigger: "a child runs to meet its father in the evening"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Папа пришёл! Ура!"
+      frames_en:
+        - "Daddy's home! Hooray!"
+    - weight: 50
+      frames:
+        - "Папа, покатай меня на плечах!"
+      frames_en:
+        - "Daddy, give me a piggyback ride!"
+    - weight: 50
+      frames:
+        - "Папа, что ты мне принёс?"
+      frames_en:
+        - "Daddy, what did you bring me?"
+    - weight: 50
+      frames:
+        - "Я тебя ждал весь день!"
+      frames_en:
+        - "I waited for you all day!"
+    - weight: 50
+      frames:
+        - "Папа, а я сегодня поймал жука!"
+      frames_en:
+        - "Daddy, I caught a bug today!"
+    - weight: 50
+      frames:
+        - "Мама сказала, что ты герой."
+      frames_en:
+        - "Mom said you're a hero."
+
+- key: L26
+  id: kid_school
+  title: "Kid at School"
+  category: home
+  status: active
+  trigger: "a child answers the librarian's lesson"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Я знаю! Я знаю! Можно я скажу?"
+      frames_en:
+        - "I know! I know! Can I answer?"
+    - weight: 50
+      frames:
+        - "А можно на перемену?"
+      frames_en:
+        - "Can we have a break?"
+    - weight: 50
+      frames:
+        - "Я выучил все буквы! Ну, половину."
+      frames_en:
+        - "I learned all the letters! Well, half."
+    - weight: 50
+      frames:
+        - "Учитель, а драконы бывают добрые?"
+      frames_en:
+        - "Teacher, are there any nice dragons?"
+    - weight: 50
+      frames:
+        - "Скучно… Ой, то есть, очень интересно!"
+      frames_en:
+        - "Boring… I mean, very interesting!"
+    - weight: 50
+      frames:
+        - "Когда вырасту, тоже стану библиотекарем."
+      frames_en:
+        - "When I grow up, I'll be a librarian too."
+
+- key: L27
+  id: kid_room
+  title: "Kid Gets a Room"
+  category: home
+  status: active
+  trigger: "a child moves into its new room"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Это моя комната? Моя-моя?"
+      frames_en:
+        - "Is this my room? Really mine?"
+    - weight: 50
+      frames:
+        - "Тут столько места для игрушек!"
+      frames_en:
+        - "There's so much room for toys!"
+    - weight: 50
+      frames:
+        - "Я буду спать тут, как взрослый."
+      frames_en:
+        - "I'll sleep here like a grown-up."
+    - weight: 50
+      frames:
+        - "Папа, ты лучший строитель!"
+      frames_en:
+        - "Daddy, you're the best builder!"
+    - weight: 50
+      frames:
+        - "А можно повесить флажок на стену?"
+      frames_en:
+        - "Can I hang a flag on the wall?"
+    - weight: 50
+      frames:
+        - "Никому не входить без стука!"
+      frames_en:
+        - "Nobody comes in without knocking!"

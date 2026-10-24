@@ -1,0 +1,31 @@
+{
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "field": "villager_life:block/mega/field",
+    "particle": "villager_life:block/mega/field"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        6
+      ],
+      "to": [
+        16,
+        16,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#field",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#field",
+          "tintindex": 0
+        }
+      }
+    }
+  ]
+}

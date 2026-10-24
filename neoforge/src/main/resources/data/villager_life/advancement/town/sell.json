@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:town/shop",
+  "display": {
+    "icon": {
+      "id": "villager_life:silver_coin"
+    },
+    "title": {
+      "translate": "advancements.villager_life.town.sell.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.town.sell.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

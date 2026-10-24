@@ -1,0 +1,318 @@
+# Phase J — a family's men and guests (speaker villager) at Family moments; see Family.java.
+
+- key: J01
+  id: m_courting
+  title: "Man Courting"
+  category: family
+  status: active
+  trigger: "a courting man answers his sweetheart"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Я сорвал тебе ромашку. Последнюю на лугу!"
+      frames_en:
+        - "I picked you a daisy. The last one in the meadow!"
+    - weight: 50
+      frames:
+        - "Пойдём, покажу, где растут самые сладкие ягоды."
+      frames_en:
+        - "Come on, I'll show you where the sweetest berries grow."
+    - weight: 50
+      frames:
+        - "Ты сегодня красивее заката."
+      frames_en:
+        - "You're prettier than the sunset today."
+    - weight: 50
+      frames:
+        - "Я умею печь хлеб! Ну, почти умею."
+      frames_en:
+        - "I can bake bread! Well, almost."
+    - weight: 50
+      frames:
+        - "Можно я понесу твою корзинку?"
+      frames_en:
+        - "Can I carry your basket?"
+    - weight: 50
+      frames:
+        - "С тобой и дождь не страшен."
+      frames_en:
+        - "With you, even rain isn't scary."
+    - weight: 50
+      frames:
+        - "Завтра приду раньше всех. Обещаю."
+      frames_en:
+        - "I'll be here first thing tomorrow. I promise."
+    - weight: 50
+      frames:
+        - "Я построю нам самый уютный дом."
+      frames_en:
+        - "I'll build us the coziest house."
+
+- key: J02
+  id: m_flower
+  title: "Man Thanks for the Flower"
+  category: family
+  status: active
+  trigger: "the player gives a courting man a flower or a cake"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Цветок! Отличная идея, подарю ей!"
+      frames_en:
+        - "A flower! Great idea, I'll give it to her!"
+    - weight: 50
+      frames:
+        - "Торт? Это намёк? Тогда свадьба!"
+      frames_en:
+        - "A cake? Is that a hint? Then it's a wedding!"
+    - weight: 50
+      frames:
+        - "Спасибо, друг! Ты настоящий сват."
+      frames_en:
+        - "Thanks, friend! You're a real matchmaker."
+    - weight: 50
+      frames:
+        - "Она обожает такие. Откуда ты знал?"
+      frames_en:
+        - "She loves these. How did you know?"
+    - weight: 50
+      frames:
+        - "С таким подарком она точно скажет да!"
+      frames_en:
+        - "With a gift like this, she'll surely say yes!"
+
+- key: J03
+  id: m_vow
+  title: "Man Wedding Vow"
+  category: family
+  status: active
+  trigger: "the groom's words at the bell"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Обещаю чинить крышу, даже в дождь."
+      frames_en:
+        - "I promise to fix the roof, even in the rain."
+    - weight: 50
+      frames:
+        - "Ты моя самая большая удача."
+      frames_en:
+        - "You're my greatest luck."
+    - weight: 50
+      frames:
+        - "Я самый счастливый житель на свете!"
+      frames_en:
+        - "I'm the happiest villager in the world!"
+    - weight: 50
+      frames:
+        - "Обещаю никогда не храпеть. Ну, постараюсь."
+      frames_en:
+        - "I promise never to snore. Well, I'll try."
+    - weight: 50
+      frames:
+        - "Теперь у нас общий дом и общая морковка."
+      frames_en:
+        - "Now we share a home and every carrot."
+    - weight: 50
+      frames:
+        - "Звоните громче! Мы поженились!"
+      frames_en:
+        - "Ring it louder! We're married!"
+
+- key: J04
+  id: wedding_cheers
+  title: "Wedding Cheers"
+  category: family
+  status: active
+  trigger: "a guest cheers at a wedding"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Горько! То есть, ура молодым!"
+      frames_en:
+        - "Hooray for the happy couple!"
+    - weight: 50
+      frames:
+        - "Какая красивая пара!"
+      frames_en:
+        - "What a lovely couple!"
+    - weight: 50
+      frames:
+        - "Пусть у вас будет полный дом счастья!"
+      frames_en:
+        - "May your house be full of happiness!"
+    - weight: 50
+      frames:
+        - "Я сейчас заплачу. От радости!"
+      frames_en:
+        - "I'm going to cry. From joy!"
+    - weight: 50
+      frames:
+        - "Музыку! Танцуют все!"
+      frames_en:
+        - "Music! Everybody dance!"
+    - weight: 50
+      frames:
+        - "Ну наконец-то! Мы ждали целых три дня!"
+      frames_en:
+        - "Finally! We waited three whole days!"
+    - weight: 50
+      frames:
+        - "Совет да любовь!"
+      frames_en:
+        - "Love and happiness to you both!"
+
+- key: J05
+  id: m_morning
+  title: "Man Good Morning Dear"
+  category: family
+  status: active
+  trigger: "a husband answers his wife in the morning"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Доброе утро, солнышко. Пахнет блинами!"
+      frames_en:
+        - "Good morning, sunshine. It smells like pancakes!"
+    - weight: 50
+      frames:
+        - "Я не храпел. Это был ветер."
+      frames_en:
+        - "I wasn't snoring. That was the wind."
+    - weight: 50
+      frames:
+        - "Уже иду, уже иду!"
+      frames_en:
+        - "Coming, coming!"
+    - weight: 50
+      frames:
+        - "Ты самое лучшее, что бывает по утрам."
+      frames_en:
+        - "You're the best thing about mornings."
+    - weight: 50
+      frames:
+        - "Сегодня принесу тебе что-нибудь с рынка."
+      frames_en:
+        - "I'll bring you something from the market today."
+    - weight: 50
+      frames:
+        - "Пять минуточек… Ладно, встаю."
+      frames_en:
+        - "Five more minutes… Fine, I'm up."
+
+- key: J06
+  id: m_new_baby
+  title: "Man New Baby"
+  category: family
+  status: active
+  trigger: "a man's baby is born"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Я папа! Я папа!"
+      frames_en:
+        - "I'm a dad! I'm a dad!"
+    - weight: 50
+      frames:
+        - "Привет, малыш. Я научу тебя всему."
+      frames_en:
+        - "Hello, little one. I'll teach you everything."
+    - weight: 50
+      frames:
+        - "У него твои глаза, дорогая."
+      frames_en:
+        - "It has your eyes, dear."
+    - weight: 50
+      frames:
+        - "Надо срочно делать ещё одну кроватку!"
+      frames_en:
+        - "I need to make another little bed right away!"
+    - weight: 50
+      frames:
+        - "Самый лучший день в моей жизни!"
+      frames_en:
+        - "The best day of my life!"
+    - weight: 50
+      frames:
+        - "Тише, тише, малыш спит."
+      frames_en:
+        - "Shh, shh, the baby is sleeping."
+
+- key: J07
+  id: m_widowed
+  title: "Man Widowed"
+  category: family
+  status: active
+  trigger: "a man's wife has died"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Её больше нет… Как же так?"
+      frames_en:
+        - "She's gone… How can this be?"
+    - weight: 50
+      frames:
+        - "Я буду хранить её вещи. Все до одной."
+      frames_en:
+        - "I'll keep her things. Every single one."
+    - weight: 50
+      frames:
+        - "Дети, теперь мы одни. Мы справимся."
+      frames_en:
+        - "Kids, it's just us now. We'll manage."
+    - weight: 50
+      frames:
+        - "Без её песен дом совсем тихий."
+      frames_en:
+        - "Without her songs the house is so quiet."
+    - weight: 50
+      frames:
+        - "Я никогда тебя не забуду."
+      frames_en:
+        - "I'll never forget you."
+
+- key: J08
+  id: m_defend_wife
+  title: "Man Defends His Wife"
+  category: family
+  status: active
+  trigger: "a man's wife is attacked nearby"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Не трогай мою жену!"
+      frames_en:
+        - "Don't you touch my wife!"
+    - weight: 50
+      frames:
+        - "Дорогая, ты в порядке? Ах ты!"
+      frames_en:
+        - "Darling, are you all right? Why, you!"
+    - weight: 50
+      frames:
+        - "Кто обидит её, будет иметь дело со мной!"
+      frames_en:
+        - "Anyone who hurts her answers to me!"
+    - weight: 50
+      frames:
+        - "Голем! Сюда! Мою жену обижают!"
+      frames_en:
+        - "Golem! Over here! Someone's hurting my wife!"
+    - weight: 50
+      frames:
+        - "Отойди от неё, пока я добрый!"
+      frames_en:
+        - "Get away from her while I'm still being nice!"
+    - weight: 50
+      frames:
+        - "Я хоть и житель, но за жену постою!"
+      frames_en:
+        - "I may just be a villager, but I'll stand up for my wife!"

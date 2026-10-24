@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,flag=false": {
+      "model": "villager_life:block/town/mailbox",
+      "y": 90
+    },
+    "facing=east,flag=true": {
+      "model": "villager_life:block/town/mailbox_flag",
+      "y": 90
+    },
+    "facing=north,flag=false": {
+      "model": "villager_life:block/town/mailbox"
+    },
+    "facing=north,flag=true": {
+      "model": "villager_life:block/town/mailbox_flag"
+    },
+    "facing=south,flag=false": {
+      "model": "villager_life:block/town/mailbox",
+      "y": 180
+    },
+    "facing=south,flag=true": {
+      "model": "villager_life:block/town/mailbox_flag",
+      "y": 180
+    },
+    "facing=west,flag=false": {
+      "model": "villager_life:block/town/mailbox",
+      "y": 270
+    },
+    "facing=west,flag=true": {
+      "model": "villager_life:block/town/mailbox_flag",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,35 @@
+TITLE: Villager Life — a Minecraft mod where villagers truly live (NeoForge)
+
+TAGS: minecraft, minecraft mod, villager mod, villagers, neoforge, minecraft villagers, village mod, minecraft 1.21, villager life, voiced villagers
+
+DESCRIPTION:
+Villager Life turns a Minecraft village into a living town. Every villager has a voice — in English or Russian — a home, a family and a day of their own.
+
+00:00 A village wakes up
+00:09 Every villager has a voice
+00:19 The mayor, elected by the village
+00:29 The shop: real coins, real goods
+00:40 Built by hand, block by block
+00:54 Courtship and weddings
+01:06 A baby's first day
+01:15 Evening: everyone goes home
+01:28 From village to walled town
+01:43 The notice board: errands and plots
+01:52 The Builders' Spire rises
+02:07 Floors, guards and keepers
+02:33 The Core Anvil
+02:41 Heroes come home
+02:59 Villager Life
+
+What's inside:
+• Thousands of voiced lines, English and Russian, women's and children's voices
+• Mayors, a shop with coins, wages, a caravan and a market
+• Villagers build houses, roads, walls, a chapel and a tavern by hand
+• Courtship, weddings, babies, children growing up, generations
+• The Builders' Spire: 100 floors, guards, ten keepers, gear that grows with you
+• Moods, rites and the Tocsin Golem
+
+Minecraft 1.21.1 – 26.3 · NeoForge
+Source code: GitHub — s00d / villager-news-addon-neoforge-port
+
+#minecraft #minecraftmod #villagers #neoforge

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "villager_life:item/spire_archive_leggings_s3"
+  }
+}

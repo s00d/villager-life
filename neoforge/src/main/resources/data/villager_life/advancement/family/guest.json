@@ -1,0 +1,21 @@
+{
+  "parent": "villager_life:family/wedding",
+  "display": {
+    "icon": {
+      "id": "villager_life:home_meal"
+    },
+    "title": {
+      "translate": "advancements.villager_life.family.guest.title"
+    },
+    "description": {
+      "translate": "advancements.villager_life.family.guest.description"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

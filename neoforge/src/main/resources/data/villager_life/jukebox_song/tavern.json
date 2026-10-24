@@ -1,0 +1,8 @@
+{
+  "comparator_output": 7,
+  "description": {
+    "translate": "jukebox_song.villager_life.tavern"
+  },
+  "length_in_seconds": 176.0,
+  "sound_event": "villager_life:music.tavern"
+}

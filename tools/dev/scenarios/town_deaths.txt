@@ -1,0 +1,39 @@
+# Why the town at 18211 71 20919 of the dev world died out (23.10.2026: six deaths on its days 78-79, the mayor among them,
+# the cause lost with a restart's log). The town held by a creative player over its bell, day after day; each day the
+# deaths with their causes, the town's register and who is about.
+/gamemode creative
+/tp Dev 18211 95 20919
+sleep 8
+expect registered :: /vnap town
+/vnap who 80
+/time set 1000
+sprint 12000
+deaths
+/vnap who 80
+sprint 12000
+deaths
+expect registered :: /vnap town
+sprint 12000
+deaths
+/vnap who 80
+sprint 12000
+deaths
+expect registered :: /vnap town
+sprint 12000
+deaths
+/vnap who 80
+sprint 12000
+deaths
+expect registered :: /vnap town
+sprint 12000
+deaths
+/vnap who 80
+sprint 12000
+deaths
+expect registered :: /vnap town
+sprint 12000
+deaths
+/vnap who 80
+sprint 12000
+deaths
+expect registered :: /vnap town

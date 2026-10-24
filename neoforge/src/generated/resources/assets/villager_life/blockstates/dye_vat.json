@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/dye_vat",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/dye_vat"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/dye_vat",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/dye_vat",
+      "y": 270
+    }
+  }
+}

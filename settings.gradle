@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+    id 'dev.kikugie.stonecutter' version '0.9.8'
+}
+
+rootProject.name = 'villager-life'
+
+// Every supported Minecraft version is a Stonecutter node: neoforge/versions/<version>/gradle.properties.
+// The sources stay as 1.21.1 sees them (vcsVersion); the other versions build from Stonecutter's processed copy.
+stonecutter {
+    kotlinController = false
+    centralScript = 'build.gradle'
+    create('neoforge') {
+        versions '1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3'
+        vcsVersion = '1.21.1'
+    }
+}
+
+
+project(':neoforge').buildFileName = 'stonecutter.gradle'

@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/handheld",
+  "overrides": [
+    {
+      "model": "villager_life:item/spire_summit_axe_s1",
+      "predicate": {
+        "minecraft:custom_model_data": 1.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_summit_axe_s2",
+      "predicate": {
+        "minecraft:custom_model_data": 2.0
+      }
+    },
+    {
+      "model": "villager_life:item/spire_summit_axe_s3",
+      "predicate": {
+        "minecraft:custom_model_data": 3.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "villager_life:item/spire_summit_axe"
+  }
+}

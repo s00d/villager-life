@@ -1,0 +1,12 @@
+{
+ "narrator": {
+  "about": "Calm warm storyteller (trailer 1). ElevenLabs George, multilingual v2: same voice for EN and RU.",
+  "endpoint": "fal-ai/elevenlabs/tts/multilingual-v2",
+  "input": {"voice": "George", "stability": 0.55, "similarity_boost": 0.8, "style": 0.15, "speed": 0.95}
+ },
+ "player": {
+  "about": "The player, a guy about 18, casual streamer tone (trailer 2). ElevenLabs v3 (Liam; Will was turned down): takes tags like [surprised], [laughs], [whispers].",
+  "endpoint": "fal-ai/elevenlabs/tts/eleven-v3",
+  "input": {"voice": "Liam", "stability": 0.4}
+ }
+}

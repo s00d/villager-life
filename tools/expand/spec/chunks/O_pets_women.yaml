@@ -1,0 +1,162 @@
+# Phase O — family pets: taming, feeding, patting (speaker woman).
+
+- key: O13
+  id: o_w_welcome
+  title: "Woman Welcomes the Pet"
+  category: home
+  status: active
+  trigger: "a woman head of the house welcomes the new pet"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ну иди сюда, хороший. Теперь ты наш."
+      frames_en:
+        - "Come here, sweetie. You're ours now."
+    - weight: 50
+      frames:
+        - "Только лапы вытирать! Я серьёзно."
+      frames_en:
+        - "Paws wiped at the door! I mean it."
+    - weight: 50
+      frames:
+        - "Ох, ещё одно дитя в доме."
+      frames_en:
+        - "Oh, one more child in the house."
+    - weight: 50
+      frames:
+        - "Добро пожаловать домой, малыш."
+      frames_en:
+        - "Welcome home, little one."
+- key: O14
+  id: o_w_tame
+  title: "Woman Tames a Stray"
+  category: home
+  status: active
+  trigger: "a wife feeds a stray to tame it"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Кис-кис... или как тебя звать? Иди, покормлю."
+      frames_en:
+        - "Here, kitty... or whatever you are. Come, I'll feed you."
+    - weight: 50
+      frames:
+        - "Худенький какой. Ешь, ешь."
+      frames_en:
+        - "So thin. Eat, eat."
+    - weight: 50
+      frames:
+        - "Не бойся, я не кусаюсь."
+      frames_en:
+        - "Don't be afraid, I don't bite."
+    - weight: 50
+      frames:
+        - "Завтра приходи опять. Я тебя жду."
+      frames_en:
+        - "Come again tomorrow. I'll be waiting."
+    - weight: 50
+      frames:
+        - "Ещё немного, и будешь наш."
+      frames_en:
+        - "A little longer and you'll be ours."
+- key: O15
+  id: o_w_feed
+  title: "Woman Feeds the Pet"
+  category: home
+  status: active
+  trigger: "a wife fills the pet's bowl in the morning"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Завтрак подан! Иди есть."
+      frames_en:
+        - "Breakfast is served! Come and eat."
+    - weight: 50
+      frames:
+        - "Полная миска. А ты говоришь, тебя не любят."
+      frames_en:
+        - "A full bowl. And you say nobody loves you."
+    - weight: 50
+      frames:
+        - "Ешь, а то совсем отощаешь."
+      frames_en:
+        - "Eat up, or you'll waste away."
+    - weight: 50
+      frames:
+        - "Опять смотрит так, будто неделю не ел."
+      frames_en:
+        - "Looking at me like he hasn't eaten in a week again."
+    - weight: 50
+      frames:
+        - "Всем по тарелке, и тебе тоже."
+      frames_en:
+        - "A plate for everyone, and one for you too."
+    - weight: 50
+      frames:
+        - "Кто тут проголодался? Ну конечно, ты."
+      frames_en:
+        - "Who's hungry here? You, of course."
+- key: O16
+  id: o_w_pet
+  title: "Woman Pets the Animal"
+  category: home
+  status: active
+  trigger: "a woman pats the family pet"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Ох ты моя прелесть."
+      frames_en:
+        - "Oh, you little darling."
+    - weight: 50
+      frames:
+        - "Шерсть по всему дому... но как на тебя сердиться?"
+      frames_en:
+        - "Fur all over the house... but how can I be cross with you?"
+    - weight: 50
+      frames:
+        - "Посиди со мной немножко."
+      frames_en:
+        - "Sit with me for a bit."
+    - weight: 50
+      frames:
+        - "Ты лучше слушаешь, чем муж."
+      frames_en:
+        - "You listen better than my husband."
+    - weight: 50
+      frames:
+        - "Мур-мур? Ну мур-мур."
+      frames_en:
+        - "Purr-purr? All right, purr-purr."
+- key: O17
+  id: o_w_miss
+  title: "Woman Misses the Pet"
+  category: home
+  status: active
+  trigger: "a woman misses the family pet that died"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Миска стоит, а есть некому."
+      frames_en:
+        - "The bowl's still there, but no one to eat from it."
+    - weight: 50
+      frames:
+        - "Хороший был. Самый лучший."
+      frames_en:
+        - "A good one. The very best."
+    - weight: 50
+      frames:
+        - "Дети плачут. И я тоже."
+      frames_en:
+        - "The children are crying. And so am I."
+    - weight: 50
+      frames:
+        - "Пусть тебе там будет тепло."
+      frames_en:
+        - "May you be warm wherever you are."

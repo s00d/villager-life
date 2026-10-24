@@ -1,0 +1,289 @@
+# Phase O — family pets: wanting, taming, patting, training, fish (speaker child).
+
+- key: O01
+  id: o_k_want
+  title: "Kid Wants a Pet"
+  category: home
+  status: active
+  trigger: "a child sees a stray and wants to keep it"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Смотрите, там кто-то бродит! Можно оставим?"
+      frames_en:
+        - "Look, someone's wandering out there! Can we keep it?"
+    - weight: 50
+      frames:
+        - "Мама, папа, хочу питомца! Ну пожалуйста!"
+      frames_en:
+        - "Mum, Dad, I want a pet! Please!"
+    - weight: 50
+      frames:
+        - "Он совсем один. Ему нужен дом!"
+      frames_en:
+        - "It's all alone. It needs a home!"
+    - weight: 50
+      frames:
+        - "Я буду сам его кормить, честно-честно!"
+      frames_en:
+        - "I'll feed it myself, I promise, I really promise!"
+    - weight: 50
+      frames:
+        - "Можно я с ним подружусь?"
+      frames_en:
+        - "Can I make friends with it?"
+- key: O02
+  id: o_k_tame
+  title: "Kid Tames a Stray"
+  category: home
+  status: active
+  trigger: "a child feeds a stray to tame it"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Не бойся, я тебе вкусное принёс."
+      frames_en:
+        - "Don't be scared, I brought you something tasty."
+    - weight: 50
+      frames:
+        - "Иди сюда, малыш. Ещё чуть-чуть."
+      frames_en:
+        - "Come here, little one. Just a bit closer."
+    - weight: 50
+      frames:
+        - "Ешь, ешь. Завтра ещё принесу."
+      frames_en:
+        - "Eat, eat. I'll bring more tomorrow."
+    - weight: 50
+      frames:
+        - "Он уже не убегает! Он мне доверяет!"
+      frames_en:
+        - "It's not running away any more! It trusts me!"
+    - weight: 50
+      frames:
+        - "Тихонько... Не спугнуть бы."
+      frames_en:
+        - "Quietly now... Mustn't scare it."
+- key: O03
+  id: o_k_name
+  title: "Kid Names the Pet"
+  category: home
+  status: active
+  trigger: "a child names the family's new pet"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Он теперь наш! Как назовём?"
+      frames_en:
+        - "It's ours now! What shall we call it?"
+    - weight: 50
+      frames:
+        - "Я придумал ему имя! Самое лучшее!"
+      frames_en:
+        - "I've thought of a name! The best one!"
+    - weight: 50
+      frames:
+        - "Ура! У нас теперь есть питомец!"
+      frames_en:
+        - "Hooray! We've got a pet now!"
+    - weight: 50
+      frames:
+        - "Теперь ты член семьи. Не убегай, ладно?"
+      frames_en:
+        - "You're part of the family now. Don't run away, all right?"
+    - weight: 50
+      frames:
+        - "Это самый лучший день в моей жизни!"
+      frames_en:
+        - "This is the best day of my life!"
+- key: O04
+  id: o_k_pet
+  title: "Kid Pets the Animal"
+  category: home
+  status: active
+  trigger: "a child pats the family pet"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Кто тут хороший? Ты хороший!"
+      frames_en:
+        - "Who's a good one? You are!"
+    - weight: 50
+      frames:
+        - "Сегодня можешь спать у меня в ногах. Только маме не говори."
+      frames_en:
+        - "You can sleep at the foot of my bed tonight. Don't tell Mum."
+    - weight: 50
+      frames:
+        - "Чешу за ушком. Нравится?"
+      frames_en:
+        - "A scratch behind the ears. Like it?"
+    - weight: 50
+      frames:
+        - "Ты мой самый лучший друг."
+      frames_en:
+        - "You're my very best friend."
+    - weight: 50
+      frames:
+        - "Хи-хи, щекотно!"
+      frames_en:
+        - "Hee hee, that tickles!"
+    - weight: 50
+      frames:
+        - "Ты сегодня такой пушистый!"
+      frames_en:
+        - "You're so fluffy today!"
+- key: O05
+  id: o_k_sit
+  title: "Kid Says Sit"
+  category: home
+  status: active
+  trigger: "a child tells the dog to sit"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Сидеть! Сидеть, говорю!"
+      frames_en:
+        - "Sit! I said sit!"
+    - weight: 50
+      frames:
+        - "Так, урок номер один. Сидеть!"
+      frames_en:
+        - "Right, lesson one. Sit!"
+    - weight: 50
+      frames:
+        - "Сидеть! Ой, получилось!"
+      frames_en:
+        - "Sit! Oh, it worked!"
+    - weight: 50
+      frames:
+        - "Смотри на меня. Сидеть."
+      frames_en:
+        - "Look at me. Sit."
+- key: O06
+  id: o_k_fetch
+  title: "Kid Says Fetch"
+  category: home
+  status: active
+  trigger: "a child throws a stick for the dog"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Апорт! Неси палку!"
+      frames_en:
+        - "Fetch! Bring the stick!"
+    - weight: 50
+      frames:
+        - "Лови! Ой, далеко улетела."
+      frames_en:
+        - "Catch! Oops, it went far."
+    - weight: 50
+      frames:
+        - "Ищи палку! Где палка?"
+      frames_en:
+        - "Find the stick! Where's the stick?"
+    - weight: 50
+      frames:
+        - "Беги, беги! Быстрее!"
+      frames_en:
+        - "Run, run! Faster!"
+- key: O07
+  id: o_k_good
+  title: "Kid Says Good Dog"
+  category: home
+  status: active
+  trigger: "the dog brings the stick back"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Молодец! Умница! Держи вкусняшку."
+      frames_en:
+        - "Good dog! Clever dog! Here's a treat."
+    - weight: 50
+      frames:
+        - "Принёс! Он принёс! Видели?"
+      frames_en:
+        - "He brought it! He brought it back! Did you see?"
+    - weight: 50
+      frames:
+        - "Ты самая умная собака на свете!"
+      frames_en:
+        - "You're the smartest dog in the world!"
+    - weight: 50
+      frames:
+        - "Завтра научу тебя давать лапу."
+      frames_en:
+        - "Tomorrow I'll teach you to shake a paw."
+    - weight: 50
+      frames:
+        - "Ещё раз? Ещё раз!"
+      frames_en:
+        - "Again? Again!"
+- key: O08
+  id: o_k_fish
+  title: "Kid Watches the Fish"
+  category: home
+  status: active
+  trigger: "a child watches the fish in the aquarium"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Смотри, рыбка! Вон та, рыжая!"
+      frames_en:
+        - "Look, a fish! That orange one!"
+    - weight: 50
+      frames:
+        - "А рыбки спят? Они же глаза не закрывают."
+      frames_en:
+        - "Do fish sleep? They never close their eyes."
+    - weight: 50
+      frames:
+        - "Привет, рыбки! Я вам машу!"
+      frames_en:
+        - "Hi, fishies! I'm waving at you!"
+    - weight: 50
+      frames:
+        - "Хочу быть рыбкой. Плавать весь день."
+      frames_en:
+        - "I want to be a fish. Swim all day."
+    - weight: 50
+      frames:
+        - "Одна, две, три... Опять сбился."
+      frames_en:
+        - "One, two, three... I lost count again."
+- key: O09
+  id: o_k_miss
+  title: "Kid Misses the Pet"
+  category: home
+  status: active
+  trigger: "a child misses the family pet that died"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Где мой друг? Он больше не придёт?"
+      frames_en:
+        - "Where's my friend? Isn't he coming back?"
+    - weight: 50
+      frames:
+        - "Я буду тебя помнить. Всегда."
+      frames_en:
+        - "I'll remember you. Always."
+    - weight: 50
+      frames:
+        - "Без него так тихо..."
+      frames_en:
+        - "It's so quiet without him..."
+    - weight: 50
+      frames:
+        - "Можно я положу ему цветок?"
+      frames_en:
+        - "Can I put a flower for him?"

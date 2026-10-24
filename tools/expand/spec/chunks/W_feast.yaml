@@ -1,0 +1,218 @@
+# The feast done properly (Feast): tables carried out and back, the dance, the fireworks, the record on the jukebox (Music).
+
+- key: W01
+  id: fe_set
+  title: "Sets the Feast Table"
+  category: home
+  status: active
+  trigger: "a villager carries out a feast table and benches to the square"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Тащу стол! Кто-нибудь, возьмите с другого конца!"
+      frames_en:
+        - "Carrying a table! Somebody grab the other end!"
+    - weight: 50
+      frames:
+        - "Скамьи сюда, стол туда. Будет праздник!"
+      frames_en:
+        - "Benches here, table there. There's going to be a feast!"
+- key: W02
+  id: fe_set_w
+  title: "Sets the Feast Table"
+  category: home
+  status: active
+  trigger: "a woman sets a feast table with cakes and candles"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Торт посередине, свечи по краям. Красота!"
+      frames_en:
+        - "Cake in the middle, candles at the sides. Lovely!"
+    - weight: 50
+      frames:
+        - "Скатерти бы ещё... Ладно, и так хорошо."
+      frames_en:
+        - "If only we had tablecloths... Well, it's fine as it is."
+- key: W03
+  id: fe_dance
+  title: "Dances at the Feast"
+  category: home
+  status: active
+  trigger: "a villager dances in the ring at the feast"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[laughs] Эх, раз! Ещё раз! Кружимся!"
+      frames_en:
+        - "[laughs] And one! And again! Round we go!"
+    - weight: 50
+      frames:
+        - "Ноги сами в пляс идут!"
+      frames_en:
+        - "My feet are dancing on their own!"
+- key: W04
+  id: fe_dance_w
+  title: "Dances at the Feast"
+  category: home
+  status: active
+  trigger: "a woman dances in the ring at the feast"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[laughs] Ой, голова кружится! Ещё круг!"
+      frames_en:
+        - "[laughs] Oh, my head's spinning! One more round!"
+    - weight: 50
+      frames:
+        - "Держи меня за руку, не отставай!"
+      frames_en:
+        - "Hold my hand, keep up!"
+- key: W05
+  id: fe_dance_k
+  title: "Dances at the Feast"
+  category: home
+  status: active
+  trigger: "a child dances in the ring at the feast"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Смотрите, как я прыгаю!"
+      frames_en:
+        - "Look how high I jump!"
+    - weight: 50
+      frames:
+        - "Я танцую лучше всех!"
+      frames_en:
+        - "I'm the best dancer!"
+- key: W06
+  id: fe_fire
+  title: "Feast Fireworks"
+  category: home
+  status: active
+  trigger: "fireworks go up over the square at the end of the feast"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Смотрите, фейерверк! Вот это да!"
+      frames_en:
+        - "[gasp] Look, fireworks! Wow!"
+    - weight: 50
+      frames:
+        - "Красный! Зелёный! А этот как звезда!"
+      frames_en:
+        - "Red! Green! And that one's like a star!"
+- key: W07
+  id: fe_fire_w
+  title: "Feast Fireworks"
+  category: home
+  status: active
+  trigger: "a woman watches the feast fireworks"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "[gasp] Какая красота! Прямо над площадью!"
+      frames_en:
+        - "[gasp] How beautiful! Right over the square!"
+    - weight: 50
+      frames:
+        - "Дети, смотрите наверх! Фейерверк!"
+      frames_en:
+        - "Children, look up! Fireworks!"
+- key: W08
+  id: fe_fire_k
+  title: "Feast Fireworks"
+  category: home
+  status: active
+  trigger: "a child watches the feast fireworks"
+  speaker: child
+  variants:
+    - weight: 50
+      frames:
+        - "Бум! Ещё! Ещё хочу!"
+      frames_en:
+        - "Boom! More! I want more!"
+    - weight: 50
+      frames:
+        - "Ух ты! Небо горит!"
+      frames_en:
+        - "Wow! The sky's on fire!"
+- key: W09
+  id: fe_clear
+  title: "Clears the Feast Table"
+  category: home
+  status: active
+  trigger: "villagers carry the feast tables away after the feast"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "Праздник кончился, а столы сами себя не унесут."
+      frames_en:
+        - "The feast's over, and the tables won't carry themselves."
+    - weight: 50
+      frames:
+        - "[sigh] Хорошо погуляли. Теперь за уборку."
+      frames_en:
+        - "[sigh] That was a good party. Now to tidy up."
+- key: W10
+  id: fe_clear_w
+  title: "Clears the Feast Table"
+  category: home
+  status: active
+  trigger: "a woman clears the feast tables"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Посуду собрать, крошки смести. Привычное дело."
+      frames_en:
+        - "Gather the dishes, sweep the crumbs. Same as always."
+    - weight: 50
+      frames:
+        - "Всё унесём, чтобы к утру было чисто."
+      frames_en:
+        - "We'll take it all away so it's tidy by morning."
+- key: W11
+  id: fe_record
+  title: "Puts a Record On"
+  category: home
+  status: active
+  trigger: "a villager sets down a jukebox and puts the town's record on"
+  speaker: villager
+  variants:
+    - weight: 50
+      frames:
+        - "А теперь — музыка!"
+      frames_en:
+        - "And now, some music!"
+    - weight: 50
+      frames:
+        - "Поставлю нашу любимую пластинку."
+      frames_en:
+        - "I'll put on our favourite record."
+- key: W12
+  id: fe_record_w
+  title: "Puts a Record On"
+  category: home
+  status: active
+  trigger: "a woman puts the town's record on"
+  speaker: woman
+  variants:
+    - weight: 50
+      frames:
+        - "Без музыки какой праздник? Включаю!"
+      frames_en:
+        - "What's a party without music? On it goes!"
+    - weight: 50
+      frames:
+        - "Вот эта пластинка — самая весёлая."
+      frames_en:
+        - "This record is the merriest one."

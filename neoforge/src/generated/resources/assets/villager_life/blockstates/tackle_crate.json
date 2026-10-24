@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villager_life:block/decor/tackle_crate",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villager_life:block/decor/tackle_crate"
+    },
+    "facing=south": {
+      "model": "villager_life:block/decor/tackle_crate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villager_life:block/decor/tackle_crate",
+      "y": 270
+    }
+  }
+}
