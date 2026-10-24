@@ -380,6 +380,7 @@ public final class TownGroundsGameTests {
 			whenOnGround(helper, homeless, () -> homeless.setNoAi(true));
 			LightWait.after(helper, level, house.footprint(level), () -> whenOnGround(helper, homeless, () -> {
 				com.vnap.Mc.setDayTime(level, 15000);
+				homeless.setNoAi(false);
 				com.vnap.village.town.Shelter.night(level, homeless);
 				Checks.assertTrue(helper, com.vnap.village.life.Agenda.has(homeless, com.vnap.village.town.Shelter.WHY), "a homeless villager goes into a closed room for the night (" + house.schematicName() + " " + house.rotation + "): " + com.vnap.village.town.Shelter.why(level, homeless));
 				com.vnap.Mc.setDayTime(level, 6000);
