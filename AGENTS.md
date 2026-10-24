@@ -284,7 +284,7 @@
 - GameTests на релизе (тег) CI гоняет на всех версиях.
 - Сборка версии: `./gradlew --no-configuration-cache --offline :neoforge:<v>:build`, тесты — `VL_MC=<v> tools/dev/gts.sh`; `VL_MC` понимают все инструменты `tools/dev`. Новая версия впервые — без `--offline`.
 - Клиент: dev-клиент MDG с EMF с 1.21.4 падал (EMF больше не нужен, заново не пробовали), поэтому версии проверяются production-клиентом: `python3 tools/dev/client_check.py <v>` (portablemc + MCP-мод 0.6.0, без окна; снимки сцен в `neoforge/versions/<v>/run-prod/screenshots/`). Инструменты MCP — `mc.client.*` и `mc.server.*` (`mcp.py --list`).
-- CI: `.github/workflows/build.yml` — вручную, все версии, jar на версию (галочка — с GameTests).
+- CI: `.github/workflows/build.yml` — один job: сборка всех версий одной командой, GameTests всех версий подряд, по тегу (`1.0.0` = `mod_version`) — релиз GitHub с jar-ами; запуск по тегу или вручную, на пуш в main не запускается.
 
 ## Сборка
 
