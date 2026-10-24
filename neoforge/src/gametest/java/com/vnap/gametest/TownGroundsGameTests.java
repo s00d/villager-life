@@ -375,6 +375,9 @@ public final class TownGroundsGameTests {
 			Villager homeless = helper.spawn(EntityType.VILLAGER, BELL.offset(1, 0, 1));
 			homeless.getBrain().setMemory(MemoryModuleType.MEETING_POINT, GlobalPos.of(level.dimension(), network.bell));
 			homeless.getBrain().eraseMemory(MemoryModuleType.HOME);
+			// set down, then held still: wandering while the light is worked out, it went where the room was out of reach or
+			// took a bed of the house
+			whenOnGround(helper, homeless, () -> homeless.setNoAi(true));
 			LightWait.after(helper, level, house.footprint(level), () -> whenOnGround(helper, homeless, () -> {
 				com.vnap.Mc.setDayTime(level, 15000);
 				com.vnap.village.town.Shelter.night(level, homeless);
