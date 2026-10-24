@@ -713,10 +713,13 @@ public class GenerationsGameTests {
 		Checks.assertTrue(helper, Family.state(kid).grownDay == day, "the child came of age today");
 		Checks.assertTrue(helper, cake != null && com.vnap.village.home.Placements.pending(level, cake), "a cake is bought for the party");
 		Checks.assertTrue(helper, Family.member(kid), "the party is at home: moving out waits a day");
-		// the mother carries it in and sets it down: at noon (at night she sleeps, before 0.15 she cooks breakfast)
-		helper.onEachTick(() -> com.vnap.Mc.setDayTime(level, 6000L));
-		couple.wife().setNoAi(false);
-		helper.succeedWhen(() -> Checks.assertTrue(helper, cake != null && level.getBlockState(cake).is(Blocks.CAKE), "the cake on the table"));
+		// it waits for the mother's hands (her walk there is PlaceBehavior's, tested with the placements themselves)
+		com.vnap.village.home.Placements.Job job = com.vnap.village.home.Placements.forHands(level, couple.wife(), 64, pos -> false);
+		Checks.assertTrue(helper, job != null && job.pos().equals(cake) && job.state().is(Blocks.CAKE)
+				&& couple.wife().getUUID().equals(job.by()), "the mother is to set the cake down: " + job);
+		if (job != null) com.vnap.village.home.Placements.place(level, job);
+		Checks.assertTrue(helper, cake != null && level.getBlockState(cake).is(Blocks.CAKE), "the cake on the table");
+		helper.succeed();
 	}
 
 	@GameTest(template = "platform")
