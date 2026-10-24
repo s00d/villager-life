@@ -306,13 +306,7 @@ public final class TownGroundsGameTests {
 				return;
 			}
 			HomeProjects.buildNow(level, house);
-			// the house stands empty (its owner moved on): beds for the homeless go only into a house nobody lives in
 			net.minecraft.world.level.levelgen.structure.BoundingBox box = house.footprint(level);
-			level.getPoiManager().getInRange(type -> type.is(net.minecraft.world.entity.ai.village.poi.PoiTypes.HOME), box.getCenter(), 24,
-							net.minecraft.world.entity.ai.village.poi.PoiManager.Occupancy.IS_OCCUPIED)
-					.map(net.minecraft.world.entity.ai.village.poi.PoiRecord::getPos).filter(box::isInside).toList()
-					.forEach(bed -> level.getPoiManager().release(bed));
-			owner.getBrain().eraseMemory(MemoryModuleType.HOME);
 			List<Villager> homeless = new java.util.ArrayList<>();
 			for (int i = 0; i < 2; i++) {
 				Villager one = helper.spawn(EntityType.VILLAGER, BELL.offset(-3 - i, 0, -3));
@@ -330,14 +324,24 @@ public final class TownGroundsGameTests {
 					return;
 				}
 				office.mayor = owner.getUUID();
+				// the house stands empty (its owner moved on): beds for the homeless go only into a house nobody lives
+				// in. Right before the mayor looks: while the light was worked out the owner's family tick took its bed back
+				level.getPoiManager().getInRange(type -> type.is(net.minecraft.world.entity.ai.village.poi.PoiTypes.HOME), box.getCenter(), 24,
+								net.minecraft.world.entity.ai.village.poi.PoiManager.Occupancy.IS_OCCUPIED)
+						.map(net.minecraft.world.entity.ai.village.poi.PoiRecord::getPos).filter(box::isInside).toList()
+						.forEach(bed -> level.getPoiManager().release(bed));
+				owner.getBrain().eraseMemory(MemoryModuleType.HOME);
+				String before = "free " + HomeProjects.freeBeds(level, network.bell, homeless) + ", pending " + com.vnap.village.home.Placements.pendingBeds(level, network.bell, 64)
+						+ ", rooms " + com.vnap.village.town.Shelter.why(level, homeless.get(0));
 				com.vnap.village.town.Shelter.beds(level, network);
+				String after = ", ordered " + com.vnap.village.home.Placements.pendingBeds(level, network.bell, 64);
 				com.vnap.village.home.Placements.Job job;
 				while ((job = com.vnap.village.home.Placements.forHands(level, owner, 200, pos -> false)) != null) {
 					com.vnap.village.home.Placements.place(level, job);
 				}
 				long free = level.getPoiManager().getInRange(type -> type.is(net.minecraft.world.entity.ai.village.poi.PoiTypes.HOME), network.bell, 64,
 						net.minecraft.world.entity.ai.village.poi.PoiManager.Occupancy.HAS_SPACE).count();
-				Checks.assertTrue(helper, free >= homeless.size(), "a free bed for each of the homeless, " + free);
+				Checks.assertTrue(helper, free >= homeless.size(), "a free bed for each of the homeless, " + free + " (" + before + after + ")");
 				Checks.assertTrue(helper, homeless.stream().allMatch(one -> HomeProjects.freeBed(level, one, network.bell) != null), "each can go for one");
 				com.vnap.village.town.Shelter.beds(level, network);
 				Checks.assertTrue(helper, com.vnap.village.home.Placements.pendingBeds(level, network.bell, 64) == 0, "no more once there are enough: "
@@ -420,7 +424,8 @@ public final class TownGroundsGameTests {
 		});
 	}
 
-	@GameTest(batch = "grounds", template = "home_platform", timeoutTicks = 400)
+	// two waits for the light engine: with every test on one server (CI) its queue takes hundreds of ticks
+	@GameTest(batch = "grounds", template = "home_platform", timeoutTicks = 1600)
 	public static void aDarkHollowOpenToTheGroundIsLitAndASealedOneIsNot(GameTestHelper helper) {
 		ServerLevel level = helper.getLevel();
 		Roads.Network network = town(helper);

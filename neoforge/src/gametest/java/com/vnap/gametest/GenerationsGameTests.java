@@ -713,8 +713,8 @@ public class GenerationsGameTests {
 		Checks.assertTrue(helper, Family.state(kid).grownDay == day, "the child came of age today");
 		Checks.assertTrue(helper, cake != null && com.vnap.village.home.Placements.pending(level, cake), "a cake is bought for the party");
 		Checks.assertTrue(helper, Family.member(kid), "the party is at home: moving out waits a day");
-		// the mother carries it in and sets it down: by day (at night she sleeps)
-		helper.onEachTick(() -> com.vnap.Mc.setDayTime(level, 3000L));
+		// the mother carries it in and sets it down: at noon (at night she sleeps, before 0.15 she cooks breakfast)
+		helper.onEachTick(() -> com.vnap.Mc.setDayTime(level, 6000L));
 		couple.wife().setNoAi(false);
 		helper.succeedWhen(() -> Checks.assertTrue(helper, cake != null && level.getBlockState(cake).is(Blocks.CAKE), "the cake on the table"));
 	}

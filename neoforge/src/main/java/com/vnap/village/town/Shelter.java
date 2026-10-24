@@ -243,23 +243,32 @@ public final class Shelter {
 		// for the next (counted per villager, a new bed was bought every day for the same three)
 		long wanted = homeless.size() - HomeProjects.freeBeds(level, network.bell, homeless)
 				- Placements.pendingBeds(level, network.bell, Towns.reach(level, network.bell));
+		java.util.Map<String, Integer> refused = new java.util.TreeMap<>();
 		for (BoundingBox box : buildings(level, network, network.bell, Integer.MAX_VALUE)) {
 			if (wanted <= 0) return;
 			// not in anyone's home: a family's house filled up with beds for the homeless until its owner had no way
 			// through to his own, and slept outside
-			if (lived(level, box)) continue;
+			if (lived(level, box)) {
+				refused.merge("lived", 1, Integer::sum);
+				continue;
+			}
 			for (Set<BlockPos> room : rooms(level, box)) {
 				if (wanted <= 0) return;
 				// the room stays a room to stand in: a shelter for the night needs ROOM cells besides
-				if (room.size() < ROOM + 2 || !FamilyHome.closed(level, room) || !lit(level, room)) continue;
-				BlockPos[] bed = bedSpot(level, room);
-				if (bed == null) continue;
+				String no = room.size() < ROOM + 2 ? "small" : !FamilyHome.closed(level, room) ? "open" : !lit(level, room) ? "dark" : null;
+				BlockPos[] bed = no == null ? bedSpot(level, room) : null;
+				if (no == null && bed == null) no = "no spot";
+				if (no != null || bed == null) {
+					refused.merge(no == null ? "no spot" : no, 1, Integer::sum);
+					continue;
+				}
 				com.vnap.village.market.Market.order(level, null, network.bell, net.minecraft.world.item.Items.WHITE_BED);
 				Direction facing = com.vnap.Mc.fromDelta(bed[1].getX() - bed[0].getX(), 0, bed[1].getZ() - bed[0].getZ());
 				Placements.add(level, bed[0], net.minecraft.world.level.block.Blocks.WHITE_BED.defaultBlockState().setValue(BedBlock.FACING, facing), office.mayor);
 				wanted--;
 			}
 		}
+		if (wanted > 0) com.vnap.VillagerLife.trace("vnap shelter beds: {} short at {}: {}", wanted, network.bell.toShortString(), refused);
 	}
 
 	/** Someone sleeps here: a bed in the building is a villager's home (its POI ticket is held). */

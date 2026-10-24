@@ -28,10 +28,22 @@ final class LightWait {
 		poll(helper, all, then);
 	}
 
+	// A test server with nothing to wait for ticks as fast as it can (1600 ticks a second with every test on one), while
+	// the light thread keeps its own pace: a tick spent waiting gives that thread a moment, or the test times out in ticks.
 	private static void poll(GameTestHelper helper, CompletableFuture<Void> all, Runnable then) {
 		helper.runAfterDelay(1, () -> {
-			if (all.isDone()) then.run();
-			else poll(helper, all, then);
+			if (all.isDone()) {
+				then.run();
+				return;
+			}
+			try {
+				all.get(5, java.util.concurrent.TimeUnit.MILLISECONDS);
+			} catch (java.util.concurrent.TimeoutException | java.util.concurrent.ExecutionException ignored) {
+				// still working (or failed: the check that follows reads what light there is)
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+			}
+			poll(helper, all, then);
 		});
 	}
 }
