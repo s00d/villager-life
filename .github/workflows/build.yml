@@ -1,18 +1,19 @@
 name: Build
 
-# One job builds the mod for every Minecraft version (Stonecutter nodes in neoforge/versions), a jar per version and
-# voice (villager-life-<version>+<mc>-<lang>.jar, one per folder of sounds/voice: see neoforge/build.gradle), runs the
-# GameTests of every version and, for a pushed version tag (1.0.0, matching mod_version), publishes the jars as a
-# GitHub release of that name. A manual run builds, and runs the tests if asked.
+# Builds the mod for every Minecraft version (Stonecutter nodes in neoforge/versions), each in its own job at the same
+# time, and uploads a jar per version and voice (villager-life-<version>+<mc>-<lang>.jar, one per folder of
+# sounds/voice: see neoforge/build.gradle). A pushed version tag (1.0.0, matching mod_version) runs every version's
+# GameTests and publishes the jars as a GitHub release of that name. A manual run can run the GameTests too.
 on:
   push:
     tags: ['*']
+  pull_request:
   workflow_dispatch:
     inputs:
       gametests:
-        description: Run the GameTests of every version too
+        description: Run the GameTests of each version too
         type: boolean
-        default: true
+        default: false
 
 permissions:
   contents: write
@@ -20,6 +21,10 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        mc: ['1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3']
     steps:
       - uses: actions/checkout@v4
 
@@ -37,35 +42,40 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         run: grep -qx "mod_version=${GITHUB_REF_NAME}" gradle.properties
 
-      - name: Build every version (ErrorProne, NullAway, SpotBugs)
-        run: ./gradlew --no-configuration-cache build
+      - name: Build ${{ matrix.mc }} (ErrorProne, NullAway, SpotBugs)
+        run: ./gradlew --no-configuration-cache :neoforge:${{ matrix.mc }}:build
 
-      - name: GameTests of every version
+      - name: GameTests ${{ matrix.mc }}
         if: ${{ inputs.gametests || startsWith(github.ref, 'refs/tags/') }}
-        run: ./gradlew --no-configuration-cache --continue runGameTestServer
+        run: ./gradlew --no-configuration-cache :neoforge:${{ matrix.mc }}:runGameTestServer
 
-      - name: Jars
-        run: |
-          mkdir dist
-          cp neoforge/versions/*/build/libs/villager-life-*.jar dist/
-          rm -f dist/*-sources.jar
-          ls -l dist
-
+      # every voice's jar of this version (a new language is one more jar, nothing to add here)
       - uses: actions/upload-artifact@v4
         with:
-          name: villager-life
-          path: dist/*.jar
+          name: villager-life-${{ matrix.mc }}
+          path: neoforge/versions/${{ matrix.mc }}/build/libs/villager-life-*.jar
           if-no-files-found: error
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
 
       # The notes are the CHANGELOG section of this version
       - name: Release notes
-        if: startsWith(github.ref, 'refs/tags/')
         run: |
+          rm -f dist/*-sources.jar
           awk -v v="$GITHUB_REF_NAME" '/^## \[/{on=index($0,"["v"]")>0;next} on' CHANGELOG.md > notes.md
           test -s notes.md
 
       - uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: dist/*.jar
           body_path: notes.md

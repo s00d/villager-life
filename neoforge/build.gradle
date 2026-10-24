@@ -288,10 +288,9 @@ neoForge {
             // "REGISTRYDUMP": For getting the contents of all registries.
             systemProperty 'forge.logging.markers', 'REGISTRIES'
 
-            // Recommended logging level for the console
-            // You can set various levels here.
-            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
-            logLevel = org.slf4j.event.Level.DEBUG
+            // INFO: at DEBUG the loader logs a line for every vanilla resource it masks (tens of thousands); the mod and
+            // the tools (gts.sh, scenario.py) log and read INFO
+            logLevel = org.slf4j.event.Level.INFO
         }
     }
 

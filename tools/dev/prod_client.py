@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A production client of one version (portablemc, not the MDG dev client) joining a dev server, with the MCP mod.
 
-  python3 tools/dev/prod_client.py start 26.3 [--server 127.0.0.1:25608] [--name Tester] [--show]
+  python3 tools/dev/prod_client.py start 26.3 [--server 127.0.0.1:25608] [--name Tester] [--show] [--jar released.jar]
   python3 tools/dev/prod_client.py stop 26.3
   VL_MCP=$(python3 tools/dev/prod_client.py mcp 26.3) python3 tools/dev/mcp.py mc.client.state
 
@@ -62,7 +62,8 @@ def start(mc: str, args: list[str]) -> int:
     if mods.exists():
         shutil.rmtree(mods)
     mods.mkdir(parents=True)
-    jar = ROOT / "neoforge/versions" / mc / "build/libs" / f"villager-life-{p.get('mod_version', '1.0.0')}+{mc}.jar"
+    jar = Path(args[args.index("--jar") + 1]) if "--jar" in args else \
+        ROOT / "neoforge/versions" / mc / "build/libs" / f"villager-life-{p.get('mod_version', '1.0.0')}+{mc}.jar"
     if not jar.exists():
         jar = next((ROOT / "neoforge/versions" / mc / "build/libs").glob("villager-life-*.jar"))
     shutil.copy2(jar, mods)
