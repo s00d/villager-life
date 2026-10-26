@@ -318,14 +318,14 @@
 - **Тикеты чанков** (`TicketController` шима, и Forge-шима с 1.21.5): владельцы считаются (ванилла держит один тикет вида на чанк — снятие одним владельцем снимало у всех); чанк сначала грузится, как у ванильного forceload (иначе сущности чанка, где ставится блок, оставались скрытыми — боссы Шпиля не тикали); измерение с тикающим тикетом не засыпает без игроков (`keepsAwake` → `resetEmptyTime`).
 - **JEI/EMI** на Fabric находят плагины через точки входа `jei_mod_plugin` и `emi` (пишет сборка в `fabric.mod.json`; EMI — где задан `emi_version`, только 1.21.1; его jar — через `modCompileOnly`).
 - **Паки данных** (26.x): Fabric ставит паки модов сразу над ванильным, под паками-экспериментами; «ребаланс торговли» (`replace: true`) стирал сделки мода — `PackOrderMixin` поднимает пак мода над ними (как у NeoForge).
-- Живая проверка 27.10.2026 (1.21.1, `client_check.py 1.21.1-fabric`): 8/8 сцен, ошибок мода в логе клиента нет. **Не сделано**: предметы на декоре (`DecorRenderer` → `Draw.item`, ванильный `renderStatic`) рисуются на чёрных квадратах — только на Fabric, причина не найдена.
+- Живая проверка 27.10.2026 (1.21.1, `client_check.py 1.21.1-fabric`): 8/8 сцен, ошибок мода в логе клиента нет. Так нашлось: Fabric не читает `render_type` из моделей блоков (это NeoForge/Forge) — вырезанные модели декора рисовались сплошными, прозрачное чёрным; до 26.1 `ClientHooks.layers` читает `render_type` из моделей блоков мода и ставит слой через `BlockRenderLayerMap` (с 26.1 игра берёт слой из текстур).
 - Живая проверка: `VL_MC=<v>-fabric python3 tools/dev/server.py build|start N` — сервер Fabric, поставленный установщиком один раз (кэш `~/.cache/vl-minecraft/fabric-server/<mc>-<loader>`: лаунчер, библиотеки, `server.jar`; распакованное ванилью и игра загрузчика — `instance/`, у серверов ссылками), jar мода, Fabric API и `minecraft_mcp-fabric-0.6.0+<mc>.jar`; клиент — `python3 tools/dev/prod_client.py start <v>-fabric` (portablemc `fabric:<mc>:<loader>`).
 
 ## Сборка
 
 ```bash
 cd ~/Downloads/FireShot/villager-news-ru-port
-export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
+export JAVA_HOME=/opt/homebrew/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home   # gradle 9.8.2: Java 25 (узлы 1.21.x собираются тулчейном 21)
 
 ./gradlew --no-configuration-cache --offline :neoforge:1.21.1:compileJava :neoforge:1.21.1:compileGametestJava > /tmp/vl-compile.log 2>&1
 tools/dev/gts.sh                                   # все GameTests на 4 серверах сразу, ~45 с; итог, что держало прогон; лог /tmp/vl-gts.log (22.10.2026: 292 tests)

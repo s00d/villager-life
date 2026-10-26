@@ -5,7 +5,7 @@
 #                                                  batches (homes, family_life, ...) or test names in lower case
 #        VL_MC=1.21.8-forge tools/dev/gts.sh [...]    a Forge node: one test server (ForgeGradle's runGameTestServer)
 cd "$(dirname "$0")/../.." || exit 1
-export JAVA_HOME="${JAVA_HOME:-/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home}"
+export JAVA_HOME="${JAVA_HOME:-/opt/homebrew/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home}"
 L="${VL_LOGS:-/tmp}"  # several worktrees at once: give each its own VL_LOGS
 mkdir -p "$L"
 start=$(date +%s)

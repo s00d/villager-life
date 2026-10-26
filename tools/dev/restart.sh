@@ -13,7 +13,7 @@
 # leaves empty region files behind (a whole village lost its villagers that way on 18.10.2026). mc.client.world.leave is
 # not used: the MCP mod calls Minecraft.disconnect from a client task and the integrated server never stops.
 cd "$(dirname "$0")/../.."
-export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
+export JAVA_HOME=/opt/homebrew/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home
 lang=""
 lite=""
 server=""

@@ -200,8 +200,8 @@ def pid(n: int) -> int | None:
 
 
 def build() -> int:
-    # Loom (Fabric) needs gradle on Java 25
-    env = dict(os.environ, JAVA_HOME=JAVAS["25"] if FABRIC else JAVA_HOME)
+    # gradle runs on Java 25 (Fabric's Loom needs it; every node is configured in every run)
+    env = dict(os.environ, JAVA_HOME=JAVAS["25"])
     tasks = [f":neoforge:{MC}:jar"] if FORGE else [f":neoforge:{MC}:assemble"] if FABRIC else [f":neoforge:{MC}:classes", f":neoforge:{MC}:gametestClasses", f":neoforge:{MC}:createServerLaunchScript"]
     with open("/tmp/vl-server-build.log", "w") as out:
         code = subprocess.run(["./gradlew", "--no-configuration-cache", "--offline", *tasks],
