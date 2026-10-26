@@ -1,8 +1,8 @@
 name: Build
 
-# Builds the mod for every Minecraft version and loader (Stonecutter nodes in neoforge/versions: <mc> for NeoForge,
-# <mc>-forge for Forge), each in its own job at the same time, and uploads a jar per version and voice
-# (villager-life[-forge]-<version>+<mc>-<lang>.jar, one per folder of sounds/voice: see neoforge/build.gradle).
+# Builds the mod for every Minecraft version, a job per version at the same time, every loader of it in that job
+# (Stonecutter nodes in neoforge/versions: <mc> for NeoForge, <mc>-forge for Forge), and uploads a jar per loader and
+# voice (villager-life[-forge]-<version>+<mc>-<lang>.jar, one per folder of sounds/voice: see neoforge/build.gradle).
 # A pushed version tag (1.0.0, matching mod_version) publishes the jars as a GitHub release of that name. GameTests run locally (tools/dev/gts.sh), not here.
 on:
   push:
@@ -19,8 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        mc: ['1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3',
-             '1.21.1-forge', '1.21.4-forge', '1.21.8-forge', '1.21.11-forge', '26.1.2-forge', '26.2-forge', '26.3-forge']
+        mc: ['1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3']
     steps:
       - uses: actions/checkout@v4
 
@@ -38,14 +37,16 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         run: grep -qx "mod_version=${GITHUB_REF_NAME}" gradle.properties
 
-      - name: Build ${{ matrix.mc }} (ErrorProne, NullAway, SpotBugs)
-        run: ./gradlew --no-configuration-cache :neoforge:${{ matrix.mc }}:build
+      - name: Build ${{ matrix.mc }} for every loader (ErrorProne, NullAway, SpotBugs)
+        run: ./gradlew --no-configuration-cache :neoforge:${{ matrix.mc }}:build :neoforge:${{ matrix.mc }}-forge:build
 
       # every voice's jar of this version (a new language is one more jar, nothing to add here)
       - uses: actions/upload-artifact@v4
         with:
           name: villager-life-${{ matrix.mc }}
-          path: neoforge/versions/${{ matrix.mc }}/build/libs/villager-life-*.jar
+          path: |
+            neoforge/versions/${{ matrix.mc }}/build/libs/villager-life-*.jar
+            neoforge/versions/${{ matrix.mc }}-forge/build/libs/villager-life-*.jar
           if-no-files-found: error
 
   release:
