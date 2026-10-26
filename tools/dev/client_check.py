@@ -47,7 +47,7 @@ def main(args: list[str]) -> int:
         tool("mc.client.screenshot.take", {"name": f"{mc}-{scene}"})
         print(f"{mc}-{scene}: {ROOT}/neoforge/versions/{mc}/run-prod/screenshots/{mc}-{scene}.png")
 
-    subprocess.run(["./gradlew", "--no-configuration-cache", "--offline", f":neoforge:{mc}:jar"], cwd=ROOT, env=env,
+    subprocess.run(["./gradlew", "--no-configuration-cache", "--offline", f":neoforge:{mc}:assemble"], cwd=ROOT, env=env,
                    stdout=subprocess.DEVNULL, check=True)
     run(server, "build", env=env)
     world = ROOT / "neoforge/versions" / mc / "run/servers" / N / "world"

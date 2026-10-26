@@ -66,18 +66,21 @@ def forge_server() -> Path:
 
 
 def fabric_server() -> Path:
-    """Fabric's server launcher of this node (loader and the newest installer), fetched once; vanilla's server jar beside it."""
+    """Fabric's server of this node, installed once by Fabric's installer: launcher, loader's libraries and vanilla's
+    server jar all here (the launcher from Fabric's meta fetched them into every server's own folder instead)."""
     import json, urllib.request
     p = node_props()
     dir_ = Path.home() / ".cache/vl-minecraft/fabric-server" / f"{p['minecraft_version']}-{p['fabric_loader_version']}"
-    launcher = dir_ / "fabric-server-launch.jar"
-    if not launcher.exists():
+    if not (dir_ / "server.jar").exists():
         dir_.mkdir(parents=True, exist_ok=True)
         with urllib.request.urlopen("https://meta.fabricmc.net/v2/versions/installer") as answer:
             installer = next(v["version"] for v in json.load(answer) if v.get("stable"))
-        url = f"https://meta.fabricmc.net/v2/versions/loader/{p['minecraft_version']}/{p['fabric_loader_version']}/{installer}/server/jar"
+        url = f"https://maven.fabricmc.net/net/fabricmc/fabric-installer/{installer}/fabric-installer-{installer}.jar"
         with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "villager-life-dev"})) as answer:
-            launcher.write_bytes(answer.read())
+            (dir_ / "installer.jar").write_bytes(answer.read())
+        subprocess.run([JAVAS[p["java_version"]] + "/bin/java", "-jar", "installer.jar", "server", "-dir", ".",
+                        "-mcversion", p["minecraft_version"], "-loader", p["fabric_loader_version"], "-downloadMinecraft"],
+                       cwd=dir_, stdout=open(dir_ / "install.log", "w"), stderr=subprocess.STDOUT, check=True)
     return dir_
 
 
@@ -325,6 +328,14 @@ def start(n: int, args: list[str]) -> int:
         # Fabric's launcher, vanilla's server jar kept in the launcher's cache (it fetches it the first time)
         installed = fabric_server()
         (dir_ / "fabric-server-launcher.properties").write_text(f"serverJar={installed / 'server.jar'}\n")
+        # what vanilla's server jar unpacks (versions/, libraries/) and the loader's game jar it remaps (.fabric/), 130 MB:
+        # once for every server of this version
+        for part in (".fabric", "versions", "libraries"):
+            shared = installed / "instance" / part
+            shared.mkdir(parents=True, exist_ok=True)
+            if not (dir_ / part).is_symlink():
+                shutil.rmtree(dir_ / part, ignore_errors=True)
+                (dir_ / part).symlink_to(shared)
         command = [JAVAS[node_props()["java_version"]] + "/bin/java", f"-Xmx{xmx}", f"-Dvl.server={n}", f"-DminecraftMcp.endpoint.port={25800 + n}",
                    "-jar", str(installed / "fabric-server-launch.jar"), "nogui"]
     elif FORGE:

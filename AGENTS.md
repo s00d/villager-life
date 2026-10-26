@@ -318,7 +318,8 @@
 - **Тикеты чанков** (`TicketController` шима, и Forge-шима с 1.21.5): владельцы считаются (ванилла держит один тикет вида на чанк — снятие одним владельцем снимало у всех); чанк сначала грузится, как у ванильного forceload (иначе сущности чанка, где ставится блок, оставались скрытыми — боссы Шпиля не тикали); измерение с тикающим тикетом не засыпает без игроков (`keepsAwake` → `resetEmptyTime`).
 - **JEI/EMI** на Fabric находят плагины через точки входа `jei_mod_plugin` и `emi` (пишет сборка в `fabric.mod.json`; EMI — где задан `emi_version`, только 1.21.1; его jar — через `modCompileOnly`).
 - **Паки данных** (26.x): Fabric ставит паки модов сразу над ванильным, под паками-экспериментами; «ребаланс торговли» (`replace: true`) стирал сделки мода — `PackOrderMixin` поднимает пак мода над ними (как у NeoForge).
-- Живая проверка: `VL_MC=<v>-fabric python3 tools/dev/server.py build|start N` — лаунчер сервера Fabric (кэш `~/.cache/vl-minecraft/fabric-server/<mc>-<loader>`), jar мода, Fabric API и `minecraft_mcp-fabric-0.6.0+<mc>.jar`; клиент — `python3 tools/dev/prod_client.py start <v>-fabric` (portablemc `fabric:<mc>:<loader>`).
+- Живая проверка 27.10.2026 (1.21.1, `client_check.py 1.21.1-fabric`): 8/8 сцен, ошибок мода в логе клиента нет. **Не сделано**: предметы на декоре (`DecorRenderer` → `Draw.item`, ванильный `renderStatic`) рисуются на чёрных квадратах — только на Fabric, причина не найдена.
+- Живая проверка: `VL_MC=<v>-fabric python3 tools/dev/server.py build|start N` — сервер Fabric, поставленный установщиком один раз (кэш `~/.cache/vl-minecraft/fabric-server/<mc>-<loader>`: лаунчер, библиотеки, `server.jar`; распакованное ванилью и игра загрузчика — `instance/`, у серверов ссылками), jar мода, Fabric API и `minecraft_mcp-fabric-0.6.0+<mc>.jar`; клиент — `python3 tools/dev/prod_client.py start <v>-fabric` (portablemc `fabric:<mc>:<loader>`).
 
 ## Сборка
 

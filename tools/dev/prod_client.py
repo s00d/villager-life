@@ -83,8 +83,8 @@ def start(mc: str, args: list[str]) -> int:
         # Fabric API, as the server has it (server.py)
         sys.path.insert(0, str(Path(__file__).parent))
         os.environ["VL_MC"] = mc
-        import server
-        shutil.copy2(server.fabric_api(), mods)
+        import server as dev_server
+        shutil.copy2(dev_server.fabric_api(), mods)
     mcp = sorted(MCP_JARS.glob(f"minecraft_mcp-{loader}-*+{game}.jar"))
     if not mcp:
         print(f"no MCP jar for {mc} in {MCP_JARS}")
