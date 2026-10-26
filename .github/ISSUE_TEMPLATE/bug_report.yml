@@ -7,7 +7,7 @@ body:
     attributes:
       label: Versions
       description: Minecraft, NeoForge and Villager Life versions
-      placeholder: Minecraft 1.21.1, NeoForge 21.1.252, Villager Life 1.0.0
+      placeholder: Minecraft 1.21.1, NeoForge 21.1.252 (or Forge 52.1.20), Villager Life 1.1.0
     validations:
       required: true
   - type: textarea

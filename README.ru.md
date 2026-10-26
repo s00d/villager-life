@@ -1,7 +1,7 @@
 <p align="center"><img src="docs/media/banner.png" alt="Villager Life — «Жизнь деревни»"></p>
 
 <p align="center">
-Мод для NeoForge, который превращает деревню в живой город: жители работают, руками строят свои дома и свой город,
+Мод для NeoForge и Forge, который превращает деревню в живой город: жители работают, руками строят свои дома и свой город,
 женятся, растят детей, стареют, торгуют в деревенской лавке настоящими монетами и говорят обо всём этом —
 <b>английскими и русскими голосами</b>.
 </p>
@@ -50,27 +50,27 @@
 
 ## Версии
 
-По jar-у на версию Minecraft, из одного кода. Нужен только NeoForge; [JEI](https://modrinth.com/mod/jei) или [EMI](https://modrinth.com/mod/emi) — по желанию (рецепты станков и обрядов).
+По jar-у на версию Minecraft и загрузчик, из одного кода: NeoForge или Forge (свой jar); [JEI](https://modrinth.com/mod/jei) или [EMI](https://modrinth.com/mod/emi) — по желанию (рецепты станков и обрядов).
 
-| Minecraft | NeoForge | Java | Jar |
-|---|---|---|---|
-| 1.21.1 | 21.1.252+ | 21 | `villager-life-1.0.0+1.21.1-en.jar`, `-ru.jar` |
-| 1.21.4 | 21.4.161+ | 21 | `villager-life-1.0.0+1.21.4-en.jar`, `-ru.jar` |
-| 1.21.8 | 21.8.57+ | 21 | `villager-life-1.0.0+1.21.8-en.jar`, `-ru.jar` |
-| 1.21.11 | 21.11.48+ | 21 | `villager-life-1.0.0+1.21.11-en.jar`, `-ru.jar` |
-| 26.1.2 | 26.1.2.122+ | 25 | `villager-life-1.0.0+26.1.2-en.jar`, `-ru.jar` |
-| 26.2 | 26.2.0.93+ | 25 | `villager-life-1.0.0+26.2-en.jar`, `-ru.jar` |
-| 26.3 | 26.3.0.95+ | 25 | `villager-life-1.0.0+26.3-en.jar`, `-ru.jar` |
+| Minecraft | NeoForge | Forge | Java | Jar |
+|---|---|---|---|---|
+| 1.21.1 | 21.1.252+ | 52.1.20+ | 21 | `villager-life-1.1.0+1.21.1-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.1-en.jar`, `-ru.jar` |
+| 1.21.4 | 21.4.161+ | 54.1.22+ | 21 | `villager-life-1.1.0+1.21.4-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.4-en.jar`, `-ru.jar` |
+| 1.21.8 | 21.8.57+ | 58.1.26+ | 21 | `villager-life-1.1.0+1.21.8-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.8-en.jar`, `-ru.jar` |
+| 1.21.11 | 21.11.48+ | 61.2.4+ | 21 | `villager-life-1.1.0+1.21.11-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.11-en.jar`, `-ru.jar` |
+| 26.1.2 | 26.1.2.122+ | 64.1.5+ | 25 | `villager-life-1.1.0+26.1.2-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+26.1.2-en.jar`, `-ru.jar` |
+| 26.2 | 26.2.0.93+ | 65.1.5+ | 25 | `villager-life-1.1.0+26.2-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+26.2-en.jar`, `-ru.jar` |
+| 26.3 | 26.3.0.95+ | 66.1.0+ | 25 | `villager-life-1.1.0+26.3-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+26.3-en.jar`, `-ru.jar` |
 
 Основная версия — 1.21.1: все проверки сначала идут на ней.
 
 ## Установка
 
-1. Установите NeoForge для своей версии Minecraft.
-2. Скачайте jar этой версии с [Modrinth](https://modrinth.com/mod/villager-life-s00d), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/villager-life-s00d) или со страницы [Releases](https://github.com/s00d/villager-life/releases) и положите в `mods`. Берите **один** голос: `-en` (английская озвучка) или `-ru` (русская); тексты в любом случае на языке игры.
+1. Установите NeoForge или Forge для своей версии Minecraft.
+2. Скачайте jar этой версии с [Modrinth](https://modrinth.com/mod/villager-life-s00d), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/villager-life-s00d) или со страницы [Releases](https://github.com/s00d/villager-life/releases) и положите в `mods`. Для Forge — jar `villager-life-forge-…`. Берите **один** голос: `-en` (английская озвучка) или `-ru` (русская); тексты в любом случае на языке игры.
 3. На сервере мод нужен и серверу, и каждому клиенту.
 
-Настройки: страница настроек в книге или кнопка настроек в списке модов NeoForge
+Настройки: страница настроек в книге или кнопка настроек в списке модов
 (`config/villager-life.json`, `villager-life-client.json`, `villager-life-mood.json`).
 
 ## Вопросы
@@ -85,7 +85,7 @@
 
 **Другие языки?** Интерфейс, книга и голоса — английский и русский. Переводы строк приветствуются — см. [CONTRIBUTING](CONTRIBUTING.md).
 
-**Другие загрузчики?** Только NeoForge.
+**Другие загрузчики?** NeoForge и Forge. На Forge JEI есть только для 1.21.1; EMI — на всех версиях.
 
 **Вопросы, баги, идеи?** Заходите в [Discord](https://discord.gg/JkNspxqWk9) — там есть русский канал.
 

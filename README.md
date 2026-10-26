@@ -1,7 +1,7 @@
 <p align="center"><img src="docs/media/banner.png" alt="Villager Life"></p>
 
 <p align="center">
-A NeoForge mod that turns a village into a living town: villagers work, build their houses and their town by hand,
+A NeoForge and Forge mod that turns a village into a living town: villagers work, build their houses and their town by hand,
 marry, raise children, grow old, trade at the village stall with real coins, and talk about all of it
 in <b>English and Russian voices</b>.
 </p>
@@ -50,27 +50,27 @@ The **Villager Life Guide** (a book given on first join, also crafted from three
 
 ## Versions
 
-One jar per Minecraft version, from the same code. All need only NeoForge; [JEI](https://modrinth.com/mod/jei) or [EMI](https://modrinth.com/mod/emi) are optional (workstation and rite recipes).
+One jar per Minecraft version, from the same code. Each on NeoForge or on Forge (its own jar); [JEI](https://modrinth.com/mod/jei) or [EMI](https://modrinth.com/mod/emi) are optional (workstation and rite recipes).
 
-| Minecraft | NeoForge | Java | Jar |
-|---|---|---|---|
-| 1.21.1 | 21.1.252+ | 21 | `villager-life-1.0.0+1.21.1-en.jar`, `-ru.jar` |
-| 1.21.4 | 21.4.161+ | 21 | `villager-life-1.0.0+1.21.4-en.jar`, `-ru.jar` |
-| 1.21.8 | 21.8.57+ | 21 | `villager-life-1.0.0+1.21.8-en.jar`, `-ru.jar` |
-| 1.21.11 | 21.11.48+ | 21 | `villager-life-1.0.0+1.21.11-en.jar`, `-ru.jar` |
-| 26.1.2 | 26.1.2.122+ | 25 | `villager-life-1.0.0+26.1.2-en.jar`, `-ru.jar` |
-| 26.2 | 26.2.0.93+ | 25 | `villager-life-1.0.0+26.2-en.jar`, `-ru.jar` |
-| 26.3 | 26.3.0.95+ | 25 | `villager-life-1.0.0+26.3-en.jar`, `-ru.jar` |
+| Minecraft | NeoForge | Forge | Java | Jar |
+|---|---|---|---|---|
+| 1.21.1 | 21.1.252+ | 52.1.20+ | 21 | `villager-life-1.1.0+1.21.1-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.1-en.jar`, `-ru.jar` |
+| 1.21.4 | 21.4.161+ | 54.1.22+ | 21 | `villager-life-1.1.0+1.21.4-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.4-en.jar`, `-ru.jar` |
+| 1.21.8 | 21.8.57+ | 58.1.26+ | 21 | `villager-life-1.1.0+1.21.8-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.8-en.jar`, `-ru.jar` |
+| 1.21.11 | 21.11.48+ | 61.2.4+ | 21 | `villager-life-1.1.0+1.21.11-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+1.21.11-en.jar`, `-ru.jar` |
+| 26.1.2 | 26.1.2.122+ | 64.1.5+ | 25 | `villager-life-1.1.0+26.1.2-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+26.1.2-en.jar`, `-ru.jar` |
+| 26.2 | 26.2.0.93+ | 65.1.5+ | 25 | `villager-life-1.1.0+26.2-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+26.2-en.jar`, `-ru.jar` |
+| 26.3 | 26.3.0.95+ | 66.1.0+ | 25 | `villager-life-1.1.0+26.3-en.jar`, `-ru.jar`; Forge: `villager-life-forge-1.1.0+26.3-en.jar`, `-ru.jar` |
 
 1.21.1 is the main version: every check runs there first.
 
 ## Installation
 
-1. Install NeoForge for your Minecraft version.
-2. Download the jar for that version from [Modrinth](https://modrinth.com/mod/villager-life-s00d), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/villager-life-s00d) or [Releases](https://github.com/s00d/villager-life/releases) and put it into `mods`. Take **one** voice: `-en` (English voices) or `-ru` (Russian voices); the text follows your game language either way.
+1. Install NeoForge or Forge for your Minecraft version.
+2. Download the jar for that version from [Modrinth](https://modrinth.com/mod/villager-life-s00d), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/villager-life-s00d) or [Releases](https://github.com/s00d/villager-life/releases) and put it into `mods`. Forge takes the `villager-life-forge-…` jar. Take **one** voice: `-en` (English voices) or `-ru` (Russian voices); the text follows your game language either way.
 3. On a server, install the mod on the server and on every client.
 
-Settings: the guide's settings page or the config button in the NeoForge Mods list
+Settings: the guide's settings page or the config button in the Mods list
 (`config/villager-life.json`, `villager-life-client.json`, `villager-life-mood.json`).
 
 ## FAQ
@@ -85,7 +85,7 @@ Settings: the guide's settings page or the config button in the NeoForge Mods li
 
 **Other languages?** The interface and the guide are in English and Russian; voices too. Translations of strings are welcome — see [CONTRIBUTING](CONTRIBUTING.md).
 
-**Other mod loaders?** NeoForge only.
+**Other mod loaders?** NeoForge and Forge. On Forge, JEI exists for 1.21.1 only; EMI works on every version.
 
 **Questions, bugs, ideas?** Join the [Discord](https://discord.gg/JkNspxqWk9) — English channels and a Russian one.
 

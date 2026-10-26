@@ -3,6 +3,22 @@
 All notable changes to Villager Life. Versions follow [Semantic Versioning](https://semver.org/);
 each Minecraft version has a jar per voice language: `villager-life-<version>+<minecraft>-<en|ru>.jar`.
 
+## [1.1.0] — 2026-10-26
+
+**Forge.** The mod runs on Forge as well as NeoForge, on every Minecraft version: 1.21.1, 1.21.4, 1.21.8, 1.21.11,
+26.1.2, 26.2 and 26.3. Forge takes its own jar, `villager-life-forge-<version>+<minecraft>-<en|ru>.jar`. On Forge,
+JEI exists for 1.21.1 only; EMI works everywhere.
+
+Fixed on every loader:
+- A rare server freeze: the light engine read a chunk's blocks while they were being set (seen on Apple Silicon,
+  most often while a Spire floor was being built).
+- A bed's owner moving into a new house could leave a neighbour remembering the same bed (one of them slept outside).
+- A villager standing a few seconds in the last cell of a build no longer stops it for the whole day.
+- The Well of Lore no longer loses experience from merged orbs.
+- The Colosseum's first wave keeps its share of shooters and flyers against a blade.
+- A town's wall no longer runs round another town's unfinished house or graves.
+- Name tags on Forge 26.2 and later.
+
 ## [1.0.0] — 2026-10-24
 
 First release.
