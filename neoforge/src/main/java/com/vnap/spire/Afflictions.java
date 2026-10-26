@@ -75,10 +75,10 @@ public final class Afflictions {
 	}
 
 	public static void listen() {
-		NeoForge.EVENT_BUS.addListener(Afflictions::onHeal);
-		NeoForge.EVENT_BUS.addListener(Afflictions::onAttack);
-		NeoForge.EVENT_BUS.addListener(Afflictions::onHurt);
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingHealEvent.class, Afflictions::onHeal);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.AttackEntityEvent.class, Afflictions::onAttack);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent.class, Afflictions::onHurt);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added.class, (net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added event) -> {
 			if (event.getEntity() instanceof Player player && event.getEffectInstance().getEffect().value() instanceof Affliction) {
 				com.vnap.progress.Discoveries.discover(player, "spire_affliction");
 			}

@@ -38,8 +38,8 @@ public final class MoodCommand {
 
     public static void register() {
         Bots.register();
-        NeoForge.EVENT_BUS.addListener((RegisterCommandsEvent event) -> registerCommands(event.getDispatcher()));
-        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerStoppingEvent event) -> LAST_SEEN.clear());
+        NeoForge.EVENT_BUS.addListener(RegisterCommandsEvent.class, (RegisterCommandsEvent event) -> registerCommands(event.getDispatcher()));
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.server.ServerStoppingEvent.class, (net.neoforged.neoforge.event.server.ServerStoppingEvent event) -> LAST_SEEN.clear());
     }
 
     private static void registerCommands(CommandDispatcher<CommandSourceStack> dispatcher) {
@@ -271,7 +271,7 @@ public final class MoodCommand {
         String done = switch (action) {
             case "plan" -> "planned " + roads.plan(level, network, Family.day(level), 64) + " roads; ";
             case "build" -> "laid " + roads.buildNow(level, network) + " blocks; ";
-            case "wall" -> com.vnap.village.town.Wall.lay(level, roads, network) ? "wall laid out; " : "the town's middle is not loaded; ";
+            case "wall" -> com.vnap.village.town.Wall.lay(level, roads, network) ? "wall laid out; " : "no wall: " + com.vnap.village.town.Wall.lastRefusal + "; ";
             case "lots_reset" -> {
                 com.vnap.village.town.TownPlan.replan(level, roads, network);
                 yield com.vnap.village.town.TownPlan.describe(level, network) + "; ";

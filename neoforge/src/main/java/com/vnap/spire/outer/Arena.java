@@ -201,7 +201,8 @@ public final class Arena {
 			boolean answers = counters < Math.ceil((count + 1) * Math.min(0.65, 0.25 + 0.045 * (w - 1)));
 			Genome best = null;
 			double score = -100;
-			for (int i = 0; i < 4; i++) {
+			// four to choose from; past the share, more until one that does not answer (a theme of flyers drew only them)
+			for (int i = 0; i < 4 || (!answers && i < 16 && best != null && fits(best, run.loadout.style()) > 0); i++) {
 				Genome g = Genome.decode(random.nextLong(), floor, theme, false, false);
 				boolean counter = fits(g, run.loadout.style()) > 0;
 				double s = (counter ? (answers ? 2.0 : -5.0) : 0.0) + random.nextDouble();

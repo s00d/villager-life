@@ -31,13 +31,13 @@ public final class Discoveries {
 	}
 
 	public static void register() {
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerLoggedInEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerLoggedInEvent.class, (PlayerEvent.PlayerLoggedInEvent event) -> {
 			if (event.getEntity() instanceof ServerPlayer player) sync(player);
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerRespawnEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerRespawnEvent.class, (PlayerEvent.PlayerRespawnEvent event) -> {
 			if (event.getEntity() instanceof ServerPlayer player) sync(player);
 		});
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> {
 			if (event.getServer().getTickCount() % EVERY != 0) return;
 			for (ServerPlayer player : event.getServer().getPlayerList().getPlayers()) {
 				if (!player.isSpectator()) look(player);

@@ -24,12 +24,38 @@ public final class RenderedEntity {
     public static void register(RegisterRenderStateModifiersEvent event) {
         // every renderer: the base renderer of an entity and its state stands for all of them (NeoForge applies it to subclasses)
         event.<Entity, EntityRenderState>registerEntityModifier(new com.google.common.reflect.TypeToken<EntityRenderer<Entity, EntityRenderState>>() {
-        }, (entity, state) -> state.setRenderData(ENTITY, entity));
+        }, (entity, state) -> put(state, entity));
     }
 
     public static <T> @Nullable T of(EntityRenderState state, Class<T> type) {
-        Entity entity = state.getRenderData(ENTITY);
+        Entity entity = get(state);
         return type.isInstance(entity) ? type.cast(entity) : null;
+    }
+    *///?}
+    // a render state's data: NeoForge's methods of the state, on Forge the shim's (com.vnap.neo.client.RenderData)
+    //? if >=1.21.2 && forge {
+    /*private static void put(EntityRenderState state, Entity entity) {
+        if (state instanceof com.vnap.neo.client.RenderData data) data.vnap$setRenderData(ENTITY, entity);
+    }
+
+    private static @Nullable Entity get(EntityRenderState state) {
+        return state instanceof com.vnap.neo.client.RenderData data ? data.vnap$getRenderData(ENTITY) : null;
+    }
+
+    public static float partialTick(EntityRenderState state) {
+        return state instanceof com.vnap.neo.client.RenderData data ? data.vnap$partialTick() : 0.0F;
+    }
+    *///?} else if >=1.21.2 {
+    /*public static float partialTick(EntityRenderState state) {
+        return state.partialTick;
+    }
+
+    private static void put(EntityRenderState state, Entity entity) {
+        state.setRenderData(ENTITY, entity);
+    }
+
+    private static @Nullable Entity get(EntityRenderState state) {
+        return state.getRenderData(ENTITY);
     }
     *///?}
 }

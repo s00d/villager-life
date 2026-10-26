@@ -6,7 +6,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.event.ModelEvent;
-//? if >=1.21.5 {
+//? if >=1.21.5 && forge {
+/*import net.minecraft.client.renderer.block.model.BlockStateModel;
+*///?} else if >=1.21.5 {
 /*import net.minecraft.client.renderer.block.model.BlockStateModel;
 import net.neoforged.neoforge.client.model.standalone.SimpleUnbakedStandaloneModel;
 import net.neoforged.neoforge.client.model.standalone.StandaloneModelKey;
@@ -145,9 +147,48 @@ public final class McClient {
         graphics.renderTooltip(font, lines, image, x, y);
     }
 
+    //? if >=1.21.5 && <26.1 && forge {
+    /*/^* A block as it stands, each of its model's layers in its own render type (Forge's; no level, no tint). ^/
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = "NP_NONNULL_PARAM_VIOLATION", justification = "no render type: Forge draws each of the model's own; its packages call every parameter non-null")
+    public static void block(net.minecraft.client.renderer.block.BlockRenderDispatcher blocks, net.minecraft.world.level.block.state.BlockState state,
+            PoseStack pose, net.minecraft.client.renderer.MultiBufferSource buffers, int light, int overlay) {
+        blocks.renderSingleBlock(state, pose, buffers, light, overlay, net.minecraftforge.client.model.data.ModelData.EMPTY, null);
+    }
+
+    *///?}
+    /** A block's model as it stands, into the state that submits it (Forge keeps the game's resolver to itself). */
+    //? if >=26.1 && forge {
+    /*public static void blockModel(net.minecraft.client.renderer.block.BlockModelRenderState block, net.minecraft.world.level.block.state.BlockState state) {
+        new net.minecraft.client.renderer.block.BlockModelResolver(Minecraft.getInstance().getModelManager())
+                .update(block, state, net.minecraft.client.renderer.block.model.BlockDisplayContext.create());
+    }
+    *///?} else if >=26.1 {
+    /*public static void blockModel(net.minecraft.client.renderer.block.BlockModelRenderState block, net.minecraft.world.level.block.state.BlockState state) {
+        Minecraft.getInstance().getBlockModelResolver().update(block, state, net.minecraft.client.renderer.block.model.BlockDisplayContext.create());
+    }
+    *///?}
+
     // Models loaded on their own (models/<id>.json), for parts the mod draws itself
 
-    //? if >=1.21.5 {
+    //? if >=26.1 && forge {
+    /*// Forge bakes a model of the mod's own through a state definition of it (com.vnap.neo.client.Standalone)
+    public static void registerModel(ModelEvent.RegisterStandalone event, ResourceLocation id) {
+        event.register(id);
+    }
+
+    public static BlockStateModel model(ResourceLocation id) {
+        return Minecraft.getInstance().getModelManager().getBlockStateModelSet().get(com.vnap.neo.client.Standalone.blockState(id));
+    }
+    *///?} else if >=1.21.5 && forge {
+    /*// Forge bakes a model of the mod's own through a state definition of it (com.vnap.neo.client.Standalone)
+    public static void registerModel(ModelEvent.RegisterStandalone event, ResourceLocation id) {
+        event.register(id);
+    }
+
+    public static BlockStateModel model(ResourceLocation id) {
+        return Minecraft.getInstance().getModelManager().getBlockModelShaper().getBlockModel(com.vnap.neo.client.Standalone.blockState(id));
+    }
+    *///?} else if >=1.21.5 {
     /*private static final Map<ResourceLocation, StandaloneModelKey<BlockStateModel>> KEYS = new HashMap<>();
 
     private static StandaloneModelKey<BlockStateModel> key(ResourceLocation id) {
@@ -156,6 +197,10 @@ public final class McClient {
 
     public static void registerModel(ModelEvent.RegisterStandalone event, ResourceLocation id) {
         event.register(key(id), SimpleUnbakedStandaloneModel.blockStateModel(id));
+    }
+
+    public static @org.jspecify.annotations.Nullable BlockStateModel model(ResourceLocation id) {
+        return Minecraft.getInstance().getModelManager().getStandaloneModel(key(id));
     }
     *///?} else {
     public static void registerModel(ModelEvent.RegisterAdditional event, ResourceLocation id) {
@@ -166,23 +211,25 @@ public final class McClient {
     }
     //?}
 
-    //? if >=1.21.5 {
-    /*public static @org.jspecify.annotations.Nullable BlockStateModel model(ResourceLocation id) {
-        return Minecraft.getInstance().getModelManager().getStandaloneModel(key(id));
-    }
-    *///?}
-
     /** Draws the model (cutout, no tint) at the pose (from 26.1 a model is submitted as its parts: Draw.model). */
     @SuppressWarnings("UnusedVariable") // a part drawn on its own: no level, an empty one at the origin
     public static void drawModel(ResourceLocation id, PoseStack.Pose pose, VertexConsumer buffer, int light, int overlay) {
         Minecraft minecraft = Minecraft.getInstance();
         //? if >=26.1 {
         /*throw new UnsupportedOperationException("models are submitted from 26.1");
+        *///?} else if >=1.21.5 && forge {
+        /*net.minecraft.client.renderer.block.ModelBlockRenderer.renderModel(pose, buffer, model(id), 1.0F, 1.0F, 1.0F, light, overlay,
+                net.minecraftforge.client.model.data.ModelData.EMPTY, null);
         *///?} else if >=1.21.5 {
-        /*BlockStateModel model = minecraft.getModelManager().getStandaloneModel(key(id));
+        /*BlockStateModel model = model(id);
         if (model == null) return;
         net.minecraft.client.renderer.block.ModelBlockRenderer.renderModel(pose, type -> buffer, model, 1.0F, 1.0F, 1.0F, light, overlay,
                 net.minecraft.world.level.EmptyBlockAndTintGetter.INSTANCE, net.minecraft.core.BlockPos.ZERO, net.minecraft.world.level.block.Blocks.AIR.defaultBlockState());
+        *///?} else if >=1.21.4 && forge {
+        /*// Forge 1.21.4 bakes a model of its own through a state definition of it (com.vnap.neo.client.Standalone)
+        BakedModel model = minecraft.getModelManager().getModel(new net.minecraft.client.resources.model.ModelResourceLocation(com.vnap.neo.client.Standalone.state(id), ""));
+        minecraft.getBlockRenderer().getModelRenderer().renderModel(pose, buffer, null, model, 1.0F, 1.0F, 1.0F, light, overlay,
+                net.neoforged.neoforge.client.model.data.ModelData.EMPTY, net.minecraft.client.renderer.RenderType.cutout());
         *///?} else if >=1.21.4 {
         /*BakedModel model = minecraft.getModelManager().getStandaloneModel(id);
         if (model == null) return;

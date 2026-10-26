@@ -1,6 +1,6 @@
 package com.vnap.entity;
 
-//? if >=1.21.6 {
+//? if >=1.21.6 && neoforge {
 /*import com.vnap.VillagerLife;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.neoforged.bus.api.IEventBus;
@@ -20,7 +20,7 @@ public final class LookAttachments {
     private LookAttachments() {
     }
 
-    //? if >=1.21.6 {
+    //? if >=1.21.6 && neoforge {
     /*private static final DeferredRegister<AttachmentType<?>> TYPES = DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, VillagerLife.MOD_ID);
 
     public static final Supplier<AttachmentType<Boolean>> FEMALE = flag("female", false);

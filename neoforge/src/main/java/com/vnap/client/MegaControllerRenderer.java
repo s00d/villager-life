@@ -109,12 +109,12 @@ public final class MegaControllerRenderer implements BlockEntityRenderer<MegaCon
 		}
 	}
 
+	//? if !forge {
 	@Override
 	public AABB getRenderBoundingBox(MegaControllerBlockEntity controller) {
-		if (controller.kind() != MegaKind.QUARRY) return new AABB(controller.getBlockPos()).inflate(1.0);
-		BlockPos centre = controller.digCentre();
-		return new AABB(centre.getX() - 2, controller.digLayer() - 1, centre.getZ() - 2, centre.getX() + 3, controller.getBlockPos().getY() + 3, centre.getZ() + 3);
+		return controller.renderBox();
 	}
+	//?}
 
 	@Override
 	public int getViewDistance() {

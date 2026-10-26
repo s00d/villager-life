@@ -1,0 +1,51 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="https://github.com/s00d/villager-life/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+# no updateJSONURL: Modrinth's update JSON compares its version numbers (1.0.0+1.21.1-en) with this version (1.0.0)
+# and would always report an update
+displayURL="https://modrinth.com/mod/villager-life-s00d"
+${icon_key}="assets/villager_life/icon.png"
+logoBlur=false
+authors="s00d"
+credits="Voices made with local text-to-speech; sound effects and music made with ElevenLabs and Lyria through fal."
+description='''
+Villagers live a whole life: they work, build their houses and their town by hand, marry and raise children,
+trade with real coins at the village stall, elect a mayor and talk about all of it in English and Russian voices.
+A finished town raises the Spire of the Architects: a hundred floors of guards, keepers and trials beyond its walls.
+
+Discord: https://discord.gg/JkNspxqWk9 · Source: https://github.com/s00d/villager-life
+'''
+
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="[${forge_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="jei"
+mandatory=false
+versionRange="[19.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.${mod_id}]]
+modId="emi"
+mandatory=false
+versionRange="[1.1,)"
+ordering="NONE"
+side="CLIENT"

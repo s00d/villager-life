@@ -62,13 +62,13 @@ public final class DialogueTestCommand {
 	}
 
 	public static void register() {
-		NeoForge.EVENT_BUS.addListener((RegisterCommandsEvent event) -> event.getDispatcher().register(Commands.literal("dialoguetest")
+		NeoForge.EVENT_BUS.addListener(RegisterCommandsEvent.class, (RegisterCommandsEvent event) -> event.getDispatcher().register(Commands.literal("dialoguetest")
 				.requires(source -> com.vnap.Mc.op(source))
 				.then(Commands.literal("continuous").executes(ctx -> start(ctx.getSource(), 0, true)))
 				.then(Commands.argument("group", IntegerArgumentType.integer(1, Math.max(1, DialogueCatalog.groups().size())))
 						.executes(ctx -> start(ctx.getSource(), IntegerArgumentType.getInteger(ctx, "group") - 1, false)))));
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> tick(event.getServer()));
-		NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> tick(event.getServer()));
+		NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> {
 			RUNS.values().forEach(DialogueTestCommand::strike);
 			RUNS.clear();
 		});

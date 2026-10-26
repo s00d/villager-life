@@ -147,4 +147,16 @@ public final class TowerClockBlockEntity extends BlockEntity {
 	public Packet<ClientGamePacketListener> getUpdatePacket() {
 		return ClientboundBlockEntityDataPacket.create(this);
 	}
+
+	/** What its renderer draws: the dial over the wall around it. */
+	public net.minecraft.world.phys.AABB renderBox() {
+		return new net.minecraft.world.phys.AABB(getBlockPos()).inflate(1.5);
+	}
+	//? if forge {
+
+	/*@Override
+	public net.minecraft.world.phys.AABB getRenderBoundingBox() {
+		return renderBox();
+	}
+	*///?}
 }

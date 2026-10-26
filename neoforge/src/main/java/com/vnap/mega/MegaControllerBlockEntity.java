@@ -278,4 +278,18 @@ public final class MegaControllerBlockEntity extends BlockEntity {
 		setChanged();
 		if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), net.minecraft.world.level.block.Block.UPDATE_CLIENTS);
 	}
+
+	/** What its renderer draws: the structure, and a Quarry's dig down to its layer. */
+	public net.minecraft.world.phys.AABB renderBox() {
+		if (kind() != MegaKind.QUARRY) return new net.minecraft.world.phys.AABB(getBlockPos()).inflate(1.0);
+		BlockPos centre = digCentre();
+		return new net.minecraft.world.phys.AABB(centre.getX() - 2, digLayer() - 1, centre.getZ() - 2, centre.getX() + 3, getBlockPos().getY() + 3, centre.getZ() + 3);
+	}
+	//? if forge {
+
+	/*@Override
+	public net.minecraft.world.phys.AABB getRenderBoundingBox() {
+		return renderBox();
+	}
+	*///?}
 }

@@ -115,7 +115,7 @@ public final class Family {
 	}
 
 	public static void register() {
-		NeoForge.EVENT_BUS.addListener((EntityJoinLevelEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(EntityJoinLevelEvent.class, (EntityJoinLevelEvent event) -> {
 			if (!event.getLevel().isClientSide() && event.getEntity() instanceof Villager villager) ensureGender(villager);
 			// a pet adopted in this session got its goal then; one that comes back with its chunk gets it here
 			if (!event.getLevel().isClientSide() && event.loadedFromDisk() && event.getEntity() instanceof TamableAnimal pet) {
@@ -128,7 +128,7 @@ public final class Family {
 				}
 			}
 		});
-		NeoForge.EVENT_BUS.addListener((LivingDeathEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(LivingDeathEvent.class, (LivingDeathEvent event) -> {
 			if (event.getEntity() instanceof Villager villager && villager.level() instanceof ServerLevel level) {
 				// one line a death: how a village loses its people (when, where, doing what) is read off the log
 				net.minecraft.world.entity.Entity killer = event.getSource().getEntity();
@@ -144,7 +144,7 @@ public final class Family {
 			}
 			if (event.getEntity() instanceof TamableAnimal pet && pet.level() instanceof ServerLevel level) Pets.onDeath(level, pet);
 		});
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent.class, (net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent event) -> {
 			// where a town's monsters come from: a siege (EVENT), the dark (NATURAL), a spawner
 			if (event.getEntity() instanceof net.minecraft.world.entity.monster.Enemy && event.getLevel() instanceof ServerLevel level) {
 				BlockPos at = BlockPos.containing(event.getX(), event.getY(), event.getZ());
@@ -159,10 +159,10 @@ public final class Family {
 		});
 		// a villager whose one tick takes more than SLOW_TICK_NANOS: what its brain was doing (/neoforge track only
 		// says which villager and how long, over seconds)
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.EntityTickEvent.Pre event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.tick.EntityTickEvent.Pre.class, (net.neoforged.neoforge.event.tick.EntityTickEvent.Pre event) -> {
 			if (event.getEntity() instanceof Villager && !event.getEntity().level().isClientSide()) tickStarted = System.nanoTime();
 		});
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.EntityTickEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.tick.EntityTickEvent.Post.class, (net.neoforged.neoforge.event.tick.EntityTickEvent.Post event) -> {
 			if (!(event.getEntity() instanceof Villager villager) || !(villager.level() instanceof ServerLevel level)) return;
 			long took = System.nanoTime() - tickStarted;
 			// one line a few seconds at most (it was a time stamp in every slow villager's save)
@@ -176,23 +176,23 @@ public final class Family {
 					villager.getBrain().getMemory(MemoryModuleType.WALK_TARGET).map(target -> target.getTarget().currentBlockPosition().toShortString()).orElse("-"),
 					villager.getNavigation().getPath() == null ? "-" : villager.getNavigation().getPath().getNodeCount() + "n", timeOfDay(level));
 		});
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.village.VillageSiegeEvent event) ->
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.village.VillageSiegeEvent.class, (net.neoforged.neoforge.event.village.VillageSiegeEvent event) ->
 				com.vnap.VillagerLife.trace("vnap siege: 20 zombies at {} time {}", BlockPos.containing(event.getAttemptedSpawnPos()).toShortString(), timeOfDay(com.vnap.Mc.dayTime(event.getLevel()))));
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.LivingConversionEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingConversionEvent.Post.class, (net.neoforged.neoforge.event.entity.living.LivingConversionEvent.Post event) -> {
 			if (event.getEntity() instanceof Villager villager && villager.level() instanceof ServerLevel level) {
 				com.vnap.VillagerLife.LOGGER.info("vnap gone: {} turned into a {} at {} time {}", VillagerHome.nameOf(villager),
 						net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE.getKey(event.getOutcome().getType()), villager.blockPosition().toShortString(), timeOfDay(level));
 			}
 		});
-		NeoForge.EVENT_BUS.addListener(Family::onInteract);
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> tickAll(event.getServer()));
-		NeoForge.EVENT_BUS.addListener((BlockEvent.EntityPlaceEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.PlayerInteractEvent.EntityInteract.class, Family::onInteract);
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> tickAll(event.getServer()));
+		NeoForge.EVENT_BUS.addListener(BlockEvent.EntityPlaceEvent.class, (BlockEvent.EntityPlaceEvent event) -> {
 			if (event.getLevel() instanceof ServerLevel level && event.getEntity() instanceof Player player) {
 				com.vnap.village.home.FamilyRooms.onPlayerPlaced(level, event.getPos(), player);
 			}
 		});
 		// a villager gone for good leaves nothing behind in the maps kept by villager (an unloaded one keeps its place)
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityLeaveLevelEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.EntityLeaveLevelEvent.class, (net.neoforged.neoforge.event.entity.EntityLeaveLevelEvent event) -> {
 			if (!(event.getEntity() instanceof Villager villager) || event.getLevel().isClientSide()) return;
 			net.minecraft.world.entity.Entity.RemovalReason reason = villager.getRemovalReason();
 			if (reason == null || !reason.shouldDestroy()) return;
@@ -203,7 +203,7 @@ public final class Family {
 			CHILD_BEDS.remove(id);
 			WEDDING_STARTED.remove(id);
 		});
-		NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> {
 			com.vnap.village.town.Shelter.clear();
 			NURSERY.clear();
 			WEDDING_STARTED.clear();
@@ -217,7 +217,7 @@ public final class Family {
 			com.vnap.village.town.Music.clear();
 			Pets.clear();
 		});
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent.class, (net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent event) -> {
 			if (event.getEntity() instanceof ServerPlayer player) FamilyEvents.wokeUp(player);
 		});
 	}

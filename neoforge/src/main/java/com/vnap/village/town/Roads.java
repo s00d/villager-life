@@ -794,12 +794,26 @@ public final class Roads extends SavedData {
 		return out;
 	}
 
-	/** Houses, rooms, workshops, the bell's square and the graves: a road goes round them. */
+	/** Houses, rooms, workshops, the bell's square and the graves: a road goes round them (another town's too). */
 	static List<BoundingBox> blocked(ServerLevel level, Network network) {
+		return buildings(level, network, false);
+	}
+
+	/** The town's own buildings, not another's it has about it (a house left half done there): its wall goes round them. */
+	static List<BoundingBox> owned(ServerLevel level, Network network) {
+		return buildings(level, network, true);
+	}
+
+	/** Built or buried by this town: its bell (or the one it was moved from) is the town's. */
+	static boolean townsOwn(Network network, BlockPos bell) {
+		return bell.closerThan(network.bell, TownRules.SPAN);
+	}
+
+	private static List<BoundingBox> buildings(ServerLevel level, Network network, boolean own) {
 		List<BoundingBox> boxes = new ArrayList<>();
 		double reach = Towns.reach(level, network.bell) + 16;
 		for (HouseProject house : VillageMoodSavedData.get(level).houses()) {
-			if (!house.origin.closerThan(network.bell, reach)) continue;
+			if (!house.origin.closerThan(network.bell, reach) || (own && !townsOwn(network, house.bell))) continue;
 			boxes.add(house.footprint(level));
 			if (house.hasRoom()) boxes.add(HouseProject.footprint(house.roomSchematic(level), house.origin, house.rotation));
 		}
@@ -814,7 +828,7 @@ public final class Roads extends SavedData {
 		BoundingBox cemetery = Cemetery.footprint(network);
 		if (cemetery != null) boxes.add(cemetery);
 		for (Graveyard.Grave grave : Graveyard.get(level.getServer()).graves()) {
-			if (grave.pos.closerThan(network.bell, reach)) boxes.add(BoundingBox.fromCorners(grave.pos, grave.pos).inflatedBy(1));
+			if (grave.pos.closerThan(network.bell, reach) && (!own || townsOwn(network, grave.bell))) boxes.add(BoundingBox.fromCorners(grave.pos, grave.pos).inflatedBy(1));
 		}
 		return boxes;
 	}

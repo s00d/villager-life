@@ -96,11 +96,12 @@
 
 | Что | Как |
 |---|---|
+| Forge | Узел `<v>-forge`: `VL_MC=1.21.8-forge` перед `gts.sh` (один сервер), `server.py build|start N` (прод-сервер Forge из установщика, кэш `~/.cache/vl-minecraft/forge-server`, jar мода и MCP для Forge), `prod_client.py start 1.21.8-forge` (portablemc `forge::…`, JEI для Forge) |
 | Инструменты для другой версии | `VL_MC=26.3` перед `gts.sh`, `server.py`, `mcsrc.sh`, `restart.sh`, `client2.sh`, `mcp.py` (по умолчанию 1.21.1) |
 | Собрать / тесты версии | `./gradlew --no-configuration-cache --offline :neoforge:26.3:build`; `VL_MC=26.3 tools/dev/gts.sh`. Новая версия впервые — без `--offline` (скачать NeoForge, зависимости, конфиги запуска). Java 25 для 26.x — тулчейн Gradle сам |
 | Исходники игры версии | `VL_MC=26.3 tools/dev/mcsrc.sh <Класс>` (папка `/tmp/vl-mcsrc-26.3`; исходники NeoForge — распаковать `neoforge-<ver>-sources.jar` из кэша gradle туда же) |
 | Production-клиент версии | `python3 tools/dev/prod_client.py start 26.3 [--server 127.0.0.1:2560N]` (portablemc: `VL_PORTABLEMC` — путь к нему; моды в `run-prod/mods`: наш jar, MCP 0.2.0, EMF/ETF/ESF, JEI; MCP на порту 25583, окно скрыто, `--show` — с окном); MCP — `VL_MCP=$(python3 tools/dev/prod_client.py mcp 26.3)`; закрыть — `stop 26.3`. Dev-клиент MDG с EMF с 1.21.4 падает — живую проверку клиента делать так |
-| Клиент версии целиком | `python3 tools/dev/client_check.py 26.3 [--keep]` — сервер 8 из сида 20261020 (саванна 272 224), клиент, снимки `run-prod/screenshots/<v>-*.png` (житель, книга и её схематик, декор с предметами, доска, станок, лавка с JEI, голем) и строки лога клиента про мод. Смотреть каждый снимок |
+| Клиент версии целиком | `python3 tools/dev/client_check.py 26.3 [--keep]` (Forge — `26.3-forge`) — сервер 8 (другой — `VL_SERVER_N=9`) из сида 20261020 (саванна 272 224), клиент, снимки `run-prod/screenshots/<v>-*.png` (житель, книга и её схематик, декор с предметами, доска, станок, лавка с JEI, голем) и строки лога клиента про мод. Смотреть каждый снимок |
 | Сборка всех версий в CI | `.github/workflows/build.yml` (запуск вручную, по jar-у на версию; галочка — и GameTests) |
 
 Различия версий в коде: `com.vnap.Mc` (сервер), `client/McClient` и `client/Draw` (рисование: буферы до 1.21.8, submit с 1.21.9), `Nbt` (чтение NBT), `gametest/Checks`; переименования классов, пакетов и констант — `stonecutter.replacements` в `neoforge/build.gradle`; данные под версию переписывает сборка (рецепты ≥1.21.2, клиентские предметы ≥1.21.4, сделки ≥26.1, лут ≥26.3, атлас блоков и id предметов ≥1.21.11, enum-расширения).

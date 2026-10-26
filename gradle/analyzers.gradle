@@ -16,6 +16,9 @@ tasks.withType(JavaCompile).configureEach { task ->
         // for every version, the game's code as unannotated
         option('NullAway:UnannotatedSubPackages', 'net.minecraft,com.mojang')
         option('NullAway:ExcludedFieldAnnotations', 'org.spongepowered.asm.mixin.Shadow')
+        // MixinExtras' handlers are called by the mixin, as @Inject's are (those ErrorProne knows already)
+        option('UnusedMethod:ExemptingMethodAnnotations', ['wrapmethod.WrapMethod', 'wrapoperation.WrapOperation', 'ModifyExpressionValue',
+                'ModifyReturnValue', 'ModifyReceiver', 'v2.WrapWithCondition'].collect { "com.llamalad7.mixinextras.injector.${it}" }.join(','))
         error('DeadException')
         error('EqualsGetClass')
         error('ReferenceEquality')

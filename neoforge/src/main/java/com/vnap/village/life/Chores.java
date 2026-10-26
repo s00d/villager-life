@@ -382,7 +382,7 @@ public final class Chores {
         BlockPos at = grass;
         if (flowers >= 3 || at == null) return null;
         return counted(life, Errand.at("flowers", at.above(), new ItemStack(Items.BONE_MEAL), SHORT, SoundEvents.BONE_MEAL_USE, ParticleTypes.HAPPY_VILLAGER, () -> {
-            if (life.take(Items.BONE_MEAL, 1)) net.minecraft.world.item.BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), life.level, at, null);
+            if (life.take(Items.BONE_MEAL, 1)) com.vnap.Mc.boneMeal(life.level, at);
         }));
     }
 

@@ -142,7 +142,7 @@ public final class SpireGearGameTests {
 		made = CoreAnvilMenu.work(player, iron, shards, rootSeal, outcome);
 		Checks.assertTrue(helper, outcome[0] == CoreAnvilMenu.Outcome.DONE && made.is(SpireGearItems.get(GearTier.ROOT, GearPiece.SWORD)),
 				"an iron sword and the Root seal make a Root sword: " + outcome[0] + " " + made);
-		Checks.assertTrue(helper, made.getEnchantmentLevel(sharpness) == 3 && made.getEnchantmentLevel(smite) == 0 && made.getDamageValue() == 0,
+		Checks.assertTrue(helper, Checks.level(made, sharpness) == 3 && Checks.level(made, smite) == 0 && made.getDamageValue() == 0,
 				"its sharpness kept to III, smite gone, wear mended");
 		Checks.assertTrue(helper, 64 - shards.getCount() == SpireGear.craftShards(GearTier.ROOT) && rootSeal.isEmpty(),
 				"it costs the Root price and the seal");
@@ -152,7 +152,7 @@ public final class SpireGearGameTests {
 		shards = new ItemStack(LifeItems.CORE_SHARD, 64);
 		ItemStack archive = CoreAnvilMenu.work(player, made, shards, new ItemStack(SpireGearItems.seal(GearTier.ARCHIVE)), outcome);
 		Checks.assertTrue(helper, archive.is(SpireGearItems.get(GearTier.ARCHIVE, GearPiece.SWORD)) && SpireGear.honed(archive) == 7
-				&& archive.getEnchantmentLevel(sharpness) == 3, "with the Archive seal: an Archive sword, still +7 and sharp");
+				&& Checks.level(archive, sharpness) == 3, "with the Archive seal: an Archive sword, still +7 and sharp");
 		ItemStack summit = new ItemStack(SpireGearItems.get(GearTier.SUMMIT, GearPiece.BOOTS));
 		Checks.assertTrue(helper, CoreAnvilMenu.work(summit, new ItemStack(SpireGearItems.seal(GearTier.SUMMIT))) == CoreAnvilMenu.Work.HONE
 				&& CoreAnvilMenu.nextTier(summit) == null, "nothing above Summit: only honing");
@@ -165,14 +165,14 @@ public final class SpireGearGameTests {
 		ItemStack sword = new ItemStack(SpireGearItems.get(GearTier.HIVE, GearPiece.SWORD));
 		ItemStack helmet = new ItemStack(SpireGearItems.get(GearTier.HIVE, GearPiece.HELMET));
 		ItemStack bow = new ItemStack(SpireGearItems.get(GearTier.HIVE, GearPiece.BOW));
-		Checks.assertTrue(helper, sword.supportsEnchantment(enchantment(helper, Enchantments.SHARPNESS))
-				&& !sword.supportsEnchantment(enchantment(helper, Enchantments.SMITE))
-				&& !sword.supportsEnchantment(enchantment(helper, Enchantments.BANE_OF_ARTHROPODS)), "a sword: sharpness, not smite or bane");
-		Checks.assertTrue(helper, helmet.supportsEnchantment(enchantment(helper, Enchantments.PROTECTION))
-				&& helmet.supportsEnchantment(enchantment(helper, Enchantments.RESPIRATION))
-				&& !helmet.supportsEnchantment(enchantment(helper, Enchantments.SHARPNESS)), "a helmet: protection and respiration");
-		Checks.assertTrue(helper, bow.supportsEnchantment(enchantment(helper, Enchantments.POWER))
-				&& !bow.supportsEnchantment(enchantment(helper, Enchantments.MULTISHOT)), "a bow: power, not multishot");
+		Checks.assertTrue(helper, Checks.supports(sword, enchantment(helper, Enchantments.SHARPNESS))
+				&& !Checks.supports(sword, enchantment(helper, Enchantments.SMITE))
+				&& !Checks.supports(sword, enchantment(helper, Enchantments.BANE_OF_ARTHROPODS)), "a sword: sharpness, not smite or bane");
+		Checks.assertTrue(helper, Checks.supports(helmet, enchantment(helper, Enchantments.PROTECTION))
+				&& Checks.supports(helmet, enchantment(helper, Enchantments.RESPIRATION))
+				&& !Checks.supports(helmet, enchantment(helper, Enchantments.SHARPNESS)), "a helmet: protection and respiration");
+		Checks.assertTrue(helper, Checks.supports(bow, enchantment(helper, Enchantments.POWER))
+				&& !Checks.supports(bow, enchantment(helper, Enchantments.MULTISHOT)), "a bow: power, not multishot");
 		Checks.assertTrue(helper, bow.isEnchantable() && sword.isEnchantable(), "they go on the enchanting table");
 		for (ItemStack stack : new ItemStack[]{sword, helmet, bow}) {
 			everything(helper, stack);
@@ -183,9 +183,9 @@ public final class SpireGearGameTests {
 				Checks.assertTrue(helper, cap > 0 && entry.getIntValue() <= cap, gear.piece() + " keeps " + entry.getKey().getRegisteredName() + " " + entry.getIntValue());
 			}
 		}
-		Checks.assertTrue(helper, sword.getEnchantmentLevel(enchantment(helper, Enchantments.SHARPNESS)) == 3
-				&& sword.getEnchantmentLevel(enchantment(helper, Enchantments.MENDING)) == 1, "sharpness III and mending stay on the sword");
-		Checks.assertTrue(helper, helmet.getEnchantmentLevel(enchantment(helper, Enchantments.PROTECTION)) == 3, "protection III on the helmet");
+		Checks.assertTrue(helper, Checks.level(sword, enchantment(helper, Enchantments.SHARPNESS)) == 3
+				&& Checks.level(sword, enchantment(helper, Enchantments.MENDING)) == 1, "sharpness III and mending stay on the sword");
+		Checks.assertTrue(helper, Checks.level(helmet, enchantment(helper, Enchantments.PROTECTION)) == 3, "protection III on the helmet");
 		helper.succeed();
 	}
 

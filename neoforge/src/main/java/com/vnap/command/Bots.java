@@ -39,7 +39,7 @@ public final class Bots {
     }
 
     static void register() {
-        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> {
+        NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> {
             if (event.getServer().getTickCount() % 20 != 0) return;
             for (ServerPlayer player : event.getServer().getPlayerList().getPlayers()) {
                 if (!isBot(player)) continue;
@@ -71,6 +71,9 @@ public final class Bots {
             GameProfile profile = new GameProfile(UUIDUtil.createOfflinePlayerUUID(name), name);
             bot = new ServerPlayer(server, level, profile, ClientInformation.createDefault());
             BotConnection connection = new BotConnection();
+            //? if forge {
+            /*server.getPlayerList().placeNewPlayer(connection, bot, new CommonListenerCookie(profile, 0, ClientInformation.createDefault(), false));
+            *///?} else
             server.getPlayerList().placeNewPlayer(connection, bot, new CommonListenerCookie(profile, 0, ClientInformation.createDefault(), false, ConnectionType.NEOFORGE));
             connection.player = bot;
         } else if (!isBot(bot)) {

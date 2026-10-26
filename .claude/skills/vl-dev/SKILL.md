@@ -27,7 +27,7 @@ description: Villager Life dev tools — use before any live check in the dev cl
 - Лаги: `/neoforge track start entity 10` → `/neoforge track entity`, `/neoforge tps`, `/perf start|stop`, `jstack <pid>`.
 - Исходники игры: `tools/dev/mcsrc.sh <Класс> | -l <имя> | -g '<regex>'`; миксины — `JAVA_TOOL_OPTIONS='-Dmixin.debug.export=true'`.
 - Логи не обрезать — `rg` по полному файлу.
-- Другие версии Minecraft (1.21.4 … 26.3), только по просьбе: `VL_MC=<v>` у всех инструментов; клиент версии — `python3 tools/dev/client_check.py <v>` (production-клиент через portablemc + MCP-мод из релиза `s00d/minecraft-mcp`, снимки сцен) или `prod_client.py start|stop|mcp <v>`; инструменты MCP — `mc.client.*`/`mc.server.*`.
+- Другие версии Minecraft (1.21.4 … 26.3), только по просьбе: `VL_MC=<v>` у всех инструментов; клиент версии — `python3 tools/dev/client_check.py <v>` (Forge — `<v>-forge`, номер сервера — `VL_SERVER_N`) (production-клиент через portablemc + MCP-мод из релиза `s00d/minecraft-mcp`, снимки сцен) или `prod_client.py start|stop|mcp <v>`; инструменты MCP — `mc.client.*`/`mc.server.*`.
 
 Новый инструмент — записать в `tools/dev/README.md`, в этот навык и в раздел «Инструменты агента» `AGENTS.md`.
 

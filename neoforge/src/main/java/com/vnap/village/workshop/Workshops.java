@@ -96,18 +96,18 @@ public final class Workshops {
     }
 
     public static void register() {
-        NeoForge.EVENT_BUS.addListener((ServerStartingEvent event) -> SCHEMATICS.clear());
+        NeoForge.EVENT_BUS.addListener(ServerStartingEvent.class, (ServerStartingEvent event) -> SCHEMATICS.clear());
         // structures edited in game and saved by a structure block come back on /reload
         //? if >=1.21.4 {
-        /*NeoForge.EVENT_BUS.addListener((AddServerReloadListenersEvent event) -> event.addListener(com.vnap.VillagerLife.id("schematics"),
+        /*NeoForge.EVENT_BUS.addListener(AddServerReloadListenersEvent.class, (AddServerReloadListenersEvent event) -> event.addListener(com.vnap.VillagerLife.id("schematics"),
                 (ResourceManagerReloadListener) manager -> SCHEMATICS.clear()));
         *///?} else {
-        NeoForge.EVENT_BUS.addListener((AddReloadListenerEvent event) ->
+        NeoForge.EVENT_BUS.addListener(AddReloadListenerEvent.class, (AddReloadListenerEvent event) ->
                 event.addListener((ResourceManagerReloadListener) manager -> SCHEMATICS.clear()));
         //?}
         // from 26.1 the trades are data (generateTrades in the build)
         //? if <26.1 {
-        NeoForge.EVENT_BUS.addListener((VillagerTradesEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(VillagerTradesEvent.class, (VillagerTradesEvent event) -> {
             //? if >=1.21.5 {
             /*ResourceLocation key = com.vnap.Mc.id(event.getType());
             *///?} else

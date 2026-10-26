@@ -50,13 +50,14 @@ public final class MegaWork {
 	static final int TEACH_COST = 10;
 	static final int TEACH_XP = 5;
 	/** The beacons of calm standing whole now (they count themselves in at their look, out when they go dark). */
-	private static final Set<GlobalPos> CALM = new HashSet<>();
+	// read by FinalizeSpawn, which comes from the world generation threads too
+	private static final Set<GlobalPos> CALM = java.util.concurrent.ConcurrentHashMap.newKeySet();
 
 	private MegaWork() {
 	}
 
 	public static void listen() {
-		NeoForge.EVENT_BUS.addListener((FinalizeSpawnEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(FinalizeSpawnEvent.class, (FinalizeSpawnEvent event) -> {
 			if (!(event.getEntity() instanceof net.minecraft.world.entity.monster.Enemy) || CALM.isEmpty()) return;
 			String why = event.getSpawnType().name();
 			// the world's own births only: a spawner, an egg, a command, a raid, a run's guards are not the beacon's to stop
@@ -179,7 +180,7 @@ public final class MegaWork {
 		AABB reach = new AABB(well.getBlockPos()).inflate(WELL_REACH);
 		List<ExperienceOrb> orbs = level.getEntitiesOfClass(ExperienceOrb.class, reach);
 		for (ExperienceOrb orb : orbs) {
-			well.store = Math.min(WELL_HOLDS, well.store + orb.getValue());
+			well.store = Math.min(WELL_HOLDS, well.store + orb.getValue() * ((com.vnap.mixin.ExperienceOrbAccessor) orb).vnap$count());
 			level.sendParticles(ParticleTypes.ENCHANT, orb.getX(), orb.getY(), orb.getZ(), 6, 0.2, 0.2, 0.2, 0.3);
 			orb.discard();
 		}

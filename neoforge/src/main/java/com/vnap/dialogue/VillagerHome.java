@@ -165,16 +165,18 @@ public final class VillagerHome {
 		// slept in) is handed to anyone by vanilla, and two then remembered the one bed: each night one of them found
 		// it taken, lost its home and walked the dark. Whoever took the ticket of a bed with an owner gives it back
 		// (awake: it finds another bed by day, not woken in the dark).
-		if (FamilyHome.taken(level, head)) {
-			for (Villager other : level.getEntitiesOfClass(Villager.class, new net.minecraft.world.phys.AABB(head).inflate(SQUATTER_RANGE),
-					other -> !other.getUUID().equals(villager.getUUID()) && !other.isSleeping() && other.getBrain().getMemory(MemoryModuleType.HOME)
-							.filter(home -> home.dimension().equals(level.dimension()) && home.pos().equals(head)).isPresent())) {
-				other.getBrain().eraseMemory(MemoryModuleType.HOME);
-				level.getPoiManager().release(head);
-			}
-		}
+		if (FamilyHome.taken(level, head)) squattersOut(level, villager, head);
 		if (!FamilyHome.taken(level, head)) FamilyHome.take(level, head);
 		return head;
+	}
+
+	private static void squattersOut(ServerLevel level, Villager villager, BlockPos head) {
+		for (Villager other : level.getEntitiesOfClass(Villager.class, new net.minecraft.world.phys.AABB(head).inflate(SQUATTER_RANGE),
+				other -> !other.getUUID().equals(villager.getUUID()) && !other.isSleeping() && other.getBrain().getMemory(MemoryModuleType.HOME)
+						.filter(home -> home.dimension().equals(level.dimension()) && home.pos().equals(head)).isPresent())) {
+			other.getBrain().eraseMemory(MemoryModuleType.HOME);
+			level.getPoiManager().release(head);
+		}
 	}
 
 	/**
@@ -398,6 +400,8 @@ public final class VillagerHome {
 		if (sign == null) return false;
 		data.vnap$setHomeBed(saved);
 		villager.getBrain().setMemory(MemoryModuleType.HOME, GlobalPos.of(level.dimension(), saved));
+		// a neighbour who remembered it (vanilla gave it out before the sign went up) looks for another now, not at the owner's next tick
+		squattersOut(level, villager, saved);
 		FamilyHome.take(level, saved);
 		Family.onClaim(villager, saved, sign);
 		say(villager, "life_home");

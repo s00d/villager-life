@@ -41,59 +41,59 @@ public final class ExpandEvents {
     private ExpandEvents() {}
 
     public static void register() {
-        NeoForge.EVENT_BUS.addListener((ItemFishedEvent event) ->
+        NeoForge.EVENT_BUS.addListener(ItemFishedEvent.class, (ItemFishedEvent event) ->
                 observe(event.getEntity(), "Catch a Fish"));
 
-        NeoForge.EVENT_BUS.addListener((AnimalTameEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(AnimalTameEvent.class, (AnimalTameEvent event) -> {
             if (event.getTamer() != null) observe(event.getTamer(), "Tame an Animal");
         });
 
-        NeoForge.EVENT_BUS.addListener((LivingUseTotemEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(LivingUseTotemEvent.class, (LivingUseTotemEvent event) -> {
             if (event.getEntity() instanceof Player player) observe(player, "Use a Totem of Undying");
         });
 
-        NeoForge.EVENT_BUS.addListener((LivingShieldBlockEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(LivingShieldBlockEvent.class, (LivingShieldBlockEvent event) -> {
             if (event.getEntity() instanceof Player player && event.getBlocked()) {
                 observe(player, "Block with a Shield");
             }
         });
 
-        NeoForge.EVENT_BUS.addListener((ArrowNockEvent event) ->
+        NeoForge.EVENT_BUS.addListener(ArrowNockEvent.class, (ArrowNockEvent event) ->
                 observe(event.getEntity(), "Draw a Bow"));
 
-        NeoForge.EVENT_BUS.addListener((BonemealEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(BonemealEvent.class, (BonemealEvent event) -> {
             if (event.getPlayer() != null && !event.getLevel().isClientSide() && event.isValidBonemealTarget()) {
                 observe(event.getPlayer(), "Use Bone Meal");
             }
         });
 
         //? if >=1.21.5 {
-        /*NeoForge.EVENT_BUS.addListener((AnvilCraftEvent.Post event) ->
+        /*NeoForge.EVENT_BUS.addListener(AnvilCraftEvent.Post.class, (AnvilCraftEvent.Post event) ->
                 observe(event.getEntity(), "Repair on an Anvil"));
         *///?} else {
-        NeoForge.EVENT_BUS.addListener((AnvilRepairEvent event) ->
+        NeoForge.EVENT_BUS.addListener(AnvilRepairEvent.class, (AnvilRepairEvent event) ->
                 observe(event.getEntity(), "Repair on an Anvil"));
         //?}
 
-        NeoForge.EVENT_BUS.addListener((PlayerEnchantItemEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerEnchantItemEvent.class, (PlayerEnchantItemEvent event) ->
                 observe(event.getEntity(), "Enchant an Item"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerXpEvent.PickupXp event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerXpEvent.PickupXp.class, (PlayerXpEvent.PickupXp event) ->
                 observe(event.getEntity(), "Pick Up XP"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerChangedDimensionEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerChangedDimensionEvent.class, (PlayerEvent.PlayerChangedDimensionEvent event) ->
                 observe(event.getEntity(), "Change Dimension"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerRespawnEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerRespawnEvent.class, (PlayerEvent.PlayerRespawnEvent event) ->
                 observe(event.getEntity(), "Respawn After Death"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerEvent.ItemSmeltedEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerEvent.ItemSmeltedEvent.class, (PlayerEvent.ItemSmeltedEvent event) ->
                 observe(event.getEntity(), "Take Smelted Items"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerEvent.ItemCraftedEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerEvent.ItemCraftedEvent.class, (PlayerEvent.ItemCraftedEvent event) ->
                 observe(event.getEntity(), "Craft an Item Nearby"));
 
-        NeoForge.EVENT_BUS.addListener((EntityMountEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(EntityMountEvent.class, (EntityMountEvent event) -> {
             if (!event.isMounting()) return;
             Entity mounting = event.getEntityMounting();
             if (!(mounting instanceof Player player)) return;
@@ -106,30 +106,30 @@ public final class ExpandEvents {
             else observe(player, "Mount a Mob");
         });
 
-        NeoForge.EVENT_BUS.addListener((NoteBlockEvent.Play event) -> {
+        NeoForge.EVENT_BUS.addListener(NoteBlockEvent.Play.class, (NoteBlockEvent.Play event) -> {
             if (!(event.getLevel() instanceof ServerLevel level)) return;
             ServerPlayer nearest = nearestPlayer(level, Vec3.atCenterOf(event.getPos()), 24.0);
             if (nearest != null) WorldEvents.observe(nearest, Vec3.atCenterOf(event.getPos()),
                     "Play a Note Block", false);
         });
 
-        NeoForge.EVENT_BUS.addListener((ItemTossEvent event) ->
+        NeoForge.EVENT_BUS.addListener(ItemTossEvent.class, (ItemTossEvent event) ->
                 observe(event.getPlayer(), "Throw an Item"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerDestroyItemEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerDestroyItemEvent.class, (PlayerDestroyItemEvent event) ->
                 observe(event.getEntity(), "Tool Breaks"));
 
-        NeoForge.EVENT_BUS.addListener((PlayerBrewedPotionEvent event) ->
+        NeoForge.EVENT_BUS.addListener(PlayerBrewedPotionEvent.class, (PlayerBrewedPotionEvent event) ->
                 observe(event.getEntity(), "Brew a Potion"));
 
-        NeoForge.EVENT_BUS.addListener((CriticalHitEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(CriticalHitEvent.class, (CriticalHitEvent event) -> {
             if (event.isCriticalHit()) observe(event.getEntity(), "Land a Critical Hit");
         });
 
-        NeoForge.EVENT_BUS.addListener((SweepAttackEvent event) ->
+        NeoForge.EVENT_BUS.addListener(SweepAttackEvent.class, (SweepAttackEvent event) ->
                 observe(event.getEntity(), "Sweep Attack"));
 
-        NeoForge.EVENT_BUS.addListener((EntityStruckByLightningEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(EntityStruckByLightningEvent.class, (EntityStruckByLightningEvent event) -> {
             Entity hit = event.getEntity();
             if (!(hit.level() instanceof ServerLevel level)) return;
             Player nearest = nearestPlayer(level, hit.position(), 32.0);
@@ -138,7 +138,7 @@ public final class ExpandEvents {
             }
         });
 
-        NeoForge.EVENT_BUS.addListener((BabyEntitySpawnEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(BabyEntitySpawnEvent.class, (BabyEntitySpawnEvent event) -> {
             LivingEntity child = event.getChild();
             if (child == null || child instanceof Villager) return; // existing villager baby lines
             Player player = event.getCausedByPlayer();

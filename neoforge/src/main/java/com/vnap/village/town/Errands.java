@@ -121,7 +121,7 @@ public final class Errands extends SavedData {
 	}
 
 	public static void register() {
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> {
 			MinecraftServer server = event.getServer();
 			if (server.getTickCount() % HINT_EVERY == 0) hints(server);
 		});

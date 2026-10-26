@@ -15,7 +15,7 @@ public final class ShopEvents {
 	}
 
 	public static void register() {
-		NeoForge.EVENT_BUS.addListener((PlayerInteractEvent.EntityInteract event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerInteractEvent.EntityInteract.class, (PlayerInteractEvent.EntityInteract event) -> {
 			if (com.vnap.Mc.tags(event.getTarget()).contains(Caravan.TAG)) {
 				event.setCanceled(true);
 				event.setCancellationResult(InteractionResult.SUCCESS);
@@ -30,10 +30,10 @@ public final class ShopEvents {
 			event.setCanceled(true);
 			event.setCancellationResult(InteractionResult.SUCCESS);
 		});
-		NeoForge.EVENT_BUS.addListener((ItemEntityPickupEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(ItemEntityPickupEvent.Post.class, (ItemEntityPickupEvent.Post event) -> {
 			if (Coins.isCoin(event.getOriginalStack())) Coins.consolidate(event.getPlayer());
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerTickEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerTickEvent.Post.class, (PlayerTickEvent.Post event) -> {
 			if (!event.getEntity().level().isClientSide() && event.getEntity().tickCount % 40 == 0) Coins.consolidate(event.getEntity());
 		});
 	}

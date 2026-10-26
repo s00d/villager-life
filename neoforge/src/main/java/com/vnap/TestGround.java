@@ -87,7 +87,15 @@ public final class TestGround {
         java.util.function.Predicate<net.minecraft.core.BlockPos> inside = pos -> bounds.contains(Vec3.atCenterOf(pos));
         com.vnap.village.home.Mayors.get(server).offices().removeIf(office -> inside.test(office.bell));
         com.vnap.village.town.Roads.get(server).networks().removeIf(network -> inside.test(network.bell));
-        com.vnap.mood.VillageMoodSavedData.get(level).houses().removeIf(house -> inside.test(house.bell) || inside.test(house.origin));
+        // a house by its town's bell, as the offices and roads: a town's house may stand beyond its test's ground, on the
+        // ground of the test beside it, whose start or end took it away from under it
+        com.vnap.mood.VillageMoodSavedData.get(level).houses().removeIf(house -> inside.test(house.bell));
+        // a village's mood and its rite: an earlier test on this ground leaves them under the same meeting point
+        com.vnap.mood.VillageMoodSavedData.get(level).all().removeIf(state -> {
+            if (!inside.test(state.meetingPos)) return false;
+            com.vnap.village.script.VillageScriptDirector.forgetRunning(level, state.villageId);
+            return true;
+        });
         com.vnap.village.home.Placements.get(server).jobs().removeIf(job -> inside.test(job.pos()));
         com.vnap.village.market.Shops.get(server).shops().removeIf(shop -> inside.test(shop.bell));
     }

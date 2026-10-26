@@ -51,7 +51,8 @@ public final class StaffClient {
             }
 
             @Override
-            //? if >=26.3 {
+            // NeoForge hands the player's render state from 26.3; Forge still the local player
+            //? if >=26.3 && neoforge {
             /*public boolean applyForgeHandTransform(PoseStack pose, net.minecraft.client.renderer.state.level.PlayerRenderState state, HumanoidArm arm,
                     ItemStack stack, float partialTick, float equipProcess, float swingProcess) {
                 // the hand drawn in first person is the local player's

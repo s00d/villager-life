@@ -118,13 +118,13 @@ public final class TocsinGolemRenderer extends MobRenderer<TocsinGolem, TocsinGo
         public void submit(PoseStack poseStack, net.minecraft.client.renderer.SubmitNodeCollector nodes, int light, LivingEntityRenderState state,
                 float yRot, float xRot) {
             TocsinGolem golem = RenderedEntity.of(state, TocsinGolem.class);
-            if (golem != null) glow(poseStack, new Draw(nodes), golem, state, state.partialTick, state.ageInTicks);
+            if (golem != null) glow(poseStack, new Draw(nodes), golem, state, com.vnap.client.RenderedEntity.partialTick(state), state.ageInTicks);
         }
         *///?} else if >=1.21.2 {
         /*@Override
         public void render(PoseStack poseStack, MultiBufferSource buffers, int light, LivingEntityRenderState state, float yRot, float xRot) {
             TocsinGolem golem = RenderedEntity.of(state, TocsinGolem.class);
-            if (golem != null) glow(poseStack, new Draw(buffers), golem, state, state.partialTick, state.ageInTicks);
+            if (golem != null) glow(poseStack, new Draw(buffers), golem, state, com.vnap.client.RenderedEntity.partialTick(state), state.ageInTicks);
         }
         *///?} else {
         @Override

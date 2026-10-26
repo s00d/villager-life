@@ -54,43 +54,43 @@ public final class MoodHooks {
 
     public static void register() {
         // game times of the last world: in the next singleplayer world they would block the bonus for a long while
-        NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> {
             BELL_CD.clear();
             TRADE_CD.clear();
             DAMAGE.clear();
         });
-        NeoForge.EVENT_BUS.addListener((LivingDeathEvent event) -> onDeath(event));
+        NeoForge.EVENT_BUS.addListener(LivingDeathEvent.class, (LivingDeathEvent event) -> onDeath(event));
         // a zombie villager cured (the only way one turns back into a villager)
-        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.LivingConversionEvent.Post event) -> {
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingConversionEvent.Post.class, (net.neoforged.neoforge.event.entity.living.LivingConversionEvent.Post event) -> {
             if (event.getEntity() instanceof net.minecraft.world.entity.monster.ZombieVillager && event.getOutcome() instanceof Villager cured
                     && cured.level() instanceof ServerLevel level) onCure(level, cured.blockPosition());
         });
         // a raid beaten: every player who fought it is given the Hero of the Village
-        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added event) -> {
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added.class, (net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added event) -> {
             if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer hero && event.getEffectInstance().is(net.minecraft.world.effect.MobEffects.HERO_OF_THE_VILLAGE)
                     && com.vnap.Mc.levelOf(hero) instanceof ServerLevel level && event.getOldEffectInstance() == null) onRaidVictory(level, hero.blockPosition());
         });
-        NeoForge.EVENT_BUS.addListener((EntityJoinLevelEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(EntityJoinLevelEvent.class, (EntityJoinLevelEvent event) -> {
             if (VillagerHome.placingOwnPainting()) return;
             // a painting the player hangs, not one that comes back with its chunk
             if (!(event.getEntity() instanceof Painting painting) || event.loadedFromDisk()) return;
             if (!(event.getLevel() instanceof ServerLevel level)) return;
             VillagerHome.onPainting(level, painting.blockPosition(), com.vnap.dialogue.Family.day(level));
         });
-        NeoForge.EVENT_BUS.addListener((BlockEvent.BreakEvent event) -> onBreak(event));
-        NeoForge.EVENT_BUS.addListener((BlockEvent.EntityPlaceEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(BlockEvent.BreakEvent.class, (BlockEvent.BreakEvent event) -> onBreak(event));
+        NeoForge.EVENT_BUS.addListener(BlockEvent.EntityPlaceEvent.class, (BlockEvent.EntityPlaceEvent event) -> {
             if (wakesHomes(event.getPlacedBlock())) VillagerHome.noteStructureChange();
             if (event.getEntity() instanceof Player player && event.getLevel() instanceof ServerLevel level) {
                 restored(level, player, event.getPos(), event.getPlacedBlock());
             }
         });
-        NeoForge.EVENT_BUS.addListener((ExplosionEvent.Detonate event) -> {
+        NeoForge.EVENT_BUS.addListener(ExplosionEvent.Detonate.class, (ExplosionEvent.Detonate event) -> {
             // only the player's blast: a creeper that blows up on its own is not the player's doing
             if (event.getLevel() instanceof ServerLevel level && event.getExplosion().getIndirectSourceEntity() instanceof Player) {
                 VillageMoodApi.applyAt(level, BlockPos.containing(event.getExplosion().center()), -18.0F, -10.0F, "explode");
             }
         });
-        NeoForge.EVENT_BUS.addListener((PlayerInteractEvent.RightClickBlock event) -> {
+        NeoForge.EVENT_BUS.addListener(PlayerInteractEvent.RightClickBlock.class, (PlayerInteractEvent.RightClickBlock event) -> {
             if (!(event.getLevel() instanceof ServerLevel level)) {
                 return;
             }

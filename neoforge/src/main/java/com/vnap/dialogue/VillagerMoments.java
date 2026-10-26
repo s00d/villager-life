@@ -65,10 +65,18 @@ final class VillagerMoments {
 		POCKETS.put(villager.getUUID(), pockets(villager));
 	}
 
+	/**
+	 * In a wall, asked only of a villager whose chunk is ready: one of a village being generated comes into the world
+	 * while its chunk is still being made, and a look at the blocks then waits for that same chunk for ever (Forge).
+	 */
+	private static boolean walled(Villager villager) {
+		return villager.level().getChunkSource().getChunkNow(villager.getBlockX() >> 4, villager.getBlockZ() >> 4) != null && villager.isInWall();
+	}
+
 	private static Look look(Villager villager, boolean working) {
 		Component custom = villager.hasCustomName() ? villager.getCustomName() : null;
 		return new Look(villager.isBaby(), profession(villager), com.vnap.Mc.villagerLevel(villager.getVillagerData()), working,
-				custom == null ? "" : custom.getString(), villager.isInWall());
+				custom == null ? "" : custom.getString(), walled(villager));
 	}
 
 	private static Map<String, Integer> pockets(Villager villager) {

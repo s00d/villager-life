@@ -2,6 +2,7 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven { url = 'https://maven.neoforged.net/releases' }
+        maven { url = 'https://maven.minecraftforge.net' }
     }
 }
 
@@ -12,13 +13,16 @@ plugins {
 
 rootProject.name = 'villager-life'
 
-// Every supported Minecraft version is a Stonecutter node: neoforge/versions/<version>/gradle.properties.
-// The sources stay as 1.21.1 sees them (vcsVersion); the other versions build from Stonecutter's processed copy.
+// Every supported Minecraft version is a Stonecutter node: neoforge/versions/<version>/gradle.properties for NeoForge,
+// neoforge/versions/<version>-forge for Forge (build-forge.gradle; //? if forge in the sources). The sources stay as
+// NeoForge 1.21.1 sees them (vcsVersion); the other nodes build from Stonecutter's processed copy.
 stonecutter {
     kotlinController = false
     centralScript = 'build.gradle'
     create('neoforge') {
         versions '1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3'
+        versions(['1.21.1-forge': '1.21.1', '1.21.4-forge': '1.21.4', '1.21.8-forge': '1.21.8', '1.21.11-forge': '1.21.11',
+                  '26.1.2-forge': '26.1.2', '26.2-forge': '26.2', '26.3-forge': '26.3']).buildscript 'build-forge.gradle'
         vcsVersion = '1.21.1'
     }
 }

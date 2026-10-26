@@ -37,7 +37,16 @@ public final class SchematicPreview {
         float extent = Math.max(Math.max(spec.sizeX, spec.sizeZ) * 1.42F, spec.sizeY * 1.2F);
         float scale = Math.min(width, height) / extent * 0.95F;
         float spin = (float) ((System.currentTimeMillis() % 24000L) / 24000.0 * 360.0);
-        //? if >=1.21.6 {
+        //? if >=26.2 && forge {
+        /*// the game's own GUI state (the extractor keeps it to itself on Forge)
+        Minecraft.getInstance().gameRenderer.gameRenderState().guiRenderState.addPicturesInPictureState(
+                new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
+        *///?} else if >=26.1 && forge {
+        /*Minecraft.getInstance().gameRenderer.getGameRenderState().guiRenderState.addPicturesInPictureState(
+                new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
+        *///?} else if >=1.21.6 && forge {
+        /*graphics.getRenderState().submitPicturesInPictureState(new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
+        *///?} else if >=1.21.6 {
         /*graphics.submitPictureInPictureRenderState(new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
         *///?} else {
         PoseStack pose = graphics.pose();
@@ -108,7 +117,7 @@ public final class SchematicPreview {
             pose.pushPose();
             pose.translate(placed.rel().getX(), placed.rel().getY(), placed.rel().getZ());
             var block = new net.minecraft.client.renderer.block.BlockModelRenderState();
-            Minecraft.getInstance().getBlockModelResolver().update(block, placed.state(), net.minecraft.client.renderer.block.model.BlockDisplayContext.create());
+            McClient.blockModel(block, placed.state());
             block.submit(pose, nodes, FULL_BRIGHT, OverlayTexture.NO_OVERLAY, 0);
             pose.popPose();
         }
@@ -173,8 +182,10 @@ public final class SchematicPreview {
             pose.translate(placed.rel().getX(), placed.rel().getY(), placed.rel().getZ());
             //? if >=26.1 {
             /*var block = new net.minecraft.client.renderer.block.BlockModelRenderState();
-            Minecraft.getInstance().getBlockModelResolver().update(block, placed.state(), net.minecraft.client.renderer.block.model.BlockDisplayContext.create());
+            McClient.blockModel(block, placed.state());
             block.submit(pose, features.getSubmitNodeStorage(), FULL_BRIGHT, OverlayTexture.NO_OVERLAY, 0);
+            *///?} else if >=1.21.5 && forge {
+            /*McClient.block(blocks, placed.state(), pose, buffers, FULL_BRIGHT, OverlayTexture.NO_OVERLAY);
             *///?} else if >=1.21.5 {
             /*blocks.renderSingleBlock(placed.state(), pose, buffers, FULL_BRIGHT, OverlayTexture.NO_OVERLAY,
                     net.minecraft.world.level.EmptyBlockAndTintGetter.INSTANCE, net.minecraft.core.BlockPos.ZERO);

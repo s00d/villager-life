@@ -954,9 +954,6 @@ public final class GuideScreen extends Screen {
         return null;
     }
 
-    private static List<ItemStack> stacks(Ingredient ingredient) {
-        return ingredient.getValues().stream().map(ItemStack::new).toList();
-    }
     *///?} else {
     private @Nullable Grid grid(ResourceLocation id, net.minecraft.core.HolderLookup.Provider registries) {
         Recipe<?> recipe = minecraft == null || minecraft.level == null ? null
@@ -968,6 +965,17 @@ public final class GuideScreen extends Screen {
         return new Grid(recipe.getResultItem(registries), cells, columns);
     }
     //?}
+    // an ingredient's items: NeoForge's getValues (items() is deprecated), on Forge what the ingredient displays
+    //? if >=1.21.2 && forge {
+    /*private static List<ItemStack> stacks(Ingredient ingredient) {
+        var level = net.minecraft.client.Minecraft.getInstance().level;
+        return level == null ? List.of() : ingredient.display().resolveForStacks(net.minecraft.world.item.crafting.display.SlotDisplayContext.fromLevel(level));
+    }
+    *///?} else if >=1.21.2 {
+    /*private static List<ItemStack> stacks(Ingredient ingredient) {
+        return ingredient.getValues().stream().map(ItemStack::new).toList();
+    }
+    *///?}
 
     static ItemStack stack(String id) {
         ResourceLocation key = ResourceLocation.tryParse(id);

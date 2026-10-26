@@ -25,7 +25,7 @@ public final class Herd {
     }
 
     public static void register() {
-        NeoForge.EVENT_BUS.addListener((BabyEntitySpawnEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(BabyEntitySpawnEvent.class, (BabyEntitySpawnEvent event) -> {
             Mob parent = event.getParentA();
             if (event.getChild() instanceof Animal child && com.vnap.Mc.tags(parent).contains(TAG)) {
                 adopt(child, BlockPos.of(Nbt.getLong(parent.getPersistentData(), OWNER)));

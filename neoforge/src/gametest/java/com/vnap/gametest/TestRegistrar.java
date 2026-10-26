@@ -81,7 +81,7 @@ public final class TestRegistrar {
 			TestData<Holder<TestEnvironmentDefinition>> data = new TestData<>(batch,
 					ResourceLocation.fromNamespaceAndPath(VillagerLife.MOD_ID, test.spec().template()), test.spec().timeoutTicks(), 0,
 					test.spec().required(), Rotation.NONE, false, 1, 1, test.spec().skyAccess());
-			event.registerTest(test.id(), new FunctionGameTestInstance(ResourceKey.create(Registries.TEST_FUNCTION, test.id()), data));
+			event.registerTest(test.id(), info -> new FunctionGameTestInstance(ResourceKey.create(Registries.TEST_FUNCTION, test.id()), info), data);
 		}
 	}
 

@@ -50,7 +50,7 @@ public final class Hands {
     static final int UP = 32;
     static final int SWING_EVERY = 7;
     private static final int WALK_LIMIT = 200;
-    private static final int STUCK_AFTER = 4;
+    private static final int STUCK_AFTER = 20;
     private static final int WAIT_LIMIT = 60;
     /**
      * Spots looked for in one path search, nearest first: fewer than 8 left the high parts of a hall with nowhere to
@@ -260,8 +260,8 @@ public final class Hands {
         job.defer(villager, block);
         phase = Phase.PICK;
         timer = 0;
-        // the last block or two of a build are put off by a passing body as easily as by no way there: a few tries
-        // before the build waits a whole day
+        // the last block or two of a build are put off by a passing body: a villager idling in the last cell of a
+        // yard's hedge for a few seconds stopped the yard for the day; about a minute of it before the build waits
         if (++deferred >= Math.max(job.remaining(), STUCK_AFTER)) {
             deferred = 0;
             return Result.STUCK;

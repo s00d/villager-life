@@ -8,6 +8,9 @@
   python3 tools/dev/server.py stop N                         /vnap save, /stop, wait for the process
   python3 tools/dev/server.py status
 
+A Forge node (VL_MC=1.21.8-forge) runs the production Forge server (its installer's, cached in
+~/.cache/vl-minecraft/forge-server/<version>) with the mod's built jar and the MCP mod's Forge jar instead of the dev server.
+
 Instance N lives in neoforge/versions/1.21.1/run/servers/N (world/, config/ copied from run/), plays on port 25600+N,
 RCON on 25700+N, the MCP mod on 25800+N; its whole output goes to /tmp/vl-server-N.log (what deaths.py and scenario.py --server N read); each start is added to it after a ===== line.
 The world is copied from run/saves/NAME (default "New World") on the first start or with --fresh; the client must
@@ -32,6 +35,31 @@ RUN = NODE / "run"
 LAUNCH = NODE / "build/moddev/runServer.sh"
 PASSWORD = "vl"
 JAVA_HOME = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
+FORGE = MC.endswith("-forge")
+JAVAS = {"21": JAVA_HOME, "25": "/opt/homebrew/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home"}
+
+
+def node_props() -> dict[str, str]:
+    text = (NODE / "gradle.properties").read_text()
+    return dict(line.split("=", 1) for line in text.splitlines() if "=" in line and not line.startswith("#"))
+
+
+def forge_server() -> Path:
+    """Forge's production server of this node, installed once by its installer."""
+    p = node_props()
+    version = f"{p['minecraft_version']}-{p['forge_version']}"
+    dir_ = Path.home() / ".cache/vl-minecraft/forge-server" / version
+    if not (dir_ / "libraries/net/minecraftforge/forge" / version / "unix_args.txt").exists():
+        import urllib.request
+        dir_.mkdir(parents=True, exist_ok=True)
+        # Forge's maven turns away a request without a user agent (403)
+        request = urllib.request.Request(f"https://maven.minecraftforge.net/net/minecraftforge/forge/{version}/forge-{version}-installer.jar",
+                                         headers={"User-Agent": "villager-life-dev"})
+        with urllib.request.urlopen(request) as answer:
+            (dir_ / "installer.jar").write_bytes(answer.read())
+        subprocess.run([JAVAS[p["java_version"]] + "/bin/java", "-jar", "installer.jar", "--installServer", "."], cwd=dir_,
+                       stdout=open(dir_ / "install.log", "w"), stderr=subprocess.STDOUT, check=True)
+    return dir_
 
 
 def home(n: int) -> Path:
@@ -136,10 +164,12 @@ def pid(n: int) -> int | None:
 
 def build() -> int:
     env = dict(os.environ, JAVA_HOME=JAVA_HOME)
+    tasks = [f":neoforge:{MC}:jar"] if FORGE else [f":neoforge:{MC}:classes", f":neoforge:{MC}:gametestClasses", f":neoforge:{MC}:createServerLaunchScript"]
     with open("/tmp/vl-server-build.log", "w") as out:
-        code = subprocess.run(["./gradlew", "--no-configuration-cache", "--offline", f":neoforge:{MC}:classes",
-                               f":neoforge:{MC}:gametestClasses", f":neoforge:{MC}:createServerLaunchScript"],
+        code = subprocess.run(["./gradlew", "--no-configuration-cache", "--offline", *tasks],
                               cwd=ROOT, env=env, stdout=out, stderr=subprocess.STDOUT).returncode
+    if code == 0 and FORGE:
+        forge_server()
     print("build", "ok" if code == 0 else "FAILED, see /tmp/vl-server-build.log")
     return code
 
@@ -194,7 +224,7 @@ def start(n: int, args: list[str]) -> int:
     if alive(n):
         print(f"server {n} is already up")
         return 1
-    if not LAUNCH.exists():
+    if not FORGE and not LAUNCH.exists():
         print(f"no {LAUNCH}: run 'server.py build' first")
         return 1
     dir_ = home(n)
@@ -215,15 +245,23 @@ def start(n: int, args: list[str]) -> int:
     # the dev client's other mods, those a server has too (Patchouli's channels are required both ways: a client
     # with it was turned away from a server without it, "Incompatible client!"); the MCP mod comes from below
     (dir_ / "mods").mkdir(parents=True, exist_ok=True)
-    for jar in (RUN / "mods").glob("*.jar"):
-        if not jar.name.startswith("minecraft_mcp"):
+    if FORGE:
+        # the production server: the mod's built jar (English voice) and the MCP mod's Forge jar, nothing of the dev runs
+        for old in (dir_ / "mods").glob("*.jar"):
+            old.unlink()
+        game = node_props()["minecraft_version"]
+        shutil.copy2(next((NODE / "build/libs").glob("villager-life-forge-*-en.jar")), dir_ / "mods")
+        shutil.copy2(sorted((Path.home() / ".cache/vl-minecraft/mcp").glob(f"minecraft_mcp-forge-*+{game}.jar"))[-1], dir_ / "mods")
+    else:
+        for jar in (RUN / "mods").glob("*.jar"):
+            if not jar.name.startswith("minecraft_mcp"):
+                shutil.copy2(jar, dir_ / "mods" / jar.name)
+        # the MCP mod of the release the production clients use (prod_client.py), when there is one: its channels must match
+        for old in (dir_ / "mods").glob("minecraft_mcp*.jar"):
+            old.unlink()
+        release = sorted((Path.home() / ".cache/vl-minecraft/mcp").glob(f"minecraft_mcp-neoforge-*+{MC}.jar"))
+        for jar in (release[-1:] or [j for j in (RUN / "mods").glob("minecraft_mcp*.jar")]):
             shutil.copy2(jar, dir_ / "mods" / jar.name)
-    # the MCP mod of the release the production clients use (prod_client.py), when there is one: its channels must match
-    for old in (dir_ / "mods").glob("minecraft_mcp*.jar"):
-        old.unlink()
-    release = sorted((Path.home() / ".cache/vl-minecraft/mcp").glob(f"minecraft_mcp-neoforge-*+{MC}.jar"))
-    for jar in (release[-1:] or [j for j in (RUN / "mods").glob("minecraft_mcp*.jar")]):
-        shutil.copy2(jar, dir_ / "mods" / jar.name)
     (dir_ / "server.properties").write_text(properties(n, seed))
     if not bot:
         # the clients' players operators from the start, by their offline UUIDs: "op Dev2" asks Mojang for the name
@@ -237,15 +275,26 @@ def start(n: int, args: list[str]) -> int:
         (dir_ / "ops.json").write_text(json.dumps([{"uuid": offline(name), "name": name, "level": 4, "bypassesPlayerLimit": False}
                                                    for name in ("Dev", "Dev2")], indent=2))
     (dir_ / "eula.txt").write_text("eula=true\n")
-    # the command gradle wrote, run from this instance's folder; the marker lets pgrep find the process
-    line = next(row for row in LAUNCH.read_text().splitlines() if "exec " in row)
-    command = shlex.split(line.split("exec ", 1)[1].rstrip(")"))
-    # the launch file keeps the java it was written with; Homebrew moves java on each update
-    if not Path(command[0]).exists():
-        command[0] = JAVA_HOME + "/bin/java"
-    # the MCP mod listens on one fixed port per game: each server its own
-    command[1:1] = [f"-Xmx{xmx}", f"-Dvl.server={n}", f"-DminecraftMcp.endpoint.port={25800 + n}"]
-    command = snapshot(dir_, command)
+    if FORGE:
+        # Forge's own launch (run.sh's): its libraries linked into the instance, which has the world, mods and config
+        installed = forge_server()
+        p = node_props()
+        # and the shim jar its arguments name (Forge 1.20.4 on): relative to the instance
+        for part in [installed / "libraries", *installed.glob("*-shim.jar")]:
+            if not (dir_ / part.name).exists():
+                (dir_ / part.name).symlink_to(part)
+        command = [JAVAS[p["java_version"]] + "/bin/java", f"-Xmx{xmx}", f"-Dvl.server={n}", f"-DminecraftMcp.endpoint.port={25800 + n}",
+                   f"@libraries/net/minecraftforge/forge/{p['minecraft_version']}-{p['forge_version']}/unix_args.txt", "nogui"]
+    else:
+        # the command gradle wrote, run from this instance's folder; the marker lets pgrep find the process
+        line = next(row for row in LAUNCH.read_text().splitlines() if "exec " in row)
+        command = shlex.split(line.split("exec ", 1)[1].rstrip(")"))
+        # the launch file keeps the java it was written with; Homebrew moves java on each update
+        if not Path(command[0]).exists():
+            command[0] = JAVA_HOME + "/bin/java"
+        # the MCP mod listens on one fixed port per game: each server its own
+        command[1:1] = [f"-Xmx{xmx}", f"-Dvl.server={n}", f"-DminecraftMcp.endpoint.port={25800 + n}"]
+        command = snapshot(dir_, command)
     # one log for all the server's runs, each started with a line of its own: deaths and what led to them outlive a restart
     import time
     trim(log(n))

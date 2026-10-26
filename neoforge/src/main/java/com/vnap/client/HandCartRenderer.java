@@ -62,14 +62,14 @@ public final class HandCartRenderer extends EntityRenderer<HandCart> {
 	public void submit(EntityRenderState state, PoseStack pose, net.minecraft.client.renderer.SubmitNodeCollector nodes,
 			net.minecraft.client.renderer.state.CameraRenderState camera) {
 		HandCart cart = RenderedEntity.of(state, HandCart.class);
-		if (cart != null) draw(cart, state.partialTick, pose, new Draw(nodes), state.lightCoords);
+		if (cart != null) draw(cart, RenderedEntity.partialTick(state), pose, new Draw(nodes), state.lightCoords);
 		super.submit(state, pose, nodes, camera);
 	}
 	*///?} else if >=1.21.2 {
 	/*@Override
 	public void render(EntityRenderState state, PoseStack pose, MultiBufferSource buffers, int light) {
 		HandCart cart = RenderedEntity.of(state, HandCart.class);
-		if (cart != null) draw(cart, state.partialTick, pose, new Draw(buffers), light);
+		if (cart != null) draw(cart, RenderedEntity.partialTick(state), pose, new Draw(buffers), light);
 		super.render(state, pose, buffers, light);
 	}
 	*///?} else {

@@ -457,7 +457,7 @@ public final class RoadGameTests {
 			for (int i = 0; i < MoodConfig.maxVillagers(); i++) office.residents.put(UUID.randomUUID(), day);
 			network.plaza = 2;
 			roads.plan(level, network, day, 0);
-			Checks.assertTrue(helper, network.wall == 1 && !network.segments.isEmpty(), "a full town lays out its wall: " + network.wall);
+			Checks.assertTrue(helper, network.wall == 1 && !network.segments.isEmpty(), "a full town lays out its wall: " + network.wall + ", " + com.vnap.village.town.Wall.lastRefusal);
 			layAll(level, network);
 			// a closed ring: walking round the box the wall stands everywhere but at the gate
 			int stone = 0;

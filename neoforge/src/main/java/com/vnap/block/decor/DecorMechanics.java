@@ -415,6 +415,10 @@ public final class DecorMechanics {
 
         @Override
         public void use(ServerLevel level, DecorBlockEntity be, Player player, InteractionHand hand, ItemStack held) {
+            // a menu with data of its own is a server player's on Forge
+            //? if forge {
+            /*if (player instanceof net.minecraft.server.level.ServerPlayer server) server.openMenu(be, buf -> buf.writeUtf(machine.id()));
+            *///?} else
             player.openMenu(be, buf -> buf.writeUtf(machine.id()));
         }
 

@@ -37,7 +37,7 @@ public final class SpireRiftRenderer implements BlockEntityRenderer<TheEndPortal
 	private static final ResourceLocation EDGE = VillagerLife.id("textures/block/spire/rift_edge.png");
 	private static final ResourceLocation BEAM = VillagerLife.id("textures/block/spire/rift_beam.png");
 	/** How high the beam out of the rift's heart stands. */
-	private static final float BEAM_HEIGHT = 64.0F;
+	private static final float BEAM_HEIGHT = com.vnap.spire.SpireRiftBlockEntity.BEAM_HEIGHT;
 	private static final int FULL_BRIGHT = 0xF000F0;
 	/** The textures tile every this many blocks. */
 	private static final float TILE = 4.0F;
@@ -185,10 +185,12 @@ public final class SpireRiftRenderer implements BlockEntityRenderer<TheEndPortal
 				.setLight(FULL_BRIGHT).setNormal(pose, nx, 0.0F, nz);
 	}
 
+	//? if !forge {
 	@Override
 	public AABB getRenderBoundingBox(TheEndPortalBlockEntity rift) {
-		return new AABB(rift.getBlockPos()).inflate(0.0, 1.5, 0.0).expandTowards(0.0, BEAM_HEIGHT, 0.0);
+		return rift instanceof com.vnap.spire.SpireRiftBlockEntity sheet ? sheet.renderBox() : new AABB(rift.getBlockPos());
 	}
+	//?}
 
 	@Override
 	public int getViewDistance() {

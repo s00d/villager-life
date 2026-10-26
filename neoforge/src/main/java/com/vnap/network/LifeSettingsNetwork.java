@@ -26,7 +26,7 @@ public final class LifeSettingsNetwork {
 	}
 
 	public static void registerEvents() {
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerLoggedInEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerLoggedInEvent.class, (PlayerEvent.PlayerLoggedInEvent event) -> {
 			if (!(event.getEntity() instanceof ServerPlayer player)) return;
 			send(player);
 			PacketDistributor.sendToPlayer(player, MoodRulesPayload.current());

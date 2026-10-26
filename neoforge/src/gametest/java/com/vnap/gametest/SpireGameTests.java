@@ -404,7 +404,10 @@ public final class SpireGameTests {
 		Player mock = helper.makeMockPlayer(GameType.SURVIVAL);
 		java.util.Set<String> names = new java.util.HashSet<>();
 		com.vnap.spire.guard.SpireKeeper.bench(true);
+		boolean[] done = {false};
 		helper.succeedWhen(() -> {
+			// from 1.21.5 the check can run again after it passed: the slots are closed by then
+			if (done[0]) return;
 			int now = (int) helper.getTick();
 			for (int i = 0; i < count; i++) {
 				int floor = 5 + 5 * i;
@@ -483,6 +486,7 @@ public final class SpireGameTests {
 			com.vnap.VillagerLife.LOGGER.info("vnap bench: a boss's tick {} µs over {} ticks", Math.round(micros), cost[1]);
 			spires.all().remove(spire);
 			for (SpireSlots.Slot slot : slots) SpireSlots.close(level, slot);
+			done[0] = true;
 		});
 	}
 

@@ -109,10 +109,12 @@ public final class TowerClockRenderer implements BlockEntityRenderer<TowerClockB
 				.setLight(light).setNormal(pose, 0.0F, 0.0F, 1.0F);
 	}
 
+	//? if !forge {
 	@Override
 	public AABB getRenderBoundingBox(TowerClockBlockEntity clock) {
-		return new AABB(clock.getBlockPos()).inflate(1.5);
+		return clock.renderBox();
 	}
+	//?}
 
 	@Override
 	public int getViewDistance() {

@@ -31,15 +31,16 @@ import net.neoforged.neoforge.event.level.ExplosionEvent;
 import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import org.jspecify.annotations.Nullable;
 
 /** The villagers' talk wired to the game: the events it listens to and the order things run in each tick. */
 public final class VillagerTalk {
 	/** Why each villager came into the world, from its spawn event to its first join. */
-	private static final Map<UUID, MobSpawnType> BORN_OF = new HashMap<>();
+	// FinalizeSpawn of a village the world generates comes from its generation threads
+	private static final Map<UUID, MobSpawnType> BORN_OF = new ConcurrentHashMap<>();
 	private static @Nullable EggUse lastEgg;
 
 	/** A spawn egg used on a villager: the baby it makes joins the world in the same tick, next to it. */
@@ -51,29 +52,29 @@ public final class VillagerTalk {
 
 	public static void register() {
 		ExpandEvents.register();
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> tick(event.getServer()));
-		NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> reset());
-		NeoForge.EVENT_BUS.addListener((FinalizeSpawnEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> tick(event.getServer()));
+		NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> reset());
+		NeoForge.EVENT_BUS.addListener(FinalizeSpawnEvent.class, (FinalizeSpawnEvent event) -> {
 			if (event.getEntity() instanceof Villager) BORN_OF.put(event.getEntity().getUUID(), event.getSpawnType());
 		});
-		NeoForge.EVENT_BUS.addListener((EntityJoinLevelEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(EntityJoinLevelEvent.class, (EntityJoinLevelEvent event) -> {
 			if (event.getLevel() instanceof ServerLevel level) joined(level, event.getEntity(), event.loadedFromDisk());
 		});
-		NeoForge.EVENT_BUS.addListener((EntityLeaveLevelEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(EntityLeaveLevelEvent.class, (EntityLeaveLevelEvent event) -> {
 			if (!event.getLevel().isClientSide()) left(event.getEntity());
 		});
-		NeoForge.EVENT_BUS.addListener((BlockEvent.BreakEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(BlockEvent.BreakEvent.class, (BlockEvent.BreakEvent event) -> {
 			if (event.getLevel() instanceof ServerLevel level) WorldEvents.broke(level, event.getPlayer(), event.getPos(), event.getState());
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerInteractEvent.RightClickBlock event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerInteractEvent.RightClickBlock.class, (PlayerInteractEvent.RightClickBlock event) -> {
 			if (event.getLevel() instanceof ServerLevel level) {
 				WorldEvents.usedBlock(event.getEntity(), level, event.getEntity().getItemInHand(event.getHand()), event.getHitVec());
 			}
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerInteractEvent.RightClickItem event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerInteractEvent.RightClickItem.class, (PlayerInteractEvent.RightClickItem event) -> {
 			if (event.getLevel() instanceof ServerLevel level) WorldEvents.usedItem(level, event.getEntity(), event.getItemStack());
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerInteractEvent.EntityInteract event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerInteractEvent.EntityInteract.class, (PlayerInteractEvent.EntityInteract event) -> {
 			if (!(event.getLevel() instanceof ServerLevel level)) return;
 			InteractionResult result = clicked(level, event.getEntity(), event.getTarget(), event.getHand(), event.getItemStack());
 			if (!InteractionResult.PASS.equals(result)) {
@@ -81,7 +82,7 @@ public final class VillagerTalk {
 				event.setCanceled(true);
 			}
 		});
-		NeoForge.EVENT_BUS.addListener((AttackEntityEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(AttackEntityEvent.class, (AttackEntityEvent event) -> {
 			Entity target = event.getTarget();
 			if (Speech.prop(target)) {
 				event.setCanceled(true);
@@ -94,14 +95,14 @@ public final class VillagerTalk {
 			}
 			if (target instanceof Villager villager && villager.isSleeping()) Bedtime.shake(villager, player);
 		});
-		NeoForge.EVENT_BUS.addListener((ExplosionEvent.Detonate event) -> {
+		NeoForge.EVENT_BUS.addListener(ExplosionEvent.Detonate.class, (ExplosionEvent.Detonate event) -> {
 			if (event.getLevel() instanceof ServerLevel level) WorldEvents.exploded(level, event.getExplosion().center());
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerWakeUpEvent event) -> Bedtime.wokeUp(event.getEntity()));
-		NeoForge.EVENT_BUS.addListener((TradeWithVillagerEvent event) -> Trades.dealt(event.getAbstractVillager(), event.getEntity()));
-		NeoForge.EVENT_BUS.addListener((LivingDamageEvent.Post event) -> Harm.hurt(event.getEntity(), event.getSource(), event.getNewDamage()));
-		NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, (LivingDeathEvent event) -> Harm.died(event.getEntity(), event.getSource()));
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerLoggedOutEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerWakeUpEvent.class, (PlayerWakeUpEvent event) -> Bedtime.wokeUp(event.getEntity()));
+		NeoForge.EVENT_BUS.addListener(TradeWithVillagerEvent.class, (TradeWithVillagerEvent event) -> Trades.dealt(event.getAbstractVillager(), event.getEntity()));
+		NeoForge.EVENT_BUS.addListener(LivingDamageEvent.Post.class, (LivingDamageEvent.Post event) -> Harm.hurt(event.getEntity(), event.getSource(), event.getNewDamage()));
+		NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, LivingDeathEvent.class, (LivingDeathEvent event) -> Harm.died(event.getEntity(), event.getSource()));
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerLoggedOutEvent.class, (PlayerEvent.PlayerLoggedOutEvent event) -> {
 			UUID id = event.getEntity().getUUID();
 			PlayerWatch.forget(id);
 			Harm.forgetPlayer(id);

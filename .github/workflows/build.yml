@@ -1,9 +1,9 @@
 name: Build
 
-# Builds the mod for every Minecraft version (Stonecutter nodes in neoforge/versions), each in its own job at the same
-# time, and uploads a jar per version and voice (villager-life-<version>+<mc>-<lang>.jar, one per folder of
-# sounds/voice: see neoforge/build.gradle). A pushed version tag (1.0.0, matching mod_version) publishes the jars as a
-# GitHub release of that name. GameTests run locally (tools/dev/gts.sh), not here.
+# Builds the mod for every Minecraft version and loader (Stonecutter nodes in neoforge/versions: <mc> for NeoForge,
+# <mc>-forge for Forge), each in its own job at the same time, and uploads a jar per version and voice
+# (villager-life[-forge]-<version>+<mc>-<lang>.jar, one per folder of sounds/voice: see neoforge/build.gradle).
+# A pushed version tag (1.0.0, matching mod_version) publishes the jars as a GitHub release of that name. GameTests run locally (tools/dev/gts.sh), not here.
 on:
   push:
     tags: ['*']
@@ -19,7 +19,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        mc: ['1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3']
+        mc: ['1.21.1', '1.21.4', '1.21.8', '1.21.11', '26.1.2', '26.2', '26.3',
+             '1.21.1-forge', '1.21.4-forge', '1.21.8-forge', '1.21.11-forge', '26.1.2-forge', '26.2-forge', '26.3-forge']
     steps:
       - uses: actions/checkout@v4
 

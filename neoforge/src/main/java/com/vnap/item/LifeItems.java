@@ -42,6 +42,9 @@ public final class LifeItems {
 							new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.REGENERATION, 100))).build()));
 			*///?} else {
 			.food(new net.minecraft.world.food.FoodProperties.Builder().nutrition(8).saturationModifier(0.8F)
+					//? if forge {
+					/*.effect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.REGENERATION, 100), 1.0F)
+					*///?} else
 					.effect(() -> new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.REGENERATION, 100), 1.0F)
 					.build()));
 			//?}

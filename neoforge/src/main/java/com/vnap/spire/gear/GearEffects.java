@@ -53,10 +53,10 @@ public final class GearEffects {
 	}
 
 	public static void register() {
-		NeoForge.EVENT_BUS.addListener(GearEffects::onTick);
-		NeoForge.EVENT_BUS.addListener(GearEffects::onDamage);
-		NeoForge.EVENT_BUS.addListener(GearEffects::onDeath);
-		NeoForge.EVENT_BUS.addListener(GearEffects::onAttributes);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.tick.PlayerTickEvent.Post.class, GearEffects::onTick);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent.class, GearEffects::onDamage);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingDeathEvent.class, GearEffects::onDeath);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.ItemAttributeModifierEvent.class, GearEffects::onAttributes);
 	}
 
 	/** A piece's attributes are its tier's and its honing's (vanilla's sword, axe and armour carry fixed ones from 1.21.2). */

@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DEV = ROOT / "tools/dev"
-N = "8"
+N = os.environ.get("VL_SERVER_N", "8")  # the dev server it starts (another session may hold one)
 
 
 def run(*args: str, env: dict[str, str] | None = None) -> str:
@@ -62,13 +62,13 @@ def main(args: list[str]) -> int:
                                              "soundCategory_master:0.0"]) + "\n")
         info = Path(mcp_env["VL_MCP"])
         info.unlink(missing_ok=True)
-        print(run(str(DEV / "prod_client.py"), "start", mc, env=env).strip())
+        print(run(str(DEV / "prod_client.py"), "start", mc, "--server", f"127.0.0.1:{25600 + int(N)}", env=env).strip())
         for _ in range(200):
             if info.exists():
                 break
             time.sleep(3)
         time.sleep(15)
-        print(tool("mc.client.connection.connect", {"address": "127.0.0.1:25608", "wait": True})[:160])
+        print(tool("mc.client.connection.connect", {"address": f"127.0.0.1:{25600 + int(N)}", "wait": True})[:160])
         for _ in range(20):
             if json.loads(tool("mc.client.state") or "{}").get("inWorld"):
                 break

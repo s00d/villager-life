@@ -24,11 +24,11 @@ public final class WorkshopEvents {
     }
 
     public static void register() {
-        NeoForge.EVENT_BUS.addListener(Sharpening::onDamage);
-        NeoForge.EVENT_BUS.addListener(Sharpening::onTooltip);
-        NeoForge.EVENT_BUS.addListener(WorkshopEvents::onFished);
-        NeoForge.EVENT_BUS.addListener(WorkshopEvents::onUseBlock);
-        NeoForge.EVENT_BUS.addListener(WorkshopEvents::onTownBlock);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent.class, Sharpening::onDamage);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.ItemTooltipEvent.class, Sharpening::onTooltip);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.ItemFishedEvent.class, WorkshopEvents::onFished);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.PlayerInteractEvent.RightClickBlock.class, WorkshopEvents::onUseBlock);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.PlayerInteractEvent.RightClickBlock.class, WorkshopEvents::onTownBlock);
     }
 
     // ---------------------------------------------------------------- fishing

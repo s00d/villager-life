@@ -35,42 +35,42 @@ public final class SpireEvents {
 
 	public static void register(IEventBus modBus) {
 		com.vnap.spire.gear.GearEffects.register();
-		modBus.addListener((RegisterTicketControllersEvent event) -> event.register(SpireSlots.TICKETS));
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> {
+		modBus.addListener(RegisterTicketControllersEvent.class, (RegisterTicketControllersEvent event) -> event.register(SpireSlots.TICKETS));
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> {
 			SpireSlots.tick(event.getServer());
 			com.vnap.spire.outer.Outer.tick(event.getServer());
 			SpireGrowth.tick(event.getServer());
 			if (event.getServer().getTickCount() % 100 == 0) Expeditions.tick(event.getServer());
 		});
-		NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> {
 			SpireSlots.clearAll();
 			SpireGrowth.clear();
 			SpireRewards.clear();
 			com.vnap.spire.outer.Outer.clear();
 			com.vnap.mega.MegaWork.forgetAll();
 		});
-		NeoForge.EVENT_BUS.addListener((BlockEvent.BreakEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(BlockEvent.BreakEvent.class, (BlockEvent.BreakEvent event) -> {
 			if (guarded(event.getPlayer(), event.getLevel(), event.getPos())) event.setCanceled(true);
 		});
-		NeoForge.EVENT_BUS.addListener((BlockEvent.EntityPlaceEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(BlockEvent.EntityPlaceEvent.class, (BlockEvent.EntityPlaceEvent event) -> {
 			Player player = event.getEntity() instanceof Player p ? p : null;
 			if (guarded(player, event.getLevel(), event.getPos())) event.setCanceled(true);
 		});
-		NeoForge.EVENT_BUS.addListener((ExplosionEvent.Detonate event) -> {
+		NeoForge.EVENT_BUS.addListener(ExplosionEvent.Detonate.class, (ExplosionEvent.Detonate event) -> {
 			Level level = event.getLevel();
 			event.getAffectedBlocks().removeIf(pos -> guarded(null, level, pos));
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerInteractEvent.RightClickBlock event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerInteractEvent.RightClickBlock.class, (PlayerInteractEvent.RightClickBlock event) -> {
 			if (event.getItemStack().getItem() instanceof BucketItem && guarded(event.getEntity(), event.getLevel(), event.getPos())) event.setCanceled(true);
 		});
-		NeoForge.EVENT_BUS.addListener((EntityTeleportEvent.EnderPearl event) -> {
+		NeoForge.EVENT_BUS.addListener(EntityTeleportEvent.EnderPearl.class, (EntityTeleportEvent.EnderPearl event) -> {
 			if (SpireSlots.isSpire(event.getPlayer().level())) event.setCanceled(true);
 		});
-		NeoForge.EVENT_BUS.addListener((EntityTeleportEvent.ChorusFruit event) -> {
+		NeoForge.EVENT_BUS.addListener(EntityTeleportEvent.ChorusFruit.class, (EntityTeleportEvent.ChorusFruit event) -> {
 			if (SpireSlots.isSpire(event.getEntityLiving().level())) event.setCanceled(true);
 		});
-		NeoForge.EVENT_BUS.addListener(SpireEvents::respawn);
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.LivingDamageEvent.Post event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.PlayerRespawnPositionEvent.class, SpireEvents::respawn);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingDamageEvent.Post.class, (net.neoforged.neoforge.event.entity.living.LivingDamageEvent.Post event) -> {
 			if (event.getEntity() instanceof ServerPlayer player && SpireSlots.isSpire(player.level())) {
 				var by = event.getSource().getEntity();
 				com.vnap.VillagerLife.trace("vnap spire hurt: {} {} by {} ({}) {} -> {}", player.getName().getString(),
@@ -84,17 +84,17 @@ public final class SpireEvents {
 			}
 		});
 		// a climber keeps what they carry: what fell on a floor would go with the floor
-		NeoForge.EVENT_BUS.addListener(net.neoforged.bus.api.EventPriority.LOWEST, (net.neoforged.neoforge.event.entity.living.LivingDeathEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.bus.api.EventPriority.LOWEST, net.neoforged.neoforge.event.entity.living.LivingDeathEvent.class, (net.neoforged.neoforge.event.entity.living.LivingDeathEvent event) -> {
 			if (event.isCanceled() || !(event.getEntity() instanceof ServerPlayer player) || !SpireSlots.isSpire(player.level())) return;
 			java.util.List<net.minecraft.world.item.ItemStack> kept = new java.util.ArrayList<>();
 			net.minecraft.world.entity.player.Inventory inventory = player.getInventory();
 			for (int i = 0; i < inventory.getContainerSize(); i++) kept.add(inventory.removeItemNoUpdate(i));
 			KEPT.put(player.getUUID(), kept);
 		});
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.LivingExperienceDropEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingExperienceDropEvent.class, (net.neoforged.neoforge.event.entity.living.LivingExperienceDropEvent event) -> {
 			if (event.getEntity() instanceof ServerPlayer player && KEPT.containsKey(player.getUUID())) event.setCanceled(true);
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.Clone event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.Clone.class, (PlayerEvent.Clone event) -> {
 			if (!event.isWasDeath()) return;
 			java.util.List<net.minecraft.world.item.ItemStack> kept = KEPT.remove(event.getOriginal().getUUID());
 			if (kept == null) return;
@@ -104,15 +104,15 @@ public final class SpireEvents {
 			player.experienceProgress = event.getOriginal().experienceProgress;
 			player.totalExperience = event.getOriginal().totalExperience;
 		});
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerStartingEvent event) -> SpireGuards.newRun());
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.server.ServerStartingEvent.class, (net.neoforged.neoforge.event.server.ServerStartingEvent event) -> SpireGuards.newRun());
 		// the Builders' Writ with every wandering trader, not by chance: six diamonds and sixteen emeralds (some ten
 		// diamonds' worth, as the stall prices it)
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.EntityJoinLevelEvent.class, (net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
 			if (!event.loadedFromDisk() && !event.getLevel().isClientSide()
 					&& event.getEntity() instanceof net.minecraft.world.entity.npc.WanderingTrader trader) writ(trader);
 		});
 		// a guard saved with a floor's chunks by an earlier run is not that floor's any more (it is drawn anew)
-		NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.EntityJoinLevelEvent.class, (net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
 			if (event.loadedFromDisk() && SpireSlots.isSpire(event.getLevel()) && !(event.getEntity() instanceof Player)
 					&& (!SpireGuards.current(event.getEntity()) || event.getEntity() instanceof com.vnap.spire.guard.SpireBolt
 					|| (event.getEntity().getPersistentData().contains(SpireGuards.OUTER)
@@ -120,10 +120,10 @@ public final class SpireEvents {
 				event.setCanceled(true);
 			}
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerLoggedInEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerLoggedInEvent.class, (PlayerEvent.PlayerLoggedInEvent event) -> {
 			if (event.getEntity() instanceof ServerPlayer player && SpireSlots.isSpire(player.level())) back(player);
 		});
-		NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerLoggedOutEvent event) -> {
+		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerLoggedOutEvent.class, (PlayerEvent.PlayerLoggedOutEvent event) -> {
 			// their untaken shares stay (SpireRewards.LEFT): the chest is marked taken already, a relog must not lose it
 			SpireTravel.forget(event.getEntity().getUUID());
 			com.vnap.mega.Waygates.forget(event.getEntity().getUUID());

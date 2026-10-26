@@ -162,17 +162,21 @@ public class MoodLogicGameTests {
         state.mood = 30.0F;
         state.script = ScriptKind.BUILD_FESTOON;
         state.scriptSite = helper.absolutePos(new BlockPos(0, 1, 0));
+        BlockPos site = state.scriptSite;
         dropRunning(helper, state);
-        helper.runAfterDelay(3, () -> {
+        // picked up once the meeting point's chunk ticks entities, its site chosen the tick after
+        boolean[] done = {false};
+        helper.succeedWhen(() -> {
+            if (done[0]) return;
             ActiveScript script = VillageScriptDirector.getActive(helper.getLevel(), state.villageId);
             if (script == null) {
                 Checks.fail(helper, "the saved rite picks up after a reload");
                 return;
             }
             Checks.assertTrue(helper, script.kind == ScriptKind.BUILD_FESTOON, "the same rite resumes");
-            Checks.assertTrue(helper, script.siteOrigin.equals(state.scriptSite), "it keeps the same site");
+            Checks.assertTrue(helper, script.siteOrigin.equals(site), "it keeps the same site: " + script.siteOrigin + " vs " + site);
             VillageScriptDirector.abort(level, state, false);
-            helper.succeed();
+            done[0] = true;
         });
     }
 

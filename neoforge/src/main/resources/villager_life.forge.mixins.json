@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.vnap.neo.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EnchantedItemMixin",
+    "EnchantmentSupportMixin",
+    "EntityRideTickMixin",
+    "ItemStackAttributesMixin",
+    "LivingEntityDamageMixin",
+    "PlayerAttackMixin",
+    "PlayerDamageMixin",
+    "PlayerListRespawnMixin",
+    "ServerLevelTickMixin"
+  ],
+  "client": [
+    "client.ClientLevelTickMixin",
+    "client.EntityRendererNameTagMixin",
+    "client.EntityRendererStateMixin",
+    "client.EntityRenderStateMixin",
+    "client.ForgeLayeredDrawMixin",
+    "client.GuiRenderMixin",
+    "client.ItemRenderPropertiesAccessor",
+    "client.MusicManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -222,7 +222,7 @@ public final class DecorBlock extends HorizontalDirectionalBlock implements Simp
     }
 
     @Override
-    //? if >=26.1 {
+    //? if >=26.1 && neoforge {
     /*public float getEnchantPowerBonus(BlockState state, net.minecraft.world.level.BlockGetter level, BlockPos pos) {
     *///?} else
     public float getEnchantPowerBonus(BlockState state, LevelReader level, BlockPos pos) {

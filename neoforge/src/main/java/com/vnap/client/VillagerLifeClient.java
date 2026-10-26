@@ -44,17 +44,18 @@ public final class VillagerLifeClient {
 
 	public VillagerLifeClient(IEventBus modEventBus, ModContainer container) {
 		LifeClientSettings.load();
+		BabyVillagerScale.register();
 		container.registerExtensionPoint(IConfigScreenFactory.class,
 			(modContainer, parent) -> new SettingsScreen(parent));
-		modEventBus.addListener(DialogueSubtitleState::register);
-		modEventBus.addListener(com.vnap.client.spire.AfflictionOverlay::register);
-		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(VillagerLifeClient::onSystemChat);
-		modEventBus.addListener(VillagerLifeClient::addLayers);
-		modEventBus.addListener(VillagerLifeClient::registerEntityRenderers);
-		modEventBus.addListener(VillagerLifeClient::registerScreens);
+		modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterGuiLayersEvent.class, DialogueSubtitleState::register);
+		modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterGuiLayersEvent.class, com.vnap.client.spire.AfflictionOverlay::register);
+		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.ClientChatReceivedEvent.System.class, VillagerLifeClient::onSystemChat);
+		modEventBus.addListener(net.neoforged.neoforge.client.event.EntityRenderersEvent.AddLayers.class, VillagerLifeClient::addLayers);
+		modEventBus.addListener(net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterRenderers.class, VillagerLifeClient::registerEntityRenderers);
+		modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterMenuScreensEvent.class, VillagerLifeClient::registerScreens);
 		// a Waygate's field takes its keystone's colour
 		//? if >=26.1 {
-		/*modEventBus.addListener((net.neoforged.neoforge.client.event.RegisterColorHandlersEvent.BlockTintSources event) -> event.register(
+		/*modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterColorHandlersEvent.BlockTintSources.class, (net.neoforged.neoforge.client.event.RegisterColorHandlersEvent.BlockTintSources event) -> event.register(
 				java.util.List.of(new net.minecraft.client.color.block.BlockTintSource() {
 					@Override
 					public int color(net.minecraft.world.level.block.state.BlockState state) {
@@ -68,44 +69,47 @@ public final class VillagerLifeClient {
 				}),
 				com.vnap.mega.MegaBlocks.GATE_FIELD));
 		*///?} else {
-		modEventBus.addListener((net.neoforged.neoforge.client.event.RegisterColorHandlersEvent.Block event) -> event.register(
+		modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterColorHandlersEvent.Block.class, (net.neoforged.neoforge.client.event.RegisterColorHandlersEvent.Block event) -> event.register(
 				(state, level, pos, tint) -> 0xFF000000 | net.minecraft.world.item.DyeColor.byId(state.getValue(com.vnap.mega.GateFieldBlock.COLOUR)).getTextureDiffuseColor(),
 				com.vnap.mega.MegaBlocks.GATE_FIELD));
 		//?}
-		modEventBus.addListener(HandCartRenderer::registerModels);
-		NeoForge.EVENT_BUS.addListener(VillagerLifeClient::onUseItem);
-		NeoForge.EVENT_BUS.addListener(VillagerLifeClient::onClientCommands);
-		NeoForge.EVENT_BUS.addListener(VillagerLifeClient::onTooltip);
-		NeoForge.EVENT_BUS.addListener(VillagerLifeClient::onTick);
+		//? if >=1.21.5 {
+		/*modEventBus.addListener(net.neoforged.neoforge.client.event.ModelEvent.RegisterStandalone.class, HandCartRenderer::registerModels);
+		*///?} else
+		modEventBus.addListener(net.neoforged.neoforge.client.event.ModelEvent.RegisterAdditional.class, HandCartRenderer::registerModels);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.PlayerInteractEvent.RightClickItem.class, VillagerLifeClient::onUseItem);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RegisterClientCommandsEvent.class, VillagerLifeClient::onClientCommands);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.player.ItemTooltipEvent.class, VillagerLifeClient::onTooltip);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.ClientTickEvent.Post.class, VillagerLifeClient::onTick);
 		//? if <1.21.2 {
-		NeoForge.EVENT_BUS.addListener(com.vnap.client.dev.Recorder::onFrame);
-		NeoForge.EVENT_BUS.addListener(com.vnap.client.dev.Recorder::onLayer);
-		NeoForge.EVENT_BUS.addListener(com.vnap.client.dev.Recorder::onHand);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderFrameEvent.Post.class, com.vnap.client.dev.Recorder::onFrame);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderGuiLayerEvent.Pre.class, com.vnap.client.dev.Recorder::onLayer);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderHandEvent.class, com.vnap.client.dev.Recorder::onHand);
 		//?}
-		NeoForge.EVENT_BUS.addListener(com.vnap.client.dev.Camera::onFrame);
-		NeoForge.EVENT_BUS.addListener(VillagerLifeClient::onLogout);
-		NeoForge.EVENT_BUS.addListener(MoodBarOverlay::onRender);
-		NeoForge.EVENT_BUS.addListener(ErrandHud::onRender);
-		NeoForge.EVENT_BUS.addListener(com.vnap.client.spire.SpireHud::onRender);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderFrameEvent.Pre.class, com.vnap.client.dev.Camera::onFrame);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent.LoggingOut.class, VillagerLifeClient::onLogout);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderGuiEvent.Post.class, MoodBarOverlay::onRender);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderGuiEvent.Post.class, ErrandHud::onRender);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderGuiEvent.Post.class, com.vnap.client.spire.SpireHud::onRender);
 		//? if >=1.21.2
-		/*NeoForge.EVENT_BUS.addListener(com.vnap.client.guide.GuideScreen::onRecipes);*/
-		NeoForge.EVENT_BUS.addListener(MoodBarOverlay::onFrameStart);
-		NeoForge.EVENT_BUS.addListener(MoodBarOverlay::onBossBar);
-		modEventBus.addListener(VillagerLifeClient::registerLayers);
+		/*NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RecipesReceivedEvent.class, com.vnap.client.guide.GuideScreen::onRecipes);*/
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.RenderGuiEvent.Pre.class, MoodBarOverlay::onFrameStart);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.CustomizeGuiOverlayEvent.BossEventProgress.class, MoodBarOverlay::onBossBar);
+		modEventBus.addListener(net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions.class, VillagerLifeClient::registerLayers);
 		//? if >=1.21.2
-		/*modEventBus.addListener(RenderedEntity::register);*/
+		/*modEventBus.addListener(net.neoforged.neoforge.client.renderstate.RegisterRenderStateModifiersEvent.class, RenderedEntity::register);*/
 		//? if >=1.21.6
-		/*modEventBus.addListener(SchematicPreview::register);*/
-		modEventBus.addListener(VillageParticleProviders::register);
-		modEventBus.addListener(StaffClient::onSetup);
+		/*modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterPictureInPictureRenderersEvent.class, SchematicPreview::register);*/
+		modEventBus.addListener(net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent.class, VillageParticleProviders::register);
+		modEventBus.addListener(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent.class, StaffClient::onSetup);
 		//? if <1.21.4
-		modEventBus.addListener(VillagerLifeClient::bowProperties);
-		modEventBus.addListener(StaffClient::onExtensions);
-		NeoForge.EVENT_BUS.addListener(GolemClientEffects::onBossBar);
-		NeoForge.EVENT_BUS.addListener(GolemClientEffects::onMusic);
-		NeoForge.EVENT_BUS.addListener(GolemClientEffects::onFog);
-		NeoForge.EVENT_BUS.addListener(GolemClientEffects::onFogColor);
-		NeoForge.EVENT_BUS.addListener(GolemClientEffects::onCamera);
+		modEventBus.addListener(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent.class, VillagerLifeClient::bowProperties);
+		modEventBus.addListener(net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent.class, StaffClient::onExtensions);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.CustomizeGuiOverlayEvent.BossEventProgress.class, GolemClientEffects::onBossBar);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.SelectMusicEvent.class, GolemClientEffects::onMusic);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.ViewportEvent.RenderFog.class, GolemClientEffects::onFog);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.ViewportEvent.ComputeFogColor.class, GolemClientEffects::onFogColor);
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.client.event.ViewportEvent.ComputeCameraAngles.class, GolemClientEffects::onCamera);
 	}
 
 	private static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {

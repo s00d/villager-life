@@ -49,13 +49,13 @@ public class VillagerLife {
         LifeSettings.load();
         MoodConfig.load();
         // a client that joined another server took its thresholds (MoodRulesPayload): a world of its own reads the config again
-        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerAboutToStartEvent event) -> MoodConfig.load());
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.server.ServerAboutToStartEvent.class, (net.neoforged.neoforge.event.server.ServerAboutToStartEvent event) -> MoodConfig.load());
         // what made things are worth comes from the server's recipes: learnt on start and again after a /reload
-        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerStartedEvent event) ->
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.server.ServerStartedEvent.class, (net.neoforged.neoforge.event.server.ServerStartedEvent event) ->
                 com.vnap.village.market.Prices.learn(event.getServer().overworld()));
-        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.TagsUpdatedEvent event) -> {
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.TagsUpdatedEvent.class, (net.neoforged.neoforge.event.TagsUpdatedEvent event) -> {
             var server = net.neoforged.neoforge.server.ServerLifecycleHooks.getCurrentServer();
-            //? if >=26.1 {
+            //? if >=26.1 && neoforge {
             /*if (event instanceof net.neoforged.neoforge.event.TagsUpdatedEvent.ServerDataLoad && server != null) {
             *///?} else
             if (event.getUpdateCause() == net.neoforged.neoforge.event.TagsUpdatedEvent.UpdateCause.SERVER_DATA_LOAD && server != null) {
@@ -66,22 +66,23 @@ public class VillagerLife {
         com.vnap.spire.Draughts.Events.listen();
         com.vnap.mega.MegaWork.listen();
         com.vnap.progress.Discoveries.register();
-        modEventBus.addListener(VillagerLife::onRegister);
-        modEventBus.addListener(VillagerLife::onRegisterPayloads);
-        modEventBus.addListener((net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event) ->
+        modEventBus.addListener(net.neoforged.neoforge.registries.RegisterEvent.class, VillagerLife::onRegister);
+        modEventBus.addListener(net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent.class, VillagerLife::onRegisterPayloads);
+        modEventBus.addListener(net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent.class, (net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event) ->
                 event.enqueueWork(() -> com.vnap.block.DoubleBedBlock.registerHome(com.vnap.block.LifeBlocks.DOUBLE_BED)).exceptionally(error -> {
                     LOGGER.error("the double bed is no villager's home", error);
                     return null;
                 }));
-        modEventBus.addListener(VillageEntities::registerAttributes);
-        //? if >=1.21.6
+        modEventBus.addListener(net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent.class, VillageEntities::registerAttributes);
+        //? if >=1.21.6 && neoforge
         /*com.vnap.entity.LookAttachments.register(modEventBus);*/
-        //? if <1.21.4
-        modEventBus.addListener(com.vnap.datagen.LifeDataGen::gather);
+        // the data generator is NeoForge's (its output is the same JSON for every version and loader)
+        //? if neoforge && <1.21.4
+        modEventBus.addListener(net.neoforged.neoforge.data.event.GatherDataEvent.class, com.vnap.datagen.LifeDataGen::gather);
         LifeSettingsNetwork.registerEvents();
         // the guide's crafting pages: from 1.21.2 the client only has the recipes the server sends it
         //? if >=1.21.2
-        /*net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.OnDatapackSyncEvent event) -> event.sendRecipes(net.minecraft.world.item.crafting.RecipeType.CRAFTING));*/
+        /*net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.OnDatapackSyncEvent.class, (net.neoforged.neoforge.event.OnDatapackSyncEvent event) -> event.sendRecipes(net.minecraft.world.item.crafting.RecipeType.CRAFTING));*/
         VillagerTalk.register();
         com.vnap.dialogue.Family.register();
         com.vnap.dialogue.Infants.register();
@@ -98,6 +99,7 @@ public class VillagerLife {
         MoodCommand.register();
         com.vnap.item.GuideGift.register();
         com.vnap.village.market.ShopEvents.register();
+        com.vnap.sound.VillagerTradeSoundFilter.register();
         LOGGER.info("Villager Life models, textures, contextual dialogue, and village mood are ready.");
     }
 

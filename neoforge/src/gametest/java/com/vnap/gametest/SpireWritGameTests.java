@@ -32,11 +32,9 @@ public final class SpireWritGameTests {
 		// no spire of an earlier batch near this ground, the ground ahead loaded
 		Spires spires = Spires.get(level.getServer());
 		spires.all().removeIf(spire -> spire.dimension.equals(level.dimension()) && spire.gate.closerThan(at, 600));
+		it.unimi.dsi.fastutil.longs.LongSet forced = new it.unimi.dsi.fastutil.longs.LongOpenHashSet();
 		for (int cx = (at.getX() >> 4) - 1; cx <= (at.getX() >> 4) + 7; cx++) {
-			for (int cz = (at.getZ() >> 4) - 4; cz <= (at.getZ() >> 4) + 4; cz++) {
-				level.setChunkForced(cx, cz, true);
-				level.getChunk(cx, cz);
-			}
+			for (int cz = (at.getZ() >> 4) - 4; cz <= (at.getZ() >> 4) + 4; cz++) force(level, cx, cz, forced);
 		}
 		// looking east (yaw -90: +x)
 		Spires.Spire[] placed = new Spires.Spire[1];
@@ -57,21 +55,27 @@ public final class SpireWritGameTests {
 					"the writ costs " + writ + " (a diamond " + diamond + ", the trader's price " + trade + ")");
 		} finally {
 			spires.all().remove(spire);
-			for (int cx = (at.getX() >> 4) - 1; cx <= (at.getX() >> 4) + 7; cx++) {
-				for (int cz = (at.getZ() >> 4) - 4; cz <= (at.getZ() >> 4) + 4; cz++) level.setChunkForced(cx, cz, false);
-			}
+			release(level, forced);
 		}
 		helper.succeed();
 	}
 
 	/** Chunks loaded from the bell eastward, where a town's spire is looked for first (Rings start east). */
-	private static void load(ServerLevel level, BlockPos from, boolean on) {
+	private static void load(ServerLevel level, BlockPos from, it.unimi.dsi.fastutil.longs.LongSet forced) {
 		for (int cx = (from.getX() >> 4) - 1; cx <= (from.getX() >> 4) + 8; cx++) {
-			for (int cz = (from.getZ() >> 4) - 8; cz <= (from.getZ() >> 4) + 8; cz++) {
-				level.setChunkForced(cx, cz, on);
-				if (on) level.getChunk(cx, cz);
-			}
+			for (int cz = (from.getZ() >> 4) - 8; cz <= (from.getZ() >> 4) + 8; cz++) force(level, cx, cz, forced);
 		}
+	}
+
+	/** A chunk held loaded for the test: noted only when this test forced it (the chunks of the tests beside it stay so). */
+	private static void force(ServerLevel level, int cx, int cz, it.unimi.dsi.fastutil.longs.LongSet forced) {
+		long key = com.vnap.Mc.chunkKey(cx, cz);
+		if (level.setChunkForced(cx, cz, true)) forced.add(key);
+		level.getChunk(cx, cz);
+	}
+
+	private static void release(ServerLevel level, it.unimi.dsi.fastutil.longs.LongSet forced) {
+		forced.forEach(key -> level.setChunkForced(net.minecraft.world.level.ChunkPos.getX(key), net.minecraft.world.level.ChunkPos.getZ(key), false));
 	}
 
 	/**
@@ -89,7 +93,8 @@ public final class SpireWritGameTests {
 		Spires spires = Spires.get(level.getServer());
 		Mayors mayors = Mayors.get(level.getServer());
 		spires.all().removeIf(spire -> spire.dimension.equals(level.dimension()) && spire.gate.closerThan(home, 3000));
-		for (BlockPos bell : new BlockPos[] {first, second, third}) load(level, bell, true);
+		it.unimi.dsi.fastutil.longs.LongSet forced = new it.unimi.dsi.fastutil.longs.LongOpenHashSet();
+		for (BlockPos bell : new BlockPos[] {first, second, third}) load(level, bell, forced);
 		Mayors.Office one = mayors.officeFor(level.dimension(), first);
 		Mayors.Office two = mayors.officeFor(level.dimension(), second);
 		try {
@@ -114,7 +119,7 @@ public final class SpireWritGameTests {
 			spires.all().removeIf(spire -> spire.dimension.equals(level.dimension()) && spire.gate.closerThan(home, 3000));
 			mayors.offices().remove(one);
 			mayors.offices().remove(two);
-			for (BlockPos bell : new BlockPos[] {first, second, third}) load(level, bell, false);
+			release(level, forced);
 		}
 		helper.succeed();
 	}

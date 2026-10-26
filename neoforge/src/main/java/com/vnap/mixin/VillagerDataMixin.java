@@ -28,7 +28,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Villager.class)
 @SuppressWarnings("unused")
 public abstract class VillagerDataMixin implements VillagerLifeData {
-	//? if >=1.21.6 {
+	// NeoForge from 1.21.6 will not have a mod add synced data to another's entity (synced attachments carry it); Forge will
+	//? if >=1.21.6 && neoforge {
 	/*@Unique
 	private static final java.util.function.Supplier<net.neoforged.neoforge.attachment.AttachmentType<Boolean>> VNAP_FEMALE = com.vnap.entity.LookAttachments.FEMALE;
 	@Unique
@@ -58,17 +59,6 @@ public abstract class VillagerDataMixin implements VillagerLifeData {
 		vnap$self().setData(flag, value);
 	}
 
-	@Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
-	private void vnap$save(net.minecraft.world.level.storage.ValueOutput output, CallbackInfo ci) {
-		CompoundTag tag = new CompoundTag();
-		vnap$write(tag);
-		com.vnap.Mc.put(output, tag);
-	}
-
-	@Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
-	private void vnap$load(net.minecraft.world.level.storage.ValueInput input, CallbackInfo ci) {
-		vnap$read(com.vnap.Mc.tagOf(input));
-	}
 	*///?} else {
 	@Unique
 	private static final net.minecraft.network.syncher.EntityDataAccessor<Boolean> VNAP_FEMALE = net.minecraft.network.syncher.SynchedEntityData.defineId(Villager.class,
@@ -113,6 +103,21 @@ public abstract class VillagerDataMixin implements VillagerLifeData {
 		vnap$self().getEntityData().set(flag, value);
 	}
 
+	//?}
+
+	//? if >=1.21.6 {
+	/*@Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
+	private void vnap$save(net.minecraft.world.level.storage.ValueOutput output, CallbackInfo ci) {
+		CompoundTag tag = new CompoundTag();
+		vnap$write(tag);
+		com.vnap.Mc.put(output, tag);
+	}
+
+	@Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
+	private void vnap$load(net.minecraft.world.level.storage.ValueInput input, CallbackInfo ci) {
+		vnap$read(com.vnap.Mc.tagOf(input));
+	}
+	*///?} else {
 	@Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
 	private void vnap$save(CompoundTag tag, CallbackInfo ci) {
 		vnap$write(tag);

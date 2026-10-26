@@ -44,12 +44,12 @@ public final class Infants {
 	 */
 	public static void register() {
 		// children cannot be hurt, by anyone (only /kill and the void take them); lightning turns no child into a witch
-		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent event) -> {
+		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent.class, (net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent event) -> {
 			if (event.getEntity() instanceof Villager child && child.isBaby()
 					&& !event.getSource().is(net.minecraft.tags.DamageTypeTags.BYPASSES_INVULNERABILITY)) event.setCanceled(true);
 		});
 		// a builder at work (a storey, a roof, a stair flight going up by hand) does not die of a fall off it or of a block set into it
-		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent event) -> {
+		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent.class, (net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent event) -> {
 			if (event.getEntity() instanceof Villager builder && !builder.isBaby()
 					&& (event.getSource().is(net.minecraft.tags.DamageTypeTags.IS_FALL) || event.getSource().is(net.minecraft.world.damagesource.DamageTypes.IN_WALL))
 					&& com.vnap.village.life.LifeBrain.building(builder)) event.setCanceled(true);
@@ -61,13 +61,21 @@ public final class Infants {
 			if (event.getEntity() instanceof Villager sleeper && event.getSource().is(net.minecraft.world.damagesource.DamageTypes.IN_WALL)
 					&& sleeper.level().getBlockState(sleeper.blockPosition()).getBlock() instanceof net.minecraft.world.level.block.BedBlock) event.setCanceled(true);
 		});
-		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityStruckByLightningEvent event) -> {
+		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.EntityStruckByLightningEvent.class, (net.neoforged.neoforge.event.entity.EntityStruckByLightningEvent event) -> {
 			if (event.getEntity() instanceof Villager child && child.isBaby()) event.setCanceled(true);
 		});
-		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
+		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.EntityJoinLevelEvent.class, (net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
 			if (event.getLevel() instanceof ServerLevel level && event.getEntity() instanceof Villager baby && infant(baby)) {
 				BlockPos cradle = Family.state(baby).cradle;
-				if (cradle != null && level.isLoaded(cradle) && isCradle(level.getBlockState(cradle))) lay(baby, cradle);
+				if (cradle == null) return;
+				// its cradle's chunk still being made (a look at it would wait for it for ever): laid down the next tick
+				if (level.getChunkSource().getChunkNow(cradle.getX() >> 4, cradle.getZ() >> 4) == null) {
+					com.vnap.Mc.later(level.getServer(), new net.minecraft.server.TickTask(level.getServer().getTickCount() + 1, () -> {
+						if (baby.isAlive() && level.isLoaded(cradle) && isCradle(level.getBlockState(cradle))) lay(baby, cradle);
+					}));
+				} else if (isCradle(level.getBlockState(cradle))) {
+					lay(baby, cradle);
+				}
 			}
 		});
 	}

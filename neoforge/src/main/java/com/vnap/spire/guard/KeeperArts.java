@@ -139,7 +139,8 @@ public final class KeeperArts {
 
 	static @Nullable LivingEntity aim(SpireKeeper k) {
 		LivingEntity target = k.getTarget();
-		if (target != null && target.isAlive()) return target;
+		// not one out of its hall (gone through a portal, or never in it): its marks and leaps would take it out after them
+		if (target != null && target.isAlive() && k.room().inflate(2.0).contains(target.position())) return target;
 		Player nearest = null;
 		for (Player player : k.climbers()) if (nearest == null || k.distanceToSqr(player) < k.distanceToSqr(nearest)) nearest = player;
 		return nearest;

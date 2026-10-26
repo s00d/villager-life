@@ -6,6 +6,8 @@
   "mixins": [
     "ArmorStandAccessor",
     "CatAccessor",
+    "ExperienceOrbAccessor",
+    "PalettePublishMixin",
     "ConnectionAccessor",
     "GameTestServerMixin",
     "GameTestHelperMixin",

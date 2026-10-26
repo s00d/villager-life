@@ -56,11 +56,11 @@ public final class TownLoading {
 	}
 
 	public static void register(IEventBus modBus) {
-		modBus.addListener((RegisterTicketControllersEvent event) -> event.register(TICKETS));
-		NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> {
+		modBus.addListener(RegisterTicketControllersEvent.class, (RegisterTicketControllersEvent event) -> event.register(TICKETS));
+		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> {
 			if (event.getServer().getTickCount() % EVERY == 0) tick(event.getServer());
 		});
-		NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> HELD.clear());
+		NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> HELD.clear());
 	}
 
 	/** Whether the town of this bell is held loaded now. */

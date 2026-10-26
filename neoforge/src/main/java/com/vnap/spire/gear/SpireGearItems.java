@@ -259,6 +259,9 @@ public final class SpireGearItems {
 
 		@Override
 		public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> enchantment) {
+			//? if forge {
+			/*return SpireGear.cap(piece(), enchantment) > 0 && GearItem.super.supportsEnchantment(stack, enchantment);
+			*///?} else
 			return SpireGear.cap(piece(), enchantment) > 0 && super.supportsEnchantment(stack, enchantment);
 		}
 	}
@@ -322,6 +325,9 @@ public final class SpireGearItems {
 
 		@Override
 		public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> enchantment) {
+			//? if forge {
+			/*return SpireGear.cap(piece(), enchantment) > 0 && GearItem.super.supportsEnchantment(stack, enchantment);
+			*///?} else
 			return SpireGear.cap(piece(), enchantment) > 0 && super.supportsEnchantment(stack, enchantment);
 		}
 	}
@@ -344,9 +350,17 @@ public final class SpireGearItems {
 			return GearPiece.BOW;
 		}
 
+		// Forge hands over the arrow alone: the bow that shot it is the arrow's weapon
+		//? if forge {
+		/*@Override
+		public AbstractArrow customArrow(AbstractArrow arrow) {
+			AbstractArrow out = super.customArrow(arrow);
+			ItemStack weapon = java.util.Objects.requireNonNullElse(arrow.getWeaponItem(), ItemStack.EMPTY);
+		*///?} else {
 		@Override
 		public AbstractArrow customArrow(AbstractArrow arrow, ItemStack projectile, ItemStack weapon) {
 			AbstractArrow out = super.customArrow(arrow, projectile, weapon);
+		//?}
 			// ponytail: the arrow's base damage has no getter from 1.21.5: there a vanilla arrow's 2 (as SpireGear.dps counts it)
 			//? if >=1.21.5 {
 			/*out.setBaseDamage(2.0 * SpireGear.bowPower(weapon));
@@ -395,6 +409,9 @@ public final class SpireGearItems {
 
 		@Override
 		public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> enchantment) {
+			//? if forge {
+			/*return SpireGear.cap(piece(), enchantment) > 0 && GearItem.super.supportsEnchantment(stack, enchantment);
+			*///?} else
 			return SpireGear.cap(piece(), enchantment) > 0 && super.supportsEnchantment(stack, enchantment);
 		}
 	}
@@ -458,6 +475,9 @@ public final class SpireGearItems {
 
 		@Override
 		public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> enchantment) {
+			//? if forge {
+			/*return SpireGear.cap(piece(), enchantment) > 0 && GearItem.super.supportsEnchantment(stack, enchantment);
+			*///?} else
 			return SpireGear.cap(piece(), enchantment) > 0 && super.supportsEnchantment(stack, enchantment);
 		}
 

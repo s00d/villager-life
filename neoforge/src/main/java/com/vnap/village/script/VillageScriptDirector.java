@@ -83,16 +83,16 @@ public final class VillageScriptDirector {
     }
 
     public static void register() {
-        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post event) -> tick(event.getServer()));
+        NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, (ServerTickEvent.Post event) -> tick(event.getServer()));
         // the worker tag is saved with the villager, the script is not: after a restart nobody would ever free it
-        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.EntityJoinLevelEvent.class, (net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
             if (event.loadedFromDisk() && event.getEntity() instanceof Villager villager && com.vnap.Mc.tags(villager).contains(WorkerControl.WORKER_TAG)
                     && ACTIVE.values().stream().noneMatch(script -> script.workers.contains(villager.getUUID()))) {
                 villager.removeTag(WorkerControl.WORKER_TAG);
             }
         });
         // keyed by the meeting point's chunk, not by world: another singleplayer world must not inherit a rite
-        NeoForge.EVENT_BUS.addListener((ServerStoppingEvent event) -> {
+        NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, (ServerStoppingEvent event) -> {
             ACTIVE.clear();
             REASONS.clear();
             BOSS_MISSING.clear();

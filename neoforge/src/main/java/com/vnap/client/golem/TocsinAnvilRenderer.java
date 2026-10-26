@@ -50,7 +50,7 @@ public final class TocsinAnvilRenderer extends EntityRenderer<TocsinAnvil> {
         TocsinAnvil anvil = RenderedEntity.of(state, TocsinAnvil.class);
         if (anvil != null) {
             poseStack.pushPose();
-            turn(anvil, state.partialTick, poseStack);
+            turn(anvil, com.vnap.client.RenderedEntity.partialTick(state), poseStack);
             anvilBlock(anvil, state, poseStack, nodes);
             poseStack.popPose();
         }
@@ -60,7 +60,7 @@ public final class TocsinAnvilRenderer extends EntityRenderer<TocsinAnvil> {
     /*@Override
     public void render(EntityRenderState state, PoseStack poseStack, MultiBufferSource buffers, int light) {
         TocsinAnvil anvil = RenderedEntity.of(state, TocsinAnvil.class);
-        if (anvil != null) spin(anvil, state.partialTick, poseStack, buffers, light);
+        if (anvil != null) spin(anvil, com.vnap.client.RenderedEntity.partialTick(state), poseStack, buffers, light);
         super.render(state, poseStack, buffers, light);
     }
     *///?} else {
@@ -120,7 +120,9 @@ public final class TocsinAnvilRenderer extends EntityRenderer<TocsinAnvil> {
     private void spin(TocsinAnvil anvil, float partialTick, PoseStack poseStack, MultiBufferSource buffers, int light) {
         poseStack.pushPose();
         turn(anvil, partialTick, poseStack);
-        //? if >=1.21.5 {
+        //? if >=1.21.5 && forge {
+        /*blocks.renderSingleBlock(Blocks.ANVIL.defaultBlockState(), poseStack, buffers, light, OverlayTexture.NO_OVERLAY, net.minecraftforge.client.model.data.ModelData.EMPTY, RenderType.solid());
+        *///?} else if >=1.21.5 {
         /*blocks.renderSingleBlock(Blocks.ANVIL.defaultBlockState(), poseStack, buffers, light, OverlayTexture.NO_OVERLAY, anvil.level(), anvil.blockPosition());
         *///?} else
         blocks.renderSingleBlock(Blocks.ANVIL.defaultBlockState(), poseStack, buffers, light, OverlayTexture.NO_OVERLAY, ModelData.EMPTY, RenderType.solid());

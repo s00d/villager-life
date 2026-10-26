@@ -38,12 +38,20 @@ public final class Wall {
 
 	/** A full town building nothing more (its plots settled) gets its wall. */
 	static boolean due(ServerLevel level, Roads.Network network) {
-		if (network.wall > 0) return false;
-		if (!Towns.full(level, network.bell)) return false;
+		if (network.wall > 0) return refused("laid out already");
+		if (!Towns.full(level, network.bell)) return refused("not full: " + Towns.population(level, network.bell) + " of " + Towns.limit(level, network.bell));
 		for (HouseProject house : VillageMoodSavedData.get(level).houses()) {
-			if (!house.done && Towns.ours(level, network.bell, house.origin)) return false;
+			if (!house.done && Roads.townsOwn(network, house.bell) && Towns.ours(level, network.bell, house.origin)) return refused("a house going up at " + house.origin.toShortString());
 		}
 		return true;
+	}
+
+	/** Why the last wall was not laid out (debug: /vnap roads wall, the tests). */
+	public static String lastRefusal = "";
+
+	private static boolean refused(String why) {
+		lastRefusal = why;
+		return false;
 	}
 
 	static boolean plan(ServerLevel level, Roads roads, Roads.Network network) {
@@ -54,12 +62,13 @@ public final class Wall {
 	public static boolean lay(ServerLevel level, Roads roads, Roads.Network network) {
 		Mayors.Office office = Towns.of(level, network.bell);
 		BlockPos bell = office == null ? network.bell : office.bell;
-		if (!level.isPositionEntityTicking(bell)) return false;
+		if (!level.isPositionEntityTicking(bell)) return refused("the bell is not ticking");
 		BoundingBox area = area(level, network, bell);
 		List<BlockPos> outline = octagon(area);
 		// the whole ring at once or not yet: a wall laid out over unloaded land would have holes for good
 		for (BlockPos column : outline) {
-			if (!level.isPositionEntityTicking(new BlockPos(column.getX(), bell.getY(), column.getZ()))) return false;
+			if (!level.isPositionEntityTicking(new BlockPos(column.getX(), bell.getY(), column.getZ()))) return refused("the ring round " + area + " is not ticking at " + column.toShortString() + " (plots " + TownPlots.footprints(level, network)
+					+ ", lots " + network.lots.stream().filter(lot -> !lot.free()).map(lot -> lot.box).toList() + ", buildings " + Roads.owned(level, network) + ")");
 		}
 		String palette = HousePalette.forBiome(level.getBiome(bell));
 		BlockState base = Roads.palette(Blocks.COBBLESTONE.defaultBlockState(), palette);
@@ -229,18 +238,12 @@ public final class Wall {
 		int minX = bell.getX(), maxX = bell.getX(), minZ = bell.getZ(), maxZ = bell.getZ();
 		List<BlockPos> points = new ArrayList<>(network.cells);
 		points.addAll(network.features);
-		for (HouseProject house : VillageMoodSavedData.get(level).houses()) {
-			if (!Towns.ours(level, network.bell, house.origin)) continue;
-			BoundingBox box = house.footprint(level);
-			points.add(new BlockPos(box.minX(), 0, box.minZ()));
-			points.add(new BlockPos(box.maxX(), 0, box.maxZ()));
-		}
 		for (TownPlan.Lot lot : network.lots) {
 			if (lot.free()) continue;
 			points.add(new BlockPos(lot.box.minX(), 0, lot.box.minZ()));
 			points.add(new BlockPos(lot.box.maxX(), 0, lot.box.maxZ()));
 		}
-		for (BoundingBox box : Roads.blocked(level, network)) {
+		for (BoundingBox box : Roads.owned(level, network)) {
 			if (!Towns.ours(level, network.bell, box.getCenter())) continue;
 			points.add(new BlockPos(box.minX(), 0, box.minZ()));
 			points.add(new BlockPos(box.maxX(), 0, box.maxZ()));

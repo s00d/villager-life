@@ -1,0 +1,210 @@
+// A Forge node (neoforge/versions/<version>-forge): the same sources as NeoForge's, //? if forge where the loaders
+// differ (com.vnap.platform), built with ForgeGradle 7. What both loaders share is common.gradle.
+plugins {
+    id 'dev.kikugie.stonecutter'
+    id 'java-library'
+    id 'net.minecraftforge.gradle' version '[7.0.17,8)'
+    id 'net.ltgt.errorprone' version '5.1.1'
+    id 'com.github.spotbugs' version '6.5.13'
+    id 'idea'
+}
+
+apply from: project.parent.file('common.gradle')
+def mixinConfigs = ['villager_life.mixins.json', 'villager_life.client.mixins.json', 'villager_life.forge.mixins.json']
+// villager-life-forge-<version>+<mc>-<voice>.jar, beside NeoForge's villager-life-<version>+<mc>-<voice>.jar
+base.archivesName = 'villager-life-forge'
+def branchDir = project.branchDir
+def mc = project.mc
+
+// The sources are written for NeoForge. On Forge what Forge has the same (same class, same methods) is Forge's own; the
+// rest of NeoForge's API is com.vnap.neo, the same classes built on Forge's. A reverse pattern that never matches: neither
+// name is in the sources (com.vnap.neo is only ever the shim's own name).
+def direct = [
+        'neoforge.client.model.data.ModelData'                : 'net.minecraftforge.client.model.data.ModelData',
+        'neoforge.client.RenderTypeHelper'                    : 'net.minecraftforge.client.RenderTypeHelper',
+        'neoforge.client.IArmPoseTransformer'                 : 'net.minecraftforge.client.IArmPoseTransformer',
+        'neoforge.client.extensions.common.IClientItemExtensions': 'net.minecraftforge.client.extensions.common.IClientItemExtensions',
+        'neoforge.common.util.BlockSnapshot'                  : 'net.minecraftforge.common.util.BlockSnapshot',
+        'neoforge.common.Tags'                                : 'net.minecraftforge.common.Tags',
+        'neoforge.server.ServerLifecycleHooks'                : 'net.minecraftforge.server.ServerLifecycleHooks',
+        'neoforge.server.timings.TimeTracker'                 : 'net.minecraftforge.server.timings.TimeTracker',
+        'api.distmarker.Dist'                                 : 'net.minecraftforge.api.distmarker.Dist',
+]
+stonecutter {
+    // methods NeoForge adds to vanilla classes that Forge has under its own names (or not at all: a constant of the same value)
+    replacements.regex(true) {
+        replace '(?:net\\.minecraft\\.world\\.entity\\.player\\.)?\\bPlayer\\.PERSISTED_NBT_TAG\\b', 'net.minecraft.server.level.ServerPlayer.PERSISTED_NBT_TAG', '(?!x)x', ''
+        replace '\\bModelResourceLocation\\.standalone\\(([^()]*)\\)', 'new ModelResourceLocation($1, "standalone")', '(?!x)x', ''
+    }
+    if (!mc('>=26.1')) replacements.string(true) {
+        replace '.isAddedToLevel()', '.isAddedToWorld()'
+    }
+    // a test is named as NeoForge names it (the method, lower case; the template in the mod's namespace): Forge's holder
+    // gives the namespace, and no prefix
+    if (!mc('>=1.21.5')) replacements.regex(true) {
+        replace '@GameTestHolder\\(("[^"]*"|[\\w.]+)\\)', '@net.minecraftforge.gametest.GameTestHolder(namespace = $1)', '(?!x)x', ''
+        replace '@PrefixGameTestTemplate\\(false\\)', '@net.minecraftforge.gametest.GameTestDontPrefix', '(?!x)x', ''
+    }
+    replacements.regex(true) {
+        direct.each { from, to ->
+            replace "\\bnet\\.neoforged\\.${from.replace('.', '\\.')}\\b".toString(), to, '(?!x)x', ''
+        }
+        // the order the replacements run in is not theirs to rely on: the shim's skips what is Forge's own
+        var own = direct.keySet().collect { it.replace('.', '\\.') + '\\b' }.join('|')
+        replace "\\bnet\\.neoforged\\.(?!(?:${own}))".toString(), 'com.vnap.neo.', '(?!x)x', ''
+    }
+}
+
+repositories {
+    minecraft.mavenizer(it)
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+    mavenCentral()
+}
+
+// A run sees the mod as Forge sees a mod file: one root with its classes, resources and mods.toml (Forge finds mods
+// by the roots of the classpath), here with the game tests in it too
+def runRoot = layout.buildDirectory.dir('forgeRun/mod')
+var forgeRunMod = tasks.register('forgeRunMod', Sync) {
+    from sourceSets.main.output
+    from sourceSets.gametest.output
+    into runRoot
+}
+sourceSets.main.runtimeClasspath = files(runRoot).builtBy(forgeRunMod) + configurations.runtimeClasspath
+
+// Forge moves a game test's origin by default ("as 1.21.3 would"); the tests are written to vanilla's, as NeoForge
+// keeps it: every run's Forge common config says so
+tasks.matching { it.name.startsWith('run') }.configureEach {
+    doFirst {
+        var config = layout.projectDirectory.file('run/config/forge-common.toml').asFile
+        config.parentFile.mkdirs()
+        var text = config.exists() ? config.text : ''
+        if (!(text =~ /fixGameTestBlockPosAsserts\s*=\s*false/)) {
+            text = text.contains('fixGameTestBlockPosAsserts') ? text.replaceAll(/fixGameTestBlockPosAsserts\s*=\s*\w+/, 'fixGameTestBlockPosAsserts = false')
+                    : text + (text.contains('[general]') ? '' : '\n[general]\n') + '\tfixGameTestBlockPosAsserts = false\n'
+            config.text = text
+        }
+    }
+}
+
+// Forge from 1.21.2 bakes a model of the mod's own only through a state definition (com.vnap.neo.client.Standalone):
+// each model gets a blockstate file of its own, blockstates/vnap_standalone/<model path>.json, its one variant the model
+if (mc('>=1.21.2')) {
+    var modelDirs = ["${branchDir}/src/main/resources", "${branchDir}/src/generated/resources"].collect { file(it) }
+    var standaloneStates = tasks.register('standaloneStates') {
+        modelDirs.each { inputs.dir(it) }
+        var out = layout.buildDirectory.dir('generated/sources/standaloneStates')
+        outputs.dir(out)
+        doLast {
+            var root = out.get().asFile
+            project.delete(root)
+            modelDirs.each { dir ->
+                project.fileTree(dir) { include 'assets/*/models/**/*.json' }.visit { details ->
+                    if (details.directory) return
+                    var parts = details.relativePath.segments
+                    var ns = parts[1]
+                    var path = parts[3..-1].join('/').replaceAll(/\.json$/, '')
+                    var state = new File(root, "assets/${ns}/blockstates/vnap_standalone/${path}.json")
+                    state.parentFile.mkdirs()
+                    state.text = '{"variants":{"":{"model":"' + ns + ':' + path + '"}}}\n'
+                }
+            }
+        }
+    }
+    processResources.from(standaloneStates)
+}
+
+// what the mod opens in Minecraft on Forge (NeoForge opens these itself)
+sourceSets.main.resources.srcDir "${branchDir}/src/main/resources-forge"
+
+minecraft {
+    accessTransformers = files("${branchDir}/src/main/resources-forge/META-INF/accesstransformer.cfg")
+    // 26.1 ships unobfuscated
+    if (!mc('>=26.1')) {
+        mappings channel: 'official', version: minecraft_version
+    }
+    runs {
+        configureEach {
+            workingDir = layout.projectDirectory.dir('run')
+            // Forge's filter is by batch name (NeoForge's by namespace): every batch, and the mod's are the only ones
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            // a jar's mixins are in its manifest (MixinConfigs); a run from the classes names them
+            args mixinConfigs.collectMany { ['-mixin.config', it] }
+            // the game tests are the mod's too in a run (as NeoForge's runs take them)
+            mods {
+                register(project.mod_id) {
+                    sources sourceSets.main, sourceSets.gametest
+                }
+            }
+        }
+        register('client')
+        register('server') {
+            args '--nogui'
+        }
+        register('gameTestServer') {
+            // -Ptests=GenerationsGameTests,homes,anelderpassesawayatnight runs only those (GameTestServerMixin)
+            systemProperty 'vl.tests', (project.findProperty('tests') ?: '').toString()
+        }
+    }
+}
+
+// MixinExtras: NeoForge ships it, Forge from 1.21.11; older Forge gets it inside the mod's jar (jar-in-jar, the highest
+// wins) and in a run from the classes on the class path (twice there would split its packages between two modules)
+def mixinExtras = 'io.github.llamalad7:mixinextras-forge:0.5.4'
+def bringsMixinExtras = mc('<1.21.11')
+configurations { mixinExtrasJar }
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly 'io.github.llamalad7:mixinextras-common:0.5.4'
+    if (bringsMixinExtras) {
+        runtimeOnly(mixinExtras) { transitive = false }
+        mixinExtrasJar(mixinExtras) { transitive = false }
+    }
+}
+
+var mixinExtrasMetadata = tasks.register('mixinExtrasMetadata') {
+    def out = layout.buildDirectory.file('generated/jarjar/META-INF/jarjar/metadata.json')
+    inputs.property('mixinExtras', mixinExtras)
+    outputs.file(out)
+    doLast {
+        def (group, artifact, version) = mixinExtras.split(':')
+        out.get().asFile.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([jars: bringsMixinExtras ? [[
+                identifier  : [group: group, artifact: artifact],
+                version     : [range: "[${version},)", artifactVersion: version],
+                path        : "META-INF/jarjar/${artifact}-${version}.jar",
+                isObfuscated: false]] : []]))
+    }
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version_range: minecraft_version_range,
+            forge_version          : forge_version,
+            loader_version_range   : loader_version_range,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            icon_key               : mc('>=26.1') ? 'iconFile' : 'logoFile',
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "${branchDir}/src/main/templates-forge"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+// NeoForge's enum extensions; Forge extends its enums in code
+processResources.exclude 'META-INF/enumextensions.json'
+// NeoForge's model loaders are Forge's own under Forge's name (the blessing staff: a 3D model in hand, flat in the GUI)
+processResources.inputs.property('forgeModelLoaders', 'separate_transforms')
+processResources.filesMatching('assets/*/models/**/*.json') {
+    filter { line -> line.replace('"neoforge:separate_transforms"', '"forge:separate_transforms"') }
+}
+
+tasks.named('jar', Jar).configure {
+    manifest.attributes('MixinConfigs': mixinConfigs.join(','))
+    from(configurations.mixinExtrasJar) { into 'META-INF/jarjar' }
+    if (bringsMixinExtras) from(mixinExtrasMetadata) { into 'META-INF/jarjar' }
+}

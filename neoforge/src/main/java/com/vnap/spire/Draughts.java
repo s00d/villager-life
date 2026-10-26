@@ -90,10 +90,10 @@ public final class Draughts {
 		}
 
 		public static void listen() {
-			NeoForge.EVENT_BUS.addListener(Draughts::onKnockBack);
+			NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.LivingKnockBackEvent.class, Draughts::onKnockBack);
 			// brewing is recipes from 26.3: generateBrewing in the build writes them
 			//? if <26.3 {
-			NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent event) -> {
+			NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent.class, (net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent event) -> {
 				net.minecraft.world.item.crafting.Ingredient awkward = net.neoforged.neoforge.common.crafting.DataComponentIngredient.of(false,
 						net.minecraft.world.item.alchemy.PotionContents.createItemStack(Items.POTION, net.minecraft.world.item.alchemy.Potions.AWKWARD));
 				for (GearTier tier : GearTier.values()) {
@@ -101,7 +101,7 @@ public final class Draughts {
 				}
 			});
 			//?}
-			NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added event) -> {
+			NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added.class, (net.neoforged.neoforge.event.entity.living.MobEffectEvent.Added event) -> {
 				if (event.getEffectInstance().getEffect().value() instanceof Ward && event.getEntity() instanceof net.minecraft.world.entity.player.Player player) {
 					com.vnap.progress.VillageAdvancements.award(player, "spire/draught");
 				}

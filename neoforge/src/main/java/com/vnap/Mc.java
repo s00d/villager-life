@@ -199,13 +199,24 @@ public final class Mc {
         return net.minecraft.world.level.storage.loot.providers.number.ints.ResolvableInt.getFromItem(stack,
                 net.minecraft.core.component.DataComponents.COOKING_FUEL, net.minecraft.world.item.component.CookingFuel::burnTime,
                 new net.minecraft.world.level.storage.loot.LootContext.Builder(params).create(java.util.Optional.empty()), 0);
+        *///?} else if >=1.21.2 && forge {
+        /*// Forge asks the fuel values (its stack's own burn time is only for Forge's fuels)
+        var server = net.neoforged.neoforge.server.ServerLifecycleHooks.getCurrentServer();
+        if (server != null) return server.fuelValues().burnDuration(stack, net.minecraft.world.item.crafting.RecipeType.SMELTING);
+        var level = clientLevel.get();
+        return level == null ? 0 : level.fuelValues().burnDuration(stack, net.minecraft.world.item.crafting.RecipeType.SMELTING);
         *///?} else if >=1.21.2 {
         /*var server = net.neoforged.neoforge.server.ServerLifecycleHooks.getCurrentServer();
         if (server != null) return stack.getBurnTime(net.minecraft.world.item.crafting.RecipeType.SMELTING, server.fuelValues());
         var level = clientLevel.get();
         return level == null ? 0 : stack.getBurnTime(net.minecraft.world.item.crafting.RecipeType.SMELTING, level.fuelValues());
+        *///?} else {
+        // Forge's stack has a burn time of its own only for its own fuels (vanilla's are -1): Forge's hook has them all
+        //? if forge {
+        /*return net.minecraftforge.common.ForgeHooks.getBurnTime(stack, net.minecraft.world.item.crafting.RecipeType.SMELTING);
         *///?} else
         return stack.getBurnTime(net.minecraft.world.item.crafting.RecipeType.SMELTING);
+        //?}
     }
 
     public static boolean repairs(ItemStack tool, ItemStack material) {
@@ -375,12 +386,12 @@ public final class Mc {
         return data.setProfession(profession);
     }
 
-    //? if >=1.21.11 {
+    //? if >=1.21.11 && neoforge {
     /*private static net.minecraft.core.HolderLookup.Provider registries(@Nullable ServerLevel level) {
         if (level == null) throw new IllegalStateException("the mod's saved data is the server's, read with a level");
         return level.registryAccess();
     }
-    *///?} else if >=1.21.5 {
+    *///?} else if >=1.21.5 && <1.21.11 {
     /*private static net.minecraft.core.HolderLookup.Provider registries(net.minecraft.world.level.saveddata.SavedData.Context context) {
         return context.levelOrThrow().registryAccess();
     }
@@ -408,29 +419,62 @@ public final class Mc {
     }
 
     /** The world's saved data of this name: from 1.21.5 a SavedDataType with a codec, which here is the tag the data writes. */
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = "NP_NONNULL_PARAM_VIOLATION", justification = "no data fixer is vanilla's own null; Forge's packages call every parameter non-null")
     public static <T extends net.minecraft.world.level.saveddata.SavedData> T data(net.minecraft.world.level.storage.DimensionDataStorage storage,
             String name, java.util.function.Supplier<T> fresh,
             java.util.function.BiFunction<net.minecraft.nbt.CompoundTag, net.minecraft.core.HolderLookup.Provider, T> load, Save<T> save) {
-        //? if >=26.1 {
+        //? if >=26.1 && forge {
+        /*// an identifier from 26.1 (data/villager_life/<name>.dat); vanilla's type has no context: the running server's registries
+        return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedDataType<>(ResourceLocation.fromNamespaceAndPath(VillagerLife.MOD_ID, name),
+                fresh, net.minecraft.nbt.CompoundTag.CODEC.xmap(
+                        tag -> load.apply(tag, registries((net.minecraft.world.level.Level) null)),
+                        data -> save.save(data, new net.minecraft.nbt.CompoundTag(), registries((net.minecraft.world.level.Level) null))),
+                null));
+        *///?} else if >=26.1 {
         /*// a saved data's id is an identifier from 26.1: data/villager_life/<name>.dat
         return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedDataType<>(ResourceLocation.fromNamespaceAndPath(VillagerLife.MOD_ID, name),
                 context -> fresh.get(), context -> net.minecraft.nbt.CompoundTag.CODEC.xmap(
                         tag -> load.apply(tag, registries(context)),
                         data -> save.save(data, new net.minecraft.nbt.CompoundTag(), registries(context)))));
+        *///?} else if >=1.21.11 && forge {
+        /*// vanilla's type has no context: the registries are the running server's
+        return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedDataType<>(name, fresh,
+                net.minecraft.nbt.CompoundTag.CODEC.xmap(
+                        tag -> load.apply(tag, registries((net.minecraft.world.level.Level) null)),
+                        data -> save.save(data, new net.minecraft.nbt.CompoundTag(), registries((net.minecraft.world.level.Level) null))),
+                null)); // no data fixer: the mod keeps its own formats
         *///?} else if >=1.21.5 {
         /*return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedDataType<>(name, context -> fresh.get(),
                 context -> net.minecraft.nbt.CompoundTag.CODEC.xmap(
                         tag -> load.apply(tag, registries(context)),
-                        data -> save.save(data, new net.minecraft.nbt.CompoundTag(), registries(context)))));
+                        data -> save.save(data, new net.minecraft.nbt.CompoundTag(), registries(context))),
+                null)); // no data fixer: the mod keeps its own formats
         *///?} else
         return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedData.Factory<>(fresh, load, null), name);
+    }
+
+    /** Bone meal at the spot, by nobody (a villager's work): what a dispenser does. */
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = "NP_NONNULL_PARAM_VIOLATION", justification = "no player is what vanilla's own dispenser passes; Forge's packages call every parameter non-null")
+    public static void boneMeal(net.minecraft.world.level.Level level, net.minecraft.core.BlockPos at) {
+        net.minecraft.world.item.BoneMealItem.applyBonemeal(new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.BONE_MEAL), level, at, null);
     }
 
     // Entities and block entities save through ValueOutput / ValueInput from 1.21.6; the mod's own fields keep their
     // NBT keys at the top of the entity's tag, as before
 
-    // the whole tag at once, its keys at the top level as before: NeoForge's store(CompoundTag) and keySet()
-    //? if >=1.21.6 {
+    // the whole tag at once: NeoForge's store(CompoundTag) and keySet() keep its keys at the top level as before; Forge
+    // has neither (vanilla's whole-map store and read are deprecated), so there the tag is one value of its own
+    //? if >=1.21.6 && forge {
+    /*private static final String WHOLE = "VillagerLife";
+
+    public static void put(net.minecraft.world.level.storage.ValueOutput output, net.minecraft.nbt.CompoundTag tag) {
+        output.store(WHOLE, net.minecraft.nbt.CompoundTag.CODEC, tag);
+    }
+
+    public static net.minecraft.nbt.CompoundTag tagOf(net.minecraft.world.level.storage.ValueInput input) {
+        return input.read(WHOLE, net.minecraft.nbt.CompoundTag.CODEC).orElseGet(net.minecraft.nbt.CompoundTag::new);
+    }
+    *///?} else if >=1.21.6 {
     /*public static void put(net.minecraft.world.level.storage.ValueOutput output, net.minecraft.nbt.CompoundTag tag) {
         output.store(tag);
     }
