@@ -40,10 +40,18 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(project.java_version as 
 // Minecraft versions in the build script: mc('>=1.21.4')
 def mc = { String predicate -> stonecutter.eval(stonecutter.current.version, predicate) }
 ext.mc = mc
-// The mod loader of this node: <version> is NeoForge, <version>-forge is Forge (build-forge.gradle); //? if forge
+// The mod loader of this node: <version> is NeoForge, <version>-forge is Forge (build-forge.gradle), <version>-fabric is
+// Fabric (build-fabric[-remap].gradle); //? if forge, //? if fabric. Forge and Fabric take NeoForge's API from the shim.
 def forge = stonecutter.current.project.endsWith('-forge')
+def fabric = stonecutter.current.project.endsWith('-fabric')
+def shim = forge || fabric
 ext.forge = forge
-stonecutter.constants.match(forge ? 'forge' : 'neoforge', 'neoforge', 'forge')
+ext.fabric = fabric
+ext.shim = shim
+// the shim's package: NeoForge's API built on Forge (com.vnap.neo) or on Fabric (com.vnap.fab)
+def shimPackage = fabric ? 'com.vnap.fab' : 'com.vnap.neo'
+ext.shimPackage = shimPackage
+stonecutter.constants.match(fabric ? 'fabric' : forge ? 'forge' : 'neoforge', 'neoforge', 'forge', 'fabric')
 
 // Renames between versions, applied to the sources Stonecutter writes for each version. Anything with a different
 // meaning goes through com.vnap.Mc or a //? comment instead. A replacement Stonecutter has with a false condition runs
@@ -120,6 +128,7 @@ stonecutter {
         replace 'BlockTags.DIRT)', 'BlockTags.SUBSTRATE_OVERWORLD)'
         // render states sorted into packages of their own; light is "coords" from 26.1
         replace 'net.minecraft.client.renderer.state.CameraRenderState', 'net.minecraft.client.renderer.state.level.CameraRenderState'
+        replace 'Lnet/minecraft/client/renderer/state/CameraRenderState;', 'Lnet/minecraft/client/renderer/state/level/CameraRenderState;'
         replace 'net.minecraft.client.renderer.state.QuadParticleRenderState', 'net.minecraft.client.renderer.state.level.QuadParticleRenderState'
         replace 'net.minecraft.client.gui.render.state.pip.', 'net.minecraft.client.renderer.state.gui.pip.'
         replace 'net.minecraft.client.renderer.block.model.BlockStateModel', 'net.minecraft.client.renderer.block.dispatch.BlockStateModel'
@@ -136,10 +145,10 @@ stonecutter {
         replace 'renderTooltip(graphics, mouseX, mouseY)', 'extractTooltip(graphics, mouseX, mouseY)'
     }
     // NeoForge's renamed events from 26.1 (the Forge shim keeps the names of NeoForge 1.21.1)
-    if (mc('>=26.1') && !forge) replacements.string(true) {
+    if (mc('>=26.1') && !shim) replacements.string(true) {
         replace 'event.getNewDamage()', 'event.getHealthDamage()'
     }
-    if (mc('>=26.1') && !forge) replacements.regex(true) {
+    if (mc('>=26.1') && !shim) replacements.regex(true) {
         replace '(?<!minecraftforge\\.event\\.level\\.)\\bBlockEvent\\.BreakEvent\\b', 'net.neoforged.neoforge.event.level.block.BreakBlockEvent', '(?!x)x', ''
     }
     if (mc('>=26.1')) replacements.regex(true) {
@@ -166,6 +175,9 @@ stonecutter {
         replace 'net.minecraft.world.entity.animal.Parrot', 'net.minecraft.world.entity.animal.parrot.Parrot'
         replace 'net.minecraft.world.entity.animal.Pig', 'net.minecraft.world.entity.animal.pig.Pig'
         replace 'net.minecraft.world.entity.animal.horse.TraderLlama', 'net.minecraft.world.entity.animal.equine.TraderLlama'
+        replace 'net.minecraft.world.entity.animal.horse.AbstractHorse', 'net.minecraft.world.entity.animal.equine.AbstractHorse'
+        replace 'net.minecraft.world.entity.animal.Fox$', 'net.minecraft.world.entity.animal.fox.Fox$'
+        replace 'net.minecraft.world.entity.projectile.ThrownEnderpearl', 'net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownEnderpearl'
         replace 'net.minecraft.world.entity.decoration.Painting', 'net.minecraft.world.entity.decoration.painting.Painting'
         replace 'net.minecraft.world.entity.monster.Zombie', 'net.minecraft.world.entity.monster.zombie.Zombie'
         replace 'net.minecraft.world.entity.projectile.AbstractArrow', 'net.minecraft.world.entity.projectile.arrow.AbstractArrow'
@@ -192,7 +204,7 @@ stonecutter {
         replace 'net.neoforged.neoforge.common.util.TriState', 'net.minecraft.util.TriState'
         replace 'SoundEvents.LEASH_KNOT_BREAK', 'SoundEvents.LEAD_UNTIED'
         // one pass, its output not read again: on Forge straight to the shim's name
-        replace 'PacketDistributor.sendToServer(', (forge ? 'com.vnap.neo' : 'net.neoforged') + '.neoforge.client.network.ClientPacketDistributor.sendToServer('
+        replace 'PacketDistributor.sendToServer(', (shim ? shimPackage : 'net.neoforged') + '.neoforge.client.network.ClientPacketDistributor.sendToServer('
     }
     if (mc('>=1.21.5')) replacements.string(true) {
         replace 'net.minecraft.world.entity.animal.Sheep', 'net.minecraft.world.entity.animal.sheep.Sheep'
@@ -218,17 +230,17 @@ stonecutter {
 
 sourceSets {
     // NeoForge's API as the mod uses it, built on Forge (build-forge.gradle renames net.neoforged to com.vnap.neo there)
-    if (!forge) {
-        main.java.exclude 'com/vnap/neo/**'
-        main.resources.exclude 'villager_life.forge.mixins.json'
-    }
+    if (!forge) main.java.exclude 'com/vnap/neo/**'
+    if (!fabric) main.java.exclude 'com/vnap/fab/**'
+    if (!forge) main.resources.exclude 'villager_life.forge.mixins.json'
+    if (!fabric) main.resources.exclude 'villager_life.fabric.mixins.json', 'fabric.mod.json'
     // villager trades are data from 26.1: no event, no listing to add
-    if (forge && mc('>=26.1')) {
-        main.java.exclude 'com/vnap/neo/neoforge/event/village/VillagerTradesEvent.java', 'com/vnap/neo/neoforge/common/BasicItemListing.java'
+    if (shim && mc('>=26.1')) {
+        main.java.exclude 'com/vnap/*/neoforge/event/village/VillagerTradesEvent.java', 'com/vnap/*/neoforge/common/BasicItemListing.java'
     }
     // and brewing is recipes from 26.3
-    if (forge && mc('>=26.3')) {
-        main.java.exclude 'com/vnap/neo/neoforge/event/brewing/RegisterBrewingRecipesEvent.java'
+    if (shim && mc('>=26.3')) {
+        main.java.exclude 'com/vnap/*/neoforge/event/brewing/RegisterBrewingRecipesEvent.java'
     }
     // EMI ships for NeoForge 1.21.1 only
     if (!project.hasProperty('emi_version')) {
@@ -236,7 +248,7 @@ sourceSets {
     }
     // Data generation runs on 1.21.1 (its output in src/generated is the same JSON for every version);
     // NeoForge 21.4 replaced the model and blockstate providers with vanilla's; it is NeoForge's (Forge nodes skip it)
-    if (mc('>=1.21.4') || forge) {
+    if (mc('>=1.21.4') || shim) {
         main.java.exclude 'com/vnap/datagen/**'
     }
     // the trailer recorder (dev builds only) reads the frame from the GL target of 1.21.1's renderer
@@ -557,7 +569,10 @@ processResources {
         if (sounds.exists()) sounds.text = voiceSounds(sounds, voice)
     }
 }
-tasks.named('jar', Jar).configure {
+// the jar that ships: Loom's remapped one where Minecraft is obfuscated (Fabric up to 1.21.11), else the jar itself
+def shipped = tasks.names.contains('remapJar') ? 'remapJar' : 'jar'
+if (shipped != 'jar') tasks.named('jar', Jar).configure { archiveClassifier = 'dev' }
+tasks.named(shipped, AbstractArchiveTask).configure {
     archiveClassifier = voice
 }
 def voiceJars = voices.findAll { it != voice }.collect { lang ->
@@ -579,9 +594,9 @@ def voiceJars = voices.findAll { it != voice }.collect { lang ->
         archiveVersion = project.version
         archiveClassifier = lang
         archiveExtension = 'jar'
-        destinationDirectory = tasks.named('jar', Jar).flatMap { it.destinationDirectory }
-        def built = tasks.named('jar', Jar).flatMap { it.archiveFile }
-        dependsOn tasks.named("jar")
+        destinationDirectory = tasks.named(shipped, AbstractArchiveTask).flatMap { it.destinationDirectory }
+        def built = tasks.named(shipped, AbstractArchiveTask).flatMap { it.archiveFile }
+        dependsOn tasks.named(shipped)
         inputs.dir("${voiceRoot}/${lang}")
         from(zipTree(built)) {
             exclude 'assets/villager_life/sounds/voice/**', 'assets/villager_life/sounds.json'

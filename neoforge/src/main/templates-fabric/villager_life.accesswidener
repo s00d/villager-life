@@ -1,0 +1,9 @@
+accessWidener v2 ${aw_namespace}
+# What NeoForge opens and the mod uses (NeoForge's own access transformers open them there)
+accessible field net/minecraft/gametest/framework/GameTestHelper testInfo Lnet/minecraft/gametest/framework/GameTestInfo;
+accessible field net/minecraft/world/entity/Mob goalSelector Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+accessible method net/minecraft/client/renderer/entity/LivingEntityRenderer addLayer (Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+${aw_gametests}
+${aw_extra}
+${aw_gui}
+${aw_registries}

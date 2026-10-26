@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "Villagers live a whole life: they work, build their houses and their town by hand, marry and raise children, trade with real coins at the village stall, elect a mayor and talk about all of it in English and Russian voices. A finished town raises the Spire of the Architects: a hundred floors of guards, keepers and trials beyond its walls.",
+  "authors": ["s00d"],
+  "contributors": ["Voices made with local text-to-speech; sound effects and music made with ElevenLabs and Lyria through fal."],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/villager-life-s00d",
+    "sources": "https://github.com/s00d/villager-life",
+    "issues": "https://github.com/s00d/villager-life/issues"
+  },
+  "license": "${mod_license}",
+  "icon": "assets/villager_life/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.vnap.fab.FabricEntry"],
+    "client": ["com.vnap.fab.FabricClientEntry"],
+    "fabric-gametest": ["com.vnap.fab.FabricGameTests"]${compat_entrypoints}
+  },
+  "mixins": ["villager_life.mixins.json", "villager_life.client.mixins.json", "villager_life.fabric.mixins.json"],
+  "accessWidener": "villager_life.accesswidener",
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version_range}",
+    "java": ">=${java_version}"
+  },
+  "custom": {
+    "loom:injected_interfaces": ${injected_interfaces}
+  },
+  "suggests": {
+    "jei": "*",
+    "emi": "*"
+  }
+}

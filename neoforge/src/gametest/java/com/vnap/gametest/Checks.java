@@ -48,7 +48,7 @@ public final class Checks {
 
 	/** The enchantment's level on the stack (NeoForge asks the stack, Forge the enchantment helper). */
 	static int level(net.minecraft.world.item.ItemStack stack, net.minecraft.core.Holder<net.minecraft.world.item.enchantment.Enchantment> enchantment) {
-		//? if forge {
+		//? if forge || fabric {
 		/*return net.minecraft.world.item.enchantment.EnchantmentHelper.getItemEnchantmentLevel(enchantment, stack);
 		*///?} else
 		return stack.getEnchantmentLevel(enchantment);
@@ -56,7 +56,7 @@ public final class Checks {
 
 	/** Whether the enchantment may go on the stack (the item decides: NeoForge's hook, and on Forge the shim's). */
 	static boolean supports(net.minecraft.world.item.ItemStack stack, net.minecraft.core.Holder<net.minecraft.world.item.enchantment.Enchantment> enchantment) {
-		//? if forge {
+		//? if forge || fabric {
 		/*return enchantment.value().canEnchant(stack);
 		*///?} else
 		return stack.supportsEnchantment(enchantment);

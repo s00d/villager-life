@@ -1,0 +1,15 @@
+// A Fabric node of an unobfuscated Minecraft (26.1 and later): no mappings, no remapping (build-fabric-common.gradle)
+plugins {
+    id 'dev.kikugie.stonecutter'
+    id 'net.fabricmc.fabric-loom' version '1.19.3'
+    id 'net.ltgt.errorprone' version '5.1.1'
+    id 'com.github.spotbugs' version '6.5.13'
+    id 'idea'
+}
+
+apply from: project.parent.file('build-fabric-common.gradle')
+
+dependencies {
+    implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+}

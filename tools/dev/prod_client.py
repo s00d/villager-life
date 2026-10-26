@@ -3,6 +3,7 @@
 
   python3 tools/dev/prod_client.py start 26.3 [--server 127.0.0.1:25608] [--name Tester] [--show] [--jar released.jar]
   python3 tools/dev/prod_client.py start 1.21.8-forge ...    a Forge node: Forge's client, the mod's Forge jar, MCP and JEI for Forge
+  python3 tools/dev/prod_client.py start 1.21.8-fabric ...   a Fabric node: Fabric's client, the mod's Fabric jar, Fabric API, MCP and JEI for Fabric
   python3 tools/dev/prod_client.py stop 26.3
   VL_MCP=$(python3 tools/dev/prod_client.py mcp 26.3) python3 tools/dev/mcp.py mc.client.state
 
@@ -63,8 +64,9 @@ def home(mc: str) -> Path:
 def start(mc: str, args: list[str]) -> int:
     p = props(mc)
     forge = mc.endswith("-forge")
+    fabric = mc.endswith("-fabric")
     game = p["minecraft_version"]
-    loader = "forge" if forge else "neoforge"
+    loader = "forge" if forge else "fabric" if fabric else "neoforge"
     server = args[args.index("--server") + 1] if "--server" in args else "127.0.0.1:25608"
     name = args[args.index("--name") + 1] if "--name" in args else "Tester"
     dir_ = home(mc)
@@ -75,8 +77,14 @@ def start(mc: str, args: list[str]) -> int:
     jar = Path(args[args.index("--jar") + 1]) if "--jar" in args else \
         ROOT / "neoforge/versions" / mc / "build/libs" / f"villager-life-{p.get('mod_version', '1.0.0')}+{mc}.jar"
     if not jar.exists():
-        jar = next((ROOT / "neoforge/versions" / mc / "build/libs").glob(f"villager-life-{'forge-' if forge else ''}*-en.jar"))
+        jar = next((ROOT / "neoforge/versions" / mc / "build/libs").glob(f"villager-life-{loader + '-' if forge or fabric else ''}*-en.jar"))
     shutil.copy2(jar, mods)
+    if fabric:
+        # Fabric API, as the server has it (server.py)
+        sys.path.insert(0, str(Path(__file__).parent))
+        os.environ["VL_MC"] = mc
+        import server
+        shutil.copy2(server.fabric_api(), mods)
     mcp = sorted(MCP_JARS.glob(f"minecraft_mcp-{loader}-*+{game}.jar"))
     if not mcp:
         print(f"no MCP jar for {mc} in {MCP_JARS}")
@@ -86,14 +94,15 @@ def start(mc: str, args: list[str]) -> int:
     if found is not None:
         shutil.copy2(found, mods)
     # the dev client's other mods (a dev server has them too, and Patchouli's channels are required both ways)
-    for extra in ([] if forge else (ROOT / "neoforge/versions" / mc / "run/mods").glob("*.jar")):
+    for extra in ([] if forge or fabric else (ROOT / "neoforge/versions" / mc / "run/mods").glob("*.jar")):
         if not extra.name.startswith(("minecraft_mcp", "entity_", "jei-")):
             shutil.copy2(extra, mods)
     host, port = server.split(":")
     log = open(f"/tmp/vl-prod-{mc}.log", "w")
     proc = subprocess.Popen([PORTABLEMC, "--main-dir", str(CACHE), "start", "--mc-dir", str(dir_),
                              "--jvm", JAVA[int(p["java_version"])],
-                             f"forge::{game}-{p['forge_version']}" if forge else f"neoforge::{p['neo_version']}", "-u", name,
+                             f"forge::{game}-{p['forge_version']}" if forge else f"fabric:{game}:{p['fabric_loader_version']}" if fabric
+                             else f"neoforge::{p['neo_version']}", "-u", name,
                              "--join-server", host, "--join-server-port", port],
                             stdout=log, stderr=subprocess.STDOUT, start_new_session=True,
                             # its own MCP port (the dev client has 25580); hidden window unless --show: an automated
@@ -118,7 +127,7 @@ def stop(mc: str) -> int:
 
 
 def main(args: list[str]) -> int:
-    if len(args) < 2 or not re.fullmatch(r"\d+(\.\d+)+(-forge)?", args[1]):
+    if len(args) < 2 or not re.fullmatch(r"\d+(\.\d+)+(-forge|-fabric)?", args[1]):
         print(__doc__)
         return 1
     if args[0] == "start":

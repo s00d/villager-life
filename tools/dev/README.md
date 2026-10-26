@@ -97,6 +97,7 @@
 | Что | Как |
 |---|---|
 | Forge | Узел `<v>-forge`: `VL_MC=1.21.8-forge` перед `gts.sh` (один сервер), `server.py build|start N` (прод-сервер Forge из установщика, кэш `~/.cache/vl-minecraft/forge-server`, jar мода и MCP для Forge), `prod_client.py start 1.21.8-forge` (portablemc `forge::…`, JEI для Forge) |
+| Fabric | Узел `<v>-fabric` (Gradle на Java 25): тесты — `./gradlew --no-configuration-cache --offline :neoforge:1.21.8-fabric:runGameTestServer [-Ptests=…]` (отчёт `build/gametest.xml`); цели миксинов шима до запуска — `python3 tools/dev/mixin_targets.py 1.21.8` (после compileJava узла); `VL_MC=1.21.8-fabric server.py build|start N` (лаунчер сервера Fabric, кэш `~/.cache/vl-minecraft/fabric-server`, jar мода, Fabric API, MCP для Fabric); `prod_client.py start 1.21.8-fabric` (portablemc `fabric:…`) |
 | Инструменты для другой версии | `VL_MC=26.3` перед `gts.sh`, `server.py`, `mcsrc.sh`, `restart.sh`, `client2.sh`, `mcp.py` (по умолчанию 1.21.1) |
 | Собрать / тесты версии | `./gradlew --no-configuration-cache --offline :neoforge:26.3:build`; `VL_MC=26.3 tools/dev/gts.sh`. Новая версия впервые — без `--offline` (скачать NeoForge, зависимости, конфиги запуска). Java 25 для 26.x — тулчейн Gradle сам |
 | Исходники игры версии | `VL_MC=26.3 tools/dev/mcsrc.sh <Класс>` (папка `/tmp/vl-mcsrc-26.3`; исходники NeoForge — распаковать `neoforge-<ver>-sources.jar` из кэша gradle туда же) |

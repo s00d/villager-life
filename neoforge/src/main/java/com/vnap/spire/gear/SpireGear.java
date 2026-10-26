@@ -238,7 +238,7 @@ public final class SpireGear {
 	}
 
 	private static int level(ServerLevel level, ItemStack stack, ResourceKey<Enchantment> key) {
-		//? if forge {
+		//? if forge || fabric {
 		/*return level.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.ENCHANTMENT).get(key)
 				.map(holder -> net.minecraft.world.item.enchantment.EnchantmentHelper.getItemEnchantmentLevel(holder, stack)).orElse(0);
 		*///?} else {

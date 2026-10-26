@@ -120,7 +120,9 @@ public final class TocsinAnvilRenderer extends EntityRenderer<TocsinAnvil> {
     private void spin(TocsinAnvil anvil, float partialTick, PoseStack poseStack, MultiBufferSource buffers, int light) {
         poseStack.pushPose();
         turn(anvil, partialTick, poseStack);
-        //? if >=1.21.5 && forge {
+        //? if fabric {
+        /*blocks.renderSingleBlock(Blocks.ANVIL.defaultBlockState(), poseStack, buffers, light, OverlayTexture.NO_OVERLAY);
+        *///?} else if >=1.21.5 && forge {
         /*blocks.renderSingleBlock(Blocks.ANVIL.defaultBlockState(), poseStack, buffers, light, OverlayTexture.NO_OVERLAY, net.minecraftforge.client.model.data.ModelData.EMPTY, RenderType.solid());
         *///?} else if >=1.21.5 {
         /*blocks.renderSingleBlock(Blocks.ANVIL.defaultBlockState(), poseStack, buffers, light, OverlayTexture.NO_OVERLAY, anvil.level(), anvil.blockPosition());

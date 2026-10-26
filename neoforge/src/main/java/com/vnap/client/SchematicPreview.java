@@ -13,7 +13,7 @@ import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.RenderShape;
-//? if <1.21.5 {
+//? if <1.21.5 && !fabric {
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.util.RandomSource;
 import net.neoforged.neoforge.client.RenderTypeHelper;
@@ -37,13 +37,16 @@ public final class SchematicPreview {
         float extent = Math.max(Math.max(spec.sizeX, spec.sizeZ) * 1.42F, spec.sizeY * 1.2F);
         float scale = Math.min(width, height) / extent * 0.95F;
         float spin = (float) ((System.currentTimeMillis() % 24000L) / 24000.0 * 360.0);
-        //? if >=26.2 && forge {
-        /*// the game's own GUI state (the extractor keeps it to itself on Forge)
+        //? if >=26.2 && (forge || fabric) {
+        /*// the game's own GUI state (the extractor keeps it to itself on Forge and Fabric)
         Minecraft.getInstance().gameRenderer.gameRenderState().guiRenderState.addPicturesInPictureState(
                 new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
-        *///?} else if >=26.1 && forge {
+        *///?} else if >=26.1 && (forge || fabric) {
         /*Minecraft.getInstance().gameRenderer.getGameRenderState().guiRenderState.addPicturesInPictureState(
                 new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
+        *///?} else if >=1.21.6 && fabric {
+        /*// the GUI's state, which Fabric's widener opens
+        graphics.guiRenderState.submitPicturesInPictureState(new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
         *///?} else if >=1.21.6 && forge {
         /*graphics.getRenderState().submitPicturesInPictureState(new Picture(spec, layers, spin, x, y, x + width, y + height, scale, null));
         *///?} else if >=1.21.6 {
@@ -184,6 +187,9 @@ public final class SchematicPreview {
             /*var block = new net.minecraft.client.renderer.block.BlockModelRenderState();
             McClient.blockModel(block, placed.state());
             block.submit(pose, features.getSubmitNodeStorage(), FULL_BRIGHT, OverlayTexture.NO_OVERLAY, 0);
+            *///?} else if fabric {
+            /*// vanilla's: each layer of the block's model in the render type vanilla gives the state
+            blocks.renderSingleBlock(placed.state(), pose, buffers, FULL_BRIGHT, OverlayTexture.NO_OVERLAY);
             *///?} else if >=1.21.5 && forge {
             /*McClient.block(blocks, placed.state(), pose, buffers, FULL_BRIGHT, OverlayTexture.NO_OVERLAY);
             *///?} else if >=1.21.5 {

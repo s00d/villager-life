@@ -62,11 +62,35 @@ public final class TicketController {
 	}
 
 	//? if >=1.21.5 {
-	/*/^* The ticket at the chunk (vanilla's forced chunks' level when ticking, the full level when loaded only). ^/
+	/*/^* Vanilla keeps one ticket of a kind on a chunk: the owners who hold it, so it goes with the last of them. ^/
+	private static final Map<ServerLevel, Map<Held, java.util.Set<Owner>>> HELD = new java.util.WeakHashMap<>();
+
+	private record Held(int x, int z, boolean ticking) {
+	}
+
+	private record Owner(ResourceLocation controller, BlockPos pos) {
+	}
+
+	/^* The ticket at the chunk (vanilla's forced chunks' level when ticking, the full level when loaded only). ^/
 	public boolean forceChunk(ServerLevel level, BlockPos owner, int chunkX, int chunkZ, boolean add, boolean ticking) {
 		var pos = new net.minecraft.world.level.ChunkPos(chunkX, chunkZ);
+		Map<Held, java.util.Set<Owner>> held = HELD.computeIfAbsent(level, any -> new java.util.HashMap<>());
+		Held key = new Held(chunkX, chunkZ, ticking);
+		Owner who = new Owner(id, owner.immutable());
+		if (add) {
+			java.util.Set<Owner> owners = held.computeIfAbsent(key, any -> new java.util.HashSet<>());
+			if (!owners.add(who) || owners.size() > 1) return true;
+		} else {
+			java.util.Set<Owner> owners = held.get(key);
+			if (owners == null || !owners.remove(who)) return true;
+			if (!owners.isEmpty()) return true;
+			held.remove(key);
+		}
 		var type = ticking ? TICKING : LOADED;
 		int radius = ticking ? 2 : 0;
+		// the chunk first, as vanilla's forced chunks do: one that a ticket loads while a block is set in it can stay
+		// with its entities hidden
+		if (add) level.getChunk(chunkX, chunkZ);
 		if (add) level.getChunkSource().addTicketWithRadius(type, pos, radius);
 		else level.getChunkSource().removeTicketWithRadius(type, pos, radius);
 		return true;

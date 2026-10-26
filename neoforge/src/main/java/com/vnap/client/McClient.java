@@ -6,7 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.event.ModelEvent;
-//? if >=1.21.5 && forge {
+//? if >=1.21.5 && (forge || fabric) {
 /*import net.minecraft.client.renderer.block.model.BlockStateModel;
 *///?} else if >=1.21.5 {
 /*import net.minecraft.client.renderer.block.model.BlockStateModel;
@@ -157,7 +157,7 @@ public final class McClient {
 
     *///?}
     /** A block's model as it stands, into the state that submits it (Forge keeps the game's resolver to itself). */
-    //? if >=26.1 && forge {
+    //? if >=26.1 && (forge || fabric) {
     /*public static void blockModel(net.minecraft.client.renderer.block.BlockModelRenderState block, net.minecraft.world.level.block.state.BlockState state) {
         new net.minecraft.client.renderer.block.BlockModelResolver(Minecraft.getInstance().getModelManager())
                 .update(block, state, net.minecraft.client.renderer.block.model.BlockDisplayContext.create());
@@ -188,6 +188,15 @@ public final class McClient {
     public static BlockStateModel model(ResourceLocation id) {
         return Minecraft.getInstance().getModelManager().getBlockModelShaper().getBlockModel(com.vnap.neo.client.Standalone.blockState(id));
     }
+    *///?} else if >=1.21.5 && fabric {
+    /*// Fabric API's extra models, keyed by their ids (com.vnap.fab.neoforge.client.event.ModelEvent)
+    public static void registerModel(ModelEvent.RegisterStandalone event, ResourceLocation id) {
+        event.register(id);
+    }
+
+    public static @org.jspecify.annotations.Nullable BlockStateModel model(ResourceLocation id) {
+        return Minecraft.getInstance().getModelManager().getModel(ModelEvent.RegisterStandalone.key(id));
+    }
     *///?} else if >=1.21.5 {
     /*private static final Map<ResourceLocation, StandaloneModelKey<BlockStateModel>> KEYS = new HashMap<>();
 
@@ -204,7 +213,8 @@ public final class McClient {
     }
     *///?} else {
     public static void registerModel(ModelEvent.RegisterAdditional event, ResourceLocation id) {
-        //? if >=1.21.4 {
+        // Fabric's loading plugin takes the model's id
+        //? if >=1.21.4 || fabric {
         /*event.register(id);
         *///?} else
         event.register(ModelResourceLocation.standalone(id));
@@ -220,11 +230,20 @@ public final class McClient {
         *///?} else if >=1.21.5 && forge {
         /*net.minecraft.client.renderer.block.ModelBlockRenderer.renderModel(pose, buffer, model(id), 1.0F, 1.0F, 1.0F, light, overlay,
                 net.minecraftforge.client.model.data.ModelData.EMPTY, null);
+        *///?} else if >=1.21.5 && fabric {
+        /*BlockStateModel model = model(id);
+        if (model == null) return;
+        net.minecraft.client.renderer.block.ModelBlockRenderer.renderModel(pose, buffer, model, 1.0F, 1.0F, 1.0F, light, overlay);
         *///?} else if >=1.21.5 {
         /*BlockStateModel model = model(id);
         if (model == null) return;
         net.minecraft.client.renderer.block.ModelBlockRenderer.renderModel(pose, type -> buffer, model, 1.0F, 1.0F, 1.0F, light, overlay,
                 net.minecraft.world.level.EmptyBlockAndTintGetter.INSTANCE, net.minecraft.core.BlockPos.ZERO, net.minecraft.world.level.block.Blocks.AIR.defaultBlockState());
+        *///?} else if <1.21.5 && fabric {
+        /*// a model Fabric's loading plugin loaded: the model manager hands it out by its id (Fabric API)
+        BakedModel model = minecraft.getModelManager().getModel(id);
+        if (model == null) return;
+        minecraft.getBlockRenderer().getModelRenderer().renderModel(pose, buffer, null, model, 1.0F, 1.0F, 1.0F, light, overlay);
         *///?} else if >=1.21.4 && forge {
         /*// Forge 1.21.4 bakes a model of its own through a state definition of it (com.vnap.neo.client.Standalone)
         BakedModel model = minecraft.getModelManager().getModel(new net.minecraft.client.resources.model.ModelResourceLocation(com.vnap.neo.client.Standalone.state(id), ""));

@@ -1,0 +1,192 @@
+// A Fabric node (neoforge/versions/<version>-fabric): the same sources as NeoForge's, //? if fabric where the loaders
+// differ, built with Loom (build-fabric-remap.gradle up to 1.21.11, build-fabric.gradle from 26.1). NeoForge's API is the
+// shim (com.vnap.fab), built over Fabric API and the shim's own mixins. What every loader shares is common.gradle.
+apply from: project.parent.file('common.gradle')
+// villager-life-fabric-<version>+<mc>-<voice>.jar, beside NeoForge's and Forge's
+base.archivesName = 'villager-life-fabric'
+def branchDir = project.branchDir
+def mc = project.mc
+def remap = !mc('>=26.1')
+
+stonecutter {
+    // NeoForge's overloads of vanilla methods that only ask vanilla's (the level and the place are not used by vanilla's)
+    replacements.regex(true) {
+        replace '\\.rotate\\([^(),]+, [^(),]+, (?=[^(),]+\\))', '.rotate(', '(?!x)x', ''
+        replace '\\.getSoundType\\([^()]*\\)', '.getSoundType()', '(?!x)x', ''
+        replace '\\.getLightEmission\\([^()]+\\)', '.getLightEmission()', '(?!x)x', ''
+        // NeoForge's lifespan of an item on the ground (com.vnap.fab.ItemLifespan)
+        replace '\\b(\\w+)\\.lifespan = ([^;]+);', '$1.vnapLifespan($2);', '(?!x)x', ''
+        replace 'BoneMealItem\\.applyBonemeal\\(([^,]+), ([^,]+), ([^,]+), null\\)', 'BoneMealItem.growCrop($1, $2, $3)', '(?!x)x', ''
+        replace 'new SimpleParticleType\\(', 'net.fabricmc.fabric.api.particle.v1.FabricParticleTypes.simple(', '(?!x)x', ''
+        // NeoForge's builder of a creative tab: Fabric API's
+        replace '\\bCreativeModeTab\\.builder\\(\\)', remap ? 'net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup.builder()'
+                : 'net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab.builder()', '(?!x)x', ''
+        // a menu opened with data of its own (NeoForge's overload): Fabric API's extended menu (com.vnap.fab.Menus)
+        replace '\\b(\\w+)\\.openMenu\\(', 'com.vnap.fab.Menus.open($1, ', '(?!x)x', ''
+    }
+    // Fabric API's own names from 26.1, Mojang's words (the shim names the earlier ones)
+    if (!remap) replacements.string(true) {
+        replace 'net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory', 'net.fabricmc.fabric.api.menu.v1.ExtendedMenuProvider'
+        replace 'net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType', 'net.fabricmc.fabric.api.menu.v1.ExtendedMenuType'
+        replace 'net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup', 'net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab'
+        replace 'ParticleFactoryRegistry.PendingParticleFactory', 'ParticleProviderRegistry.PendingParticleProvider'
+        replace 'ParticleFactoryRegistry', 'ParticleProviderRegistry'
+        replace 'ServerEntityWorldChangeEvents.AFTER_PLAYER_CHANGE_WORLD', 'ServerEntityLevelChangeEvents.AFTER_PLAYER_CHANGE_LEVEL'
+        replace 'ServerEntityWorldChangeEvents', 'ServerEntityLevelChangeEvents'
+        replace 'ServerTickEvents.START_WORLD_TICK', 'ServerTickEvents.START_LEVEL_TICK'
+        replace 'PayloadTypeRegistry.playS2C()', 'PayloadTypeRegistry.clientboundPlay()'
+        replace 'PayloadTypeRegistry.playC2S()', 'PayloadTypeRegistry.serverboundPlay()'
+        replace 'net.fabricmc.fabric.api.client.command.v2.ClientCommandManager', 'net.fabricmc.fabric.api.client.command.v2.ClientCommands'
+        replace 'ColorProviderRegistry.BLOCK.register(', 'BlockColorRegistry.register('
+        replace 'EntityModelLayerRegistry.registerModelLayer(', 'ModelLayerRegistry.registerModelLayer('
+        replace 'SpecialGuiElementRegistry.register(', 'PictureInPictureRendererRegistry.register('
+        replace 'context.vertexConsumers()', 'context.bufferSource()'
+        // a test environment's definition is generic from 26.1
+        replace 'Registry<TestEnvironmentDefinition>', 'Registry<TestEnvironmentDefinition<?>>'
+        replace 'TestEnvironmentDefinition definition)', 'TestEnvironmentDefinition<?> definition)'
+    }
+    replacements.regex(true) {
+        replace '(?:net\\.minecraft\\.world\\.entity\\.player\\.)?\\bPlayer\\.PERSISTED_NBT_TAG\\b', 'com.vnap.fab.Persisted.TAG', '(?!x)x', ''
+        // everything of NeoForge's is the shim's (com.vnap.fab is only ever the shim's own name)
+        replace '\\bnet\\.neoforged\\.', 'com.vnap.fab.', '(?!x)x', ''
+        // what the shared code names of Forge's shim, where Fabric's has the same
+        replace '\\bcom\\.vnap\\.neo\\.', 'com.vnap.fab.', '(?!x)x', ''
+    }
+}
+
+repositories {
+    maven { url = 'https://maven.fabricmc.net' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    compileOnly 'io.github.llamalad7:mixinextras-common:0.5.4'
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    if (project.hasProperty('emi_version')) {
+        // a Fabric mod's jar in Fabric's own names: Loom maps it to the dev names (remap) or takes it as it is
+        "${remap ? 'modCompileOnly' : 'compileOnly'}" "maven.modrinth:emi:${emi_version}"
+    }
+}
+
+// NeoForge's methods on vanilla classes the mod's code calls or overrides: Loom builds the interfaces into those classes
+// (the shim's mixins implement them). An obfuscated Minecraft names its classes here by their intermediary names.
+def injected = [
+        'net/minecraft/world/level/block/Block'                     : ['net/minecraft/class_2248', 'com/vnap/fab/neoforge/common/extensions/IBlockExtension'],
+        'net/minecraft/world/level/block/state/BlockState'          : ['net/minecraft/class_2680', 'com/vnap/fab/neoforge/common/extensions/IBlockStateExtension'],
+        'net/minecraft/client/renderer/blockentity/BlockEntityRenderer': ['net/minecraft/class_827', 'com/vnap/fab/neoforge/client/extensions/IBlockEntityRendererExtension<TT;>'],
+        'net/minecraft/world/entity/item/ItemEntity'                : ['net/minecraft/class_1542', 'com/vnap/fab/ItemLifespan'],
+        'net/minecraft/world/entity/Entity'                         : ['net/minecraft/class_1297', 'com/vnap/fab/neoforge/common/extensions/IEntityExtension'],
+        'net/minecraft/world/item/Item'                             : ['net/minecraft/class_1792', 'com/vnap/fab/neoforge/common/extensions/IItemExtension'],
+        'net/minecraft/world/item/ProjectileWeaponItem'             : ['net/minecraft/class_1811', 'com/vnap/fab/neoforge/common/extensions/IProjectileWeaponItemExtension'],
+        'net/minecraft/server/network/ServerCommonPacketListenerImpl': ['net/minecraft/class_8609', 'com/vnap/fab/neoforge/common/extensions/IServerCommonPacketListenerExtension'],
+]
+def injectedJson = groovy.json.JsonOutput.toJson(injected.collectEntries { named, pair -> [(remap ? pair[0] : named): [pair[1]]] })
+
+// fabric.mod.json and the access widener from their templates, written while the project configures: Loom reads both
+// then (the widener, and the interfaces fabric.mod.json injects); the widener names the dev namespace of this Loom
+def metadata = [
+        injected_interfaces    : injectedJson,
+        minecraft_version_range: minecraft_version_range,
+        fabric_loader_version  : fabric_loader_version,
+        java_version           : java_version,
+        mod_id                 : mod_id,
+        mod_name               : mod_name,
+        mod_license            : mod_license,
+        mod_version            : mod_version,
+        aw_namespace           : remap ? 'named' : 'official',
+        // JEI and EMI find their plugins on Fabric through these entrypoints (EMI's API, like NeoForge's, on 1.21.1 only)
+        compat_entrypoints     : ',\n    "jei_mod_plugin": ["com.vnap.compat.jei.VillageJeiPlugin"]'
+                + (project.hasProperty('emi_version') ? ',\n    "emi": ["com.vnap.compat.emi.VillageEmiPlugin"]' : ''),
+        // the game tests' registry until 1.21.5 (com.vnap.fab.FabricGameTests)
+        // NeoForge opens it: the mod makes its block entity types with it
+        aw_extra               : mc('>=1.21.2') ? '''accessible class net/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier
+accessible method net/minecraft/world/level/block/entity/BlockEntityType <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;Ljava/util/Set;)V''' : '',
+        // the GUI's state a picture is submitted to (NeoForge hands it out)
+        // the loaders of the registries the data packs fill, which the game tests' registration reads (as Fabric API does)
+        aw_registries          : mc('>=26.1') ? 'accessible method net/minecraft/resources/RegistryLoadTask readOnlyRegistry ()Lnet/minecraft/core/Registry;'
+                : mc('>=1.21.5') ? '''accessible class net/minecraft/resources/RegistryDataLoader$Loader
+accessible method net/minecraft/resources/RegistryDataLoader$Loader registry ()Lnet/minecraft/core/WritableRegistry;''' : '',
+        aw_gui                 : mc('>=1.21.6') && mc('<26.1') ? 'accessible field net/minecraft/client/gui/GuiGraphics guiRenderState Lnet/minecraft/client/gui/render/state/GuiRenderState;' : '',
+        aw_gametests           : mc('<1.21.5') ? '''accessible field net/minecraft/gametest/framework/GameTestRegistry TEST_FUNCTIONS Ljava/util/Collection;
+accessible field net/minecraft/gametest/framework/GameTestRegistry TEST_CLASS_NAMES Ljava/util/Set;''' : '',
+]
+var metadataDir = layout.buildDirectory.dir('generated/fabricMetadata').get().asFile
+metadataDir.mkdirs()
+['fabric.mod.json', 'villager_life.accesswidener'].each { name ->
+    var text = file("${branchDir}/src/main/templates-fabric/${name}").text
+    metadata.each { key, value -> text = text.replace('${' + key + '}', value.toString()) }
+    new File(metadataDir, name).text = text
+}
+var widener = new File(metadataDir, 'villager_life.accesswidener')
+sourceSets.main.resources.srcDir metadataDir
+// NeoForge's own: its mod metadata, enum extensions and access transformers
+processResources.exclude 'META-INF/neoforge.mods.toml', 'META-INF/enumextensions.json', 'META-INF/accesstransformer.cfg'
+// the mod's mixin into NeoForge's TimeTracker (a fix of NeoForge's own): no such class on Fabric
+sourceSets.main.java.exclude 'com/vnap/mixin/TimeTrackerMixin.java'
+// the shim's mixins into what this version has not: out of the build and their configs
+def dropped = ['TimeTrackerMixin'] + (mc('>=1.21.2') ? ['client.ArmorTextureMixin'] : []) + (mc('<1.21.5') ? ['GameTestRegistriesMixin'] : []) + (mc('<26.1') ? ['PackOrderMixin'] : []) + (mc('>=26.3') ? ['PotionBrewingMixin'] : []) + (mc('<26.2') ? ['client.GlobalBlockEntitiesMixin'] : [])
+dropped.each { name -> sourceSets.main.java.exclude "com/vnap/fab/mixin/${name.replace('.', '/')}.java" }
+processResources.filesMatching(['villager_life.mixins.json', 'villager_life.fabric.mixins.json']) {
+    filter { line -> dropped.any { line.contains('"' + it + '"') } ? null : line }
+}
+
+loom {
+    accessWidenerPath = widener
+    runs {
+        configureEach {
+            runDir 'run'
+            ideConfigGenerated false
+        }
+        register('gameTestServer') {
+            server()
+            name 'Game Test Server'
+            vmArg '-Dfabric-api.gametest'
+            vmArg "-Dfabric-api.gametest.report-file=${layout.buildDirectory.file('gametest.xml').get().asFile}"
+            // -Ptests=GenerationsGameTests,homes,anelderpassesawayatnight runs only those (GameTestServerMixin)
+            vmArg "-Dvl.tests=${(project.findProperty('tests') ?: '').toString()}"
+            source sourceSets.gametest
+        }
+    }
+}
+
+// The classes marked @EventBusSubscriber (Fabric has no scan of a mod's annotations): FabricEntry reads this list
+var subscriberList = tasks.register('subscriberList') {
+    var sources = files("${branchDir}/src/main/java", "${branchDir}/src/gametest/java")
+    inputs.files(sources)
+    var out = layout.buildDirectory.dir('generated/sources/subscribers')
+    outputs.dir(out)
+    doLast {
+        var names = []
+        sources.each { root ->
+            if (!root.exists()) return
+            project.fileTree(root) { include '**/*.java' }.visit { details ->
+                if (details.directory || !details.file.text.contains('@EventBusSubscriber')) return
+                names << details.relativePath.pathString.replaceAll(/\.java$/, '').replace('/', '.')
+            }
+        }
+        var list = new File(out.get().asFile, 'META-INF/vnap-subscribers.txt')
+        list.parentFile.mkdirs()
+        list.text = names.sort().join('\n') + '\n'
+    }
+}
+sourceSets.main.resources.srcDir subscriberList
+
+// The classes of game tests (com.vnap.fab.FabricGameTests reads this list until 1.21.5), only beside the tests
+var gametestList = tasks.register('gametestList') {
+    var sources = files("${branchDir}/src/gametest/java")
+    inputs.files(sources)
+    var out = layout.buildDirectory.dir('generated/sources/gametests')
+    outputs.dir(out)
+    doLast {
+        var names = []
+        project.fileTree(sources.singleFile) { include '**/*.java' }.visit { details ->
+            if (details.directory || !details.file.text.contains('@GameTestHolder')) return
+            names << details.relativePath.pathString.replaceAll(/\.java$/, '').replace('/', '.')
+        }
+        var list = new File(out.get().asFile, 'META-INF/vnap-gametests.txt')
+        list.parentFile.mkdirs()
+        list.text = names.sort().join('\n') + '\n'
+    }
+}
+sourceSets.gametest.resources.srcDir gametestList

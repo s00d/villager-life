@@ -49,7 +49,8 @@ public final class BlessingStaffItem extends Item {
 
     @Override
     public UseAnim getUseAnimation(ItemStack stack) {
-        //? if >=1.21.2 {
+        // the pose is the staff's own (its client extension); Fabric has no custom kind: none, and the pose is set alike
+        //? if >=1.21.2 || fabric {
         /*return UseAnim.NONE;
         *///?} else
         return UseAnim.CUSTOM;

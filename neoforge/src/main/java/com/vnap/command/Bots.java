@@ -71,7 +71,7 @@ public final class Bots {
             GameProfile profile = new GameProfile(UUIDUtil.createOfflinePlayerUUID(name), name);
             bot = new ServerPlayer(server, level, profile, ClientInformation.createDefault());
             BotConnection connection = new BotConnection();
-            //? if forge {
+            //? if forge || fabric {
             /*server.getPlayerList().placeNewPlayer(connection, bot, new CommonListenerCookie(profile, 0, ClientInformation.createDefault(), false));
             *///?} else
             server.getPlayerList().placeNewPlayer(connection, bot, new CommonListenerCookie(profile, 0, ClientInformation.createDefault(), false, ConnectionType.NEOFORGE));

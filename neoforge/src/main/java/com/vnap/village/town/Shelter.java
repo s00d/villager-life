@@ -196,7 +196,8 @@ public final class Shelter {
 	/** The town's buildings a villager may sleep in (not a player's), the nearest {@code count} to {@code near}. */
 	private static List<BoundingBox> buildings(ServerLevel level, Roads.Network network, BlockPos near, int count) {
 		List<BoundingBox> boxes = new ArrayList<>(network.worldHouses);
-		boxes.addAll(TownPlots.footprints(level, network));
+		// the town's buildings that stand: a plot only reserved has no room yet, and would push a house out of the nearest
+		boxes.addAll(TownPlots.builtFootprints(level, network));
 		for (HouseProject house : VillageMoodSavedData.get(level).houses()) {
 			if (house.done && house.player == null && Towns.ours(level, network.bell, house.origin)) boxes.add(house.footprint(level));
 		}

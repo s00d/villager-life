@@ -452,6 +452,16 @@ public final class TownPlots {
 		return out;
 	}
 
+	/** The footprints of the buildings standing (built, not only reserved or under way). */
+	static List<BoundingBox> builtFootprints(ServerLevel level, Roads.Network network) {
+		List<BoundingBox> out = new ArrayList<>();
+		for (Kind kind : network.plots.keySet()) {
+			BoundingBox box = built(network, kind) ? footprint(level, network, kind) : null;
+			if (box != null) out.add(box);
+		}
+		return out;
+	}
+
 	/** The doors of the queued buildings, as the nodes their roads join (Roads.nodes). */
 	static List<BlockPos> doors(ServerLevel level, Roads.Network network) {
 		List<BlockPos> out = new ArrayList<>();

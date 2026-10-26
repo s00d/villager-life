@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A mixin's this is the class it is mixed into: SpotBugs sees the mixin class only and calls the cast impossible -->
+<FindBugsFilter>
+    <Match>
+        <Package name="~com\.vnap\.(\w+\.)?mixin(\..*)?"/>
+        <Bug pattern="BC_IMPOSSIBLE_CAST"/>
+    </Match>
+</FindBugsFilter>

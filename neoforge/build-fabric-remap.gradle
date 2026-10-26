@@ -1,0 +1,16 @@
+// A Fabric node of an obfuscated Minecraft (up to 1.21.11): Loom remaps it to Mojang's names (build-fabric-common.gradle)
+plugins {
+    id 'dev.kikugie.stonecutter'
+    id 'net.fabricmc.fabric-loom-remap' version '1.19.3'
+    id 'net.ltgt.errorprone' version '5.1.1'
+    id 'com.github.spotbugs' version '6.5.13'
+    id 'idea'
+}
+
+apply from: project.parent.file('build-fabric-common.gradle')
+
+dependencies {
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+}

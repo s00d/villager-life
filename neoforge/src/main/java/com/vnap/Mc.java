@@ -199,6 +199,12 @@ public final class Mc {
         return net.minecraft.world.level.storage.loot.providers.number.ints.ResolvableInt.getFromItem(stack,
                 net.minecraft.core.component.DataComponents.COOKING_FUEL, net.minecraft.world.item.component.CookingFuel::burnTime,
                 new net.minecraft.world.level.storage.loot.LootContext.Builder(params).create(java.util.Optional.empty()), 0);
+        *///?} else if >=1.21.2 && fabric {
+        /*// Fabric's fuels are vanilla's fuel values, built with the ones Fabric API's registry adds
+        var server = net.neoforged.neoforge.server.ServerLifecycleHooks.getCurrentServer();
+        if (server != null) return server.fuelValues().burnDuration(stack);
+        var level = clientLevel.get();
+        return level == null ? 0 : level.fuelValues().burnDuration(stack);
         *///?} else if >=1.21.2 && forge {
         /*// Forge asks the fuel values (its stack's own burn time is only for Forge's fuels)
         var server = net.neoforged.neoforge.server.ServerLifecycleHooks.getCurrentServer();
@@ -214,6 +220,9 @@ public final class Mc {
         // Forge's stack has a burn time of its own only for its own fuels (vanilla's are -1): Forge's hook has them all
         //? if forge {
         /*return net.minecraftforge.common.ForgeHooks.getBurnTime(stack, net.minecraft.world.item.crafting.RecipeType.SMELTING);
+        *///?} else if fabric {
+        /*Integer ticks = net.fabricmc.fabric.api.registry.FuelRegistry.INSTANCE.get(stack.getItem());
+        return ticks == null ? 0 : ticks;
         *///?} else
         return stack.getBurnTime(net.minecraft.world.item.crafting.RecipeType.SMELTING);
         //?}
@@ -419,11 +428,11 @@ public final class Mc {
     }
 
     /** The world's saved data of this name: from 1.21.5 a SavedDataType with a codec, which here is the tag the data writes. */
-    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = "NP_NONNULL_PARAM_VIOLATION", justification = "no data fixer is vanilla's own null; Forge's packages call every parameter non-null")
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = "NP_NONNULL_PARAM_VIOLATION", justification = "no data fixer is vanilla's own null; Forge's and Fabric's packages call every parameter non-null")
     public static <T extends net.minecraft.world.level.saveddata.SavedData> T data(net.minecraft.world.level.storage.DimensionDataStorage storage,
             String name, java.util.function.Supplier<T> fresh,
             java.util.function.BiFunction<net.minecraft.nbt.CompoundTag, net.minecraft.core.HolderLookup.Provider, T> load, Save<T> save) {
-        //? if >=26.1 && forge {
+        //? if >=26.1 && (forge || fabric) {
         /*// an identifier from 26.1 (data/villager_life/<name>.dat); vanilla's type has no context: the running server's registries
         return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedDataType<>(ResourceLocation.fromNamespaceAndPath(VillagerLife.MOD_ID, name),
                 fresh, net.minecraft.nbt.CompoundTag.CODEC.xmap(
@@ -436,7 +445,7 @@ public final class Mc {
                 context -> fresh.get(), context -> net.minecraft.nbt.CompoundTag.CODEC.xmap(
                         tag -> load.apply(tag, registries(context)),
                         data -> save.save(data, new net.minecraft.nbt.CompoundTag(), registries(context)))));
-        *///?} else if >=1.21.11 && forge {
+        *///?} else if >=1.21.11 && (forge || fabric) {
         /*// vanilla's type has no context: the registries are the running server's
         return storage.computeIfAbsent(new net.minecraft.world.level.saveddata.SavedDataType<>(name, fresh,
                 net.minecraft.nbt.CompoundTag.CODEC.xmap(
@@ -463,8 +472,8 @@ public final class Mc {
     // NBT keys at the top of the entity's tag, as before
 
     // the whole tag at once: NeoForge's store(CompoundTag) and keySet() keep its keys at the top level as before; Forge
-    // has neither (vanilla's whole-map store and read are deprecated), so there the tag is one value of its own
-    //? if >=1.21.6 && forge {
+    // and Fabric have neither (vanilla's whole-map store and read are deprecated), so there the tag is one value of its own
+    //? if >=1.21.6 && (forge || fabric) {
     /*private static final String WHOLE = "VillagerLife";
 
     public static void put(net.minecraft.world.level.storage.ValueOutput output, net.minecraft.nbt.CompoundTag tag) {
@@ -1015,6 +1024,9 @@ public final class Mc {
         //? if >=26.1 {
         /*var rest = stack.getCraftingRemainder();
         return rest == null ? ItemStack.EMPTY : rest.create();
+        *///?} else if fabric {
+        /*// Fabric API's say of the stack (an item of a mod may leave something of its own)
+        return stack.getRecipeRemainder();
         *///?} else if >=1.21.2 {
         /*return stack.getCraftingRemainder();
         *///?} else

@@ -79,6 +79,13 @@ public final class Draw {
         McClient.model(id).collectParts(net.minecraft.util.RandomSource.create(42L), parts, net.minecraftforge.client.model.data.ModelData.EMPTY);
         nodes.submitBlockModel(pose, McClient.blockSheet(), parts,
                 net.minecraft.client.renderer.block.BlockModelRenderState.EMPTY_TINTS, light, overlay, 0);
+        *///?} else if >=26.1 && fabric {
+        /*var model = McClient.model(id);
+        if (model == null) return;
+        java.util.List<net.minecraft.client.renderer.block.dispatch.BlockStateModelPart> parts = new java.util.ArrayList<>();
+        model.collectParts(net.minecraft.util.RandomSource.create(42L), parts);
+        nodes.submitBlockModel(pose, McClient.blockSheet(), parts,
+                net.minecraft.client.renderer.block.BlockModelRenderState.EMPTY_TINTS, light, overlay, 0);
         *///?} else if >=26.1 {
         /*var model = McClient.model(id);
         if (model == null) return;

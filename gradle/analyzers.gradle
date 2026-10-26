@@ -10,6 +10,8 @@ tasks.withType(JavaCompile).configureEach { task ->
     // classfile: 26.3's joml ships old class files whose type annotations javac reports and ignores
     task.options.compilerArgs.addAll(['-Xlint:all', '-Xlint:-classfile', '-Werror', '-Xmaxwarns', '10000', '-Xmaxerrs', '10000'])
     task.options.errorprone {
+        // CI only builds and publishes: the analyzers run locally (-PskipAnalyzers turns ErrorProne off)
+        enabled = !project.hasProperty('skipAnalyzers')
         error('NullAway')
         option('NullAway:AnnotatedPackages', 'com.vnap')
         // Minecraft is @NullMarked from 1.21.11 (its equals(Object) parameters come out non-null): the same rules
@@ -36,6 +38,7 @@ spotbugs {
     ignoreFailures = false
     reportLevel = 'high'
     effort = 'max'
+    excludeFilter = rootProject.file('gradle/spotbugs-exclude.xml')
 }
 
 tasks.named('spotbugsMain').configure {

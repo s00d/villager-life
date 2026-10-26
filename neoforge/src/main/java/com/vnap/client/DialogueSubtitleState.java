@@ -84,13 +84,14 @@ public final class DialogueSubtitleState {
 
 	private static void render(GuiGraphics graphics, DeltaTracker delta) {
 		Minecraft game = Minecraft.getInstance();
-		if (game.level == null || game.player == null || !LifeClientSettings.showSubtitles()) return;
+		var player = game.player;
+		if (game.level == null || player == null || !LifeClientSettings.showSubtitles()) return;
 		long now = System.nanoTime();
 		List<Row> rows = new ArrayList<>();
 		SHOWN.forEach((id, shown) -> {
 			Entity speaker = ClientEntities.find(id);
 			if (now >= shown.until() || speaker == null || !speaker.isAlive()) return;
-			double distance = Math.sqrt(game.player.distanceToSqr(speaker));
+			double distance = Math.sqrt(player.distanceToSqr(speaker));
 			String words = shown.text(now);
 			if (distance > HEARING || words.isEmpty()) return;
 			rows.add(new Row(distance, Component.empty()

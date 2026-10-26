@@ -10,6 +10,8 @@
 
 A Forge node (VL_MC=1.21.8-forge) runs the production Forge server (its installer's, cached in
 ~/.cache/vl-minecraft/forge-server/<version>) with the mod's built jar and the MCP mod's Forge jar instead of the dev server.
+A Fabric node (VL_MC=1.21.8-fabric) runs Fabric's server launcher (cached in ~/.cache/vl-minecraft/fabric-server/<mc>-<loader>,
+it fetches vanilla's server there once) with the mod's built jar, Fabric API and the MCP mod's Fabric jar.
 
 Instance N lives in neoforge/versions/1.21.1/run/servers/N (world/, config/ copied from run/), plays on port 25600+N,
 RCON on 25700+N, the MCP mod on 25800+N; its whole output goes to /tmp/vl-server-N.log (what deaths.py and scenario.py --server N read); each start is added to it after a ===== line.
@@ -36,6 +38,7 @@ LAUNCH = NODE / "build/moddev/runServer.sh"
 PASSWORD = "vl"
 JAVA_HOME = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
 FORGE = MC.endswith("-forge")
+FABRIC = MC.endswith("-fabric")
 JAVAS = {"21": JAVA_HOME, "25": "/opt/homebrew/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home"}
 
 
@@ -60,6 +63,37 @@ def forge_server() -> Path:
         subprocess.run([JAVAS[p["java_version"]] + "/bin/java", "-jar", "installer.jar", "--installServer", "."], cwd=dir_,
                        stdout=open(dir_ / "install.log", "w"), stderr=subprocess.STDOUT, check=True)
     return dir_
+
+
+def fabric_server() -> Path:
+    """Fabric's server launcher of this node (loader and the newest installer), fetched once; vanilla's server jar beside it."""
+    import json, urllib.request
+    p = node_props()
+    dir_ = Path.home() / ".cache/vl-minecraft/fabric-server" / f"{p['minecraft_version']}-{p['fabric_loader_version']}"
+    launcher = dir_ / "fabric-server-launch.jar"
+    if not launcher.exists():
+        dir_.mkdir(parents=True, exist_ok=True)
+        with urllib.request.urlopen("https://meta.fabricmc.net/v2/versions/installer") as answer:
+            installer = next(v["version"] for v in json.load(answer) if v.get("stable"))
+        url = f"https://meta.fabricmc.net/v2/versions/loader/{p['minecraft_version']}/{p['fabric_loader_version']}/{installer}/server/jar"
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "villager-life-dev"})) as answer:
+            launcher.write_bytes(answer.read())
+    return dir_
+
+
+def fabric_api() -> Path:
+    """The Fabric API bundle of this node (one jar with its modules in it), from gradle's cache or Fabric's maven."""
+    import urllib.request
+    v = node_props()["fabric_api_version"]
+    found = sorted((Path.home() / ".gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api" / v).glob(f"*/fabric-api-{v}.jar"))
+    if found:
+        return found[0]
+    jar = Path.home() / ".cache/vl-minecraft/fabric-api" / f"fabric-api-{v}.jar"
+    if not jar.exists():
+        jar.parent.mkdir(parents=True, exist_ok=True)
+        with urllib.request.urlopen(f"https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/{v}/fabric-api-{v}.jar") as answer:
+            jar.write_bytes(answer.read())
+    return jar
 
 
 def home(n: int) -> Path:
@@ -163,13 +197,17 @@ def pid(n: int) -> int | None:
 
 
 def build() -> int:
-    env = dict(os.environ, JAVA_HOME=JAVA_HOME)
-    tasks = [f":neoforge:{MC}:jar"] if FORGE else [f":neoforge:{MC}:classes", f":neoforge:{MC}:gametestClasses", f":neoforge:{MC}:createServerLaunchScript"]
+    # Loom (Fabric) needs gradle on Java 25
+    env = dict(os.environ, JAVA_HOME=JAVAS["25"] if FABRIC else JAVA_HOME)
+    tasks = [f":neoforge:{MC}:jar"] if FORGE else [f":neoforge:{MC}:assemble"] if FABRIC else [f":neoforge:{MC}:classes", f":neoforge:{MC}:gametestClasses", f":neoforge:{MC}:createServerLaunchScript"]
     with open("/tmp/vl-server-build.log", "w") as out:
         code = subprocess.run(["./gradlew", "--no-configuration-cache", "--offline", *tasks],
                               cwd=ROOT, env=env, stdout=out, stderr=subprocess.STDOUT).returncode
     if code == 0 and FORGE:
         forge_server()
+    if code == 0 and FABRIC:
+        fabric_server()
+        fabric_api()
     print("build", "ok" if code == 0 else "FAILED, see /tmp/vl-server-build.log")
     return code
 
@@ -224,7 +262,7 @@ def start(n: int, args: list[str]) -> int:
     if alive(n):
         print(f"server {n} is already up")
         return 1
-    if not FORGE and not LAUNCH.exists():
+    if not FORGE and not FABRIC and not LAUNCH.exists():
         print(f"no {LAUNCH}: run 'server.py build' first")
         return 1
     dir_ = home(n)
@@ -245,7 +283,15 @@ def start(n: int, args: list[str]) -> int:
     # the dev client's other mods, those a server has too (Patchouli's channels are required both ways: a client
     # with it was turned away from a server without it, "Incompatible client!"); the MCP mod comes from below
     (dir_ / "mods").mkdir(parents=True, exist_ok=True)
-    if FORGE:
+    if FABRIC:
+        # the production server: the mod's built jar (English voice), Fabric API and the MCP mod's Fabric jar
+        for old in (dir_ / "mods").glob("*.jar"):
+            old.unlink()
+        game = node_props()["minecraft_version"]
+        shutil.copy2(next((NODE / "build/libs").glob("villager-life-fabric-*-en.jar")), dir_ / "mods")
+        shutil.copy2(fabric_api(), dir_ / "mods")
+        shutil.copy2(sorted((Path.home() / ".cache/vl-minecraft/mcp").glob(f"minecraft_mcp-fabric-*+{game}.jar"))[-1], dir_ / "mods")
+    elif FORGE:
         # the production server: the mod's built jar (English voice) and the MCP mod's Forge jar, nothing of the dev runs
         for old in (dir_ / "mods").glob("*.jar"):
             old.unlink()
@@ -275,7 +321,13 @@ def start(n: int, args: list[str]) -> int:
         (dir_ / "ops.json").write_text(json.dumps([{"uuid": offline(name), "name": name, "level": 4, "bypassesPlayerLimit": False}
                                                    for name in ("Dev", "Dev2")], indent=2))
     (dir_ / "eula.txt").write_text("eula=true\n")
-    if FORGE:
+    if FABRIC:
+        # Fabric's launcher, vanilla's server jar kept in the launcher's cache (it fetches it the first time)
+        installed = fabric_server()
+        (dir_ / "fabric-server-launcher.properties").write_text(f"serverJar={installed / 'server.jar'}\n")
+        command = [JAVAS[node_props()["java_version"]] + "/bin/java", f"-Xmx{xmx}", f"-Dvl.server={n}", f"-DminecraftMcp.endpoint.port={25800 + n}",
+                   "-jar", str(installed / "fabric-server-launch.jar"), "nogui"]
+    elif FORGE:
         # Forge's own launch (run.sh's): its libraries linked into the instance, which has the world, mods and config
         installed = forge_server()
         p = node_props()

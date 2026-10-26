@@ -32,8 +32,8 @@ public final class RenderedEntity {
         return type.isInstance(entity) ? type.cast(entity) : null;
     }
     *///?}
-    // a render state's data: NeoForge's methods of the state, on Forge the shim's (com.vnap.neo.client.RenderData)
-    //? if >=1.21.2 && forge {
+    // a render state's data: NeoForge's methods of the state, on Forge and Fabric the shim's (com.vnap.neo.client.RenderData)
+    //? if >=1.21.2 && (forge || fabric) {
     /*private static void put(EntityRenderState state, Entity entity) {
         if (state instanceof com.vnap.neo.client.RenderData data) data.vnap$setRenderData(ENTITY, entity);
     }

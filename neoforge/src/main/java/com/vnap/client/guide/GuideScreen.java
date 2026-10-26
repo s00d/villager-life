@@ -965,8 +965,8 @@ public final class GuideScreen extends Screen {
         return new Grid(recipe.getResultItem(registries), cells, columns);
     }
     //?}
-    // an ingredient's items: NeoForge's getValues (items() is deprecated), on Forge what the ingredient displays
-    //? if >=1.21.2 && forge {
+    // an ingredient's items: NeoForge's getValues (items() is deprecated), on Forge and Fabric what the ingredient displays
+    //? if >=1.21.2 && (forge || fabric) {
     /*private static List<ItemStack> stacks(Ingredient ingredient) {
         var level = net.minecraft.client.Minecraft.getInstance().level;
         return level == null ? List.of() : ingredient.display().resolveForStacks(net.minecraft.world.item.crafting.display.SlotDisplayContext.fromLevel(level));
